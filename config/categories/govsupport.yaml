@@ -24,7 +24,7 @@ sources:
 
   - name: "산업통상자원부"
     type: "rss"
-    url: "https://www.motie.go.kr/motie/py/brf/motiebriefing/motiebriefingList.do"
+    url: "https://www.motie.go.kr/kor/article/ATCL2826a2625"
     collection_method: "browser"
     wait_for: ".board_list"
     article_selector: ".board_list li"
@@ -79,7 +79,7 @@ sources:
 
   - name: "KIAT 한국산업기술진흥원"
     type: "rss"
-    url: "https://www.kiat.or.kr/front/board/boardContents.do?board_id=21"
+    url: "https://www.kiat.or.kr/front/board/boardContentsListPage.do?board_id=90"
     collection_method: "browser"
     wait_for: "table"
     article_selector: "table tbody tr"
@@ -532,7 +532,7 @@ sources:
 
   - name: "중소기업기술정보진흥원 TIPA"
     type: "rss"
-    url: "http://www.smtech.go.kr/"
+    url: "https://www.tipa.or.kr/s0201"
     collection_method: "browser"
     wait_for: "table"
     article_selector: "table tbody tr"
@@ -550,7 +550,7 @@ sources:
 
   - name: "정보통신산업진흥원 NIPA"
     type: "rss"
-    url: "https://www.nipa.kr/"
+    url: "https://www.nipa.kr/home/2-2"
     collection_method: "browser"
     wait_for: "table"
     article_selector: "table tbody tr"
