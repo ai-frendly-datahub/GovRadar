@@ -58,14 +58,6 @@ sources:
     link_selector: "a[href*='rcvfvrSvc']"
     trust_tier: "T1_authoritative"
 
-  - name: "K-Startup"
-    type: "rss"
-    url: "https://www.k-startup.go.kr/unifyinfo/info/openinfo/notice.do"
-    collection_method: "browser"
-    wait_for: "table"
-    article_selector: "table tbody tr"
-    link_selector: "td a"
-    trust_tier: "T2_expert"
 
   - name: "소상공인시장진흥공단"
     type: "rss"
@@ -139,14 +131,6 @@ sources:
     link_selector: "td a"
     trust_tier: "T3_professional"
 
-  - name: "성남산업진흥원"
-    type: "rss"
-    url: "https://portal.snip.or.kr:8443/portal/snip/MainMenu/businessManagement.page"
-    collection_method: "browser"
-    wait_for: "table"
-    article_selector: "table tbody tr"
-    link_selector: "td a"
-    trust_tier: "T3_professional"
 
   - name: "의정부 기업지원포털"
     type: "rss"
@@ -346,14 +330,6 @@ sources:
     link_selector: "td a"
     trust_tier: "T2_expert"
 
-  - name: "세종특별자치시 창업플랫폼"
-    type: "rss"
-    url: "https://www.sjstarton.or.kr/startupSupport/support/index.do?menu_gubun=mid&menu_no=1&menu_no2=0&menu_no3=&params="
-    collection_method: "browser"
-    wait_for: "table"
-    article_selector: "table tbody tr"
-    link_selector: "td a"
-    trust_tier: "T2_expert"
 
   - name: "울산정보산업진흥원"
     type: "rss"
@@ -553,14 +529,6 @@ sources:
     link_selector: "td a"
     trust_tier: "T1_authoritative"
 
-  - name: "중소기업유통센터"
-    type: "rss"
-    url: "http://www.smemall.or.kr/"
-    collection_method: "browser"
-    wait_for: "table"
-    article_selector: "table tbody tr"
-    link_selector: "td a"
-    trust_tier: "T2_expert"
 
   - name: "중소기업기술정보진흥원 TIPA"
     type: "rss"
