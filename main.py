@@ -9,7 +9,7 @@ from radar_core.config_loader import load_category_config, load_settings
 from radar_core.raw_logger import RawLogger
 from radar_core.search_index import SearchIndex
 
-from govradar.common import validate_article
+from govradar.common.validators import validate_article
 from govradar.date_storage import apply_date_storage_policy
 from govradar.reporter import generate_index_html, generate_report
 from govradar.storage import RadarStorage
