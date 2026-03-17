@@ -91,10 +91,10 @@ def run(
     settings = load_settings(config_path)
     if config_path:
         project_root = config_path.resolve().parent.parent
-        settings.database_path = project_root / settings.database_path
-        settings.report_dir = project_root / settings.report_dir
-        settings.raw_data_dir = project_root / settings.raw_data_dir
-        settings.search_db_path = project_root / settings.search_db_path
+        settings.database_path = project_root / "data" / "govradar_data.duckdb"
+        settings.report_dir = project_root / "reports"
+        settings.raw_data_dir = project_root / "data" / "raw"
+        settings.search_db_path = project_root / "data" / "search_index.db"
     category_cfg = load_category_config(category, categories_dir=categories_dir)
 
     print(
