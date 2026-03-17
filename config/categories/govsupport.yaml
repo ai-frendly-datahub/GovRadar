@@ -333,7 +333,7 @@ sources:
 
   - name: "울산정보산업진흥원"
     type: "rss"
-    url: "https://uipa.or.kr/"
+    url: "https://uipa.or.kr/webuser/business/list.html"
     collection_method: "browser"
     wait_for: "table"
     article_selector: "table tbody tr"
@@ -351,7 +351,7 @@ sources:
 
   - name: "경상북도"
     type: "rss"
-    url: "https://www.gb.go.kr/Main/open_contents/section/economy2020/page.do?LARGE_CODE=690&MEDIUM_CODE=10&mnu_uid=6177"
+    url: "https://gb.go.kr/Main/page.do?BD_CODE=industry_info&mnu_uid=6178"
     collection_method: "browser"
     wait_for: "table"
     article_selector: "table tbody tr"
@@ -369,7 +369,7 @@ sources:
 
   - name: "강원지역산업진흥원"
     type: "rss"
-    url: "https://gw.riia.or.kr/board/businessAnnouncement"
+    url: "https://gw.riia.or.kr/board/businessAnnouncement/list"
     collection_method: "browser"
     wait_for: "table"
     article_selector: "table tbody tr"
@@ -378,7 +378,7 @@ sources:
 
   - name: "강원특별자치도경제진흥원"
     type: "rss"
-    url: "https://www.gwep.or.kr/bbs/board.php?bo_table=gw_sub21"
+    url: "http://www.gwep.or.kr/bbs/board.php?bo_table=gw_sub21"
     collection_method: "browser"
     wait_for: "table"
     article_selector: "table tbody tr"
