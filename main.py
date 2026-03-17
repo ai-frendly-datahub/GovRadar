@@ -245,11 +245,13 @@ def _to_int(value: object, default: int) -> int:
 
 
 if __name__ == "__main__":
+    _PROJECT_ROOT = Path(__file__).resolve().parent
     args = cast(dict[str, object], vars(parse_args()))
     _ = run(
         category=str(args.get("category", "")),
-        config_path=_to_path(args.get("config")),
-        categories_dir=_to_path(args.get("categories_dir")),
+        config_path=_to_path(args.get("config")) or _PROJECT_ROOT / "config" / "config.yaml",
+        categories_dir=_to_path(args.get("categories_dir"))
+        or _PROJECT_ROOT / "config" / "categories",
         per_source_limit=_to_int(args.get("per_source_limit"), 30),
         recent_days=_to_int(args.get("recent_days"), 7),
         timeout=_to_int(args.get("timeout"), 15),
