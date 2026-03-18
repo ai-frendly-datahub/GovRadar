@@ -1,0 +1,2 @@
+-e .[dev]
+pybreaker>=1.0.0
