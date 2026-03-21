@@ -1,25 +1,25 @@
 {
-  "date": "2026-03-21",
+  "date": "2026-03-22",
   "category": "govsupport",
-  "article_count": 73,
+  "article_count": 74,
   "source_count": 1,
-  "matched_count": 69,
+  "matched_count": 70,
   "top_entities": [
     {
       "name": "Region",
-      "count": 116
+      "count": 117
+    },
+    {
+      "name": "ApplicationInfo",
+      "count": 51
     },
     {
       "name": "TargetGroup",
       "count": 51
     },
     {
-      "name": "ApplicationInfo",
-      "count": 50
-    },
-    {
       "name": "Ministry",
-      "count": 34
+      "count": 35
     },
     {
       "name": "SupportType",
@@ -27,7 +27,7 @@
     }
   ],
   "sources": {
-    "정책브리핑": 73
+    "정책브리핑": 74
   },
-  "generated_at": "2026-03-21T07:31:39.671480+09:00"
+  "generated_at": "2026-03-22T07:25:55.694681+09:00"
 }
