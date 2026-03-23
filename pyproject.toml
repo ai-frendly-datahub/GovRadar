@@ -7,7 +7,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "govradar"
 version = "0.2.0"
-description = "한국 정부지원 뉴스/정책 수집 레이더"
+description = "한국 정부지원 정책/보조금 수집 레이더"
 readme = "README.md"
 requires-python = ">=3.9"
 license = {text = "MIT"}
@@ -67,7 +67,7 @@ Repository = "https://github.com/ai-frendly-datahub/GovRadar"
 Issues = "https://github.com/ai-frendly-datahub/GovRadar/issues"
 
 [tool.setuptools.packages.find]
-include = ["govradar", "govradar.*", "radar_core", "radar_core.*"]
+include = ["govradar", "govradar.*"]
 
 [tool.setuptools.package-data]
 govradar = ["templates/**/*"]

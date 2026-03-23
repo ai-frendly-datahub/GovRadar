@@ -2,7 +2,7 @@
 
 **🌐 Live Report**: https://ai-frendly-datahub.github.io/GovRadar/
 
-한국 정부지원금, 지원사업, 정책 공고를 매일 수집하고 엔티티 기반으로 분류해 리포트로 제공하는 Standard Tier 레이더 프로젝트입니다.
+한국 정부지원금/보조금/지원사업 공고를 매일 수집하고 엔티티 기반으로 분류해 추적 리포트를 제공하는 Standard Tier 레이더 프로젝트입니다.
 
 ## 프로젝트 목표
 
