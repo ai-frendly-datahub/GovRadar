@@ -1,681 +1,183 @@
-category_name: govsupport
-display_name: 한국 정부지원 레이더
+category_name: "govsupport"
+display_name: "한국 정부지원 레이더"
+
 sources:
-- name: 정책브리핑
-  type: rss
-  url: https://www.korea.kr/rss/policy.xml
-  trust_tier: T1_authoritative
-- name: 고용노동부
-  type: rss
-  url: https://www.moel.go.kr/rss/policy.xml
-  trust_tier: T1_authoritative
-- name: 중소벤처기업부
-  type: rss
-  url: https://www.mss.go.kr/site/smba/ex/bbs/rss.do?bbsId=BBSMSTR_000000000012
-  trust_tier: T1_authoritative
-- name: 기획재정부
-  type: rss
-  url: https://www.moef.go.kr/sas/sas/rss.do
-  trust_tier: T1_authoritative
-- name: 산업통상자원부
-  type: rss
-  url: https://www.motie.go.kr/kor/article/ATCL2826a2625
-  collection_method: browser
-  wait_for: .board_list
-  article_selector: .board_list li
-  link_selector: a
-  trust_tier: T1_authoritative
-- name: 과학기술정보통신부
-  type: rss
-  url: https://www.msit.go.kr/bbs/list.do?sCode=user&mPid=74&mId=99
-  collection_method: browser
-  wait_for: .board_list
-  article_selector: .board_list tbody tr
-  link_selector: td a
-  trust_tier: T1_authoritative
-- name: 국토교통부
-  type: rss
-  url: https://www.molit.go.kr/USR/NEWS/m_71/lst.jsp
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T1_authoritative
-- name: 정부24 보조금
-  type: rss
-  url: https://www.gov.kr/portal/rcvfvrSvc/svcFind/svcSearchAll
-  collection_method: browser
-  wait_for: '[class*=''svc'']'
-  article_selector: '[class*=''svc''] > div'
-  link_selector: a[href*='rcvfvrSvc']
-  trust_tier: T1_authoritative
-- name: 소상공인시장진흥공단
-  type: rss
-  url: https://www.semas.or.kr/web/board/webBoardList.kmdc?bCd=1
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T2_expert
-- name: 서울시 지원사업
-  type: rss
-  url: https://www.seoul.go.kr/news/news_notice.do
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T2_expert
-- name: KIAT 한국산업기술진흥원
-  type: rss
-  url: https://www.kiat.or.kr/front/board/boardContentsListPage.do?board_id=90
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T2_expert
-- name: 경기기업비서
-  type: rss
-  url: https://www.egbiz.or.kr/sp/supportPrjAreaList.do#none
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T2_expert
-- name: 경기도주식회사
-  type: rss
-  url: https://www.kgcbrand.com/KGCBrand/businessNoticeList.do
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T2_expert
-- name: 경기도일자리포털
-  type: rss
-  url: https://job.gg.go.kr/entSprt/list.do
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T2_expert
-- name: 고양스타특업
-  type: rss
-  url: http://goyangstartup.kr/service/04.php
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T3_professional
-- name: 수원창업지원포털
-  type: rss
-  url: https://s-startup.or.kr/menu-1-1
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T3_professional
-- name: 의정부 기업지원포털
-  type: rss
-  url: https://www.uesc.or.kr/bbs/board.php?bo_table=bus_04
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T3_professional
-- name: 과천시
-  type: rss
-  url: https://www.gccity.go.kr/dept/bbs/list.do?ptIdx=241&mId=0102010000
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T3_professional
-- name: 시흥시산업진흥원
-  type: rss
-  url: https://www.sida.kr/notification/notice.html
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T3_professional
-- name: 시흥시 창업센터
-  type: rss
-  url: https://startup.sida.kr/business/support/list
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T3_professional
-- name: 용인시
-  type: rss
-  url: https://ybs.ypa.or.kr/application.do?site=&id=
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T3_professional
-- name: 파주시
-  type: rss
-  url: https://www.paju.go.kr/user/board/BD_board.list.do?bbsCd=9052
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T3_professional
-- name: 이천시
-  type: rss
-  url: https://www.icheon.go.kr/biz/board/post/list.do?bcIdx=698&mid=0502010000
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T3_professional
-- name: 안성시
-  type: rss
-  url: https://www.anseong.go.kr/depart/bbs/list.do?ptIdx=16&mId=0102040000
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T3_professional
-- name: 김포시산업지원
-  type: rss
-  url: https://gopa.or.kr/sub/apply01/list.html?curpage=1&
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T3_professional
-- name: 화성시
-  type: rss
-  url: https://platform.hsbiz.or.kr/business/list
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T3_professional
-- name: 연천군
-  type: rss
-  url: https://yeoncheon.go.kr/www/selectBbsNttList.do?bbsNo=260&key=3524
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T3_professional
-- name: 가평군 기업지원
-  type: rss
-  url: https://www.gp.go.kr/portal/selectBbsNttList.do?bbsNo=550&key=735&scheduleZoneNo=4
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T3_professional
-- name: 가평군 소상공인
-  type: rss
-  url: https://www.gp.go.kr/portal/selectBbsNttList.do?bbsNo=533&key=2370
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T3_professional
-- name: 서울시 소상공인 종합지원
-  type: rss
-  url: https://www.seoulsbdc.or.kr/sb/main.do
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T2_expert
-- name: 인천광역시
-  type: rss
-  url: https://bizok.incheon.go.kr/open_content/support.do?act=list&pgno=1
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T2_expert
-- name: 부산창업포털
-  type: rss
-  url: https://busanstartup.kr/biz_sup?deadline=N&mcode=biz02
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T2_expert
-- name: 서울경제진흥원
-  type: rss
-  url: https://www.sba.seoul.kr/Pages/BusinessApply/Posting.aspx
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T2_expert
-- name: 서울시 R&D 지원
-  type: rss
-  url: https://seoul.rnbd.kr/client/c030100/c030100_00.jsp
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T2_expert
-- name: 인천창업플랫폼
-  type: rss
-  url: https://incheon-startup.kr/04_suport/suport_1_1
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T2_expert
-- name: 광주광역시
-  type: rss
-  url: https://www.gjbizinfo.or.kr/online.do?pageId=www48
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T2_expert
-- name: 대구광역시 창업플랫폼
-  type: rss
-  url: https://startup.daegu.go.kr/index.do?menu_id=00002552
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T2_expert
-- name: 대전광역시
-  type: rss
-  url: https://www.djbea.or.kr/pms/an/an_0101/list?
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T2_expert
-- name: 울산정보산업진흥원
-  type: rss
-  url: https://uipa.or.kr/webuser/business/list.html
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T2_expert
-- name: 여수시
-  type: rss
-  url: https://yjss.or.kr/62
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T3_professional
-- name: 경상북도
-  type: rss
-  url: https://gb.go.kr/Main/page.do?BD_CODE=industry_info&mnu_uid=6178
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T2_expert
-- name: 경남창업포털
-  type: rss
-  url: https://www.gnstartup.kr/business/8339db24-725a-45bc-baf9-d778adc7b0d8
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T2_expert
-- name: 강원지역산업진흥원
-  type: rss
-  url: https://gw.riia.or.kr/board/businessAnnouncement/list
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T2_expert
-- name: 강원특별자치도경제진흥원
-  type: rss
-  url: http://www.gwep.or.kr/bbs/board.php?bo_table=gw_sub21
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T2_expert
-- name: 충청북도 시책사업
-  type: rss
-  url: https://cbgms.chungbuk.go.kr/export/joinBusinessList.jsp?busi_section=1
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T2_expert
-- name: 충청남도경제진흥원
-  type: rss
-  url: https://www.cnsp.or.kr/project/list.do
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T2_expert
-- name: 전북 중소기업종합지원
-  type: rss
-  url: https://www.jbok.kr/spWork/supportBusinessList.do?menuId=60
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T2_expert
-- name: 전남창업지원플랫폼
-  type: rss
-  url: https://www.jnstartup.co.kr/business.cs?m=14&pageIndex=1
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T2_expert
-- name: 잇지제주
-  type: rss
-  url: https://www.idge.co.kr/all_programs
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T2_expert
-- name: 경남기업119
-  type: rss
-  url: https://www.gyeongnam.go.kr/giup/index.gyeong?menuCd=DOM_000004603001000000
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T2_expert
-- name: 충청북도 도내시책사업
-  type: rss
-  url: https://cbgms.chungbuk.go.kr/export/joinBusinessList.jsp?busi_section=3
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T2_expert
-- name: 전북경제통상진흥원
-  type: rss
-  url: https://www.jbba.kr/bbs/board.php?bo_table=sub01_09
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T2_expert
-- name: 제주경제통상진흥원
-  type: rss
-  url: https://www.jba.or.kr/bbs/board.php?bo_table=2_1_1_1
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T2_expert
-- name: 기업마당 지원사업
-  type: rss
-  url: https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T1_authoritative
-- name: 기업마당 행사정보
-  type: rss
-  url: https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C127/AX/210/list.do
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T1_authoritative
-- name: 소상공인24
-  type: rss
-  url: https://www.sbiz24.kr/#/pbanc
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T1_authoritative
-- name: K-Startup 진행중 사업
-  type: rss
-  url: https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T1_authoritative
-- name: 창업진흥원 KISED
-  type: rss
-  url: https://www.kised.or.kr/index.es?sid=a1
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T1_authoritative
-- name: 한국산업기술진흥협회 KOITA
-  type: rss
-  url: https://www.koita.or.kr/board/commBoardNotice003List.do
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T1_authoritative
-- name: 중소벤처기업진흥공단 KOSME
-  type: rss
-  url: https://www.kosmes.or.kr/nsh/map/main.do
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T1_authoritative
-- name: 중소기업기술정보진흥원 TIPA
-  type: rss
-  url: https://www.tipa.or.kr/s0201
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T1_authoritative
-- name: 한국콘텐츠진흥원 KOCCA
-  type: rss
-  url: https://www.kocca.kr/kocca/bbs/list/B0158960.do?menuNo=204392
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T1_authoritative
-- name: 정보통신산업진흥원 NIPA
-  type: rss
-  url: https://www.nipa.kr/home/2-2
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T1_authoritative
-- name: 지역지식재산센터 RIPC
-  type: rss
-  url: https://pms.ripc.org/pms/biz/applicant/notice/list.do
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T2_expert
-- name: 한국특허전략개발원 KISTA
-  type: rss
-  url: https://www.kista.re.kr/user/board.do?bbsId=BBSMSTR_000000000382
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T1_authoritative
-- name: 지식재산보호원 IP-NAVI
-  type: rss
-  url: https://www.ip-navi.or.kr/ipnavi/cs/bizPage.navi
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T1_authoritative
-- name: KEIT 산업기술평가관리원
-  type: rss
-  url: https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveTaskAnncmListView.do?prgmId=XPG201040000
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T1_authoritative
-- name: 서울창업허브
-  type: rss
-  url: https://www.startup-plus.kr/project
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T2_expert
-- name: 중소벤처24 사업공고
-  type: rss
-  url: https://smes.go.kr/main/sportsBsnsPolicy
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T1_authoritative
-- name: 기술보증기금 KIBO
-  type: rss
-  url: https://www.kibo.or.kr/main/board/boardType01.do
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T1_authoritative
-- name: 한국벤처투자 KVIC
-  type: rss
-  url: https://www.kvic.or.kr/notice/kvic-notice/investment-business-notice
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T1_authoritative
-- name: 한국무역보험공사 K-SURE
-  type: rss
-  url: https://www.ksure.or.kr/rh-kr/bbs/i-412/list.do
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T1_authoritative
-- name: KOTRA 사업신청
-  type: rss
-  url: https://www.kotra.or.kr/subList/20000020753
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T1_authoritative
-- name: 한국환경산업기술원 KEITI
-  type: rss
-  url: https://www.keiti.re.kr/site/keiti/ex/board/List.do?cbIdx=277
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T1_authoritative
-- name: 한국에너지공단
-  type: rss
-  url: https://www.energy.or.kr/bbs/list.do?bbsId=B0000099
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T1_authoritative
-- name: 한국관광공사
-  type: rss
-  url: https://touraz.kr/notice/list.do
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T2_expert
-- name: 한국무역협회 KITA
-  type: rss
-  url: https://www.kita.net/board/notice/noticeList.do
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
-  trust_tier: T1_authoritative
+  - name: "정부24 보조금"
+    type: "rss"
+    url: "https://www.gov.kr/portal/rcvfvrSvc/svcFind/svcSearchAll"
+    collection_method: "browser"
+    wait_for: ".svc-list"
+    article_selector: ".svc-list > div"
+    link_selector: "a[href*='rcvfvrSvc']"
+    title_selector: "a[href*='rcvfvrSvc']"
+    summary_selector: "p"
+    trust_tier: "T1_authoritative"
+
+  - name: "정책브리핑"
+    type: "rss"
+    url: "https://www.korea.kr/rss/policy.xml"
+    trust_tier: "T1_authoritative"
+
+  - name: "고용노동부"
+    type: "rss"
+    url: "https://www.moel.go.kr/rss/policy.xml"
+    trust_tier: "T1_authoritative"
+
+  - name: "중소벤처기업부"
+    type: "rss"
+    url: "https://www.mss.go.kr/site/smba/ex/bbs/rss.do?bbsId=BBSMSTR_000000000012"
+    trust_tier: "T1_authoritative"
+
+  - name: "기획재정부"
+    type: "rss"
+    url: "https://www.moef.go.kr/sas/sas/rss.do"
+    trust_tier: "T1_authoritative"
+
+  - name: "K-Startup"
+    type: "rss"
+    url: "https://www.k-startup.go.kr/unifyinfo/info/openinfo/notice.do"
+    collection_method: "browser"
+    wait_for: "table"
+    article_selector: "table tbody tr"
+    link_selector: "td a"
+    trust_tier: "T2_expert"
+
+  - name: "소상공인시장진흥공단"
+    type: "rss"
+    url: "https://www.semas.or.kr/web/board/webBoardList.kmdc?bCd=1"
+    collection_method: "browser"
+    wait_for: "table"
+    article_selector: "table tbody tr"
+    link_selector: "td a"
+    trust_tier: "T2_expert"
+
+  - name: "산업통상자원부"
+    type: "rss"
+    url: "https://www.motie.go.kr/motie/py/brf/motiebriefing/motiebriefingList.do"
+    collection_method: "browser"
+    wait_for: ".board_list"
+    article_selector: ".board_list li"
+    link_selector: "a"
+    trust_tier: "T1_authoritative"
+
+  - name: "과학기술정보통신부"
+    type: "rss"
+    url: "https://www.msit.go.kr/bbs/list.do?sCode=user&mPid=74&mId=99"
+    collection_method: "browser"
+    wait_for: ".board_list"
+    article_selector: ".board_list tbody tr"
+    link_selector: "td a"
+    trust_tier: "T1_authoritative"
+
+  - name: "보조금24"
+    type: "rss"
+    url: "https://www.gosims.go.kr/hg/hg001/retrieveSubsSrch.do"
+    collection_method: "browser"
+    wait_for: ".list-group"
+    article_selector: ".list-group-item"
+    link_selector: "a"
+    trust_tier: "T1_authoritative"
+
+  - name: "서울시 지원사업"
+    type: "rss"
+    url: "https://www.seoul.go.kr/news/news_notice.do"
+    collection_method: "browser"
+    wait_for: "table"
+    article_selector: "table tbody tr"
+    link_selector: "td a"
+    trust_tier: "T2_expert"
+
+  - name: "경기도 지원사업"
+    type: "rss"
+    url: "https://www.gg.go.kr/bbs/boardList.do?bbsId=BBS_0000022&menuId=1535"
+    collection_method: "browser"
+    wait_for: "table"
+    article_selector: "table tbody tr"
+    link_selector: "td a"
+    trust_tier: "T2_expert"
+
 entities:
-- name: SupportType
-  keywords:
-  - 보조금
-  - 지원금
-  - 지원사업
-  - 보조사업
-  - 무상지원
-  - 융자
-  - 대출
-  - 바우처
-  - 수당
-  - 장려금
-  - 출연금
-  - 쿠폰
-  - 감면
-- name: TargetGroup
-  keywords:
-  - 소상공인
-  - 중소기업
-  - 스타트업
-  - 창업
-  - 청년
-  - 신혼부부
-  - 다자녀
-  - 장애인
-  - 저소득
-  - 취약계층
-  - 농어민
-  - 자영업
-  - 경력단절
-  - 임산부
-  - 어르신
-- name: Ministry
-  keywords:
-  - 고용노동부
-  - 중소벤처기업부
-  - 기획재정부
-  - 산업통상자원부
-  - 과학기술정보통신부
-  - 국토교통부
-  - 농림축산식품부
-  - 보건복지부
-  - 교육부
-  - 여성가족부
-  - 환경부
-  - 국세청
-- name: Region
-  keywords:
-  - 서울
-  - 경기
-  - 인천
-  - 부산
-  - 대구
-  - 광주
-  - 대전
-  - 울산
-  - 세종
-  - 강원
-  - 충북
-  - 충남
-  - 전북
-  - 전남
-  - 경북
-  - 경남
-  - 제주
-- name: ApplicationInfo
-  keywords:
-  - 접수
-  - 신청
-  - 모집
-  - 공고
-  - 마감
-  - 선정
-  - 접수기간
-  - 신청기간
-  - 상시신청
-  - 모집공고
+  - name: "SupportType"
+    keywords:
+      - "보조금"
+      - "지원금"
+      - "지원사업"
+      - "보조사업"
+      - "무상지원"
+      - "융자"
+      - "대출"
+      - "바우처"
+      - "수당"
+      - "장려금"
+      - "출연금"
+      - "쿠폰"
+      - "감면"
+      - "subsidy"
+      - "grant"
+
+  - name: "TargetGroup"
+    keywords:
+      - "소상공인"
+      - "중소기업"
+      - "스타트업"
+      - "창업"
+      - "청년"
+      - "신혼부부"
+      - "다자녀"
+      - "장애인"
+      - "저소득"
+      - "취약계층"
+      - "농어민"
+      - "자영업"
+      - "경력단절"
+      - "임산부"
+      - "어르신"
+      - "기업"
+
+  - name: "Ministry"
+    keywords:
+      - "고용노동부"
+      - "중소벤처기업부"
+      - "기획재정부"
+      - "산업통상자원부"
+      - "과학기술정보통신부"
+      - "국토교통부"
+      - "농림축산식품부"
+      - "보건복지부"
+      - "교육부"
+      - "여성가족부"
+      - "환경부"
+      - "국세청"
+
+  - name: "Region"
+    keywords:
+      - "서울"
+      - "경기"
+      - "인천"
+      - "부산"
+      - "대구"
+      - "광주"
+      - "대전"
+      - "울산"
+      - "세종"
+      - "강원"
+      - "충북"
+      - "충남"
+      - "전북"
+      - "전남"
+      - "경북"
+      - "경남"
+      - "제주"
+
+  - name: "ApplicationInfo"
+    keywords:
+      - "접수"
+      - "신청"
+      - "모집"
+      - "공고"
+      - "마감"
+      - "선정"
+      - "접수기간"
+      - "신청기간"
+      - "상시신청"
+      - "모집공고"
