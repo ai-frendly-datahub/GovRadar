@@ -3,7 +3,7 @@ name: GovRadar Crawler
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 22 * * *"
+    - cron: '0 22 * * *'
 
 permissions:
   contents: write
@@ -47,7 +47,10 @@ jobs:
           pip install "radar-core @ git+https://github.com/ai-frendly-datahub/radar-core.git@main"
           pip install -r requirements.txt
 
-      - name: Run Radar
+      - name: Install Playwright Chromium
+        run: playwright install chromium
+
+      - name: Run GovRadar
         run: |
           python main.py --category "${{ env.RADAR_CATEGORY }}" --recent-days 7 --keep-days 90 --keep-raw-days 180 --keep-report-days 90 --snapshot-db --generate-report
 
@@ -93,7 +96,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: radar-db-${{ github.run_number }}
+          name: govradar-db-${{ github.run_number }}
           path: data/govradar_data.duckdb
           retention-days: 30
           if-no-files-found: ignore
@@ -102,7 +105,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: radar-reports-${{ github.run_number }}
+          name: govradar-reports-${{ github.run_number }}
           path: reports/
           retention-days: 30
           if-no-files-found: warn
