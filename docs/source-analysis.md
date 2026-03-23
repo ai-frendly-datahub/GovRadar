@@ -1,89 +1,237 @@
-# GovRadar 데이터소스 분석 보고서
+# GovRadar Browser Source Analysis (govsupport)
 
-분석일: 2026-03-17 (Playwright 전수 검증)
+Analysis timestamp: 2026-03-19 (Playwright MCP, 2.5s JS wait per source).
 
-## 전체 68개 소스 Playwright 스캔 결과
+Note: `GovRadar/config/categories/govsupport.yaml` currently contains **8** `collection_method: browser` sources (not 68). This document covers all browser sources present in that file.
 
-| # | 소스명 | HTTP | 셀렉터 | 아이템수 | 샘플 | 판정 |
-|---|--------|------|--------|---------|------|------|
-| 1 | 산업통상자원부 | 404 | — | — | — | ❌ URL변경 |
-| 2 | 과학기술정보통신부 | 200 | `dl dt` | 33 | 적극행정 알림/소식 | ✅ |
-| 3 | 국토교통부 | 200 | `table tbody tr` | 10 | 공동주택 공시가격(안) 열람 | ✅ |
-| 4 | 정부24 보조금 | 200 | `[class*=item]` | 36 | 내집마련 디딤돌 대출 | ✅ |
-| 5 | K-Startup(구) | 404 | — | — | — | ❌ URL변경 |
-| 6 | 소상공인시장진흥공단 | 200 | `table tbody tr` | 10 | 소상공인 재난지원금 환수 공시송달 | ✅ |
-| 7 | 서울시 지원사업 | 200 | `table tbody tr` | 10 | 고시공고 | ✅ |
-| 8 | KIAT | 404 | — | — | — | ❌ URL변경 |
-| 9 | 경기기업비서 | 200 | `li` | 72 | 성남시 베트남 국제 프리미엄 소비재전 | ✅ |
-| 10 | 경기도주식회사 | 200 | 커스텀 `li` | — | 진행중 2026-03-12 | ✅ |
-| 11 | 경기도일자리포털 | 200 | `li` | 121 | 기업&창업 지원 | ✅ |
-| 12 | 고양스타특업 | 200 | `dl dt` | 4 | 경기 스타트업 아카데미 글로벌 | ✅ |
-| 13 | 수원창업지원포털 | 200 | `li` | 13 | 공지사항 | ✅ |
-| 14 | 성남산업진흥원 | ERR | — | — | JS 에러 | ❌ 접근불가 |
-| 15 | 의정부 기업지원포털 | 200 | `[class*=item]` | 39 | 의정부시 기업지원 시책 안내 | ✅ |
-| 16 | 과천시 | 200 | `li` | 86 | 경기도 무역위기 대응 패키지 지원사업 | ✅ |
-| 17 | 시흥시산업진흥원 | 200 | `li` | 23 | 지원사업선정공고 | ✅ |
-| 18 | 시흥시 창업센터 | 200 | `[class*=item]` | 45 | 가상오피스 지원 운영 공고 | ✅ |
-| 19 | 용인시 | 200 | `[class*=item]` | 28 | 유관기관 사업공고 | ✅ |
-| 20 | 파주시 | 200 | `li` | 574 | 기업지원 사업공고 | ✅ |
-| 21 | 이천시 | ERR | — | — | SSL 인증서 | ❌ SSL |
-| 22 | 안성시 | 200 | `table tbody tr` | 10 | 바우덕이축제 | ✅ |
-| 23 | 김포시산업지원 | 200 | `li` | 75 | 김포시 기업 DB 보고서 | ✅ |
-| 24 | 화성시 | ERR | — | — | SSL 인증서 | ❌ SSL |
-| 25 | 연천군 | 200 | `[class*=item]` | 663 | 경기 스타트업 지원센터 상담기업 모집 | ✅ |
-| 26 | 가평군 기업지원 | 200 | `[class*=item]` | 784 | 관내 구인업체 현황 | ✅ |
-| 27 | 가평군 소상공인 | 200 | `[class*=item]` | 784 | 관내 구인업체 현황 | ✅ |
-| 28 | 서울시 소상공인 종합지원 | 200 | `li` | 60 | 2026 서울시 도시공간정책 국제컨퍼런스 | ✅ |
-| 29 | 인천광역시 | 200 | `li` | 74 | 온라인 기업지원사업신청 | ✅ |
-| 30 | 부산창업포털 | 200 | `[class*=item]` | 157 | 주 메뉴 바로가기 | ✅ |
-| 31 | 서울경제진흥원 | 200 | `li` | 80 | 카카오톡 알림신청 | ✅ |
-| 32 | 서울시 R&D 지원 | 200 | `table tbody tr` | 10 | 통합검색 | ✅ |
-| 33 | 인천창업플랫폼 | 200 | `li` | 6 | RAPTORS 스타트업 진출 세미나 | ✅ |
-| 34 | 광주광역시 | ERR | — | — | SSL 인증서 | ❌ SSL |
-| 35 | 대구광역시 창업플랫폼 | 200 | `table tbody tr` | 10 | 페이지 이동 | ✅ |
-| 36 | 대전광역시 | ERR | — | — | SSL 인증서 | ❌ SSL |
-| 37 | 세종특별자치시 | 404 | — | — | — | ❌ URL변경 |
-| 38 | 울산정보산업진흥원 | 200 | `none` | 0 | — | ⚠️ SPA |
-| 39 | 여수시 | 200 | `[class*=item]` | 13 | 공지사항 | ✅ |
-| 40 | 경상북도 | ERR | — | — | 컨텍스트 소멸 | ⚠️ 불안정 |
-| 41 | 경남창업포털 | 404 | — | — | — | ❌ URL변경 |
-| 42 | 강원지역산업진흥원 | ERR | — | — | 네비게이션 중단 | ⚠️ 불안정 |
-| 43 | 강원특별자치도경제진흥원 | ERR | — | — | 네비게이션 중단 | ⚠️ 불안정 |
-| 44 | 충청북도 시책사업 | ERR | — | — | 네비게이션 중단 | ⚠️ 불안정 |
-| 45 | 충청남도경제진흥원 | ERR | — | — | 네비게이션 중단 | ⚠️ 불안정 |
-| 46 | 전북 중소기업종합지원 | ERR | — | — | 네비게이션 중단 | ⚠️ 불안정 |
-| 47 | 전남창업지원플랫폼 | 200 | `table tbody tr` | 10 | 전남 농수산식품 세계 일류 상품화 지원 | ✅ |
-| 48 | 잇지제주 | 200 | `card` | 1961 | 공지사항 | ✅ |
-| 49 | 경남기업119 | 200 | `article` | 12 | 경상남도 지원사업 | ✅ |
-| 50 | 충청북도 도내시책사업 | 200 | `table tbody tr` | 15 | 청주시 수요맞춤형 글로벌마케팅 지원 | ✅ |
-| 51 | 전북경제통상진흥원 | 200 | `table tbody tr` | 20 | 미래산업 및 스타트업 지원 | ✅ |
-| 52 | 제주경제통상진흥원 | 403 | — | — | Forbidden | ❌ 접근차단 |
-| 53 | 기업마당 지원사업 | 200 | `table tbody tr` | 15 | 오픈소스 AI·SW 개발 지원사업 | ✅ |
-| 54 | 기업마당 행사정보 | 200 | `table tbody tr` | 15 | ISO심사원 취득 교육과정 | ✅ |
-| 55 | 소상공인24 | 200 | `li` | 85 | 지원사업 조회 및 신청 | ✅ |
-| 56 | K-Startup 진행중 | 200 | `li` | 26 | 중앙부처·지자체·공공기관 | ✅ |
-| 57 | 창업진흥원 KISED | 200 | `[class*=item]` | 109 | 2026년 중앙부처 및 지자체 창업지원사업 통합공고 | ✅ |
-| 58 | KOITA | 200 | `li` | 281 | 회원사 서비스 안내 | ✅ |
-| 59 | KOSME | 200 | `dl dt` | 106 | 중소벤처24 통합로그인 | ✅ |
-| 60 | 중소기업유통센터 | ERR | — | — | DNS 소멸 | ❌ DNS |
-| 61 | TIPA | 200 | `none` | 0 | 자주묻는질문 | ⚠️ SPA |
-| 62 | KOCCA | 200 | `li` | 14 | 유관기관 주요소식 | ✅ |
-| 63 | NIPA | 200 | `none` | 0 | — | ⚠️ SPA |
-| 64 | RIPC | 200 | `[class*=item]` | 37 | 지원사업 관리 | ✅ |
-| 65 | KISTA | 200 | `table tbody tr` | 10 | 한국특허전략개발원 네이버 블로그 | ✅ |
-| 66 | IP-NAVI | 200 | `[class*=item]` | 10 | NPE 정보·동향 | ✅ |
-| 67 | KEIT | 200 | `[class*=item]` | 3 | 사이트맵 바로가기 | ✅ |
-| 68 | 서울창업허브 | 200 | `[class*=item]` | 85 | 키친인큐베이터 개별·공유주방 23기 모집 | ✅ |
+| # | Source | Status | Selector | Items | Verdict |
+|---|--------|--------|----------|-------|---------|
+| 1 | 정부24 보조금 | 200 | ul[class*=list] li | 61 | FIX |
+| 2 | K-Startup | 404 | table tbody tr | 2 | DEAD |
+| 3 | 소상공인시장진흥공단 | 200 | table tbody tr | 10 | OK |
+| 4 | 산업통상자원부 | 404 | none | 0 | DEAD |
+| 5 | 과학기술정보통신부 | 200 | ul[class*=list] li | 29 | FIX |
+| 6 | 보조금24 | 200 | article | 3 | FIX |
+| 7 | 서울시 지원사업 | 200 | table tbody tr | 10 | FIX |
+| 8 | 경기도 지원사업 | 404 | none | 0 | DEAD |
 
-## 판정 요약
+## 1. 정부24 보조금
 
-| 판정 | 수 | 소스 |
-|------|---|------|
-| ✅ 정상 | 43 | DOM 구조 확인, 셀렉터 매핑 가능 |
-| ❌ URL변경 (404) | 6 | #1 산업부, #5 K-Startup구, #8 KIAT, #37 세종, #41 경남창업 |
-| ❌ SSL 인증서 | 4 | #21 이천, #24 화성, #34 광주, #36 대전 |
-| ❌ 접근차단 | 2 | #14 성남(JS에러), #52 제주(403) |
-| ❌ DNS 소멸 | 1 | #60 중소기업유통센터 |
-| ⚠️ SPA (렌더링 대기필요) | 3 | #38 울산, #61 TIPA, #63 NIPA |
-| ⚠️ 불안정 (간헐적) | 5 | #40 경북, #42 강원산업, #43 강원경제, #44 충북, #45 충남 |
-| ⚠️ 네비게이션 중단 | 1 | #46 전북 |
+| Field | Value |
+|---|---|
+| URL | https://www.gov.kr/portal/rcvfvrSvc/svcFind/svcSearchAll |
+| HTTP Status | 200 |
+| Page Title | 전체 혜택 \| 보조금24 \| 정부24 |
+| Body Size | 2708ch |
+| Best Selector | ul[class*=list] li:61 |
+| Article Selector | ul[class*=list] li |
+| Link Selector | a[href*='rcvfvrSvc/dtlEx'] |
+
+### Sample Data
+1. 내집마련 디딤돌 대출 → https://www.gov.kr/portal/rcvfvrSvc/dtlEx/B55140800003?administOrgCd=ALL
+2. 장기전세 주택공급 → https://www.gov.kr/portal/rcvfvrSvc/dtlEx/999000000024?administOrgCd=ALL
+3. 혜택 조회하기(보조금24) → https://www.gov.kr/portal/rcvfvrSvc/main
+
+### Issues
+- Anti-bot scripts and repeated telemetry calls observed in console.
+- Some links inside list blocks are hash/navigation links, not article detail links.
+
+### Recommended Config
+```yaml
+article_selector: "ul[class*=list] li"
+link_selector: "a[href*='rcvfvrSvc/dtlEx']"
+wait_for: "ul[class*=list] li"
+```
+
+## 6. K-Startup
+
+| Field | Value |
+|---|---|
+| URL | https://www.k-startup.go.kr/unifyinfo/info/openinfo/notice.do |
+| HTTP Status | 404 |
+| Page Title | 알림 |
+| Body Size | 25ch |
+| Best Selector | table tbody tr:2 |
+| Article Selector | table tbody tr |
+| Link Selector | td a[href] |
+
+### Sample Data
+1. (no usable article rows found) → -
+2. - → -
+
+### Issues
+- URL returns HTTP 404.
+- Page body is too small for crawling; only error/alert-type content detected.
+
+### Recommended Config
+```yaml
+article_selector: "table tbody tr"
+link_selector: "td a[href]"
+wait_for: "table tbody tr"
+```
+
+## 7. 소상공인시장진흥공단
+
+| Field | Value |
+|---|---|
+| URL | https://www.semas.or.kr/web/board/webBoardList.kmdc?bCd=1 |
+| HTTP Status | 200 |
+| Page Title | 알림마당 〉 공지사항 |
+| Body Size | 1026ch |
+| Best Selector | table tbody tr:10 |
+| Article Selector | table tbody tr |
+| Link Selector | td a[href] |
+
+### Sample Data
+1. 기업가형 소상공인 발굴 육성 → https://www.semas.or.kr/web/SUP01/SUP0122/SUP012201.kmdc
+2. 소상공인 맞춤형 성장 지원 → https://www.semas.or.kr/web/SUP01/SUP0123/SUP012304.kmdc
+3. 소상공인 재기 경영안정망 강화 → https://www.semas.or.kr/web/SUP01/SUP0117/SUP011702.kmdc
+
+### Issues
+- Main table structure is stable, but first-link extraction can pull service-navigation links depending on crawl context.
+- Several webfont decode warnings in console (non-fatal).
+
+### Recommended Config
+```yaml
+article_selector: "table tbody tr"
+link_selector: "td a[href]"
+wait_for: "table tbody tr"
+```
+
+## 8. 산업통상자원부
+
+| Field | Value |
+|---|---|
+| URL | https://www.motie.go.kr/motie/py/brf/motiebriefing/motiebriefingList.do |
+| HTTP Status | 404 |
+| Page Title | ERROR |
+| Body Size | 91ch |
+| Best Selector | none:0 |
+| Article Selector | (none) |
+| Link Selector | a[href] |
+
+### Sample Data
+1. 이전 페이지로 이동 → https://www.motie.go.kr/motie/py/brf/motiebriefing/motiebriefingList.do#
+2. - → -
+
+### Issues
+- URL returns HTTP 404.
+- No candidate article container matched in DOM.
+
+### Recommended Config
+```yaml
+article_selector: ""
+link_selector: "a[href]"
+wait_for: "body"
+```
+
+## 9. 과학기술정보통신부
+
+| Field | Value |
+|---|---|
+| URL | https://www.msit.go.kr/bbs/list.do?sCode=user&mPid=74&mId=99 |
+| HTTP Status | 200 |
+| Page Title | 통계정보 - 과학기술정보통신부 |
+| Body Size | 1399ch |
+| Best Selector | ul[class*=list] li:29 |
+| Article Selector | ul[class*=list] li |
+| Link Selector | ul[class*=list] li a[href] |
+
+### Sample Data
+1. 과학기술정보통신부 → https://www.msit.go.kr/index.do
+2. 적극행정 국민추천 → https://www.mpm.go.kr/proactivePublicService/recommand/intro/
+3. 청탁금지법 위반신고 → https://www.clean.go.kr/index.es?sid=a1
+
+### Issues
+- Current URL appears to be statistics/info page, not a clean announcement board.
+- Extracted links are mostly portal/service links, not post detail links.
+
+### Recommended Config
+```yaml
+article_selector: "ul[class*=list] li"
+link_selector: "ul[class*=list] li a[href]"
+wait_for: "ul[class*=list] li"
+```
+
+## 10. 보조금24
+
+| Field | Value |
+|---|---|
+| URL | https://www.gosims.go.kr/hg/hg001/retrieveSubsSrch.do |
+| HTTP Status | 200 |
+| Page Title | 홈 \| 보조금통합포털 |
+| Body Size | 1826ch |
+| Best Selector | article:3 |
+| Article Selector | article |
+| Link Selector | article a[href] |
+
+### Sample Data
+1. 보조금 통합포털 AI서비스에 문의하세요. → https://bojo-ai.clabi.co.kr/
+2. 크롬 브라우저 다운로드 → https://www.google.com/intl/ko_kr/chrome/
+3. 엣지 브라우저 다운로드 → https://www.microsoft.com/ko-kr/edge/download?form=MA13FJ
+
+### Issues
+- Landing page content is mostly portal/help/browser-compat links, not direct subsidy announcements.
+- Crawling announcement items likely requires additional navigation or form interaction.
+
+### Recommended Config
+```yaml
+article_selector: "article"
+link_selector: "article a[href]"
+wait_for: "article"
+```
+
+## 11. 서울시 지원사업
+
+| Field | Value |
+|---|---|
+| URL | https://www.seoul.go.kr/news/news_notice.do |
+| HTTP Status | 200 |
+| Page Title | 고시공고 \| 서울특별시 |
+| Body Size | 1282ch |
+| Best Selector | table tbody tr:10 |
+| Article Selector | table tbody tr |
+| Link Selector | td a[href] |
+
+### Sample Data
+1. 시정소식 문자알림서비스 → https://www.seoul.go.kr/seoul/smsAlarm/overView.do
+2. 서울시 정책 뉴스 → https://www.seoul.go.kr/seoul/mediahub.do
+3. 도시관리계획안 열람공고 → https://urban.seoul.go.kr/view/html/PMNU4010000000
+
+### Issues
+- Table row selector is valid, but first-link extraction can include related-service links.
+- Needs stricter link filter for post detail URLs only.
+
+### Recommended Config
+```yaml
+article_selector: "table tbody tr"
+link_selector: "td a[href*='/news/news_report.do'], td a[href*='/news/news_notice.do']"
+wait_for: "table tbody tr"
+```
+
+## 12. 경기도 지원사업
+
+| Field | Value |
+|---|---|
+| URL | https://www.gg.go.kr/bbs/boardList.do?bbsId=BBS_0000022&menuId=1535 |
+| HTTP Status | 404 |
+| Page Title | 경기도청 \| 페이지를 찾을 수 없습니다 |
+| Body Size | 60ch |
+| Best Selector | none:0 |
+| Article Selector | (none) |
+| Link Selector | a[href] |
+
+### Sample Data
+1. (no usable article rows found) → -
+2. - → -
+
+### Issues
+- URL returns HTTP 404.
+- No article containers matched from tested selector set.
+
+### Recommended Config
+```yaml
+article_selector: ""
+link_selector: "a[href]"
+wait_for: "body"
+```
