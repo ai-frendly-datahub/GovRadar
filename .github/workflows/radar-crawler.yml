@@ -3,7 +3,7 @@ name: GovRadar Crawler
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 22 * * *"  # Daily at 07:00 KST
+    - cron: '0 22 * * *'
 
 permissions:
   contents: write
@@ -46,10 +46,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install "radar-core @ git+https://github.com/ai-frendly-datahub/radar-core.git@main"
           pip install -r requirements.txt
-          pip install playwright
-          playwright install chromium
 
-      - name: Run Radar
+      - name: Install Playwright Chromium
+        run: playwright install chromium
+
+      - name: Run GovRadar
         run: |
           python main.py --category "${{ env.RADAR_CATEGORY }}" --recent-days 7 --keep-days 90 --keep-raw-days 180 --keep-report-days 90 --snapshot-db --generate-report
 
@@ -75,7 +76,7 @@ jobs:
       - name: Auto-commit data updates
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: update radar data [skip ci]"
+          commit_message: "chore: update GovRadar data [skip ci]"
           file_pattern: data/*.duckdb
           skip_fetch: false
           skip_checkout: false
@@ -88,15 +89,15 @@ jobs:
           publish_dir: ./reports
           user_name: github-actions[bot]
           user_email: github-actions[bot]@users.noreply.github.com
-          commit_message: "docs: update radar report"
+          commit_message: "docs: update GovRadar report"
           cname: ""  # Add custom domain if needed
 
       - name: Archive DuckDB (30-day backup)
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: radar-db-${{ github.run_number }}
-          path: data/radar_data.duckdb
+          name: govradar-db-${{ github.run_number }}
+          path: data/govradar_data.duckdb
           retention-days: 30
           if-no-files-found: ignore
 
@@ -104,7 +105,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: radar-reports-${{ github.run_number }}
+          name: govradar-reports-${{ github.run_number }}
           path: reports/
           retention-days: 30
           if-no-files-found: warn
@@ -122,8 +123,8 @@ jobs:
           if [ -f "reports/index.html" ]; then
             echo "✅ Report generated successfully" >> $GITHUB_STEP_SUMMARY
           fi
-          if [ -f "data/radar_data.duckdb" ]; then
-            SIZE=$(du -h data/radar_data.duckdb | cut -f1)
+          if [ -f "data/govradar_data.duckdb" ]; then
+            SIZE=$(du -h data/govradar_data.duckdb | cut -f1)
             echo "✅ Database backed up ($SIZE)" >> $GITHUB_STEP_SUMMARY
           fi
 
