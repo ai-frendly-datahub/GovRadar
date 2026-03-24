@@ -48,11 +48,11 @@ jobs:
           pip install -r requirements.txt
 
       - name: Install Playwright Chromium
-        run: playwright install chromium
+        run: python -m playwright install --with-deps chromium
 
       - name: Run GovRadar
         run: |
-          python main.py --category "${{ env.RADAR_CATEGORY }}" --recent-days 7 --keep-days 90 --keep-raw-days 180 --keep-report-days 90 --snapshot-db --generate-report
+          python main.py --category "${{ env.RADAR_CATEGORY }}" --recent-days 7 --keep-days 90 --snapshot-db
 
       - name: Generate index.html
         run: |
@@ -77,7 +77,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update GovRadar data [skip ci]"
-          file_pattern: data/*.duckdb
+          file_pattern: "data/ reports/*_summary.json"
           skip_fetch: false
           skip_checkout: false
 
