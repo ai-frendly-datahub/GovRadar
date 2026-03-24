@@ -16,6 +16,7 @@ from urllib3.util.retry import Retry
 
 from .models import Article, Source
 
+
 logger = structlog.get_logger()
 
 
