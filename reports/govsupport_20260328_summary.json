@@ -1,0 +1,33 @@
+{
+  "date": "2026-03-28",
+  "category": "govsupport",
+  "article_count": 72,
+  "source_count": 1,
+  "matched_count": 68,
+  "top_entities": [
+    {
+      "name": "Region",
+      "count": 95
+    },
+    {
+      "name": "TargetGroup",
+      "count": 84
+    },
+    {
+      "name": "Ministry",
+      "count": 49
+    },
+    {
+      "name": "ApplicationInfo",
+      "count": 49
+    },
+    {
+      "name": "SupportType",
+      "count": 34
+    }
+  ],
+  "sources": {
+    "정책브리핑": 72
+  },
+  "generated_at": "2026-03-28T07:31:23.345109+09:00"
+}
