@@ -132,6 +132,53 @@ sources:
       wait_for: ".board_list"
     trust_tier: "T1_authoritative"
 
+  # === Reddit 정부지원/창업 커뮤니티 ===
+  - name: "r/korea"
+    type: "rss"
+    url: "https://www.reddit.com/r/korea/.rss"
+
+  - name: "r/smallbusiness"
+    type: "rss"
+    url: "https://www.reddit.com/r/smallbusiness/.rss"
+
+  - name: "r/startups"
+    type: "rss"
+    url: "https://www.reddit.com/r/startups/.rss"
+
+  - name: "r/Entrepreneur"
+    type: "rss"
+    url: "https://www.reddit.com/r/Entrepreneur/.rss"
+
+  # === 국제 정부 지원 정보 ===
+  - name: "SBA US Small Business"
+    type: "rss"
+    url: "https://www.sba.gov/rss/all"
+
+  - name: "UK Business Support"
+    type: "rss"
+    url: "https://www.gov.uk/government/topics/business-and-enterprise.atom"
+
+  - name: "EU Funding & Tenders"
+    type: "rss"
+    url: "https://ec.europa.eu/info/funding-tenders_en/rss"
+
+  - name: "OECD SME Policy"
+    type: "rss"
+    url: "https://www.oecd.org/cfe/smes/rss.xml"
+
+  # === 창업/스타트업 뉴스 ===
+  - name: "TechCrunch Startups"
+    type: "rss"
+    url: "https://techcrunch.com/category/startups/feed/"
+
+  - name: "벤처스퀘어"
+    type: "rss"
+    url: "https://www.venturesquare.net/feed"
+
+  - name: "플래텀"
+    type: "rss"
+    url: "https://platum.kr/feed"
+
 entities:
   - name: "SupportType"
     keywords:
