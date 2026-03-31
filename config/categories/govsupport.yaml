@@ -96,6 +96,42 @@ sources:
     link_selector: "td a"
     trust_tier: "T2_expert"
 
+  # === 추가 부처 ===
+  - name: "행정안전부"
+    type: "javascript"
+    url: "https://www.mois.go.kr/frt/bbs/type010/commonSelectBoardList.do?bbsId=BBSMSTR_000000000006"
+    config:
+      wait_for: ".board_list"
+    trust_tier: "T1_authoritative"
+
+  - name: "보건복지부"
+    type: "javascript"
+    url: "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027"
+    config:
+      wait_for: "table"
+    trust_tier: "T1_authoritative"
+
+  - name: "금융위원회"
+    type: "javascript"
+    url: "https://www.fsc.go.kr/no010101"
+    config:
+      wait_for: ".board_list"
+    trust_tier: "T1_authoritative"
+
+  - name: "농림축산식품부"
+    type: "javascript"
+    url: "https://www.mafra.go.kr/bbs/mafra/68/list.do"
+    config:
+      wait_for: ".board_list"
+    trust_tier: "T1_authoritative"
+
+  - name: "국토교통부"
+    type: "javascript"
+    url: "https://www.molit.go.kr/USR/NEWS/m_71/lst.jsp"
+    config:
+      wait_for: ".board_list"
+    trust_tier: "T1_authoritative"
+
 entities:
   - name: "SupportType"
     keywords:
