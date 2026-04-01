@@ -1,0 +1,40 @@
+{
+  "date": "2026-04-02",
+  "category": "govsupport",
+  "article_count": 200,
+  "source_count": 8,
+  "matched_count": 76,
+  "top_entities": [
+    {
+      "name": "TargetGroup",
+      "count": 82
+    },
+    {
+      "name": "Region",
+      "count": 70
+    },
+    {
+      "name": "ApplicationInfo",
+      "count": 50
+    },
+    {
+      "name": "Ministry",
+      "count": 36
+    },
+    {
+      "name": "SupportType",
+      "count": 27
+    }
+  ],
+  "sources": {
+    "r/smallbusiness": 24,
+    "TechCrunch Startups": 18,
+    "r/Entrepreneur": 24,
+    "r/startups": 24,
+    "r/korea": 24,
+    "정책브리핑": 46,
+    "벤처스퀘어": 30,
+    "플래텀": 10
+  },
+  "generated_at": "2026-04-02T07:36:17.360606+09:00"
+}
