@@ -2,44 +2,47 @@
   "date": "2026-04-03",
   "category": "govsupport",
   "article_count": 200,
-  "source_count": 9,
-  "matched_count": 68,
+  "source_count": 12,
+  "matched_count": 76,
   "top_entities": [
     {
-      "name": "TargetGroup",
-      "count": 84
-    },
-    {
       "name": "Region",
-      "count": 57
+      "count": 66
     },
     {
-      "name": "ApplicationInfo",
-      "count": 46
+      "name": "TargetGroup",
+      "count": 51
     },
     {
       "name": "GovGeneral",
-      "count": 41
+      "count": 25
+    },
+    {
+      "name": "ApplicationInfo",
+      "count": 21
     },
     {
       "name": "Ministry",
-      "count": 33
+      "count": 16
     },
     {
       "name": "SupportType",
-      "count": 23
+      "count": 13
     }
   ],
   "sources": {
+    "한겨레 경제": 30,
+    "동아일보 경제": 30,
+    "SBS 뉴스 정치": 29,
+    "경향신문 경제": 30,
+    "매일경제 경제정책": 28,
+    "매일경제 정치": 4,
     "K-GAPI 공공API 현황분석": 23,
-    "TechCrunch Startups": 13,
-    "정책브리핑": 43,
-    "r/smallbusiness": 23,
-    "r/Entrepreneur": 24,
-    "r/startups": 23,
-    "r/korea": 18,
-    "벤처스퀘어": 25,
-    "플래텀": 8
+    "TechCrunch Startups": 4,
+    "정책브리핑": 13,
+    "r/smallbusiness": 5,
+    "r/Entrepreneur": 3,
+    "r/startups": 1
   },
-  "generated_at": "2026-04-03T08:52:59.957171+09:00"
+  "generated_at": "2026-04-03T10:03:26.899927+09:00"
 }
