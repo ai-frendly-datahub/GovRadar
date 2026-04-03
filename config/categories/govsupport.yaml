@@ -159,6 +159,61 @@ sources:
   type: rss
   url: https://techcrunch.com/category/startups/feed/
 
+# === 한국 주요 언론사 정책/경제 RSS (2026-04-03 추가) ===
+- name: 한국경제 경제
+  type: rss
+  url: https://www.hankyung.com/feed/economy
+  trust_tier: T2_expert
+  description: "한국경제 경제 섹션 - 정책, 지원사업, 경제정책 뉴스"
+
+- name: 한국경제 정치
+  type: rss
+  url: https://www.hankyung.com/feed/politics
+  trust_tier: T2_expert
+  description: "한국경제 정치 섹션 - 정부정책, 입법 동향"
+
+- name: 매일경제 정치
+  type: rss
+  url: https://www.mk.co.kr/rss/30200030/
+  trust_tier: T2_expert
+  description: "매일경제 정치 섹션 - 정부정책, 행정 뉴스"
+
+- name: 매일경제 경제정책
+  type: rss
+  url: https://www.mk.co.kr/rss/30100041/
+  trust_tier: T2_expert
+  description: "매일경제 경제정책 - 금융정책, 지원사업 뉴스"
+
+- name: 동아일보 경제
+  type: rss
+  url: https://rss.donga.com/economy.xml
+  trust_tier: T2_expert
+  description: "동아일보 경제 섹션 - 정부지원, 경제정책 뉴스"
+
+- name: 경향신문 경제
+  type: rss
+  url: https://www.khan.co.kr/rss/rssdata/economy_news.xml
+  trust_tier: T2_expert
+  description: "경향신문 경제 섹션 - 생활경제, 정책 뉴스"
+
+- name: 한겨레 경제
+  type: rss
+  url: https://www.hani.co.kr/rss/economy/
+  trust_tier: T2_expert
+  description: "한겨레 경제 섹션 - 경제정책, 금융 뉴스"
+
+- name: 서울경제 경제
+  type: rss
+  url: https://www.sedaily.com/RSS/Economy/
+  trust_tier: T2_expert
+  description: "서울경제 경제 섹션 - 경제정책, 산업정책 뉴스"
+
+- name: SBS 뉴스 정치
+  type: rss
+  url: https://news.sbs.co.kr/news/SectionRssFeed.do?sectionId=01&plink=RSSREADER
+  trust_tier: T2_expert
+  description: "SBS 정치 섹션 - 정부정책, 국회 동향"
+
 # === 공공데이터/API 품질 분석 ===
 - name: K-GAPI 공공API 현황분석
   type: rss
