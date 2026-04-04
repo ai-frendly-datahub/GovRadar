@@ -1,0 +1,45 @@
+{
+  "date": "2026-04-05",
+  "category": "govsupport",
+  "article_count": 200,
+  "source_count": 9,
+  "matched_count": 77,
+  "top_entities": [
+    {
+      "name": "Region",
+      "count": 74
+    },
+    {
+      "name": "TargetGroup",
+      "count": 27
+    },
+    {
+      "name": "ApplicationInfo",
+      "count": 18
+    },
+    {
+      "name": "SupportType",
+      "count": 12
+    },
+    {
+      "name": "Ministry",
+      "count": 9
+    },
+    {
+      "name": "GovGeneral",
+      "count": 9
+    }
+  ],
+  "sources": {
+    "한겨레 경제": 54,
+    "SBS 뉴스 정치": 33,
+    "TechCrunch Startups": 5,
+    "경향신문 경제": 28,
+    "동아일보 경제": 44,
+    "K-GAPI 공공API 현황분석": 5,
+    "매일경제 경제정책": 21,
+    "매일경제 정치": 1,
+    "정책브리핑": 9
+  },
+  "generated_at": "2026-04-05T07:28:42.923257+09:00"
+}
