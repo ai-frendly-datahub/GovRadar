@@ -288,6 +288,23 @@ entities:
   - 감면
   - subsidy
   - grant
+  # 2026-04-06: 매칭률 개선을 위한 키워드 보강
+  - allowance
+  - voucher
+  - rebate
+  - incentive
+  - funding
+  - assistance
+  - welfare
+  - benefit
+  - 지원
+  - 혜택
+  - 지원제도
+  - 정책자금
+  - 사업비
+  - 운영비
+  - 인건비
+  - 시설비
 - name: TargetGroup
   keywords:
   - 소상공인
@@ -306,6 +323,23 @@ entities:
   - 임산부
   - 어르신
   - 기업
+  # 2026-04-06: 매칭률 개선을 위한 키워드 보강
+  - 대학생
+  - 구직자
+  - 실직자
+  - 군인
+  - 재향군인
+  - 여성
+  - 다문화
+  - 북한이탈주민
+  - 특수형태근로
+  - 프리랜서
+  - 1인기업
+  - 예비창업자
+  - small business
+  - startup
+  - entrepreneur
+  - eligible
 - name: Ministry
   keywords:
   - 고용노동부
@@ -320,6 +354,22 @@ entities:
   - 여성가족부
   - 환경부
   - 국세청
+  # 2026-04-06: 매칭률 개선을 위한 키워드 보강
+  - 행정안전부
+  - 법무부
+  - 외교부
+  - 통일부
+  - 국방부
+  - 문화체육관광부
+  - 해양수산부
+  - 금융위원회
+  - 공정거래위원회
+  - 방송통신위원회
+  - 국민권익위원회
+  - 개인정보보호위원회
+  - 기상청
+  - 특허청
+  - 통계청
 - name: Region
   keywords:
   - 서울
@@ -351,6 +401,24 @@ entities:
   - 신청기간
   - 상시신청
   - 모집공고
+  # 2026-04-06: 매칭률 개선을 위한 키워드 보강
+  - 안내
+  - 공지
+  - 발표
+  - 결과
+  - 선발
+  - 추가모집
+  - 연장
+  - 재공고
+  - 변경공고
+  - 심사
+  - 평가
+  - 심의
+  - 서류
+  - 면접
+  - application
+  - deadline
+  - announcement
 - name: GovGeneral
   display_name: 일반
   keywords:
@@ -403,3 +471,43 @@ entities:
   - startup support
   - eligibility criteria
   - application deadline
+  # 2026-04-06: 매칭률 개선을 위한 키워드 보강
+  # 정책/법률 관련
+  - 정책
+  - 규제
+  - 법안
+  - 법률
+  - 시행령
+  - 고시
+  - 지침
+  - 규정
+  - 개정
+  - 공포
+  - 시행
+  - policy
+  - regulation
+  - legislation
+  - funding
+  - program
+  - initiative
+  # 예산/재정 관련
+  - 예산
+  - 재정
+  - 국고
+  - 세출
+  - 배정
+  - 집행
+  - 편성
+  - budget
+  - appropriation
+  - fiscal
+  # 추가 지원 용어
+  - 복지
+  - 혜택
+  - 서비스
+  - 제도
+  - 프로그램
+  - welfare
+  - benefit
+  - assistance
+  - support
