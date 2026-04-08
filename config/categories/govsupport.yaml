@@ -2,19 +2,25 @@ category_name: govsupport
 display_name: 한국 정부지원 레이더
 sources:
 - name: 정부24 보조금
-  type: rss
+  type: javascript
   url: https://www.gov.kr/portal/rcvfvrSvc/svcFind/svcSearchAll
-  collection_method: browser
-  wait_for: .svc-list
-  article_selector: .svc-list > div
-  link_selector: a[href*='rcvfvrSvc']
-  title_selector: a[href*='rcvfvrSvc']
-  summary_selector: p
+  language: ko
+  country: KR
   trust_tier: T1_authoritative
+  collection_tier: C3_javascript
+  config:
+    wait_for: .svc-list
+    article_selector: .svc-list > div
+    link_selector: a[href*='rcvfvrSvc']
+    title_selector: a[href*='rcvfvrSvc']
+    summary_selector: p
 - name: 정책브리핑
   type: rss
   url: https://www.korea.kr/rss/policy.xml
+  language: ko
+  country: KR
   trust_tier: T1_authoritative
+  collection_tier: C1_rss
 # NOTE: 2026-04-02 테스트에서 동작하지 않음 (TIMEOUT)
 # - name: 고용노동부
 #   type: rss
@@ -40,13 +46,16 @@ sources:
 #   link_selector: td a
 #   trust_tier: T2_expert
 - name: 소상공인시장진흥공단
-  type: rss
+  type: javascript
   url: https://www.semas.or.kr/web/board/webBoardList.kmdc?bCd=1
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
+  language: ko
+  country: KR
   trust_tier: T2_expert
+  collection_tier: C3_javascript
+  config:
+    wait_for: table
+    article_selector: table tbody tr
+    link_selector: td a
 # NOTE: 2026-04-02 테스트에서 동작하지 않음 (404)
 # - name: 산업통상자원부
 #   type: rss
@@ -75,13 +84,16 @@ sources:
 #   link_selector: a
 #   trust_tier: T1_authoritative
 - name: 서울시 지원사업
-  type: rss
+  type: javascript
   url: https://www.seoul.go.kr/news/news_notice.do
-  collection_method: browser
-  wait_for: table
-  article_selector: table tbody tr
-  link_selector: td a
+  language: ko
+  country: KR
   trust_tier: T2_expert
+  collection_tier: C3_javascript
+  config:
+    wait_for: table
+    article_selector: table tbody tr
+    link_selector: td a
 # NOTE: 2026-04-02 테스트에서 동작하지 않음 (404)
 # - name: 경기도 지원사업
 #   type: rss
@@ -95,49 +107,80 @@ sources:
 - name: 행정안전부
   type: javascript
   url: https://www.mois.go.kr/frt/bbs/type010/commonSelectBoardList.do?bbsId=BBSMSTR_000000000006
+  language: ko
+  country: KR
+  trust_tier: T1_authoritative
+  collection_tier: C3_javascript
   config:
     wait_for: .board_list
-  trust_tier: T1_authoritative
 - name: 보건복지부
   type: javascript
   url: https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027
+  language: ko
+  country: KR
+  trust_tier: T1_authoritative
+  collection_tier: C3_javascript
   config:
     wait_for: table
-  trust_tier: T1_authoritative
 - name: 금융위원회
   type: javascript
   url: https://www.fsc.go.kr/no010101
+  language: ko
+  country: KR
+  trust_tier: T1_authoritative
+  collection_tier: C3_javascript
   config:
     wait_for: .board_list
-  trust_tier: T1_authoritative
 - name: 농림축산식품부
   type: rss
   url: https://www.mafra.go.kr/bbs/home/792/rssList.do?row=50
+  language: ko
+  country: KR
   trust_tier: T1_authoritative
+  collection_tier: C1_rss
 # NOTE: TLS 1.2만 지원 (TLS 1.3 핸드셰이크 거부) - Playwright에서는 정상 작동
 - name: 국토교통부
   type: javascript
   url: https://www.molit.go.kr/USR/NEWS/m_71/lst.jsp
+  language: ko
+  country: KR
+  trust_tier: T1_authoritative
+  collection_tier: C3_javascript
   config:
     wait_for: .board_list
-  trust_tier: T1_authoritative
 # === Reddit 커뮤니티 (reddit type으로 변환) ===
 # NOTE: 2026-04-03 RSS 403 차단 → reddit type으로 변환하여 재활성화
 - name: r/korea
   type: reddit
   url: https://www.reddit.com/r/korea/
+  language: en
+  country: KR
+  trust_tier: T3_community
+  collection_tier: C2_api
 
 - name: r/smallbusiness
   type: reddit
   url: https://www.reddit.com/r/smallbusiness/
+  language: en
+  country: US
+  trust_tier: T3_community
+  collection_tier: C2_api
 
 - name: r/startups
   type: reddit
   url: https://www.reddit.com/r/startups/
+  language: en
+  country: US
+  trust_tier: T3_community
+  collection_tier: C2_api
 
 - name: r/Entrepreneur
   type: reddit
   url: https://www.reddit.com/r/Entrepreneur/
+  language: en
+  country: US
+  trust_tier: T3_community
+  collection_tier: C2_api
 # NOTE: 아래 소스들은 2026-04-02 테스트에서 동작하지 않음 (404/invalid feed)
 # - name: SBA US Small Business
 #   type: rss
@@ -158,73 +201,110 @@ sources:
 - name: TechCrunch Startups
   type: rss
   url: https://techcrunch.com/category/startups/feed/
+  language: en
+  country: US
+  trust_tier: T2_expert
+  collection_tier: C1_rss
 
 # === 한국 주요 언론사 정책/경제 RSS (2026-04-03 추가) ===
 - name: 한국경제 경제
   type: rss
   url: https://www.hankyung.com/feed/economy
+  language: ko
+  country: KR
   trust_tier: T2_expert
+  collection_tier: C1_rss
   description: "한국경제 경제 섹션 - 정책, 지원사업, 경제정책 뉴스"
 
 - name: 한국경제 정치
   type: rss
   url: https://www.hankyung.com/feed/politics
+  language: ko
+  country: KR
   trust_tier: T2_expert
+  collection_tier: C1_rss
   description: "한국경제 정치 섹션 - 정부정책, 입법 동향"
 
 - name: 매일경제 정치
   type: rss
   url: https://www.mk.co.kr/rss/30200030/
+  language: ko
+  country: KR
   trust_tier: T2_expert
+  collection_tier: C1_rss
   description: "매일경제 정치 섹션 - 정부정책, 행정 뉴스"
 
 - name: 매일경제 경제정책
   type: rss
   url: https://www.mk.co.kr/rss/30100041/
+  language: ko
+  country: KR
   trust_tier: T2_expert
+  collection_tier: C1_rss
   description: "매일경제 경제정책 - 금융정책, 지원사업 뉴스"
 
 - name: 동아일보 경제
   type: rss
   url: https://rss.donga.com/economy.xml
+  language: ko
+  country: KR
   trust_tier: T2_expert
+  collection_tier: C1_rss
   description: "동아일보 경제 섹션 - 정부지원, 경제정책 뉴스"
 
 - name: 경향신문 경제
   type: rss
   url: https://www.khan.co.kr/rss/rssdata/economy_news.xml
+  language: ko
+  country: KR
   trust_tier: T2_expert
+  collection_tier: C1_rss
   description: "경향신문 경제 섹션 - 생활경제, 정책 뉴스"
 
 - name: 한겨레 경제
   type: rss
   url: https://www.hani.co.kr/rss/economy/
+  language: ko
+  country: KR
   trust_tier: T2_expert
+  collection_tier: C1_rss
   description: "한겨레 경제 섹션 - 경제정책, 금융 뉴스"
 
 - name: 서울경제 경제
   type: rss
   url: https://www.sedaily.com/RSS/Economy/
+  language: ko
+  country: KR
   trust_tier: T2_expert
+  collection_tier: C1_rss
   description: "서울경제 경제 섹션 - 경제정책, 산업정책 뉴스"
 
 - name: SBS 뉴스 정치
   type: rss
   url: https://news.sbs.co.kr/news/SectionRssFeed.do?sectionId=01&plink=RSSREADER
+  language: ko
+  country: KR
   trust_tier: T2_expert
+  collection_tier: C1_rss
   description: "SBS 정치 섹션 - 정부정책, 국회 동향"
 
 # === 공공데이터/API 품질 분석 ===
 - name: K-GAPI 공공API 현황분석
   type: rss
   url: https://github.com/hollobit/K-GAPI/commits/main.atom
+  language: ko
+  country: KR
   trust_tier: T2_expert
+  collection_tier: C1_rss
   description: "대한민국 공공 Open API 현황 종합 분석 - 개발자 경험 및 AI 적합성 평가"
 
 - name: Awesome MCP Korea
   type: rss
   url: https://github.com/darjeeling/awesome-mcp-korea/commits/main.atom
+  language: ko
+  country: KR
   trust_tier: T2_expert
+  collection_tier: C1_rss
   description: "한국 생태계 MCP 서버 목록 - 법률, 커머스, 공공데이터, 금융, 부동산, 지도 등"
 # NOTE: 아래 소스들은 2026-04-02 테스트에서 동작하지 않음 (410/403)
 # - name: 벤처스퀘어
@@ -240,6 +320,10 @@ sources:
 - name: 국민연금 사업장 MCP
   type: mcp
   url: https://github.com/Koomook/data-go-mcp-servers
+  language: ko
+  country: KR
+  trust_tier: T1_authoritative
+  collection_tier: C2_api
   config:
     transport: stdio
     command: uvx
