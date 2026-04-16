@@ -1,0 +1,42 @@
+{
+  "date": "2026-04-17",
+  "category": "govsupport",
+  "article_count": 200,
+  "source_count": 6,
+  "matched_count": 180,
+  "top_entities": [
+    {
+      "name": "GovGeneral",
+      "count": 540
+    },
+    {
+      "name": "TargetGroup",
+      "count": 85
+    },
+    {
+      "name": "Region",
+      "count": 80
+    },
+    {
+      "name": "ApplicationInfo",
+      "count": 78
+    },
+    {
+      "name": "SupportType",
+      "count": 46
+    },
+    {
+      "name": "Ministry",
+      "count": 34
+    }
+  ],
+  "sources": {
+    "한겨레 경제": 52,
+    "TechCrunch Startups": 5,
+    "SBS 뉴스 정치": 35,
+    "동아일보 경제": 45,
+    "매일경제 경제정책": 28,
+    "경향신문 경제": 35
+  },
+  "generated_at": "2026-04-17T07:41:40.541298+09:00"
+}
