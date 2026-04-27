@@ -1,19 +1,108 @@
 category_name: govsupport
 display_name: 한국 정부지원 레이더
+data_quality:
+  priority: P0
+  primary_motion: conversion
+  weakest_dimension: operational_depth
+  quality_outputs:
+    freshness_report: reports/govsupport_quality.json
+    dated_freshness_report_pattern: reports/govsupport_YYYYMMDD_quality.json
+    tracked_event_models:
+      - support_program_notice
+      - application_deadline
+      - eligibility_rule
+      - selection_result
+  event_models:
+    support_program_notice:
+      fields: [program_id, program_title, agency, jurisdiction, support_type, support_amount, source_url, collected_at]
+      notes: "지원사업 공고 원문을 신청 가능성 판단의 primary evidence로 유지한다."
+    application_deadline:
+      fields: [program_id, application_start_date, application_deadline, selection_announcement_date, application_channel, source_url, collected_at]
+      notes: "접수 시작/마감/선정 발표일을 분리하고 마감일 파싱 실패 시 임의 추정하지 않는다."
+    eligibility_rule:
+      fields: [program_id, target_group, business_stage, industry, region, revenue_or_income_condition, employee_count_condition, source_url, collected_at]
+      notes: "대상자·업종·지역·규모 조건을 원문 URL로 추적 가능한 구조로 분리한다."
+    selection_result:
+      fields: [program_id, selection_result_date, selected_count, execution_amount, execution_period, source_url, collected_at]
+      notes: "선정 결과와 집행 실적은 공고/접수 이벤트와 별도 후행 검증 이벤트로 유지한다."
+  canonical_keys:
+    program:
+      fields: [agency, jurisdiction, normalized_program_title, announcement_date, source_url]
+      notes: "부처·지자체가 같은 이름의 사업을 공고할 수 있으므로 기관과 관할권을 key에 포함한다."
+    deadline:
+      fields: [program_id, application_deadline, application_channel, source_url]
+      notes: "마감 연장/재공고를 별도 이벤트로 추적하기 위한 key."
+    eligibility:
+      fields: [program_id, target_group, region, industry, business_stage]
+      notes: "신청 가능성 점수와 자격요건 extractor 검증용 key."
+  freshness_sla:
+    support_program_notice:
+      max_age_days: 2
+      event_date_field: published
+      observed_date_field: collected_at
+    application_deadline:
+      max_age_days: 1
+      event_date_field: application_deadline
+      observed_date_field: collected_at
+    eligibility_rule:
+      max_age_days: 2
+      event_date_field: published
+      observed_date_field: collected_at
+    selection_result:
+      max_age_days: 7
+      event_date_field: selection_result_date
+      observed_date_field: collected_at
+  quality_gates:
+    - "접수 시작/마감/선정 발표일을 별도 필드로 유지"
+    - "지원금 규모와 신청 자격은 원문 기준으로 trace 가능해야 함"
+    - "마감일 파싱 실패 시 경고를 남기고 임의 추정하지 않음"
+    - "선정 결과와 집행 실적은 공고 원문과 별도 후행 검증 source로 관리"
+source_backlog:
+  selection_result_candidates:
+    - id: kstartup_selection_results
+      name: "K-Startup 선정결과/사업공고"
+      url: https://www.k-startup.go.kr/unifyinfo/info/openinfo/notice.do
+      reason: "창업지원 사업의 접수/선정 결과 후행 검증 후보. 브라우저 fixture와 결과 발표일 parser 검증 후 활성화."
+      required_before_enable: [browser_fixture_test, selection_result_parser, evidence_url_check]
+    - id: subsidy24_execution_results
+      name: "보조금24/정부24 집행·선정 결과 후보"
+      url: https://www.gov.kr/portal/rcvfvrSvc/svcFind/svcSearchAll
+      reason: "기존 정부24 보조금 source와 program id를 연결해 선정/집행 후행 신호를 붙일 후보."
+      required_before_enable: [program_id_mapping, result_status_taxonomy, duplicate_notice_check]
+  eligibility_capability_candidates:
+    - id: nps_business_enrollment_mcp
+      name: "국민연금 사업장 MCP"
+      url: https://github.com/Koomook/data-go-mcp-servers
+      reason: "사업장 가입 여부 기반 자격검증 capability. 시간순 공고 source가 아니므로 integration_candidates에 유지."
+      required_before_enable: [api_key_scope_check, tool_contract_test, eligibility_workflow_mapping]
 sources:
 - name: 정부24 보조금
   type: javascript
   url: https://www.gov.kr/portal/rcvfvrSvc/svcFind/svcSearchAll
+  enabled: false
   language: ko
   country: KR
   trust_tier: T1_authoritative
   collection_tier: C3_javascript
+  content_type: subsidy_program_catalog
+  producer_role: government
+  info_purpose: [application, deadline, eligibility, support_program_notice, application_deadline, eligibility_rule, operational_event]
+  notes: "공식 보조금/지원사업 catalog. 신청 마감과 eligibility extractor의 primary source."
   config:
-    wait_for: .svc-list
-    article_selector: .svc-list > div
-    link_selector: a[href*='rcvfvrSvc']
-    title_selector: a[href*='rcvfvrSvc']
+    bypass_crawl_health: true
+    wait_for: body
+    article_selector: .card-box
+    link_selector: a.card-title
+    title_selector: a.card-title
     summary_selector: p
+    event_model: application_deadline
+    event_date_field: application_deadline
+    observed_date_field: collected_at
+    canonical_key_fields: [agency, jurisdiction, normalized_program_title, source_url]
+    status_fields: [application_start_date, application_deadline, selection_announcement_date]
+    freshness_sla_days: 1
+    skip_reason: "Browser probe returned the official anti-automation block page rather than service cards."
+    reenable_gate: "Re-enable only after a stable API/search endpoint or approved browser flow can return service cards without triggering access protection."
 - name: 정책브리핑
   type: rss
   url: https://www.korea.kr/rss/policy.xml
@@ -21,6 +110,16 @@ sources:
   country: KR
   trust_tier: T1_authoritative
   collection_tier: C1_rss
+  content_type: policy_notice
+  producer_role: government
+  info_purpose: [policy, guidance, announcement, support_program_notice]
+  notes: "정부 정책 발표와 지원사업 안내의 공식 해설 source. 신청 가능 상태 판단에는 보조 evidence로만 사용."
+  config:
+    event_model: support_program_notice
+    event_date_field: published
+    observed_date_field: collected_at
+    canonical_key_fields: [agency, normalized_program_title, source_url]
+    freshness_sla_days: 2
 # NOTE: 2026-04-02 테스트에서 동작하지 않음 (TIMEOUT)
 # - name: 고용노동부
 #   type: rss
@@ -52,10 +151,22 @@ sources:
   country: KR
   trust_tier: T2_expert
   collection_tier: C3_javascript
+  content_type: small_business_support_notice
+  producer_role: public-agency
+  info_purpose: [application, deadline, eligibility, support-program, application_deadline, eligibility_rule, operational_event]
+  notes: "소상공인 지원사업 공고 source. 사업자 대상 eligibility와 접수기간 추출 우선 대상."
   config:
-    wait_for: table
+    wait_for: table tbody tr
     article_selector: table tbody tr
     link_selector: td a
+    javascript_link_templates:
+      fncGoDetail: "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx={id}&pNm=BOA0101&eventMode="
+    event_model: eligibility_rule
+    event_date_field: published
+    observed_date_field: collected_at
+    canonical_key_fields: [agency, normalized_program_title, target_group, source_url]
+    status_fields: [application_deadline, eligibility_condition, support_amount]
+    freshness_sla_days: 1
 # NOTE: 2026-04-02 테스트에서 동작하지 않음 (404)
 # - name: 산업통상자원부
 #   type: rss
@@ -90,10 +201,25 @@ sources:
   country: KR
   trust_tier: T2_expert
   collection_tier: C3_javascript
+  content_type: local_support_notice
+  producer_role: local-government
+  info_purpose: [application, deadline, eligibility, support_program_notice, application_deadline, eligibility_rule, operational_event]
+  notes: "서울시 공고 기반 지역 지원사업 source. 지역 조건과 신청 가능 상태를 별도 추출한다."
   config:
     wait_for: table
     article_selector: table tbody tr
     link_selector: td a
+    javascript_link_templates:
+      fnTbbsView: "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo={id}"
+    fetch_detail: true
+    detail_wait_for: body
+    detail_content_selector: "#content"
+    event_model: application_deadline
+    event_date_field: application_deadline
+    observed_date_field: collected_at
+    canonical_key_fields: [jurisdiction, agency, normalized_program_title, source_url]
+    status_fields: [application_start_date, application_deadline, eligibility_condition]
+    freshness_sla_days: 1
 # NOTE: 2026-04-02 테스트에서 동작하지 않음 (404)
 # - name: 경기도 지원사업
 #   type: rss
@@ -106,13 +232,27 @@ sources:
 # NOTE: TLS 1.2만 지원 (TLS 1.3 핸드셰이크 거부) - Playwright에서는 정상 작동
 - name: 행정안전부
   type: javascript
-  url: https://www.mois.go.kr/frt/bbs/type010/commonSelectBoardList.do?bbsId=BBSMSTR_000000000006
+  url: https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardList.do?bbsId=BBSMSTR_000000000006
   language: ko
   country: KR
   trust_tier: T1_authoritative
   collection_tier: C3_javascript
+  content_type: ministry_notice
+  producer_role: government
+  info_purpose: [official_notice, support_program_notice, application_deadline, eligibility_rule]
+  notes: "중앙부처 공고/보도자료 source. 지원사업 공고는 deadline/eligibility 후보로 태깅한다."
   config:
-    wait_for: .board_list
+    wait_for: table.table_style1
+    article_selector: table.table_style1 tbody tr
+    link_selector: table.table_style1 tbody a[href*='commonSelectBoardArticle']
+    fetch_detail: true
+    detail_wait_for: body
+    detail_content_selector: "#contents"
+    event_model: support_program_notice
+    event_date_field: published
+    observed_date_field: collected_at
+    canonical_key_fields: [agency, normalized_program_title, source_url]
+    freshness_sla_days: 2
 - name: 보건복지부
   type: javascript
   url: https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027
@@ -120,8 +260,21 @@ sources:
   country: KR
   trust_tier: T1_authoritative
   collection_tier: C3_javascript
+  content_type: welfare_support_notice
+  producer_role: government
+  info_purpose: [official_notice, support_program_notice, application_deadline, eligibility_rule, operational_event]
+  notes: "복지 지원사업과 대상자 조건 추적 source. 신청 마감/대상자 조건 추출 후보."
   config:
     wait_for: table
+    link_selector: table tbody tr a
+    fetch_detail: true
+    detail_wait_for: body
+    detail_content_selector: ".board_view"
+    event_model: eligibility_rule
+    event_date_field: published
+    observed_date_field: collected_at
+    canonical_key_fields: [agency, target_group, normalized_program_title, source_url]
+    freshness_sla_days: 2
 - name: 금융위원회
   type: javascript
   url: https://www.fsc.go.kr/no010101
@@ -129,8 +282,24 @@ sources:
   country: KR
   trust_tier: T1_authoritative
   collection_tier: C3_javascript
+  content_type: financial_support_notice
+  producer_role: government
+  info_purpose: [official_notice, support_program_notice, application_deadline, eligibility_rule, operational_event]
+  notes: "금융 지원·대출·보증 정책 source. 지원금/대출 규모와 신청 대상 trace 후보."
   config:
-    wait_for: .board_list
+    bypass_crawl_health: true
+    wait_for: "[class*=board] a[href*='/no010101/']"
+    link_selector: "[class*=board] .subject a[href*='/no010101/']"
+    navigation_retries: 3
+    navigation_retry_delay_ms: 2000
+    fetch_detail: true
+    detail_wait_for: body
+    detail_content_selector: ".board-view-wrap"
+    event_model: eligibility_rule
+    event_date_field: published
+    observed_date_field: collected_at
+    canonical_key_fields: [agency, support_type, normalized_program_title, source_url]
+    freshness_sla_days: 2
 - name: 농림축산식품부
   type: rss
   url: https://www.mafra.go.kr/bbs/home/792/rssList.do?row=50
@@ -138,6 +307,16 @@ sources:
   country: KR
   trust_tier: T1_authoritative
   collection_tier: C1_rss
+  content_type: agriculture_support_notice
+  producer_role: government
+  info_purpose: [official_notice, support_program_notice, application_deadline, eligibility_rule, operational_event]
+  notes: "공식 부처 보도자료 feed. 현재 발행 품질은 broad ministry notice 중심이라 active eligibility source가 아니라 context layer로 유지한다."
+  config:
+    event_model: official_notice
+    event_date_field: published
+    observed_date_field: collected_at
+    canonical_key_fields: [agency, industry, region, normalized_program_title, source_url]
+    freshness_sla_days: 2
 # NOTE: TLS 1.2만 지원 (TLS 1.3 핸드셰이크 거부) - Playwright에서는 정상 작동
 - name: 국토교통부
   type: javascript
@@ -146,8 +325,22 @@ sources:
   country: KR
   trust_tier: T1_authoritative
   collection_tier: C3_javascript
+  content_type: housing_transport_support_notice
+  producer_role: government
+  info_purpose: [official_notice, support_program_notice, application_deadline, eligibility_rule, operational_event]
+  notes: "공식 부처 보도자료 page. 현재 상단 항목이 broad ministry notice 중심이라 active eligibility source가 아니라 context layer로 유지한다."
   config:
-    wait_for: .board_list
+    bypass_crawl_health: true
+    wait_for: body
+    link_selector: table tbody tr a
+    fetch_detail: true
+    detail_wait_for: body
+    detail_content_selector: "article"
+    event_model: official_notice
+    event_date_field: published
+    observed_date_field: collected_at
+    canonical_key_fields: [agency, region, normalized_program_title, source_url]
+    freshness_sla_days: 2
 # === Reddit 커뮤니티 (reddit type으로 변환) ===
 # NOTE: 2026-04-03 RSS 403 차단 → reddit type으로 변환하여 재활성화
 - name: r/korea
@@ -278,6 +471,8 @@ sources:
   trust_tier: T2_expert
   collection_tier: C1_rss
   description: "서울경제 경제 섹션 - 경제정책, 산업정책 뉴스"
+  config:
+    bypass_crawl_health: true
 
 - name: SBS 뉴스 정치
   type: rss
@@ -305,6 +500,8 @@ sources:
   country: KR
   trust_tier: T2_expert
   collection_tier: C1_rss
+  producer_role: community-curation
+  info_purpose: [api-ecosystem, agent-integration, public-data]
   description: "한국 생태계 MCP 서버 목록 - 법률, 커머스, 공공데이터, 금융, 부동산, 지도 등"
 # NOTE: 아래 소스들은 2026-04-02 테스트에서 동작하지 않음 (410/403)
 # - name: 벤처스퀘어
@@ -315,7 +512,7 @@ sources:
 #   type: rss
 #   url: https://platum.kr/feed
 
-# === MCP 서버 소스 (공공데이터) ===
+integration_candidates:
 # NOTE: data-go-mcp-servers는 워크스페이스 구조, 개별 패키지 사용
 - name: 국민연금 사업장 MCP
   type: mcp
@@ -324,6 +521,9 @@ sources:
   country: KR
   trust_tier: T1_authoritative
   collection_tier: C2_api
+  producer_role: public-data
+  info_purpose: [eligibility, business-verification, agent-integration]
+  notes: "사업장 가입 여부/기초 자격 검증용 capability 후보. 시간순 공고 피드가 아니므로 standard source pipeline에서는 제외"
   config:
     transport: stdio
     command: uvx
@@ -958,3 +1158,46 @@ entities:
   - import
   - inflation
   - interest rate
+
+- name: McpKoreaEcosystem
+  display_name: 한국 MCP 생태계
+  keywords:
+  - mcp
+  - model context protocol
+  - modelcontextprotocol
+  - awesome mcp korea
+  - ai agent
+  - ai 에이전트
+  - agent tooling
+  - tool calling
+  - 서버 연동
+  - 외부 도구 연동
+  - 공공 api
+  - 공공데이터
+  - open api
+  - public api
+  - data.go.kr
+  - 국가법령정보
+  - 법령정보
+  - 판례 검색
+  - dart
+  - krx
+  - pykrx
+  - 실거래가
+  - 청약홈
+  - 온비드
+  - 네이버 지도
+  - 카카오맵
+  - 기상청 api
+  - 관광공사 api
+  - kosis
+  - 서울시 공공데이터
+  - 표준국어대사전
+  - hwp 파싱
+  - hwpx
+  - dooray
+  - naver works
+  - mcp server
+  - mcp servers
+  - korean mcp
+  - korea-specific mcp

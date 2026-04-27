@@ -1,0 +1,84 @@
+{
+  "date": "2026-04-23",
+  "category": "govsupport",
+  "article_count": 47,
+  "source_count": 12,
+  "matched_count": 47,
+  "top_entities": [
+    {
+      "name": "GovGeneral",
+      "count": 508
+    },
+    {
+      "name": "ApplicationInfo",
+      "count": 115
+    },
+    {
+      "name": "TargetGroup",
+      "count": 104
+    },
+    {
+      "name": "SourceSignal",
+      "count": 89
+    },
+    {
+      "name": "SupportType",
+      "count": 70
+    },
+    {
+      "name": "Region",
+      "count": 56
+    },
+    {
+      "name": "Ministry",
+      "count": 48
+    },
+    {
+      "name": "OperationalEvent",
+      "count": 42
+    },
+    {
+      "name": "EligibilityRegion",
+      "count": 37
+    },
+    {
+      "name": "McpKoreaEcosystem",
+      "count": 30
+    },
+    {
+      "name": "EligibilityTargetGroup",
+      "count": 22
+    },
+    {
+      "name": "EligibilityIndustry",
+      "count": 20
+    },
+    {
+      "name": "ApplicationDeadline",
+      "count": 12
+    },
+    {
+      "name": "ApplicationStartDate",
+      "count": 10
+    },
+    {
+      "name": "EligibilityBusinessStage",
+      "count": 3
+    }
+  ],
+  "sources": {
+    "금융위원회": 2,
+    "보건복지부": 2,
+    "행정안전부": 2,
+    "서울시 지원사업": 2,
+    "소상공인시장진흥공단": 2,
+    "r/smallbusiness": 1,
+    "동아일보 경제": 4,
+    "SBS 뉴스 정치": 1,
+    "정책브리핑": 13,
+    "경향신문 경제": 1,
+    "매일경제 경제정책": 1,
+    "Awesome MCP Korea": 16
+  },
+  "generated_at": "2026-04-23T06:58:53.323529+09:00"
+}

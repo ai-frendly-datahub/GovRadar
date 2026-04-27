@@ -67,7 +67,7 @@ Repository = "https://github.com/ai-frendly-datahub/GovRadar"
 Issues = "https://github.com/ai-frendly-datahub/GovRadar/issues"
 
 [tool.setuptools.packages.find]
-include = ["govradar", "govradar.*"]
+include = ["govradar", "govradar.*", "radar", "radar.*"]
 
 [tool.setuptools.package-data]
 govradar = ["templates/**/*"]

@@ -1,0 +1,78 @@
+{
+  "date": "2026-04-13",
+  "category": "govsupport",
+  "article_count": 54,
+  "source_count": 6,
+  "matched_count": 54,
+  "top_entities": [
+    {
+      "name": "GovGeneral",
+      "count": 746
+    },
+    {
+      "name": "ApplicationInfo",
+      "count": 404
+    },
+    {
+      "name": "Region",
+      "count": 359
+    },
+    {
+      "name": "TargetGroup",
+      "count": 234
+    },
+    {
+      "name": "EligibilityRegion",
+      "count": 214
+    },
+    {
+      "name": "SourceSignal",
+      "count": 145
+    },
+    {
+      "name": "SupportType",
+      "count": 129
+    },
+    {
+      "name": "OperationalEvent",
+      "count": 74
+    },
+    {
+      "name": "Ministry",
+      "count": 45
+    },
+    {
+      "name": "EligibilityIndustry",
+      "count": 40
+    },
+    {
+      "name": "McpKoreaEcosystem",
+      "count": 31
+    },
+    {
+      "name": "EligibilityTargetGroup",
+      "count": 23
+    },
+    {
+      "name": "ApplicationStartDate",
+      "count": 21
+    },
+    {
+      "name": "ApplicationDeadline",
+      "count": 21
+    },
+    {
+      "name": "EligibilityBusinessStage",
+      "count": 1
+    }
+  ],
+  "sources": {
+    "행정안전부": 30,
+    "서울시 지원사업": 10,
+    "소상공인시장진흥공단": 10,
+    "정책브리핑": 2,
+    "경향신문 경제": 1,
+    "Awesome MCP Korea": 1
+  },
+  "generated_at": "2026-04-13T19:25:23.316006+09:00"
+}

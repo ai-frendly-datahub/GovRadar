@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import html
+import os
 import threading
 import time
 from concurrent.futures import Future, ThreadPoolExecutor
@@ -153,8 +154,11 @@ def _parse_rss_feed(
 def collect_sources(
     sources: list[Source],
     category: str = "",
+    limit_per_source: int = 30,
+    timeout: int = 30,
+    min_interval_per_host: float = 0.5,
     max_workers: int | None = None,
-) -> list[Article]:
+) -> tuple[list[Article], list[str]]:
     """Collect articles from multiple sources concurrently.
 
     Uses a 2-pass hybrid collection pattern:
@@ -168,42 +172,53 @@ def collect_sources(
     warning log entry so that RSS-only mode keeps working.
     """
     # --- Source splitting ---------------------------------------------------
-    rss_sources = [s for s in sources if s.type.lower() not in ("javascript", "browser")]
-    js_sources = [s for s in sources if s.type.lower() in ("javascript", "browser")]
+    enabled_sources = [source for source in sources if source.enabled]
+    rss_sources = [s for s in enabled_sources if s.type.lower() == "rss"]
+    js_sources = [
+        s
+        for s in enabled_sources
+        if s.type.lower() in ("javascript", "browser", "html", "js", "web")
+    ]
+    reddit_sources = [s for s in enabled_sources if s.type.lower() == "reddit"]
+    unsupported_sources = [
+        source
+        for source in enabled_sources
+        if source.type.lower() not in {"rss", "javascript", "browser", "html", "js", "web", "reddit"}
+    ]
 
     # --- Pass 1: RSS sources via ThreadPoolExecutor (parallel) --------------
     resolved_workers = _resolve_max_workers(max_workers)
-    rate_limiter = RateLimiter()
+    rate_limiter = RateLimiter(min_interval=min_interval_per_host)
 
     all_articles: list[Article] = []
-    errors: list[tuple[str, Exception]] = []
+    errors: list[str] = []
 
     def fetch_source(source: Source) -> list[Article]:
         try:
             rate_limiter.acquire()
-            articles = _parse_rss_feed(
-                source.url,
-                headers=source.headers,
-                timeout=30.0,
-            )
+            articles = _parse_rss_feed(source.url, timeout=float(timeout))
             for article in articles:
                 article.category = category
                 article.source = source.name
             return articles
         except Exception as e:
-            errors.append((source.name, e))
+            errors.append(f"{source.name}: {e}")
             return []
 
-    with ThreadPoolExecutor(max_workers=resolved_workers) as executor:
-        futures: list[Future[list[Article]]] = [
-            executor.submit(fetch_source, source) for source in rss_sources
-        ]
-        for future in futures:
-            try:
-                articles = future.result()
-                all_articles.extend(articles)
-            except Exception as e:
-                errors.append(("unknown", e))
+    if resolved_workers == 1:
+        for source in rss_sources:
+            all_articles.extend(fetch_source(source))
+    elif rss_sources:
+        with ThreadPoolExecutor(max_workers=resolved_workers) as executor:
+            futures: list[Future[list[Article]]] = [
+                executor.submit(fetch_source, source) for source in rss_sources
+            ]
+            for future in futures:
+                try:
+                    articles = future.result()
+                    all_articles.extend(articles)
+                except Exception as e:
+                    errors.append(f"unknown: {e}")
 
     if errors:
         logger.warning("collection_errors", errors=errors)
@@ -213,15 +228,53 @@ def collect_sources(
         try:
             from .browser_collector import collect_browser_sources
 
-            js_articles, js_errors = collect_browser_sources(js_sources, category)
+            js_articles, js_errors = collect_browser_sources(
+                js_sources,
+                category,
+                timeout=max(1_000, timeout * 1_000),
+            )
             all_articles.extend(js_articles)
             if js_errors:
+                errors.extend(js_errors)
                 logger.warning("browser_collection_errors", errors=js_errors)
         except ImportError:
+            errors.append(
+                f"Browser collection unavailable for {len(js_sources)} source(s). Install radar-core[browser]."
+            )
             logger.warning(
                 "playwright_unavailable",
                 js_source_count=len(js_sources),
                 hint="pip install 'radar-core[browser]'",
             )
 
-    return all_articles
+    if reddit_sources:
+        try:
+            from radar_core import collect_reddit_sources
+
+            reddit_articles, reddit_errors = collect_reddit_sources(
+                reddit_sources,
+                category=category,
+                limit=limit_per_source,
+                timeout=timeout,
+                health_db_path=os.environ.get("RADAR_CRAWL_HEALTH_DB_PATH"),
+            )
+            all_articles.extend(reddit_articles)
+            if reddit_errors:
+                logger.warning("reddit_collection_errors", errors=reddit_errors)
+                errors.extend(reddit_errors)
+        except ImportError:
+            errors.append(
+                f"Reddit collection unavailable for {len(reddit_sources)} source(s). Ensure radar-core reddit support is installed."
+            )
+            logger.warning(
+                "reddit_collector_unavailable",
+                reddit_source_count=len(reddit_sources),
+                hint="Ensure radar-core is installed with reddit support",
+            )
+
+    for source in unsupported_sources:
+        errors.append(
+            f"{source.name}: Source type '{source.type}' is cataloged but not collected by the standard pipeline"
+        )
+
+    return all_articles, errors

@@ -11,6 +11,7 @@ permissions:
   id-token: write
 
 env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
   RADAR_CATEGORY: govsupport
   TZ: Asia/Seoul
   PYTHON_VERSION: "3.11"
@@ -53,7 +54,7 @@ jobs:
 
       - name: Run GovRadar
         run: |
-          python main.py --category "${{ env.RADAR_CATEGORY }}" --recent-days 7 --keep-days 90 --snapshot-db
+          python main.py --category "${{ env.RADAR_CATEGORY }}" --recent-days 7 --keep-days 90 --keep-raw-days 180 --keep-report-days 90 --keep-snapshot-days 30 --snapshot-db
 
       - name: Generate index.html
         run: |
@@ -78,12 +79,12 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update GovRadar data [skip ci]"
-          file_pattern: "data/ reports/*_summary.json"
+          file_pattern: "data/*.duckdb data/raw/** data/daily/** reports/*.html reports/*_summary.json"
           skip_fetch: false
           skip_checkout: false
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
@@ -98,7 +99,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: govradar-db-${{ github.run_number }}
-          path: data/govradar_data.duckdb
+          path: |
+            data/govradar_data.duckdb
+            data/daily/
           retention-days: 30
           if-no-files-found: ignore
 

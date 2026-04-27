@@ -110,6 +110,25 @@ def test_cleanup_date_directories_missing_base_dir(tmp_path: Path) -> None:
     assert removed == 0
 
 
+def test_cleanup_dated_databases_removes_old_flat_files(tmp_path: Path) -> None:
+    from govradar.date_storage import cleanup_dated_databases
+
+    today = date(2026, 3, 13)
+    old_snapshot = tmp_path / "2025-12-03.duckdb"
+    old_snapshot.write_text("old")
+    recent_snapshot = tmp_path / "2026-03-11.duckdb"
+    recent_snapshot.write_text("recent")
+    ignored_file = tmp_path / "latest.duckdb"
+    ignored_file.write_text("ignored")
+
+    removed = cleanup_dated_databases(tmp_path, keep_days=30, today=today)
+
+    assert removed == 1
+    assert not old_snapshot.exists()
+    assert recent_snapshot.exists()
+    assert ignored_file.exists()
+
+
 def test_cleanup_dated_reports(tmp_path: Path) -> None:
     from govradar.date_storage import cleanup_dated_reports
 
@@ -178,16 +197,15 @@ def test_storage_cleanup_old_snapshots(tmp_path: Path) -> None:
     db_path = tmp_path / "data" / "radar_data.duckdb"
     storage = RadarStorage(db_path)
 
-    # given: old snapshot directory beyond keep_days
+    # given: old flat snapshot file beyond keep_days
     snapshot_root = db_path.parent / "daily"
     snapshot_root.mkdir(parents=True, exist_ok=True)
-    old_dir = snapshot_root / "2025-01-01"
-    old_dir.mkdir()
-    (old_dir / "data.txt").write_text("old")
+    old_snapshot = snapshot_root / "2025-01-01.duckdb"
+    old_snapshot.write_text("old")
 
     try:
         removed = storage.cleanup_old_snapshots(keep_days=30)
         assert removed == 1
-        assert not old_dir.exists()
+        assert not old_snapshot.exists()
     finally:
         storage.close()

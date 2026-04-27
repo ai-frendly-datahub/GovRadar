@@ -21,6 +21,7 @@ class _Article(Protocol):
     category: str
     matched_entities: dict[str, list[str]]
     collected_at: datetime | None
+    ontology: dict[str, object]
 
 
 class _ArticleCtor(Protocol):
@@ -35,6 +36,7 @@ class _ArticleCtor(Protocol):
         category: str,
         matched_entities: dict[str, list[str]] = ...,
         collected_at: datetime | None = ...,
+        ontology: dict[str, object] = ...,
     ) -> _Article: ...
 
 
@@ -42,6 +44,10 @@ class _RadarStorage(Protocol):
     def upsert_articles(self, articles: Iterable[_Article]) -> None: ...
 
     def recent_articles(
+        self, category: str, *, days: int = 7, limit: int = 200
+    ) -> list[_Article]: ...
+
+    def recent_articles_by_collected_at(
         self, category: str, *, days: int = 7, limit: int = 200
     ) -> list[_Article]: ...
 
@@ -67,6 +73,7 @@ def _make_article(
     source: str = "Example RSS",
     category: str = "tech",
     matched_entities: dict[str, list[str]] | None = None,
+    ontology: dict[str, object] | None = None,
 ) -> _Article:
     return Article(
         title=title,
@@ -76,6 +83,7 @@ def _make_article(
         source=source,
         category=category,
         matched_entities=matched_entities or {},
+        ontology=ontology or {},
     )
 
 
@@ -318,3 +326,30 @@ def test_storage_close_then_reuse_raises_error(tmp_duckdb: Path) -> None:
                 )
             ]
         )
+
+
+def test_recent_articles_by_collected_at_restores_ontology_metadata(
+    tmp_storage: object,
+) -> None:
+    storage = cast(_RadarStorage, tmp_storage)
+    article = _make_article(
+        title="Ontology",
+        link="https://example.com/ontology",
+        summary="ontology metadata",
+        published=datetime.now(UTC) - timedelta(days=45),
+        ontology={
+            "repo": "GovRadar",
+            "event_model_id": "govsupport.application_deadline",
+            "source_role_id": "operational_evidence",
+        },
+    )
+
+    storage.upsert_articles([article])
+    results = storage.recent_articles_by_collected_at(category="tech", days=7)
+
+    assert len(results) == 1
+    assert results[0].ontology == {
+        "repo": "GovRadar",
+        "event_model_id": "govsupport.application_deadline",
+        "source_role_id": "operational_evidence",
+    }

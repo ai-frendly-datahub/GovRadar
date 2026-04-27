@@ -8,14 +8,19 @@ from typing import Any, cast
 from radar_core.analyzer import apply_entity_rules
 from radar_core.collector import collect_sources
 from radar_core.config_loader import load_category_config, load_settings
-from radar_core.models import Article
+from radar_core.ontology import annotate_articles_with_ontology
 from radar_core.raw_logger import RawLogger
 from radar_core.search_index import SearchIndex
 
 from govradar.common.validators import validate_article
+from govradar.config_loader import load_category_quality_config
 from govradar.date_storage import apply_date_storage_policy
+from govradar.models import Article, Source
+from govradar.quality_report import build_quality_report, write_quality_report
+from govradar.relevance import apply_source_context_entities, filter_relevant_articles
 from govradar.reporter import generate_index_html, generate_report
 from govradar.storage import RadarStorage
+from govradar.support_signals import enrich_support_operational_fields
 
 
 def _send_notifications(
@@ -85,17 +90,13 @@ def run(
     keep_days: int = 90,
     keep_raw_days: int = 180,
     keep_report_days: int = 90,
+    keep_snapshot_days: int = 30,
     snapshot_db: bool = False,
 ) -> Path:
     """Execute the lightweight collect -> analyze -> report pipeline."""
     settings = load_settings(config_path)
-    if config_path:
-        project_root = config_path.resolve().parent.parent
-        settings.database_path = project_root / "data" / "govradar_data.duckdb"
-        settings.report_dir = project_root / "reports"
-        settings.raw_data_dir = project_root / "data" / "raw"
-        settings.search_db_path = project_root / "data" / "search_index.db"
     category_cfg = load_category_config(category, categories_dir=categories_dir)
+    quality_cfg = load_category_quality_config(category, categories_dir=categories_dir)
 
     print(
         f"[Radar] Collecting '{category_cfg.display_name}' from {len(category_cfg.sources)} sources..."
@@ -108,6 +109,13 @@ def run(
         limit_per_source=per_source_limit,
         timeout=timeout,
     )
+    collected = annotate_articles_with_ontology(
+        collected,
+        repo_name="GovRadar",
+        sources_by_name={source.name: source for source in category_cfg.sources},
+        category_name=category_cfg.category_name,
+        search_from=Path(__file__),
+    )
 
     raw_logger = RawLogger(settings.raw_data_dir)
     for source in category_cfg.sources:
@@ -115,12 +123,16 @@ def run(
         if source_articles:
             _ = raw_logger.log(source_articles, source_name=source.name)
 
-    analyzed = apply_entity_rules(collected, category_cfg.entities)
+    analyzed = enrich_support_operational_fields(
+        apply_entity_rules(collected, category_cfg.entities)
+    )
+    classified = apply_source_context_entities(analyzed, category_cfg.sources)
+    scoped_articles = filter_relevant_articles(classified, category_cfg.sources)
 
     # Validate articles for data quality
     validated_articles: list[Article] = []
     validation_errors: list[str] = []
-    for article in analyzed:
+    for article in scoped_articles:
         is_valid, validation_msgs = validate_article(article)
         if is_valid:
             validated_articles.append(article)
@@ -138,18 +150,38 @@ def run(
         for article in validated_articles:
             search_idx.upsert(article.link, article.title, article.summary)
 
-    recent_articles: list[Article] = storage.recent_articles(
-        category_cfg.category_name, days=recent_days
+    recent_articles = _select_report_articles(
+        storage,
+        category_cfg.category_name,
+        recent_days=recent_days,
+        sources=category_cfg.sources,
     )
     storage.close()
 
+    matched_count = sum(1 for article in recent_articles if article.matched_entities)
+    source_count = len({article.source for article in recent_articles if article.source})
     stats: dict[str, int] = {
         "sources": len(category_cfg.sources),
-        "collected": len(collected),
-        "matched": sum(1 for a in collected if a.matched_entities),
+        "collected": len(recent_articles),
+        "matched": matched_count,
         "validated": len(validated_articles),
         "window_days": recent_days,
+        "article_count": len(recent_articles),
+        "source_count": source_count,
+        "matched_count": matched_count,
     }
+
+    quality_report = build_quality_report(
+        category=cast(Any, category_cfg),
+        articles=cast(Any, recent_articles),
+        errors=errors,
+        quality_config=quality_cfg,
+    )
+    quality_report_paths = write_quality_report(
+        quality_report,
+        output_dir=settings.report_dir,
+        category_name=category_cfg.category_name,
+    )
 
     output_path = settings.report_dir / f"{category_cfg.category_name}_report.html"
     _ = generate_report(
@@ -158,15 +190,18 @@ def run(
         output_path=output_path,
         stats=stats,
         errors=errors,
+        quality_report=quality_report,
     )
     _ = generate_index_html(settings.report_dir)
     print(f"[Radar] Report generated at {output_path}")
+    print(f"[Radar] Quality report generated at {quality_report_paths['latest']}")
     date_storage = apply_date_storage_policy(
         database_path=settings.database_path,
         raw_data_dir=settings.raw_data_dir,
         report_dir=settings.report_dir,
         keep_raw_days=keep_raw_days,
         keep_report_days=keep_report_days,
+        keep_snapshot_days=keep_snapshot_days,
         snapshot_db=snapshot_db,
     )
     snapshot_path = date_storage.get("snapshot_path")
@@ -185,6 +220,39 @@ def run(
     )
 
     return output_path
+
+
+def _select_report_articles(
+    storage: RadarStorage,
+    category: str,
+    *,
+    recent_days: int,
+    sources: list[Source] | None = None,
+) -> list[Article]:
+    published_articles = storage.recent_articles(category, days=recent_days, limit=1000)
+    collected_articles = storage.recent_articles_by_collected_at(
+        category,
+        days=recent_days,
+        limit=1000,
+    )
+    articles = _dedupe_articles([*published_articles, *collected_articles])
+    if sources is None:
+        return articles
+
+    scoped_articles = filter_relevant_articles(
+        apply_source_context_entities(articles, sources),
+        sources,
+    )
+    return scoped_articles or articles
+
+
+def _dedupe_articles(articles: list[Article]) -> list[Article]:
+    deduped: dict[str, Article] = {}
+    for article in articles:
+        key = article.link or f"{article.source}:{article.title}"
+        if key not in deduped:
+            deduped[key] = article
+    return list(deduped.values())
 
 
 def parse_args() -> argparse.Namespace:
@@ -215,6 +283,9 @@ def parse_args() -> argparse.Namespace:
     )
     _ = parser.add_argument(
         "--keep-report-days", type=int, default=90, help="Retention window for dated HTML reports"
+    )
+    _ = parser.add_argument(
+        "--keep-snapshot-days", type=int, default=30, help="Retention window for dated DuckDB snapshots"
     )
     _ = parser.add_argument(
         "--snapshot-db",
@@ -264,5 +335,6 @@ if __name__ == "__main__":
         keep_days=_to_int(args.get("keep_days"), 90),
         keep_raw_days=_to_int(args.get("keep_raw_days"), 180),
         keep_report_days=_to_int(args.get("keep_report_days"), 90),
+        keep_snapshot_days=_to_int(args.get("keep_snapshot_days"), 30),
         snapshot_db=bool(args.get("snapshot_db", False)),
     )

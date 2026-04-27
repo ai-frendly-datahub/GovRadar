@@ -1,0 +1,121 @@
+{
+  "date": "2026-04-24",
+  "category": "govsupport",
+  "article_count": 69,
+  "source_count": 14,
+  "matched_count": 69,
+  "top_entities": [
+    {
+      "name": "GovGeneral",
+      "count": 896
+    },
+    {
+      "name": "ApplicationInfo",
+      "count": 183
+    },
+    {
+      "name": "TargetGroup",
+      "count": 170
+    },
+    {
+      "name": "SourceSignal",
+      "count": 127
+    },
+    {
+      "name": "SupportType",
+      "count": 123
+    },
+    {
+      "name": "Region",
+      "count": 76
+    },
+    {
+      "name": "Ministry",
+      "count": 68
+    },
+    {
+      "name": "OperationalEvent",
+      "count": 63
+    },
+    {
+      "name": "EligibilityRegion",
+      "count": 54
+    },
+    {
+      "name": "EligibilityTargetGroup",
+      "count": 35
+    },
+    {
+      "name": "McpKoreaEcosystem",
+      "count": 35
+    },
+    {
+      "name": "EligibilityIndustry",
+      "count": 27
+    },
+    {
+      "name": "ApplicationDeadline",
+      "count": 18
+    },
+    {
+      "name": "ApplicationStartDate",
+      "count": 16
+    },
+    {
+      "name": "EligibilityBusinessStage",
+      "count": 4
+    }
+  ],
+  "sources": {
+    "한겨레 경제": 1,
+    "금융위원회": 6,
+    "보건복지부": 6,
+    "행정안전부": 4,
+    "소상공인시장진흥공단": 3,
+    "r/smallbusiness": 2,
+    "동아일보 경제": 5,
+    "r/Entrepreneur": 1,
+    "매일경제 경제정책": 2,
+    "서울시 지원사업": 2,
+    "정책브리핑": 19,
+    "SBS 뉴스 정치": 1,
+    "경향신문 경제": 1,
+    "Awesome MCP Korea": 16
+  },
+  "generated_at": "2026-04-24T05:35:06.182112+09:00",
+  "ontology": {
+    "repo": "GovRadar",
+    "category": "govsupport",
+    "ontology_version": "0.1.0",
+    "event_model_ids": [
+      "govsupport.application_deadline",
+      "govsupport.eligibility_rule",
+      "govsupport.selection_result",
+      "govsupport.support_program_notice"
+    ],
+    "event_model_mappings": {
+      "support_program_notice": "govsupport.support_program_notice",
+      "application_deadline": "govsupport.application_deadline",
+      "eligibility_rule": "govsupport.eligibility_rule",
+      "selection_result": "govsupport.selection_result"
+    },
+    "entity_type_hints": [
+      "program.support_program",
+      "organization.agency"
+    ],
+    "source_role_ids": [
+      "context_only",
+      "operational_evidence",
+      "primary_evidence"
+    ],
+    "source_role_mappings": {
+      "정책브리핑": "context_only",
+      "정부24 보조금": "primary_evidence",
+      "서울시 지원사업": "operational_evidence"
+    },
+    "evidence_policy_ids": [
+      "traceable_url_required",
+      "official_confirmation_required"
+    ]
+  }
+}
