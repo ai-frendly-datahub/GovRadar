@@ -66,4 +66,6 @@ def test_real_govsupport_sources_preserve_operational_metadata() -> None:
     assert "industry" in mofra.config["canonical_key_fields"]
 
     molit = sources["국토교통부"]
+    assert molit.enabled is False
     assert molit.config["event_model"] == "official_notice"
+    assert "resets connections" in molit.config["skip_reason"]

@@ -321,6 +321,7 @@ sources:
 - name: 국토교통부
   type: javascript
   url: https://www.molit.go.kr/USR/NEWS/m_71/lst.jsp
+  enabled: false
   language: ko
   country: KR
   trust_tier: T1_authoritative
@@ -328,7 +329,7 @@ sources:
   content_type: housing_transport_support_notice
   producer_role: government
   info_purpose: [official_notice, support_program_notice, application_deadline, eligibility_rule, operational_event]
-  notes: "공식 부처 보도자료 page. 현재 상단 항목이 broad ministry notice 중심이라 active eligibility source가 아니라 context layer로 유지한다."
+  notes: "공식 부처 보도자료 page. 2026-04-30 verification에서 browser/direct HTTP probes 모두 connection reset을 반환해 replacement feed 확인 전까지 disabled context layer로 유지한다."
   config:
     bypass_crawl_health: true
     wait_for: body
@@ -341,6 +342,8 @@ sources:
     observed_date_field: collected_at
     canonical_key_fields: [agency, region, normalized_program_title, source_url]
     freshness_sla_days: 2
+    skip_reason: "Official browser endpoint resets connections in the current collection runtime."
+    reenable_gate: "Re-enable after a stable RSS/API endpoint or approved browser flow returns notice links without connection resets."
 # === Reddit 커뮤니티 (reddit type으로 변환) ===
 # NOTE: 2026-04-03 RSS 403 차단 → reddit type으로 변환하여 재활성화
 - name: r/korea
