@@ -1,0 +1,108 @@
+{
+  "date": "2026-05-13",
+  "category": "govsupport",
+  "article_count": 44,
+  "source_count": 9,
+  "matched_count": 44,
+  "top_entities": [
+    {
+      "name": "GovGeneral",
+      "count": 685
+    },
+    {
+      "name": "TargetGroup",
+      "count": 147
+    },
+    {
+      "name": "ApplicationInfo",
+      "count": 99
+    },
+    {
+      "name": "SupportType",
+      "count": 97
+    },
+    {
+      "name": "SourceSignal",
+      "count": 94
+    },
+    {
+      "name": "Ministry",
+      "count": 52
+    },
+    {
+      "name": "Region",
+      "count": 50
+    },
+    {
+      "name": "OperationalEvent",
+      "count": 36
+    },
+    {
+      "name": "EligibilityRegion",
+      "count": 34
+    },
+    {
+      "name": "McpKoreaEcosystem",
+      "count": 32
+    },
+    {
+      "name": "EligibilityIndustry",
+      "count": 26
+    },
+    {
+      "name": "EligibilityTargetGroup",
+      "count": 25
+    },
+    {
+      "name": "ApplicationStartDate",
+      "count": 9
+    },
+    {
+      "name": "ApplicationDeadline",
+      "count": 9
+    },
+    {
+      "name": "EligibilityBusinessStage",
+      "count": 6
+    }
+  ],
+  "sources": {
+    "금융위원회": 8,
+    "보건복지부": 1,
+    "소상공인시장진흥공단": 1,
+    "동아일보 경제": 1,
+    "경향신문 경제": 1,
+    "정책브리핑": 14,
+    "매일경제 경제정책": 1,
+    "서울시 지원사업": 1,
+    "Awesome MCP Korea": 16
+  },
+  "generated_at": "2026-05-13T05:49:02.056978+09:00",
+  "articles": [
+    {
+      "event_model_payload": {
+        "source_url": "https://www.fsc.go.kr/no010101/86821?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt="
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.fsc.go.kr/no010101/86830?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt="
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.fsc.go.kr/no010101/86834?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt="
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457537"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148963920&call_from=rsslink"
+      }
+    }
+  ]
+}

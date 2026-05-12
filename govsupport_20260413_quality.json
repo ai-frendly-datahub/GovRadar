@@ -1,0 +1,2658 @@
+{
+  "category": "govsupport",
+  "generated_at": "2026-04-13T10:25:23.289695+00:00",
+  "summary": {
+    "total_sources": 25,
+    "tracked_sources": 9,
+    "fresh_sources": 3,
+    "stale_sources": 1,
+    "missing_sources": 5,
+    "missing_event_sources": 0,
+    "unknown_event_date_sources": 0,
+    "not_tracked_sources": 16,
+    "support_program_notice_events": 32,
+    "application_deadline_events": 21,
+    "eligibility_rule_events": 53,
+    "collection_error_count": 0
+  },
+  "sources": [
+    {
+      "source": "정부24 보조금",
+      "source_type": "javascript",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "application_deadline",
+      "freshness_sla_days": 1,
+      "status": "missing",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "errors": []
+    },
+    {
+      "source": "정책브리핑",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "support_program_notice",
+      "freshness_sla_days": 2,
+      "status": "fresh",
+      "article_count": 2,
+      "event_count": 2,
+      "latest_event_at": "2026-04-13T00:02:00+00:00",
+      "age_days": 0.43,
+      "latest_title": "\"중동전쟁은 건설현장에 불가항력\"…'책임준공' 연장사유 인정",
+      "latest_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148962571&call_from=rsslink",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "source_type": "javascript",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "eligibility_rule",
+      "freshness_sla_days": 1,
+      "status": "fresh",
+      "article_count": 10,
+      "event_count": 10,
+      "latest_event_at": "2026-04-13T10:24:42.194135+00:00",
+      "age_days": 0.0,
+      "latest_title": "2026년 우리동네 크라우드펀딩 지원사업 소상공인 모집 공고",
+      "latest_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=52953&pNm=BOA0101&eventMode=",
+      "latest_application_deadline": "2026-03-30",
+      "latest_eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업"
+        ],
+        "Industry": [
+          "관광"
+        ],
+        "Region": [
+          "서울",
+          "경기",
+          "부산",
+          "대구",
+          "광주",
+          "대전",
+          "울산",
+          "세종",
+          "강원",
+          "충남",
+          "전남",
+          "경북",
+          "제주"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "source": "서울시 지원사업",
+      "source_type": "javascript",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "application_deadline",
+      "freshness_sla_days": 1,
+      "status": "stale",
+      "article_count": 10,
+      "event_count": 10,
+      "latest_event_at": "2026-02-12T00:00:00+00:00",
+      "age_days": 60.43,
+      "latest_title": "종합건설사업자 행정처분(등록말소) 공고(제2026-1237호)",
+      "latest_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456112",
+      "latest_application_deadline": "2026-02-12",
+      "latest_eligibility_fields": {
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "source": "행정안전부",
+      "source_type": "javascript",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "support_program_notice",
+      "freshness_sla_days": 2,
+      "status": "fresh",
+      "article_count": 30,
+      "event_count": 30,
+      "latest_event_at": "2026-04-13T10:24:50.797522+00:00",
+      "age_days": 0.0,
+      "latest_title": "거제시 보건소장(개방형직위) 임용시험 시행계획 재공고",
+      "latest_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=9xEbZoIh1cGY6LQcD1JjsAjx8J2NtzysBHoS_9Ls.node20?bbsId=BBSMSTR_000000000006&nttId=125015",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      },
+      "errors": []
+    },
+    {
+      "source": "보건복지부",
+      "source_type": "javascript",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "eligibility_rule",
+      "freshness_sla_days": 2,
+      "status": "missing",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "errors": []
+    },
+    {
+      "source": "금융위원회",
+      "source_type": "javascript",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "eligibility_rule",
+      "freshness_sla_days": 2,
+      "status": "missing",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "errors": []
+    },
+    {
+      "source": "농림축산식품부",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "eligibility_rule",
+      "freshness_sla_days": 2,
+      "status": "missing",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "errors": []
+    },
+    {
+      "source": "국토교통부",
+      "source_type": "javascript",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "eligibility_rule",
+      "freshness_sla_days": 2,
+      "status": "missing",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "errors": []
+    },
+    {
+      "source": "r/korea",
+      "source_type": "reddit",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "errors": []
+    },
+    {
+      "source": "r/smallbusiness",
+      "source_type": "reddit",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "errors": []
+    },
+    {
+      "source": "r/startups",
+      "source_type": "reddit",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "errors": []
+    },
+    {
+      "source": "r/Entrepreneur",
+      "source_type": "reddit",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "errors": []
+    },
+    {
+      "source": "TechCrunch Startups",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "errors": []
+    },
+    {
+      "source": "한국경제 경제",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "errors": []
+    },
+    {
+      "source": "한국경제 정치",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "errors": []
+    },
+    {
+      "source": "매일경제 정치",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "errors": []
+    },
+    {
+      "source": "매일경제 경제정책",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "errors": []
+    },
+    {
+      "source": "동아일보 경제",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "errors": []
+    },
+    {
+      "source": "경향신문 경제",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 1,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "errors": []
+    },
+    {
+      "source": "한겨레 경제",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "errors": []
+    },
+    {
+      "source": "서울경제 경제",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "errors": []
+    },
+    {
+      "source": "SBS 뉴스 정치",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "errors": []
+    },
+    {
+      "source": "K-GAPI 공공API 현황분석",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "errors": []
+    },
+    {
+      "source": "Awesome MCP Korea",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 1,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "errors": []
+    }
+  ],
+  "events": [
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "거제시 보건소장(개방형직위) 임용시험 시행계획 재공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=9xEbZoIh1cGY6LQcD1JjsAjx8J2NtzysBHoS_9Ls.node20?bbsId=BBSMSTR_000000000006&nttId=125015",
+      "event_at": "2026-04-13T10:24:50.797522+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "거제시 보건소장(개방형직위) 임용시험 시행계획 재공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=9xEbZoIh1cGY6LQcD1JjsAjx8J2NtzysBHoS_9Ls.node20?bbsId=BBSMSTR_000000000006&nttId=125015",
+      "event_at": "2026-04-13T10:24:50.797522+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "2026년 제1차 지방공무원 행정안전부 전입시험 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=9xEbZoIh1cGY6LQcD1JjsAjx8J2NtzysBHoS_9Ls.node20?bbsId=BBSMSTR_000000000006&nttId=125024",
+      "event_at": "2026-04-13T10:24:50.797486+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "2026년 제1차 지방공무원 행정안전부 전입시험 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=9xEbZoIh1cGY6LQcD1JjsAjx8J2NtzysBHoS_9Ls.node20?bbsId=BBSMSTR_000000000006&nttId=125024",
+      "event_at": "2026-04-13T10:24:50.797486+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "「2026 대한민국 정부 박람회」행사 대행 용역 제안서 기술평가 결과",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=9xEbZoIh1cGY6LQcD1JjsAjx8J2NtzysBHoS_9Ls.node20?bbsId=BBSMSTR_000000000006&nttId=125054",
+      "event_at": "2026-04-13T10:24:50.797477+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "「2026 대한민국 정부 박람회」행사 대행 용역 제안서 기술평가 결과",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=9xEbZoIh1cGY6LQcD1JjsAjx8J2NtzysBHoS_9Ls.node20?bbsId=BBSMSTR_000000000006&nttId=125054",
+      "event_at": "2026-04-13T10:24:50.797477+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "제14회 범정부 공공데이터·AI 활용 창업경진대회 통합공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=9xEbZoIh1cGY6LQcD1JjsAjx8J2NtzysBHoS_9Ls.node20?bbsId=BBSMSTR_000000000006&nttId=125058",
+      "event_at": "2026-04-13T10:24:50.797468+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "제14회 범정부 공공데이터·AI 활용 창업경진대회 통합공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=9xEbZoIh1cGY6LQcD1JjsAjx8J2NtzysBHoS_9Ls.node20?bbsId=BBSMSTR_000000000006&nttId=125058",
+      "event_at": "2026-04-13T10:24:50.797468+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "초대형산불 피해지역 회복을 위한 지원 체계 고도화 및 세부 산정기준 연구 사업 제안서 기술평가 결과",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=9xEbZoIh1cGY6LQcD1JjsAjx8J2NtzysBHoS_9Ls.node20?bbsId=BBSMSTR_000000000006&nttId=125061",
+      "event_at": "2026-04-13T10:24:50.797458+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "초대형산불 피해지역 회복을 위한 지원 체계 고도화 및 세부 산정기준 연구 사업 제안서 기술평가 결과",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=9xEbZoIh1cGY6LQcD1JjsAjx8J2NtzysBHoS_9Ls.node20?bbsId=BBSMSTR_000000000006&nttId=125061",
+      "event_at": "2026-04-13T10:24:50.797458+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "2026년 제1회 남양주시 남양주풍양보건소장(개방형직위) 임용시험 시행계획 변경 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=9xEbZoIh1cGY6LQcD1JjsAjx8J2NtzysBHoS_9Ls.node20?bbsId=BBSMSTR_000000000006&nttId=125075",
+      "event_at": "2026-04-13T10:24:50.797443+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "2026년 제1회 남양주시 남양주풍양보건소장(개방형직위) 임용시험 시행계획 변경 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=9xEbZoIh1cGY6LQcD1JjsAjx8J2NtzysBHoS_9Ls.node20?bbsId=BBSMSTR_000000000006&nttId=125075",
+      "event_at": "2026-04-13T10:24:50.797443+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "행정안전부 임기제 공무원 경력경쟁채용시험 서류전형 합격자 및 면접일정 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=9xEbZoIh1cGY6LQcD1JjsAjx8J2NtzysBHoS_9Ls.node20?bbsId=BBSMSTR_000000000006&nttId=125090",
+      "event_at": "2026-04-13T10:24:50.797434+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "행정안전부 임기제 공무원 경력경쟁채용시험 서류전형 합격자 및 면접일정 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=9xEbZoIh1cGY6LQcD1JjsAjx8J2NtzysBHoS_9Ls.node20?bbsId=BBSMSTR_000000000006&nttId=125090",
+      "event_at": "2026-04-13T10:24:50.797434+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "기본사회위원회 기간제근로자 채용 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=9xEbZoIh1cGY6LQcD1JjsAjx8J2NtzysBHoS_9Ls.node20?bbsId=BBSMSTR_000000000006&nttId=125102",
+      "event_at": "2026-04-13T10:24:50.797424+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "기본사회위원회 기간제근로자 채용 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=9xEbZoIh1cGY6LQcD1JjsAjx8J2NtzysBHoS_9Ls.node20?bbsId=BBSMSTR_000000000006&nttId=125102",
+      "event_at": "2026-04-13T10:24:50.797424+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "행정안전부(국립재난안전연구원) 연구직 공무원 채용 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=9xEbZoIh1cGY6LQcD1JjsAjx8J2NtzysBHoS_9Ls.node20?bbsId=BBSMSTR_000000000006&nttId=125163",
+      "event_at": "2026-04-13T10:24:50.797413+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "행정안전부(국립재난안전연구원) 연구직 공무원 채용 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=9xEbZoIh1cGY6LQcD1JjsAjx8J2NtzysBHoS_9Ls.node20?bbsId=BBSMSTR_000000000006&nttId=125163",
+      "event_at": "2026-04-13T10:24:50.797413+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "서울시 은평병원 마약관리센터장(개방형직위) 임용시험 시행계획 재공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=9xEbZoIh1cGY6LQcD1JjsAjx8J2NtzysBHoS_9Ls.node20?bbsId=BBSMSTR_000000000006&nttId=125168",
+      "event_at": "2026-04-13T10:24:50.797392+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "서울시 은평병원 마약관리센터장(개방형직위) 임용시험 시행계획 재공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=9xEbZoIh1cGY6LQcD1JjsAjx8J2NtzysBHoS_9Ls.node20?bbsId=BBSMSTR_000000000006&nttId=125168",
+      "event_at": "2026-04-13T10:24:50.797392+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "종합건설사업자 행정처분(등록말소) 공고(제2026-1237호)",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456112",
+      "event_at": "2026-02-12T00:00:00+00:00",
+      "application_deadline": "2026-02-12",
+      "application_start_date": "2026-04-17",
+      "eligibility_fields": {
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "종합건설사업자 행정처분(등록말소) 공고(제2026-1237호)",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456112",
+      "event_at": "2026-04-13T10:24:46.837535+00:00",
+      "application_deadline": "2026-02-12",
+      "application_start_date": "2026-04-17",
+      "eligibility_fields": {
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "2026 평화문화진지 일대 공공미술 프로젝트 신진작가 공공미술 작품 공모(제2026-1241호)",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456117",
+      "event_at": "2026-02-12T00:00:00+00:00",
+      "application_deadline": "2026-02-12",
+      "application_start_date": "2026-04-17",
+      "eligibility_fields": {
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "2026 평화문화진지 일대 공공미술 프로젝트 신진작가 공공미술 작품 공모(제2026-1241호)",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456117",
+      "event_at": "2026-04-13T10:24:46.837529+00:00",
+      "application_deadline": "2026-02-12",
+      "application_start_date": "2026-04-17",
+      "eligibility_fields": {
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "2026 평화문화진지 일대 공공미술 프로젝트  대학생팀 공공미술 기획 공모(제2026-1242호)",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456119",
+      "event_at": "2026-02-12T00:00:00+00:00",
+      "application_deadline": "2026-02-12",
+      "application_start_date": "2026-04-17",
+      "eligibility_fields": {
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "2026 평화문화진지 일대 공공미술 프로젝트  대학생팀 공공미술 기획 공모(제2026-1242호)",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456119",
+      "event_at": "2026-04-13T10:24:46.837524+00:00",
+      "application_deadline": "2026-02-12",
+      "application_start_date": "2026-04-17",
+      "eligibility_fields": {
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "2026 평화문화진지 일대 공공미술 프로젝트  시민 아이디어 공모(제2026-1243호)",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456122",
+      "event_at": "2026-02-12T00:00:00+00:00",
+      "application_deadline": "2026-02-12",
+      "application_start_date": "2026-04-17",
+      "eligibility_fields": {
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "2026 평화문화진지 일대 공공미술 프로젝트  시민 아이디어 공모(제2026-1243호)",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456122",
+      "event_at": "2026-04-13T10:24:46.837519+00:00",
+      "application_deadline": "2026-02-12",
+      "application_start_date": "2026-04-17",
+      "eligibility_fields": {
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "- 서울시 자치구 재활용 분야 성과평가 수행 및 결과분석 용역 -  우선협상대상자 선정 결과 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456126",
+      "event_at": "2026-02-12T00:00:00+00:00",
+      "application_deadline": "2026-02-12",
+      "application_start_date": "2026-04-17",
+      "eligibility_fields": {
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "- 서울시 자치구 재활용 분야 성과평가 수행 및 결과분석 용역 -  우선협상대상자 선정 결과 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456126",
+      "event_at": "2026-04-13T10:24:46.837514+00:00",
+      "application_deadline": "2026-02-12",
+      "application_start_date": "2026-04-17",
+      "eligibility_fields": {
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "종합건설사업자 행정처분(과태료) 공고문(제2026-1253호)",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456136",
+      "event_at": "2026-02-12T00:00:00+00:00",
+      "application_deadline": "2026-02-12",
+      "application_start_date": "2026-04-17",
+      "eligibility_fields": {
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "종합건설사업자 행정처분(과태료) 공고문(제2026-1253호)",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456136",
+      "event_at": "2026-04-13T10:24:46.837507+00:00",
+      "application_deadline": "2026-02-12",
+      "application_start_date": "2026-04-17",
+      "eligibility_fields": {
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "종합건설사업자 행정처분(과태료) 공고문(제2026-1252호)",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456137",
+      "event_at": "2026-02-12T00:00:00+00:00",
+      "application_deadline": "2026-02-12",
+      "application_start_date": "2026-04-17",
+      "eligibility_fields": {
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "종합건설사업자 행정처분(과태료) 공고문(제2026-1252호)",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456137",
+      "event_at": "2026-04-13T10:24:46.837501+00:00",
+      "application_deadline": "2026-02-12",
+      "application_start_date": "2026-04-17",
+      "eligibility_fields": {
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "종합건설사업자 행정처분(과태료) 공고문(제2026-1255호)",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456144",
+      "event_at": "2026-02-12T00:00:00+00:00",
+      "application_deadline": "2026-02-12",
+      "application_start_date": "2026-04-17",
+      "eligibility_fields": {
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "종합건설사업자 행정처분(과태료) 공고문(제2026-1255호)",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456144",
+      "event_at": "2026-04-13T10:24:46.837495+00:00",
+      "application_deadline": "2026-02-12",
+      "application_start_date": "2026-04-17",
+      "eligibility_fields": {
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "2026년 정신재활시설 운영 보조금 신규지원 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456151",
+      "event_at": "2026-02-12T00:00:00+00:00",
+      "application_deadline": "2026-02-12",
+      "application_start_date": "2026-04-17",
+      "eligibility_fields": {
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "2026년 정신재활시설 운영 보조금 신규지원 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456151",
+      "event_at": "2026-04-13T10:24:46.837488+00:00",
+      "application_deadline": "2026-02-12",
+      "application_start_date": "2026-04-17",
+      "eligibility_fields": {
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "2026년 무공해건설기계(전기지게차) 보급 보조금 지원사업 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456103",
+      "event_at": "2026-02-12T00:00:00+00:00",
+      "application_deadline": "2026-02-12",
+      "application_start_date": "2026-04-17",
+      "eligibility_fields": {
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "2026년 무공해건설기계(전기지게차) 보급 보조금 지원사업 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456103",
+      "event_at": "2026-04-13T10:24:46.837472+00:00",
+      "application_deadline": "2026-02-12",
+      "application_start_date": "2026-04-17",
+      "eligibility_fields": {
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "event_model": "application_deadline",
+      "title": "2026년 우리동네 크라우드펀딩 지원사업 소상공인 모집 공고",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=52953&pNm=BOA0101&eventMode=",
+      "event_at": "2026-03-30T00:00:00+00:00",
+      "application_deadline": "2026-03-30",
+      "application_start_date": "2026-04-08",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업"
+        ],
+        "Industry": [
+          "관광"
+        ],
+        "Region": [
+          "서울",
+          "경기",
+          "부산",
+          "대구",
+          "광주",
+          "대전",
+          "울산",
+          "세종",
+          "강원",
+          "충남",
+          "전남",
+          "경북",
+          "제주"
+        ]
+      }
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "event_model": "eligibility_rule",
+      "title": "2026년 우리동네 크라우드펀딩 지원사업 소상공인 모집 공고",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=52953&pNm=BOA0101&eventMode=",
+      "event_at": "2026-04-13T10:24:42.194135+00:00",
+      "application_deadline": "2026-03-30",
+      "application_start_date": "2026-04-08",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업"
+        ],
+        "Industry": [
+          "관광"
+        ],
+        "Region": [
+          "서울",
+          "경기",
+          "부산",
+          "대구",
+          "광주",
+          "대전",
+          "울산",
+          "세종",
+          "강원",
+          "충남",
+          "전남",
+          "경북",
+          "제주"
+        ]
+      }
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "event_model": "application_deadline",
+      "title": "2026년 지역상권육성 사업 모집공고",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53036&pNm=BOA0101&eventMode=",
+      "event_at": "2026-03-30T00:00:00+00:00",
+      "application_deadline": "2026-03-30",
+      "application_start_date": "2026-04-08",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업"
+        ],
+        "Industry": [
+          "관광"
+        ],
+        "Region": [
+          "서울",
+          "경기",
+          "부산",
+          "대구",
+          "광주",
+          "대전",
+          "울산",
+          "세종",
+          "강원",
+          "충남",
+          "전남",
+          "경북",
+          "제주"
+        ]
+      }
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "event_model": "eligibility_rule",
+      "title": "2026년 지역상권육성 사업 모집공고",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53036&pNm=BOA0101&eventMode=",
+      "event_at": "2026-04-13T10:24:42.194131+00:00",
+      "application_deadline": "2026-03-30",
+      "application_start_date": "2026-04-08",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업"
+        ],
+        "Industry": [
+          "관광"
+        ],
+        "Region": [
+          "서울",
+          "경기",
+          "부산",
+          "대구",
+          "광주",
+          "대전",
+          "울산",
+          "세종",
+          "강원",
+          "충남",
+          "전남",
+          "경북",
+          "제주"
+        ]
+      }
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "event_model": "application_deadline",
+      "title": "2026년 2분기 소상공인정책자금 금리 안내",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=52997&pNm=BOA0101&eventMode=",
+      "event_at": "2026-03-30T00:00:00+00:00",
+      "application_deadline": "2026-03-30",
+      "application_start_date": "2026-04-08",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업"
+        ],
+        "Industry": [
+          "관광"
+        ],
+        "Region": [
+          "서울",
+          "경기",
+          "부산",
+          "대구",
+          "광주",
+          "대전",
+          "울산",
+          "세종",
+          "강원",
+          "충남",
+          "전남",
+          "경북",
+          "제주"
+        ]
+      }
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "event_model": "eligibility_rule",
+      "title": "2026년 2분기 소상공인정책자금 금리 안내",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=52997&pNm=BOA0101&eventMode=",
+      "event_at": "2026-04-13T10:24:42.194125+00:00",
+      "application_deadline": "2026-03-30",
+      "application_start_date": "2026-04-08",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업"
+        ],
+        "Industry": [
+          "관광"
+        ],
+        "Region": [
+          "서울",
+          "경기",
+          "부산",
+          "대구",
+          "광주",
+          "대전",
+          "울산",
+          "세종",
+          "강원",
+          "충남",
+          "전남",
+          "경북",
+          "제주"
+        ]
+      }
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "event_model": "application_deadline",
+      "title": "'26년 소상공인시장진흥공단 4월 스케줄 달력",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53058&pNm=BOA0101&eventMode=",
+      "event_at": "2026-03-30T00:00:00+00:00",
+      "application_deadline": "2026-03-30",
+      "application_start_date": "2026-04-08",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업"
+        ],
+        "Industry": [
+          "관광"
+        ],
+        "Region": [
+          "서울",
+          "경기",
+          "부산",
+          "대구",
+          "광주",
+          "대전",
+          "울산",
+          "세종",
+          "강원",
+          "충남",
+          "전남",
+          "경북",
+          "제주"
+        ]
+      }
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "event_model": "eligibility_rule",
+      "title": "'26년 소상공인시장진흥공단 4월 스케줄 달력",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53058&pNm=BOA0101&eventMode=",
+      "event_at": "2026-04-13T10:24:42.194116+00:00",
+      "application_deadline": "2026-03-30",
+      "application_start_date": "2026-04-08",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업"
+        ],
+        "Industry": [
+          "관광"
+        ],
+        "Region": [
+          "서울",
+          "경기",
+          "부산",
+          "대구",
+          "광주",
+          "대전",
+          "울산",
+          "세종",
+          "강원",
+          "충남",
+          "전남",
+          "경북",
+          "제주"
+        ]
+      }
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "event_model": "application_deadline",
+      "title": "2026년 소상공인 협업활성화 공동사업 연장공고",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53092&pNm=BOA0101&eventMode=",
+      "event_at": "2026-03-30T00:00:00+00:00",
+      "application_deadline": "2026-03-30",
+      "application_start_date": "2026-04-08",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업"
+        ],
+        "Industry": [
+          "관광"
+        ],
+        "Region": [
+          "서울",
+          "경기",
+          "부산",
+          "대구",
+          "광주",
+          "대전",
+          "울산",
+          "세종",
+          "강원",
+          "충남",
+          "전남",
+          "경북",
+          "제주"
+        ]
+      }
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "event_model": "eligibility_rule",
+      "title": "2026년 소상공인 협업활성화 공동사업 연장공고",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53092&pNm=BOA0101&eventMode=",
+      "event_at": "2026-04-13T10:24:42.194109+00:00",
+      "application_deadline": "2026-03-30",
+      "application_start_date": "2026-04-08",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업"
+        ],
+        "Industry": [
+          "관광"
+        ],
+        "Region": [
+          "서울",
+          "경기",
+          "부산",
+          "대구",
+          "광주",
+          "대전",
+          "울산",
+          "세종",
+          "강원",
+          "충남",
+          "전남",
+          "경북",
+          "제주"
+        ]
+      }
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "event_model": "application_deadline",
+      "title": "「희망리턴패키지 사업화지원금」 환수 통지 공시송달 공고",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53136&pNm=BOA0101&eventMode=",
+      "event_at": "2026-03-30T00:00:00+00:00",
+      "application_deadline": "2026-03-30",
+      "application_start_date": "2026-04-08",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업"
+        ],
+        "Industry": [
+          "관광"
+        ],
+        "Region": [
+          "서울",
+          "경기",
+          "부산",
+          "대구",
+          "광주",
+          "대전",
+          "울산",
+          "세종",
+          "강원",
+          "충남",
+          "전남",
+          "경북",
+          "제주"
+        ]
+      }
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "event_model": "eligibility_rule",
+      "title": "「희망리턴패키지 사업화지원금」 환수 통지 공시송달 공고",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53136&pNm=BOA0101&eventMode=",
+      "event_at": "2026-04-13T10:24:42.194105+00:00",
+      "application_deadline": "2026-03-30",
+      "application_start_date": "2026-04-08",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업"
+        ],
+        "Industry": [
+          "관광"
+        ],
+        "Region": [
+          "서울",
+          "경기",
+          "부산",
+          "대구",
+          "광주",
+          "대전",
+          "울산",
+          "세종",
+          "강원",
+          "충남",
+          "전남",
+          "경북",
+          "제주"
+        ]
+      }
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "event_model": "application_deadline",
+      "title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53137&pNm=BOA0101&eventMode=",
+      "event_at": "2026-03-30T00:00:00+00:00",
+      "application_deadline": "2026-03-30",
+      "application_start_date": "2026-04-08",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업"
+        ],
+        "Industry": [
+          "관광"
+        ],
+        "Region": [
+          "서울",
+          "경기",
+          "부산",
+          "대구",
+          "광주",
+          "대전",
+          "울산",
+          "세종",
+          "강원",
+          "충남",
+          "전남",
+          "경북",
+          "제주"
+        ]
+      }
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "event_model": "eligibility_rule",
+      "title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53137&pNm=BOA0101&eventMode=",
+      "event_at": "2026-04-13T10:24:42.194099+00:00",
+      "application_deadline": "2026-03-30",
+      "application_start_date": "2026-04-08",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업"
+        ],
+        "Industry": [
+          "관광"
+        ],
+        "Region": [
+          "서울",
+          "경기",
+          "부산",
+          "대구",
+          "광주",
+          "대전",
+          "울산",
+          "세종",
+          "강원",
+          "충남",
+          "전남",
+          "경북",
+          "제주"
+        ]
+      }
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "event_model": "application_deadline",
+      "title": "「소상공인 재난지원금」환수 결정통지 반송에 따른 공시송달 공고",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53181&pNm=BOA0101&eventMode=",
+      "event_at": "2026-03-30T00:00:00+00:00",
+      "application_deadline": "2026-03-30",
+      "application_start_date": "2026-04-08",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업"
+        ],
+        "Industry": [
+          "관광"
+        ],
+        "Region": [
+          "서울",
+          "경기",
+          "부산",
+          "대구",
+          "광주",
+          "대전",
+          "울산",
+          "세종",
+          "강원",
+          "충남",
+          "전남",
+          "경북",
+          "제주"
+        ]
+      }
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "event_model": "eligibility_rule",
+      "title": "「소상공인 재난지원금」환수 결정통지 반송에 따른 공시송달 공고",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53181&pNm=BOA0101&eventMode=",
+      "event_at": "2026-04-13T10:24:42.194093+00:00",
+      "application_deadline": "2026-03-30",
+      "application_start_date": "2026-04-08",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업"
+        ],
+        "Industry": [
+          "관광"
+        ],
+        "Region": [
+          "서울",
+          "경기",
+          "부산",
+          "대구",
+          "광주",
+          "대전",
+          "울산",
+          "세종",
+          "강원",
+          "충남",
+          "전남",
+          "경북",
+          "제주"
+        ]
+      }
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "event_model": "application_deadline",
+      "title": "2026년 수시채용 전통시장 육성사업(문화관광형) 사업수행자(사업단장) 모집 공고",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53213&pNm=BOA0101&eventMode=",
+      "event_at": "2026-03-30T00:00:00+00:00",
+      "application_deadline": "2026-03-30",
+      "application_start_date": "2026-04-08",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업"
+        ],
+        "Industry": [
+          "관광"
+        ],
+        "Region": [
+          "서울",
+          "경기",
+          "부산",
+          "대구",
+          "광주",
+          "대전",
+          "울산",
+          "세종",
+          "강원",
+          "충남",
+          "전남",
+          "경북",
+          "제주"
+        ]
+      }
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "event_model": "eligibility_rule",
+      "title": "2026년 수시채용 전통시장 육성사업(문화관광형) 사업수행자(사업단장) 모집 공고",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53213&pNm=BOA0101&eventMode=",
+      "event_at": "2026-04-13T10:24:42.194087+00:00",
+      "application_deadline": "2026-03-30",
+      "application_start_date": "2026-04-08",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업"
+        ],
+        "Industry": [
+          "관광"
+        ],
+        "Region": [
+          "서울",
+          "경기",
+          "부산",
+          "대구",
+          "광주",
+          "대전",
+          "울산",
+          "세종",
+          "강원",
+          "충남",
+          "전남",
+          "경북",
+          "제주"
+        ]
+      }
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "event_model": "application_deadline",
+      "title": "2026년 소상공인 불공정거래 피해구제 지원 시행공고",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53214&pNm=BOA0101&eventMode=",
+      "event_at": "2026-03-30T00:00:00+00:00",
+      "application_deadline": "2026-03-30",
+      "application_start_date": "2026-04-08",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업"
+        ],
+        "Industry": [
+          "관광"
+        ],
+        "Region": [
+          "서울",
+          "경기",
+          "부산",
+          "대구",
+          "광주",
+          "대전",
+          "울산",
+          "세종",
+          "강원",
+          "충남",
+          "전남",
+          "경북",
+          "제주"
+        ]
+      }
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "event_model": "eligibility_rule",
+      "title": "2026년 소상공인 불공정거래 피해구제 지원 시행공고",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53214&pNm=BOA0101&eventMode=",
+      "event_at": "2026-04-13T10:24:42.194067+00:00",
+      "application_deadline": "2026-03-30",
+      "application_start_date": "2026-04-08",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업"
+        ],
+        "Industry": [
+          "관광"
+        ],
+        "Region": [
+          "서울",
+          "경기",
+          "부산",
+          "대구",
+          "광주",
+          "대전",
+          "울산",
+          "세종",
+          "강원",
+          "충남",
+          "전남",
+          "경북",
+          "제주"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "거제시 보건소장(개방형직위) 임용시험 시행계획 재공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=sdAGrjPzf2KPyUapmLf6VHpPteWsb4NvFJ93VmrX.node50?bbsId=BBSMSTR_000000000006&nttId=125015",
+      "event_at": "2026-04-13T10:23:42.015062+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "거제시 보건소장(개방형직위) 임용시험 시행계획 재공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=sdAGrjPzf2KPyUapmLf6VHpPteWsb4NvFJ93VmrX.node50?bbsId=BBSMSTR_000000000006&nttId=125015",
+      "event_at": "2026-04-13T10:23:42.015062+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "2026년 제1차 지방공무원 행정안전부 전입시험 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=sdAGrjPzf2KPyUapmLf6VHpPteWsb4NvFJ93VmrX.node50?bbsId=BBSMSTR_000000000006&nttId=125024",
+      "event_at": "2026-04-13T10:23:42.015052+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "2026년 제1차 지방공무원 행정안전부 전입시험 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=sdAGrjPzf2KPyUapmLf6VHpPteWsb4NvFJ93VmrX.node50?bbsId=BBSMSTR_000000000006&nttId=125024",
+      "event_at": "2026-04-13T10:23:42.015052+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "「2026 대한민국 정부 박람회」행사 대행 용역 제안서 기술평가 결과",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=sdAGrjPzf2KPyUapmLf6VHpPteWsb4NvFJ93VmrX.node50?bbsId=BBSMSTR_000000000006&nttId=125054",
+      "event_at": "2026-04-13T10:23:42.015042+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "「2026 대한민국 정부 박람회」행사 대행 용역 제안서 기술평가 결과",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=sdAGrjPzf2KPyUapmLf6VHpPteWsb4NvFJ93VmrX.node50?bbsId=BBSMSTR_000000000006&nttId=125054",
+      "event_at": "2026-04-13T10:23:42.015042+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "제14회 범정부 공공데이터·AI 활용 창업경진대회 통합공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=sdAGrjPzf2KPyUapmLf6VHpPteWsb4NvFJ93VmrX.node50?bbsId=BBSMSTR_000000000006&nttId=125058",
+      "event_at": "2026-04-13T10:23:42.015019+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "제14회 범정부 공공데이터·AI 활용 창업경진대회 통합공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=sdAGrjPzf2KPyUapmLf6VHpPteWsb4NvFJ93VmrX.node50?bbsId=BBSMSTR_000000000006&nttId=125058",
+      "event_at": "2026-04-13T10:23:42.015019+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "초대형산불 피해지역 회복을 위한 지원 체계 고도화 및 세부 산정기준 연구 사업 제안서 기술평가 결과",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=sdAGrjPzf2KPyUapmLf6VHpPteWsb4NvFJ93VmrX.node50?bbsId=BBSMSTR_000000000006&nttId=125061",
+      "event_at": "2026-04-13T10:23:42.015009+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "초대형산불 피해지역 회복을 위한 지원 체계 고도화 및 세부 산정기준 연구 사업 제안서 기술평가 결과",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=sdAGrjPzf2KPyUapmLf6VHpPteWsb4NvFJ93VmrX.node50?bbsId=BBSMSTR_000000000006&nttId=125061",
+      "event_at": "2026-04-13T10:23:42.015009+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "2026년 제1회 남양주시 남양주풍양보건소장(개방형직위) 임용시험 시행계획 변경 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=sdAGrjPzf2KPyUapmLf6VHpPteWsb4NvFJ93VmrX.node50?bbsId=BBSMSTR_000000000006&nttId=125075",
+      "event_at": "2026-04-13T10:23:42.014998+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "2026년 제1회 남양주시 남양주풍양보건소장(개방형직위) 임용시험 시행계획 변경 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=sdAGrjPzf2KPyUapmLf6VHpPteWsb4NvFJ93VmrX.node50?bbsId=BBSMSTR_000000000006&nttId=125075",
+      "event_at": "2026-04-13T10:23:42.014998+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "행정안전부 임기제 공무원 경력경쟁채용시험 서류전형 합격자 및 면접일정 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=sdAGrjPzf2KPyUapmLf6VHpPteWsb4NvFJ93VmrX.node50?bbsId=BBSMSTR_000000000006&nttId=125090",
+      "event_at": "2026-04-13T10:23:42.014986+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "행정안전부 임기제 공무원 경력경쟁채용시험 서류전형 합격자 및 면접일정 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=sdAGrjPzf2KPyUapmLf6VHpPteWsb4NvFJ93VmrX.node50?bbsId=BBSMSTR_000000000006&nttId=125090",
+      "event_at": "2026-04-13T10:23:42.014986+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "기본사회위원회 기간제근로자 채용 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=sdAGrjPzf2KPyUapmLf6VHpPteWsb4NvFJ93VmrX.node50?bbsId=BBSMSTR_000000000006&nttId=125102",
+      "event_at": "2026-04-13T10:23:42.014973+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "기본사회위원회 기간제근로자 채용 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=sdAGrjPzf2KPyUapmLf6VHpPteWsb4NvFJ93VmrX.node50?bbsId=BBSMSTR_000000000006&nttId=125102",
+      "event_at": "2026-04-13T10:23:42.014973+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "행정안전부(국립재난안전연구원) 연구직 공무원 채용 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=sdAGrjPzf2KPyUapmLf6VHpPteWsb4NvFJ93VmrX.node50?bbsId=BBSMSTR_000000000006&nttId=125163",
+      "event_at": "2026-04-13T10:23:42.014956+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "행정안전부(국립재난안전연구원) 연구직 공무원 채용 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=sdAGrjPzf2KPyUapmLf6VHpPteWsb4NvFJ93VmrX.node50?bbsId=BBSMSTR_000000000006&nttId=125163",
+      "event_at": "2026-04-13T10:23:42.014956+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "서울시 은평병원 마약관리센터장(개방형직위) 임용시험 시행계획 재공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=sdAGrjPzf2KPyUapmLf6VHpPteWsb4NvFJ93VmrX.node50?bbsId=BBSMSTR_000000000006&nttId=125168",
+      "event_at": "2026-04-13T10:23:42.014779+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "서울시 은평병원 마약관리센터장(개방형직위) 임용시험 시행계획 재공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=sdAGrjPzf2KPyUapmLf6VHpPteWsb4NvFJ93VmrX.node50?bbsId=BBSMSTR_000000000006&nttId=125168",
+      "event_at": "2026-04-13T10:23:42.014779+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "거제시 보건소장(개방형직위) 임용시험 시행계획 재공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=laFS8EJpqYn04bR-59o9f61X4zosvKWiFCufASQJ.node50?bbsId=BBSMSTR_000000000006&nttId=125015",
+      "event_at": "2026-04-13T10:22:06.765378+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "거제시 보건소장(개방형직위) 임용시험 시행계획 재공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=laFS8EJpqYn04bR-59o9f61X4zosvKWiFCufASQJ.node50?bbsId=BBSMSTR_000000000006&nttId=125015",
+      "event_at": "2026-04-13T10:22:06.765378+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "2026년 제1차 지방공무원 행정안전부 전입시험 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=laFS8EJpqYn04bR-59o9f61X4zosvKWiFCufASQJ.node50?bbsId=BBSMSTR_000000000006&nttId=125024",
+      "event_at": "2026-04-13T10:22:06.765367+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "2026년 제1차 지방공무원 행정안전부 전입시험 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=laFS8EJpqYn04bR-59o9f61X4zosvKWiFCufASQJ.node50?bbsId=BBSMSTR_000000000006&nttId=125024",
+      "event_at": "2026-04-13T10:22:06.765367+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "「2026 대한민국 정부 박람회」행사 대행 용역 제안서 기술평가 결과",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=laFS8EJpqYn04bR-59o9f61X4zosvKWiFCufASQJ.node50?bbsId=BBSMSTR_000000000006&nttId=125054",
+      "event_at": "2026-04-13T10:22:06.765357+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "「2026 대한민국 정부 박람회」행사 대행 용역 제안서 기술평가 결과",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=laFS8EJpqYn04bR-59o9f61X4zosvKWiFCufASQJ.node50?bbsId=BBSMSTR_000000000006&nttId=125054",
+      "event_at": "2026-04-13T10:22:06.765357+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "제14회 범정부 공공데이터·AI 활용 창업경진대회 통합공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=laFS8EJpqYn04bR-59o9f61X4zosvKWiFCufASQJ.node50?bbsId=BBSMSTR_000000000006&nttId=125058",
+      "event_at": "2026-04-13T10:22:06.765345+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "제14회 범정부 공공데이터·AI 활용 창업경진대회 통합공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=laFS8EJpqYn04bR-59o9f61X4zosvKWiFCufASQJ.node50?bbsId=BBSMSTR_000000000006&nttId=125058",
+      "event_at": "2026-04-13T10:22:06.765345+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "초대형산불 피해지역 회복을 위한 지원 체계 고도화 및 세부 산정기준 연구 사업 제안서 기술평가 결과",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=laFS8EJpqYn04bR-59o9f61X4zosvKWiFCufASQJ.node50?bbsId=BBSMSTR_000000000006&nttId=125061",
+      "event_at": "2026-04-13T10:22:06.765335+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "초대형산불 피해지역 회복을 위한 지원 체계 고도화 및 세부 산정기준 연구 사업 제안서 기술평가 결과",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=laFS8EJpqYn04bR-59o9f61X4zosvKWiFCufASQJ.node50?bbsId=BBSMSTR_000000000006&nttId=125061",
+      "event_at": "2026-04-13T10:22:06.765335+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "2026년 제1회 남양주시 남양주풍양보건소장(개방형직위) 임용시험 시행계획 변경 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=laFS8EJpqYn04bR-59o9f61X4zosvKWiFCufASQJ.node50?bbsId=BBSMSTR_000000000006&nttId=125075",
+      "event_at": "2026-04-13T10:22:06.765323+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "2026년 제1회 남양주시 남양주풍양보건소장(개방형직위) 임용시험 시행계획 변경 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=laFS8EJpqYn04bR-59o9f61X4zosvKWiFCufASQJ.node50?bbsId=BBSMSTR_000000000006&nttId=125075",
+      "event_at": "2026-04-13T10:22:06.765323+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "행정안전부 임기제 공무원 경력경쟁채용시험 서류전형 합격자 및 면접일정 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=laFS8EJpqYn04bR-59o9f61X4zosvKWiFCufASQJ.node50?bbsId=BBSMSTR_000000000006&nttId=125090",
+      "event_at": "2026-04-13T10:22:06.765310+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "행정안전부 임기제 공무원 경력경쟁채용시험 서류전형 합격자 및 면접일정 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=laFS8EJpqYn04bR-59o9f61X4zosvKWiFCufASQJ.node50?bbsId=BBSMSTR_000000000006&nttId=125090",
+      "event_at": "2026-04-13T10:22:06.765310+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "기본사회위원회 기간제근로자 채용 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=laFS8EJpqYn04bR-59o9f61X4zosvKWiFCufASQJ.node50?bbsId=BBSMSTR_000000000006&nttId=125102",
+      "event_at": "2026-04-13T10:22:06.765298+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "기본사회위원회 기간제근로자 채용 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=laFS8EJpqYn04bR-59o9f61X4zosvKWiFCufASQJ.node50?bbsId=BBSMSTR_000000000006&nttId=125102",
+      "event_at": "2026-04-13T10:22:06.765298+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "행정안전부(국립재난안전연구원) 연구직 공무원 채용 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=laFS8EJpqYn04bR-59o9f61X4zosvKWiFCufASQJ.node50?bbsId=BBSMSTR_000000000006&nttId=125163",
+      "event_at": "2026-04-13T10:22:06.765283+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "행정안전부(국립재난안전연구원) 연구직 공무원 채용 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=laFS8EJpqYn04bR-59o9f61X4zosvKWiFCufASQJ.node50?bbsId=BBSMSTR_000000000006&nttId=125163",
+      "event_at": "2026-04-13T10:22:06.765283+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "서울시 은평병원 마약관리센터장(개방형직위) 임용시험 시행계획 재공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=laFS8EJpqYn04bR-59o9f61X4zosvKWiFCufASQJ.node50?bbsId=BBSMSTR_000000000006&nttId=125168",
+      "event_at": "2026-04-13T10:22:06.765257+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "서울시 은평병원 마약관리센터장(개방형직위) 임용시험 시행계획 재공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=laFS8EJpqYn04bR-59o9f61X4zosvKWiFCufASQJ.node50?bbsId=BBSMSTR_000000000006&nttId=125168",
+      "event_at": "2026-04-13T10:22:06.765257+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      }
+    },
+    {
+      "source": "정책브리핑",
+      "event_model": "support_program_notice",
+      "title": "\"중동전쟁은 건설현장에 불가항력\"…'책임준공' 연장사유 인정",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148962571&call_from=rsslink",
+      "event_at": "2026-04-13T00:02:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      }
+    },
+    {
+      "source": "정책브리핑",
+      "event_model": "eligibility_rule",
+      "title": "\"중동전쟁은 건설현장에 불가항력\"…'책임준공' 연장사유 인정",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148962571&call_from=rsslink",
+      "event_at": "2026-04-13T00:02:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      }
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "중기부, 탄소중립 설비투자 지원…공급망 협력기업 30곳 모집",
+      "url": "https://www.khan.co.kr/article/202604130824001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=economy_news",
+      "event_at": "2026-04-12T14:24:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ],
+        "BusinessStage": [
+          "벤처기업"
+        ]
+      }
+    },
+    {
+      "source": "정책브리핑",
+      "event_model": "support_program_notice",
+      "title": "고유가 피해지원금, 4월 27일부터 국민 70%에 최대 60만 원 지급",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148962496&call_from=rsslink",
+      "event_at": "2026-04-10T20:58:00+00:00",
+      "application_deadline": "2026-04-25",
+      "application_start_date": "2007-12-31",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "취약계층"
+        ],
+        "Region": [
+          "서울",
+          "세종",
+          "제주"
+        ]
+      }
+    },
+    {
+      "source": "정책브리핑",
+      "event_model": "application_deadline",
+      "title": "고유가 피해지원금, 4월 27일부터 국민 70%에 최대 60만 원 지급",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148962496&call_from=rsslink",
+      "event_at": "2026-04-25T00:00:00+00:00",
+      "application_deadline": "2026-04-25",
+      "application_start_date": "2007-12-31",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "취약계층"
+        ],
+        "Region": [
+          "서울",
+          "세종",
+          "제주"
+        ]
+      }
+    },
+    {
+      "source": "정책브리핑",
+      "event_model": "eligibility_rule",
+      "title": "고유가 피해지원금, 4월 27일부터 국민 70%에 최대 60만 원 지급",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148962496&call_from=rsslink",
+      "event_at": "2026-04-10T20:58:00+00:00",
+      "application_deadline": "2026-04-25",
+      "application_start_date": "2007-12-31",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "취약계층"
+        ],
+        "Region": [
+          "서울",
+          "세종",
+          "제주"
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

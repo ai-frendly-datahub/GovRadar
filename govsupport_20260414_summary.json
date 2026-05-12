@@ -1,43 +1,81 @@
 {
   "date": "2026-04-14",
   "category": "govsupport",
-  "article_count": 200,
-  "source_count": 7,
-  "matched_count": 181,
+  "article_count": 77,
+  "source_count": 5,
+  "matched_count": 77,
   "top_entities": [
     {
       "name": "GovGeneral",
-      "count": 831
-    },
-    {
-      "name": "TargetGroup",
-      "count": 145
-    },
-    {
-      "name": "Region",
-      "count": 115
+      "count": 1101
     },
     {
       "name": "ApplicationInfo",
-      "count": 114
+      "count": 643
+    },
+    {
+      "name": "Region",
+      "count": 546
+    },
+    {
+      "name": "TargetGroup",
+      "count": 337
+    },
+    {
+      "name": "EligibilityRegion",
+      "count": 259
+    },
+    {
+      "name": "SourceSignal",
+      "count": 217
     },
     {
       "name": "SupportType",
-      "count": 76
+      "count": 167
+    },
+    {
+      "name": "OperationalEvent",
+      "count": 151
+    },
+    {
+      "name": "ApplicationDeadline",
+      "count": 65
     },
     {
       "name": "Ministry",
-      "count": 59
+      "count": 64
+    },
+    {
+      "name": "ApplicationStartDate",
+      "count": 64
+    },
+    {
+      "name": "EligibilityIndustry",
+      "count": 60
+    },
+    {
+      "name": "McpKoreaEcosystem",
+      "count": 51
+    },
+    {
+      "name": "EligibilityTargetGroup",
+      "count": 21
+    },
+    {
+      "name": "SelectionResultDate",
+      "count": 10
+    },
+    {
+      "name": "EligibilityBusinessStage",
+      "count": 1
     }
   ],
   "sources": {
-    "한겨레 경제": 60,
-    "SBS 뉴스 정치": 33,
-    "동아일보 경제": 32,
-    "경향신문 경제": 39,
-    "매일경제 경제정책": 19,
-    "정책브리핑": 16,
-    "매일경제 정치": 1
+    "행정안전부": 50,
+    "서울시 지원사업": 14,
+    "소상공인시장진흥공단": 10,
+    "정책브리핑": 2,
+    "Awesome MCP Korea": 1
   },
-  "generated_at": "2026-04-14T21:19:18.161342+09:00"
+  "generated_at": "2026-04-14T20:24:26.727918+09:00"
 }
