@@ -3,7 +3,7 @@ name: GovRadar Crawler
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 22 * * *'
+    - cron: '0 4 * * *'
 
 permissions:
   contents: write
