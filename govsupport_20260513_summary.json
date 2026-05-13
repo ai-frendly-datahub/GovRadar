@@ -2,82 +2,81 @@
   "date": "2026-05-13",
   "category": "govsupport",
   "article_count": 44,
-  "source_count": 9,
+  "source_count": 8,
   "matched_count": 44,
   "top_entities": [
     {
       "name": "GovGeneral",
-      "count": 685
+      "count": 627
     },
     {
       "name": "TargetGroup",
-      "count": 147
+      "count": 144
     },
     {
       "name": "ApplicationInfo",
-      "count": 99
+      "count": 103
     },
     {
       "name": "SupportType",
-      "count": 97
+      "count": 101
     },
     {
       "name": "SourceSignal",
-      "count": 94
-    },
-    {
-      "name": "Ministry",
-      "count": 52
+      "count": 97
     },
     {
       "name": "Region",
-      "count": 50
+      "count": 54
+    },
+    {
+      "name": "Ministry",
+      "count": 42
     },
     {
       "name": "OperationalEvent",
-      "count": 36
+      "count": 39
     },
     {
       "name": "EligibilityRegion",
-      "count": 34
+      "count": 37
     },
     {
       "name": "McpKoreaEcosystem",
-      "count": 32
+      "count": 34
     },
     {
       "name": "EligibilityIndustry",
-      "count": 26
+      "count": 33
     },
     {
       "name": "EligibilityTargetGroup",
-      "count": 25
-    },
-    {
-      "name": "ApplicationStartDate",
-      "count": 9
+      "count": 24
     },
     {
       "name": "ApplicationDeadline",
-      "count": 9
+      "count": 11
+    },
+    {
+      "name": "ApplicationStartDate",
+      "count": 10
     },
     {
       "name": "EligibilityBusinessStage",
-      "count": 6
+      "count": 8
     }
   ],
   "sources": {
-    "금융위원회": 8,
-    "보건복지부": 1,
-    "소상공인시장진흥공단": 1,
-    "동아일보 경제": 1,
-    "경향신문 경제": 1,
+    "금융위원회": 7,
+    "보건복지부": 2,
+    "서울시 지원사업": 2,
     "정책브리핑": 14,
     "매일경제 경제정책": 1,
-    "서울시 지원사업": 1,
+    "경향신문 경제": 1,
+    "소상공인시장진흥공단": 1,
     "Awesome MCP Korea": 16
   },
-  "generated_at": "2026-05-13T05:49:02.056978+09:00",
+  "generated_at": "2026-05-13T15:51:59.380296+09:00",
   "articles": [
     {
       "event_model_payload": {
@@ -97,6 +96,11 @@
     {
       "event_model_payload": {
         "source_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457537"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53519&pNm=BOA0101&eventMode="
       }
     },
     {
