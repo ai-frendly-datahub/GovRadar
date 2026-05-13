@@ -186,3 +186,6 @@ reports/*.html
 !reports/.gitkeep
 docs/reports/*.html
 !docs/reports/.gitkeep
+
+# Large daily DuckDB snapshots (regenerable by daily crawler)
+data/daily/*.duckdb
