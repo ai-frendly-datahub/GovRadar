@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-05-14T06:51:07.010913+00:00",
+  "generated_at": "2026-05-14T07:48:19.840855+00:00",
   "summary": {
     "total_sources": 25,
     "tracked_sources": 6,
@@ -11,12 +11,12 @@
     "unknown_event_date_sources": 0,
     "not_tracked_sources": 17,
     "skipped_disabled_sources": 2,
-    "support_program_notice_events": 24,
-    "application_deadline_events": 10,
-    "eligibility_rule_events": 28,
+    "support_program_notice_events": 28,
+    "application_deadline_events": 13,
+    "eligibility_rule_events": 32,
     "selection_result_events": 0,
-    "unique_program_key_count": 59,
-    "events_with_evidence_url": 62,
+    "unique_program_key_count": 67,
+    "events_with_evidence_url": 73,
     "collection_error_count": 0
   },
   "sources": [
@@ -54,20 +54,20 @@
       "event_model": "support_program_notice",
       "freshness_sla_days": 2,
       "status": "fresh",
-      "article_count": 16,
-      "event_count": 16,
-      "latest_event_at": "2026-05-13T15:29:00+00:00",
-      "age_days": 0.64,
-      "latest_title": "소아암 치료에 35년 바쳐 \"지방 환아들은 지방서 치료받을 수 있어야\"",
-      "latest_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148964205",
-      "latest_evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148964205",
-      "latest_program_title": "소아암 치료에 35년 바쳐 \"지방 환아들은 지방서 치료받을 수 있어야\"",
-      "latest_program_key": "support-program-notice:kr:정책브리핑:2026-05-13:소아암-치료에-35년-바쳐-지방-환아들은-지방서-치료받을-수-있어야",
-      "latest_application_deadline": "2026-04-14",
+      "article_count": 17,
+      "event_count": 17,
+      "latest_event_at": "2026-05-13T21:46:00+00:00",
+      "age_days": 0.42,
+      "latest_title": "'청소년 사이버도박' 자진신고하면 선처…원스톱 지원까지",
+      "latest_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148964379",
+      "latest_evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148964379",
+      "latest_program_title": "'청소년 사이버도박' 자진신고하면 선처…원스톱 지원까지",
+      "latest_program_key": "support-program-notice:kr:정책브리핑:2026-05-13:청소년-사이버도박-자진신고하면-선처-원스톱-지원까지",
+      "latest_application_deadline": "2026-08-31",
       "latest_eligibility_fields": {
         "Region": [
           "서울",
-          "전남"
+          "대전"
         ]
       },
       "latest_selection_result_date": "",
@@ -87,7 +87,7 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-05-14T06:49:45.263068+00:00",
+      "latest_event_at": "2026-05-14T07:47:04.475838+00:00",
       "age_days": 0.0,
       "latest_title": "2026년 중소벤처기업부 소상공인 정책자금 융자사업 공고(수정)",
       "latest_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=53519&pNm=BOA0101&page=1",
@@ -121,7 +121,7 @@
       "article_count": 1,
       "event_count": 1,
       "latest_event_at": "2026-01-05T00:00:00+00:00",
-      "age_days": 129.29,
+      "age_days": 129.33,
       "latest_title": "2026년 디지털성범죄 예방 프로그램 재공모",
       "latest_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457894",
       "latest_evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457894",
@@ -154,13 +154,13 @@
       "event_model": "support_program_notice",
       "freshness_sla_days": 2,
       "status": "fresh",
-      "article_count": 8,
-      "event_count": 8,
-      "latest_event_at": "2026-05-14T06:50:14.603670+00:00",
+      "article_count": 11,
+      "event_count": 11,
+      "latest_event_at": "2026-05-14T07:47:31.122606+00:00",
       "age_days": 0.0,
       "latest_title": "2026년 제1차 지방공무원 행정안전부 전입시험 최종합격자 공고",
-      "latest_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=fHRR7rucZkgKnuANwx5PoLlT37EllLQpHUAojy3C.node40?bbsId=BBSMSTR_000000000006&nttId=125985",
-      "latest_evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=fHRR7rucZkgKnuANwx5PoLlT37EllLQpHUAojy3C.node40?bbsId=BBSMSTR_000000000006&nttId=125985",
+      "latest_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=Yv4W7jOPOkJHC0uhPsIp-V96vQh-oWQxa9uBtTu-.node20?bbsId=BBSMSTR_000000000006&nttId=125985",
+      "latest_evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=Yv4W7jOPOkJHC0uhPsIp-V96vQh-oWQxa9uBtTu-.node20?bbsId=BBSMSTR_000000000006&nttId=125985",
       "latest_program_title": "2026년 제1차 지방공무원 행정안전부 전입시험 최종합격자 공고",
       "latest_program_key": "support-program-notice:kr:행정안전부:2026-05-14:2026년-제1차-지방공무원-행정안전부-전입시험-최종합격자-공고",
       "latest_application_deadline": "",
@@ -180,9 +180,9 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
       "status": "fresh",
-      "article_count": 4,
-      "event_count": 3,
-      "latest_event_at": "2026-05-14T06:50:25.659638+00:00",
+      "article_count": 5,
+      "event_count": 4,
+      "latest_event_at": "2026-05-14T07:47:43.196408+00:00",
       "age_days": 0.0,
       "latest_title": "새글 정은경 장관, 순천 공공·모자의료 현장 점검 “안심 분만 위한 개선방안 조속히 마련..",
       "latest_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490523&mid=a10503010100&nPage=1",
@@ -210,26 +210,25 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
       "status": "fresh",
-      "article_count": 4,
-      "event_count": 3,
-      "latest_event_at": "2026-05-14T06:50:50.835028+00:00",
+      "article_count": 5,
+      "event_count": 4,
+      "latest_event_at": "2026-05-14T07:47:59.178474+00:00",
       "age_days": 0.0,
-      "latest_title": "상록수 장기연체채권, 카드대란 23년만에 추심과 연체이자의 고통에서 벗어난다",
-      "latest_url": "https://www.fsc.go.kr/no010101/86866",
-      "latest_evidence_url": "https://www.fsc.go.kr/no010101/86866",
-      "latest_program_title": "상록수 장기연체채권, 카드대란 23년만에 추심과 연체이자의 고통에서 벗어난다",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-05-14:상록수-장기연체채권-카드대란-23년만에-추심과-연체이자의-고통에서-벗어난다",
+      "latest_title": "자동차 생태계 전환 본격 지원 착수. 금일 등록된 게시글",
+      "latest_url": "https://www.fsc.go.kr/no010101/86880",
+      "latest_evidence_url": "https://www.fsc.go.kr/no010101/86880",
+      "latest_program_title": "자동차 생태계 전환 본격 지원 착수. 금일 등록된 게시글",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-05-14:자동차-생태계-전환-본격-지원-착수-금일-등록된-게시글",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
         "TargetGroup": [
-          "중소기업",
-          "취약계층"
+          "청년"
+        ],
+        "BusinessStage": [
+          "벤처기업"
         ],
         "Industry": [
           "AI"
-        ],
-        "Region": [
-          "서울"
         ]
       },
       "latest_selection_result_date": "",
@@ -533,7 +532,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 1,
+      "article_count": 2,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -712,6 +711,278 @@
     {
       "source": "금융위원회",
       "event_model": "eligibility_rule",
+      "title": "자동차 생태계 전환 본격 지원 착수. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/86880",
+      "event_at": "2026-05-14T07:47:59.178474+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "BusinessStage": [
+          "벤처기업"
+        ],
+        "Industry": [
+          "AI"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "자동차 생태계 전환 본격 지원 착수. 금일 등록된 게시글",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-05-14:자동차-생태계-전환-본격-지원-착수-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/86880",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "application_deadline",
+      "title": "｢미래를 채우는 첫 시작,  청년미래적금 언박싱 토크콘서트｣ 개최. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/86884",
+      "event_at": "2026-05-05T00:00:00+00:00",
+      "application_deadline": "2026-05-05",
+      "application_start_date": "2026-05-14",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업",
+          "청년",
+          "저소득",
+          "자영업자"
+        ],
+        "Region": [
+          "서울",
+          "부산",
+          "광주",
+          "전북",
+          "경남"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "｢미래를 채우는 첫 시작,  청년미래적금 언박싱 토크콘서트｣ 개최. 금일 등록된 게시글",
+      "program_key": "application-deadline:kr:금융위원회:2026-05-05:미래를-채우는-첫-시작-청년미래적금-언박싱-토크콘서트-개최-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/86884",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "｢미래를 채우는 첫 시작,  청년미래적금 언박싱 토크콘서트｣ 개최. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/86884",
+      "event_at": "2026-05-14T07:47:57.781620+00:00",
+      "application_deadline": "2026-05-05",
+      "application_start_date": "2026-05-14",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업",
+          "청년",
+          "저소득",
+          "자영업자"
+        ],
+        "Region": [
+          "서울",
+          "부산",
+          "광주",
+          "전북",
+          "경남"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "｢미래를 채우는 첫 시작,  청년미래적금 언박싱 토크콘서트｣ 개최. 금일 등록된 게시글",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-05-14:미래를-채우는-첫-시작-청년미래적금-언박싱-토크콘서트-개최-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/86884",
+      "evidence_url_present": true
+    },
+    {
+      "source": "보건복지부",
+      "event_model": "eligibility_rule",
+      "title": "새글 정은경 장관, 순천 공공·모자의료 현장 점검 “안심 분만 위한 개선방안 조속히 마련..",
+      "url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490523&mid=a10503010100&nPage=1",
+      "event_at": "2026-05-14T07:47:43.196408+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "전남"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "새글 정은경 장관, 순천 공공·모자의료 현장 점검 “안심 분만 위한 개선방안 조속히 마련..",
+      "program_key": "eligibility-rule:kr:보건복지부:2026-05-14:새글-정은경-장관-순천-공공-모자의료-현장-점검-안심-분만-위한-개선방안-조속히-마련",
+      "evidence_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490523&mid=a10503010100&nPage=1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "보건복지부",
+      "event_model": "eligibility_rule",
+      "title": "새글 연세의료원에 ‘의료데이터 안심활용센터’ 개소",
+      "url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490527&mid=a10503010100&nPage=1",
+      "event_at": "2026-05-14T07:47:41.897812+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "경기",
+          "부산",
+          "대구",
+          "대전",
+          "강원",
+          "충남",
+          "전남"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "새글 연세의료원에 ‘의료데이터 안심활용센터’ 개소",
+      "program_key": "eligibility-rule:kr:보건복지부:2026-05-14:새글-연세의료원에-의료데이터-안심활용센터-개소",
+      "evidence_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490527&mid=a10503010100&nPage=1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "2026년 제1차 지방공무원 행정안전부 전입시험 최종합격자 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=Yv4W7jOPOkJHC0uhPsIp-V96vQh-oWQxa9uBtTu-.node20?bbsId=BBSMSTR_000000000006&nttId=125985",
+      "event_at": "2026-05-14T07:47:31.122606+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 제1차 지방공무원 행정안전부 전입시험 최종합격자 공고",
+      "program_key": "support-program-notice:kr:행정안전부:2026-05-14:2026년-제1차-지방공무원-행정안전부-전입시험-최종합격자-공고",
+      "evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=Yv4W7jOPOkJHC0uhPsIp-V96vQh-oWQxa9uBtTu-.node20?bbsId=BBSMSTR_000000000006&nttId=125985",
+      "evidence_url_present": true
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "2026년 안전교육 전문인력 역량강화 지원사업 제안서 기술평가 결과 공개",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=Yv4W7jOPOkJHC0uhPsIp-V96vQh-oWQxa9uBtTu-.node20?bbsId=BBSMSTR_000000000006&nttId=125990",
+      "event_at": "2026-05-14T07:47:30.478936+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 안전교육 전문인력 역량강화 지원사업 제안서 기술평가 결과 공개",
+      "program_key": "support-program-notice:kr:행정안전부:2026-05-14:2026년-안전교육-전문인력-역량강화-지원사업-제안서-기술평가-결과-공개",
+      "evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=Yv4W7jOPOkJHC0uhPsIp-V96vQh-oWQxa9uBtTu-.node20?bbsId=BBSMSTR_000000000006&nttId=125990",
+      "evidence_url_present": true
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "2026년 공직자 안보교육 영상물 제작 제안서 기술평가 결과 공개",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=Yv4W7jOPOkJHC0uhPsIp-V96vQh-oWQxa9uBtTu-.node20?bbsId=BBSMSTR_000000000006&nttId=125994",
+      "event_at": "2026-05-14T07:47:29.719119+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 공직자 안보교육 영상물 제작 제안서 기술평가 결과 공개",
+      "program_key": "support-program-notice:kr:행정안전부:2026-05-14:2026년-공직자-안보교육-영상물-제작-제안서-기술평가-결과-공개",
+      "evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=Yv4W7jOPOkJHC0uhPsIp-V96vQh-oWQxa9uBtTu-.node20?bbsId=BBSMSTR_000000000006&nttId=125994",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "2026년 디지털성범죄 예방 프로그램 재공모",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457894",
+      "event_at": "2026-01-05T00:00:00+00:00",
+      "application_deadline": "2026-01-05",
+      "application_start_date": "2026-05-14",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ],
+        "Industry": [
+          "콘텐츠"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 디지털성범죄 예방 프로그램 재공모",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-01-05:2026년-디지털성범죄-예방-프로그램-재공모",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457894",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "2026년 디지털성범죄 예방 프로그램 재공모",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457894",
+      "event_at": "2026-05-14T07:47:20.933258+00:00",
+      "application_deadline": "2026-01-05",
+      "application_start_date": "2026-05-14",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ],
+        "Industry": [
+          "콘텐츠"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 디지털성범죄 예방 프로그램 재공모",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-05-14:2026년-디지털성범죄-예방-프로그램-재공모",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457894",
+      "evidence_url_present": true
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "event_model": "eligibility_rule",
+      "title": "2026년 중소벤처기업부 소상공인 정책자금 융자사업 공고(수정)",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=53519&pNm=BOA0101&page=1",
+      "event_at": "2026-05-14T07:47:04.475838+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인"
+        ],
+        "BusinessStage": [
+          "벤처기업"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 중소벤처기업부 소상공인 정책자금 융자사업 공고(수정)",
+      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-05-14:2026년-중소벤처기업부-소상공인-정책자금-융자사업-공고-수정",
+      "evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=53519&pNm=BOA0101&page=1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
       "title": "상록수 장기연체채권, 카드대란 23년만에 추심과 연체이자의 고통에서 벗어난다",
       "url": "https://www.fsc.go.kr/no010101/86866",
       "event_at": "2026-05-14T06:50:50.835028+00:00",
@@ -738,30 +1009,6 @@
       "evidence_url_present": true
     },
     {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "자동차 생태계 전환 본격 지원 착수. 금일 등록된 게시글",
-      "url": "https://www.fsc.go.kr/no010101/86880",
-      "event_at": "2026-05-14T06:50:45.731840+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "BusinessStage": [
-          "벤처기업"
-        ],
-        "Industry": [
-          "AI"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "자동차 생태계 전환 본격 지원 착수. 금일 등록된 게시글",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-05-14:자동차-생태계-전환-본격-지원-착수-금일-등록된-게시글",
-      "evidence_url": "https://www.fsc.go.kr/no010101/86880",
-      "evidence_url_present": true
-    },
-    {
       "source": "보건복지부",
       "event_model": "application_deadline",
       "title": "새글 국가와 지방자치단체 난임부부 지원으로 2025년도 48,981명 태어나",
@@ -776,27 +1023,6 @@
       "program_title": "새글 국가와 지방자치단체 난임부부 지원으로 2025년도 48,981명 태어나",
       "program_key": "application-deadline:kr:보건복지부:2026-07-08:새글-국가와-지방자치단체-난임부부-지원으로-2025년도-48-981명-태어나",
       "evidence_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490515&mid=a10503010100&nPage=1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "보건복지부",
-      "event_model": "eligibility_rule",
-      "title": "새글 정은경 장관, 순천 공공·모자의료 현장 점검 “안심 분만 위한 개선방안 조속히 마련..",
-      "url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490523&mid=a10503010100&nPage=1",
-      "event_at": "2026-05-14T06:50:25.659638+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "전남"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "새글 정은경 장관, 순천 공공·모자의료 현장 점검 “안심 분만 위한 개선방안 조속히 마련..",
-      "program_key": "eligibility-rule:kr:보건복지부:2026-05-14:새글-정은경-장관-순천-공공-모자의료-현장-점검-안심-분만-위한-개선방안-조속히-마련",
-      "evidence_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490523&mid=a10503010100&nPage=1",
       "evidence_url_present": true
     },
     {
@@ -848,84 +1074,6 @@
       "program_title": "2026년 공직자 안보교육 영상물 제작 제안서 기술평가 결과 공개",
       "program_key": "support-program-notice:kr:행정안전부:2026-05-14:2026년-공직자-안보교육-영상물-제작-제안서-기술평가-결과-공개",
       "evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=fHRR7rucZkgKnuANwx5PoLlT37EllLQpHUAojy3C.node40?bbsId=BBSMSTR_000000000006&nttId=125994",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "2026년 디지털성범죄 예방 프로그램 재공모",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457894",
-      "event_at": "2026-01-05T00:00:00+00:00",
-      "application_deadline": "2026-01-05",
-      "application_start_date": "2026-05-14",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "중소기업"
-        ],
-        "Industry": [
-          "콘텐츠"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 디지털성범죄 예방 프로그램 재공모",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-01-05:2026년-디지털성범죄-예방-프로그램-재공모",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457894",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "eligibility_rule",
-      "title": "2026년 디지털성범죄 예방 프로그램 재공모",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457894",
-      "event_at": "2026-05-14T06:50:00.794206+00:00",
-      "application_deadline": "2026-01-05",
-      "application_start_date": "2026-05-14",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "중소기업"
-        ],
-        "Industry": [
-          "콘텐츠"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 디지털성범죄 예방 프로그램 재공모",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-05-14:2026년-디지털성범죄-예방-프로그램-재공모",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457894",
-      "evidence_url_present": true
-    },
-    {
-      "source": "소상공인시장진흥공단",
-      "event_model": "eligibility_rule",
-      "title": "2026년 중소벤처기업부 소상공인 정책자금 융자사업 공고(수정)",
-      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=53519&pNm=BOA0101&page=1",
-      "event_at": "2026-05-14T06:49:45.263068+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인"
-        ],
-        "BusinessStage": [
-          "벤처기업"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 중소벤처기업부 소상공인 정책자금 융자사업 공고(수정)",
-      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-05-14:2026년-중소벤처기업부-소상공인-정책자금-융자사업-공고-수정",
-      "evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=53519&pNm=BOA0101&page=1",
       "evidence_url_present": true
     },
     {
@@ -1029,6 +1177,72 @@
       "evidence_url_present": true
     },
     {
+      "source": "정책브리핑",
+      "event_model": "support_program_notice",
+      "title": "'청소년 사이버도박' 자진신고하면 선처…원스톱 지원까지",
+      "url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148964379",
+      "event_at": "2026-05-13T21:46:00+00:00",
+      "application_deadline": "2026-08-31",
+      "application_start_date": "2025-05-16",
+      "eligibility_fields": {
+        "Region": [
+          "서울",
+          "대전"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "'청소년 사이버도박' 자진신고하면 선처…원스톱 지원까지",
+      "program_key": "support-program-notice:kr:정책브리핑:2026-05-13:청소년-사이버도박-자진신고하면-선처-원스톱-지원까지",
+      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148964379",
+      "evidence_url_present": true
+    },
+    {
+      "source": "정책브리핑",
+      "event_model": "application_deadline",
+      "title": "'청소년 사이버도박' 자진신고하면 선처…원스톱 지원까지",
+      "url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148964379",
+      "event_at": "2026-08-31T00:00:00+00:00",
+      "application_deadline": "2026-08-31",
+      "application_start_date": "2025-05-16",
+      "eligibility_fields": {
+        "Region": [
+          "서울",
+          "대전"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "'청소년 사이버도박' 자진신고하면 선처…원스톱 지원까지",
+      "program_key": "application-deadline:kr:정책브리핑:2026-08-31:청소년-사이버도박-자진신고하면-선처-원스톱-지원까지",
+      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148964379",
+      "evidence_url_present": true
+    },
+    {
+      "source": "정책브리핑",
+      "event_model": "eligibility_rule",
+      "title": "'청소년 사이버도박' 자진신고하면 선처…원스톱 지원까지",
+      "url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148964379",
+      "event_at": "2026-05-13T21:46:00+00:00",
+      "application_deadline": "2026-08-31",
+      "application_start_date": "2025-05-16",
+      "eligibility_fields": {
+        "Region": [
+          "서울",
+          "대전"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "'청소년 사이버도박' 자진신고하면 선처…원스톱 지원까지",
+      "program_key": "eligibility-rule:kr:정책브리핑:2026-05-13:청소년-사이버도박-자진신고하면-선처-원스톱-지원까지",
+      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148964379",
+      "evidence_url_present": true
+    },
+    {
       "source": "동아일보 경제",
       "event_model": "eligibility_rule",
       "title": "에쓰오일, 농어촌 푸드뱅크 차량 유류비 3000만 원 지원",
@@ -1050,6 +1264,54 @@
       "program_title": "에쓰오일, 농어촌 푸드뱅크 차량 유류비 3000만 원 지원",
       "program_key": "eligibility-rule:kr:동아일보-경제:2026-05-13:에쓰오일-농어촌-푸드뱅크-차량-유류비-3000만-원-지원",
       "evidence_url": "https://www.donga.com/news/Economy/article/all/20260514/133923629/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "application_deadline",
+      "title": "청년 주택드림 청약통장, 이율 최고 4.5%에 연말 소득공제도[부동산 빨간펜]",
+      "url": "https://www.donga.com/news/Economy/article/all/20260514/133922836/1",
+      "event_at": "2026-08-07T00:00:00+00:00",
+      "application_deadline": "2026-08-07",
+      "application_start_date": "2026-05-14",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "청년 주택드림 청약통장, 이율 최고 4.5%에 연말 소득공제도[부동산 빨간펜]",
+      "program_key": "application-deadline:kr:동아일보-경제:2026-08-07:청년-주택드림-청약통장-이율-최고-4-5-에-연말-소득공제도-부동산-빨간펜",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260514/133922836/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "청년 주택드림 청약통장, 이율 최고 4.5%에 연말 소득공제도[부동산 빨간펜]",
+      "url": "https://www.donga.com/news/Economy/article/all/20260514/133922836/1",
+      "event_at": "2026-05-13T20:44:00+00:00",
+      "application_deadline": "2026-08-07",
+      "application_start_date": "2026-05-14",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "청년 주택드림 청약통장, 이율 최고 4.5%에 연말 소득공제도[부동산 빨간펜]",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-05-13:청년-주택드림-청약통장-이율-최고-4-5-에-연말-소득공제도-부동산-빨간펜",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260514/133922836/1",
       "evidence_url_present": true
     },
     {
