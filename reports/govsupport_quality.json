@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-05-07T01:59:02.241095+00:00",
+  "generated_at": "2026-05-13T12:25:55.411267+00:00",
   "summary": {
     "total_sources": 25,
     "tracked_sources": 6,
@@ -12,11 +12,11 @@
     "not_tracked_sources": 17,
     "skipped_disabled_sources": 2,
     "support_program_notice_events": 12,
-    "application_deadline_events": 11,
-    "eligibility_rule_events": 30,
+    "application_deadline_events": 10,
+    "eligibility_rule_events": 41,
     "selection_result_events": 0,
-    "unique_program_key_count": 53,
-    "events_with_evidence_url": 53,
+    "unique_program_key_count": 55,
+    "events_with_evidence_url": 63,
     "collection_error_count": 0
   },
   "sources": [
@@ -56,17 +56,23 @@
       "status": "fresh",
       "article_count": 2,
       "event_count": 2,
-      "latest_event_at": "2026-05-06T00:07:00+00:00",
-      "age_days": 1.08,
-      "latest_title": "독립유공자 후손, 최소 2대까지 보상…2300여 명 추가 혜택",
-      "latest_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148963914&call_from=rsslink",
-      "latest_evidence_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148963914&call_from=rsslink",
-      "latest_program_title": "독립유공자 후손, 최소 2대까지 보상…2300여 명 추가 혜택",
-      "latest_program_key": "support-program-notice:kr:정책브리핑:2026-05-06:독립유공자-후손-최소-2대까지-보상-2300여-명-추가-혜택",
+      "latest_event_at": "2026-05-13T00:29:00+00:00",
+      "age_days": 0.5,
+      "latest_title": "정부, 선박 핵심기술 확보에 5250억 투자…24시간 'AI조선소'도 확보",
+      "latest_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148964313&call_from=rsslink",
+      "latest_evidence_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148964313&call_from=rsslink",
+      "latest_program_title": "정부, 선박 핵심기술 확보에 5250억 투자…24시간 'AI조선소'도 확보",
+      "latest_program_key": "support-program-notice:kr:정책브리핑:2026-05-13:정부-선박-핵심기술-확보에-5250억-투자-24시간-ai조선소-도-확보",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
+        "Industry": [
+          "수산",
+          "제조",
+          "AI"
+        ],
         "Region": [
-          "서울"
+          "울산",
+          "경남"
         ]
       },
       "latest_selection_result_date": "",
@@ -84,15 +90,15 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 1,
       "status": "fresh",
-      "article_count": 10,
-      "event_count": 6,
-      "latest_event_at": "2026-05-07T01:58:04.476042+00:00",
+      "article_count": 11,
+      "event_count": 8,
+      "latest_event_at": "2026-05-13T12:25:08.352228+00:00",
       "age_days": 0.0,
-      "latest_title": "「2026년도 희망리턴패키지 재기사업화(경영개선) 위기 소상공인 진단·멘토링 지원」 모집 공고",
-      "latest_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53473&pNm=BOA0101&eventMode=",
-      "latest_evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53473&pNm=BOA0101&eventMode=",
-      "latest_program_title": "「2026년도 희망리턴패키지 재기사업화(경영개선) 위기 소상공인 진단·멘토링 지원」 모집 공고",
-      "latest_program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-05-07:2026년도-희망리턴패키지-재기사업화-경영개선-위기-소상공인-진단-멘토링-지원-모집-공고",
+      "latest_title": "소상공인시장진흥공단 협업과제 추진성과",
+      "latest_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53472&pNm=BOA0101&eventMode=",
+      "latest_evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53472&pNm=BOA0101&eventMode=",
+      "latest_program_title": "소상공인시장진흥공단 협업과제 추진성과",
+      "latest_program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-05-13:소상공인시장진흥공단-협업과제-추진성과",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
         "TargetGroup": [
@@ -116,14 +122,14 @@
       "status": "fresh",
       "article_count": 10,
       "event_count": 5,
-      "latest_event_at": "2026-05-27T00:00:00+00:00",
+      "latest_event_at": "2026-05-19T00:00:00+00:00",
       "age_days": 0.0,
-      "latest_title": "2026년 문화예술단체 지원사업 모집 공모",
-      "latest_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457537",
-      "latest_evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457537",
-      "latest_program_title": "2026년 문화예술단체 지원사업 모집 공모",
-      "latest_program_key": "application-deadline:kr:서울시-지원사업:2026-05-27:2026년-문화예술단체-지원사업-모집-공모",
-      "latest_application_deadline": "2026-05-27",
+      "latest_title": "2026년 제2회 서울특별시 마을법무사 공개모집 공고",
+      "latest_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457905",
+      "latest_evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457905",
+      "latest_program_title": "2026년 제2회 서울특별시 마을법무사 공개모집 공고",
+      "latest_program_key": "application-deadline:kr:서울시-지원사업:2026-05-19:2026년-제2회-서울특별시-마을법무사-공개모집-공고",
+      "latest_application_deadline": "2026-05-19",
       "latest_eligibility_fields": {
         "Region": [
           "서울"
@@ -146,15 +152,19 @@
       "status": "fresh",
       "article_count": 10,
       "event_count": 10,
-      "latest_event_at": "2026-05-07T01:58:25.625856+00:00",
+      "latest_event_at": "2026-05-13T12:25:23.404658+00:00",
       "age_days": 0.0,
-      "latest_title": "2026년도 공급망안정화 선도사업자 제1차 선정계획 공고",
-      "latest_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=gZ2EMX2oRlbXcMEzRbJQTCDcVeKP3UKBm_Gx48RE.node30?bbsId=BBSMSTR_000000000006&nttId=125673",
-      "latest_evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=gZ2EMX2oRlbXcMEzRbJQTCDcVeKP3UKBm_Gx48RE.node30?bbsId=BBSMSTR_000000000006&nttId=125673",
-      "latest_program_title": "2026년도 공급망안정화 선도사업자 제1차 선정계획 공고",
-      "latest_program_key": "support-program-notice:kr:행정안전부:2026-05-07:2026년도-공급망안정화-선도사업자-제1차-선정계획-공고",
+      "latest_title": "행정안전부 디지털소통팀 한시임기제공무원(디지털소통 콘텐츠 기획) 채용 최종합격자 공고",
+      "latest_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125847",
+      "latest_evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125847",
+      "latest_program_title": "행정안전부 디지털소통팀 한시임기제공무원(디지털소통 콘텐츠 기획) 채용 최종합격자 공고",
+      "latest_program_key": "support-program-notice:kr:행정안전부:2026-05-13:행정안전부-디지털소통팀-한시임기제공무원-디지털소통-콘텐츠-기획-채용-최종합격자-공고",
       "latest_application_deadline": "",
-      "latest_eligibility_fields": {},
+      "latest_eligibility_fields": {
+        "Industry": [
+          "콘텐츠"
+        ]
+      },
       "latest_selection_result_date": "",
       "latest_selected_count": "",
       "latest_execution_amount": "",
@@ -170,19 +180,19 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
       "status": "fresh",
-      "article_count": 15,
-      "event_count": 3,
-      "latest_event_at": "2026-05-07T01:58:34.520623+00:00",
+      "article_count": 17,
+      "event_count": 8,
+      "latest_event_at": "2026-05-13T12:25:31.522085+00:00",
       "age_days": 0.0,
-      "latest_title": "새글 월 10만 원씩 3년 모으면 1,440만 원 받는다 ‘청년내일저축계좌’ 신규 모집",
-      "latest_url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490402&tag=&nPage=1",
-      "latest_evidence_url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490402&tag=&nPage=1",
-      "latest_program_title": "새글 월 10만 원씩 3년 모으면 1,440만 원 받는다 ‘청년내일저축계좌’ 신규 모집",
-      "latest_program_key": "eligibility-rule:kr:보건복지부:2026-05-07:새글-월-10만-원씩-3년-모으면-1-440만-원-받는다-청년내일저축계좌-신규-모집",
+      "latest_title": "새글 장애아동 맞춤형 지원 강화를 위한 지역장애아동지원센터 울산부터 전국 순차 개소",
+      "latest_url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490489&tag=&nPage=1",
+      "latest_evidence_url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490489&tag=&nPage=1",
+      "latest_program_title": "새글 장애아동 맞춤형 지원 강화를 위한 지역장애아동지원센터 울산부터 전국 순차 개소",
+      "latest_program_key": "eligibility-rule:kr:보건복지부:2026-05-13:새글-장애아동-맞춤형-지원-강화를-위한-지역장애아동지원센터-울산부터-전국-순차-개소",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
-        "TargetGroup": [
-          "청년"
+        "Region": [
+          "울산"
         ]
       },
       "latest_selection_result_date": "",
@@ -200,19 +210,26 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
       "status": "fresh",
-      "article_count": 10,
+      "article_count": 13,
       "event_count": 7,
-      "latest_event_at": "2026-05-07T01:58:48.004993+00:00",
+      "latest_event_at": "2026-05-13T12:25:42.170069+00:00",
       "age_days": 0.0,
-      "latest_title": "지역이나 사회연대경제조직 지원 우수 조합에 획기적인 인센티브를 제공하여 상호금융권의 건전성은 지키고, 포용금융은 강화하겠습니다.  - ｢상호금융 제도개선 TF｣ Kick-off 회의 개최",
-      "latest_url": "https://www.fsc.go.kr/no010101/86813?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
-      "latest_evidence_url": "https://www.fsc.go.kr/no010101/86813?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
-      "latest_program_title": "지역이나 사회연대경제조직 지원 우수 조합에 획기적인 인센티브를 제공하여 상호금융권의 건전성은 지키고, 포용금융은 강화하겠습니다.  - ｢상호금융 제도개선 TF｣ Kick-off 회의 개최",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-05-07:지역이나-사회연대경제조직-지원-우수-조합에-획기적인-인센티브를-제공하여-상호금융권의-건전성은-지키고-포용금융은-강화하겠습니다-상호금융-제도개선-tf-kick-off-회의-개최",
+      "latest_title": "서울 동북권 최초 스타트업 보육공간 개소, 청년 창업가들이 꿈을 펼칠 기회를 넓혀 - 금융위원장, 신보 「NEST AI-Lab」 광진 개소식 및  청년 스타트업 간담회 개최",
+      "latest_url": "https://www.fsc.go.kr/no010101/86846?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+      "latest_evidence_url": "https://www.fsc.go.kr/no010101/86846?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+      "latest_program_title": "서울 동북권 최초 스타트업 보육공간 개소, 청년 창업가들이 꿈을 펼칠 기회를 넓혀 - 금융위원장, 신보 「NEST AI-Lab」 광진 개소식 및  청년 스타트업 간담회 개최",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-05-13:서울-동북권-최초-스타트업-보육공간-개소-청년-창업가들이-꿈을-펼칠-기회를-넓혀-금융위원장-신보-nest-ai-lab-광진-개소식-및-청년-스타트업-간담회-개최",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
+        "TargetGroup": [
+          "스타트업",
+          "청년"
+        ],
         "Industry": [
-          "제조"
+          "AI"
+        ],
+        "Region": [
+          "서울"
         ]
       },
       "latest_selection_result_date": "",
@@ -672,7 +689,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 2,
+      "article_count": 1,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -693,176 +710,134 @@
   ],
   "events": [
     {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "5대 금융그룹, 투‧융자 자금 1조원 공급 등  벤처‧스타트업 성장 지원 참여",
-      "url": "https://www.fsc.go.kr/no010101/86821?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
-      "event_at": "2026-05-07T01:58:47.270384+00:00",
+      "source": "정책브리핑",
+      "event_model": "support_program_notice",
+      "title": "정부, 선박 핵심기술 확보에 5250억 투자…24시간 'AI조선소'도 확보",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148964313&call_from=rsslink",
+      "event_at": "2026-05-13T00:29:00+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인",
-          "스타트업"
-        ],
-        "BusinessStage": [
-          "벤처기업"
-        ],
         "Industry": [
-          "AI",
-          "바이오"
+          "수산",
+          "제조",
+          "AI"
         ],
         "Region": [
-          "서울",
+          "울산",
+          "경남"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "정부, 선박 핵심기술 확보에 5250억 투자…24시간 'AI조선소'도 확보",
+      "program_key": "support-program-notice:kr:정책브리핑:2026-05-13:정부-선박-핵심기술-확보에-5250억-투자-24시간-ai조선소-도-확보",
+      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148964313&call_from=rsslink",
+      "evidence_url_present": true
+    },
+    {
+      "source": "정책브리핑",
+      "event_model": "eligibility_rule",
+      "title": "정부, 선박 핵심기술 확보에 5250억 투자…24시간 'AI조선소'도 확보",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148964313&call_from=rsslink",
+      "event_at": "2026-05-13T00:29:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "수산",
+          "제조",
+          "AI"
+        ],
+        "Region": [
+          "울산",
+          "경남"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "정부, 선박 핵심기술 확보에 5250억 투자…24시간 'AI조선소'도 확보",
+      "program_key": "eligibility-rule:kr:정책브리핑:2026-05-13:정부-선박-핵심기술-확보에-5250억-투자-24시간-ai조선소-도-확보",
+      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148964313&call_from=rsslink",
+      "evidence_url_present": true
+    },
+    {
+      "source": "농림축산식품부",
+      "event_model": "eligibility_rule",
+      "title": "농업·농촌 에너지 대전환 해법 찾아 현장으로",
+      "url": "http://www.mafra.go.kr/bbs/home/792/577899/artclView.do",
+      "event_at": "2026-05-12T23:45:08+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "농업"
+        ],
+        "Region": [
           "대전"
         ]
       },
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "5대 금융그룹, 투‧융자 자금 1조원 공급 등  벤처‧스타트업 성장 지원 참여",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-05-07:5대-금융그룹-투-융자-자금-1조원-공급-등-벤처-스타트업-성장-지원-참여",
-      "evidence_url": "https://www.fsc.go.kr/no010101/86821?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+      "program_title": "농업·농촌 에너지 대전환 해법 찾아 현장으로",
+      "program_key": "eligibility-rule:kr:농림축산식품부:2026-05-12:농업-농촌-에너지-대전환-해법-찾아-현장으로",
+      "evidence_url": "http://www.mafra.go.kr/bbs/home/792/577899/artclView.do",
       "evidence_url_present": true
     },
     {
-      "source": "금융위원회",
-      "event_model": "application_deadline",
-      "title": "국민성장펀드가“소버린 AI”경쟁력 강화와 바이오·이차전지의 실질적 성과창출을 지원합니다.",
-      "url": "https://www.fsc.go.kr/no010101/86830?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
-      "event_at": "2026-07-05T00:00:00+00:00",
-      "application_deadline": "2026-07-05",
-      "application_start_date": "2026-05-06",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "중소기업",
-          "스타트업"
-        ],
-        "BusinessStage": [
-          "벤처기업"
-        ],
-        "Industry": [
-          "제조",
-          "AI",
-          "바이오"
-        ],
-        "Region": [
-          "울산",
-          "세종",
-          "전남"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "국민성장펀드가“소버린 AI”경쟁력 강화와 바이오·이차전지의 실질적 성과창출을 지원합니다.",
-      "program_key": "application-deadline:kr:금융위원회:2026-07-05:국민성장펀드가-소버린-ai-경쟁력-강화와-바이오-이차전지의-실질적-성과창출을-지원합니다",
-      "evidence_url": "https://www.fsc.go.kr/no010101/86830?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
+      "source": "TechCrunch Startups",
       "event_model": "eligibility_rule",
-      "title": "국민성장펀드가“소버린 AI”경쟁력 강화와 바이오·이차전지의 실질적 성과창출을 지원합니다.",
-      "url": "https://www.fsc.go.kr/no010101/86830?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
-      "event_at": "2026-05-07T01:58:46.439987+00:00",
-      "application_deadline": "2026-07-05",
-      "application_start_date": "2026-05-06",
+      "title": "Kevin Hartz’s A* just closed its third fund with $450M",
+      "url": "https://techcrunch.com/2026/05/12/kevin-hartzs-a-just-closed-its-third-fund-with-450-million/",
+      "event_at": "2026-05-12T09:45:05+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
       "eligibility_fields": {
-        "TargetGroup": [
-          "중소기업",
-          "스타트업"
-        ],
-        "BusinessStage": [
-          "벤처기업"
-        ],
         "Industry": [
-          "제조",
-          "AI",
-          "바이오"
-        ],
-        "Region": [
-          "울산",
-          "세종",
-          "전남"
+          "AI"
         ]
       },
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "국민성장펀드가“소버린 AI”경쟁력 강화와 바이오·이차전지의 실질적 성과창출을 지원합니다.",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-05-07:국민성장펀드가-소버린-ai-경쟁력-강화와-바이오-이차전지의-실질적-성과창출을-지원합니다",
-      "evidence_url": "https://www.fsc.go.kr/no010101/86830?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+      "program_title": "Kevin Hartz’s A* just closed its third fund with $450M",
+      "program_key": "eligibility-rule:us:techcrunch-startups:2026-05-12:kevin-hartz-s-a-just-closed-its-third-fund-with-450m",
+      "evidence_url": "https://techcrunch.com/2026/05/12/kevin-hartzs-a-just-closed-its-third-fund-with-450-million/",
       "evidence_url_present": true
     },
     {
-      "source": "금융위원회",
-      "event_model": "application_deadline",
-      "title": "「국민참여형 국민성장펀드」가 5.22일(금)부터 3주간  일반국민을 대상으로 판매됩니다.",
-      "url": "https://www.fsc.go.kr/no010101/86834?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
-      "event_at": "2026-05-28T00:00:00+00:00",
-      "application_deadline": "2026-05-28",
-      "application_start_date": "2026-05-06",
-      "eligibility_fields": {
-        "BusinessStage": [
-          "벤처기업"
-        ],
-        "Industry": [
-          "AI",
-          "바이오"
-        ],
-        "Region": [
-          "부산",
-          "광주",
-          "경남"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "「국민참여형 국민성장펀드」가 5.22일(금)부터 3주간  일반국민을 대상으로 판매됩니다.",
-      "program_key": "application-deadline:kr:금융위원회:2026-05-28:국민참여형-국민성장펀드-가-5-22일-금-부터-3주간-일반국민을-대상으로-판매됩니다",
-      "evidence_url": "https://www.fsc.go.kr/no010101/86834?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
+      "source": "동아일보 경제",
       "event_model": "eligibility_rule",
-      "title": "「국민참여형 국민성장펀드」가 5.22일(금)부터 3주간  일반국민을 대상으로 판매됩니다.",
-      "url": "https://www.fsc.go.kr/no010101/86834?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
-      "event_at": "2026-05-07T01:58:44.773039+00:00",
-      "application_deadline": "2026-05-28",
-      "application_start_date": "2026-05-06",
+      "title": "2주택자 정용진, 한남동 주택 팔았다…양도세 36억 아껴",
+      "url": "https://www.donga.com/news/Economy/article/all/20260513/133918152/1",
+      "event_at": "2026-05-13T02:54:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
       "eligibility_fields": {
-        "BusinessStage": [
-          "벤처기업"
-        ],
-        "Industry": [
-          "AI",
-          "바이오"
-        ],
         "Region": [
-          "부산",
-          "광주",
-          "경남"
+          "서울",
+          "경기"
         ]
       },
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "「국민참여형 국민성장펀드」가 5.22일(금)부터 3주간  일반국민을 대상으로 판매됩니다.",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-05-07:국민참여형-국민성장펀드-가-5-22일-금-부터-3주간-일반국민을-대상으로-판매됩니다",
-      "evidence_url": "https://www.fsc.go.kr/no010101/86834?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+      "program_title": "2주택자 정용진, 한남동 주택 팔았다…양도세 36억 아껴",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-05-13:2주택자-정용진-한남동-주택-팔았다-양도세-36억-아껴",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260513/133918152/1",
       "evidence_url_present": true
     },
     {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "2026년 문화예술단체 지원사업 모집 공모",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457537",
-      "event_at": "2026-05-27T00:00:00+00:00",
-      "application_deadline": "2026-05-27",
-      "application_start_date": "2026-05-07",
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "미술치료 받는 발달장애 아동·청소년 작품, ‘아르피쉬’ 브랜드로 첫선",
+      "url": "https://www.khan.co.kr/article/202605132121025/?utm_source=khan_rss&utm_medium=rss&utm_campaign=economy_news",
+      "event_at": "2026-05-13T03:21:02+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
       "eligibility_fields": {
         "Region": [
           "서울"
@@ -871,30 +846,95 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "2026년 문화예술단체 지원사업 모집 공모",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-05-27:2026년-문화예술단체-지원사업-모집-공모",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457537",
+      "program_title": "미술치료 받는 발달장애 아동·청소년 작품, ‘아르피쉬’ 브랜드로 첫선",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-05-13:미술치료-받는-발달장애-아동-청소년-작품-아르피쉬-브랜드로-첫선",
+      "evidence_url": "https://www.khan.co.kr/article/202605132121025/?utm_source=khan_rss&utm_medium=rss&utm_campaign=economy_news",
       "evidence_url_present": true
     },
     {
-      "source": "서울시 지원사업",
+      "source": "SBS 뉴스 정치",
       "event_model": "eligibility_rule",
-      "title": "2026년 문화예술단체 지원사업 모집 공모",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457537",
-      "event_at": "2026-05-07T01:58:15.391622+00:00",
-      "application_deadline": "2026-05-27",
-      "application_start_date": "2026-05-07",
+      "title": "격차 줄어든 대구·부산·경남…'공소취소권' 반응은",
+      "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008560253&plink=RSSLINK&cooper=RSSREADER",
+      "event_at": "2026-05-13T03:14:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
       "eligibility_fields": {
         "Region": [
-          "서울"
+          "부산",
+          "대구",
+          "경남"
         ]
       },
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "2026년 문화예술단체 지원사업 모집 공모",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-05-07:2026년-문화예술단체-지원사업-모집-공모",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457537",
+      "program_title": "격차 줄어든 대구·부산·경남…'공소취소권' 반응은",
+      "program_key": "eligibility-rule:kr:sbs-뉴스-정치:2026-05-13:격차-줄어든-대구-부산-경남-공소취소권-반응은",
+      "evidence_url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008560253&plink=RSSLINK&cooper=RSSREADER",
+      "evidence_url_present": true
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "event_model": "eligibility_rule",
+      "title": "'26년 소상공인시장진흥공단 5월 스케줄 달력",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53893&pNm=BOA0101&eventMode=",
+      "event_at": "2026-05-13T12:25:08.352157+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "'26년 소상공인시장진흥공단 5월 스케줄 달력",
+      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-05-13:26년-소상공인시장진흥공단-5월-스케줄-달력",
+      "evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53893&pNm=BOA0101&eventMode=",
+      "evidence_url_present": true
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "event_model": "eligibility_rule",
+      "title": "「2026년 소상공인 디지털 특성화대학」운영기관(대학) 모집공고",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53737&pNm=BOA0101&eventMode=",
+      "event_at": "2026-05-13T12:25:08.352168+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "「2026년 소상공인 디지털 특성화대학」운영기관(대학) 모집공고",
+      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-05-13:2026년-소상공인-디지털-특성화대학-운영기관-대학-모집공고",
+      "evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53737&pNm=BOA0101&eventMode=",
+      "evidence_url_present": true
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "event_model": "eligibility_rule",
+      "title": "2026년 글로벌 소상공인(K-소상공인) 육성사업 소상공인 모집 공고",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53522&pNm=BOA0101&eventMode=",
+      "event_at": "2026-05-13T12:25:08.352191+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 글로벌 소상공인(K-소상공인) 육성사업 소상공인 모집 공고",
+      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-05-13:2026년-글로벌-소상공인-k-소상공인-육성사업-소상공인-모집-공고",
+      "evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53522&pNm=BOA0101&eventMode=",
       "evidence_url_present": true
     },
     {
@@ -902,7 +942,7 @@
       "event_model": "eligibility_rule",
       "title": "2026년 중소벤처기업부 소상공인 정책자금 융자사업 공고(수정)",
       "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53519&pNm=BOA0101&eventMode=",
-      "event_at": "2026-05-07T01:58:04.476016+00:00",
+      "event_at": "2026-05-13T12:25:08.352200+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -917,214 +957,8 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "2026년 중소벤처기업부 소상공인 정책자금 융자사업 공고(수정)",
-      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-05-07:2026년-중소벤처기업부-소상공인-정책자금-융자사업-공고-수정",
+      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-05-13:2026년-중소벤처기업부-소상공인-정책자금-융자사업-공고-수정",
       "evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53519&pNm=BOA0101&eventMode=",
-      "evidence_url_present": true
-    },
-    {
-      "source": "정책브리핑",
-      "event_model": "support_program_notice",
-      "title": "고유가 피해 관광업계 지원, 상반기 4375억 원으로 확대",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148963920&call_from=rsslink",
-      "event_at": "2026-05-06T00:01:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "중소기업",
-          "스타트업"
-        ],
-        "Industry": [
-          "관광"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "고유가 피해 관광업계 지원, 상반기 4375억 원으로 확대",
-      "program_key": "support-program-notice:kr:정책브리핑:2026-05-06:고유가-피해-관광업계-지원-상반기-4375억-원으로-확대",
-      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148963920&call_from=rsslink",
-      "evidence_url_present": true
-    },
-    {
-      "source": "정책브리핑",
-      "event_model": "eligibility_rule",
-      "title": "고유가 피해 관광업계 지원, 상반기 4375억 원으로 확대",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148963920&call_from=rsslink",
-      "event_at": "2026-05-06T00:01:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "중소기업",
-          "스타트업"
-        ],
-        "Industry": [
-          "관광"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "고유가 피해 관광업계 지원, 상반기 4375억 원으로 확대",
-      "program_key": "eligibility-rule:kr:정책브리핑:2026-05-06:고유가-피해-관광업계-지원-상반기-4375억-원으로-확대",
-      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148963920&call_from=rsslink",
-      "evidence_url_present": true
-    },
-    {
-      "source": "정책브리핑",
-      "event_model": "support_program_notice",
-      "title": "독립유공자 후손, 최소 2대까지 보상…2300여 명 추가 혜택",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148963914&call_from=rsslink",
-      "event_at": "2026-05-06T00:07:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "독립유공자 후손, 최소 2대까지 보상…2300여 명 추가 혜택",
-      "program_key": "support-program-notice:kr:정책브리핑:2026-05-06:독립유공자-후손-최소-2대까지-보상-2300여-명-추가-혜택",
-      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148963914&call_from=rsslink",
-      "evidence_url_present": true
-    },
-    {
-      "source": "정책브리핑",
-      "event_model": "eligibility_rule",
-      "title": "독립유공자 후손, 최소 2대까지 보상…2300여 명 추가 혜택",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148963914&call_from=rsslink",
-      "event_at": "2026-05-06T00:07:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "독립유공자 후손, 최소 2대까지 보상…2300여 명 추가 혜택",
-      "program_key": "eligibility-rule:kr:정책브리핑:2026-05-06:독립유공자-후손-최소-2대까지-보상-2300여-명-추가-혜택",
-      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148963914&call_from=rsslink",
-      "evidence_url_present": true
-    },
-    {
-      "source": "TechCrunch Startups",
-      "event_model": "eligibility_rule",
-      "title": "A 20-minute pitch wins Indian startup Pronto backing from Lachy Groom",
-      "url": "https://techcrunch.com/2026/05/06/a-20-minute-pitch-wins-indian-startup-pronto-backing-from-lachy-groom/",
-      "event_at": "2026-05-06T13:30:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "AI"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "A 20-minute pitch wins Indian startup Pronto backing from Lachy Groom",
-      "program_key": "eligibility-rule:us:techcrunch-startups:2026-05-06:a-20-minute-pitch-wins-indian-startup-pronto-backing-from-lachy-groom",
-      "evidence_url": "https://techcrunch.com/2026/05/06/a-20-minute-pitch-wins-indian-startup-pronto-backing-from-lachy-groom/",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "업스테이지, 포털 ‘다음’ 인수 확정···‘AI 포털’ 거듭날까",
-      "url": "https://www.khan.co.kr/article/202605071053001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=economy_news",
-      "event_at": "2026-05-06T16:53:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "스타트업"
-        ],
-        "Industry": [
-          "AI"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "업스테이지, 포털 ‘다음’ 인수 확정···‘AI 포털’ 거듭날까",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-05-06:업스테이지-포털-다음-인수-확정-ai-포털-거듭날까",
-      "evidence_url": "https://www.khan.co.kr/article/202605071053001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=economy_news",
-      "evidence_url_present": true
-    },
-    {
-      "source": "소상공인시장진흥공단",
-      "event_model": "eligibility_rule",
-      "title": "'26년 소상공인시장진흥공단 5월 스케줄 달력",
-      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53893&pNm=BOA0101&eventMode=",
-      "event_at": "2026-05-07T01:58:04.475927+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "'26년 소상공인시장진흥공단 5월 스케줄 달력",
-      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-05-07:26년-소상공인시장진흥공단-5월-스케줄-달력",
-      "evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53893&pNm=BOA0101&eventMode=",
-      "evidence_url_present": true
-    },
-    {
-      "source": "소상공인시장진흥공단",
-      "event_model": "eligibility_rule",
-      "title": "「2026년 소상공인 디지털 특성화대학」운영기관(대학) 모집공고",
-      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53737&pNm=BOA0101&eventMode=",
-      "event_at": "2026-05-07T01:58:04.475947+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "「2026년 소상공인 디지털 특성화대학」운영기관(대학) 모집공고",
-      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-05-07:2026년-소상공인-디지털-특성화대학-운영기관-대학-모집공고",
-      "evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53737&pNm=BOA0101&eventMode=",
-      "evidence_url_present": true
-    },
-    {
-      "source": "소상공인시장진흥공단",
-      "event_model": "eligibility_rule",
-      "title": "2026년 글로벌 소상공인(K-소상공인) 육성사업 소상공인 모집 공고",
-      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53522&pNm=BOA0101&eventMode=",
-      "event_at": "2026-05-07T01:58:04.476005+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 글로벌 소상공인(K-소상공인) 육성사업 소상공인 모집 공고",
-      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-05-07:2026년-글로벌-소상공인-k-소상공인-육성사업-소상공인-모집-공고",
-      "evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53522&pNm=BOA0101&eventMode=",
       "evidence_url_present": true
     },
     {
@@ -1132,7 +966,7 @@
       "event_model": "eligibility_rule",
       "title": "「2026년 대한민국 소상공인대회」 포상 계획",
       "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53514&pNm=BOA0101&eventMode=",
-      "event_at": "2026-05-07T01:58:04.476027+00:00",
+      "event_at": "2026-05-13T12:25:08.352210+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -1144,7 +978,7 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "「2026년 대한민국 소상공인대회」 포상 계획",
-      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-05-07:2026년-대한민국-소상공인대회-포상-계획",
+      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-05-13:2026년-대한민국-소상공인대회-포상-계획",
       "evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53514&pNm=BOA0101&eventMode=",
       "evidence_url_present": true
     },
@@ -1153,7 +987,7 @@
       "event_model": "eligibility_rule",
       "title": "「2026년도 희망리턴패키지 재기사업화(경영개선) 위기 소상공인 진단·멘토링 지원」 모집 공고",
       "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53473&pNm=BOA0101&eventMode=",
-      "event_at": "2026-05-07T01:58:04.476042+00:00",
+      "event_at": "2026-05-13T12:25:08.352219+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -1165,61 +999,43 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "「2026년도 희망리턴패키지 재기사업화(경영개선) 위기 소상공인 진단·멘토링 지원」 모집 공고",
-      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-05-07:2026년도-희망리턴패키지-재기사업화-경영개선-위기-소상공인-진단-멘토링-지원-모집-공고",
+      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-05-13:2026년도-희망리턴패키지-재기사업화-경영개선-위기-소상공인-진단-멘토링-지원-모집-공고",
       "evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53473&pNm=BOA0101&eventMode=",
       "evidence_url_present": true
     },
     {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "2026년 2차 자동차번호판 영치 사전안내서 공시송달 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457545",
-      "event_at": "2026-05-21T00:00:00+00:00",
-      "application_deadline": "2026-05-21",
-      "application_start_date": "2026-05-07",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 2차 자동차번호판 영치 사전안내서 공시송달 공고",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-05-21:2026년-2차-자동차번호판-영치-사전안내서-공시송달-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457545",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
+      "source": "소상공인시장진흥공단",
       "event_model": "eligibility_rule",
-      "title": "2026년 2차 자동차번호판 영치 사전안내서 공시송달 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457545",
-      "event_at": "2026-05-07T01:58:12.440189+00:00",
-      "application_deadline": "2026-05-21",
-      "application_start_date": "2026-05-07",
+      "title": "소상공인시장진흥공단 협업과제 추진성과",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53472&pNm=BOA0101&eventMode=",
+      "event_at": "2026-05-13T12:25:08.352228+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
       "eligibility_fields": {
-        "Region": [
-          "서울"
+        "TargetGroup": [
+          "소상공인"
         ]
       },
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "2026년 2차 자동차번호판 영치 사전안내서 공시송달 공고",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-05-07:2026년-2차-자동차번호판-영치-사전안내서-공시송달-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457545",
+      "program_title": "소상공인시장진흥공단 협업과제 추진성과",
+      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-05-13:소상공인시장진흥공단-협업과제-추진성과",
+      "evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53472&pNm=BOA0101&eventMode=",
       "evidence_url_present": true
     },
     {
       "source": "서울시 지원사업",
       "event_model": "application_deadline",
-      "title": "종합건설사업자 행정처분(과태료) 공고(제2026-1488호)",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457542",
-      "event_at": "2026-05-07T00:00:00+00:00",
-      "application_deadline": "2026-05-07",
-      "application_start_date": "",
+      "title": "2025년 서울시 시민참여사업 이행사항 점검 및 평가 결과 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457906",
+      "event_at": "2026-02-07T00:00:00+00:00",
+      "application_deadline": "2026-02-07",
+      "application_start_date": "2026-05-13",
       "eligibility_fields": {
+        "Industry": [
+          "콘텐츠"
+        ],
         "Region": [
           "서울"
         ]
@@ -1227,20 +1043,23 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "종합건설사업자 행정처분(과태료) 공고(제2026-1488호)",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-05-07:종합건설사업자-행정처분-과태료-공고-제2026-1488호",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457542",
+      "program_title": "2025년 서울시 시민참여사업 이행사항 점검 및 평가 결과 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-02-07:2025년-서울시-시민참여사업-이행사항-점검-및-평가-결과-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457906",
       "evidence_url_present": true
     },
     {
       "source": "서울시 지원사업",
       "event_model": "eligibility_rule",
-      "title": "종합건설사업자 행정처분(과태료) 공고(제2026-1488호)",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457542",
-      "event_at": "2026-05-07T01:58:13.353823+00:00",
-      "application_deadline": "2026-05-07",
-      "application_start_date": "",
+      "title": "2025년 서울시 시민참여사업 이행사항 점검 및 평가 결과 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457906",
+      "event_at": "2026-05-13T12:25:12.813219+00:00",
+      "application_deadline": "2026-02-07",
+      "application_start_date": "2026-05-13",
       "eligibility_fields": {
+        "Industry": [
+          "콘텐츠"
+        ],
         "Region": [
           "서울"
         ]
@@ -1248,19 +1067,19 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "종합건설사업자 행정처분(과태료) 공고(제2026-1488호)",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-05-07:종합건설사업자-행정처분-과태료-공고-제2026-1488호",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457542",
+      "program_title": "2025년 서울시 시민참여사업 이행사항 점검 및 평가 결과 공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-05-13:2025년-서울시-시민참여사업-이행사항-점검-및-평가-결과-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457906",
       "evidence_url_present": true
     },
     {
       "source": "서울시 지원사업",
       "event_model": "application_deadline",
-      "title": "종합건설사업자 행정처분(과태료) 공고(제2026-1489호)",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457540",
-      "event_at": "2026-05-07T00:00:00+00:00",
-      "application_deadline": "2026-05-07",
-      "application_start_date": "",
+      "title": "2026년 제2회 서울특별시 마을법무사 공개모집 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457905",
+      "event_at": "2026-05-19T00:00:00+00:00",
+      "application_deadline": "2026-05-19",
+      "application_start_date": "2026-05-13",
       "eligibility_fields": {
         "Region": [
           "서울"
@@ -1269,19 +1088,19 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "종합건설사업자 행정처분(과태료) 공고(제2026-1489호)",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-05-07:종합건설사업자-행정처분-과태료-공고-제2026-1489호",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457540",
+      "program_title": "2026년 제2회 서울특별시 마을법무사 공개모집 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-05-19:2026년-제2회-서울특별시-마을법무사-공개모집-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457905",
       "evidence_url_present": true
     },
     {
       "source": "서울시 지원사업",
       "event_model": "eligibility_rule",
-      "title": "종합건설사업자 행정처분(과태료) 공고(제2026-1489호)",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457540",
-      "event_at": "2026-05-07T01:58:14.434131+00:00",
-      "application_deadline": "2026-05-07",
-      "application_start_date": "",
+      "title": "2026년 제2회 서울특별시 마을법무사 공개모집 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457905",
+      "event_at": "2026-05-13T12:25:13.632942+00:00",
+      "application_deadline": "2026-05-19",
+      "application_start_date": "2026-05-13",
       "eligibility_fields": {
         "Region": [
           "서울"
@@ -1290,20 +1109,23 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "종합건설사업자 행정처분(과태료) 공고(제2026-1489호)",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-05-07:종합건설사업자-행정처분-과태료-공고-제2026-1489호",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457540",
+      "program_title": "2026년 제2회 서울특별시 마을법무사 공개모집 공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-05-13:2026년-제2회-서울특별시-마을법무사-공개모집-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457905",
       "evidence_url_present": true
     },
     {
       "source": "서울시 지원사업",
       "event_model": "application_deadline",
-      "title": "반환기한이 경과된 세입세출외현금 공시송달 공고(전라남도 함평군 공고 제2026-8115호)",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457527",
-      "event_at": "2026-05-07T00:00:00+00:00",
-      "application_deadline": "2026-05-07",
-      "application_start_date": "",
+      "title": "서울노인복지센터 직원 채용 재공고 [긴급공고]",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457899",
+      "event_at": "2026-01-03T00:00:00+00:00",
+      "application_deadline": "2026-01-03",
+      "application_start_date": "2026-05-13",
       "eligibility_fields": {
+        "TargetGroup": [
+          "저소득"
+        ],
         "Region": [
           "서울"
         ]
@@ -1311,20 +1133,23 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "반환기한이 경과된 세입세출외현금 공시송달 공고(전라남도 함평군 공고 제2026-8115호)",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-05-07:반환기한이-경과된-세입세출외현금-공시송달-공고-전라남도-함평군-공고-제2026-8115호",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457527",
+      "program_title": "서울노인복지센터 직원 채용 재공고 [긴급공고]",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-01-03:서울노인복지센터-직원-채용-재공고-긴급공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457899",
       "evidence_url_present": true
     },
     {
       "source": "서울시 지원사업",
       "event_model": "eligibility_rule",
-      "title": "반환기한이 경과된 세입세출외현금 공시송달 공고(전라남도 함평군 공고 제2026-8115호)",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457527",
-      "event_at": "2026-05-07T01:58:16.883232+00:00",
-      "application_deadline": "2026-05-07",
-      "application_start_date": "",
+      "title": "서울노인복지센터 직원 채용 재공고 [긴급공고]",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457899",
+      "event_at": "2026-05-13T12:25:14.667995+00:00",
+      "application_deadline": "2026-01-03",
+      "application_start_date": "2026-05-13",
       "eligibility_fields": {
+        "TargetGroup": [
+          "저소득"
+        ],
         "Region": [
           "서울"
         ]
@@ -1332,340 +1157,430 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "반환기한이 경과된 세입세출외현금 공시송달 공고(전라남도 함평군 공고 제2026-8115호)",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-05-07:반환기한이-경과된-세입세출외현금-공시송달-공고-전라남도-함평군-공고-제2026-8115호",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457527",
+      "program_title": "서울노인복지센터 직원 채용 재공고 [긴급공고]",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-05-13:서울노인복지센터-직원-채용-재공고-긴급공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457899",
       "evidence_url_present": true
     },
     {
       "source": "서울시 지원사업",
-      "event_model": "eligibility_rule",
-      "title": "2026 제44회 서울특별시 건축상 작품모집 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457490",
-      "event_at": "2026-05-07T01:58:18.412988+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026 제44회 서울특별시 건축상 작품모집 공고",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-05-07:2026-제44회-서울특별시-건축상-작품모집-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457490",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "eligibility_rule",
-      "title": "2026년 서울시 공공건축가 공개모집 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457474",
-      "event_at": "2026-05-07T01:58:18.413001+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 서울시 공공건축가 공개모집 공고",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-05-07:2026년-서울시-공공건축가-공개모집-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457474",
-      "evidence_url_present": true
-    },
-    {
-      "source": "행정안전부",
-      "event_model": "support_program_notice",
-      "title": "제3차 국민안전교육 기본계획 수립 연구용역 사업 제안서 평가 결과 공개",
-      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=gZ2EMX2oRlbXcMEzRbJQTCDcVeKP3UKBm_Gx48RE.node30?bbsId=BBSMSTR_000000000006&nttId=125795",
-      "event_at": "2026-05-07T01:58:23.323269+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {},
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "제3차 국민안전교육 기본계획 수립 연구용역 사업 제안서 평가 결과 공개",
-      "program_key": "support-program-notice:kr:행정안전부:2026-05-07:제3차-국민안전교육-기본계획-수립-연구용역-사업-제안서-평가-결과-공개",
-      "evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=gZ2EMX2oRlbXcMEzRbJQTCDcVeKP3UKBm_Gx48RE.node30?bbsId=BBSMSTR_000000000006&nttId=125795",
-      "evidence_url_present": true
-    },
-    {
-      "source": "행정안전부",
-      "event_model": "support_program_notice",
-      "title": "기본사회 실현을 위한 정책 추진방향 연구 용역 제안서 기술평가 결과 공개",
-      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=gZ2EMX2oRlbXcMEzRbJQTCDcVeKP3UKBm_Gx48RE.node30?bbsId=BBSMSTR_000000000006&nttId=125790",
-      "event_at": "2026-05-07T01:58:23.783673+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {},
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "기본사회 실현을 위한 정책 추진방향 연구 용역 제안서 기술평가 결과 공개",
-      "program_key": "support-program-notice:kr:행정안전부:2026-05-07:기본사회-실현을-위한-정책-추진방향-연구-용역-제안서-기술평가-결과-공개",
-      "evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=gZ2EMX2oRlbXcMEzRbJQTCDcVeKP3UKBm_Gx48RE.node30?bbsId=BBSMSTR_000000000006&nttId=125790",
-      "evidence_url_present": true
-    },
-    {
-      "source": "행정안전부",
-      "event_model": "support_program_notice",
-      "title": "2026년 지역주도 민관협력체계 구축 및 확산 사업 용역 제안서 기술평가 결과 공개",
-      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=gZ2EMX2oRlbXcMEzRbJQTCDcVeKP3UKBm_Gx48RE.node30?bbsId=BBSMSTR_000000000006&nttId=125789",
-      "event_at": "2026-05-07T01:58:24.253544+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {},
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 지역주도 민관협력체계 구축 및 확산 사업 용역 제안서 기술평가 결과 공개",
-      "program_key": "support-program-notice:kr:행정안전부:2026-05-07:2026년-지역주도-민관협력체계-구축-및-확산-사업-용역-제안서-기술평가-결과-공개",
-      "evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=gZ2EMX2oRlbXcMEzRbJQTCDcVeKP3UKBm_Gx48RE.node30?bbsId=BBSMSTR_000000000006&nttId=125789",
-      "evidence_url_present": true
-    },
-    {
-      "source": "행정안전부",
-      "event_model": "support_program_notice",
-      "title": "「정부 간 분쟁조정기구 역할 재정립 방안 연구 용역」 제안서 기술평가 결과 알림",
-      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=gZ2EMX2oRlbXcMEzRbJQTCDcVeKP3UKBm_Gx48RE.node30?bbsId=BBSMSTR_000000000006&nttId=125788",
-      "event_at": "2026-05-07T01:58:24.709295+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {},
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "「정부 간 분쟁조정기구 역할 재정립 방안 연구 용역」 제안서 기술평가 결과 알림",
-      "program_key": "support-program-notice:kr:행정안전부:2026-05-07:정부-간-분쟁조정기구-역할-재정립-방안-연구-용역-제안서-기술평가-결과-알림",
-      "evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=gZ2EMX2oRlbXcMEzRbJQTCDcVeKP3UKBm_Gx48RE.node30?bbsId=BBSMSTR_000000000006&nttId=125788",
-      "evidence_url_present": true
-    },
-    {
-      "source": "행정안전부",
-      "event_model": "support_program_notice",
-      "title": "「지역공동체 활성화를 위한 상호금융의 역할과 감독체계에 대한 연구」제안서 기술평가 알림",
-      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=gZ2EMX2oRlbXcMEzRbJQTCDcVeKP3UKBm_Gx48RE.node30?bbsId=BBSMSTR_000000000006&nttId=125782",
-      "event_at": "2026-05-07T01:58:25.169893+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {},
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "「지역공동체 활성화를 위한 상호금융의 역할과 감독체계에 대한 연구」제안서 기술평가 알림",
-      "program_key": "support-program-notice:kr:행정안전부:2026-05-07:지역공동체-활성화를-위한-상호금융의-역할과-감독체계에-대한-연구-제안서-기술평가-알림",
-      "evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=gZ2EMX2oRlbXcMEzRbJQTCDcVeKP3UKBm_Gx48RE.node30?bbsId=BBSMSTR_000000000006&nttId=125782",
-      "evidence_url_present": true
-    },
-    {
-      "source": "행정안전부",
-      "event_model": "support_program_notice",
-      "title": "사회연대경제 및 공동체 활성화를 위한 시민사회 거버넌스 생태계 조성 방안 연구용역 제안서 기술평가결과 알림",
-      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=gZ2EMX2oRlbXcMEzRbJQTCDcVeKP3UKBm_Gx48RE.node30?bbsId=BBSMSTR_000000000006&nttId=125746",
-      "event_at": "2026-05-07T01:58:25.625769+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {},
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "사회연대경제 및 공동체 활성화를 위한 시민사회 거버넌스 생태계 조성 방안 연구용역 제안서 기술평가결과 알림",
-      "program_key": "support-program-notice:kr:행정안전부:2026-05-07:사회연대경제-및-공동체-활성화를-위한-시민사회-거버넌스-생태계-조성-방안-연구용역-제안서-기술평가결과-알림",
-      "evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=gZ2EMX2oRlbXcMEzRbJQTCDcVeKP3UKBm_Gx48RE.node30?bbsId=BBSMSTR_000000000006&nttId=125746",
-      "evidence_url_present": true
-    },
-    {
-      "source": "행정안전부",
-      "event_model": "support_program_notice",
-      "title": "2026년 재난현장 통합자원봉사지원단 교육훈련 제안서평가 결과 공개",
-      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=gZ2EMX2oRlbXcMEzRbJQTCDcVeKP3UKBm_Gx48RE.node30?bbsId=BBSMSTR_000000000006&nttId=125743",
-      "event_at": "2026-05-07T01:58:25.625795+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {},
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 재난현장 통합자원봉사지원단 교육훈련 제안서평가 결과 공개",
-      "program_key": "support-program-notice:kr:행정안전부:2026-05-07:2026년-재난현장-통합자원봉사지원단-교육훈련-제안서평가-결과-공개",
-      "evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=gZ2EMX2oRlbXcMEzRbJQTCDcVeKP3UKBm_Gx48RE.node30?bbsId=BBSMSTR_000000000006&nttId=125743",
-      "evidence_url_present": true
-    },
-    {
-      "source": "행정안전부",
-      "event_model": "support_program_notice",
-      "title": "행정안전부 전문임기제공무원 경력경쟁채용시험 최종합격자 공고",
-      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=gZ2EMX2oRlbXcMEzRbJQTCDcVeKP3UKBm_Gx48RE.node30?bbsId=BBSMSTR_000000000006&nttId=125700",
-      "event_at": "2026-05-07T01:58:25.625816+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {},
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "행정안전부 전문임기제공무원 경력경쟁채용시험 최종합격자 공고",
-      "program_key": "support-program-notice:kr:행정안전부:2026-05-07:행정안전부-전문임기제공무원-경력경쟁채용시험-최종합격자-공고",
-      "evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=gZ2EMX2oRlbXcMEzRbJQTCDcVeKP3UKBm_Gx48RE.node30?bbsId=BBSMSTR_000000000006&nttId=125700",
-      "evidence_url_present": true
-    },
-    {
-      "source": "행정안전부",
-      "event_model": "support_program_notice",
-      "title": "행정안전부 임기제 공무원 경력경쟁채용시험 최종합격자 공고",
-      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=gZ2EMX2oRlbXcMEzRbJQTCDcVeKP3UKBm_Gx48RE.node30?bbsId=BBSMSTR_000000000006&nttId=125688",
-      "event_at": "2026-05-07T01:58:25.625837+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {},
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "행정안전부 임기제 공무원 경력경쟁채용시험 최종합격자 공고",
-      "program_key": "support-program-notice:kr:행정안전부:2026-05-07:행정안전부-임기제-공무원-경력경쟁채용시험-최종합격자-공고",
-      "evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=gZ2EMX2oRlbXcMEzRbJQTCDcVeKP3UKBm_Gx48RE.node30?bbsId=BBSMSTR_000000000006&nttId=125688",
-      "evidence_url_present": true
-    },
-    {
-      "source": "행정안전부",
-      "event_model": "support_program_notice",
-      "title": "2026년도 공급망안정화 선도사업자 제1차 선정계획 공고",
-      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=gZ2EMX2oRlbXcMEzRbJQTCDcVeKP3UKBm_Gx48RE.node30?bbsId=BBSMSTR_000000000006&nttId=125673",
-      "event_at": "2026-05-07T01:58:25.625856+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {},
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년도 공급망안정화 선도사업자 제1차 선정계획 공고",
-      "program_key": "support-program-notice:kr:행정안전부:2026-05-07:2026년도-공급망안정화-선도사업자-제1차-선정계획-공고",
-      "evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=gZ2EMX2oRlbXcMEzRbJQTCDcVeKP3UKBm_Gx48RE.node30?bbsId=BBSMSTR_000000000006&nttId=125673",
-      "evidence_url_present": true
-    },
-    {
-      "source": "보건복지부",
       "event_model": "application_deadline",
-      "title": "새글 외국인 계절근로자 장기요양보험 의무가입 제외, 고용주·근로자 부담 줄인다",
-      "url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490434&tag=&nPage=1",
+      "title": "’26 추계(27 S/S) 서울패션위크 참가 패션브랜드 모집공고(연장)",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457898",
       "event_at": "2026-05-13T00:00:00+00:00",
       "application_deadline": "2026-05-13",
-      "application_start_date": "2026-05-06",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "’26 추계(27 S/S) 서울패션위크 참가 패션브랜드 모집공고(연장)",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-05-13:26-추계-27-s-s-서울패션위크-참가-패션브랜드-모집공고-연장",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457898",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "’26 추계(27 S/S) 서울패션위크 참가 패션브랜드 모집공고(연장)",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457898",
+      "event_at": "2026-05-13T12:25:15.528430+00:00",
+      "application_deadline": "2026-05-13",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "’26 추계(27 S/S) 서울패션위크 참가 패션브랜드 모집공고(연장)",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-05-13:26-추계-27-s-s-서울패션위크-참가-패션브랜드-모집공고-연장",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457898",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "종합건설사업자 행정처분(등록말소) 공시송달 공고문(제2026-1548호)",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457897",
+      "event_at": "2026-05-13T00:00:00+00:00",
+      "application_deadline": "2026-05-13",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "종합건설사업자 행정처분(등록말소) 공시송달 공고문(제2026-1548호)",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-05-13:종합건설사업자-행정처분-등록말소-공시송달-공고문-제2026-1548호",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457897",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "종합건설사업자 행정처분(등록말소) 공시송달 공고문(제2026-1548호)",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457897",
+      "event_at": "2026-05-13T12:25:16.691657+00:00",
+      "application_deadline": "2026-05-13",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "종합건설사업자 행정처분(등록말소) 공시송달 공고문(제2026-1548호)",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-05-13:종합건설사업자-행정처분-등록말소-공시송달-공고문-제2026-1548호",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457897",
+      "evidence_url_present": true
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "2026년 안전교육 전문인력 역량강화 지원사업 제안서 기술평가 결과 공개",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125990",
+      "event_at": "2026-05-13T12:25:21.283365+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
       "eligibility_fields": {},
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "새글 외국인 계절근로자 장기요양보험 의무가입 제외, 고용주·근로자 부담 줄인다",
-      "program_key": "application-deadline:kr:보건복지부:2026-05-13:새글-외국인-계절근로자-장기요양보험-의무가입-제외-고용주-근로자-부담-줄인다",
-      "evidence_url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490434&tag=&nPage=1",
+      "program_title": "2026년 안전교육 전문인력 역량강화 지원사업 제안서 기술평가 결과 공개",
+      "program_key": "support-program-notice:kr:행정안전부:2026-05-13:2026년-안전교육-전문인력-역량강화-지원사업-제안서-기술평가-결과-공개",
+      "evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125990",
       "evidence_url_present": true
     },
     {
-      "source": "보건복지부",
-      "event_model": "application_deadline",
-      "title": "새글 인공지능·사물인터넷 기술,돌봄 현장 실증 거쳐 빠르게 확산한다",
-      "url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490433&tag=&nPage=1",
-      "event_at": "2026-05-07T00:00:00+00:00",
-      "application_deadline": "2026-05-07",
-      "application_start_date": "2026-05-06",
-      "eligibility_fields": {
-        "Industry": [
-          "AI"
-        ],
-        "Region": [
-          "서울",
-          "경기"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "새글 인공지능·사물인터넷 기술,돌봄 현장 실증 거쳐 빠르게 확산한다",
-      "program_key": "application-deadline:kr:보건복지부:2026-05-07:새글-인공지능-사물인터넷-기술-돌봄-현장-실증-거쳐-빠르게-확산한다",
-      "evidence_url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490433&tag=&nPage=1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "보건복지부",
-      "event_model": "eligibility_rule",
-      "title": "새글 인공지능·사물인터넷 기술,돌봄 현장 실증 거쳐 빠르게 확산한다",
-      "url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490433&tag=&nPage=1",
-      "event_at": "2026-05-07T01:58:32.123607+00:00",
-      "application_deadline": "2026-05-07",
-      "application_start_date": "2026-05-06",
-      "eligibility_fields": {
-        "Industry": [
-          "AI"
-        ],
-        "Region": [
-          "서울",
-          "경기"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "새글 인공지능·사물인터넷 기술,돌봄 현장 실증 거쳐 빠르게 확산한다",
-      "program_key": "eligibility-rule:kr:보건복지부:2026-05-07:새글-인공지능-사물인터넷-기술-돌봄-현장-실증-거쳐-빠르게-확산한다",
-      "evidence_url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490433&tag=&nPage=1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "보건복지부",
-      "event_model": "application_deadline",
-      "title": "새글 보건복지 분야 불합리한 관행·구조 바로잡는다",
-      "url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490432&tag=&nPage=1",
-      "event_at": "2026-05-07T00:00:00+00:00",
-      "application_deadline": "2026-05-07",
-      "application_start_date": "2026-05-06",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "새글 보건복지 분야 불합리한 관행·구조 바로잡는다",
-      "program_key": "application-deadline:kr:보건복지부:2026-05-07:새글-보건복지-분야-불합리한-관행-구조-바로잡는다",
-      "evidence_url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490432&tag=&nPage=1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "보건복지부",
-      "event_model": "eligibility_rule",
-      "title": "새글 보건복지 분야 불합리한 관행·구조 바로잡는다",
-      "url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490432&tag=&nPage=1",
-      "event_at": "2026-05-07T01:58:32.947015+00:00",
-      "application_deadline": "2026-05-07",
-      "application_start_date": "2026-05-06",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "새글 보건복지 분야 불합리한 관행·구조 바로잡는다",
-      "program_key": "eligibility-rule:kr:보건복지부:2026-05-07:새글-보건복지-분야-불합리한-관행-구조-바로잡는다",
-      "evidence_url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490432&tag=&nPage=1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "보건복지부",
-      "event_model": "eligibility_rule",
-      "title": "새글 월 10만 원씩 3년 모으면 1,440만 원 받는다 ‘청년내일저축계좌’ 신규 모집",
-      "url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490402&tag=&nPage=1",
-      "event_at": "2026-05-07T01:58:34.520623+00:00",
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "2026년 제1차 지방공무원 행정안전부 전입시험 최종합격자 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125985",
+      "event_at": "2026-05-13T12:25:21.749347+00:00",
       "application_deadline": "",
       "application_start_date": "",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 제1차 지방공무원 행정안전부 전입시험 최종합격자 공고",
+      "program_key": "support-program-notice:kr:행정안전부:2026-05-13:2026년-제1차-지방공무원-행정안전부-전입시험-최종합격자-공고",
+      "evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125985",
+      "evidence_url_present": true
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "기본사회위원회 기간제근로자 채용 재공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125963",
+      "event_at": "2026-05-13T12:25:22.165119+00:00",
+      "application_deadline": "2026-05-26",
+      "application_start_date": "2026-05-13",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "기본사회위원회 기간제근로자 채용 재공고",
+      "program_key": "support-program-notice:kr:행정안전부:2026-05-13:기본사회위원회-기간제근로자-채용-재공고",
+      "evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125963",
+      "evidence_url_present": true
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "application_deadline",
+      "title": "기본사회위원회 기간제근로자 채용 재공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125963",
+      "event_at": "2026-05-26T00:00:00+00:00",
+      "application_deadline": "2026-05-26",
+      "application_start_date": "2026-05-13",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "기본사회위원회 기간제근로자 채용 재공고",
+      "program_key": "application-deadline:kr:행정안전부:2026-05-26:기본사회위원회-기간제근로자-채용-재공고",
+      "evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125963",
+      "evidence_url_present": true
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "2026년 하반기 행정안전부 재난안전 혁신제품 지정기간 연장 신청 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125940",
+      "event_at": "2026-05-13T12:25:22.586462+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 하반기 행정안전부 재난안전 혁신제품 지정기간 연장 신청 공고",
+      "program_key": "support-program-notice:kr:행정안전부:2026-05-13:2026년-하반기-행정안전부-재난안전-혁신제품-지정기간-연장-신청-공고",
+      "evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125940",
+      "evidence_url_present": true
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "2026년 하반기 행정안전부 재난안전 혁신제품 지정기간 연장 신청 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125940",
+      "event_at": "2026-05-13T12:25:22.586462+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 하반기 행정안전부 재난안전 혁신제품 지정기간 연장 신청 공고",
+      "program_key": "eligibility-rule:kr:행정안전부:2026-05-13:2026년-하반기-행정안전부-재난안전-혁신제품-지정기간-연장-신청-공고",
+      "evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125940",
+      "evidence_url_present": true
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "서울특별시 서북병원 진료부장(개방형 4호) 공개모집 재공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125922",
+      "event_at": "2026-05-13T12:25:23.007281+00:00",
+      "application_deadline": "2026-05-22",
+      "application_start_date": "2026-05-11",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "서울특별시 서북병원 진료부장(개방형 4호) 공개모집 재공고",
+      "program_key": "support-program-notice:kr:행정안전부:2026-05-13:서울특별시-서북병원-진료부장-개방형-4호-공개모집-재공고",
+      "evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125922",
+      "evidence_url_present": true
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "application_deadline",
+      "title": "서울특별시 서북병원 진료부장(개방형 4호) 공개모집 재공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125922",
+      "event_at": "2026-05-22T00:00:00+00:00",
+      "application_deadline": "2026-05-22",
+      "application_start_date": "2026-05-11",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "서울특별시 서북병원 진료부장(개방형 4호) 공개모집 재공고",
+      "program_key": "application-deadline:kr:행정안전부:2026-05-22:서울특별시-서북병원-진료부장-개방형-4호-공개모집-재공고",
+      "evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125922",
+      "evidence_url_present": true
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "서울특별시 서북병원 진료부장(개방형 4호) 공개모집 재공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125922",
+      "event_at": "2026-05-13T12:25:23.007281+00:00",
+      "application_deadline": "2026-05-22",
+      "application_start_date": "2026-05-11",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "서울특별시 서북병원 진료부장(개방형 4호) 공개모집 재공고",
+      "program_key": "eligibility-rule:kr:행정안전부:2026-05-13:서울특별시-서북병원-진료부장-개방형-4호-공개모집-재공고",
+      "evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125922",
+      "evidence_url_present": true
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "행정안전부 중대범죄수사청 개청준비단 기간제근로자 채용 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125914",
+      "event_at": "2026-05-13T12:25:23.404589+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "행정안전부 중대범죄수사청 개청준비단 기간제근로자 채용 공고",
+      "program_key": "support-program-notice:kr:행정안전부:2026-05-13:행정안전부-중대범죄수사청-개청준비단-기간제근로자-채용-공고",
+      "evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125914",
+      "evidence_url_present": true
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "제81주년 광복절 경축식 행사 대행 기술능력평가 결과",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125854",
+      "event_at": "2026-05-13T12:25:23.404613+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "제81주년 광복절 경축식 행사 대행 기술능력평가 결과",
+      "program_key": "support-program-notice:kr:행정안전부:2026-05-13:제81주년-광복절-경축식-행사-대행-기술능력평가-결과",
+      "evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125854",
+      "evidence_url_present": true
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "2026년 섬 발전 유공 포상 후보자 공모",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125849",
+      "event_at": "2026-05-13T12:25:23.404629+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 섬 발전 유공 포상 후보자 공모",
+      "program_key": "support-program-notice:kr:행정안전부:2026-05-13:2026년-섬-발전-유공-포상-후보자-공모",
+      "evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125849",
+      "evidence_url_present": true
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "시·도 국장 후보자 역량교육 과제 개발 연구용역 제안서 기술평가 결과 공개",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125848",
+      "event_at": "2026-05-13T12:25:23.404644+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "시·도 국장 후보자 역량교육 과제 개발 연구용역 제안서 기술평가 결과 공개",
+      "program_key": "support-program-notice:kr:행정안전부:2026-05-13:시-도-국장-후보자-역량교육-과제-개발-연구용역-제안서-기술평가-결과-공개",
+      "evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125848",
+      "evidence_url_present": true
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "support_program_notice",
+      "title": "행정안전부 디지털소통팀 한시임기제공무원(디지털소통 콘텐츠 기획) 채용 최종합격자 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125847",
+      "event_at": "2026-05-13T12:25:23.404658+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "콘텐츠"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "행정안전부 디지털소통팀 한시임기제공무원(디지털소통 콘텐츠 기획) 채용 최종합격자 공고",
+      "program_key": "support-program-notice:kr:행정안전부:2026-05-13:행정안전부-디지털소통팀-한시임기제공무원-디지털소통-콘텐츠-기획-채용-최종합격자-공고",
+      "evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125847",
+      "evidence_url_present": true
+    },
+    {
+      "source": "행정안전부",
+      "event_model": "eligibility_rule",
+      "title": "행정안전부 디지털소통팀 한시임기제공무원(디지털소통 콘텐츠 기획) 채용 최종합격자 공고",
+      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125847",
+      "event_at": "2026-05-13T12:25:23.404658+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "콘텐츠"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "행정안전부 디지털소통팀 한시임기제공무원(디지털소통 콘텐츠 기획) 채용 최종합격자 공고",
+      "program_key": "eligibility-rule:kr:행정안전부:2026-05-13:행정안전부-디지털소통팀-한시임기제공무원-디지털소통-콘텐츠-기획-채용-최종합격자-공고",
+      "evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125847",
+      "evidence_url_present": true
+    },
+    {
+      "source": "보건복지부",
+      "event_model": "eligibility_rule",
+      "title": "새글 ‘함께 찾고, 함께 돕고, 함께 만드는 복지안전매트’전국 지역사회 인적안전망 한마음..",
+      "url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490507&tag=&nPage=1",
+      "event_at": "2026-05-13T12:25:27.918409+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울",
+          "경기",
+          "제주"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "새글 ‘함께 찾고, 함께 돕고, 함께 만드는 복지안전매트’전국 지역사회 인적안전망 한마음..",
+      "program_key": "eligibility-rule:kr:보건복지부:2026-05-13:새글-함께-찾고-함께-돕고-함께-만드는-복지안전매트-전국-지역사회-인적안전망-한마음",
+      "evidence_url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490507&tag=&nPage=1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "보건복지부",
+      "event_model": "eligibility_rule",
+      "title": "새글 헌혈 기준 10년 만에 개정, 병원의 수혈 효율성 제고",
+      "url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490506&tag=&nPage=1",
+      "event_at": "2026-05-13T12:25:28.608262+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "새글 헌혈 기준 10년 만에 개정, 병원의 수혈 효율성 제고",
+      "program_key": "eligibility-rule:kr:보건복지부:2026-05-13:새글-헌혈-기준-10년-만에-개정-병원의-수혈-효율성-제고",
+      "evidence_url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490506&tag=&nPage=1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "보건복지부",
+      "event_model": "application_deadline",
+      "title": "새글 정은경 장관, 대학 캠퍼스 방문해 청년세대 국민연금 궁금증 해소",
+      "url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490505&tag=&nPage=1",
+      "event_at": "2026-01-01T00:00:00+00:00",
+      "application_deadline": "2026-01-01",
+      "application_start_date": "2026-05-13",
       "eligibility_fields": {
         "TargetGroup": [
           "청년"
@@ -1674,103 +1589,210 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "새글 월 10만 원씩 3년 모으면 1,440만 원 받는다 ‘청년내일저축계좌’ 신규 모집",
-      "program_key": "eligibility-rule:kr:보건복지부:2026-05-07:새글-월-10만-원씩-3년-모으면-1-440만-원-받는다-청년내일저축계좌-신규-모집",
-      "evidence_url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490402&tag=&nPage=1",
+      "program_title": "새글 정은경 장관, 대학 캠퍼스 방문해 청년세대 국민연금 궁금증 해소",
+      "program_key": "application-deadline:kr:보건복지부:2026-01-01:새글-정은경-장관-대학-캠퍼스-방문해-청년세대-국민연금-궁금증-해소",
+      "evidence_url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490505&tag=&nPage=1",
       "evidence_url_present": true
     },
     {
-      "source": "금융위원회",
+      "source": "보건복지부",
       "event_model": "eligibility_rule",
-      "title": "사업보고서 등에 대한 조사·감리결과 조치 - 제9차 증권선물위원회(’26.5.6.) 조치 의결. 금일 등록된 게시글",
-      "url": "https://www.fsc.go.kr/no010101/86836?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
-      "event_at": "2026-05-07T01:58:44.081619+00:00",
+      "title": "새글 정은경 장관, 대학 캠퍼스 방문해 청년세대 국민연금 궁금증 해소",
+      "url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490505&tag=&nPage=1",
+      "event_at": "2026-05-13T12:25:29.348641+00:00",
+      "application_deadline": "2026-01-01",
+      "application_start_date": "2026-05-13",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "새글 정은경 장관, 대학 캠퍼스 방문해 청년세대 국민연금 궁금증 해소",
+      "program_key": "eligibility-rule:kr:보건복지부:2026-05-13:새글-정은경-장관-대학-캠퍼스-방문해-청년세대-국민연금-궁금증-해소",
+      "evidence_url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490505&tag=&nPage=1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "보건복지부",
+      "event_model": "eligibility_rule",
+      "title": "새글 남윤영 제5대 국립정신건강센터장 취임",
+      "url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490504&tag=&nPage=1",
+      "event_at": "2026-05-13T12:25:30.094988+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
-        "Industry": [
-          "바이오"
+        "Region": [
+          "서울"
         ]
       },
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "사업보고서 등에 대한 조사·감리결과 조치 - 제9차 증권선물위원회(’26.5.6.) 조치 의결. 금일 등록된 게시글",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-05-07:사업보고서-등에-대한-조사-감리결과-조치-제9차-증권선물위원회-26-5-6-조치-의결-금일-등록된-게시글",
-      "evidence_url": "https://www.fsc.go.kr/no010101/86836?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+      "program_title": "새글 남윤영 제5대 국립정신건강센터장 취임",
+      "program_key": "eligibility-rule:kr:보건복지부:2026-05-13:새글-남윤영-제5대-국립정신건강센터장-취임",
+      "evidence_url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490504&tag=&nPage=1",
       "evidence_url_present": true
     },
     {
-      "source": "금융위원회",
+      "source": "보건복지부",
       "event_model": "application_deadline",
-      "title": "5월 6일부터 치료비 부담이 큰 중증질환의  보장을 강화하고, 보험료는 낮춘 5세대 실손의료보험이 새롭게 출시·판매됩니다.",
-      "url": "https://www.fsc.go.kr/no010101/86831?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
-      "event_at": "2026-05-22T00:00:00+00:00",
-      "application_deadline": "2026-05-22",
-      "application_start_date": "2026-05-06",
+      "title": "새글 1분기 노인친화기업 23곳 신규 선정 “안전한 환경에서 은퇴 노인의 역량 발휘 위하여..",
+      "url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490503&tag=&nPage=1",
+      "event_at": "2026-01-02T00:00:00+00:00",
+      "application_deadline": "2026-01-02",
+      "application_start_date": "2026-05-13",
       "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ],
         "Industry": [
-          "AI",
-          "바이오"
+          "수산",
+          "제조"
         ]
       },
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "5월 6일부터 치료비 부담이 큰 중증질환의  보장을 강화하고, 보험료는 낮춘 5세대 실손의료보험이 새롭게 출시·판매됩니다.",
-      "program_key": "application-deadline:kr:금융위원회:2026-05-22:5월-6일부터-치료비-부담이-큰-중증질환의-보장을-강화하고-보험료는-낮춘-5세대-실손의료보험이-새롭게-출시-판매됩니다",
-      "evidence_url": "https://www.fsc.go.kr/no010101/86831?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+      "program_title": "새글 1분기 노인친화기업 23곳 신규 선정 “안전한 환경에서 은퇴 노인의 역량 발휘 위하여..",
+      "program_key": "application-deadline:kr:보건복지부:2026-01-02:새글-1분기-노인친화기업-23곳-신규-선정-안전한-환경에서-은퇴-노인의-역량-발휘-위하여",
+      "evidence_url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490503&tag=&nPage=1",
       "evidence_url_present": true
     },
     {
-      "source": "금융위원회",
+      "source": "보건복지부",
       "event_model": "eligibility_rule",
-      "title": "5월 6일부터 치료비 부담이 큰 중증질환의  보장을 강화하고, 보험료는 낮춘 5세대 실손의료보험이 새롭게 출시·판매됩니다.",
-      "url": "https://www.fsc.go.kr/no010101/86831?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
-      "event_at": "2026-05-07T01:58:45.591287+00:00",
-      "application_deadline": "2026-05-22",
-      "application_start_date": "2026-05-06",
+      "title": "새글 1분기 노인친화기업 23곳 신규 선정 “안전한 환경에서 은퇴 노인의 역량 발휘 위하여..",
+      "url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490503&tag=&nPage=1",
+      "event_at": "2026-05-13T12:25:30.813455+00:00",
+      "application_deadline": "2026-01-02",
+      "application_start_date": "2026-05-13",
       "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ],
         "Industry": [
-          "AI",
-          "바이오"
+          "수산",
+          "제조"
         ]
       },
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "5월 6일부터 치료비 부담이 큰 중증질환의  보장을 강화하고, 보험료는 낮춘 5세대 실손의료보험이 새롭게 출시·판매됩니다.",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-05-07:5월-6일부터-치료비-부담이-큰-중증질환의-보장을-강화하고-보험료는-낮춘-5세대-실손의료보험이-새롭게-출시-판매됩니다",
-      "evidence_url": "https://www.fsc.go.kr/no010101/86831?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+      "program_title": "새글 1분기 노인친화기업 23곳 신규 선정 “안전한 환경에서 은퇴 노인의 역량 발휘 위하여..",
+      "program_key": "eligibility-rule:kr:보건복지부:2026-05-13:새글-1분기-노인친화기업-23곳-신규-선정-안전한-환경에서-은퇴-노인의-역량-발휘-위하여",
+      "evidence_url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490503&tag=&nPage=1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "보건복지부",
+      "event_model": "eligibility_rule",
+      "title": "새글 장애아동 맞춤형 지원 강화를 위한 지역장애아동지원센터 울산부터 전국 순차 개소",
+      "url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490489&tag=&nPage=1",
+      "event_at": "2026-05-13T12:25:31.522085+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "울산"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "새글 장애아동 맞춤형 지원 강화를 위한 지역장애아동지원센터 울산부터 전국 순차 개소",
+      "program_key": "eligibility-rule:kr:보건복지부:2026-05-13:새글-장애아동-맞춤형-지원-강화를-위한-지역장애아동지원센터-울산부터-전국-순차-개소",
+      "evidence_url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490489&tag=&nPage=1",
       "evidence_url_present": true
     },
     {
       "source": "금융위원회",
       "event_model": "eligibility_rule",
-      "title": "금융위 부위원장, 미국을 방문하여 국가전략기술 및 벤처기업 지원 강화 등 미래를 대비한 금융의 역할 점검",
-      "url": "https://www.fsc.go.kr/no010101/86820?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
-      "event_at": "2026-05-07T01:58:48.004953+00:00",
+      "title": "재외동포 금융위임장 전자화... 국제우편 없이 바로 처리. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/86874?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+      "event_at": "2026-05-13T12:25:39.978193+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ],
+        "Region": [
+          "부산"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "재외동포 금융위임장 전자화... 국제우편 없이 바로 처리. 금일 등록된 게시글",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-05-13:재외동포-금융위임장-전자화-국제우편-없이-바로-처리-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/86874?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "상록수 장기연체채권, 카드대란 23년만에 추심과 연체이자의 고통에서 벗어난다. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/86866?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+      "event_at": "2026-05-13T12:25:40.710318+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업",
+          "취약계층"
+        ],
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "상록수 장기연체채권, 카드대란 23년만에 추심과 연체이자의 고통에서 벗어난다. 금일 등록된 게시글",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-05-13:상록수-장기연체채권-카드대란-23년만에-추심과-연체이자의-고통에서-벗어난다-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/86866?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "금융위원회, 첨단산업과 손잡고 우리 AI의 미래를 함께 설계한다 - ‘퓨리오사 AI’ 방문 및 관련 밸류체인 기업과 간담회 개최",
+      "url": "https://www.fsc.go.kr/no010101/86863?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+      "event_at": "2026-05-13T12:25:41.415509+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
         "BusinessStage": [
           "벤처기업"
+        ],
+        "Industry": [
+          "제조",
+          "AI"
+        ],
+        "Region": [
+          "서울"
         ]
       },
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "금융위 부위원장, 미국을 방문하여 국가전략기술 및 벤처기업 지원 강화 등 미래를 대비한 금융의 역할 점검",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-05-07:금융위-부위원장-미국을-방문하여-국가전략기술-및-벤처기업-지원-강화-등-미래를-대비한-금융의-역할-점검",
-      "evidence_url": "https://www.fsc.go.kr/no010101/86820?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+      "program_title": "금융위원회, 첨단산업과 손잡고 우리 AI의 미래를 함께 설계한다 - ‘퓨리오사 AI’ 방문 및 관련 밸류체인 기업과 간담회 개최",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-05-13:금융위원회-첨단산업과-손잡고-우리-ai의-미래를-함께-설계한다-퓨리오사-ai-방문-및-관련-밸류체인-기업과-간담회-개최",
+      "evidence_url": "https://www.fsc.go.kr/no010101/86863?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
       "evidence_url_present": true
     },
     {
       "source": "금융위원회",
       "event_model": "eligibility_rule",
-      "title": "지역이나 사회연대경제조직 지원 우수 조합에 획기적인 인센티브를 제공하여 상호금융권의 건전성은 지키고, 포용금융은 강화하겠습니다.  - ｢상호금융 제도개선 TF｣ Kick-off 회의 개최",
-      "url": "https://www.fsc.go.kr/no010101/86813?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
-      "event_at": "2026-05-07T01:58:48.004993+00:00",
+      "title": "사회연대경제조직에 대한 금융지원 확대로  금융의 포용성을 강화하겠습니다. - ‘26년 제1차 사회연대금융협의회 개최",
+      "url": "https://www.fsc.go.kr/no010101/86848?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+      "event_at": "2026-05-13T12:25:42.170052+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -1781,17 +1803,45 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "지역이나 사회연대경제조직 지원 우수 조합에 획기적인 인센티브를 제공하여 상호금융권의 건전성은 지키고, 포용금융은 강화하겠습니다.  - ｢상호금융 제도개선 TF｣ Kick-off 회의 개최",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-05-07:지역이나-사회연대경제조직-지원-우수-조합에-획기적인-인센티브를-제공하여-상호금융권의-건전성은-지키고-포용금융은-강화하겠습니다-상호금융-제도개선-tf-kick-off-회의-개최",
-      "evidence_url": "https://www.fsc.go.kr/no010101/86813?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+      "program_title": "사회연대경제조직에 대한 금융지원 확대로  금융의 포용성을 강화하겠습니다. - ‘26년 제1차 사회연대금융협의회 개최",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-05-13:사회연대경제조직에-대한-금융지원-확대로-금융의-포용성을-강화하겠습니다-26년-제1차-사회연대금융협의회-개최",
+      "evidence_url": "https://www.fsc.go.kr/no010101/86848?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
       "evidence_url_present": true
     },
     {
-      "source": "r/smallbusiness",
+      "source": "금융위원회",
       "event_model": "eligibility_rule",
-      "title": "Looking for some advice on my wife’s behalf. We keep getting charged $18 every month listed as SQ * square weebly.",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1t5ww3z/looking_for_some_advice_on_my_wifes_behalf_we/",
-      "event_at": "2026-05-07T01:56:00+00:00",
+      "title": "서울 동북권 최초 스타트업 보육공간 개소, 청년 창업가들이 꿈을 펼칠 기회를 넓혀 - 금융위원장, 신보 「NEST AI-Lab」 광진 개소식 및  청년 스타트업 간담회 개최",
+      "url": "https://www.fsc.go.kr/no010101/86846?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+      "event_at": "2026-05-13T12:25:42.170069+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "스타트업",
+          "청년"
+        ],
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "서울 동북권 최초 스타트업 보육공간 개소, 청년 창업가들이 꿈을 펼칠 기회를 넓혀 - 금융위원장, 신보 「NEST AI-Lab」 광진 개소식 및  청년 스타트업 간담회 개최",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-05-13:서울-동북권-최초-스타트업-보육공간-개소-청년-창업가들이-꿈을-펼칠-기회를-넓혀-금융위원장-신보-nest-ai-lab-광진-개소식-및-청년-스타트업-간담회-개최",
+      "evidence_url": "https://www.fsc.go.kr/no010101/86846?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+      "evidence_url_present": true
+    },
+    {
+      "source": "r/korea",
+      "event_model": "eligibility_rule",
+      "title": "Investigators raid Unification Church sites over leader's alleged embezzlement",
+      "url": "https://www.reddit.com/r/korea/comments/1tbuq2e/investigators_raid_unification_church_sites_over/",
+      "event_at": "2026-05-13T09:39:25+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -1802,17 +1852,17 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "Looking for some advice on my wife’s behalf. We keep getting charged $18 every month listed as SQ * square weebly.",
-      "program_key": "eligibility-rule:us:r-smallbusiness:2026-05-07:looking-for-some-advice-on-my-wife-s-behalf-we-keep-getting-charged-18-every-month-listed-as-sq-square-weebly",
-      "evidence_url": "https://www.reddit.com/r/smallbusiness/comments/1t5ww3z/looking_for_some_advice_on_my_wifes_behalf_we/",
+      "program_title": "Investigators raid Unification Church sites over leader's alleged embezzlement",
+      "program_key": "eligibility-rule:kr:r-korea:2026-05-13:investigators-raid-unification-church-sites-over-leader-s-alleged-embezzlement",
+      "evidence_url": "https://www.reddit.com/r/korea/comments/1tbuq2e/investigators_raid_unification_church_sites_over/",
       "evidence_url_present": true
     },
     {
       "source": "r/startups",
       "event_model": "eligibility_rule",
-      "title": "Focus on the unsexy problems - I will not promote",
-      "url": "https://www.reddit.com/r/startups/comments/1t5w4os/focus_on_the_unsexy_problems_i_will_not_promote/",
-      "event_at": "2026-05-07T01:21:30+00:00",
+      "title": "Brand activation for startups, is it worth the investment or too expensive? i will not promote",
+      "url": "https://www.reddit.com/r/startups/comments/1tby24c/brand_activation_for_startups_is_it_worth_the/",
+      "event_at": "2026-05-13T12:23:30+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -1823,17 +1873,17 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "Focus on the unsexy problems - I will not promote",
-      "program_key": "eligibility-rule:us:r-startups:2026-05-07:focus-on-the-unsexy-problems-i-will-not-promote",
-      "evidence_url": "https://www.reddit.com/r/startups/comments/1t5w4os/focus_on_the_unsexy_problems_i_will_not_promote/",
+      "program_title": "Brand activation for startups, is it worth the investment or too expensive? i will not promote",
+      "program_key": "eligibility-rule:us:r-startups:2026-05-13:brand-activation-for-startups-is-it-worth-the-investment-or-too-expensive-i-will-not-promote",
+      "evidence_url": "https://www.reddit.com/r/startups/comments/1tby24c/brand_activation_for_startups_is_it_worth_the/",
       "evidence_url_present": true
     },
     {
       "source": "r/Entrepreneur",
       "event_model": "eligibility_rule",
-      "title": "Is there a real market for context based contact sharing, or do people just use whatever is easiest?",
-      "url": "https://www.reddit.com/r/Entrepreneur/comments/1t5u2r4/is_there_a_real_market_for_context_based_contact/",
-      "event_at": "2026-05-06T23:50:56+00:00",
+      "title": "What’s the most unhinged AI automation you've seen that somehow works?",
+      "url": "https://www.reddit.com/r/Entrepreneur/comments/1tbum4g/whats_the_most_unhinged_ai_automation_youve_seen/",
+      "event_at": "2026-05-13T09:33:23+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -1844,9 +1894,214 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "Is there a real market for context based contact sharing, or do people just use whatever is easiest?",
-      "program_key": "eligibility-rule:us:r-entrepreneur:2026-05-06:is-there-a-real-market-for-context-based-contact-sharing-or-do-people-just-use-whatever-is-easiest",
-      "evidence_url": "https://www.reddit.com/r/Entrepreneur/comments/1t5u2r4/is_there_a_real_market_for_context_based_contact/",
+      "program_title": "What’s the most unhinged AI automation you've seen that somehow works?",
+      "program_key": "eligibility-rule:us:r-entrepreneur:2026-05-13:what-s-the-most-unhinged-ai-automation-you-ve-seen-that-somehow-works",
+      "evidence_url": "https://www.reddit.com/r/Entrepreneur/comments/1tbum4g/whats_the_most_unhinged_ai_automation_youve_seen/",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "금융위원회, 첨단산업과 손잡고 우리 AI의 미래를 함께 설계한다 - ‘퓨리오사 AI’ 방문 및 관련 밸류체인 기업과 간담회 개최",
+      "url": "https://www.fsc.go.kr/no010101/86863",
+      "event_at": "2026-05-13T12:25:41.415509+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "BusinessStage": [
+          "벤처기업"
+        ],
+        "Industry": [
+          "제조",
+          "AI"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "금융위원회, 첨단산업과 손잡고 우리 AI의 미래를 함께 설계한다 - ‘퓨리오사 AI’ 방문 및 관련 밸류체인 기업과 간담회 개최",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-05-13:금융위원회-첨단산업과-손잡고-우리-ai의-미래를-함께-설계한다-퓨리오사-ai-방문-및-관련-밸류체인-기업과-간담회-개최",
+      "evidence_url": "https://www.fsc.go.kr/no010101/86863",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "상록수 장기연체채권, 카드대란 23년만에 추심과 연체이자의 고통에서 벗어난다. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/86866",
+      "event_at": "2026-05-13T12:25:40.710318+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업",
+          "취약계층"
+        ],
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "상록수 장기연체채권, 카드대란 23년만에 추심과 연체이자의 고통에서 벗어난다. 금일 등록된 게시글",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-05-13:상록수-장기연체채권-카드대란-23년만에-추심과-연체이자의-고통에서-벗어난다-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/86866",
+      "evidence_url_present": true
+    },
+    {
+      "source": "보건복지부",
+      "event_model": "application_deadline",
+      "title": "새글 1분기 노인친화기업 23곳 신규 선정 “안전한 환경에서 은퇴 노인의 역량 발휘 위하여..",
+      "url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490503&mid=a10503010100&nPage=1",
+      "event_at": "2026-01-02T00:00:00+00:00",
+      "application_deadline": "2026-01-02",
+      "application_start_date": "2026-05-13",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ],
+        "Industry": [
+          "수산",
+          "제조"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "새글 1분기 노인친화기업 23곳 신규 선정 “안전한 환경에서 은퇴 노인의 역량 발휘 위하여..",
+      "program_key": "application-deadline:kr:보건복지부:2026-01-02:새글-1분기-노인친화기업-23곳-신규-선정-안전한-환경에서-은퇴-노인의-역량-발휘-위하여",
+      "evidence_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490503&mid=a10503010100&nPage=1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "보건복지부",
+      "event_model": "eligibility_rule",
+      "title": "새글 1분기 노인친화기업 23곳 신규 선정 “안전한 환경에서 은퇴 노인의 역량 발휘 위하여..",
+      "url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490503&mid=a10503010100&nPage=1",
+      "event_at": "2026-05-13T12:25:30.813455+00:00",
+      "application_deadline": "2026-01-02",
+      "application_start_date": "2026-05-13",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ],
+        "Industry": [
+          "수산",
+          "제조"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "새글 1분기 노인친화기업 23곳 신규 선정 “안전한 환경에서 은퇴 노인의 역량 발휘 위하여..",
+      "program_key": "eligibility-rule:kr:보건복지부:2026-05-13:새글-1분기-노인친화기업-23곳-신규-선정-안전한-환경에서-은퇴-노인의-역량-발휘-위하여",
+      "evidence_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490503&mid=a10503010100&nPage=1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "보건복지부",
+      "event_model": "eligibility_rule",
+      "title": "새글 헌혈 기준 10년 만에 개정, 병원의 수혈 효율성 제고",
+      "url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490506&mid=a10503010100&nPage=1",
+      "event_at": "2026-05-13T12:25:28.608262+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "새글 헌혈 기준 10년 만에 개정, 병원의 수혈 효율성 제고",
+      "program_key": "eligibility-rule:kr:보건복지부:2026-05-13:새글-헌혈-기준-10년-만에-개정-병원의-수혈-효율성-제고",
+      "evidence_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490506&mid=a10503010100&nPage=1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "event_model": "eligibility_rule",
+      "title": "2026년 중소벤처기업부 소상공인 정책자금 융자사업 공고(수정)",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=53519&pNm=BOA0101&page=1",
+      "event_at": "2026-05-13T12:25:08.352200+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인"
+        ],
+        "BusinessStage": [
+          "벤처기업"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 중소벤처기업부 소상공인 정책자금 융자사업 공고(수정)",
+      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-05-13:2026년-중소벤처기업부-소상공인-정책자금-융자사업-공고-수정",
+      "evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=53519&pNm=BOA0101&page=1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "정책브리핑",
+      "event_model": "support_program_notice",
+      "title": "정부, 선박 핵심기술 확보에 5250억 투자…24시간 'AI조선소'도 확보",
+      "url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148964313",
+      "event_at": "2026-05-13T00:29:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "수산",
+          "제조",
+          "AI"
+        ],
+        "Region": [
+          "울산",
+          "경남"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "정부, 선박 핵심기술 확보에 5250억 투자…24시간 'AI조선소'도 확보",
+      "program_key": "support-program-notice:kr:정책브리핑:2026-05-13:정부-선박-핵심기술-확보에-5250억-투자-24시간-ai조선소-도-확보",
+      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148964313",
+      "evidence_url_present": true
+    },
+    {
+      "source": "정책브리핑",
+      "event_model": "eligibility_rule",
+      "title": "정부, 선박 핵심기술 확보에 5250억 투자…24시간 'AI조선소'도 확보",
+      "url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148964313",
+      "event_at": "2026-05-13T00:29:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "수산",
+          "제조",
+          "AI"
+        ],
+        "Region": [
+          "울산",
+          "경남"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "정부, 선박 핵심기술 확보에 5250억 투자…24시간 'AI조선소'도 확보",
+      "program_key": "eligibility-rule:kr:정책브리핑:2026-05-13:정부-선박-핵심기술-확보에-5250억-투자-24시간-ai조선소-도-확보",
+      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148964313",
       "evidence_url_present": true
     }
   ],
