@@ -1,101 +1,114 @@
 {
   "date": "2026-05-13",
   "category": "govsupport",
-  "article_count": 44,
-  "source_count": 8,
-  "matched_count": 44,
+  "article_count": 10,
+  "source_count": 6,
+  "matched_count": 10,
   "top_entities": [
     {
       "name": "GovGeneral",
-      "count": 627
-    },
-    {
-      "name": "TargetGroup",
-      "count": 144
+      "count": 142
     },
     {
       "name": "ApplicationInfo",
-      "count": 103
-    },
-    {
-      "name": "SupportType",
-      "count": 101
-    },
-    {
-      "name": "SourceSignal",
-      "count": 97
-    },
-    {
-      "name": "Region",
-      "count": 54
-    },
-    {
-      "name": "Ministry",
-      "count": 42
-    },
-    {
-      "name": "OperationalEvent",
-      "count": 39
-    },
-    {
-      "name": "EligibilityRegion",
-      "count": 37
-    },
-    {
-      "name": "McpKoreaEcosystem",
       "count": 34
     },
     {
-      "name": "EligibilityIndustry",
-      "count": 33
+      "name": "TargetGroup",
+      "count": 31
     },
     {
-      "name": "EligibilityTargetGroup",
+      "name": "SourceSignal",
+      "count": 27
+    },
+    {
+      "name": "SupportType",
       "count": 24
     },
     {
-      "name": "ApplicationDeadline",
-      "count": 11
-    },
-    {
-      "name": "ApplicationStartDate",
+      "name": "Ministry",
       "count": 10
     },
     {
-      "name": "EligibilityBusinessStage",
+      "name": "EligibilityIndustry",
       "count": 8
+    },
+    {
+      "name": "Region",
+      "count": 7
+    },
+    {
+      "name": "OperationalEvent",
+      "count": 7
+    },
+    {
+      "name": "McpKoreaEcosystem",
+      "count": 6
+    },
+    {
+      "name": "EligibilityRegion",
+      "count": 5
+    },
+    {
+      "name": "EligibilityTargetGroup",
+      "count": 4
+    },
+    {
+      "name": "EligibilityBusinessStage",
+      "count": 2
+    },
+    {
+      "name": "ApplicationStartDate",
+      "count": 1
+    },
+    {
+      "name": "ApplicationDeadline",
+      "count": 1
     }
   ],
   "sources": {
-    "금융위원회": 7,
+    "금융위원회": 3,
     "보건복지부": 2,
-    "서울시 지원사업": 2,
-    "정책브리핑": 14,
-    "매일경제 경제정책": 1,
-    "경향신문 경제": 1,
+    "행정안전부": 2,
     "소상공인시장진흥공단": 1,
-    "Awesome MCP Korea": 16
+    "정책브리핑": 1,
+    "Awesome MCP Korea": 1
   },
-  "generated_at": "2026-05-13T15:51:59.380296+09:00",
+  "generated_at": "2026-05-13T21:25:55.625284+09:00",
   "articles": [
     {
       "event_model_payload": {
-        "source_url": "https://www.fsc.go.kr/no010101/86821?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt="
+        "source_url": "https://www.fsc.go.kr/no010101/86852?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt="
       }
     },
     {
       "event_model_payload": {
-        "source_url": "https://www.fsc.go.kr/no010101/86830?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt="
+        "source_url": "https://www.fsc.go.kr/no010101/86863?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt="
       }
     },
     {
       "event_model_payload": {
-        "source_url": "https://www.fsc.go.kr/no010101/86834?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt="
+        "source_url": "https://www.fsc.go.kr/no010101/86866?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt="
       }
     },
     {
       "event_model_payload": {
-        "source_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457537"
+        "source_url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490503&tag=&nPage=1"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490506&tag=&nPage=1"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125985"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125990"
       }
     },
     {
@@ -105,8 +118,45 @@
     },
     {
       "event_model_payload": {
-        "source_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148963920&call_from=rsslink"
+        "source_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148964313&call_from=rsslink"
       }
     }
-  ]
+  ],
+  "ontology": {
+    "repo": "GovRadar",
+    "category": "govsupport",
+    "ontology_version": "0.1.0",
+    "event_model_ids": [
+      "govsupport.application_deadline",
+      "govsupport.editorial_coverage",
+      "govsupport.eligibility_rule",
+      "govsupport.selection_result",
+      "govsupport.support_program_notice"
+    ],
+    "event_model_mappings": {
+      "support_program_notice": "govsupport.support_program_notice",
+      "application_deadline": "govsupport.application_deadline",
+      "eligibility_rule": "govsupport.eligibility_rule",
+      "selection_result": "govsupport.selection_result",
+      "editorial_coverage": "govsupport.editorial_coverage"
+    },
+    "entity_type_hints": [
+      "program.support_program",
+      "organization.agency"
+    ],
+    "source_role_ids": [
+      "context_only",
+      "operational_evidence",
+      "primary_evidence"
+    ],
+    "source_role_mappings": {
+      "정책브리핑": "context_only",
+      "정부24 보조금": "primary_evidence",
+      "서울시 지원사업": "operational_evidence"
+    },
+    "evidence_policy_ids": [
+      "traceable_url_required",
+      "official_confirmation_required"
+    ]
+  }
 }

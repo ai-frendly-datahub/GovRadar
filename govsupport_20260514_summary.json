@@ -1,0 +1,97 @@
+{
+  "date": "2026-05-14",
+  "category": "govsupport",
+  "article_count": 48,
+  "source_count": 8,
+  "matched_count": 48,
+  "top_entities": [
+    {
+      "name": "GovGeneral",
+      "count": 632
+    },
+    {
+      "name": "TargetGroup",
+      "count": 129
+    },
+    {
+      "name": "ApplicationInfo",
+      "count": 113
+    },
+    {
+      "name": "SourceSignal",
+      "count": 102
+    },
+    {
+      "name": "SupportType",
+      "count": 98
+    },
+    {
+      "name": "Region",
+      "count": 48
+    },
+    {
+      "name": "Ministry",
+      "count": 43
+    },
+    {
+      "name": "OperationalEvent",
+      "count": 35
+    },
+    {
+      "name": "McpKoreaEcosystem",
+      "count": 34
+    },
+    {
+      "name": "EligibilityIndustry",
+      "count": 29
+    },
+    {
+      "name": "EligibilityRegion",
+      "count": 29
+    },
+    {
+      "name": "EligibilityTargetGroup",
+      "count": 19
+    },
+    {
+      "name": "ApplicationStartDate",
+      "count": 10
+    },
+    {
+      "name": "ApplicationDeadline",
+      "count": 10
+    },
+    {
+      "name": "EligibilityBusinessStage",
+      "count": 5
+    }
+  ],
+  "sources": {
+    "금융위원회": 3,
+    "보건복지부": 3,
+    "행정안전부": 5,
+    "서울시 지원사업": 1,
+    "소상공인시장진흥공단": 1,
+    "매일경제 경제정책": 3,
+    "정책브리핑": 16,
+    "Awesome MCP Korea": 16
+  },
+  "generated_at": "2026-05-14T11:30:29.667503+09:00",
+  "articles": [
+    {
+      "event_model_payload": {
+        "source_url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490503&tag=&nPage=1"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125985"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125990"
+      }
+    }
+  ]
+}
