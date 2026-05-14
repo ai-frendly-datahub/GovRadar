@@ -1,57 +1,57 @@
 {
   "date": "2026-05-14",
   "category": "govsupport",
-  "article_count": 48,
-  "source_count": 8,
-  "matched_count": 48,
+  "article_count": 54,
+  "source_count": 9,
+  "matched_count": 54,
   "top_entities": [
     {
       "name": "GovGeneral",
-      "count": 632
+      "count": 705
     },
     {
       "name": "TargetGroup",
-      "count": 129
+      "count": 144
     },
     {
       "name": "ApplicationInfo",
-      "count": 113
+      "count": 131
     },
     {
       "name": "SourceSignal",
-      "count": 102
+      "count": 117
     },
     {
       "name": "SupportType",
-      "count": 98
+      "count": 110
     },
     {
       "name": "Region",
-      "count": 48
+      "count": 51
     },
     {
       "name": "Ministry",
-      "count": 43
+      "count": 48
     },
     {
       "name": "OperationalEvent",
-      "count": 35
+      "count": 38
     },
     {
       "name": "McpKoreaEcosystem",
-      "count": 34
-    },
-    {
-      "name": "EligibilityIndustry",
-      "count": 29
+      "count": 38
     },
     {
       "name": "EligibilityRegion",
-      "count": 29
+      "count": 31
+    },
+    {
+      "name": "EligibilityIndustry",
+      "count": 30
     },
     {
       "name": "EligibilityTargetGroup",
-      "count": 19
+      "count": 20
     },
     {
       "name": "ApplicationStartDate",
@@ -63,20 +63,21 @@
     },
     {
       "name": "EligibilityBusinessStage",
-      "count": 5
+      "count": 6
     }
   ],
   "sources": {
-    "금융위원회": 3,
-    "보건복지부": 3,
-    "행정안전부": 5,
+    "금융위원회": 4,
+    "보건복지부": 4,
+    "행정안전부": 8,
     "서울시 지원사업": 1,
     "소상공인시장진흥공단": 1,
+    "동아일보 경제": 1,
     "매일경제 경제정책": 3,
     "정책브리핑": 16,
     "Awesome MCP Korea": 16
   },
-  "generated_at": "2026-05-14T11:30:29.667503+09:00",
+  "generated_at": "2026-05-14T15:51:06.098872+09:00",
   "articles": [
     {
       "event_model_payload": {
