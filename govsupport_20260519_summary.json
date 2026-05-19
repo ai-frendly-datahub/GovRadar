@@ -1,0 +1,99 @@
+{
+  "date": "2026-05-19",
+  "category": "govsupport",
+  "article_count": 84,
+  "source_count": 10,
+  "matched_count": 84,
+  "top_entities": [
+    {
+      "name": "GovGeneral",
+      "count": 1149
+    },
+    {
+      "name": "TargetGroup",
+      "count": 265
+    },
+    {
+      "name": "ApplicationInfo",
+      "count": 246
+    },
+    {
+      "name": "SupportType",
+      "count": 184
+    },
+    {
+      "name": "SourceSignal",
+      "count": 178
+    },
+    {
+      "name": "Region",
+      "count": 120
+    },
+    {
+      "name": "Ministry",
+      "count": 91
+    },
+    {
+      "name": "EligibilityRegion",
+      "count": 84
+    },
+    {
+      "name": "OperationalEvent",
+      "count": 74
+    },
+    {
+      "name": "McpKoreaEcosystem",
+      "count": 48
+    },
+    {
+      "name": "EligibilityIndustry",
+      "count": 44
+    },
+    {
+      "name": "EligibilityTargetGroup",
+      "count": 40
+    },
+    {
+      "name": "ApplicationDeadline",
+      "count": 24
+    },
+    {
+      "name": "ApplicationStartDate",
+      "count": 23
+    },
+    {
+      "name": "EligibilityBusinessStage",
+      "count": 8
+    }
+  ],
+  "sources": {
+    "금융위원회": 10,
+    "보건복지부": 7,
+    "서울시 지원사업": 4,
+    "소상공인시장진흥공단": 4,
+    "경향신문 경제": 1,
+    "정책브리핑": 26,
+    "행정안전부": 11,
+    "동아일보 경제": 2,
+    "매일경제 경제정책": 3,
+    "Awesome MCP Korea": 16
+  },
+  "generated_at": "2026-05-19T22:28:42.600119+09:00",
+  "articles": [
+    {
+      "event_model_payload": {
+        "source_url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490503&tag=&nPage=1"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125985"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125990"
+      }
+    }
+  ]
+}
