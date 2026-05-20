@@ -1,0 +1,251 @@
+{
+  "date": "2026-05-20",
+  "category": "govsupport",
+  "article_count": 90,
+  "source_count": 10,
+  "matched_count": 90,
+  "top_entities": [
+    {
+      "name": "GovGeneral",
+      "count": 1274
+    },
+    {
+      "name": "TargetGroup",
+      "count": 306
+    },
+    {
+      "name": "ApplicationInfo",
+      "count": 276
+    },
+    {
+      "name": "SupportType",
+      "count": 210
+    },
+    {
+      "name": "SourceSignal",
+      "count": 193
+    },
+    {
+      "name": "Region",
+      "count": 131
+    },
+    {
+      "name": "Ministry",
+      "count": 101
+    },
+    {
+      "name": "EligibilityRegion",
+      "count": 94
+    },
+    {
+      "name": "OperationalEvent",
+      "count": 83
+    },
+    {
+      "name": "McpKoreaEcosystem",
+      "count": 52
+    },
+    {
+      "name": "EligibilityIndustry",
+      "count": 52
+    },
+    {
+      "name": "EligibilityTargetGroup",
+      "count": 47
+    },
+    {
+      "name": "ApplicationDeadline",
+      "count": 27
+    },
+    {
+      "name": "ApplicationStartDate",
+      "count": 26
+    },
+    {
+      "name": "EligibilityBusinessStage",
+      "count": 12
+    }
+  ],
+  "sources": {
+    "금융위원회": 13,
+    "보건복지부": 7,
+    "서울시 지원사업": 5,
+    "소상공인시장진흥공단": 5,
+    "경향신문 경제": 1,
+    "정책브리핑": 27,
+    "행정안전부": 11,
+    "동아일보 경제": 2,
+    "매일경제 경제정책": 3,
+    "Awesome MCP Korea": 16
+  },
+  "generated_at": "2026-05-20T07:06:34.162899+09:00",
+  "articles": [
+    {
+      "event_model_payload": {
+        "source_url": "https://www.fsc.go.kr/no010101/86914?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt="
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.fsc.go.kr/no010101/86915?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt="
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.fsc.go.kr/no010101/86917?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt="
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.fsc.go.kr/no010101/86919?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt="
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.fsc.go.kr/no010101/86927?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt="
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490546&tag=&nPage=1"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490547&tag=&nPage=1"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=458268"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=458281"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=458284"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53519&pNm=BOA0101&eventMode="
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=54137&pNm=BOA0101&eventMode="
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=54155&pNm=BOA0101&eventMode="
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=54157&pNm=BOA0101&eventMode="
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148964630&call_from=rsslink"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148964628&call_from=rsslink"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148964612&call_from=rsslink"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490503&tag=&nPage=1"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125985"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=e059coqeF-UhTgmdqLQiz2RTs-dy5dJCJ3yVsMbt.node10?bbsId=BBSMSTR_000000000006&nttId=125990"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.fsc.go.kr/no010101/86821?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt="
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.fsc.go.kr/no010101/86830?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt="
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.fsc.go.kr/no010101/86834?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt="
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=457537"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53519&pNm=BOA0101&eventMode="
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148963920&call_from=rsslink"
+      }
+    }
+  ],
+  "ontology": {
+    "repo": "GovRadar",
+    "category": "govsupport",
+    "ontology_version": "0.1.0",
+    "event_model_ids": [
+      "govsupport.application_deadline",
+      "govsupport.editorial_coverage",
+      "govsupport.eligibility_rule",
+      "govsupport.selection_result",
+      "govsupport.support_program_notice"
+    ],
+    "event_model_mappings": {
+      "support_program_notice": "govsupport.support_program_notice",
+      "application_deadline": "govsupport.application_deadline",
+      "eligibility_rule": "govsupport.eligibility_rule",
+      "selection_result": "govsupport.selection_result",
+      "editorial_coverage": "govsupport.editorial_coverage"
+    },
+    "entity_type_hints": [
+      "program.support_program",
+      "organization.agency"
+    ],
+    "source_role_ids": [
+      "context_only",
+      "operational_evidence",
+      "primary_evidence"
+    ],
+    "source_role_mappings": {
+      "정책브리핑": "context_only",
+      "정부24 보조금": "primary_evidence",
+      "서울시 지원사업": "operational_evidence"
+    },
+    "evidence_policy_ids": [
+      "traceable_url_required",
+      "official_confirmation_required"
+    ]
+  }
+}
