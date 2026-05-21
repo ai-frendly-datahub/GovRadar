@@ -1,0 +1,102 @@
+{
+  "date": "2026-05-21",
+  "category": "govsupport",
+  "article_count": 57,
+  "source_count": 8,
+  "matched_count": 57,
+  "top_entities": [
+    {
+      "name": "GovGeneral",
+      "count": 662
+    },
+    {
+      "name": "TargetGroup",
+      "count": 170
+    },
+    {
+      "name": "ApplicationInfo",
+      "count": 126
+    },
+    {
+      "name": "SourceSignal",
+      "count": 120
+    },
+    {
+      "name": "SupportType",
+      "count": 106
+    },
+    {
+      "name": "Region",
+      "count": 68
+    },
+    {
+      "name": "EligibilityRegion",
+      "count": 55
+    },
+    {
+      "name": "OperationalEvent",
+      "count": 51
+    },
+    {
+      "name": "Ministry",
+      "count": 50
+    },
+    {
+      "name": "McpKoreaEcosystem",
+      "count": 33
+    },
+    {
+      "name": "EligibilityTargetGroup",
+      "count": 32
+    },
+    {
+      "name": "EligibilityIndustry",
+      "count": 24
+    },
+    {
+      "name": "ApplicationDeadline",
+      "count": 16
+    },
+    {
+      "name": "ApplicationStartDate",
+      "count": 15
+    },
+    {
+      "name": "EligibilityBusinessStage",
+      "count": 3
+    }
+  ],
+  "sources": {
+    "금융위원회": 9,
+    "보건복지부": 3,
+    "소상공인시장진흥공단": 5,
+    "동아일보 경제": 1,
+    "정책브리핑": 17,
+    "경향신문 경제": 3,
+    "서울시 지원사업": 3,
+    "Awesome MCP Korea": 16
+  },
+  "generated_at": "2026-05-21T16:57:38.700940+09:00",
+  "articles": [
+    {
+      "event_model_payload": {
+        "source_url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490546&tag=&nPage=1"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490547&tag=&nPage=1"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=458268"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53519&pNm=BOA0101&eventMode="
+      }
+    }
+  ]
+}
