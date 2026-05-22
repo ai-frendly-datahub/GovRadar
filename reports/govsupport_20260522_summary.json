@@ -1,83 +1,83 @@
 {
   "date": "2026-05-22",
   "category": "govsupport",
-  "article_count": 64,
+  "article_count": 75,
   "source_count": 9,
-  "matched_count": 64,
+  "matched_count": 75,
   "top_entities": [
     {
       "name": "GovGeneral",
-      "count": 723
+      "count": 888
     },
     {
       "name": "TargetGroup",
-      "count": 183
+      "count": 223
     },
     {
       "name": "ApplicationInfo",
-      "count": 154
+      "count": 182
     },
     {
       "name": "SourceSignal",
-      "count": 151
+      "count": 166
     },
     {
       "name": "SupportType",
-      "count": 120
+      "count": 148
     },
     {
       "name": "Region",
-      "count": 87
+      "count": 104
     },
     {
       "name": "EligibilityRegion",
-      "count": 65
+      "count": 80
     },
     {
       "name": "OperationalEvent",
-      "count": 62
+      "count": 74
     },
     {
       "name": "Ministry",
-      "count": 52
-    },
-    {
-      "name": "McpKoreaEcosystem",
-      "count": 35
-    },
-    {
-      "name": "EligibilityTargetGroup",
-      "count": 32
+      "count": 67
     },
     {
       "name": "EligibilityIndustry",
-      "count": 27
+      "count": 41
+    },
+    {
+      "name": "EligibilityTargetGroup",
+      "count": 36
+    },
+    {
+      "name": "McpKoreaEcosystem",
+      "count": 34
     },
     {
       "name": "ApplicationDeadline",
-      "count": 20
+      "count": 23
     },
     {
       "name": "ApplicationStartDate",
-      "count": 18
+      "count": 22
     },
     {
       "name": "EligibilityBusinessStage",
-      "count": 3
+      "count": 5
     }
   ],
   "sources": {
     "금융위원회": 10,
     "보건복지부": 4,
-    "서울시 지원사업": 5,
+    "서울시 지원사업": 6,
     "소상공인시장진흥공단": 5,
-    "동아일보 경제": 1,
-    "경향신문 경제": 4,
+    "정책브리핑": 24,
+    "동아일보 경제": 4,
+    "경향신문 경제": 5,
     "매일경제 경제정책": 1,
-    "정책브리핑": 18,
     "Awesome MCP Korea": 16
   },
-  "generated_at": "2026-05-22T11:03:21.860136+09:00",
+  "generated_at": "2026-05-22T16:49:30.312609+09:00",
   "articles": [
     {
       "event_model_payload": {
