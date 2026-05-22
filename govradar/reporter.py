@@ -1,9 +1,10 @@
 from __future__ import annotations
 
-from collections.abc import Iterable
+import json
+from collections.abc import Iterable, Mapping
 from html import escape
 from pathlib import Path
-from typing import Any, Mapping
+from typing import Any
 
 from radar_core.ontology import build_summary_ontology_metadata
 from radar_core.report_utils import (
@@ -23,12 +24,12 @@ def generate_report(
     output_path: Path,
     stats: dict[str, int],
     errors: list[str] | None = None,
-    store=None,
+    store: object | None = None,
     quality_report: Mapping[str, Any] | None = None,
 ) -> Path:
     """Generate HTML report (delegates to radar-core with universal plugins)."""
     articles_list = list(articles)
-    plugin_charts: list = []
+    plugin_charts: dict[str, Any] = {}
 
     # --- Universal plugins (entity heatmap + source reliability) ---
     try:
@@ -36,7 +37,7 @@ def generate_report(
 
         _heatmap = _heatmap_config(articles=articles_list)
         if _heatmap is not None:
-            plugin_charts.append(_heatmap)
+            plugin_charts["entity_heatmap"] = _heatmap
     except Exception:
         pass
     try:
@@ -44,10 +45,15 @@ def generate_report(
 
         _reliability = _reliability_config(store=store)
         if _reliability is not None:
-            plugin_charts.append(_reliability)
+            plugin_charts["source_reliability"] = _reliability
     except Exception:
         pass
 
+    ontology_metadata = build_summary_ontology_metadata(
+        "GovRadar",
+        category_name=category.category_name,
+        search_from=Path(__file__).resolve(),
+    )
     result = _core_generate_report(
         category=category,
         articles=articles_list,
@@ -55,12 +61,14 @@ def generate_report(
         stats=stats,
         errors=errors,
         plugin_charts=plugin_charts if plugin_charts else None,
-        ontology_metadata=build_summary_ontology_metadata(
-            "GovRadar",
-            category_name=category.category_name,
-            search_from=Path(__file__).resolve(),
-        ),
+        ontology_metadata=ontology_metadata,
     )
+    if ontology_metadata:
+        _inject_ontology_metadata_into_latest_summary(
+            output_path.parent,
+            category.category_name,
+            ontology_metadata,
+        )
     if quality_report:
         _inject_operational_quality_panel(result, quality_report)
         _inject_latest_dated_report_panel(result, category.category_name, quality_report)
@@ -72,8 +80,36 @@ def generate_index_html(
     summaries_dir: Path | None = None,
 ) -> Path:
     """Generate index.html (delegates to radar-core)."""
-    radar_name = "Radar Template"
+    _ = summaries_dir
+    radar_name = "GovRadar"
     return _core_generate_index_html(report_dir, radar_name)
+
+
+def _inject_ontology_metadata_into_latest_summary(
+    report_dir: Path,
+    category_name: str,
+    ontology_metadata: Mapping[str, Any],
+) -> None:
+    summary_reports = sorted(
+        report_dir.glob(f"{category_name}_[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]_summary.json"),
+        key=lambda path: path.stat().st_mtime,
+    )
+    if not summary_reports:
+        return
+
+    summary_path = summary_reports[-1]
+    try:
+        payload = json.loads(summary_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return
+    if not isinstance(payload, dict):
+        return
+    if "ontology" not in payload:
+        payload["ontology"] = dict(ontology_metadata)
+    summary_path.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
 
 
 def _inject_latest_dated_report_panel(
@@ -82,9 +118,7 @@ def _inject_latest_dated_report_panel(
     quality_report: Mapping[str, Any],
 ) -> None:
     dated_reports = sorted(
-        output_path.parent.glob(
-            f"{category_name}_[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9].html"
-        ),
+        output_path.parent.glob(f"{category_name}_[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9].html"),
         key=lambda path: path.stat().st_mtime,
     )
     if dated_reports:
@@ -117,8 +151,7 @@ def _render_operational_quality_panel(quality_report: Mapping[str, Any]) -> str:
     flagged_sources = [
         row
         for row in sources
-        if str(row.get("status"))
-        in {"stale", "missing", "missing_event", "unknown_event_date"}
+        if str(row.get("status")) in {"stale", "missing", "missing_event", "unknown_event_date"}
     ][:6]
 
     chips = [
@@ -132,12 +165,20 @@ def _render_operational_quality_panel(quality_report: Mapping[str, Any]) -> str:
         ("selection results", summary_map.get("selection_result_events", 0)),
         ("program keys", summary_map.get("unique_program_key_count", 0)),
         ("evidence URLs", summary_map.get("events_with_evidence_url", 0)),
+        ("source gaps", summary_map.get("event_model_source_gap_count", 0)),
     ]
     chip_html = "\n".join(
         f'<span class="chip"><strong>{escape(label)}</strong> {escape(str(value))}</span>'
         for label, value in chips
     )
     source_html = _render_quality_sources(flagged_sources)
+    gap_html = _render_quality_source_gaps(
+        [
+            row
+            for row in _list(quality_report.get("event_model_source_gaps"))
+            if isinstance(row, Mapping)
+        ]
+    )
     event_html = _render_quality_events(events[:6])
     return f"""
       <section id="operational-quality" class="section" aria-label="Operational quality">
@@ -160,6 +201,7 @@ def _render_operational_quality_panel(quality_report: Mapping[str, Any]) -> str:
               {chip_html}
             </div>
             {source_html}
+            {gap_html}
             {event_html}
           </div>
         </article>
@@ -182,6 +224,55 @@ def _render_quality_sources(flagged_sources: list[Mapping[str, Any]]) -> str:
     return "<ul>" + "\n".join(items) + "</ul>"
 
 
+def _render_quality_source_gaps(gaps: list[Mapping[str, Any]]) -> str:
+    if not gaps:
+        return ""
+
+    items = []
+    for row in gaps[:6]:
+        event_model = escape(str(row.get("event_model", "")))
+        enabled_count = escape(str(row.get("enabled_source_count", 0)))
+        disabled_details = [
+            value
+            for value in _list(row.get("disabled_source_details"))
+            if isinstance(value, Mapping)
+        ]
+        disabled_sources = [str(value) for value in _list(row.get("disabled_sources"))]
+        disabled_candidates = _format_disabled_source_candidates(
+            disabled_details,
+            disabled_sources,
+        )
+        disabled_text = (
+            f"; disabled candidates: {escape(disabled_candidates)}"
+            if disabled_candidates
+            else "; no disabled candidate source configured"
+        )
+        items.append(
+            f"<li><strong>{event_model}</strong>: enabled sources {enabled_count}{disabled_text}</li>"
+        )
+    return (
+        '<p class="muted small">Tracked event model source gaps</p><ul>'
+        + "\n".join(items)
+        + "</ul>"
+    )
+
+
+def _format_disabled_source_candidates(
+    disabled_details: list[Mapping[str, Any]],
+    disabled_sources: list[str],
+) -> str:
+    if disabled_details:
+        parts = []
+        for detail in disabled_details:
+            source = str(detail.get("source", ""))
+            reenable_gate = str(detail.get("reenable_gate") or "")
+            skip_reason = str(detail.get("skip_reason") or "")
+            qualifier = reenable_gate or skip_reason
+            parts.append(f"{source} ({qualifier})" if qualifier else source)
+        return ", ".join(part for part in parts if part)
+    return ", ".join(disabled_sources)
+
+
 def _render_quality_events(events: list[Mapping[str, Any]]) -> str:
     if not events:
         return '<p class="muted small">No deadline or eligibility events were extracted in this run.</p>'
@@ -195,7 +286,9 @@ def _render_quality_events(events: list[Mapping[str, Any]]) -> str:
         selection_detail = _format_selection_result(event)
         fields = event.get("eligibility_fields")
         field_text = _format_eligibility_fields(fields if isinstance(fields, Mapping) else {})
-        details: list[str] = [deadline or selection_detail or field_text or "event date unavailable"]
+        details: list[str] = [
+            deadline or selection_detail or field_text or "event date unavailable"
+        ]
         evidence_url = str(event.get("evidence_url") or "")
         program_key = str(event.get("program_key") or "")
         if evidence_url:

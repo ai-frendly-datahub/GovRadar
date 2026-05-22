@@ -3,14 +3,14 @@
 
 from __future__ import annotations
 
-from datetime import UTC, date, datetime
+import json
 import sys
+from datetime import UTC, date, datetime
 from pathlib import Path
 from typing import Any
 
 import duckdb
 import yaml
-
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
@@ -37,7 +37,9 @@ def _project_path(project_root: Path, raw_path: str | Path) -> Path:
 
 
 def _load_runtime_config(project_root: Path) -> dict[str, Any]:
-    raw = yaml.safe_load((project_root / "config" / "config.yaml").read_text(encoding="utf-8")) or {}
+    raw = (
+        yaml.safe_load((project_root / "config" / "config.yaml").read_text(encoding="utf-8")) or {}
+    )
     return raw if isinstance(raw, dict) else {}
 
 
@@ -80,6 +82,25 @@ def _latest_article_date(db_path: Path, category_name: str) -> date | None:
     return _coerce_date(row[0])
 
 
+def _load_existing_quality_errors(report_dir: Path, category_name: str) -> list[str]:
+    path = report_dir / f"{category_name}_quality.json"
+    if not path.exists():
+        return []
+    try:
+        raw = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return []
+    if not isinstance(raw, dict):
+        return []
+    generated_date = _coerce_date(raw.get("generated_at"))
+    if generated_date != datetime.now(UTC).date():
+        return []
+    errors = raw.get("errors", [])
+    if not isinstance(errors, list):
+        return []
+    return [str(error) for error in errors if str(error).strip()]
+
+
 def _lookback_days(target_date: date | None, *, minimum_days: int = 7) -> int:
     if target_date is None:
         return minimum_days
@@ -106,7 +127,8 @@ def generate_quality_artifacts(
     quality_cfg = load_category_quality_config(category_name, categories_dir=categories_dir)
     lookback_days = _lookback_days(_latest_article_date(db_path, category_cfg.category_name))
 
-    with RadarStorage(db_path) as storage:
+    storage = RadarStorage(db_path)
+    try:
         recent_articles = _dedupe_articles(
             [
                 *storage.recent_articles(
@@ -121,6 +143,8 @@ def generate_quality_artifacts(
                 ),
             ]
         )
+    finally:
+        storage.close()
 
     enriched_articles = enrich_support_operational_fields(recent_articles)
     scoped_articles = filter_relevant_articles(
@@ -130,6 +154,7 @@ def generate_quality_artifacts(
     report = build_quality_report(
         category=category_cfg,
         articles=scoped_articles or recent_articles,
+        errors=_load_existing_quality_errors(report_dir, category_cfg.category_name),
         quality_config=quality_cfg,
     )
     paths = write_quality_report(
@@ -175,6 +200,16 @@ def main() -> None:
     print(f"not_tracked_sources={summary['not_tracked_sources']}")
     print(f"unique_program_key_count={summary['unique_program_key_count']}")
     print(f"events_with_evidence_url={summary['events_with_evidence_url']}")
+    print(f"event_model_source_gap_count={summary['event_model_source_gap_count']}")
+    for gap in report.get("event_model_source_gaps", []):
+        if not isinstance(gap, dict):
+            continue
+        disabled_sources = ", ".join(str(source) for source in gap.get("disabled_sources", []))
+        print(
+            "event_model_source_gap="
+            f"{gap.get('event_model')}: enabled={gap.get('enabled_source_count')}, "
+            f"disabled={gap.get('disabled_source_count')}, candidates={disabled_sources}"
+        )
 
 
 def _dedupe_articles(articles: list[Article]) -> list[Article]:

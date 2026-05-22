@@ -7,11 +7,10 @@ from typing import Any, cast
 
 from radar_core.analyzer import apply_entity_rules
 from radar_core.collector import collect_sources
-from radar_core.config_loader import load_category_config, load_settings
+from radar_core.config_loader import filter_sources, load_category_config, load_settings
 from radar_core.ontology import annotate_articles_with_ontology
 from radar_core.raw_logger import RawLogger
 from radar_core.search_index import SearchIndex
-from radar_core.config_loader import filter_sources
 
 from govradar.common.validators import validate_article
 from govradar.config_loader import load_category_quality_config
@@ -155,6 +154,15 @@ def run(
     storage = RadarStorage(settings.database_path)
     storage.upsert_articles(validated_articles)
     _ = storage.delete_older_than(keep_days)
+    quality_cleanup_deleted = storage.delete_invalid_pages(category_cfg.category_name)
+    quality_cleanup_deleted += storage.delete_missing_published_from_sources(
+        category_cfg.category_name,
+        [
+            source.name
+            for source in effective_sources
+            if source.config.get("drop_if_published_missing") is True
+        ],
+    )
 
     with SearchIndex(settings.search_db_path) as search_idx:
         for article in validated_articles:
@@ -167,7 +175,7 @@ def run(
         sources=effective_sources,
     )
     storage.close()
-    quality_articles = _dedupe_articles([*classified, *recent_articles])
+    quality_articles = recent_articles
 
     matched_count = sum(1 for article in recent_articles if article.matched_entities)
     source_count = len({article.source for article in recent_articles if article.source})
@@ -181,6 +189,8 @@ def run(
         "source_count": source_count,
         "matched_count": matched_count,
     }
+    if quality_cleanup_deleted:
+        stats["quality_cleanup_deleted"] = quality_cleanup_deleted
 
     quality_report = build_quality_report(
         category=cast(Any, category_cfg),
@@ -296,7 +306,10 @@ def parse_args() -> argparse.Namespace:
         "--keep-report-days", type=int, default=90, help="Retention window for dated HTML reports"
     )
     _ = parser.add_argument(
-        "--keep-snapshot-days", type=int, default=30, help="Retention window for dated DuckDB snapshots"
+        "--keep-snapshot-days",
+        type=int,
+        default=30,
+        help="Retention window for dated DuckDB snapshots",
     )
     _ = parser.add_argument(
         "--snapshot-db",
@@ -345,8 +358,6 @@ def _to_int(value: object, default: int) -> int:
     return default
 
 
-
-
 def _to_optional_int(value: object) -> int | None:
     if value is None:
         return None
@@ -366,6 +377,8 @@ def _to_str_list(value: object) -> list[str]:
     if isinstance(value, list):
         return [str(item) for item in cast(list[object], value) if isinstance(item, str)]
     return []
+
+
 if __name__ == "__main__":
     _PROJECT_ROOT = Path(__file__).resolve().parent
     args = cast(dict[str, object], vars(parse_args()))

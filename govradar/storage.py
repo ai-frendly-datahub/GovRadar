@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+from collections.abc import Iterable
 from datetime import UTC, date, datetime, timedelta
 from pathlib import Path
 from typing import cast
@@ -51,6 +52,46 @@ class RadarStorage(CoreRadarStorage):
         )
         return [_article_from_row(row) for row in rows]
 
+    def delete_invalid_pages(self, category: str) -> int:
+        where_clause = """
+            category = ?
+            AND (
+                title LIKE '%목록 < 전체%'
+                OR lower(title || ' ' || coalesce(summary, '')) LIKE '%access denied%'
+                OR lower(title || ' ' || coalesce(summary, '')) LIKE '%page not found%'
+                OR lower(title || ' ' || coalesce(summary, '')) LIKE '%request blocked%'
+                OR lower(title || ' ' || coalesce(summary, '')) LIKE '%service unavailable%'
+                OR (title || ' ' || coalesce(summary, '')) LIKE '%페이지를 찾을 수 없습니다%'
+            )
+        """
+        row = self.conn.execute(
+            f"SELECT COUNT(*) FROM articles WHERE {where_clause}",
+            [category],
+        ).fetchone()
+        to_delete = int(row[0]) if row else 0
+        _ = self.conn.execute(f"DELETE FROM articles WHERE {where_clause}", [category])
+        return to_delete
+
+    def delete_missing_published_from_sources(
+        self,
+        category: str,
+        source_names: Iterable[str],
+    ) -> int:
+        names = [name for name in dict.fromkeys(source_names) if name]
+        if not names:
+            return 0
+
+        placeholders = ", ".join("?" for _ in names)
+        where_clause = f"category = ? AND published IS NULL AND source IN ({placeholders})"
+        params: list[object] = [category, *names]
+        row = self.conn.execute(
+            f"SELECT COUNT(*) FROM articles WHERE {where_clause}",
+            params,
+        ).fetchone()
+        to_delete = int(row[0]) if row else 0
+        _ = self.conn.execute(f"DELETE FROM articles WHERE {where_clause}", params)
+        return to_delete
+
     def create_daily_snapshot(
         self,
         *,
@@ -72,9 +113,7 @@ class RadarStorage(CoreRadarStorage):
         today: date | None = None,
     ) -> int:
         snapshot_root = (
-            Path(snapshot_dir)
-            if snapshot_dir is not None
-            else self.db_path.parent / "daily"
+            Path(snapshot_dir) if snapshot_dir is not None else self.db_path.parent / "daily"
         )
         return cleanup_dated_databases(
             snapshot_root,
@@ -103,6 +142,7 @@ def _article_from_row(
         str | None,
         datetime | None,
         datetime | None,
+        str | None,
         str | None,
     ],
 ) -> Article:

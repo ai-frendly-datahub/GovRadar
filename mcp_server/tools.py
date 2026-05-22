@@ -11,7 +11,6 @@ import duckdb
 from radar_core.nl_query import parse_query
 from radar_core.search_index import SearchIndex
 
-
 _ALLOWED_SQL = re.compile(r"^\s*(SELECT|WITH|EXPLAIN)\b", re.IGNORECASE)
 
 

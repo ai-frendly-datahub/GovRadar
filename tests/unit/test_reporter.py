@@ -49,7 +49,22 @@ def test_generate_report_injects_operational_quality_panel(tmp_path, monkeypatch
             "selection_result_events": 1,
             "unique_program_key_count": 3,
             "events_with_evidence_url": 3,
+            "event_model_source_gap_count": 1,
         },
+        "event_model_source_gaps": [
+            {
+                "event_model": "selection_result",
+                "enabled_source_count": 0,
+                "disabled_sources": ["K-Startup 선정결과 후보"],
+                "disabled_source_details": [
+                    {
+                        "source": "K-Startup 선정결과 후보",
+                        "skip_reason": "Backlog source only.",
+                        "reenable_gate": "Enable after fixture and parser checks pass.",
+                    }
+                ],
+            }
+        ],
         "sources": [
             {
                 "source": "서울시 지원사업",
@@ -100,9 +115,7 @@ def test_generate_report_injects_operational_quality_panel(tmp_path, monkeypatch
     )
 
     html = output_path.read_text(encoding="utf-8")
-    dated_html = (tmp_path / "reports" / "govsupport_20260412.html").read_text(
-        encoding="utf-8"
-    )
+    dated_html = (tmp_path / "reports" / "govsupport_20260412.html").read_text(encoding="utf-8")
 
     for rendered in (html, dated_html):
         assert 'id="operational-quality"' in rendered
@@ -113,6 +126,10 @@ def test_generate_report_injects_operational_quality_panel(tmp_path, monkeypatch
         assert "selection results" in rendered
         assert "program keys" in rendered
         assert "evidence URLs" in rendered
+        assert "source gaps" in rendered
+        assert "Tracked event model source gaps" in rendered
+        assert "K-Startup 선정결과 후보" in rendered
+        assert "Enable after fixture and parser checks pass." in rendered
         assert "서울시 지원사업" in rendered
         assert "2026-04-30" in rendered
         assert "selected 12" in rendered

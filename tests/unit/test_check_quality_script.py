@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import importlib.util
+import json
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
@@ -102,3 +103,88 @@ def test_generate_quality_artifacts_uses_latest_stored_checkpoint(
     captured = capsys.readouterr()
     assert "quality_report=" in captured.out
     assert "tracked_sources=1" in captured.out
+
+
+def test_generate_quality_artifacts_preserves_same_day_collection_errors(
+    tmp_path: Path,
+) -> None:
+    project_root = tmp_path
+    (project_root / "config" / "categories").mkdir(parents=True)
+    (project_root / "reports").mkdir()
+
+    (project_root / "config" / "config.yaml").write_text(
+        yaml.safe_dump(
+            {
+                "database_path": "data/radar_data.duckdb",
+                "report_dir": "reports",
+            },
+            allow_unicode=True,
+            sort_keys=False,
+        ),
+        encoding="utf-8",
+    )
+    (project_root / "config" / "categories" / "govsupport.yaml").write_text(
+        yaml.safe_dump(
+            {
+                "category_name": "govsupport",
+                "display_name": "Gov Support",
+                "sources": [
+                    {
+                        "name": "Deadline Feed",
+                        "type": "rss",
+                        "url": "https://example.com/support.xml",
+                        "enabled": True,
+                        "config": {
+                            "event_model": "application_deadline",
+                            "freshness_sla_days": 7,
+                        },
+                    }
+                ],
+                "entities": [],
+                "data_quality": {
+                    "quality_outputs": {
+                        "tracked_event_models": ["application_deadline"],
+                    }
+                },
+            },
+            allow_unicode=True,
+            sort_keys=False,
+        ),
+        encoding="utf-8",
+    )
+    (project_root / "reports" / "govsupport_quality.json").write_text(
+        json.dumps(
+            {
+                "generated_at": datetime.now(UTC).isoformat(),
+                "errors": ["Deadline Feed: temporary timeout"],
+            }
+        ),
+        encoding="utf-8",
+    )
+
+    article_time = datetime.now(UTC)
+    with RadarStorage(project_root / "data" / "radar_data.duckdb") as storage:
+        storage.upsert_articles(
+            [
+                Article(
+                    title="지원사업 신청 마감",
+                    link="https://example.com/programs/1",
+                    summary="2026년 4월 30일까지 신청",
+                    published=article_time,
+                    collected_at=article_time,
+                    source="Deadline Feed",
+                    category="govsupport",
+                    matched_entities={
+                        "OperationalEvent": ["application_deadline"],
+                        "ApplicationDeadline": ["2026-04-30"],
+                    },
+                )
+            ]
+        )
+
+    module = _load_script_module()
+    _, report = module.generate_quality_artifacts(project_root)
+
+    assert report["errors"] == ["Deadline Feed: temporary timeout"]
+    assert report["summary"]["collection_error_count"] == 1
+    assert report["sources"][0]["errors"] == ["Deadline Feed: temporary timeout"]

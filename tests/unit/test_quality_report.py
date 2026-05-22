@@ -107,6 +107,8 @@ def test_build_quality_report_tracks_deadline_and_eligibility_statuses() -> None
     assert report["summary"]["unique_program_key_count"] == 3
     assert report["summary"]["events_with_evidence_url"] == 3
     assert report["summary"]["collection_error_count"] == 1
+    assert report["summary"]["event_model_source_gap_count"] == 0
+    assert report["event_model_source_gaps"] == []
 
     statuses = {row["source"]: row["status"] for row in report["sources"]}
     assert statuses == {
@@ -116,9 +118,7 @@ def test_build_quality_report_tracks_deadline_and_eligibility_statuses() -> None
         "Missing Source": "missing",
         "News Source": "fresh",
     }
-    deadline_row = next(
-        row for row in report["sources"] if row["source"] == "Deadline Source"
-    )
+    deadline_row = next(row for row in report["sources"] if row["source"] == "Deadline Source")
     assert deadline_row["latest_application_deadline"] == "2026-04-30"
     assert deadline_row["latest_program_key"].startswith(
         "application-deadline:deadline-source:2026-04-30"
@@ -226,9 +226,7 @@ def test_disabled_gov_source_is_skipped_not_active_tracked() -> None:
             )
         ],
         quality_config={
-            "data_quality": {
-                "quality_outputs": {"tracked_event_models": ["eligibility_rule"]}
-            }
+            "data_quality": {"quality_outputs": {"tracked_event_models": ["eligibility_rule"]}}
         },
         generated_at=now,
     )
@@ -240,6 +238,112 @@ def test_disabled_gov_source_is_skipped_not_active_tracked() -> None:
     assert report["summary"]["tracked_sources"] == 0
     assert report["summary"]["skipped_disabled_sources"] == 1
     assert report["summary"]["eligibility_rule_events"] == 0
+
+
+def test_build_quality_report_flags_tracked_event_model_without_enabled_source() -> None:
+    now = datetime(2026, 4, 20, tzinfo=UTC)
+    disabled_selection_source = _source("Selection Backlog", "selection_result", 7)
+    disabled_selection_source.enabled = False
+    disabled_selection_source.config["skip_reason"] = "Parser missing."
+    disabled_selection_source.config["reenable_gate"] = "Add parser fixture."
+    category = CategoryConfig(
+        category_name="govsupport",
+        display_name="Gov Support",
+        sources=[
+            _source("Deadline Source", "application_deadline", 1),
+            disabled_selection_source,
+        ],
+        entities=[],
+    )
+
+    report = build_quality_report(
+        category=category,
+        articles=[],
+        quality_config={
+            "data_quality": {
+                "quality_outputs": {
+                    "tracked_event_models": [
+                        "application_deadline",
+                        "selection_result",
+                    ]
+                }
+            }
+        },
+        generated_at=now,
+    )
+
+    assert report["summary"]["event_model_source_gap_count"] == 1
+    assert report["event_model_source_gaps"] == [
+        {
+            "event_model": "selection_result",
+            "tracked": True,
+            "enabled_source_count": 0,
+            "disabled_source_count": 1,
+            "enabled_sources": [],
+            "disabled_sources": ["Selection Backlog"],
+            "disabled_source_details": [
+                {
+                    "source": "Selection Backlog",
+                    "skip_reason": "Parser missing.",
+                    "reenable_gate": "Add parser fixture.",
+                }
+            ],
+        }
+    ]
+    coverage = {row["event_model"]: row for row in report["event_model_coverage"]}
+    assert coverage["application_deadline"]["enabled_sources"] == ["Deadline Source"]
+    assert coverage["selection_result"]["enabled_sources"] == []
+
+
+def test_secondary_event_models_close_source_coverage_gap() -> None:
+    now = datetime(2026, 4, 20, tzinfo=UTC)
+    official_source = _source("Official Policy", "support_program_notice", 2)
+    official_source.config["secondary_event_models"] = ["selection_result"]
+    disabled_selection_source = _source("Selection Backlog", "selection_result", 7)
+    disabled_selection_source.enabled = False
+    category = CategoryConfig(
+        category_name="govsupport",
+        display_name="Gov Support",
+        sources=[official_source, disabled_selection_source],
+        entities=[],
+    )
+
+    report = build_quality_report(
+        category=category,
+        articles=[
+            Article(
+                title="청년 창업지원사업 선정결과 발표",
+                link="https://example.com/result",
+                summary="최종 선정 결과",
+                published=now,
+                collected_at=now,
+                source="Official Policy",
+                category="govsupport",
+                matched_entities={
+                    "OperationalEvent": ["selection_result"],
+                    "SelectionResultDate": ["2026-04-20"],
+                    "SelectionSelectedCount": ["25"],
+                },
+            )
+        ],
+        quality_config={
+            "data_quality": {
+                "quality_outputs": {
+                    "tracked_event_models": [
+                        "support_program_notice",
+                        "selection_result",
+                    ]
+                }
+            }
+        },
+        generated_at=now,
+    )
+
+    assert report["summary"]["selection_result_events"] == 1
+    assert report["summary"]["event_model_source_gap_count"] == 0
+    coverage = {row["event_model"]: row for row in report["event_model_coverage"]}
+    assert coverage["selection_result"]["enabled_sources"] == ["Official Policy"]
+    assert coverage["selection_result"]["disabled_sources"] == ["Selection Backlog"]
 
 
 def test_write_quality_report_writes_latest_and_dated_files(tmp_path) -> None:

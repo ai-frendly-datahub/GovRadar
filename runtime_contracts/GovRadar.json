@@ -1,0 +1,30 @@
+{
+  "category": "govsupport",
+  "ontology_version": "0.1.0",
+  "event_model_mappings": {
+    "support_program_notice": "govsupport.support_program_notice",
+    "application_deadline": "govsupport.application_deadline",
+    "eligibility_rule": "govsupport.eligibility_rule",
+    "selection_result": "govsupport.selection_result",
+    "public_data_api": "govsupport.public_data_api"
+  },
+  "source_role_mappings": {
+    "government": "govsupport.source_role.government",
+    "public-agency": "govsupport.source_role.public_agency",
+    "local-government": "govsupport.source_role.local_government",
+    "community-curation": "govsupport.source_role.community_curation"
+  },
+  "entity_type_hints": [
+    "SupportType",
+    "TargetGroup",
+    "Ministry",
+    "Region",
+    "ApplicationInfo",
+    "McpKoreaEcosystem"
+  ],
+  "evidence_policy_ids": [
+    "govsupport.evidence.primary_notice",
+    "govsupport.evidence.deadline_trace",
+    "govsupport.evidence.eligibility_trace"
+  ]
+}

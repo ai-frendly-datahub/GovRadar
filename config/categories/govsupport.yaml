@@ -103,6 +103,29 @@ sources:
     freshness_sla_days: 1
     skip_reason: "Browser probe returned the official anti-automation block page rather than service cards."
     reenable_gate: "Re-enable only after a stable API/search endpoint or approved browser flow can return service cards without triggering access protection."
+- name: K-Startup 선정결과 후보
+  type: javascript
+  url: https://www.k-startup.go.kr/unifyinfo/info/openinfo/notice.do
+  enabled: false
+  language: ko
+  country: KR
+  trust_tier: T2_expert
+  collection_tier: C3_javascript
+  content_type: startup_selection_result_notice
+  producer_role: public-agency
+  info_purpose: [selection_result, support_program_notice, operational_event]
+  notes: "창업지원 사업 선정결과 후행 검증 후보. 브라우저 fixture와 선정결과 parser 검증 후 활성화한다."
+  config:
+    wait_for: table
+    article_selector: table tbody tr
+    link_selector: td a
+    event_model: selection_result
+    event_date_field: selection_result_date
+    observed_date_field: collected_at
+    canonical_key_fields: [agency, normalized_program_title, selection_result_date, source_url]
+    freshness_sla_days: 7
+    skip_reason: "Backlog source only: selection result parser and fixture coverage are not ready."
+    reenable_gate: "Enable after browser fixture test, selection_result parser, and evidence URL checks pass."
 - name: 정책브리핑
   type: rss
   url: https://www.korea.kr/rss/policy.xml
@@ -112,10 +135,11 @@ sources:
   collection_tier: C1_rss
   content_type: policy_notice
   producer_role: government
-  info_purpose: [policy, guidance, announcement, support_program_notice]
-  notes: "정부 정책 발표와 지원사업 안내의 공식 해설 source. 신청 가능 상태 판단에는 보조 evidence로만 사용."
+  info_purpose: [policy, guidance, announcement, support_program_notice, selection_result]
+  notes: "정부 정책 발표와 지원사업 안내의 공식 해설 source. 신청 가능 상태 판단에는 보조 evidence로만 사용하고, 선정/집행 결과는 제목 기반 보수적 파서가 근거 필드를 찾은 경우에만 후행 신호로 사용한다."
   config:
     event_model: support_program_notice
+    secondary_event_models: [selection_result]
     event_date_field: published
     observed_date_field: collected_at
     canonical_key_fields: [agency, normalized_program_title, source_url]
@@ -156,6 +180,9 @@ sources:
   info_purpose: [application, deadline, eligibility, support-program, application_deadline, eligibility_rule, operational_event]
   notes: "소상공인 지원사업 공고 source. 사업자 대상 eligibility와 접수기간 추출 우선 대상."
   config:
+    timeout: 45000
+    navigation_retries: 3
+    navigation_retry_delay_ms: 3000
     wait_for: table tbody tr
     article_selector: table tbody tr
     link_selector: td a
@@ -240,7 +267,7 @@ sources:
   content_type: ministry_notice
   producer_role: government
   info_purpose: [official_notice, support_program_notice, application_deadline, eligibility_rule]
-  notes: "중앙부처 공고/보도자료 source. 지원사업 공고는 deadline/eligibility 후보로 태깅한다."
+  notes: "중앙부처 공고/보도자료 context source. 지원사업 공고는 보조 신호로 태깅하되 tracked SLA 대상에서는 제외한다."
   config:
     wait_for: table.table_style1
     article_selector: table.table_style1 tbody tr
@@ -248,7 +275,7 @@ sources:
     fetch_detail: true
     detail_wait_for: body
     detail_content_selector: "#contents"
-    event_model: support_program_notice
+    event_model: official_notice
     event_date_field: published
     observed_date_field: collected_at
     canonical_key_fields: [agency, normalized_program_title, source_url]
@@ -465,6 +492,8 @@ sources:
   trust_tier: T2_expert
   collection_tier: C1_rss
   description: "한겨레 경제 섹션 - 경제정책, 금융 뉴스"
+  config:
+    drop_if_published_missing: true
 
 - name: 서울경제 경제
   type: rss

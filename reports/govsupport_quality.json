@@ -1,23 +1,24 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-05-21T07:57:39.651159+00:00",
+  "generated_at": "2026-05-22T02:03:40.375421+00:00",
   "summary": {
-    "total_sources": 25,
-    "tracked_sources": 6,
-    "fresh_sources": 4,
+    "total_sources": 26,
+    "tracked_sources": 5,
+    "fresh_sources": 5,
     "stale_sources": 0,
-    "missing_sources": 1,
-    "missing_event_sources": 1,
+    "missing_sources": 0,
+    "missing_event_sources": 0,
     "unknown_event_date_sources": 0,
-    "not_tracked_sources": 17,
-    "skipped_disabled_sources": 2,
-    "support_program_notice_events": 17,
-    "application_deadline_events": 16,
-    "eligibility_rule_events": 35,
+    "not_tracked_sources": 18,
+    "skipped_disabled_sources": 3,
+    "support_program_notice_events": 18,
+    "application_deadline_events": 20,
+    "eligibility_rule_events": 42,
     "selection_result_events": 0,
-    "unique_program_key_count": 68,
-    "events_with_evidence_url": 68,
-    "collection_error_count": 0
+    "unique_program_key_count": 80,
+    "events_with_evidence_url": 80,
+    "collection_error_count": 0,
+    "event_model_source_gap_count": 0
   },
   "sources": [
     {
@@ -47,6 +48,32 @@
       "errors": []
     },
     {
+      "source": "K-Startup 선정결과 후보",
+      "source_type": "javascript",
+      "enabled": false,
+      "tracked": false,
+      "event_model": "selection_result",
+      "freshness_sla_days": 7,
+      "status": "skipped_disabled",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": "Backlog source only: selection result parser and fixture coverage are not ready.",
+      "reenable_gate": "Enable after browser fixture test, selection_result parser, and evidence URL checks pass.",
+      "errors": []
+    },
+    {
       "source": "정책브리핑",
       "source_type": "rss",
       "enabled": true,
@@ -54,25 +81,19 @@
       "event_model": "support_program_notice",
       "freshness_sla_days": 2,
       "status": "fresh",
-      "article_count": 17,
-      "event_count": 17,
-      "latest_event_at": "2026-05-20T22:27:00+00:00",
-      "age_days": 0.4,
-      "latest_title": "\"공연 1만 원 할인권 신청하세요\"…8월 20일까지 24만 장 배포",
-      "latest_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148964851",
-      "latest_evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148964851",
-      "latest_program_title": "\"공연 1만 원 할인권 신청하세요\"…8월 20일까지 24만 장 배포",
-      "latest_program_key": "support-program-notice:kr:정책브리핑:2026-05-20:공연-1만-원-할인권-신청하세요-8월-20일까지-24만-장-배포",
-      "latest_application_deadline": "2026-09-03",
+      "article_count": 18,
+      "event_count": 18,
+      "latest_event_at": "2026-05-20T23:21:00+00:00",
+      "age_days": 1.11,
+      "latest_title": "냉난방비 절감 컨설팅 지원…10년 이상 건축물·22일부터 접수",
+      "latest_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148964854",
+      "latest_evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148964854",
+      "latest_program_title": "냉난방비 절감 컨설팅 지원…10년 이상 건축물·22일부터 접수",
+      "latest_program_key": "support-program-notice:kr:정책브리핑:2026-05-20:냉난방비-절감-컨설팅-지원-10년-이상-건축물-22일부터-접수",
+      "latest_application_deadline": "2026-05-05",
       "latest_eligibility_fields": {
-        "TargetGroup": [
-          "저소득",
-          "취약계층",
-          "농어민"
-        ],
-        "Industry": [
-          "관광",
-          "AI"
+        "Region": [
+          "서울"
         ]
       },
       "latest_selection_result_date": "",
@@ -92,13 +113,13 @@
       "status": "fresh",
       "article_count": 5,
       "event_count": 2,
-      "latest_event_at": "2026-05-21T07:56:26.941176+00:00",
+      "latest_event_at": "2026-05-22T02:02:14.659051+00:00",
       "age_days": 0.0,
       "latest_title": "「소상공인 재난지원금」환수 결정통지 반송에 따른 공시송달 공고",
       "latest_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=54332&pNm=BOA0101&page=1",
       "latest_evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=54332&pNm=BOA0101&page=1",
       "latest_program_title": "「소상공인 재난지원금」환수 결정통지 반송에 따른 공시송달 공고",
-      "latest_program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-05-21:소상공인-재난지원금-환수-결정통지-반송에-따른-공시송달-공고",
+      "latest_program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-05-22:소상공인-재난지원금-환수-결정통지-반송에-따른-공시송달-공고",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
         "TargetGroup": [
@@ -119,18 +140,26 @@
       "tracked": true,
       "event_model": "application_deadline",
       "freshness_sla_days": 1,
-      "status": "missing_event",
-      "article_count": 3,
-      "event_count": 0,
-      "latest_event_at": null,
-      "age_days": null,
-      "latest_title": "",
-      "latest_url": "",
-      "latest_evidence_url": "",
-      "latest_program_title": "",
-      "latest_program_key": "",
-      "latest_application_deadline": "",
-      "latest_eligibility_fields": {},
+      "status": "fresh",
+      "article_count": 5,
+      "event_count": 2,
+      "latest_event_at": "2026-06-10T00:00:00+00:00",
+      "age_days": 0.0,
+      "latest_title": "서울대공원 곤돌라 민간투자사업 실시협약(안) 행정예고",
+      "latest_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=458432",
+      "latest_evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=458432",
+      "latest_program_title": "서울대공원 곤돌라 민간투자사업 실시협약(안) 행정예고",
+      "latest_program_key": "application-deadline:kr:서울시-지원사업:2026-06-10:서울대공원-곤돌라-민간투자사업-실시협약-안-행정예고",
+      "latest_application_deadline": "2026-06-10",
+      "latest_eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "경기"
+        ]
+      },
       "latest_selection_result_date": "",
       "latest_selected_count": "",
       "latest_execution_amount": "",
@@ -142,10 +171,10 @@
       "source": "행정안전부",
       "source_type": "javascript",
       "enabled": true,
-      "tracked": true,
-      "event_model": "support_program_notice",
+      "tracked": false,
+      "event_model": "official_notice",
       "freshness_sla_days": 2,
-      "status": "missing",
+      "status": "not_tracked",
       "article_count": 0,
       "event_count": 0,
       "latest_event_at": null,
@@ -172,15 +201,15 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
       "status": "fresh",
-      "article_count": 3,
-      "event_count": 3,
-      "latest_event_at": "2026-05-21T07:57:02.924623+00:00",
+      "article_count": 4,
+      "event_count": 4,
+      "latest_event_at": "2026-05-22T02:02:41.373375+00:00",
       "age_days": 0.0,
       "latest_title": "새글 현수엽 제1차관, 건보공단 방문해 고유가 피해지원금 이의신청 처리 현장 점검",
       "latest_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490595&mid=a10503010100&nPage=1",
       "latest_evidence_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490595&mid=a10503010100&nPage=1",
       "latest_program_title": "새글 현수엽 제1차관, 건보공단 방문해 고유가 피해지원금 이의신청 처리 현장 점검",
-      "latest_program_key": "eligibility-rule:kr:보건복지부:2026-05-21:새글-현수엽-제1차관-건보공단-방문해-고유가-피해지원금-이의신청-처리-현장-점검",
+      "latest_program_key": "eligibility-rule:kr:보건복지부:2026-05-22:새글-현수엽-제1차관-건보공단-방문해-고유가-피해지원금-이의신청-처리-현장-점검",
       "latest_application_deadline": "2026-05-18",
       "latest_eligibility_fields": {
         "TargetGroup": [
@@ -203,16 +232,16 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
       "status": "fresh",
-      "article_count": 9,
-      "event_count": 6,
-      "latest_event_at": "2026-05-21T07:57:24.072359+00:00",
+      "article_count": 10,
+      "event_count": 8,
+      "latest_event_at": "2026-05-22T02:02:56.284276+00:00",
       "age_days": 0.0,
-      "latest_title": "증권사 임원 등의 불공정거래 행위에 대한 조치 - 제10차 증권선물위원회(5.20.) 의결. 금일 등록된 게시글",
-      "latest_url": "https://www.fsc.go.kr/no010101/86938",
-      "latest_evidence_url": "https://www.fsc.go.kr/no010101/86938",
-      "latest_program_title": "증권사 임원 등의 불공정거래 행위에 대한 조치 - 제10차 증권선물위원회(5.20.) 의결. 금일 등록된 게시글",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-05-21:증권사-임원-등의-불공정거래-행위에-대한-조치-제10차-증권선물위원회-5-20-의결-금일-등록된-게시글",
-      "latest_application_deadline": "2026-01-25",
+      "latest_title": "“한 배를 탄 공동체”의 일원으로서  중동상황으로 인한 해운업계의 어려움을 금융권이 함께 극복해 나가겠습니다.  - 「제4차 중동상황 피해업종 산업-금융권 간담회」 개최",
+      "latest_url": "https://www.fsc.go.kr/no010101/86943",
+      "latest_evidence_url": "https://www.fsc.go.kr/no010101/86943",
+      "latest_program_title": "“한 배를 탄 공동체”의 일원으로서  중동상황으로 인한 해운업계의 어려움을 금융권이 함께 극복해 나가겠습니다.  - 「제4차 중동상황 피해업종 산업-금융권 간담회」 개최",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-05-22:한-배를-탄-공동체-의-일원으로서-중동상황으로-인한-해운업계의-어려움을-금융권이-함께-극복해-나가겠습니다-제4차-중동상황-피해업종-산업-금융권-간담회-개최",
+      "latest_application_deadline": "2026-11-04",
       "latest_eligibility_fields": {
         "Region": [
           "대전"
@@ -493,7 +522,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 0,
+      "article_count": 1,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -545,7 +574,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 3,
+      "article_count": 4,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -698,95 +727,7 @@
     {
       "source": "금융위원회",
       "event_model": "application_deadline",
-      "title": "자본시장법·외부감사법 시행령 개정안 국무회의 의결 - 주가조작·회계부정 신고포상금 제도 개선 및 회계부정 제재 강화. 금일 등록된 게시글",
-      "url": "https://www.fsc.go.kr/no010101/86937",
-      "event_at": "2026-05-22T00:00:00+00:00",
-      "application_deadline": "2026-05-22",
-      "application_start_date": "2026-05-21",
-      "eligibility_fields": {},
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "자본시장법·외부감사법 시행령 개정안 국무회의 의결 - 주가조작·회계부정 신고포상금 제도 개선 및 회계부정 제재 강화. 금일 등록된 게시글",
-      "program_key": "application-deadline:kr:금융위원회:2026-05-22:자본시장법-외부감사법-시행령-개정안-국무회의-의결-주가조작-회계부정-신고포상금-제도-개선-및-회계부정-제재-강화-금일-등록된-게시글",
-      "evidence_url": "https://www.fsc.go.kr/no010101/86937",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "application_deadline",
-      "title": "증권사 임원 등의 불공정거래 행위에 대한 조치 - 제10차 증권선물위원회(5.20.) 의결. 금일 등록된 게시글",
-      "url": "https://www.fsc.go.kr/no010101/86938",
-      "event_at": "2026-01-25T00:00:00+00:00",
-      "application_deadline": "2026-01-25",
-      "application_start_date": "2026-05-21",
-      "eligibility_fields": {
-        "Region": [
-          "대전"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "증권사 임원 등의 불공정거래 행위에 대한 조치 - 제10차 증권선물위원회(5.20.) 의결. 금일 등록된 게시글",
-      "program_key": "application-deadline:kr:금융위원회:2026-01-25:증권사-임원-등의-불공정거래-행위에-대한-조치-제10차-증권선물위원회-5-20-의결-금일-등록된-게시글",
-      "evidence_url": "https://www.fsc.go.kr/no010101/86938",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "증권사 임원 등의 불공정거래 행위에 대한 조치 - 제10차 증권선물위원회(5.20.) 의결. 금일 등록된 게시글",
-      "url": "https://www.fsc.go.kr/no010101/86938",
-      "event_at": "2026-05-21T07:57:24.072359+00:00",
-      "application_deadline": "2026-01-25",
-      "application_start_date": "2026-05-21",
-      "eligibility_fields": {
-        "Region": [
-          "대전"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "증권사 임원 등의 불공정거래 행위에 대한 조치 - 제10차 증권선물위원회(5.20.) 의결. 금일 등록된 게시글",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-05-21:증권사-임원-등의-불공정거래-행위에-대한-조치-제10차-증권선물위원회-5-20-의결-금일-등록된-게시글",
-      "evidence_url": "https://www.fsc.go.kr/no010101/86938",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "금융 대전환의 기반을 다진 1년, 본격적인 성과창출로 대한민국 경제의 대도약을 선도하겠습니다.  - 국민주권정부 출범 1주년, 금융분야 10대 핵심성과. 금일 등록된 게시글",
-      "url": "https://www.fsc.go.kr/no010101/86942",
-      "event_at": "2026-05-21T07:57:22.618070+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인",
-          "청년",
-          "취약계층"
-        ],
-        "Industry": [
-          "AI"
-        ],
-        "Region": [
-          "대전"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "금융 대전환의 기반을 다진 1년, 본격적인 성과창출로 대한민국 경제의 대도약을 선도하겠습니다.  - 국민주권정부 출범 1주년, 금융분야 10대 핵심성과. 금일 등록된 게시글",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-05-21:금융-대전환의-기반을-다진-1년-본격적인-성과창출로-대한민국-경제의-대도약을-선도하겠습니다-국민주권정부-출범-1주년-금융분야-10대-핵심성과-금일-등록된-게시글",
-      "evidence_url": "https://www.fsc.go.kr/no010101/86942",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "application_deadline",
-      "title": "“한 배를 탄 공동체”의 일원으로서  중동상황으로 인한 해운업계의 어려움을 금융권이 함께 극복해 나가겠습니다.  - 「제4차 중동상황 피해업종 산업-금융권 간담회」 개최. 금일 등록된 게시글",
+      "title": "“한 배를 탄 공동체”의 일원으로서  중동상황으로 인한 해운업계의 어려움을 금융권이 함께 극복해 나가겠습니다.  - 「제4차 중동상황 피해업종 산업-금융권 간담회」 개최",
       "url": "https://www.fsc.go.kr/no010101/86943",
       "event_at": "2026-11-04T00:00:00+00:00",
       "application_deadline": "2026-11-04",
@@ -799,17 +740,17 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "“한 배를 탄 공동체”의 일원으로서  중동상황으로 인한 해운업계의 어려움을 금융권이 함께 극복해 나가겠습니다.  - 「제4차 중동상황 피해업종 산업-금융권 간담회」 개최. 금일 등록된 게시글",
-      "program_key": "application-deadline:kr:금융위원회:2026-11-04:한-배를-탄-공동체-의-일원으로서-중동상황으로-인한-해운업계의-어려움을-금융권이-함께-극복해-나가겠습니다-제4차-중동상황-피해업종-산업-금융권-간담회-개최-금일-등록된-게시글",
+      "program_title": "“한 배를 탄 공동체”의 일원으로서  중동상황으로 인한 해운업계의 어려움을 금융권이 함께 극복해 나가겠습니다.  - 「제4차 중동상황 피해업종 산업-금융권 간담회」 개최",
+      "program_key": "application-deadline:kr:금융위원회:2026-11-04:한-배를-탄-공동체-의-일원으로서-중동상황으로-인한-해운업계의-어려움을-금융권이-함께-극복해-나가겠습니다-제4차-중동상황-피해업종-산업-금융권-간담회-개최",
       "evidence_url": "https://www.fsc.go.kr/no010101/86943",
       "evidence_url_present": true
     },
     {
       "source": "금융위원회",
       "event_model": "eligibility_rule",
-      "title": "“한 배를 탄 공동체”의 일원으로서  중동상황으로 인한 해운업계의 어려움을 금융권이 함께 극복해 나가겠습니다.  - 「제4차 중동상황 피해업종 산업-금융권 간담회」 개최. 금일 등록된 게시글",
+      "title": "“한 배를 탄 공동체”의 일원으로서  중동상황으로 인한 해운업계의 어려움을 금융권이 함께 극복해 나가겠습니다.  - 「제4차 중동상황 피해업종 산업-금융권 간담회」 개최",
       "url": "https://www.fsc.go.kr/no010101/86943",
-      "event_at": "2026-05-21T07:57:21.476222+00:00",
+      "event_at": "2026-05-22T02:02:56.284276+00:00",
       "application_deadline": "2026-11-04",
       "application_start_date": "2026-05-21",
       "eligibility_fields": {
@@ -820,9 +761,72 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "“한 배를 탄 공동체”의 일원으로서  중동상황으로 인한 해운업계의 어려움을 금융권이 함께 극복해 나가겠습니다.  - 「제4차 중동상황 피해업종 산업-금융권 간담회」 개최. 금일 등록된 게시글",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-05-21:한-배를-탄-공동체-의-일원으로서-중동상황으로-인한-해운업계의-어려움을-금융권이-함께-극복해-나가겠습니다-제4차-중동상황-피해업종-산업-금융권-간담회-개최-금일-등록된-게시글",
+      "program_title": "“한 배를 탄 공동체”의 일원으로서  중동상황으로 인한 해운업계의 어려움을 금융권이 함께 극복해 나가겠습니다.  - 「제4차 중동상황 피해업종 산업-금융권 간담회」 개최",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-05-22:한-배를-탄-공동체-의-일원으로서-중동상황으로-인한-해운업계의-어려움을-금융권이-함께-극복해-나가겠습니다-제4차-중동상황-피해업종-산업-금융권-간담회-개최",
       "evidence_url": "https://www.fsc.go.kr/no010101/86943",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "application_deadline",
+      "title": "베트남중앙은행, 나이스평가정보 베트남법인  신용정보서비스제공 허가  - ’26.4월 한‧베 정상회담 성과사업. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/86959",
+      "event_at": "2026-04-24T00:00:00+00:00",
+      "application_deadline": "2026-04-24",
+      "application_start_date": "2026-05-22",
+      "eligibility_fields": {
+        "Industry": [
+          "관광"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "베트남중앙은행, 나이스평가정보 베트남법인  신용정보서비스제공 허가  - ’26.4월 한‧베 정상회담 성과사업. 금일 등록된 게시글",
+      "program_key": "application-deadline:kr:금융위원회:2026-04-24:베트남중앙은행-나이스평가정보-베트남법인-신용정보서비스제공-허가-26-4월-한-베-정상회담-성과사업-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/86959",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "베트남중앙은행, 나이스평가정보 베트남법인  신용정보서비스제공 허가  - ’26.4월 한‧베 정상회담 성과사업. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/86959",
+      "event_at": "2026-05-22T02:02:54.049959+00:00",
+      "application_deadline": "2026-04-24",
+      "application_start_date": "2026-05-22",
+      "eligibility_fields": {
+        "Industry": [
+          "관광"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "베트남중앙은행, 나이스평가정보 베트남법인  신용정보서비스제공 허가  - ’26.4월 한‧베 정상회담 성과사업. 금일 등록된 게시글",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-05-22:베트남중앙은행-나이스평가정보-베트남법인-신용정보서비스제공-허가-26-4월-한-베-정상회담-성과사업-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/86959",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "이억원 금융위원장,‘국민참여형 국민성장펀드’ 출시 첫날펀드가입 및 현장점검. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/86962",
+      "event_at": "2026-05-22T02:02:53.281358+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "이억원 금융위원장,‘국민참여형 국민성장펀드’ 출시 첫날펀드가입 및 현장점검. 금일 등록된 게시글",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-05-22:이억원-금융위원장-국민참여형-국민성장펀드-출시-첫날펀드가입-및-현장점검-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/86962",
       "evidence_url_present": true
     },
     {
@@ -852,7 +856,7 @@
       "event_model": "eligibility_rule",
       "title": "새글 현수엽 제1차관, 건보공단 방문해 고유가 피해지원금 이의신청 처리 현장 점검",
       "url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490595&mid=a10503010100&nPage=1",
-      "event_at": "2026-05-21T07:57:02.924623+00:00",
+      "event_at": "2026-05-22T02:02:41.373375+00:00",
       "application_deadline": "2026-05-18",
       "application_start_date": "2026-05-21",
       "eligibility_fields": {
@@ -865,8 +869,104 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "새글 현수엽 제1차관, 건보공단 방문해 고유가 피해지원금 이의신청 처리 현장 점검",
-      "program_key": "eligibility-rule:kr:보건복지부:2026-05-21:새글-현수엽-제1차관-건보공단-방문해-고유가-피해지원금-이의신청-처리-현장-점검",
+      "program_key": "eligibility-rule:kr:보건복지부:2026-05-22:새글-현수엽-제1차관-건보공단-방문해-고유가-피해지원금-이의신청-처리-현장-점검",
       "evidence_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490595&mid=a10503010100&nPage=1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "보건복지부",
+      "event_model": "application_deadline",
+      "title": "새글 지역 의료 인력 확보 위한 ‘계약형 지역필수의사제’ 참여 기관 추가 공모 시작",
+      "url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490604&mid=a10503010100&nPage=1",
+      "event_at": "2026-06-11T00:00:00+00:00",
+      "application_deadline": "2026-06-11",
+      "application_start_date": "2026-05-22",
+      "eligibility_fields": {
+        "Industry": [
+          "관광"
+        ],
+        "Region": [
+          "강원",
+          "전남",
+          "경남",
+          "제주"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "새글 지역 의료 인력 확보 위한 ‘계약형 지역필수의사제’ 참여 기관 추가 공모 시작",
+      "program_key": "application-deadline:kr:보건복지부:2026-06-11:새글-지역-의료-인력-확보-위한-계약형-지역필수의사제-참여-기관-추가-공모-시작",
+      "evidence_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490604&mid=a10503010100&nPage=1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "보건복지부",
+      "event_model": "eligibility_rule",
+      "title": "새글 지역 의료 인력 확보 위한 ‘계약형 지역필수의사제’ 참여 기관 추가 공모 시작",
+      "url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490604&mid=a10503010100&nPage=1",
+      "event_at": "2026-05-22T02:02:39.673349+00:00",
+      "application_deadline": "2026-06-11",
+      "application_start_date": "2026-05-22",
+      "eligibility_fields": {
+        "Industry": [
+          "관광"
+        ],
+        "Region": [
+          "강원",
+          "전남",
+          "경남",
+          "제주"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "새글 지역 의료 인력 확보 위한 ‘계약형 지역필수의사제’ 참여 기관 추가 공모 시작",
+      "program_key": "eligibility-rule:kr:보건복지부:2026-05-22:새글-지역-의료-인력-확보-위한-계약형-지역필수의사제-참여-기관-추가-공모-시작",
+      "evidence_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490604&mid=a10503010100&nPage=1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "’26년「소규모 세탁소 VOCs 저감시설 지원사업」세탁소 모집 공고(2차)",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=458373",
+      "event_at": "2026-05-22T00:00:00+00:00",
+      "application_deadline": "2026-05-22",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "’26년「소규모 세탁소 VOCs 저감시설 지원사업」세탁소 모집 공고(2차)",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-05-22:26년-소규모-세탁소-vocs-저감시설-지원사업-세탁소-모집-공고-2차",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=458373",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "’26년「소규모 세탁소 VOCs 저감시설 지원사업」세탁소 모집 공고(2차)",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=458373",
+      "event_at": "2026-05-22T02:02:27.438733+00:00",
+      "application_deadline": "2026-05-22",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "’26년「소규모 세탁소 VOCs 저감시설 지원사업」세탁소 모집 공고(2차)",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-05-22:26년-소규모-세탁소-vocs-저감시설-지원사업-세탁소-모집-공고-2차",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=458373",
       "evidence_url_present": true
     },
     {
@@ -874,7 +974,7 @@
       "event_model": "eligibility_rule",
       "title": "「소상공인 재난지원금」환수 결정통지 반송에 따른 공시송달 공고",
       "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=54332&pNm=BOA0101&page=1",
-      "event_at": "2026-05-21T07:56:26.941176+00:00",
+      "event_at": "2026-05-22T02:02:14.659051+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -886,8 +986,213 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "「소상공인 재난지원금」환수 결정통지 반송에 따른 공시송달 공고",
-      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-05-21:소상공인-재난지원금-환수-결정통지-반송에-따른-공시송달-공고",
+      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-05-22:소상공인-재난지원금-환수-결정통지-반송에-따른-공시송달-공고",
       "evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=54332&pNm=BOA0101&page=1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "금융 대전환의 기반을 다진 1년, 본격적인 성과창출로 대한민국 경제의 대도약을 선도하겠습니다.  - 국민주권정부 출범 1주년, 금융분야 10대 핵심성과",
+      "url": "https://www.fsc.go.kr/no010101/86942",
+      "event_at": "2026-05-22T01:07:54.150896+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "청년",
+          "취약계층"
+        ],
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "대전"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "금융 대전환의 기반을 다진 1년, 본격적인 성과창출로 대한민국 경제의 대도약을 선도하겠습니다.  - 국민주권정부 출범 1주년, 금융분야 10대 핵심성과",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-05-22:금융-대전환의-기반을-다진-1년-본격적인-성과창출로-대한민국-경제의-대도약을-선도하겠습니다-국민주권정부-출범-1주년-금융분야-10대-핵심성과",
+      "evidence_url": "https://www.fsc.go.kr/no010101/86942",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "서울대공원 곤돌라 민간투자사업 실시협약(안) 행정예고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=458432",
+      "event_at": "2026-06-10T00:00:00+00:00",
+      "application_deadline": "2026-06-10",
+      "application_start_date": "2026-05-21",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "경기"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "서울대공원 곤돌라 민간투자사업 실시협약(안) 행정예고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-06-10:서울대공원-곤돌라-민간투자사업-실시협약-안-행정예고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=458432",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "서울대공원 곤돌라 민간투자사업 실시협약(안) 행정예고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=458432",
+      "event_at": "2026-05-22T01:07:26.809700+00:00",
+      "application_deadline": "2026-06-10",
+      "application_start_date": "2026-05-21",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "경기"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "서울대공원 곤돌라 민간투자사업 실시협약(안) 행정예고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-05-22:서울대공원-곤돌라-민간투자사업-실시협약-안-행정예고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=458432",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "application_deadline",
+      "title": "증권사 임원 등의 불공정거래 행위에 대한 조치 - 제10차 증권선물위원회(5.20.) 의결",
+      "url": "https://www.fsc.go.kr/no010101/86938",
+      "event_at": "2026-01-25T00:00:00+00:00",
+      "application_deadline": "2026-01-25",
+      "application_start_date": "2026-05-21",
+      "eligibility_fields": {
+        "Region": [
+          "대전"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "증권사 임원 등의 불공정거래 행위에 대한 조치 - 제10차 증권선물위원회(5.20.) 의결",
+      "program_key": "application-deadline:kr:금융위원회:2026-01-25:증권사-임원-등의-불공정거래-행위에-대한-조치-제10차-증권선물위원회-5-20-의결",
+      "evidence_url": "https://www.fsc.go.kr/no010101/86938",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "증권사 임원 등의 불공정거래 행위에 대한 조치 - 제10차 증권선물위원회(5.20.) 의결",
+      "url": "https://www.fsc.go.kr/no010101/86938",
+      "event_at": "2026-05-22T00:26:49.710178+00:00",
+      "application_deadline": "2026-01-25",
+      "application_start_date": "2026-05-21",
+      "eligibility_fields": {
+        "Region": [
+          "대전"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "증권사 임원 등의 불공정거래 행위에 대한 조치 - 제10차 증권선물위원회(5.20.) 의결",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-05-22:증권사-임원-등의-불공정거래-행위에-대한-조치-제10차-증권선물위원회-5-20-의결",
+      "evidence_url": "https://www.fsc.go.kr/no010101/86938",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "5월 소비자심리 ‘낙관적’ 전환…반도체 수출·증시 활황에↑",
+      "url": "https://www.donga.com/news/Economy/article/all/20260522/133972884/1",
+      "event_at": "2026-05-21T12:22:57+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "경기"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "5월 소비자심리 ‘낙관적’ 전환…반도체 수출·증시 활황에↑",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-05-21:5월-소비자심리-낙관적-전환-반도체-수출-증시-활황에",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260522/133972884/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "정책브리핑",
+      "event_model": "support_program_notice",
+      "title": "냉난방비 절감 컨설팅 지원…10년 이상 건축물·22일부터 접수",
+      "url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148964854",
+      "event_at": "2026-05-20T23:21:00+00:00",
+      "application_deadline": "2026-05-05",
+      "application_start_date": "2022-10-13",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "냉난방비 절감 컨설팅 지원…10년 이상 건축물·22일부터 접수",
+      "program_key": "support-program-notice:kr:정책브리핑:2026-05-20:냉난방비-절감-컨설팅-지원-10년-이상-건축물-22일부터-접수",
+      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148964854",
+      "evidence_url_present": true
+    },
+    {
+      "source": "정책브리핑",
+      "event_model": "application_deadline",
+      "title": "냉난방비 절감 컨설팅 지원…10년 이상 건축물·22일부터 접수",
+      "url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148964854",
+      "event_at": "2026-05-05T00:00:00+00:00",
+      "application_deadline": "2026-05-05",
+      "application_start_date": "2022-10-13",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "냉난방비 절감 컨설팅 지원…10년 이상 건축물·22일부터 접수",
+      "program_key": "application-deadline:kr:정책브리핑:2026-05-05:냉난방비-절감-컨설팅-지원-10년-이상-건축물-22일부터-접수",
+      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148964854",
+      "evidence_url_present": true
+    },
+    {
+      "source": "정책브리핑",
+      "event_model": "eligibility_rule",
+      "title": "냉난방비 절감 컨설팅 지원…10년 이상 건축물·22일부터 접수",
+      "url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148964854",
+      "event_at": "2026-05-20T23:21:00+00:00",
+      "application_deadline": "2026-05-05",
+      "application_start_date": "2022-10-13",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "냉난방비 절감 컨설팅 지원…10년 이상 건축물·22일부터 접수",
+      "program_key": "eligibility-rule:kr:정책브리핑:2026-05-20:냉난방비-절감-컨설팅-지원-10년-이상-건축물-22일부터-접수",
+      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148964854",
       "evidence_url_present": true
     },
     {
@@ -2426,5 +2731,70 @@
       "evidence_url_present": true
     }
   ],
+  "event_model_coverage": [
+    {
+      "event_model": "support_program_notice",
+      "tracked": true,
+      "enabled_source_count": 1,
+      "disabled_source_count": 0,
+      "enabled_sources": [
+        "정책브리핑"
+      ],
+      "disabled_sources": [],
+      "disabled_source_details": []
+    },
+    {
+      "event_model": "application_deadline",
+      "tracked": true,
+      "enabled_source_count": 1,
+      "disabled_source_count": 1,
+      "enabled_sources": [
+        "서울시 지원사업"
+      ],
+      "disabled_sources": [
+        "정부24 보조금"
+      ],
+      "disabled_source_details": [
+        {
+          "source": "정부24 보조금",
+          "skip_reason": "Browser probe returned the official anti-automation block page rather than service cards.",
+          "reenable_gate": "Re-enable only after a stable API/search endpoint or approved browser flow can return service cards without triggering access protection."
+        }
+      ]
+    },
+    {
+      "event_model": "eligibility_rule",
+      "tracked": true,
+      "enabled_source_count": 3,
+      "disabled_source_count": 0,
+      "enabled_sources": [
+        "소상공인시장진흥공단",
+        "보건복지부",
+        "금융위원회"
+      ],
+      "disabled_sources": [],
+      "disabled_source_details": []
+    },
+    {
+      "event_model": "selection_result",
+      "tracked": true,
+      "enabled_source_count": 1,
+      "disabled_source_count": 1,
+      "enabled_sources": [
+        "정책브리핑"
+      ],
+      "disabled_sources": [
+        "K-Startup 선정결과 후보"
+      ],
+      "disabled_source_details": [
+        {
+          "source": "K-Startup 선정결과 후보",
+          "skip_reason": "Backlog source only: selection result parser and fixture coverage are not ready.",
+          "reenable_gate": "Enable after browser fixture test, selection_result parser, and evidence URL checks pass."
+        }
+      ]
+    }
+  ],
+  "event_model_source_gaps": [],
   "errors": []
 }

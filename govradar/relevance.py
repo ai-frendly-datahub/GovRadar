@@ -4,7 +4,6 @@ from collections.abc import Iterable
 
 from .models import Article, Source
 
-
 TRACKED_EVENT_MODELS = {
     "application_deadline",
     "eligibility_rule",
@@ -224,10 +223,21 @@ def _has_govsupport_signal(article: Article, source: Source) -> bool:
     has_application_context = _contains_any(text, APPLICATION_TERMS)
     source_event_model = _source_event_model(source)
 
-    if "McpKoreaEcosystem" in entity_names and (
-        _contains_any(text, PUBLIC_DATA_TERMS) or source_event_model == "public_data_api"
+    if (
+        "McpKoreaEcosystem" in entity_names
+        and _is_public_data_source(source)
+        and (_contains_any(text, PUBLIC_DATA_TERMS) or source_event_model == "public_data_api")
     ):
         return True
+
+    if _is_community_source(source):
+        return _has_community_govsupport_signal(
+            article=article,
+            entity_names=entity_names,
+            has_core_support_entity=has_core_support_entity,
+            has_application_context=has_application_context,
+            text=text,
+        )
 
     if _is_broad_source(source):
         return _has_broad_govsupport_signal(
@@ -280,8 +290,10 @@ def _has_support_notice_signal(
         return True
     if _support_values_are_generic_only(article):
         return False
-    return has_core_support_entity and has_application_context and bool(
-        {"TargetGroup", "Ministry"} & entity_names
+    return (
+        has_core_support_entity
+        and has_application_context
+        and bool({"TargetGroup", "Ministry"} & entity_names)
     )
 
 
@@ -309,6 +321,25 @@ def _has_broad_govsupport_signal(
     return "Ministry" in entity_names and _contains_any(text, GOVERNMENT_FUNDING_TERMS)
 
 
+def _has_community_govsupport_signal(
+    *,
+    article: Article,
+    entity_names: set[str],
+    has_core_support_entity: bool,
+    has_application_context: bool,
+    text: str,
+) -> bool:
+    if not has_application_context:
+        return False
+    if not (has_core_support_entity or _contains_any(text, GOVERNMENT_FUNDING_TERMS)):
+        return False
+    if _support_values_are_generic_only(article) or _support_values_are_weak_loan_only(article):
+        return False
+    if not (_has_strong_target_entity(article) or "Ministry" in entity_names):
+        return False
+    return bool({"ApplicationInfo", "Ministry"} & entity_names)
+
+
 def _source_context_tags(source: Source) -> list[str]:
     tags = {purpose for purpose in source.info_purpose if purpose in SOURCE_CONTEXT_PURPOSES}
     event_model = _source_event_model(source)
@@ -329,6 +360,16 @@ def _source_event_model(source: Source) -> str:
 
 def _is_broad_source(source: Source) -> bool:
     return not _source_event_model(source) and source.trust_tier != "T1_authoritative"
+
+
+def _is_community_source(source: Source) -> bool:
+    return source.trust_tier == "T3_community" or source.type.lower() == "reddit"
+
+
+def _is_public_data_source(source: Source) -> bool:
+    return _source_event_model(source) == "public_data_api" or bool(
+        {"api-ecosystem", "public-data"} & set(source.info_purpose)
+    )
 
 
 def _has_core_support_entity(article: Article) -> bool:

@@ -5,7 +5,6 @@ import pytest
 from govradar.models import Article, Source
 from govradar.relevance import apply_source_context_entities, filter_relevant_articles
 
-
 pytestmark = pytest.mark.unit
 
 
@@ -135,3 +134,64 @@ def test_filter_relevant_articles_does_not_drop_support_due_to_incidental_mcp_te
     )
 
     assert filter_relevant_articles([article], [source]) == [article]
+
+
+def test_filter_relevant_articles_drops_community_source_startup_chatter() -> None:
+    source = Source(
+        name="r/startups",
+        type="reddit",
+        url="https://www.reddit.com/r/startups/.rss",
+        trust_tier="T3_community",
+    )
+    article = _article(
+        title="Startup assistance model discussion",
+        source="r/startups",
+        summary="Founders compare private accelerator assistance and compute credits.",
+        matched_entities={
+            "SupportType": ["assistance"],
+            "TargetGroup": ["startup"],
+        },
+    )
+
+    assert filter_relevant_articles([article], [source]) == []
+
+
+def test_filter_relevant_articles_keeps_community_source_with_application_context() -> None:
+    source = Source(
+        name="r/startups",
+        type="reddit",
+        url="https://www.reddit.com/r/startups/.rss",
+        trust_tier="T3_community",
+    )
+    article = _article(
+        title="Startup public funding grant application deadline",
+        source="r/startups",
+        summary="A government grant for startup teams is open for application until May.",
+        matched_entities={
+            "ApplicationInfo": ["application", "deadline"],
+            "SupportType": ["grant"],
+            "TargetGroup": ["startup"],
+        },
+    )
+
+    assert filter_relevant_articles([article], [source]) == [article]
+
+
+def test_filter_relevant_articles_drops_incidental_community_mcp_terms() -> None:
+    source = Source(
+        name="r/startups",
+        type="reddit",
+        url="https://www.reddit.com/r/startups/.rss",
+        trust_tier="T3_community",
+    )
+    article = _article(
+        title="Agentic AI startup with MCP integration",
+        source="r/startups",
+        summary="A legal tech founder describes product architecture and an MCP integration.",
+        matched_entities={
+            "McpKoreaEcosystem": ["mcp"],
+            "TargetGroup": ["startup"],
+        },
+    )
+
+    assert filter_relevant_articles([article], [source]) == []

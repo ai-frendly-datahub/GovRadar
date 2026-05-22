@@ -7,7 +7,6 @@ from datetime import UTC, date, datetime
 
 from .models import Article
 
-
 _APPLICATION_MARKERS = (
     "신청",
     "접수",
@@ -62,8 +61,7 @@ _YEAR_DATE_RE = re.compile(
     r"(?P<day>\d{1,2})\s*(?:일|\.)?"
 )
 _MONTH_DATE_RE = re.compile(
-    r"(?<!\d)(?P<month>\d{1,2})\s*(?:월|[.\-/])\s*"
-    r"(?P<day>\d{1,2})\s*(?:일|\.)?(?!\d)"
+    r"(?<!\d)(?P<month>\d{1,2})\s*(?:월|[.\-/])\s*" r"(?P<day>\d{1,2})\s*(?:일|\.)?(?!\d)"
 )
 
 
@@ -89,8 +87,7 @@ def _iso_date(year: int, month: int, day: int) -> str | None:
 def _overlaps(span: tuple[int, int], spans: list[tuple[int, int]]) -> bool:
     start, end = span
     return any(
-        start < occupied_end and end > occupied_start
-        for occupied_start, occupied_end in spans
+        start < occupied_end and end > occupied_start for occupied_start, occupied_end in spans
     )
 
 

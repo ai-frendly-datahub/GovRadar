@@ -17,7 +17,6 @@ from urllib3.util.retry import Retry
 
 from .models import Article, Source
 
-
 logger = structlog.get_logger()
 
 
@@ -141,6 +140,7 @@ def _parse_rss_feed(
                 ),
                 published=published_dt,
                 source=urlparse(url).netloc,
+                category="",
             )
             articles.append(article)
 
@@ -183,7 +183,8 @@ def collect_sources(
     unsupported_sources = [
         source
         for source in enabled_sources
-        if source.type.lower() not in {"rss", "javascript", "browser", "html", "js", "web", "reddit"}
+        if source.type.lower()
+        not in {"rss", "javascript", "browser", "html", "js", "web", "reddit"}
     ]
 
     # --- Pass 1: RSS sources via ThreadPoolExecutor (parallel) --------------

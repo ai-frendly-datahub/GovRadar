@@ -53,9 +53,7 @@ def test_extract_application_window_does_not_guess_without_application_context()
 
 
 def test_extract_eligibility_fields_extracts_support_conditions() -> None:
-    fields = extract_eligibility_fields(
-        "서울 소재 예비창업자와 소상공인 대상 ICT 지원사업"
-    )
+    fields = extract_eligibility_fields("서울 소재 예비창업자와 소상공인 대상 ICT 지원사업")
 
     assert fields["target_group"] == ["소상공인"]
     assert fields["business_stage"] == ["예비창업자"]

@@ -8,7 +8,6 @@ from typing import Protocol, cast
 
 import pytest
 
-
 StorageError = cast(type[Exception], import_module("radar.exceptions").StorageError)
 
 
@@ -52,6 +51,12 @@ class _RadarStorage(Protocol):
     ) -> list[_Article]: ...
 
     def delete_older_than(self, days: int) -> int: ...
+
+    def delete_invalid_pages(self, category: str) -> int: ...
+
+    def delete_missing_published_from_sources(
+        self, category: str, source_names: Iterable[str]
+    ) -> int: ...
 
     def close(self) -> None: ...
 
@@ -309,6 +314,64 @@ def test_delete_older_than_removes_old_articles(tmp_storage: object) -> None:
 
     assert deleted == 1
     assert results == []
+
+
+def test_delete_invalid_pages_removes_stored_browser_index_rows(tmp_storage: object) -> None:
+    storage = cast(_RadarStorage, tmp_storage)
+    invalid = _make_article(
+        title="목록 < 전체 < 보도자료 < 알림",
+        link="https://example.com/index",
+        summary="본문으로 바로가기 주메뉴 바로가기",
+        published=datetime.now(UTC),
+    )
+    valid = _make_article(
+        title="청년 지원사업 신청 공고",
+        link="https://example.com/support",
+        summary="청년 대상 지원사업",
+        published=datetime.now(UTC),
+    )
+
+    storage.upsert_articles([invalid, valid])
+    deleted = storage.delete_invalid_pages("tech")
+    results = storage.recent_articles(category="tech", days=30)
+
+    assert deleted == 1
+    assert [article.link for article in results] == [valid.link]
+
+
+def test_delete_missing_published_from_sources_is_scoped(tmp_storage: object) -> None:
+    storage = cast(_RadarStorage, tmp_storage)
+    nullable_cleanup_source = _make_article(
+        title="Missing published",
+        link="https://example.com/missing-published",
+        summary="missing published",
+        published=None,
+        source="한겨레 경제",
+    )
+    nullable_other_source = _make_article(
+        title="Other missing published",
+        link="https://example.com/other-missing-published",
+        summary="missing published but source not configured for cleanup",
+        published=None,
+        source="Other Source",
+    )
+    dated_cleanup_source = _make_article(
+        title="Dated published",
+        link="https://example.com/dated",
+        summary="has published",
+        published=datetime.now(UTC),
+        source="한겨레 경제",
+    )
+
+    storage.upsert_articles([nullable_cleanup_source, nullable_other_source, dated_cleanup_source])
+    deleted = storage.delete_missing_published_from_sources("tech", ["한겨레 경제"])
+    results = storage.recent_articles(category="tech", days=30)
+
+    assert deleted == 1
+    assert {article.link for article in results} == {
+        nullable_other_source.link,
+        dated_cleanup_source.link,
+    }
 
 
 def test_storage_close_then_reuse_raises_error(tmp_duckdb: Path) -> None:

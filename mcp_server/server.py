@@ -17,7 +17,7 @@ from mcp_server.tools import (
 
 
 def _db_path() -> Path:
-    return Path(os.getenv("RADAR_DB_PATH", "data/radar_data.duckdb"))
+    return Path(os.getenv("RADAR_DB_PATH", "data/govradar_data.duckdb"))
 
 
 def _search_db_path() -> Path:

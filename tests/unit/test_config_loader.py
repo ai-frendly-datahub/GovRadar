@@ -10,10 +10,7 @@ def test_real_govsupport_config_exposes_data_quality_overlay() -> None:
     assert isinstance(data_quality, dict)
     assert data_quality["priority"] == "P0"
     assert data_quality["primary_motion"] == "conversion"
-    assert (
-        data_quality["quality_outputs"]["freshness_report"]
-        == "reports/govsupport_quality.json"
-    )
+    assert data_quality["quality_outputs"]["freshness_report"] == "reports/govsupport_quality.json"
     assert set(data_quality["quality_outputs"]["tracked_event_models"]) == {
         "support_program_notice",
         "application_deadline",
@@ -28,9 +25,7 @@ def test_real_govsupport_config_exposes_data_quality_overlay() -> None:
 
     backlog = metadata["source_backlog"]
     assert isinstance(backlog, dict)
-    result_candidates = {
-        candidate["id"] for candidate in backlog["selection_result_candidates"]
-    }
+    result_candidates = {candidate["id"] for candidate in backlog["selection_result_candidates"]}
     eligibility_candidates = {
         candidate["id"] for candidate in backlog["eligibility_capability_candidates"]
     }

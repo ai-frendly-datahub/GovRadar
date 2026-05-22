@@ -1,13 +1,11 @@
-"""Radar-Template - 레이더 템플릿"""
+"""GovRadar - 한국 정부지원 정책/보조금 수집 레이더."""
 
 import sys
 from importlib import import_module
 
-
 __version__ = "0.2.0"
 
 from govradar.storage import RadarStorage
-
 
 _MODULE_ALIASES = {
     "collector": "radar_core.collector",

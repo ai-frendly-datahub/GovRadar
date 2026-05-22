@@ -9,7 +9,6 @@ from typing import Any
 
 from .models import Article, CategoryConfig, Source
 
-
 TRACKED_EVENT_MODEL_ORDER = [
     "support_program_notice",
     "application_deadline",
@@ -54,10 +53,17 @@ def build_quality_report(
 
     status_counts = Counter(str(row["status"]) for row in source_rows)
     event_counts = Counter(str(row["event_model"]) for row in event_rows)
+    event_model_coverage = _build_event_model_coverage(
+        category.sources,
+        tracked_event_models,
+    )
+    event_model_source_gaps = [
+        row
+        for row in event_model_coverage
+        if row["tracked"] and int(row["enabled_source_count"]) == 0
+    ]
     program_keys = {
-        str(row["program_key"])
-        for row in event_rows
-        if str(row.get("program_key") or "")
+        str(row["program_key"]) for row in event_rows if str(row.get("program_key") or "")
     }
     return {
         "category": category.category_name,
@@ -79,9 +85,12 @@ def build_quality_report(
             "unique_program_key_count": len(program_keys),
             "events_with_evidence_url": sum(1 for row in event_rows if row.get("evidence_url")),
             "collection_error_count": len(errors_list),
+            "event_model_source_gap_count": len(event_model_source_gaps),
         },
         "sources": source_rows,
         "events": event_rows,
+        "event_model_coverage": event_model_coverage,
+        "event_model_source_gaps": event_model_source_gaps,
         "errors": errors_list,
     }
 
@@ -118,10 +127,10 @@ def _build_event_rows(
             source_event_models[source.name] = event_model
     rows: list[dict[str, Any]] = []
     for article in articles:
-        source = sources_by_name.get(article.source)
-        if source is None:
+        article_source = sources_by_name.get(article.source)
+        if article_source is None:
             continue
-        if not source.enabled:
+        if not article_source.enabled:
             continue
         event_models: list[str] = []
         source_event_model = source_event_models.get(article.source, "")
@@ -153,11 +162,53 @@ def _build_event_rows(
                     "selected_count": _first_match(article, "SelectionSelectedCount"),
                     "execution_amount": _first_match(article, "SelectionExecutionAmount"),
                     "program_title": _program_title(article),
-                    "program_key": _program_key(article, source, event_model),
+                    "program_key": _program_key(article, article_source, event_model),
                     "evidence_url": article.link,
                     "evidence_url_present": bool(article.link),
                 }
             )
+    return rows
+
+
+def _build_event_model_coverage(
+    sources: list[Source],
+    tracked_event_models: set[str],
+) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    source_models: dict[str, list[Source]] = {model: [] for model in TRACKED_EVENT_MODEL_ORDER}
+    disabled_models: dict[str, list[Source]] = {model: [] for model in TRACKED_EVENT_MODEL_ORDER}
+    for source in sources:
+        for event_model in _source_event_models(source):
+            if event_model not in TRACKED_EVENT_MODELS:
+                continue
+            if source.enabled:
+                source_models.setdefault(event_model, []).append(source)
+            else:
+                disabled_models.setdefault(event_model, []).append(source)
+
+    for event_model in TRACKED_EVENT_MODEL_ORDER:
+        if event_model not in tracked_event_models:
+            continue
+        enabled_sources = source_models.get(event_model, [])
+        disabled_sources = disabled_models.get(event_model, [])
+        rows.append(
+            {
+                "event_model": event_model,
+                "tracked": True,
+                "enabled_source_count": len(enabled_sources),
+                "disabled_source_count": len(disabled_sources),
+                "enabled_sources": [source.name for source in enabled_sources],
+                "disabled_sources": [source.name for source in disabled_sources],
+                "disabled_source_details": [
+                    {
+                        "source": source.name,
+                        "skip_reason": source.config.get("skip_reason"),
+                        "reenable_gate": source.config.get("reenable_gate"),
+                    }
+                    for source in disabled_sources
+                ],
+            }
+        )
     return rows
 
 
@@ -274,6 +325,14 @@ def _source_event_model(source: Source) -> str:
     return str(raw).strip() if raw is not None else ""
 
 
+def _source_event_models(source: Source) -> list[str]:
+    models = [_source_event_model(source)]
+    raw_secondary = source.config.get("secondary_event_models")
+    if isinstance(raw_secondary, list):
+        models.extend(str(item).strip() for item in raw_secondary)
+    return list(dict.fromkeys(model for model in models if model))
+
+
 def _source_sla_days(
     source: Source,
     event_model: str,
@@ -306,8 +365,9 @@ def _latest_event(event_rows: list[dict[str, Any]]) -> dict[str, Any] | None:
 
 def _event_datetime(article: Article, event_model: str) -> datetime | None:
     if event_model == "support_program_notice":
-        if article.published or article.collected_at:
-            return _as_utc(article.published or article.collected_at)
+        fallback = article.published or article.collected_at
+        if fallback is not None:
+            return _as_utc(fallback)
         return None
     if event_model == "application_deadline":
         deadline = _first_match(article, "ApplicationDeadline")
@@ -317,8 +377,9 @@ def _event_datetime(article: Article, event_model: str) -> datetime | None:
         selection_result_date = _first_match(article, "SelectionResultDate")
         if selection_result_date:
             return _parse_datetime(selection_result_date)
-    if article.published or article.collected_at:
-        return _as_utc(article.published or article.collected_at)
+    fallback = article.published or article.collected_at
+    if fallback is not None:
+        return _as_utc(fallback)
     return None
 
 

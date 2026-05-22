@@ -22,7 +22,6 @@ import structlog
 
 from .models import Article
 
-
 if TYPE_CHECKING:
     from .models import Source
 
