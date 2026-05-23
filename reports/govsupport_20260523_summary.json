@@ -1,0 +1,147 @@
+{
+  "date": "2026-05-23",
+  "category": "govsupport",
+  "article_count": 82,
+  "source_count": 9,
+  "matched_count": 82,
+  "top_entities": [
+    {
+      "name": "GovGeneral",
+      "count": 989
+    },
+    {
+      "name": "TargetGroup",
+      "count": 245
+    },
+    {
+      "name": "ApplicationInfo",
+      "count": 203
+    },
+    {
+      "name": "SourceSignal",
+      "count": 172
+    },
+    {
+      "name": "SupportType",
+      "count": 161
+    },
+    {
+      "name": "Region",
+      "count": 108
+    },
+    {
+      "name": "EligibilityRegion",
+      "count": 84
+    },
+    {
+      "name": "OperationalEvent",
+      "count": 79
+    },
+    {
+      "name": "Ministry",
+      "count": 75
+    },
+    {
+      "name": "EligibilityIndustry",
+      "count": 43
+    },
+    {
+      "name": "EligibilityTargetGroup",
+      "count": 38
+    },
+    {
+      "name": "McpKoreaEcosystem",
+      "count": 34
+    },
+    {
+      "name": "ApplicationDeadline",
+      "count": 24
+    },
+    {
+      "name": "ApplicationStartDate",
+      "count": 23
+    },
+    {
+      "name": "EligibilityBusinessStage",
+      "count": 5
+    }
+  ],
+  "sources": {
+    "금융위원회": 10,
+    "보건복지부": 4,
+    "서울시 지원사업": 6,
+    "소상공인시장진흥공단": 5,
+    "동아일보 경제": 7,
+    "정책브리핑": 27,
+    "매일경제 경제정책": 2,
+    "경향신문 경제": 5,
+    "Awesome MCP Korea": 16
+  },
+  "generated_at": "2026-05-23T15:36:04.914353+09:00",
+  "articles": [
+    {
+      "event_model_payload": {
+        "source_url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490546&tag=&nPage=1"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027&act=view&list_no=1490547&tag=&nPage=1"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=458268"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&schCat=&rlIdx=&schCon=&schStr=&page=1&b_idx=53519&pNm=BOA0101&eventMode="
+      }
+    }
+  ],
+  "ontology": {
+    "repo": "GovRadar",
+    "category": "govsupport",
+    "ontology_version": "0.1.0",
+    "event_model_ids": [
+      "govsupport.application_deadline",
+      "govsupport.eligibility_rule",
+      "govsupport.public_data_api",
+      "govsupport.selection_result",
+      "govsupport.support_program_notice"
+    ],
+    "event_model_mappings": {
+      "support_program_notice": "govsupport.support_program_notice",
+      "application_deadline": "govsupport.application_deadline",
+      "eligibility_rule": "govsupport.eligibility_rule",
+      "selection_result": "govsupport.selection_result",
+      "public_data_api": "govsupport.public_data_api"
+    },
+    "entity_type_hints": [
+      "SupportType",
+      "TargetGroup",
+      "Ministry",
+      "Region",
+      "ApplicationInfo",
+      "McpKoreaEcosystem"
+    ],
+    "source_role_ids": [
+      "govsupport.source_role.community_curation",
+      "govsupport.source_role.government",
+      "govsupport.source_role.local_government",
+      "govsupport.source_role.public_agency"
+    ],
+    "source_role_mappings": {
+      "government": "govsupport.source_role.government",
+      "public-agency": "govsupport.source_role.public_agency",
+      "local-government": "govsupport.source_role.local_government",
+      "community-curation": "govsupport.source_role.community_curation"
+    },
+    "evidence_policy_ids": [
+      "govsupport.evidence.primary_notice",
+      "govsupport.evidence.deadline_trace",
+      "govsupport.evidence.eligibility_trace"
+    ]
+  }
+}
