@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-06-03T09:02:23.532732+00:00",
+  "generated_at": "2026-06-04T08:23:58.787714+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -11,13 +11,13 @@
     "unknown_event_date_sources": 0,
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
-    "support_program_notice_events": 21,
-    "application_deadline_events": 22,
-    "eligibility_rule_events": 57,
+    "support_program_notice_events": 24,
+    "application_deadline_events": 18,
+    "eligibility_rule_events": 54,
     "selection_result_events": 1,
-    "unique_program_key_count": 101,
-    "events_with_evidence_url": 101,
-    "collection_error_count": 9,
+    "unique_program_key_count": 97,
+    "events_with_evidence_url": 97,
+    "collection_error_count": 4,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -81,25 +81,22 @@
       "event_model": "support_program_notice",
       "freshness_sla_days": 2,
       "status": "fresh",
-      "article_count": 21,
-      "event_count": 21,
-      "latest_event_at": "2026-06-01T20:08:00+00:00",
-      "age_days": 1.54,
-      "latest_title": "이 대통령 \"국정 속도 두 배로…국민의 삶, 대한민국에 더 큰 변화 만들겠다\"",
-      "latest_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965687",
-      "latest_evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965687",
-      "latest_program_title": "이 대통령 \"국정 속도 두 배로…국민의 삶, 대한민국에 더 큰 변화 만들겠다\"",
-      "latest_program_key": "support-program-notice:kr:정책브리핑:2026-06-01:이-대통령-국정-속도-두-배로-국민의-삶-대한민국에-더-큰-변화-만들겠다",
+      "article_count": 24,
+      "event_count": 24,
+      "latest_event_at": "2026-06-03T20:48:00+00:00",
+      "age_days": 0.48,
+      "latest_title": "폭염중대경보 땐 고위험 어르신 하루 2회 안부 확인…냉방 지원 확대",
+      "latest_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965839",
+      "latest_evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965839",
+      "latest_program_title": "폭염중대경보 땐 고위험 어르신 하루 2회 안부 확인…냉방 지원 확대",
+      "latest_program_key": "support-program-notice:kr:정책브리핑:2026-06-03:폭염중대경보-땐-고위험-어르신-하루-2회-안부-확인-냉방-지원-확대",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
         "TargetGroup": [
-          "소상공인",
-          "중소기업",
-          "청년",
           "취약계층"
         ],
         "Region": [
-          "대전"
+          "서울"
         ]
       },
       "latest_selection_result_date": "",
@@ -107,9 +104,7 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": [
-        "정책브리핑: Network error fetching 정책브리핑: HTTPSConnectionPool(host='www.korea.kr', port=443): Max retries exceeded with url: /rss/policy.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.korea.kr', port=443) at 0x7f4bc9ce1650>, 'Connection to www.korea.kr timed out. (connect timeout=15)'))"
-      ]
+      "errors": []
     },
     {
       "source": "소상공인시장진흥공단",
@@ -121,13 +116,13 @@
       "status": "fresh",
       "article_count": 5,
       "event_count": 1,
-      "latest_event_at": "2026-06-03T09:00:32.809775+00:00",
+      "latest_event_at": "2026-06-04T08:22:43.748141+00:00",
       "age_days": 0.0,
       "latest_title": "「소상공인 재난지원금」환수 결정통지 반송에 따른 공시송달 공고",
       "latest_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=54332&pNm=BOA0101&page=1",
       "latest_evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=54332&pNm=BOA0101&page=1",
       "latest_program_title": "「소상공인 재난지원금」환수 결정통지 반송에 따른 공시송달 공고",
-      "latest_program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-06-03:소상공인-재난지원금-환수-결정통지-반송에-따른-공시송달-공고",
+      "latest_program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-06-04:소상공인-재난지원금-환수-결정통지-반송에-따른-공시송달-공고",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
         "TargetGroup": [
@@ -182,7 +177,7 @@
       "event_model": "official_notice",
       "freshness_sla_days": 2,
       "status": "not_tracked",
-      "article_count": 1,
+      "article_count": 0,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -198,9 +193,7 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": [
-        "행정안전부: Failed to collect browser content from 행정안전부: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardList.do?bbsId=BBSMSTR_000000000006\", waiting until \"domcontentloaded\"\n"
-      ]
+      "errors": []
     },
     {
       "source": "보건복지부",
@@ -210,24 +203,26 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
       "status": "fresh",
-      "article_count": 9,
-      "event_count": 6,
-      "latest_event_at": "2026-06-01T09:28:58.145356+00:00",
-      "age_days": 1.98,
-      "latest_title": "새글 통합돌봄 시행, 그냥드림 전국 확대 등 더 따뜻한 복지! 의대정원 증원, 지역의사제 도..",
-      "latest_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490689&mid=a10503010100&nPage=1",
-      "latest_evidence_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490689&mid=a10503010100&nPage=1",
-      "latest_program_title": "새글 통합돌봄 시행, 그냥드림 전국 확대 등 더 따뜻한 복지! 의대정원 증원, 지역의사제 도..",
-      "latest_program_key": "eligibility-rule:kr:보건복지부:2026-06-01:새글-통합돌봄-시행-그냥드림-전국-확대-등-더-따뜻한-복지-의대정원-증원-지역의사제-도",
-      "latest_application_deadline": "2026-05-13",
+      "article_count": 10,
+      "event_count": 7,
+      "latest_event_at": "2026-06-04T08:23:28.962071+00:00",
+      "age_days": 0.0,
+      "latest_title": "새글 여름철, 혼자 사는 어르신 안부 매일 확인한다 「2026년 여름철 취약계층 보호대책」 ..",
+      "latest_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490719&mid=a10503010100&nPage=1",
+      "latest_evidence_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490719&mid=a10503010100&nPage=1",
+      "latest_program_title": "새글 여름철, 혼자 사는 어르신 안부 매일 확인한다 「2026년 여름철 취약계층 보호대책」 ..",
+      "latest_program_key": "eligibility-rule:kr:보건복지부:2026-06-04:새글-여름철-혼자-사는-어르신-안부-매일-확인한다-2026년-여름철-취약계층-보호대책",
+      "latest_application_deadline": "",
       "latest_eligibility_fields": {
         "TargetGroup": [
-          "청년",
-          "저소득",
           "취약계층"
         ],
         "Industry": [
-          "바이오"
+          "AI"
+        ],
+        "Region": [
+          "전남",
+          "경북"
         ]
       },
       "latest_selection_result_date": "",
@@ -235,9 +230,7 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": [
-        "보건복지부: Failed to collect browser content from 보건복지부: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027\", waiting until \"domcontentloaded\"\n"
-      ]
+      "errors": []
     },
     {
       "source": "금융위원회",
@@ -247,10 +240,10 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
       "status": "stale",
-      "article_count": 7,
-      "event_count": 5,
+      "article_count": 4,
+      "event_count": 3,
       "latest_event_at": "2026-05-31T07:48:56.294401+00:00",
-      "age_days": 3.05,
+      "age_days": 4.02,
       "latest_title": "국민성장펀드가 첨단산업의 위험을 분담하여생산적분야로의 자금공급을 가속화합니다",
       "latest_url": "https://www.fsc.go.kr/no010101/87003",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87003",
@@ -279,9 +272,7 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": [
-        "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n"
-      ]
+      "errors": []
     },
     {
       "source": "농림축산식품부",
@@ -307,9 +298,7 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": [
-        "농림축산식품부: Network error fetching 농림축산식품부: HTTPSConnectionPool(host='www.mafra.go.kr', port=443): Max retries exceeded with url: /bbs/home/792/rssList.do?row=50 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.mafra.go.kr', port=443) at 0x7f4bc9e9cfd0>, 'Connection to www.mafra.go.kr timed out. (connect timeout=15)'))"
-      ]
+      "errors": []
     },
     {
       "source": "국토교통부",
@@ -561,7 +550,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 3,
+      "article_count": 2,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -587,7 +576,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 2,
+      "article_count": 1,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -613,7 +602,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 11,
+      "article_count": 9,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -764,6 +753,268 @@
   ],
   "events": [
     {
+      "source": "금융위원회",
+      "event_model": "application_deadline",
+      "title": "공인회계사 시험합격자들이 보다 안정적으로 수습처를 찾을 수 있도록 지원해 나가겠습니다. - 공인회계사 자격·징계위원회 개최 결과",
+      "url": "https://www.fsc.go.kr/no010101/87013",
+      "event_at": "2026-05-29T00:00:00+00:00",
+      "application_deadline": "2026-05-29",
+      "application_start_date": "2026-06-01",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "공인회계사 시험합격자들이 보다 안정적으로 수습처를 찾을 수 있도록 지원해 나가겠습니다. - 공인회계사 자격·징계위원회 개최 결과",
+      "program_key": "application-deadline:kr:금융위원회:2026-05-29:공인회계사-시험합격자들이-보다-안정적으로-수습처를-찾을-수-있도록-지원해-나가겠습니다-공인회계사-자격-징계위원회-개최-결과",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87013",
+      "evidence_url_present": true
+    },
+    {
+      "source": "보건복지부",
+      "event_model": "eligibility_rule",
+      "title": "새글 여름철, 혼자 사는 어르신 안부 매일 확인한다 「2026년 여름철 취약계층 보호대책」 ..",
+      "url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490719&mid=a10503010100&nPage=1",
+      "event_at": "2026-06-04T08:23:28.962071+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ],
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "전남",
+          "경북"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "새글 여름철, 혼자 사는 어르신 안부 매일 확인한다 「2026년 여름철 취약계층 보호대책」 ..",
+      "program_key": "eligibility-rule:kr:보건복지부:2026-06-04:새글-여름철-혼자-사는-어르신-안부-매일-확인한다-2026년-여름철-취약계층-보호대책",
+      "evidence_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490719&mid=a10503010100&nPage=1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "보건복지부",
+      "event_model": "eligibility_rule",
+      "title": "새글 도수치료 회당 4만 원대 수가 적용, 주 2회, 연간 최대 24회로 제한",
+      "url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490729&mid=a10503010100&nPage=1",
+      "event_at": "2026-06-04T08:23:26.187427+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "경기",
+          "대구",
+          "강원",
+          "충북",
+          "충남",
+          "전북"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "새글 도수치료 회당 4만 원대 수가 적용, 주 2회, 연간 최대 24회로 제한",
+      "program_key": "eligibility-rule:kr:보건복지부:2026-06-04:새글-도수치료-회당-4만-원대-수가-적용-주-2회-연간-최대-24회로-제한",
+      "evidence_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490729&mid=a10503010100&nPage=1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "「아동·청소년 정신건강지원시설(중구아이존) 운영」보조사업자 공모",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=459120",
+      "event_at": "2026-06-04T00:00:00+00:00",
+      "application_deadline": "2026-06-04",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "「아동·청소년 정신건강지원시설(중구아이존) 운영」보조사업자 공모",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-06-04:아동-청소년-정신건강지원시설-중구아이존-운영-보조사업자-공모",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=459120",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "「아동·청소년 정신건강지원시설(중구아이존) 운영」보조사업자 공모",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=459120",
+      "event_at": "2026-06-04T08:22:56.790801+00:00",
+      "application_deadline": "2026-06-04",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "「아동·청소년 정신건강지원시설(중구아이존) 운영」보조사업자 공모",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-06-04:아동-청소년-정신건강지원시설-중구아이존-운영-보조사업자-공모",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=459120",
+      "evidence_url_present": true
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "event_model": "eligibility_rule",
+      "title": "「소상공인 재난지원금」환수 결정통지 반송에 따른 공시송달 공고",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=54332&pNm=BOA0101&page=1",
+      "event_at": "2026-06-04T08:22:43.748141+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "「소상공인 재난지원금」환수 결정통지 반송에 따른 공시송달 공고",
+      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-06-04:소상공인-재난지원금-환수-결정통지-반송에-따른-공시송달-공고",
+      "evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=54332&pNm=BOA0101&page=1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "제조·건설업 부진에 발묶인 일자리···신규 진입·이직 ‘뚝’",
+      "url": "https://www.khan.co.kr/article/202606041516011",
+      "event_at": "2026-06-03T21:16:01+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ],
+        "Industry": [
+          "제조"
+        ],
+        "Region": [
+          "서울",
+          "경기"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "제조·건설업 부진에 발묶인 일자리···신규 진입·이직 ‘뚝’",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-06-03:제조-건설업-부진에-발묶인-일자리-신규-진입-이직-뚝",
+      "evidence_url": "https://www.khan.co.kr/article/202606041516011",
+      "evidence_url_present": true
+    },
+    {
+      "source": "정책브리핑",
+      "event_model": "support_program_notice",
+      "title": "폭염중대경보 땐 고위험 어르신 하루 2회 안부 확인…냉방 지원 확대",
+      "url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965839",
+      "event_at": "2026-06-03T20:48:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "폭염중대경보 땐 고위험 어르신 하루 2회 안부 확인…냉방 지원 확대",
+      "program_key": "support-program-notice:kr:정책브리핑:2026-06-03:폭염중대경보-땐-고위험-어르신-하루-2회-안부-확인-냉방-지원-확대",
+      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965839",
+      "evidence_url_present": true
+    },
+    {
+      "source": "정책브리핑",
+      "event_model": "eligibility_rule",
+      "title": "폭염중대경보 땐 고위험 어르신 하루 2회 안부 확인…냉방 지원 확대",
+      "url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965839",
+      "event_at": "2026-06-03T20:48:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "폭염중대경보 땐 고위험 어르신 하루 2회 안부 확인…냉방 지원 확대",
+      "program_key": "eligibility-rule:kr:정책브리핑:2026-06-03:폭염중대경보-땐-고위험-어르신-하루-2회-안부-확인-냉방-지원-확대",
+      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965839",
+      "evidence_url_present": true
+    },
+    {
+      "source": "정책브리핑",
+      "event_model": "support_program_notice",
+      "title": "백령공항 짓고 정주지원금 인상…서해 5도 발전계획 확정",
+      "url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965850",
+      "event_at": "2026-06-03T20:27:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "수산",
+          "관광",
+          "콘텐츠"
+        ],
+        "Region": [
+          "인천"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "백령공항 짓고 정주지원금 인상…서해 5도 발전계획 확정",
+      "program_key": "support-program-notice:kr:정책브리핑:2026-06-03:백령공항-짓고-정주지원금-인상-서해-5도-발전계획-확정",
+      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965850",
+      "evidence_url_present": true
+    },
+    {
+      "source": "정책브리핑",
+      "event_model": "eligibility_rule",
+      "title": "백령공항 짓고 정주지원금 인상…서해 5도 발전계획 확정",
+      "url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965850",
+      "event_at": "2026-06-03T20:27:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "수산",
+          "관광",
+          "콘텐츠"
+        ],
+        "Region": [
+          "인천"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "백령공항 짓고 정주지원금 인상…서해 5도 발전계획 확정",
+      "program_key": "eligibility-rule:kr:정책브리핑:2026-06-03:백령공항-짓고-정주지원금-인상-서해-5도-발전계획-확정",
+      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965850",
+      "evidence_url_present": true
+    },
+    {
       "source": "서울시 지원사업",
       "event_model": "eligibility_rule",
       "title": "2026년 소상공인 인력 운영 지원사업 수행기관 2차 공모 선정결과 공고",
@@ -902,44 +1153,6 @@
       "evidence_url_present": true
     },
     {
-      "source": "소상공인시장진흥공단",
-      "event_model": "eligibility_rule",
-      "title": "「소상공인 재난지원금」환수 결정통지 반송에 따른 공시송달 공고",
-      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=54332&pNm=BOA0101&page=1",
-      "event_at": "2026-06-03T09:00:32.809775+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "「소상공인 재난지원금」환수 결정통지 반송에 따른 공시송달 공고",
-      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-06-03:소상공인-재난지원금-환수-결정통지-반송에-따른-공시송달-공고",
-      "evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=54332&pNm=BOA0101&page=1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "application_deadline",
-      "title": "공인회계사 시험합격자들이 보다 안정적으로 수습처를 찾을 수 있도록 지원해 나가겠습니다. - 공인회계사 자격·징계위원회 개최 결과",
-      "url": "https://www.fsc.go.kr/no010101/87013",
-      "event_at": "2026-05-29T00:00:00+00:00",
-      "application_deadline": "2026-05-29",
-      "application_start_date": "2026-06-01",
-      "eligibility_fields": {},
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "공인회계사 시험합격자들이 보다 안정적으로 수습처를 찾을 수 있도록 지원해 나가겠습니다. - 공인회계사 자격·징계위원회 개최 결과",
-      "program_key": "application-deadline:kr:금융위원회:2026-05-29:공인회계사-시험합격자들이-보다-안정적으로-수습처를-찾을-수-있도록-지원해-나가겠습니다-공인회계사-자격-징계위원회-개최-결과",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87013",
-      "evidence_url_present": true
-    },
-    {
       "source": "보건복지부",
       "event_model": "application_deadline",
       "title": "새글 화상·수지접합·분만·소아·뇌혈관에 급성 알코올 중독까지... 24시간 진료기관 늘어..",
@@ -1002,6 +1215,68 @@
       "program_title": "‘지·옥·고’ 탈출 사다리 놨지만…곳곳 ‘빈틈’",
       "program_key": "eligibility-rule:kr:경향신문-경제:2026-06-02:지-옥-고-탈출-사다리-놨지만-곳곳-빈틈",
       "evidence_url": "https://www.khan.co.kr/article/202606022053035",
+      "evidence_url_present": true
+    },
+    {
+      "source": "정책브리핑",
+      "event_model": "support_program_notice",
+      "title": "K-콘텐츠·방한 관광·국민 여가 지표 '역대 최고' 기록 썼다",
+      "url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965727",
+      "event_at": "2026-06-02T00:01:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Industry": [
+          "관광",
+          "콘텐츠"
+        ],
+        "Region": [
+          "서울",
+          "인천",
+          "경남",
+          "제주"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "K-콘텐츠·방한 관광·국민 여가 지표 '역대 최고' 기록 썼다",
+      "program_key": "support-program-notice:kr:정책브리핑:2026-06-02:k-콘텐츠-방한-관광-국민-여가-지표-역대-최고-기록-썼다",
+      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965727",
+      "evidence_url_present": true
+    },
+    {
+      "source": "정책브리핑",
+      "event_model": "eligibility_rule",
+      "title": "K-콘텐츠·방한 관광·국민 여가 지표 '역대 최고' 기록 썼다",
+      "url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965727",
+      "event_at": "2026-06-02T00:01:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Industry": [
+          "관광",
+          "콘텐츠"
+        ],
+        "Region": [
+          "서울",
+          "인천",
+          "경남",
+          "제주"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "K-콘텐츠·방한 관광·국민 여가 지표 '역대 최고' 기록 썼다",
+      "program_key": "eligibility-rule:kr:정책브리핑:2026-06-02:k-콘텐츠-방한-관광-국민-여가-지표-역대-최고-기록-썼다",
+      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965727",
       "evidence_url_present": true
     },
     {
@@ -2364,173 +2639,14 @@
       "evidence_url_present": true
     },
     {
-      "source": "금융위원회",
-      "event_model": "application_deadline",
-      "title": "범정부 보이스피싱TF, 7개월 연속 피해 감소 성과...“신종 스캠범죄 대응에 총력”",
-      "url": "https://www.fsc.go.kr/no010101/86991",
-      "event_at": "2026-03-20T00:00:00+00:00",
-      "application_deadline": "2026-03-20",
-      "application_start_date": "2026-05-27",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인"
-        ],
-        "Industry": [
-          "제조",
-          "콘텐츠",
-          "AI"
-        ],
-        "Region": [
-          "서울",
-          "대전",
-          "전북"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "범정부 보이스피싱TF, 7개월 연속 피해 감소 성과...“신종 스캠범죄 대응에 총력”",
-      "program_key": "application-deadline:kr:금융위원회:2026-03-20:범정부-보이스피싱tf-7개월-연속-피해-감소-성과-신종-스캠범죄-대응에-총력",
-      "evidence_url": "https://www.fsc.go.kr/no010101/86991",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
+      "source": "Awesome MCP Korea",
       "event_model": "eligibility_rule",
-      "title": "범정부 보이스피싱TF, 7개월 연속 피해 감소 성과...“신종 스캠범죄 대응에 총력”",
-      "url": "https://www.fsc.go.kr/no010101/86991",
-      "event_at": "2026-05-28T08:02:18.053940+00:00",
-      "application_deadline": "2026-03-20",
-      "application_start_date": "2026-05-27",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인"
-        ],
-        "Industry": [
-          "제조",
-          "콘텐츠",
-          "AI"
-        ],
-        "Region": [
-          "서울",
-          "대전",
-          "전북"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "범정부 보이스피싱TF, 7개월 연속 피해 감소 성과...“신종 스캠범죄 대응에 총력”",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-05-28:범정부-보이스피싱tf-7개월-연속-피해-감소-성과-신종-스캠범죄-대응에-총력",
-      "evidence_url": "https://www.fsc.go.kr/no010101/86991",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "application_deadline",
-      "title": "피싱범죄 꼼짝마!  포착은 먼저, 차단은 즉시, 대응은 함께 긴밀히 해나가겠습니다.  - ｢금융권 보이스피싱 근절 협의회｣ 제1차 회의 개최. 금일 등록된 게시글",
-      "url": "https://www.fsc.go.kr/no010101/86997",
-      "event_at": "2026-05-27T00:00:00+00:00",
-      "application_deadline": "2026-05-27",
-      "application_start_date": "2026-05-28",
-      "eligibility_fields": {
-        "Industry": [
-          "AI"
-        ],
-        "Region": [
-          "서울",
-          "대전"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "피싱범죄 꼼짝마!  포착은 먼저, 차단은 즉시, 대응은 함께 긴밀히 해나가겠습니다.  - ｢금융권 보이스피싱 근절 협의회｣ 제1차 회의 개최. 금일 등록된 게시글",
-      "program_key": "application-deadline:kr:금융위원회:2026-05-27:피싱범죄-꼼짝마-포착은-먼저-차단은-즉시-대응은-함께-긴밀히-해나가겠습니다-금융권-보이스피싱-근절-협의회-제1차-회의-개최-금일-등록된-게시글",
-      "evidence_url": "https://www.fsc.go.kr/no010101/86997",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "피싱범죄 꼼짝마!  포착은 먼저, 차단은 즉시, 대응은 함께 긴밀히 해나가겠습니다.  - ｢금융권 보이스피싱 근절 협의회｣ 제1차 회의 개최. 금일 등록된 게시글",
-      "url": "https://www.fsc.go.kr/no010101/86997",
-      "event_at": "2026-05-28T08:02:15.891261+00:00",
-      "application_deadline": "2026-05-27",
-      "application_start_date": "2026-05-28",
-      "eligibility_fields": {
-        "Industry": [
-          "AI"
-        ],
-        "Region": [
-          "서울",
-          "대전"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "피싱범죄 꼼짝마!  포착은 먼저, 차단은 즉시, 대응은 함께 긴밀히 해나가겠습니다.  - ｢금융권 보이스피싱 근절 협의회｣ 제1차 회의 개최. 금일 등록된 게시글",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-05-28:피싱범죄-꼼짝마-포착은-먼저-차단은-즉시-대응은-함께-긴밀히-해나가겠습니다-금융권-보이스피싱-근절-협의회-제1차-회의-개최-금일-등록된-게시글",
-      "evidence_url": "https://www.fsc.go.kr/no010101/86997",
-      "evidence_url_present": true
-    },
-    {
-      "source": "보건복지부",
-      "event_model": "application_deadline",
-      "title": "새글 기초연금 신청은 한 번으로 끝! 놓치지 않도록 챙겨드릴게요",
-      "url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490654&mid=a10503010100&nPage=1",
-      "event_at": "2026-05-29T00:00:00+00:00",
-      "application_deadline": "2026-05-29",
-      "application_start_date": "2026-05-28",
-      "eligibility_fields": {},
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "새글 기초연금 신청은 한 번으로 끝! 놓치지 않도록 챙겨드릴게요",
-      "program_key": "application-deadline:kr:보건복지부:2026-05-29:새글-기초연금-신청은-한-번으로-끝-놓치지-않도록-챙겨드릴게요",
-      "evidence_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490654&mid=a10503010100&nPage=1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "보건복지부",
-      "event_model": "eligibility_rule",
-      "title": "새글 에너지 소비·폐기물 많은 보건의료 분야도 탈탄소화 시동",
-      "url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490655&mid=a10503010100&nPage=1",
-      "event_at": "2026-05-28T08:01:53.984149+00:00",
+      "title": "Merge pull request #14 from darjeeling/copilot/add-documentation-for-…",
+      "url": "https://github.com/darjeeling/awesome-mcp-korea/commit/9eb82627ac5dbe22787f8f8dfcbc899ed8f85cca",
+      "event_at": "2026-03-29T22:08:41+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ],
-        "Industry": [
-          "제조"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "새글 에너지 소비·폐기물 많은 보건의료 분야도 탈탄소화 시동",
-      "program_key": "eligibility-rule:kr:보건복지부:2026-05-28:새글-에너지-소비-폐기물-많은-보건의료-분야도-탈탄소화-시동",
-      "evidence_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490655&mid=a10503010100&nPage=1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "행정안전부",
-      "event_model": "application_deadline",
-      "title": "2026년 재난안전 중점기술 로드맵 연계형 기술개발사업 신규과제 수행기관 공모",
-      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=Z7LifLxti-xDHT2Pq3J-_ESVZ-Urvj9VLI1-qQp1.node50?bbsId=BBSMSTR_000000000006&nttId=126445",
-      "event_at": "2026-06-26T00:00:00+00:00",
-      "application_deadline": "2026-06-26",
-      "application_start_date": "2026-05-27",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ],
         "Industry": [
           "AI"
         ]
@@ -2538,23 +2654,20 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "2026년 재난안전 중점기술 로드맵 연계형 기술개발사업 신규과제 수행기관 공모",
-      "program_key": "application-deadline:kr:행정안전부:2026-06-26:2026년-재난안전-중점기술-로드맵-연계형-기술개발사업-신규과제-수행기관-공모",
-      "evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=Z7LifLxti-xDHT2Pq3J-_ESVZ-Urvj9VLI1-qQp1.node50?bbsId=BBSMSTR_000000000006&nttId=126445",
+      "program_title": "Merge pull request #14 from darjeeling/copilot/add-documentation-for-…",
+      "program_key": "eligibility-rule:kr:awesome-mcp-korea:2026-03-29:merge-pull-request-14-from-darjeeling-copilot-add-documentation-for",
+      "evidence_url": "https://github.com/darjeeling/awesome-mcp-korea/commit/9eb82627ac5dbe22787f8f8dfcbc899ed8f85cca",
       "evidence_url_present": true
     },
     {
-      "source": "행정안전부",
+      "source": "Awesome MCP Korea",
       "event_model": "eligibility_rule",
-      "title": "2026년 재난안전 중점기술 로드맵 연계형 기술개발사업 신규과제 수행기관 공모",
-      "url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=Z7LifLxti-xDHT2Pq3J-_ESVZ-Urvj9VLI1-qQp1.node50?bbsId=BBSMSTR_000000000006&nttId=126445",
-      "event_at": "2026-05-28T08:01:43.470909+00:00",
-      "application_deadline": "2026-06-26",
-      "application_start_date": "2026-05-27",
+      "title": "Add kr-pc-deals-mcp to Commerce & Retail section",
+      "url": "https://github.com/darjeeling/awesome-mcp-korea/commit/5f09a8e425d79175f5dc1505e6ec267f43bc3360",
+      "event_at": "2026-03-29T22:06:25+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
       "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ],
         "Industry": [
           "AI"
         ]
@@ -2562,57 +2675,30 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "2026년 재난안전 중점기술 로드맵 연계형 기술개발사업 신규과제 수행기관 공모",
-      "program_key": "eligibility-rule:kr:행정안전부:2026-05-28:2026년-재난안전-중점기술-로드맵-연계형-기술개발사업-신규과제-수행기관-공모",
-      "evidence_url": "https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardArticle.do;jsessionid=Z7LifLxti-xDHT2Pq3J-_ESVZ-Urvj9VLI1-qQp1.node50?bbsId=BBSMSTR_000000000006&nttId=126445",
+      "program_title": "Add kr-pc-deals-mcp to Commerce & Retail section",
+      "program_key": "eligibility-rule:kr:awesome-mcp-korea:2026-03-29:add-kr-pc-deals-mcp-to-commerce-retail-section",
+      "evidence_url": "https://github.com/darjeeling/awesome-mcp-korea/commit/5f09a8e425d79175f5dc1505e6ec267f43bc3360",
       "evidence_url_present": true
     },
     {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "시립마포노인종합복지관 기능직(기능원_취사,정규직)  긴급 채용 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=458738",
-      "event_at": "2026-06-08T00:00:00+00:00",
-      "application_deadline": "2026-06-08",
-      "application_start_date": "2026-05-28",
-      "eligibility_fields": {
-        "Industry": [
-          "AI"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "시립마포노인종합복지관 기능직(기능원_취사,정규직)  긴급 채용 공고",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-06-08:시립마포노인종합복지관-기능직-기능원-취사-정규직-긴급-채용-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=458738",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
+      "source": "Awesome MCP Korea",
       "event_model": "eligibility_rule",
-      "title": "시립마포노인종합복지관 기능직(기능원_취사,정규직)  긴급 채용 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=458738",
-      "event_at": "2026-05-28T08:01:30.003911+00:00",
-      "application_deadline": "2026-06-08",
-      "application_start_date": "2026-05-28",
+      "title": "Add dahlia/ko-stdict-mcp to Korean NLP & Language section",
+      "url": "https://github.com/darjeeling/awesome-mcp-korea/commit/150699ad0003abdb5473a76a516acdcbb6e7b642",
+      "event_at": "2026-03-29T21:14:58+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
       "eligibility_fields": {
         "Industry": [
-          "AI"
-        ],
-        "Region": [
-          "서울"
+          "ICT"
         ]
       },
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "시립마포노인종합복지관 기능직(기능원_취사,정규직)  긴급 채용 공고",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-05-28:시립마포노인종합복지관-기능직-기능원-취사-정규직-긴급-채용-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=458738",
+      "program_title": "Add dahlia/ko-stdict-mcp to Korean NLP & Language section",
+      "program_key": "eligibility-rule:kr:awesome-mcp-korea:2026-03-29:add-dahlia-ko-stdict-mcp-to-korean-nlp-language-section",
+      "evidence_url": "https://github.com/darjeeling/awesome-mcp-korea/commit/150699ad0003abdb5473a76a516acdcbb6e7b642",
       "evidence_url_present": true
     },
     {
@@ -2669,30 +2755,6 @@
       "program_title": "'세계에서 가장 빠른 심사서비스' 신설…지식재산을 핵심동력으로",
       "program_key": "eligibility-rule:kr:정책브리핑:2026-05-27:세계에서-가장-빠른-심사서비스-신설-지식재산을-핵심동력으로",
       "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965352",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "‘원시적 약탈금융’에 메스 든 정부, 매입채권 추심업 등록제→허가제로 전환",
-      "url": "https://www.donga.com/news/Economy/article/all/20260528/134010482/1",
-      "event_at": "2026-05-27T22:50:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ],
-        "Region": [
-          "대전"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "‘원시적 약탈금융’에 메스 든 정부, 매입채권 추심업 등록제→허가제로 전환",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-05-27:원시적-약탈금융-에-메스-든-정부-매입채권-추심업-등록제-허가제로-전환",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260528/134010482/1",
       "evidence_url_present": true
     },
     {
@@ -2877,27 +2939,6 @@
       "evidence_url_present": true
     },
     {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "하나금융, 중·저신용자 자금 공급 등 ‘포용금융 로드맵’ 내놔",
-      "url": "https://www.khan.co.kr/article/202605281500001",
-      "event_at": "2026-05-27T21:00:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "하나금융, 중·저신용자 자금 공급 등 ‘포용금융 로드맵’ 내놔",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-05-27:하나금융-중-저신용자-자금-공급-등-포용금융-로드맵-내놔",
-      "evidence_url": "https://www.khan.co.kr/article/202605281500001",
-      "evidence_url_present": true
-    },
-    {
       "source": "정책브리핑",
       "event_model": "support_program_notice",
       "title": "비수도권 일자리 4배 늘고 농촌 인구 반등…'상생 정책' 성과 가시화",
@@ -3015,138 +3056,6 @@
       "program_title": "비수도권 일자리 4배 늘고 농촌 인구 반등…'상생 정책' 성과 가시화",
       "program_key": "eligibility-rule:kr:정책브리핑:2026-05-27:비수도권-일자리-4배-늘고-농촌-인구-반등-상생-정책-성과-가시화",
       "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965175",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "‘월세 10만 원’···충북 보은군, 회인면에 청년 공유주택 조성",
-      "url": "https://www.khan.co.kr/article/202605281128001",
-      "event_at": "2026-05-27T17:28:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ],
-        "Region": [
-          "충북"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "‘월세 10만 원’···충북 보은군, 회인면에 청년 공유주택 조성",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-05-27:월세-10만-원-충북-보은군-회인면에-청년-공유주택-조성",
-      "evidence_url": "https://www.khan.co.kr/article/202605281128001",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "롯데건설, 복지시설 개선 ‘러브하우스’ 100호 돌파",
-      "url": "https://www.khan.co.kr/article/202605281106001",
-      "event_at": "2026-05-27T17:06:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ],
-        "Region": [
-          "세종"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "롯데건설, 복지시설 개선 ‘러브하우스’ 100호 돌파",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-05-27:롯데건설-복지시설-개선-러브하우스-100호-돌파",
-      "evidence_url": "https://www.khan.co.kr/article/202605281106001",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "[단독] 자영업자 대출 41% 임대업 쏠림…고금리로 내몰리는 요식업",
-      "url": "https://www.mk.co.kr/news/economy/12059656",
-      "event_at": "2026-05-27T16:26:13+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "자영업자"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "[단독] 자영업자 대출 41% 임대업 쏠림…고금리로 내몰리는 요식업",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-05-27:단독-자영업자-대출-41-임대업-쏠림-고금리로-내몰리는-요식업",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12059656",
-      "evidence_url_present": true
-    },
-    {
-      "source": "Awesome MCP Korea",
-      "event_model": "eligibility_rule",
-      "title": "Merge pull request #14 from darjeeling/copilot/add-documentation-for-…",
-      "url": "https://github.com/darjeeling/awesome-mcp-korea/commit/9eb82627ac5dbe22787f8f8dfcbc899ed8f85cca",
-      "event_at": "2026-03-29T22:08:41+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "AI"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "Merge pull request #14 from darjeeling/copilot/add-documentation-for-…",
-      "program_key": "eligibility-rule:kr:awesome-mcp-korea:2026-03-29:merge-pull-request-14-from-darjeeling-copilot-add-documentation-for",
-      "evidence_url": "https://github.com/darjeeling/awesome-mcp-korea/commit/9eb82627ac5dbe22787f8f8dfcbc899ed8f85cca",
-      "evidence_url_present": true
-    },
-    {
-      "source": "Awesome MCP Korea",
-      "event_model": "eligibility_rule",
-      "title": "Add kr-pc-deals-mcp to Commerce & Retail section",
-      "url": "https://github.com/darjeeling/awesome-mcp-korea/commit/5f09a8e425d79175f5dc1505e6ec267f43bc3360",
-      "event_at": "2026-03-29T22:06:25+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "AI"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "Add kr-pc-deals-mcp to Commerce & Retail section",
-      "program_key": "eligibility-rule:kr:awesome-mcp-korea:2026-03-29:add-kr-pc-deals-mcp-to-commerce-retail-section",
-      "evidence_url": "https://github.com/darjeeling/awesome-mcp-korea/commit/5f09a8e425d79175f5dc1505e6ec267f43bc3360",
-      "evidence_url_present": true
-    },
-    {
-      "source": "Awesome MCP Korea",
-      "event_model": "eligibility_rule",
-      "title": "Add dahlia/ko-stdict-mcp to Korean NLP & Language section",
-      "url": "https://github.com/darjeeling/awesome-mcp-korea/commit/150699ad0003abdb5473a76a516acdcbb6e7b642",
-      "event_at": "2026-03-29T21:14:58+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "ICT"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "Add dahlia/ko-stdict-mcp to Korean NLP & Language section",
-      "program_key": "eligibility-rule:kr:awesome-mcp-korea:2026-03-29:add-dahlia-ko-stdict-mcp-to-korean-nlp-language-section",
-      "evidence_url": "https://github.com/darjeeling/awesome-mcp-korea/commit/150699ad0003abdb5473a76a516acdcbb6e7b642",
       "evidence_url_present": true
     },
     {
@@ -3428,11 +3337,6 @@
   ],
   "event_model_source_gaps": [],
   "errors": [
-    "정책브리핑: Network error fetching 정책브리핑: HTTPSConnectionPool(host='www.korea.kr', port=443): Max retries exceeded with url: /rss/policy.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.korea.kr', port=443) at 0x7f4bc9ce1650>, 'Connection to www.korea.kr timed out. (connect timeout=15)'))",
-    "농림축산식품부: Network error fetching 농림축산식품부: HTTPSConnectionPool(host='www.mafra.go.kr', port=443): Max retries exceeded with url: /bbs/home/792/rssList.do?row=50 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.mafra.go.kr', port=443) at 0x7f4bc9e9cfd0>, 'Connection to www.mafra.go.kr timed out. (connect timeout=15)'))",
-    "행정안전부: Failed to collect browser content from 행정안전부: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardList.do?bbsId=BBSMSTR_000000000006\", waiting until \"domcontentloaded\"\n",
-    "보건복지부: Failed to collect browser content from 보건복지부: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027\", waiting until \"domcontentloaded\"\n",
-    "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n",
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
     "r/startups: Source disabled (crawl health threshold reached)",
