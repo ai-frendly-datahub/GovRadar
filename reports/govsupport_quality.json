@@ -1,23 +1,23 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-06-05T08:10:22.573853+00:00",
+  "generated_at": "2026-06-06T06:56:07.264165+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
-    "fresh_sources": 4,
-    "stale_sources": 1,
+    "fresh_sources": 3,
+    "stale_sources": 2,
     "missing_sources": 0,
     "missing_event_sources": 0,
     "unknown_event_date_sources": 0,
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
-    "support_program_notice_events": 28,
-    "application_deadline_events": 18,
+    "support_program_notice_events": 30,
+    "application_deadline_events": 19,
     "eligibility_rule_events": 61,
     "selection_result_events": 1,
-    "unique_program_key_count": 108,
-    "events_with_evidence_url": 108,
-    "collection_error_count": 5,
+    "unique_program_key_count": 111,
+    "events_with_evidence_url": 111,
+    "collection_error_count": 4,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -81,30 +81,22 @@
       "event_model": "support_program_notice",
       "freshness_sla_days": 2,
       "status": "fresh",
-      "article_count": 28,
-      "event_count": 28,
-      "latest_event_at": "2026-06-04T22:24:00+00:00",
-      "age_days": 0.41,
-      "latest_title": "농기계 사고 119에 자동신고…농림분야 안전관리 종합대책 추진",
-      "latest_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965974",
-      "latest_evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965974",
-      "latest_program_title": "농기계 사고 119에 자동신고…농림분야 안전관리 종합대책 추진",
-      "latest_program_key": "support-program-notice:kr:정책브리핑:2026-06-04:농기계-사고-119에-자동신고-농림분야-안전관리-종합대책-추진",
-      "latest_application_deadline": "2026-06-06",
+      "article_count": 30,
+      "event_count": 30,
+      "latest_event_at": "2026-06-05T18:36:00+00:00",
+      "age_days": 0.51,
+      "latest_title": "이 대통령 \"선열에 합당한 예우 다해야…특별한 희생에 특별한 보상\"",
+      "latest_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148966001",
+      "latest_evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148966001",
+      "latest_program_title": "이 대통령 \"선열에 합당한 예우 다해야…특별한 희생에 특별한 보상\"",
+      "latest_program_key": "support-program-notice:kr:정책브리핑:2026-06-05:이-대통령-선열에-합당한-예우-다해야-특별한-희생에-특별한-보상",
+      "latest_application_deadline": "",
       "latest_eligibility_fields": {
-        "TargetGroup": [
-          "청년",
-          "취약계층"
-        ],
-        "Industry": [
-          "농업",
-          "축산"
-        ],
         "Region": [
-          "부산",
+          "서울",
+          "인천",
           "강원",
-          "전남",
-          "경북"
+          "제주"
         ]
       },
       "latest_selection_result_date": "",
@@ -121,11 +113,11 @@
       "tracked": true,
       "event_model": "eligibility_rule",
       "freshness_sla_days": 1,
-      "status": "fresh",
+      "status": "stale",
       "article_count": 5,
       "event_count": 1,
       "latest_event_at": "2026-06-04T08:22:43.748141+00:00",
-      "age_days": 0.99,
+      "age_days": 1.94,
       "latest_title": "「소상공인 재난지원금」환수 결정통지 반송에 따른 공시송달 공고",
       "latest_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=54332&pNm=BOA0101&page=1",
       "latest_evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=54332&pNm=BOA0101&page=1",
@@ -152,20 +144,17 @@
       "event_model": "application_deadline",
       "freshness_sla_days": 1,
       "status": "fresh",
-      "article_count": 7,
-      "event_count": 4,
-      "latest_event_at": "2026-06-23T00:00:00+00:00",
+      "article_count": 8,
+      "event_count": 5,
+      "latest_event_at": "2026-07-01T00:00:00+00:00",
       "age_days": 0.0,
-      "latest_title": "북부여성발전센터  직원 채용공고",
-      "latest_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=459009",
-      "latest_evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=459009",
-      "latest_program_title": "북부여성발전센터  직원 채용공고",
-      "latest_program_key": "application-deadline:kr:서울시-지원사업:2026-06-23:북부여성발전센터-직원-채용공고",
-      "latest_application_deadline": "2026-06-23",
+      "latest_title": "서울시립 강서노인종합복지관 직원채용 공고(시설관리인)",
+      "latest_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=459233",
+      "latest_evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=459233",
+      "latest_program_title": "서울시립 강서노인종합복지관 직원채용 공고(시설관리인)",
+      "latest_program_key": "application-deadline:kr:서울시-지원사업:2026-07-01:서울시립-강서노인종합복지관-직원채용-공고-시설관리인",
+      "latest_application_deadline": "2026-07-01",
       "latest_eligibility_fields": {
-        "Industry": [
-          "AI"
-        ],
         "Region": [
           "서울"
         ]
@@ -211,15 +200,15 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
       "status": "fresh",
-      "article_count": 12,
-      "event_count": 9,
-      "latest_event_at": "2026-06-05T08:09:58.172684+00:00",
+      "article_count": 11,
+      "event_count": 8,
+      "latest_event_at": "2026-06-06T06:55:43.087983+00:00",
       "age_days": 0.0,
       "latest_title": "새글 여름철, 혼자 사는 어르신 안부 매일 확인한다 「2026년 여름철 취약계층 보호대책」 ..",
       "latest_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490719&mid=a10503010100&nPage=1",
       "latest_evidence_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490719&mid=a10503010100&nPage=1",
       "latest_program_title": "새글 여름철, 혼자 사는 어르신 안부 매일 확인한다 「2026년 여름철 취약계층 보호대책」 ..",
-      "latest_program_key": "eligibility-rule:kr:보건복지부:2026-06-05:새글-여름철-혼자-사는-어르신-안부-매일-확인한다-2026년-여름철-취약계층-보호대책",
+      "latest_program_key": "eligibility-rule:kr:보건복지부:2026-06-06:새글-여름철-혼자-사는-어르신-안부-매일-확인한다-2026년-여름철-취약계층-보호대책",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
         "TargetGroup": [
@@ -244,7 +233,7 @@
       "article_count": 3,
       "event_count": 2,
       "latest_event_at": "2026-05-31T07:48:56.294401+00:00",
-      "age_days": 5.01,
+      "age_days": 5.96,
       "latest_title": "국민성장펀드가 첨단산업의 위험을 분담하여생산적분야로의 자금공급을 가속화합니다",
       "latest_url": "https://www.fsc.go.kr/no010101/87003",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87003",
@@ -603,7 +592,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 9,
+      "article_count": 7,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -758,7 +747,7 @@
       "event_model": "eligibility_rule",
       "title": "새글 여름철, 혼자 사는 어르신 안부 매일 확인한다 「2026년 여름철 취약계층 보호대책」 ..",
       "url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490719&mid=a10503010100&nPage=1",
-      "event_at": "2026-06-05T08:09:58.172684+00:00",
+      "event_at": "2026-06-06T06:55:43.087983+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -770,7 +759,7 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "새글 여름철, 혼자 사는 어르신 안부 매일 확인한다 「2026년 여름철 취약계층 보호대책」 ..",
-      "program_key": "eligibility-rule:kr:보건복지부:2026-06-05:새글-여름철-혼자-사는-어르신-안부-매일-확인한다-2026년-여름철-취약계층-보호대책",
+      "program_key": "eligibility-rule:kr:보건복지부:2026-06-06:새글-여름철-혼자-사는-어르신-안부-매일-확인한다-2026년-여름철-취약계층-보호대책",
       "evidence_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490719&mid=a10503010100&nPage=1",
       "evidence_url_present": true
     },
@@ -779,7 +768,7 @@
       "event_model": "eligibility_rule",
       "title": "새글 폭염 대비 쪽방촌 주민 여름나기 현장 점검 “폭염경보 단계별 쪽방주민 체계적 지원”",
       "url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490735&mid=a10503010100&nPage=1",
-      "event_at": "2026-06-05T08:09:54.128908+00:00",
+      "event_at": "2026-06-06T06:55:39.380110+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -794,7 +783,7 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "새글 폭염 대비 쪽방촌 주민 여름나기 현장 점검 “폭염경보 단계별 쪽방주민 체계적 지원”",
-      "program_key": "eligibility-rule:kr:보건복지부:2026-06-05:새글-폭염-대비-쪽방촌-주민-여름나기-현장-점검-폭염경보-단계별-쪽방주민-체계적-지원",
+      "program_key": "eligibility-rule:kr:보건복지부:2026-06-06:새글-폭염-대비-쪽방촌-주민-여름나기-현장-점검-폭염경보-단계별-쪽방주민-체계적-지원",
       "evidence_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490735&mid=a10503010100&nPage=1",
       "evidence_url_present": true
     },
@@ -803,7 +792,7 @@
       "event_model": "eligibility_rule",
       "title": "새글 함께 지키는 구강건강, 이로운 노후의 시작",
       "url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490740&mid=a10503010100&nPage=1",
-      "event_at": "2026-06-05T08:09:52.608326+00:00",
+      "event_at": "2026-06-06T06:55:37.605673+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -818,8 +807,98 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "새글 함께 지키는 구강건강, 이로운 노후의 시작",
-      "program_key": "eligibility-rule:kr:보건복지부:2026-06-05:새글-함께-지키는-구강건강-이로운-노후의-시작",
+      "program_key": "eligibility-rule:kr:보건복지부:2026-06-06:새글-함께-지키는-구강건강-이로운-노후의-시작",
       "evidence_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490740&mid=a10503010100&nPage=1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "서울시립 강서노인종합복지관 직원채용 공고(시설관리인)",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=459233",
+      "event_at": "2026-07-01T00:00:00+00:00",
+      "application_deadline": "2026-07-01",
+      "application_start_date": "2026-06-05",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "서울시립 강서노인종합복지관 직원채용 공고(시설관리인)",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-07-01:서울시립-강서노인종합복지관-직원채용-공고-시설관리인",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=459233",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "서울시립 강서노인종합복지관 직원채용 공고(시설관리인)",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=459233",
+      "event_at": "2026-06-06T06:55:08.442945+00:00",
+      "application_deadline": "2026-07-01",
+      "application_start_date": "2026-06-05",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "서울시립 강서노인종합복지관 직원채용 공고(시설관리인)",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-06-06:서울시립-강서노인종합복지관-직원채용-공고-시설관리인",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=459233",
+      "evidence_url_present": true
+    },
+    {
+      "source": "정책브리핑",
+      "event_model": "support_program_notice",
+      "title": "이 대통령 \"선열에 합당한 예우 다해야…특별한 희생에 특별한 보상\"",
+      "url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148966001",
+      "event_at": "2026-06-05T18:36:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울",
+          "인천",
+          "강원",
+          "제주"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "이 대통령 \"선열에 합당한 예우 다해야…특별한 희생에 특별한 보상\"",
+      "program_key": "support-program-notice:kr:정책브리핑:2026-06-05:이-대통령-선열에-합당한-예우-다해야-특별한-희생에-특별한-보상",
+      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148966001",
+      "evidence_url_present": true
+    },
+    {
+      "source": "정책브리핑",
+      "event_model": "eligibility_rule",
+      "title": "이 대통령 \"선열에 합당한 예우 다해야…특별한 희생에 특별한 보상\"",
+      "url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148966001",
+      "event_at": "2026-06-05T18:36:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울",
+          "인천",
+          "강원",
+          "제주"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "이 대통령 \"선열에 합당한 예우 다해야…특별한 희생에 특별한 보상\"",
+      "program_key": "eligibility-rule:kr:정책브리핑:2026-06-05:이-대통령-선열에-합당한-예우-다해야-특별한-희생에-특별한-보상",
+      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148966001",
       "evidence_url_present": true
     },
     {
@@ -868,6 +947,48 @@
       "program_title": "「2026년 지역연계형 청년 창업 지원 사업」 넥스트로컬 8기 서류평가 합격자 공고",
       "program_key": "eligibility-rule:kr:서울시-지원사업:2026-06-05:2026년-지역연계형-청년-창업-지원-사업-넥스트로컬-8기-서류평가-합격자-공고",
       "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=459205",
+      "evidence_url_present": true
+    },
+    {
+      "source": "정책브리핑",
+      "event_model": "support_program_notice",
+      "title": "유튜브 꿀팁만 믿으면 안돼요…'상속·증여세 오해 그리고 진실'",
+      "url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965947",
+      "event_at": "2026-06-04T23:34:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "세종"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "유튜브 꿀팁만 믿으면 안돼요…'상속·증여세 오해 그리고 진실'",
+      "program_key": "support-program-notice:kr:정책브리핑:2026-06-04:유튜브-꿀팁만-믿으면-안돼요-상속-증여세-오해-그리고-진실",
+      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965947",
+      "evidence_url_present": true
+    },
+    {
+      "source": "정책브리핑",
+      "event_model": "eligibility_rule",
+      "title": "유튜브 꿀팁만 믿으면 안돼요…'상속·증여세 오해 그리고 진실'",
+      "url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965947",
+      "event_at": "2026-06-04T23:34:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "세종"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "유튜브 꿀팁만 믿으면 안돼요…'상속·증여세 오해 그리고 진실'",
+      "program_key": "eligibility-rule:kr:정책브리핑:2026-06-04:유튜브-꿀팁만-믿으면-안돼요-상속-증여세-오해-그리고-진실",
+      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965947",
       "evidence_url_present": true
     },
     {
@@ -2574,30 +2695,6 @@
       "evidence_url_present": true
     },
     {
-      "source": "보건복지부",
-      "event_model": "eligibility_rule",
-      "title": "새글 때이른 더위 기승, 폭염 대비쪽방주민 보호 현장 점검",
-      "url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490678&mid=a10503010100&nPage=1",
-      "event_at": "2026-05-30T06:48:07.635958+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ],
-        "Region": [
-          "대전"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "새글 때이른 더위 기승, 폭염 대비쪽방주민 보호 현장 점검",
-      "program_key": "eligibility-rule:kr:보건복지부:2026-05-30:새글-때이른-더위-기승-폭염-대비쪽방주민-보호-현장-점검",
-      "evidence_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490678&mid=a10503010100&nPage=1",
-      "evidence_url_present": true
-    },
-    {
       "source": "Awesome MCP Korea",
       "event_model": "eligibility_rule",
       "title": "Merge pull request #14 from darjeeling/copilot/add-documentation-for-…",
@@ -3500,54 +3597,6 @@
       "program_key": "eligibility-rule:kr:정책브리핑:2026-05-26:산불-피해-면적-99-임업인-지원-산림정책-1년-성과",
       "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965226",
       "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "정부, 기업 국내 복귀 기준 완화…비수도권 유턴 기업에 보조금 지급",
-      "url": "https://www.khan.co.kr/article/202605291435001",
-      "event_at": "2026-05-28T20:35:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "정부, 기업 국내 복귀 기준 완화…비수도권 유턴 기업에 보조금 지급",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-05-28:정부-기업-국내-복귀-기준-완화-비수도권-유턴-기업에-보조금-지급",
-      "evidence_url": "https://www.khan.co.kr/article/202605291435001",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "중동전쟁 유가 충격 최소화···농·어민 면세유 보조금 한도 인상",
-      "url": "https://www.khan.co.kr/article/202605291320001",
-      "event_at": "2026-05-28T19:20:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "농어민"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "중동전쟁 유가 충격 최소화···농·어민 면세유 보조금 한도 인상",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-05-28:중동전쟁-유가-충격-최소화-농-어민-면세유-보조금-한도-인상",
-      "evidence_url": "https://www.khan.co.kr/article/202605291320001",
-      "evidence_url_present": true
     }
   ],
   "event_model_coverage": [
@@ -3616,7 +3665,6 @@
   ],
   "event_model_source_gaps": [],
   "errors": [
-    "[서울경제 경제] Request failed: 403 Client Error: Forbidden for url: https://www.sedaily.com/RSS/Economy/",
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
     "r/startups: Source disabled (crawl health threshold reached)",
