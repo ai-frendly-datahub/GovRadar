@@ -1,22 +1,22 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-06-07T08:01:52.469880+00:00",
+  "generated_at": "2026-06-08T09:01:48.416813+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
-    "fresh_sources": 3,
-    "stale_sources": 1,
+    "fresh_sources": 1,
+    "stale_sources": 3,
     "missing_sources": 0,
     "missing_event_sources": 1,
     "unknown_event_date_sources": 0,
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 26,
-    "application_deadline_events": 15,
-    "eligibility_rule_events": 51,
+    "application_deadline_events": 16,
+    "eligibility_rule_events": 53,
     "selection_result_events": 1,
-    "unique_program_key_count": 93,
-    "events_with_evidence_url": 93,
+    "unique_program_key_count": 96,
+    "events_with_evidence_url": 96,
     "collection_error_count": 9,
     "event_model_source_gap_count": 0
   },
@@ -80,11 +80,11 @@
       "tracked": true,
       "event_model": "support_program_notice",
       "freshness_sla_days": 2,
-      "status": "fresh",
+      "status": "stale",
       "article_count": 26,
       "event_count": 26,
       "latest_event_at": "2026-06-05T18:36:00+00:00",
-      "age_days": 1.56,
+      "age_days": 2.6,
       "latest_title": "이 대통령 \"선열에 합당한 예우 다해야…특별한 희생에 특별한 보상\"",
       "latest_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148966001",
       "latest_evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148966001",
@@ -105,7 +105,7 @@
       "skip_reason": null,
       "reenable_gate": null,
       "errors": [
-        "정책브리핑: Network error fetching 정책브리핑: HTTPSConnectionPool(host='www.korea.kr', port=443): Max retries exceeded with url: /rss/policy.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.korea.kr', port=443) at 0x7f463940be50>, 'Connection to www.korea.kr timed out. (connect timeout=15)'))"
+        "정책브리핑: Network error fetching 정책브리핑: HTTPSConnectionPool(host='www.korea.kr', port=443): Max retries exceeded with url: /rss/policy.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.korea.kr', port=443) at 0x7f8097c197d0>, 'Connection to www.korea.kr timed out. (connect timeout=15)'))"
       ]
     },
     {
@@ -119,7 +119,7 @@
       "article_count": 4,
       "event_count": 1,
       "latest_event_at": "2026-06-04T08:22:43.748141+00:00",
-      "age_days": 2.99,
+      "age_days": 4.03,
       "latest_title": "「소상공인 재난지원금」환수 결정통지 반송에 따른 공시송달 공고",
       "latest_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=54332&pNm=BOA0101&page=1",
       "latest_evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=54332&pNm=BOA0101&page=1",
@@ -146,8 +146,8 @@
       "event_model": "application_deadline",
       "freshness_sla_days": 1,
       "status": "fresh",
-      "article_count": 7,
-      "event_count": 5,
+      "article_count": 8,
+      "event_count": 6,
       "latest_event_at": "2026-07-01T00:00:00+00:00",
       "age_days": 0.0,
       "latest_title": "서울시립 강서노인종합복지관 직원채용 공고(시설관리인)",
@@ -193,7 +193,7 @@
       "skip_reason": null,
       "reenable_gate": null,
       "errors": [
-        "행정안전부: Failed to collect browser content from 행정안전부: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardList.do?bbsId=BBSMSTR_000000000006\", waiting until \"domcontentloaded\"\n"
+        "행정안전부: Source disabled (crawl health threshold reached)"
       ]
     },
     {
@@ -203,11 +203,11 @@
       "tracked": true,
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
-      "status": "fresh",
+      "status": "stale",
       "article_count": 9,
       "event_count": 6,
       "latest_event_at": "2026-06-06T06:55:43.087983+00:00",
-      "age_days": 1.05,
+      "age_days": 2.09,
       "latest_title": "새글 여름철, 혼자 사는 어르신 안부 매일 확인한다 「2026년 여름철 취약계층 보호대책」 ..",
       "latest_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490719&mid=a10503010100&nPage=1",
       "latest_evidence_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490719&mid=a10503010100&nPage=1",
@@ -281,7 +281,7 @@
       "skip_reason": null,
       "reenable_gate": null,
       "errors": [
-        "농림축산식품부: Network error fetching 농림축산식품부: HTTPSConnectionPool(host='www.mafra.go.kr', port=443): Max retries exceeded with url: /bbs/home/792/rssList.do?row=50 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.mafra.go.kr', port=443) at 0x7f4639591410>, 'Connection to www.mafra.go.kr timed out. (connect timeout=15)'))"
+        "농림축산식품부: Network error fetching 농림축산식품부: HTTPSConnectionPool(host='www.mafra.go.kr', port=443): Max retries exceeded with url: /bbs/home/792/rssList.do?row=50 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.mafra.go.kr', port=443) at 0x7f8097c19210>, 'Connection to www.mafra.go.kr timed out. (connect timeout=15)'))"
       ]
     },
     {
@@ -534,7 +534,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 1,
+      "article_count": 2,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -762,7 +762,7 @@
       "event_model": "eligibility_rule",
       "title": "서울시립 강서노인종합복지관 직원채용 공고(시설관리인)",
       "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=459233",
-      "event_at": "2026-06-07T08:00:08.695497+00:00",
+      "event_at": "2026-06-08T09:00:29.172194+00:00",
       "application_deadline": "2026-07-01",
       "application_start_date": "2026-06-05",
       "eligibility_fields": {
@@ -774,8 +774,77 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "서울시립 강서노인종합복지관 직원채용 공고(시설관리인)",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-06-07:서울시립-강서노인종합복지관-직원채용-공고-시설관리인",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-06-08:서울시립-강서노인종합복지관-직원채용-공고-시설관리인",
       "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=459233",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "서울시가족센터 채용 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=459306",
+      "event_at": "2026-06-01T00:00:00+00:00",
+      "application_deadline": "2026-06-01",
+      "application_start_date": "2026-06-08",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "서울시가족센터 채용 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-06-01:서울시가족센터-채용-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=459306",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "서울시가족센터 채용 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=459306",
+      "event_at": "2026-06-08T09:00:27.241826+00:00",
+      "application_deadline": "2026-06-01",
+      "application_start_date": "2026-06-08",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "서울시가족센터 채용 공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-06-08:서울시가족센터-채용-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=459306",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "신한銀, 기초연금 수령자에 0.1% 초저금리 대출상품 출시",
+      "url": "https://www.mk.co.kr/news/economy/12068133",
+      "event_at": "2026-06-07T16:14:19+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "저소득"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "신한銀, 기초연금 수령자에 0.1% 초저금리 대출상품 출시",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-06-07:신한銀-기초연금-수령자에-0-1-초저금리-대출상품-출시",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12068133",
       "evidence_url_present": true
     },
     {
@@ -2173,6 +2242,69 @@
       "evidence_url_present": true
     },
     {
+      "source": "Awesome MCP Korea",
+      "event_model": "eligibility_rule",
+      "title": "Merge pull request #14 from darjeeling/copilot/add-documentation-for-…",
+      "url": "https://github.com/darjeeling/awesome-mcp-korea/commit/9eb82627ac5dbe22787f8f8dfcbc899ed8f85cca",
+      "event_at": "2026-03-29T22:08:41+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "Merge pull request #14 from darjeeling/copilot/add-documentation-for-…",
+      "program_key": "eligibility-rule:kr:awesome-mcp-korea:2026-03-29:merge-pull-request-14-from-darjeeling-copilot-add-documentation-for",
+      "evidence_url": "https://github.com/darjeeling/awesome-mcp-korea/commit/9eb82627ac5dbe22787f8f8dfcbc899ed8f85cca",
+      "evidence_url_present": true
+    },
+    {
+      "source": "Awesome MCP Korea",
+      "event_model": "eligibility_rule",
+      "title": "Add kr-pc-deals-mcp to Commerce & Retail section",
+      "url": "https://github.com/darjeeling/awesome-mcp-korea/commit/5f09a8e425d79175f5dc1505e6ec267f43bc3360",
+      "event_at": "2026-03-29T22:06:25+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "Add kr-pc-deals-mcp to Commerce & Retail section",
+      "program_key": "eligibility-rule:kr:awesome-mcp-korea:2026-03-29:add-kr-pc-deals-mcp-to-commerce-retail-section",
+      "evidence_url": "https://github.com/darjeeling/awesome-mcp-korea/commit/5f09a8e425d79175f5dc1505e6ec267f43bc3360",
+      "evidence_url_present": true
+    },
+    {
+      "source": "Awesome MCP Korea",
+      "event_model": "eligibility_rule",
+      "title": "Add dahlia/ko-stdict-mcp to Korean NLP & Language section",
+      "url": "https://github.com/darjeeling/awesome-mcp-korea/commit/150699ad0003abdb5473a76a516acdcbb6e7b642",
+      "event_at": "2026-03-29T21:14:58+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "ICT"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "Add dahlia/ko-stdict-mcp to Korean NLP & Language section",
+      "program_key": "eligibility-rule:kr:awesome-mcp-korea:2026-03-29:add-dahlia-ko-stdict-mcp-to-korean-nlp-language-section",
+      "evidence_url": "https://github.com/darjeeling/awesome-mcp-korea/commit/150699ad0003abdb5473a76a516acdcbb6e7b642",
+      "evidence_url_present": true
+    },
+    {
       "source": "정책브리핑",
       "event_model": "support_program_notice",
       "title": "관세청, 1년 간 마약류 역대 최대 1181건·3233㎏ 적발 성과",
@@ -2488,69 +2620,6 @@
       "program_title": "국무회의 첫 생중계, 전국 돌며 타운홀 미팅…'소통과 혁신에 진심'",
       "program_key": "eligibility-rule:kr:정책브리핑:2026-05-31:국무회의-첫-생중계-전국-돌며-타운홀-미팅-소통과-혁신에-진심",
       "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965503",
-      "evidence_url_present": true
-    },
-    {
-      "source": "Awesome MCP Korea",
-      "event_model": "eligibility_rule",
-      "title": "Merge pull request #14 from darjeeling/copilot/add-documentation-for-…",
-      "url": "https://github.com/darjeeling/awesome-mcp-korea/commit/9eb82627ac5dbe22787f8f8dfcbc899ed8f85cca",
-      "event_at": "2026-03-29T22:08:41+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "AI"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "Merge pull request #14 from darjeeling/copilot/add-documentation-for-…",
-      "program_key": "eligibility-rule:kr:awesome-mcp-korea:2026-03-29:merge-pull-request-14-from-darjeeling-copilot-add-documentation-for",
-      "evidence_url": "https://github.com/darjeeling/awesome-mcp-korea/commit/9eb82627ac5dbe22787f8f8dfcbc899ed8f85cca",
-      "evidence_url_present": true
-    },
-    {
-      "source": "Awesome MCP Korea",
-      "event_model": "eligibility_rule",
-      "title": "Add kr-pc-deals-mcp to Commerce & Retail section",
-      "url": "https://github.com/darjeeling/awesome-mcp-korea/commit/5f09a8e425d79175f5dc1505e6ec267f43bc3360",
-      "event_at": "2026-03-29T22:06:25+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "AI"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "Add kr-pc-deals-mcp to Commerce & Retail section",
-      "program_key": "eligibility-rule:kr:awesome-mcp-korea:2026-03-29:add-kr-pc-deals-mcp-to-commerce-retail-section",
-      "evidence_url": "https://github.com/darjeeling/awesome-mcp-korea/commit/5f09a8e425d79175f5dc1505e6ec267f43bc3360",
-      "evidence_url_present": true
-    },
-    {
-      "source": "Awesome MCP Korea",
-      "event_model": "eligibility_rule",
-      "title": "Add dahlia/ko-stdict-mcp to Korean NLP & Language section",
-      "url": "https://github.com/darjeeling/awesome-mcp-korea/commit/150699ad0003abdb5473a76a516acdcbb6e7b642",
-      "event_at": "2026-03-29T21:14:58+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "ICT"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "Add dahlia/ko-stdict-mcp to Korean NLP & Language section",
-      "program_key": "eligibility-rule:kr:awesome-mcp-korea:2026-03-29:add-dahlia-ko-stdict-mcp-to-korean-nlp-language-section",
-      "evidence_url": "https://github.com/darjeeling/awesome-mcp-korea/commit/150699ad0003abdb5473a76a516acdcbb6e7b642",
       "evidence_url_present": true
     },
     {
@@ -3129,9 +3198,9 @@
   ],
   "event_model_source_gaps": [],
   "errors": [
-    "정책브리핑: Network error fetching 정책브리핑: HTTPSConnectionPool(host='www.korea.kr', port=443): Max retries exceeded with url: /rss/policy.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.korea.kr', port=443) at 0x7f463940be50>, 'Connection to www.korea.kr timed out. (connect timeout=15)'))",
-    "농림축산식품부: Network error fetching 농림축산식품부: HTTPSConnectionPool(host='www.mafra.go.kr', port=443): Max retries exceeded with url: /bbs/home/792/rssList.do?row=50 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.mafra.go.kr', port=443) at 0x7f4639591410>, 'Connection to www.mafra.go.kr timed out. (connect timeout=15)'))",
-    "행정안전부: Failed to collect browser content from 행정안전부: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardList.do?bbsId=BBSMSTR_000000000006\", waiting until \"domcontentloaded\"\n",
+    "정책브리핑: Network error fetching 정책브리핑: HTTPSConnectionPool(host='www.korea.kr', port=443): Max retries exceeded with url: /rss/policy.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.korea.kr', port=443) at 0x7f8097c197d0>, 'Connection to www.korea.kr timed out. (connect timeout=15)'))",
+    "농림축산식품부: Network error fetching 농림축산식품부: HTTPSConnectionPool(host='www.mafra.go.kr', port=443): Max retries exceeded with url: /bbs/home/792/rssList.do?row=50 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.mafra.go.kr', port=443) at 0x7f8097c19210>, 'Connection to www.mafra.go.kr timed out. (connect timeout=15)'))",
+    "행정안전부: Source disabled (crawl health threshold reached)",
     "보건복지부: Failed to collect browser content from 보건복지부: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027\", waiting until \"domcontentloaded\"\n",
     "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n",
     "r/korea: Source disabled (crawl health threshold reached)",
