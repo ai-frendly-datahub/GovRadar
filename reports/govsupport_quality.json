@@ -1,22 +1,22 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-06-09T07:53:00.755289+00:00",
+  "generated_at": "2026-06-10T08:10:52.361195+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
-    "fresh_sources": 2,
-    "stale_sources": 3,
+    "fresh_sources": 3,
+    "stale_sources": 2,
     "missing_sources": 0,
     "missing_event_sources": 0,
     "unknown_event_date_sources": 0,
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
-    "support_program_notice_events": 23,
+    "support_program_notice_events": 16,
     "application_deadline_events": 14,
-    "eligibility_rule_events": 49,
-    "selection_result_events": 1,
-    "unique_program_key_count": 87,
-    "events_with_evidence_url": 87,
+    "eligibility_rule_events": 45,
+    "selection_result_events": 2,
+    "unique_program_key_count": 77,
+    "events_with_evidence_url": 77,
     "collection_error_count": 8,
     "event_model_source_gap_count": 0
   },
@@ -81,10 +81,10 @@
       "event_model": "support_program_notice",
       "freshness_sla_days": 2,
       "status": "stale",
-      "article_count": 23,
-      "event_count": 23,
+      "article_count": 16,
+      "event_count": 16,
       "latest_event_at": "2026-06-05T18:36:00+00:00",
-      "age_days": 3.55,
+      "age_days": 4.57,
       "latest_title": "이 대통령 \"선열에 합당한 예우 다해야…특별한 희생에 특별한 보상\"",
       "latest_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148966001",
       "latest_evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148966001",
@@ -119,7 +119,7 @@
       "article_count": 4,
       "event_count": 1,
       "latest_event_at": "2026-06-04T08:22:43.748141+00:00",
-      "age_days": 4.98,
+      "age_days": 5.99,
       "latest_title": "「소상공인 재난지원금」환수 결정통지 반송에 따른 공시송달 공고",
       "latest_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=54332&pNm=BOA0101&page=1",
       "latest_evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=54332&pNm=BOA0101&page=1",
@@ -146,7 +146,7 @@
       "event_model": "application_deadline",
       "freshness_sla_days": 1,
       "status": "fresh",
-      "article_count": 7,
+      "article_count": 8,
       "event_count": 6,
       "latest_event_at": "2026-07-01T00:00:00+00:00",
       "age_days": 0.0,
@@ -203,20 +203,23 @@
       "tracked": true,
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
-      "status": "stale",
-      "article_count": 7,
-      "event_count": 4,
-      "latest_event_at": "2026-06-06T06:55:43.087983+00:00",
-      "age_days": 3.04,
-      "latest_title": "새글 여름철, 혼자 사는 어르신 안부 매일 확인한다 「2026년 여름철 취약계층 보호대책」 ..",
-      "latest_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490719&mid=a10503010100&nPage=1",
-      "latest_evidence_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490719&mid=a10503010100&nPage=1",
-      "latest_program_title": "새글 여름철, 혼자 사는 어르신 안부 매일 확인한다 「2026년 여름철 취약계층 보호대책」 ..",
-      "latest_program_key": "eligibility-rule:kr:보건복지부:2026-06-06:새글-여름철-혼자-사는-어르신-안부-매일-확인한다-2026년-여름철-취약계층-보호대책",
+      "status": "fresh",
+      "article_count": 8,
+      "event_count": 6,
+      "latest_event_at": "2026-06-10T08:10:24.498932+00:00",
+      "age_days": 0.0,
+      "latest_title": "새글 정은경 장관 쪽방촌 방문, “안전하고 시원한 여름 위해 지원 아끼지 않을 것”",
+      "latest_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490774&mid=a10503010100&nPage=1",
+      "latest_evidence_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490774&mid=a10503010100&nPage=1",
+      "latest_program_title": "새글 정은경 장관 쪽방촌 방문, “안전하고 시원한 여름 위해 지원 아끼지 않을 것”",
+      "latest_program_key": "eligibility-rule:kr:보건복지부:2026-06-10:새글-정은경-장관-쪽방촌-방문-안전하고-시원한-여름-위해-지원-아끼지-않을-것",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
         "TargetGroup": [
           "취약계층"
+        ],
+        "Region": [
+          "서울"
         ]
       },
       "latest_selection_result_date": "",
@@ -234,21 +237,22 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
       "status": "fresh",
-      "article_count": 2,
-      "event_count": 1,
-      "latest_event_at": "2026-06-09T07:52:51.742231+00:00",
+      "article_count": 3,
+      "event_count": 2,
+      "latest_event_at": "2026-06-10T08:10:43.441593+00:00",
       "age_days": 0.0,
-      "latest_title": "軍 입영 후 기초군사훈련 중인 청년들도 청년미래적금에 가입할 수 있게 지원 예정입니다.",
-      "latest_url": "https://www.fsc.go.kr/no010101/87056",
-      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87056",
-      "latest_program_title": "軍 입영 후 기초군사훈련 중인 청년들도 청년미래적금에 가입할 수 있게 지원 예정입니다.",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-06-09:軍-입영-후-기초군사훈련-중인-청년들도-청년미래적금에-가입할-수-있게-지원-예정입니다",
-      "latest_application_deadline": "2026-07-24",
+      "latest_title": "< ｢개인 연체채권 관리 강화방안｣ 후속조치 ➊ >  세제혜택은 받고 빚 독촉은 계속하는 금융권의 기존 관행을 바로 잡겠습니다. 금일 등록된 게시글",
+      "latest_url": "https://www.fsc.go.kr/no010101/87073",
+      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87073",
+      "latest_program_title": "< ｢개인 연체채권 관리 강화방안｣ 후속조치 ➊ >  세제혜택은 받고 빚 독촉은 계속하는 금융권의 기존 관행을 바로 잡겠습니다. 금일 등록된 게시글",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-06-10:개인-연체채권-관리-강화방안-후속조치-➊-세제혜택은-받고-빚-독촉은-계속하는-금융권의-기존-관행을-바로-잡겠습니다-금일-등록된-게시글",
+      "latest_application_deadline": "2026-07-21",
       "latest_eligibility_fields": {
-        "TargetGroup": [
-          "소상공인",
-          "중소기업",
-          "청년"
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "대전"
         ]
       },
       "latest_selection_result_date": "",
@@ -536,7 +540,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 3,
+      "article_count": 5,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -562,7 +566,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 3,
+      "article_count": 2,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -588,7 +592,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 6,
+      "article_count": 4,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -738,6 +742,161 @@
     }
   ],
   "events": [
+    {
+      "source": "금융위원회",
+      "event_model": "application_deadline",
+      "title": "< ｢개인 연체채권 관리 강화방안｣ 후속조치 ➊ >  세제혜택은 받고 빚 독촉은 계속하는 금융권의 기존 관행을 바로 잡겠습니다. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/87073",
+      "event_at": "2026-07-21T00:00:00+00:00",
+      "application_deadline": "2026-07-21",
+      "application_start_date": "2026-06-10",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "대전"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "< ｢개인 연체채권 관리 강화방안｣ 후속조치 ➊ >  세제혜택은 받고 빚 독촉은 계속하는 금융권의 기존 관행을 바로 잡겠습니다. 금일 등록된 게시글",
+      "program_key": "application-deadline:kr:금융위원회:2026-07-21:개인-연체채권-관리-강화방안-후속조치-➊-세제혜택은-받고-빚-독촉은-계속하는-금융권의-기존-관행을-바로-잡겠습니다-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87073",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "< ｢개인 연체채권 관리 강화방안｣ 후속조치 ➊ >  세제혜택은 받고 빚 독촉은 계속하는 금융권의 기존 관행을 바로 잡겠습니다. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/87073",
+      "event_at": "2026-06-10T08:10:43.441593+00:00",
+      "application_deadline": "2026-07-21",
+      "application_start_date": "2026-06-10",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "대전"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "< ｢개인 연체채권 관리 강화방안｣ 후속조치 ➊ >  세제혜택은 받고 빚 독촉은 계속하는 금융권의 기존 관행을 바로 잡겠습니다. 금일 등록된 게시글",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-06-10:개인-연체채권-관리-강화방안-후속조치-➊-세제혜택은-받고-빚-독촉은-계속하는-금융권의-기존-관행을-바로-잡겠습니다-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87073",
+      "evidence_url_present": true
+    },
+    {
+      "source": "보건복지부",
+      "event_model": "eligibility_rule",
+      "title": "새글 정은경 장관 쪽방촌 방문, “안전하고 시원한 여름 위해 지원 아끼지 않을 것”",
+      "url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490774&mid=a10503010100&nPage=1",
+      "event_at": "2026-06-10T08:10:24.498932+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "새글 정은경 장관 쪽방촌 방문, “안전하고 시원한 여름 위해 지원 아끼지 않을 것”",
+      "program_key": "eligibility-rule:kr:보건복지부:2026-06-10:새글-정은경-장관-쪽방촌-방문-안전하고-시원한-여름-위해-지원-아끼지-않을-것",
+      "evidence_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490774&mid=a10503010100&nPage=1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "보건복지부",
+      "event_model": "eligibility_rule",
+      "title": "새글 ‘난임 극복, 이제 직장에서부터‘ 민관이 함께 가족친화적 문화 만든다",
+      "url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490775&mid=a10503010100&nPage=1",
+      "event_at": "2026-06-10T08:10:23.080561+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "새글 ‘난임 극복, 이제 직장에서부터‘ 민관이 함께 가족친화적 문화 만든다",
+      "program_key": "eligibility-rule:kr:보건복지부:2026-06-10:새글-난임-극복-이제-직장에서부터-민관이-함께-가족친화적-문화-만든다",
+      "evidence_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490775&mid=a10503010100&nPage=1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "selection_result",
+      "title": "「2026년 문화예술단체 지원사업」 보조사업자 선정 결과 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=459433",
+      "event_at": "2026-06-10T08:10:12.427833+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 문화예술단체 지원사업",
+      "program_key": "selection-result:kr:서울시-지원사업:2026년-문화예술단체-지원사업",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=459433",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "인뱅·지방은행, 정부 규제 발목에 ‘이것’으로 살길 찾는다",
+      "url": "https://www.mk.co.kr/news/economy/12070475",
+      "event_at": "2026-06-09T19:44:07+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "인뱅·지방은행, 정부 규제 발목에 ‘이것’으로 살길 찾는다",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-06-09:인뱅-지방은행-정부-규제-발목에-이것-으로-살길-찾는다",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12070475",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "[단독] 인구감소지역 98%서 점포 유지한 새마을금고…수익성 확보는 숙제",
+      "url": "https://www.mk.co.kr/news/economy/12070367",
+      "event_at": "2026-06-09T17:06:39+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "[단독] 인구감소지역 98%서 점포 유지한 새마을금고…수익성 확보는 숙제",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-06-09:단독-인구감소지역-98-서-점포-유지한-새마을금고-수익성-확보는-숙제",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12070367",
+      "evidence_url_present": true
+    },
     {
       "source": "금융위원회",
       "event_model": "application_deadline",
@@ -1964,23 +2123,6 @@
       "evidence_url_present": true
     },
     {
-      "source": "보건복지부",
-      "event_model": "application_deadline",
-      "title": "새글 화상·수지접합·분만·소아·뇌혈관에 급성 알코올 중독까지... 24시간 진료기관 늘어..",
-      "url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490713&mid=a10503010100&nPage=1",
-      "event_at": "2026-07-01T00:00:00+00:00",
-      "application_deadline": "2026-07-01",
-      "application_start_date": "2026-06-02",
-      "eligibility_fields": {},
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "새글 화상·수지접합·분만·소아·뇌혈관에 급성 알코올 중독까지... 24시간 진료기관 늘어..",
-      "program_key": "application-deadline:kr:보건복지부:2026-07-01:새글-화상-수지접합-분만-소아-뇌혈관에-급성-알코올-중독까지-24시간-진료기관-늘어",
-      "evidence_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490713&mid=a10503010100&nPage=1",
-      "evidence_url_present": true
-    },
-    {
       "source": "Awesome MCP Korea",
       "event_model": "eligibility_rule",
       "title": "Merge pull request #14 from darjeeling/copilot/add-documentation-for-…",
@@ -2458,441 +2600,6 @@
       "program_key": "eligibility-rule:kr:경향신문-경제:2026-06-02:지-옥-고-탈출-사다리-놨지만-곳곳-빈틈",
       "evidence_url": "https://www.khan.co.kr/article/202606022053035",
       "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "카뱅 사업자 부동산담보대출, 경쟁사 네이버페이서도 검색 가능",
-      "url": "https://www.donga.com/news/Economy/article/all/20260602/134036928/1",
-      "event_at": "2026-06-01T23:02:29+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "카뱅 사업자 부동산담보대출, 경쟁사 네이버페이서도 검색 가능",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-06-01:카뱅-사업자-부동산담보대출-경쟁사-네이버페이서도-검색-가능",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260602/134036928/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "신림동 반지하 참사 후 4년···‘지·옥·고’는 여전히 어둡고 차갑다",
-      "url": "https://www.khan.co.kr/article/202606021657001",
-      "event_at": "2026-06-01T22:57:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "신림동 반지하 참사 후 4년···‘지·옥·고’는 여전히 어둡고 차갑다",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-06-01:신림동-반지하-참사-후-4년-지-옥-고-는-여전히-어둡고-차갑다",
-      "evidence_url": "https://www.khan.co.kr/article/202606021657001",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "기름값만 뛴게 아니다···장바구니 물가·근원물가까지 상승",
-      "url": "https://www.khan.co.kr/article/202606021529011",
-      "event_at": "2026-06-01T21:29:01+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ],
-        "Industry": [
-          "수산"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "기름값만 뛴게 아니다···장바구니 물가·근원물가까지 상승",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-06-01:기름값만-뛴게-아니다-장바구니-물가-근원물가까지-상승",
-      "evidence_url": "https://www.khan.co.kr/article/202606021529011",
-      "evidence_url_present": true
-    },
-    {
-      "source": "정책브리핑",
-      "event_model": "support_program_notice",
-      "title": "국무회의 첫 생중계, 전국 돌며 타운홀 미팅…'소통과 혁신에 진심'",
-      "url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965503",
-      "event_at": "2026-05-31T17:12:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인"
-        ],
-        "Industry": [
-          "수산",
-          "AI"
-        ],
-        "Region": [
-          "서울",
-          "경기",
-          "부산",
-          "광주",
-          "대전",
-          "제주"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "국무회의 첫 생중계, 전국 돌며 타운홀 미팅…'소통과 혁신에 진심'",
-      "program_key": "support-program-notice:kr:정책브리핑:2026-05-31:국무회의-첫-생중계-전국-돌며-타운홀-미팅-소통과-혁신에-진심",
-      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965503",
-      "evidence_url_present": true
-    },
-    {
-      "source": "정책브리핑",
-      "event_model": "eligibility_rule",
-      "title": "국무회의 첫 생중계, 전국 돌며 타운홀 미팅…'소통과 혁신에 진심'",
-      "url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965503",
-      "event_at": "2026-05-31T17:12:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인"
-        ],
-        "Industry": [
-          "수산",
-          "AI"
-        ],
-        "Region": [
-          "서울",
-          "경기",
-          "부산",
-          "광주",
-          "대전",
-          "제주"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "국무회의 첫 생중계, 전국 돌며 타운홀 미팅…'소통과 혁신에 진심'",
-      "program_key": "eligibility-rule:kr:정책브리핑:2026-05-31:국무회의-첫-생중계-전국-돌며-타운홀-미팅-소통과-혁신에-진심",
-      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965503",
-      "evidence_url_present": true
-    },
-    {
-      "source": "정책브리핑",
-      "event_model": "support_program_notice",
-      "title": "초단기간 공공 비정규직에 '공정수당' 지급…채용 사전심사도 확대",
-      "url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965448",
-      "event_at": "2026-05-28T23:30:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {},
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "초단기간 공공 비정규직에 '공정수당' 지급…채용 사전심사도 확대",
-      "program_key": "support-program-notice:kr:정책브리핑:2026-05-28:초단기간-공공-비정규직에-공정수당-지급-채용-사전심사도-확대",
-      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965448",
-      "evidence_url_present": true
-    },
-    {
-      "source": "정책브리핑",
-      "event_model": "support_program_notice",
-      "title": "새도약기금, 장기연체 9602억 추가 매입…누적 수혜자 75만 명",
-      "url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965472",
-      "event_at": "2026-05-28T23:16:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "새도약기금, 장기연체 9602억 추가 매입…누적 수혜자 75만 명",
-      "program_key": "support-program-notice:kr:정책브리핑:2026-05-28:새도약기금-장기연체-9602억-추가-매입-누적-수혜자-75만-명",
-      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965472",
-      "evidence_url_present": true
-    },
-    {
-      "source": "정책브리핑",
-      "event_model": "eligibility_rule",
-      "title": "새도약기금, 장기연체 9602억 추가 매입…누적 수혜자 75만 명",
-      "url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965472",
-      "event_at": "2026-05-28T23:16:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "새도약기금, 장기연체 9602억 추가 매입…누적 수혜자 75만 명",
-      "program_key": "eligibility-rule:kr:정책브리핑:2026-05-28:새도약기금-장기연체-9602억-추가-매입-누적-수혜자-75만-명",
-      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965472",
-      "evidence_url_present": true
-    },
-    {
-      "source": "정책브리핑",
-      "event_model": "support_program_notice",
-      "title": "해외 진출 기업, '유턴' 문턱 낮춰 국내 복귀·지방 투자 유도",
-      "url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965432",
-      "event_at": "2026-05-28T23:09:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ],
-        "Industry": [
-          "제조",
-          "AI"
-        ],
-        "Region": [
-          "세종"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "해외 진출 기업, '유턴' 문턱 낮춰 국내 복귀·지방 투자 유도",
-      "program_key": "support-program-notice:kr:정책브리핑:2026-05-28:해외-진출-기업-유턴-문턱-낮춰-국내-복귀-지방-투자-유도",
-      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965432",
-      "evidence_url_present": true
-    },
-    {
-      "source": "정책브리핑",
-      "event_model": "eligibility_rule",
-      "title": "해외 진출 기업, '유턴' 문턱 낮춰 국내 복귀·지방 투자 유도",
-      "url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965432",
-      "event_at": "2026-05-28T23:09:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ],
-        "Industry": [
-          "제조",
-          "AI"
-        ],
-        "Region": [
-          "세종"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "해외 진출 기업, '유턴' 문턱 낮춰 국내 복귀·지방 투자 유도",
-      "program_key": "eligibility-rule:kr:정책브리핑:2026-05-28:해외-진출-기업-유턴-문턱-낮춰-국내-복귀-지방-투자-유도",
-      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965432",
-      "evidence_url_present": true
-    },
-    {
-      "source": "정책브리핑",
-      "event_model": "support_program_notice",
-      "title": "특별한 희생에 특별한 보상…\"국민 눈높이에 맞는 예우 실현\"",
-      "url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965437",
-      "event_at": "2026-05-28T22:50:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "저소득"
-        ],
-        "Industry": [
-          "AI"
-        ],
-        "Region": [
-          "서울",
-          "부산",
-          "강원",
-          "충북",
-          "제주"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "특별한 희생에 특별한 보상…\"국민 눈높이에 맞는 예우 실현\"",
-      "program_key": "support-program-notice:kr:정책브리핑:2026-05-28:특별한-희생에-특별한-보상-국민-눈높이에-맞는-예우-실현",
-      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965437",
-      "evidence_url_present": true
-    },
-    {
-      "source": "정책브리핑",
-      "event_model": "eligibility_rule",
-      "title": "특별한 희생에 특별한 보상…\"국민 눈높이에 맞는 예우 실현\"",
-      "url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965437",
-      "event_at": "2026-05-28T22:50:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "저소득"
-        ],
-        "Industry": [
-          "AI"
-        ],
-        "Region": [
-          "서울",
-          "부산",
-          "강원",
-          "충북",
-          "제주"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "특별한 희생에 특별한 보상…\"국민 눈높이에 맞는 예우 실현\"",
-      "program_key": "eligibility-rule:kr:정책브리핑:2026-05-28:특별한-희생에-특별한-보상-국민-눈높이에-맞는-예우-실현",
-      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965437",
-      "evidence_url_present": true
-    },
-    {
-      "source": "정책브리핑",
-      "event_model": "support_program_notice",
-      "title": "국민성장펀드, 퓨리오사 AI·SK바이오 등 5건에 자금지원 승인",
-      "url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965438",
-      "event_at": "2026-05-28T22:45:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "AI",
-          "바이오"
-        ],
-        "Region": [
-          "서울",
-          "경기",
-          "충북"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "국민성장펀드, 퓨리오사 AI·SK바이오 등 5건에 자금지원 승인",
-      "program_key": "support-program-notice:kr:정책브리핑:2026-05-28:국민성장펀드-퓨리오사-ai-sk바이오-등-5건에-자금지원-승인",
-      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965438",
-      "evidence_url_present": true
-    },
-    {
-      "source": "정책브리핑",
-      "event_model": "eligibility_rule",
-      "title": "국민성장펀드, 퓨리오사 AI·SK바이오 등 5건에 자금지원 승인",
-      "url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965438",
-      "event_at": "2026-05-28T22:45:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "AI",
-          "바이오"
-        ],
-        "Region": [
-          "서울",
-          "경기",
-          "충북"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "국민성장펀드, 퓨리오사 AI·SK바이오 등 5건에 자금지원 승인",
-      "program_key": "eligibility-rule:kr:정책브리핑:2026-05-28:국민성장펀드-퓨리오사-ai-sk바이오-등-5건에-자금지원-승인",
-      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965438",
-      "evidence_url_present": true
-    },
-    {
-      "source": "정책브리핑",
-      "event_model": "support_program_notice",
-      "title": "농어민 면세유 지원 확대…농기계용 경유 리터당 37.8원↑",
-      "url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965447",
-      "event_at": "2026-05-28T22:43:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층",
-          "농어민"
-        ],
-        "Industry": [
-          "농업",
-          "수산",
-          "축산"
-        ],
-        "Region": [
-          "경기"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "농어민 면세유 지원 확대…농기계용 경유 리터당 37.8원↑",
-      "program_key": "support-program-notice:kr:정책브리핑:2026-05-28:농어민-면세유-지원-확대-농기계용-경유-리터당-37-8원",
-      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965447",
-      "evidence_url_present": true
-    },
-    {
-      "source": "정책브리핑",
-      "event_model": "eligibility_rule",
-      "title": "농어민 면세유 지원 확대…농기계용 경유 리터당 37.8원↑",
-      "url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965447",
-      "event_at": "2026-05-28T22:43:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층",
-          "농어민"
-        ],
-        "Industry": [
-          "농업",
-          "수산",
-          "축산"
-        ],
-        "Region": [
-          "경기"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "농어민 면세유 지원 확대…농기계용 경유 리터당 37.8원↑",
-      "program_key": "eligibility-rule:kr:정책브리핑:2026-05-28:농어민-면세유-지원-확대-농기계용-경유-리터당-37-8원",
-      "evidence_url": "https://www.korea.kr/news/policyNewsView.do?call_from=rsslink&newsId=148965447",
-      "evidence_url_present": true
     }
   ],
   "event_model_coverage": [
@@ -2963,11 +2670,11 @@
   "errors": [
     "정책브리핑: Source disabled (crawl health threshold reached)",
     "농림축산식품부: Source disabled (crawl health threshold reached)",
-    "[서울경제 경제] Request failed: 403 Client Error: Forbidden for url: https://www.sedaily.com/RSS/Economy/",
     "행정안전부: Source disabled (crawl health threshold reached)",
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
     "r/startups: Source disabled (crawl health threshold reached)",
-    "r/Entrepreneur: Source disabled (crawl health threshold reached)"
+    "r/Entrepreneur: Source disabled (crawl health threshold reached)",
+    "https://www.hankyung.com/article/202606108877i: summary is missing or not a string"
   ]
 }
