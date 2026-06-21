@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-06-20T07:53:44.227632+00:00",
+  "generated_at": "2026-06-21T08:37:45.108321+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -12,12 +12,12 @@
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 8,
-    "eligibility_rule_events": 32,
+    "application_deadline_events": 6,
+    "eligibility_rule_events": 31,
     "selection_result_events": 0,
-    "unique_program_key_count": 40,
-    "events_with_evidence_url": 40,
-    "collection_error_count": 10,
+    "unique_program_key_count": 37,
+    "events_with_evidence_url": 37,
+    "collection_error_count": 9,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -109,15 +109,15 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 1,
       "status": "fresh",
-      "article_count": 3,
+      "article_count": 2,
       "event_count": 1,
-      "latest_event_at": "2026-06-20T07:52:11.142035+00:00",
+      "latest_event_at": "2026-06-21T08:36:08.201606+00:00",
       "age_days": 0.0,
       "latest_title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
       "latest_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=54812&pNm=BOA0101&page=1",
       "latest_evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=54812&pNm=BOA0101&page=1",
       "latest_program_title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
-      "latest_program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-06-20:소상공인-재난지원금-환수-사전통지-반송에-따른-공시송달-공고",
+      "latest_program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-06-21:소상공인-재난지원금-환수-사전통지-반송에-따른-공시송달-공고",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
         "TargetGroup": [
@@ -139,8 +139,8 @@
       "event_model": "application_deadline",
       "freshness_sla_days": 1,
       "status": "fresh",
-      "article_count": 7,
-      "event_count": 5,
+      "article_count": 6,
+      "event_count": 4,
       "latest_event_at": "2026-07-06T00:00:00+00:00",
       "age_days": 0.0,
       "latest_title": "2026 민간 국제개발협력 지원사업 보조사업자 모집 공고(2차 재공고)",
@@ -200,7 +200,7 @@
       "article_count": 2,
       "event_count": 2,
       "latest_event_at": "2026-06-15T10:25:23.883430+00:00",
-      "age_days": 4.89,
+      "age_days": 5.93,
       "latest_title": "새글 복지 위기가구, 10년간 지원인원 88만 명으로 44배, 지원율 64%로 48%p 성장",
       "latest_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490829&mid=a10503010100&nPage=1",
       "latest_evidence_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490829&mid=a10503010100&nPage=1",
@@ -243,10 +243,10 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
       "status": "stale",
-      "article_count": 6,
-      "event_count": 5,
+      "article_count": 5,
+      "event_count": 4,
       "latest_event_at": "2026-06-15T10:25:45.408722+00:00",
-      "age_days": 4.89,
+      "age_days": 5.92,
       "latest_title": "지역기업 지원을 위해 6개 정책금융기관이 함께 현장으로 찾아갑니다.  - 「정책금융 동행」 대전에서 첫 개최. 금일 등록된 게시글",
       "latest_url": "https://www.fsc.go.kr/no010101/87092",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87092",
@@ -545,7 +545,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 7,
+      "article_count": 8,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -752,7 +752,7 @@
       "event_model": "eligibility_rule",
       "title": "2026년도 서울특별시 주택공급 정상화 사업비(이주비) 융자 지원 지원 계획 변경 공고(제2026-1878호)",
       "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460084",
-      "event_at": "2026-06-20T07:52:27.961880+00:00",
+      "event_at": "2026-06-21T08:36:25.144965+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -764,7 +764,7 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "2026년도 서울특별시 주택공급 정상화 사업비(이주비) 융자 지원 지원 계획 변경 공고(제2026-1878호)",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-06-20:2026년도-서울특별시-주택공급-정상화-사업비-이주비-융자-지원-지원-계획-변경-공고-제2026-1878호",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-06-21:2026년도-서울특별시-주택공급-정상화-사업비-이주비-융자-지원-지원-계획-변경-공고-제2026-1878호",
       "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460084",
       "evidence_url_present": true
     },
@@ -794,7 +794,7 @@
       "event_model": "eligibility_rule",
       "title": "2026 민간 국제개발협력 지원사업 보조사업자 모집 공고(2차 재공고)",
       "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460086",
-      "event_at": "2026-06-20T07:52:26.713926+00:00",
+      "event_at": "2026-06-21T08:36:23.667891+00:00",
       "application_deadline": "2026-07-06",
       "application_start_date": "2026-06-19",
       "eligibility_fields": {
@@ -806,7 +806,7 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "2026 민간 국제개발협력 지원사업 보조사업자 모집 공고(2차 재공고)",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-06-20:2026-민간-국제개발협력-지원사업-보조사업자-모집-공고-2차-재공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-06-21:2026-민간-국제개발협력-지원사업-보조사업자-모집-공고-2차-재공고",
       "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460086",
       "evidence_url_present": true
     },
@@ -839,7 +839,7 @@
       "event_model": "eligibility_rule",
       "title": "「2026 지역연계형 청년 창업 지원 사업」 넥스트로컬 8기 1단계(자원조사과정) 합격팀 공고",
       "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460096",
-      "event_at": "2026-06-20T07:52:23.621897+00:00",
+      "event_at": "2026-06-21T08:36:20.796040+00:00",
       "application_deadline": "2026-06-19",
       "application_start_date": "",
       "eligibility_fields": {
@@ -854,7 +854,7 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "「2026 지역연계형 청년 창업 지원 사업」 넥스트로컬 8기 1단계(자원조사과정) 합격팀 공고",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-06-20:2026-지역연계형-청년-창업-지원-사업-넥스트로컬-8기-1단계-자원조사과정-합격팀-공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-06-21:2026-지역연계형-청년-창업-지원-사업-넥스트로컬-8기-1단계-자원조사과정-합격팀-공고",
       "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460096",
       "evidence_url_present": true
     },
@@ -863,7 +863,7 @@
       "event_model": "eligibility_rule",
       "title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
       "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=54812&pNm=BOA0101&page=1",
-      "event_at": "2026-06-20T07:52:11.142035+00:00",
+      "event_at": "2026-06-21T08:36:08.201606+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -875,8 +875,29 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
-      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-06-20:소상공인-재난지원금-환수-사전통지-반송에-따른-공시송달-공고",
+      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-06-21:소상공인-재난지원금-환수-사전통지-반송에-따른-공시송달-공고",
       "evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=54812&pNm=BOA0101&page=1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "[단독] 금리 내렸지만…서민정책대출 되레 줄었다",
+      "url": "https://www.mk.co.kr/news/economy/12079370",
+      "event_at": "2026-06-20T23:32:09+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "[단독] 금리 내렸지만…서민정책대출 되레 줄었다",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-06-20:단독-금리-내렸지만-서민정책대출-되레-줄었다",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12079370",
       "evidence_url_present": true
     },
     {
@@ -1528,96 +1549,6 @@
       "evidence_url_present": true
     },
     {
-      "source": "금융위원회",
-      "event_model": "application_deadline",
-      "title": "< ｢개인 연체채권 관리 강화방안｣ 후속조치 ➊ >  세제혜택은 받고 빚 독촉은 계속하는 금융권의 기존 관행을 바로 잡겠습니다",
-      "url": "https://www.fsc.go.kr/no010101/87073",
-      "event_at": "2026-07-21T00:00:00+00:00",
-      "application_deadline": "2026-07-21",
-      "application_start_date": "2026-06-10",
-      "eligibility_fields": {
-        "Industry": [
-          "AI"
-        ],
-        "Region": [
-          "대전"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "< ｢개인 연체채권 관리 강화방안｣ 후속조치 ➊ >  세제혜택은 받고 빚 독촉은 계속하는 금융권의 기존 관행을 바로 잡겠습니다",
-      "program_key": "application-deadline:kr:금융위원회:2026-07-21:개인-연체채권-관리-강화방안-후속조치-➊-세제혜택은-받고-빚-독촉은-계속하는-금융권의-기존-관행을-바로-잡겠습니다",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87073",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "< ｢개인 연체채권 관리 강화방안｣ 후속조치 ➊ >  세제혜택은 받고 빚 독촉은 계속하는 금융권의 기존 관행을 바로 잡겠습니다",
-      "url": "https://www.fsc.go.kr/no010101/87073",
-      "event_at": "2026-06-14T08:18:11.647066+00:00",
-      "application_deadline": "2026-07-21",
-      "application_start_date": "2026-06-10",
-      "eligibility_fields": {
-        "Industry": [
-          "AI"
-        ],
-        "Region": [
-          "대전"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "< ｢개인 연체채권 관리 강화방안｣ 후속조치 ➊ >  세제혜택은 받고 빚 독촉은 계속하는 금융권의 기존 관행을 바로 잡겠습니다",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-06-14:개인-연체채권-관리-강화방안-후속조치-➊-세제혜택은-받고-빚-독촉은-계속하는-금융권의-기존-관행을-바로-잡겠습니다",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87073",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "2026년 「안심 고시원 지원사업」참여자 모집 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=459609",
-      "event_at": "2026-06-10T00:00:00+00:00",
-      "application_deadline": "2026-06-10",
-      "application_start_date": "2026-06-12",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 「안심 고시원 지원사업」참여자 모집 공고",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-06-10:2026년-안심-고시원-지원사업-참여자-모집-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=459609",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "eligibility_rule",
-      "title": "2026년 「안심 고시원 지원사업」참여자 모집 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=459609",
-      "event_at": "2026-06-14T08:17:36.180546+00:00",
-      "application_deadline": "2026-06-10",
-      "application_start_date": "2026-06-12",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 「안심 고시원 지원사업」참여자 모집 공고",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-06-14:2026년-안심-고시원-지원사업-참여자-모집-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=459609",
-      "evidence_url_present": true
-    },
-    {
       "source": "Awesome MCP Korea",
       "event_model": "eligibility_rule",
       "title": "Merge pull request #14 from darjeeling/copilot/add-documentation-for-…",
@@ -1749,7 +1680,6 @@
   "errors": [
     "정책브리핑: Source disabled (crawl health threshold reached)",
     "농림축산식품부: Source disabled (crawl health threshold reached)",
-    "[SBS 뉴스 정치] Request failed: 403 Client Error: Forbidden for url: https://news.sbs.co.kr/news/SectionRssFeed.do?sectionId=01&plink=RSSREADER",
     "행정안전부: Source disabled (crawl health threshold reached)",
     "보건복지부: Failed to collect browser content from 보건복지부: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027\", waiting until \"domcontentloaded\"\n",
     "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n",
