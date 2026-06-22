@@ -1,23 +1,23 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-06-21T08:37:45.108321+00:00",
+  "generated_at": "2026-06-22T09:52:56.708293+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
-    "fresh_sources": 2,
-    "stale_sources": 2,
+    "fresh_sources": 1,
+    "stale_sources": 3,
     "missing_sources": 1,
     "missing_event_sources": 0,
     "unknown_event_date_sources": 0,
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 6,
-    "eligibility_rule_events": 31,
+    "application_deadline_events": 8,
+    "eligibility_rule_events": 38,
     "selection_result_events": 0,
-    "unique_program_key_count": 37,
-    "events_with_evidence_url": 37,
-    "collection_error_count": 9,
+    "unique_program_key_count": 45,
+    "events_with_evidence_url": 46,
+    "collection_error_count": 10,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -108,11 +108,11 @@
       "tracked": true,
       "event_model": "eligibility_rule",
       "freshness_sla_days": 1,
-      "status": "fresh",
+      "status": "stale",
       "article_count": 2,
       "event_count": 1,
       "latest_event_at": "2026-06-21T08:36:08.201606+00:00",
-      "age_days": 0.0,
+      "age_days": 1.05,
       "latest_title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
       "latest_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=54812&pNm=BOA0101&page=1",
       "latest_evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=54812&pNm=BOA0101&page=1",
@@ -129,7 +129,9 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": []
+      "errors": [
+        "소상공인시장진흥공단: Failed to collect browser content from 소상공인시장진흥공단: Page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.semas.or.kr/web/board/webBoardList.kmdc?bCd=1\nCall log:\n  - navigating to \"https://www.semas.or.kr/web/board/webBoardList.kmdc?bCd=1\", waiting until \"domcontentloaded\"\n"
+      ]
     },
     {
       "source": "서울시 지원사업",
@@ -139,16 +141,16 @@
       "event_model": "application_deadline",
       "freshness_sla_days": 1,
       "status": "fresh",
-      "article_count": 6,
-      "event_count": 4,
-      "latest_event_at": "2026-07-06T00:00:00+00:00",
+      "article_count": 8,
+      "event_count": 6,
+      "latest_event_at": "2026-07-15T00:00:00+00:00",
       "age_days": 0.0,
-      "latest_title": "2026 민간 국제개발협력 지원사업 보조사업자 모집 공고(2차 재공고)",
-      "latest_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460086",
-      "latest_evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460086",
-      "latest_program_title": "2026 민간 국제개발협력 지원사업 보조사업자 모집 공고(2차 재공고)",
-      "latest_program_key": "application-deadline:kr:서울시-지원사업:2026-07-06:2026-민간-국제개발협력-지원사업-보조사업자-모집-공고-2차-재공고",
-      "latest_application_deadline": "2026-07-06",
+      "latest_title": "시립동대문노인종합복지관 직원(취사원) 채용 공고",
+      "latest_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460194",
+      "latest_evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460194",
+      "latest_program_title": "시립동대문노인종합복지관 직원(취사원) 채용 공고",
+      "latest_program_key": "application-deadline:kr:서울시-지원사업:2026-07-15:시립동대문노인종합복지관-직원-취사원-채용-공고",
+      "latest_application_deadline": "2026-07-15",
       "latest_eligibility_fields": {
         "Region": [
           "서울"
@@ -200,7 +202,7 @@
       "article_count": 2,
       "event_count": 2,
       "latest_event_at": "2026-06-15T10:25:23.883430+00:00",
-      "age_days": 5.93,
+      "age_days": 6.98,
       "latest_title": "새글 복지 위기가구, 10년간 지원인원 88만 명으로 44배, 지원율 64%로 48%p 성장",
       "latest_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490829&mid=a10503010100&nPage=1",
       "latest_evidence_url": "https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1490829&mid=a10503010100&nPage=1",
@@ -232,7 +234,7 @@
       "skip_reason": null,
       "reenable_gate": null,
       "errors": [
-        "보건복지부: Failed to collect browser content from 보건복지부: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027\", waiting until \"domcontentloaded\"\n"
+        "보건복지부: Source disabled (crawl health threshold reached)"
       ]
     },
     {
@@ -246,7 +248,7 @@
       "article_count": 5,
       "event_count": 4,
       "latest_event_at": "2026-06-15T10:25:45.408722+00:00",
-      "age_days": 5.92,
+      "age_days": 6.98,
       "latest_title": "지역기업 지원을 위해 6개 정책금융기관이 함께 현장으로 찾아갑니다.  - 「정책금융 동행」 대전에서 첫 개최. 금일 등록된 게시글",
       "latest_url": "https://www.fsc.go.kr/no010101/87092",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87092",
@@ -545,7 +547,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 8,
+      "article_count": 11,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -571,7 +573,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 8,
+      "article_count": 9,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -597,7 +599,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 3,
+      "article_count": 5,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -747,6 +749,214 @@
     }
   ],
   "events": [
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "시립동대문노인종합복지관 직원(취사원) 채용 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460194",
+      "event_at": "2026-07-15T00:00:00+00:00",
+      "application_deadline": "2026-07-15",
+      "application_start_date": "2026-06-22",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "시립동대문노인종합복지관 직원(취사원) 채용 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-07-15:시립동대문노인종합복지관-직원-취사원-채용-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460194",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "시립동대문노인종합복지관 직원(취사원) 채용 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460194",
+      "event_at": "2026-06-22T09:51:53.591957+00:00",
+      "application_deadline": "2026-07-15",
+      "application_start_date": "2026-06-22",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "시립동대문노인종합복지관 직원(취사원) 채용 공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-06-22:시립동대문노인종합복지관-직원-취사원-채용-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460194",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "물산업 혁신기술 R&D 지원사업 수시공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456750",
+      "event_at": "2026-06-30T00:00:00+00:00",
+      "application_deadline": "2026-06-30",
+      "application_start_date": "2026-06-23",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "물산업 혁신기술 R&D 지원사업 수시공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-06-30:물산업-혁신기술-r-d-지원사업-수시공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456750",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "물산업 혁신기술 R&D 지원사업 수시공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456750",
+      "event_at": "2026-06-22T09:51:49.548145+00:00",
+      "application_deadline": "2026-06-30",
+      "application_start_date": "2026-06-23",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "물산업 혁신기술 R&D 지원사업 수시공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-06-22:물산업-혁신기술-r-d-지원사업-수시공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456750",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "청년미래적금",
+      "url": "https://www.mk.co.kr/news/economy/12080253",
+      "event_at": "2026-06-22T00:18:53+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "청년미래적금",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-06-22:청년미래적금",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12080253",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "청년미래적금",
+      "url": "https://www.mk.co.kr/news/economy/12080252",
+      "event_at": "2026-06-22T00:18:31+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "청년미래적금",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-06-22:청년미래적금",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12080252",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "중소기업 대출 연체율 고공행진···“양극화 고착화 우려”",
+      "url": "https://www.khan.co.kr/article/202606221738011",
+      "event_at": "2026-06-21T23:38:01+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ],
+        "Region": [
+          "서울",
+          "경남"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "중소기업 대출 연체율 고공행진···“양극화 고착화 우려”",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-06-21:중소기업-대출-연체율-고공행진-양극화-고착화-우려",
+      "evidence_url": "https://www.khan.co.kr/article/202606221738011",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "고금리 허덕이는 中企…은행 연체율·파산신청 건수 역대 최고",
+      "url": "https://www.donga.com/news/Economy/article/all/20260622/134157021/1",
+      "event_at": "2026-06-21T23:01:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "고금리 허덕이는 中企…은행 연체율·파산신청 건수 역대 최고",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-06-21:고금리-허덕이는-中企-은행-연체율-파산신청-건수-역대-최고",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260622/134157021/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "“서울 떠나는 청년은 이자 싸게 준다”…저금리 신용대출 쏟아내는 은행권",
+      "url": "https://www.mk.co.kr/news/economy/12079614",
+      "event_at": "2026-06-21T15:33:17+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“서울 떠나는 청년은 이자 싸게 준다”…저금리 신용대출 쏟아내는 은행권",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-06-21:서울-떠나는-청년은-이자-싸게-준다-저금리-신용대출-쏟아내는-은행권",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12079614",
+      "evidence_url_present": true
+    },
     {
       "source": "서울시 지원사업",
       "event_model": "eligibility_rule",
@@ -1465,6 +1675,69 @@
       "evidence_url_present": true
     },
     {
+      "source": "Awesome MCP Korea",
+      "event_model": "eligibility_rule",
+      "title": "Merge pull request #14 from darjeeling/copilot/add-documentation-for-…",
+      "url": "https://github.com/darjeeling/awesome-mcp-korea/commit/9eb82627ac5dbe22787f8f8dfcbc899ed8f85cca",
+      "event_at": "2026-03-29T22:08:41+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "Merge pull request #14 from darjeeling/copilot/add-documentation-for-…",
+      "program_key": "eligibility-rule:kr:awesome-mcp-korea:2026-03-29:merge-pull-request-14-from-darjeeling-copilot-add-documentation-for",
+      "evidence_url": "https://github.com/darjeeling/awesome-mcp-korea/commit/9eb82627ac5dbe22787f8f8dfcbc899ed8f85cca",
+      "evidence_url_present": true
+    },
+    {
+      "source": "Awesome MCP Korea",
+      "event_model": "eligibility_rule",
+      "title": "Add kr-pc-deals-mcp to Commerce & Retail section",
+      "url": "https://github.com/darjeeling/awesome-mcp-korea/commit/5f09a8e425d79175f5dc1505e6ec267f43bc3360",
+      "event_at": "2026-03-29T22:06:25+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "Add kr-pc-deals-mcp to Commerce & Retail section",
+      "program_key": "eligibility-rule:kr:awesome-mcp-korea:2026-03-29:add-kr-pc-deals-mcp-to-commerce-retail-section",
+      "evidence_url": "https://github.com/darjeeling/awesome-mcp-korea/commit/5f09a8e425d79175f5dc1505e6ec267f43bc3360",
+      "evidence_url_present": true
+    },
+    {
+      "source": "Awesome MCP Korea",
+      "event_model": "eligibility_rule",
+      "title": "Add dahlia/ko-stdict-mcp to Korean NLP & Language section",
+      "url": "https://github.com/darjeeling/awesome-mcp-korea/commit/150699ad0003abdb5473a76a516acdcbb6e7b642",
+      "event_at": "2026-03-29T21:14:58+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "ICT"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "Add dahlia/ko-stdict-mcp to Korean NLP & Language section",
+      "program_key": "eligibility-rule:kr:awesome-mcp-korea:2026-03-29:add-dahlia-ko-stdict-mcp-to-korean-nlp-language-section",
+      "evidence_url": "https://github.com/darjeeling/awesome-mcp-korea/commit/150699ad0003abdb5473a76a516acdcbb6e7b642",
+      "evidence_url_present": true
+    },
+    {
       "source": "매일경제 경제정책",
       "event_model": "eligibility_rule",
       "title": "농협, 취약층 빚 8876억 소각·감면 …\"포용금융 시동\"",
@@ -1547,69 +1820,6 @@
       "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-06-14:은퇴하고-시작한-장사-이자-내기도-힘드네-빚-못갚는-사장님-60대만-늘었다",
       "evidence_url": "https://www.mk.co.kr/news/economy/12074331",
       "evidence_url_present": true
-    },
-    {
-      "source": "Awesome MCP Korea",
-      "event_model": "eligibility_rule",
-      "title": "Merge pull request #14 from darjeeling/copilot/add-documentation-for-…",
-      "url": "https://github.com/darjeeling/awesome-mcp-korea/commit/9eb82627ac5dbe22787f8f8dfcbc899ed8f85cca",
-      "event_at": "2026-03-29T22:08:41+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "AI"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "Merge pull request #14 from darjeeling/copilot/add-documentation-for-…",
-      "program_key": "eligibility-rule:kr:awesome-mcp-korea:2026-03-29:merge-pull-request-14-from-darjeeling-copilot-add-documentation-for",
-      "evidence_url": "https://github.com/darjeeling/awesome-mcp-korea/commit/9eb82627ac5dbe22787f8f8dfcbc899ed8f85cca",
-      "evidence_url_present": true
-    },
-    {
-      "source": "Awesome MCP Korea",
-      "event_model": "eligibility_rule",
-      "title": "Add kr-pc-deals-mcp to Commerce & Retail section",
-      "url": "https://github.com/darjeeling/awesome-mcp-korea/commit/5f09a8e425d79175f5dc1505e6ec267f43bc3360",
-      "event_at": "2026-03-29T22:06:25+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "AI"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "Add kr-pc-deals-mcp to Commerce & Retail section",
-      "program_key": "eligibility-rule:kr:awesome-mcp-korea:2026-03-29:add-kr-pc-deals-mcp-to-commerce-retail-section",
-      "evidence_url": "https://github.com/darjeeling/awesome-mcp-korea/commit/5f09a8e425d79175f5dc1505e6ec267f43bc3360",
-      "evidence_url_present": true
-    },
-    {
-      "source": "Awesome MCP Korea",
-      "event_model": "eligibility_rule",
-      "title": "Add dahlia/ko-stdict-mcp to Korean NLP & Language section",
-      "url": "https://github.com/darjeeling/awesome-mcp-korea/commit/150699ad0003abdb5473a76a516acdcbb6e7b642",
-      "event_at": "2026-03-29T21:14:58+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "ICT"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "Add dahlia/ko-stdict-mcp to Korean NLP & Language section",
-      "program_key": "eligibility-rule:kr:awesome-mcp-korea:2026-03-29:add-dahlia-ko-stdict-mcp-to-korean-nlp-language-section",
-      "evidence_url": "https://github.com/darjeeling/awesome-mcp-korea/commit/150699ad0003abdb5473a76a516acdcbb6e7b642",
-      "evidence_url_present": true
     }
   ],
   "event_model_coverage": [
@@ -1680,8 +1890,9 @@
   "errors": [
     "정책브리핑: Source disabled (crawl health threshold reached)",
     "농림축산식품부: Source disabled (crawl health threshold reached)",
+    "소상공인시장진흥공단: Failed to collect browser content from 소상공인시장진흥공단: Page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.semas.or.kr/web/board/webBoardList.kmdc?bCd=1\nCall log:\n  - navigating to \"https://www.semas.or.kr/web/board/webBoardList.kmdc?bCd=1\", waiting until \"domcontentloaded\"\n",
     "행정안전부: Source disabled (crawl health threshold reached)",
-    "보건복지부: Failed to collect browser content from 보건복지부: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027\", waiting until \"domcontentloaded\"\n",
+    "보건복지부: Source disabled (crawl health threshold reached)",
     "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n",
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
