@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-06-26T07:56:11.196022+00:00",
+  "generated_at": "2026-06-27T06:55:00.547892+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -13,11 +13,11 @@
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
     "application_deadline_events": 12,
-    "eligibility_rule_events": 42,
+    "eligibility_rule_events": 43,
     "selection_result_events": 1,
-    "unique_program_key_count": 54,
-    "events_with_evidence_url": 55,
-    "collection_error_count": 8,
+    "unique_program_key_count": 55,
+    "events_with_evidence_url": 56,
+    "collection_error_count": 9,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -111,13 +111,13 @@
       "status": "fresh",
       "article_count": 5,
       "event_count": 3,
-      "latest_event_at": "2026-06-26T07:55:23.114754+00:00",
+      "latest_event_at": "2026-06-27T06:53:47.742616+00:00",
       "age_days": 0.0,
       "latest_title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
       "latest_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55052&pNm=BOA0101&page=1",
       "latest_evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55052&pNm=BOA0101&page=1",
       "latest_program_title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
-      "latest_program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-06-26:소상공인-재난지원금-환수-사전통지-반송에-따른-공시송달-공고",
+      "latest_program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-06-27:소상공인-재난지원금-환수-사전통지-반송에-따른-공시송달-공고",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
         "TargetGroup": [
@@ -228,7 +228,7 @@
       "article_count": 7,
       "event_count": 6,
       "latest_event_at": "2026-06-26T07:56:03.540497+00:00",
-      "age_days": 0.0,
+      "age_days": 0.96,
       "latest_title": "한미전략투자공사 및 정책금융기관-조선3사간한미 조선협력투자 업무협약 체결",
       "latest_url": "https://www.fsc.go.kr/no010101/87187",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87187",
@@ -245,7 +245,9 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": []
+      "errors": [
+        "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n"
+      ]
     },
     {
       "source": "농림축산식품부",
@@ -525,7 +527,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 9,
+      "article_count": 12,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -551,7 +553,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 6,
+      "article_count": 5,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -707,7 +709,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 12,
+      "article_count": 10,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -727,6 +729,134 @@
     }
   ],
   "events": [
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "손목닥터9988 혈당관리 지원사업  협력 민간 사업자 모집 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460482",
+      "event_at": "2026-07-13T00:00:00+00:00",
+      "application_deadline": "2026-07-13",
+      "application_start_date": "2026-06-26",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "손목닥터9988 혈당관리 지원사업  협력 민간 사업자 모집 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-07-13:손목닥터9988-혈당관리-지원사업-협력-민간-사업자-모집-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460482",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "손목닥터9988 혈당관리 지원사업  협력 민간 사업자 모집 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460482",
+      "event_at": "2026-06-27T06:54:00.123929+00:00",
+      "application_deadline": "2026-07-13",
+      "application_start_date": "2026-06-26",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "손목닥터9988 혈당관리 지원사업  협력 민간 사업자 모집 공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-06-27:손목닥터9988-혈당관리-지원사업-협력-민간-사업자-모집-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460482",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "반환기한이 경과된 세입세출외현금 공시송달 공고(강원도 홍천군 서면공고 제2026-21호)",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460484",
+      "event_at": "2019-12-31T00:00:00+00:00",
+      "application_deadline": "2019-12-31",
+      "application_start_date": "2026-06-26",
+      "eligibility_fields": {
+        "Region": [
+          "서울",
+          "강원"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "반환기한이 경과된 세입세출외현금 공시송달 공고(강원도 홍천군 서면공고 제2026-21호)",
+      "program_key": "application-deadline:kr:서울시-지원사업:2019-12-31:반환기한이-경과된-세입세출외현금-공시송달-공고-강원도-홍천군-서면공고-제2026-21호",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460484",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "반환기한이 경과된 세입세출외현금 공시송달 공고(강원도 홍천군 서면공고 제2026-21호)",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460484",
+      "event_at": "2026-06-27T06:53:58.714554+00:00",
+      "application_deadline": "2019-12-31",
+      "application_start_date": "2026-06-26",
+      "eligibility_fields": {
+        "Region": [
+          "서울",
+          "강원"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "반환기한이 경과된 세입세출외현금 공시송달 공고(강원도 홍천군 서면공고 제2026-21호)",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-06-27:반환기한이-경과된-세입세출외현금-공시송달-공고-강원도-홍천군-서면공고-제2026-21호",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460484",
+      "evidence_url_present": true
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "event_model": "eligibility_rule",
+      "title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55052&pNm=BOA0101&page=1",
+      "event_at": "2026-06-27T06:53:47.742616+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
+      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-06-27:소상공인-재난지원금-환수-사전통지-반송에-따른-공시송달-공고",
+      "evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55052&pNm=BOA0101&page=1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "event_model": "eligibility_rule",
+      "title": "「소상공인 재난지원금」환수 결정통지 반송에 따른 공시송달 공고",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55053&pNm=BOA0101&page=1",
+      "event_at": "2026-06-27T06:53:47.742605+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "「소상공인 재난지원금」환수 결정통지 반송에 따른 공시송달 공고",
+      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-06-27:소상공인-재난지원금-환수-결정통지-반송에-따른-공시송달-공고",
+      "evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55053&pNm=BOA0101&page=1",
+      "evidence_url_present": true
+    },
     {
       "source": "금융위원회",
       "event_model": "eligibility_rule",
@@ -889,131 +1019,53 @@
       "evidence_url_present": true
     },
     {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "손목닥터9988 혈당관리 지원사업  협력 민간 사업자 모집 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460482",
-      "event_at": "2026-07-13T00:00:00+00:00",
-      "application_deadline": "2026-07-13",
-      "application_start_date": "2026-06-26",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "손목닥터9988 혈당관리 지원사업  협력 민간 사업자 모집 공고",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-07-13:손목닥터9988-혈당관리-지원사업-협력-민간-사업자-모집-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460482",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
+      "source": "매일경제 경제정책",
       "event_model": "eligibility_rule",
-      "title": "손목닥터9988 혈당관리 지원사업  협력 민간 사업자 모집 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460482",
-      "event_at": "2026-06-26T07:55:37.593410+00:00",
-      "application_deadline": "2026-07-13",
-      "application_start_date": "2026-06-26",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "손목닥터9988 혈당관리 지원사업  협력 민간 사업자 모집 공고",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-06-26:손목닥터9988-혈당관리-지원사업-협력-민간-사업자-모집-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460482",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "반환기한이 경과된 세입세출외현금 공시송달 공고(강원도 홍천군 서면공고 제2026-21호)",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460484",
-      "event_at": "2019-12-31T00:00:00+00:00",
-      "application_deadline": "2019-12-31",
-      "application_start_date": "2026-06-26",
-      "eligibility_fields": {
-        "Region": [
-          "서울",
-          "강원"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "반환기한이 경과된 세입세출외현금 공시송달 공고(강원도 홍천군 서면공고 제2026-21호)",
-      "program_key": "application-deadline:kr:서울시-지원사업:2019-12-31:반환기한이-경과된-세입세출외현금-공시송달-공고-강원도-홍천군-서면공고-제2026-21호",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460484",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "eligibility_rule",
-      "title": "반환기한이 경과된 세입세출외현금 공시송달 공고(강원도 홍천군 서면공고 제2026-21호)",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460484",
-      "event_at": "2026-06-26T07:55:35.970621+00:00",
-      "application_deadline": "2019-12-31",
-      "application_start_date": "2026-06-26",
-      "eligibility_fields": {
-        "Region": [
-          "서울",
-          "강원"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "반환기한이 경과된 세입세출외현금 공시송달 공고(강원도 홍천군 서면공고 제2026-21호)",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-06-26:반환기한이-경과된-세입세출외현금-공시송달-공고-강원도-홍천군-서면공고-제2026-21호",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460484",
-      "evidence_url_present": true
-    },
-    {
-      "source": "소상공인시장진흥공단",
-      "event_model": "eligibility_rule",
-      "title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
-      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55052&pNm=BOA0101&page=1",
-      "event_at": "2026-06-26T07:55:23.114754+00:00",
+      "title": "대기업 부실비율 확 줄었지만…중소기업·자영업자는 ‘고사 직전’",
+      "url": "https://www.mk.co.kr/news/economy/12084459",
+      "event_at": "2026-06-26T04:23:12+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
         "TargetGroup": [
-          "소상공인"
+          "중소기업",
+          "자영업자"
+        ],
+        "Region": [
+          "경기"
         ]
       },
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
-      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-06-26:소상공인-재난지원금-환수-사전통지-반송에-따른-공시송달-공고",
-      "evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55052&pNm=BOA0101&page=1",
+      "program_title": "대기업 부실비율 확 줄었지만…중소기업·자영업자는 ‘고사 직전’",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-06-26:대기업-부실비율-확-줄었지만-중소기업-자영업자는-고사-직전",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12084459",
       "evidence_url_present": true
     },
     {
-      "source": "소상공인시장진흥공단",
+      "source": "매일경제 경제정책",
       "event_model": "eligibility_rule",
-      "title": "「소상공인 재난지원금」환수 결정통지 반송에 따른 공시송달 공고",
-      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55053&pNm=BOA0101&page=1",
-      "event_at": "2026-06-26T07:55:23.114744+00:00",
+      "title": "대기업서 중기·자영업자로… 5년새 바뀐 국책銀 부실 주범",
+      "url": "https://www.mk.co.kr/news/economy/12084298",
+      "event_at": "2026-06-25T23:44:53+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
         "TargetGroup": [
-          "소상공인"
+          "중소기업",
+          "자영업자"
+        ],
+        "Region": [
+          "경기"
         ]
       },
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "「소상공인 재난지원금」환수 결정통지 반송에 따른 공시송달 공고",
-      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-06-26:소상공인-재난지원금-환수-결정통지-반송에-따른-공시송달-공고",
-      "evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55053&pNm=BOA0101&page=1",
+      "program_title": "대기업서 중기·자영업자로… 5년새 바뀐 국책銀 부실 주범",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-06-25:대기업서-중기-자영업자로-5년새-바뀐-국책銀-부실-주범",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12084298",
       "evidence_url_present": true
     },
     {
@@ -1953,30 +2005,6 @@
       "program_key": "eligibility-rule:kr:동아일보-경제:2026-06-19:정부-지역신보-2조2000억-부실채권-정리-나서",
       "evidence_url": "https://www.donga.com/news/Economy/article/all/20260619/134147704/2",
       "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "‘재정 빨간불’ 지역신보, 2.2조 부실채권 향후 5년간 정리한다",
-      "url": "https://www.donga.com/news/Economy/article/all/20260619/134143152/1",
-      "event_at": "2026-06-18T20:32:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인"
-        ],
-        "BusinessStage": [
-          "벤처기업"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "‘재정 빨간불’ 지역신보, 2.2조 부실채권 향후 5년간 정리한다",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-06-18:재정-빨간불-지역신보-2-2조-부실채권-향후-5년간-정리한다",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260619/134143152/1",
-      "evidence_url_present": true
     }
   ],
   "event_model_coverage": [
@@ -2049,6 +2077,7 @@
     "농림축산식품부: Source disabled (crawl health threshold reached)",
     "행정안전부: Source disabled (crawl health threshold reached)",
     "보건복지부: Source disabled (crawl health threshold reached)",
+    "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n",
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
     "r/startups: Source disabled (crawl health threshold reached)",
