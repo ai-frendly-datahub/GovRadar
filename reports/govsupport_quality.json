@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-06-27T06:55:00.547892+00:00",
+  "generated_at": "2026-06-28T07:54:06.924189+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -12,12 +12,12 @@
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 12,
-    "eligibility_rule_events": 43,
+    "application_deadline_events": 14,
+    "eligibility_rule_events": 44,
     "selection_result_events": 1,
-    "unique_program_key_count": 55,
-    "events_with_evidence_url": 56,
-    "collection_error_count": 9,
+    "unique_program_key_count": 58,
+    "events_with_evidence_url": 59,
+    "collection_error_count": 11,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -111,13 +111,13 @@
       "status": "fresh",
       "article_count": 5,
       "event_count": 3,
-      "latest_event_at": "2026-06-27T06:53:47.742616+00:00",
+      "latest_event_at": "2026-06-28T07:52:51.890309+00:00",
       "age_days": 0.0,
       "latest_title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
       "latest_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55052&pNm=BOA0101&page=1",
       "latest_evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55052&pNm=BOA0101&page=1",
       "latest_program_title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
-      "latest_program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-06-27:소상공인-재난지원금-환수-사전통지-반송에-따른-공시송달-공고",
+      "latest_program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-06-28:소상공인-재난지원금-환수-사전통지-반송에-따른-공시송달-공고",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
         "TargetGroup": [
@@ -159,7 +159,9 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": []
+      "errors": [
+        "서울시 지원사업: Failed to collect browser content from 서울시 지원사업: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.seoul.go.kr/news/news_notice.do\", waiting until \"domcontentloaded\"\n"
+      ]
     },
     {
       "source": "행정안전부",
@@ -228,7 +230,7 @@
       "article_count": 7,
       "event_count": 6,
       "latest_event_at": "2026-06-26T07:56:03.540497+00:00",
-      "age_days": 0.96,
+      "age_days": 2.0,
       "latest_title": "한미전략투자공사 및 정책금융기관-조선3사간한미 조선협력투자 업무협약 체결",
       "latest_url": "https://www.fsc.go.kr/no010101/87187",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87187",
@@ -553,7 +555,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 5,
+      "article_count": 6,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -579,7 +581,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 9,
+      "article_count": 12,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -709,7 +711,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 10,
+      "article_count": 4,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -729,6 +731,211 @@
     }
   ],
   "events": [
+    {
+      "source": "소상공인시장진흥공단",
+      "event_model": "eligibility_rule",
+      "title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55052&pNm=BOA0101&page=1",
+      "event_at": "2026-06-28T07:52:51.890309+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
+      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-06-28:소상공인-재난지원금-환수-사전통지-반송에-따른-공시송달-공고",
+      "evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55052&pNm=BOA0101&page=1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "event_model": "eligibility_rule",
+      "title": "「소상공인 재난지원금」환수 결정통지 반송에 따른 공시송달 공고",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55053&pNm=BOA0101&page=1",
+      "event_at": "2026-06-28T07:52:51.890296+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "「소상공인 재난지원금」환수 결정통지 반송에 따른 공시송달 공고",
+      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-06-28:소상공인-재난지원금-환수-결정통지-반송에-따른-공시송달-공고",
+      "evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55053&pNm=BOA0101&page=1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "고유가 지원금 효과로 골목상권 매출 10.6% 증가…소매업이 견인",
+      "url": "https://www.donga.com/news/Economy/article/all/20260628/134195271/1",
+      "event_at": "2026-06-27T21:27:48+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "BusinessStage": [
+          "벤처기업"
+        ],
+        "Region": [
+          "서울",
+          "경기",
+          "인천",
+          "부산",
+          "대구",
+          "전남",
+          "경남",
+          "제주"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "고유가 지원금 효과로 골목상권 매출 10.6% 증가…소매업이 견인",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-06-27:고유가-지원금-효과로-골목상권-매출-10-6-증가-소매업이-견인",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260628/134195271/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "application_deadline",
+      "title": "고유가 지원금, 7월 3일까지 꼭 신청하세요…지급률 97%",
+      "url": "https://www.donga.com/news/Economy/article/all/20260628/134194762/1",
+      "event_at": "2026-07-17T00:00:00+00:00",
+      "application_deadline": "2026-07-17",
+      "application_start_date": "2026-06-28",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "고유가 지원금, 7월 3일까지 꼭 신청하세요…지급률 97%",
+      "program_key": "application-deadline:kr:동아일보-경제:2026-07-17:고유가-지원금-7월-3일까지-꼭-신청하세요-지급률-97",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260628/134194762/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "고유가 지원금, 7월 3일까지 꼭 신청하세요…지급률 97%",
+      "url": "https://www.donga.com/news/Economy/article/all/20260628/134194762/1",
+      "event_at": "2026-06-27T18:37:23+00:00",
+      "application_deadline": "2026-07-17",
+      "application_start_date": "2026-06-28",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "고유가 지원금, 7월 3일까지 꼭 신청하세요…지급률 97%",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-06-27:고유가-지원금-7월-3일까지-꼭-신청하세요-지급률-97",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260628/134194762/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "고유가지원금으로 소상공인 매출 1년 전보다 10.6% 늘어",
+      "url": "https://www.khan.co.kr/article/202606281200011",
+      "event_at": "2026-06-27T18:00:01+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인"
+        ],
+        "BusinessStage": [
+          "벤처기업"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "고유가지원금으로 소상공인 매출 1년 전보다 10.6% 늘어",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-06-27:고유가지원금으로-소상공인-매출-1년-전보다-10-6-늘어",
+      "evidence_url": "https://www.khan.co.kr/article/202606281200011",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "application_deadline",
+      "title": "“고유가 지원금, 7월3일까지 신청하세요”···지급률 97.4% 달성",
+      "url": "https://www.khan.co.kr/article/202606281200001",
+      "event_at": "2026-07-03T00:00:00+00:00",
+      "application_deadline": "2026-07-03",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“고유가 지원금, 7월3일까지 신청하세요”···지급률 97.4% 달성",
+      "program_key": "application-deadline:kr:경향신문-경제:2026-07-03:고유가-지원금-7월3일까지-신청하세요-지급률-97-4-달성",
+      "evidence_url": "https://www.khan.co.kr/article/202606281200001",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "“고유가 지원금, 7월3일까지 신청하세요”···지급률 97.4% 달성",
+      "url": "https://www.khan.co.kr/article/202606281200001",
+      "event_at": "2026-06-27T18:00:00+00:00",
+      "application_deadline": "2026-07-03",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“고유가 지원금, 7월3일까지 신청하세요”···지급률 97.4% 달성",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-06-27:고유가-지원금-7월3일까지-신청하세요-지급률-97-4-달성",
+      "evidence_url": "https://www.khan.co.kr/article/202606281200001",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "‘수백조’ 반도체 투자 임박, ‘공장만 짓는 국가’ 안 되려면···미·중·일·대만은?",
+      "url": "https://www.khan.co.kr/article/202606281129011",
+      "event_at": "2026-06-27T17:29:01+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "‘수백조’ 반도체 투자 임박, ‘공장만 짓는 국가’ 안 되려면···미·중·일·대만은?",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-06-27:수백조-반도체-투자-임박-공장만-짓는-국가-안-되려면-미-중-일-대만은",
+      "evidence_url": "https://www.khan.co.kr/article/202606281129011",
+      "evidence_url_present": true
+    },
     {
       "source": "서울시 지원사업",
       "event_model": "application_deadline",
@@ -813,48 +1020,6 @@
       "program_title": "반환기한이 경과된 세입세출외현금 공시송달 공고(강원도 홍천군 서면공고 제2026-21호)",
       "program_key": "eligibility-rule:kr:서울시-지원사업:2026-06-27:반환기한이-경과된-세입세출외현금-공시송달-공고-강원도-홍천군-서면공고-제2026-21호",
       "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460484",
-      "evidence_url_present": true
-    },
-    {
-      "source": "소상공인시장진흥공단",
-      "event_model": "eligibility_rule",
-      "title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
-      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55052&pNm=BOA0101&page=1",
-      "event_at": "2026-06-27T06:53:47.742616+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
-      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-06-27:소상공인-재난지원금-환수-사전통지-반송에-따른-공시송달-공고",
-      "evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55052&pNm=BOA0101&page=1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "소상공인시장진흥공단",
-      "event_model": "eligibility_rule",
-      "title": "「소상공인 재난지원금」환수 결정통지 반송에 따른 공시송달 공고",
-      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55053&pNm=BOA0101&page=1",
-      "event_at": "2026-06-27T06:53:47.742605+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "「소상공인 재난지원금」환수 결정통지 반송에 따른 공시송달 공고",
-      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-06-27:소상공인-재난지원금-환수-결정통지-반송에-따른-공시송달-공고",
-      "evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55053&pNm=BOA0101&page=1",
       "evidence_url_present": true
     },
     {
@@ -1917,94 +2082,6 @@
       "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-06-20:단독-금리-내렸지만-서민정책대출-되레-줄었다",
       "evidence_url": "https://www.mk.co.kr/news/economy/12079370",
       "evidence_url_present": true
-    },
-    {
-      "source": "Awesome MCP Korea",
-      "event_model": "eligibility_rule",
-      "title": "Merge pull request #14 from darjeeling/copilot/add-documentation-for-…",
-      "url": "https://github.com/darjeeling/awesome-mcp-korea/commit/9eb82627ac5dbe22787f8f8dfcbc899ed8f85cca",
-      "event_at": "2026-03-29T22:08:41+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "AI"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "Merge pull request #14 from darjeeling/copilot/add-documentation-for-…",
-      "program_key": "eligibility-rule:kr:awesome-mcp-korea:2026-03-29:merge-pull-request-14-from-darjeeling-copilot-add-documentation-for",
-      "evidence_url": "https://github.com/darjeeling/awesome-mcp-korea/commit/9eb82627ac5dbe22787f8f8dfcbc899ed8f85cca",
-      "evidence_url_present": true
-    },
-    {
-      "source": "Awesome MCP Korea",
-      "event_model": "eligibility_rule",
-      "title": "Add kr-pc-deals-mcp to Commerce & Retail section",
-      "url": "https://github.com/darjeeling/awesome-mcp-korea/commit/5f09a8e425d79175f5dc1505e6ec267f43bc3360",
-      "event_at": "2026-03-29T22:06:25+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "AI"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "Add kr-pc-deals-mcp to Commerce & Retail section",
-      "program_key": "eligibility-rule:kr:awesome-mcp-korea:2026-03-29:add-kr-pc-deals-mcp-to-commerce-retail-section",
-      "evidence_url": "https://github.com/darjeeling/awesome-mcp-korea/commit/5f09a8e425d79175f5dc1505e6ec267f43bc3360",
-      "evidence_url_present": true
-    },
-    {
-      "source": "Awesome MCP Korea",
-      "event_model": "eligibility_rule",
-      "title": "Add dahlia/ko-stdict-mcp to Korean NLP & Language section",
-      "url": "https://github.com/darjeeling/awesome-mcp-korea/commit/150699ad0003abdb5473a76a516acdcbb6e7b642",
-      "event_at": "2026-03-29T21:14:58+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "ICT"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "Add dahlia/ko-stdict-mcp to Korean NLP & Language section",
-      "program_key": "eligibility-rule:kr:awesome-mcp-korea:2026-03-29:add-dahlia-ko-stdict-mcp-to-korean-nlp-language-section",
-      "evidence_url": "https://github.com/darjeeling/awesome-mcp-korea/commit/150699ad0003abdb5473a76a516acdcbb6e7b642",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "정부, 지역신보 2조2000억 부실채권 정리 나서",
-      "url": "https://www.donga.com/news/Economy/article/all/20260619/134147704/2",
-      "event_at": "2026-06-19T07:40:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인",
-          "자영업자"
-        ],
-        "BusinessStage": [
-          "벤처기업"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "정부, 지역신보 2조2000억 부실채권 정리 나서",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-06-19:정부-지역신보-2조2000억-부실채권-정리-나서",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260619/134147704/2",
-      "evidence_url_present": true
     }
   ],
   "event_model_coverage": [
@@ -2075,12 +2152,14 @@
   "errors": [
     "정책브리핑: Source disabled (crawl health threshold reached)",
     "농림축산식품부: Source disabled (crawl health threshold reached)",
+    "서울시 지원사업: Failed to collect browser content from 서울시 지원사업: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.seoul.go.kr/news/news_notice.do\", waiting until \"domcontentloaded\"\n",
     "행정안전부: Source disabled (crawl health threshold reached)",
     "보건복지부: Source disabled (crawl health threshold reached)",
     "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n",
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
     "r/startups: Source disabled (crawl health threshold reached)",
-    "r/Entrepreneur: Source disabled (crawl health threshold reached)"
+    "r/Entrepreneur: Source disabled (crawl health threshold reached)",
+    "https://www.sedaily.com/article/20060729: summary is missing or not a string"
   ]
 }
