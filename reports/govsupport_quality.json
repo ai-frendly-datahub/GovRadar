@@ -1,23 +1,23 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-06-28T07:54:06.924189+00:00",
+  "generated_at": "2026-06-29T09:01:44.338810+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
-    "fresh_sources": 3,
-    "stale_sources": 0,
+    "fresh_sources": 2,
+    "stale_sources": 1,
     "missing_sources": 2,
     "missing_event_sources": 0,
     "unknown_event_date_sources": 0,
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 14,
-    "eligibility_rule_events": 44,
+    "application_deadline_events": 13,
+    "eligibility_rule_events": 45,
     "selection_result_events": 1,
     "unique_program_key_count": 58,
     "events_with_evidence_url": 59,
-    "collection_error_count": 11,
+    "collection_error_count": 9,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -111,13 +111,13 @@
       "status": "fresh",
       "article_count": 5,
       "event_count": 3,
-      "latest_event_at": "2026-06-28T07:52:51.890309+00:00",
+      "latest_event_at": "2026-06-29T09:00:29.443855+00:00",
       "age_days": 0.0,
       "latest_title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
       "latest_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55052&pNm=BOA0101&page=1",
       "latest_evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55052&pNm=BOA0101&page=1",
       "latest_program_title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
-      "latest_program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-06-28:소상공인-재난지원금-환수-사전통지-반송에-따른-공시송달-공고",
+      "latest_program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-06-29:소상공인-재난지원금-환수-사전통지-반송에-따른-공시송달-공고",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
         "TargetGroup": [
@@ -139,8 +139,8 @@
       "event_model": "application_deadline",
       "freshness_sla_days": 1,
       "status": "fresh",
-      "article_count": 11,
-      "event_count": 8,
+      "article_count": 8,
+      "event_count": 7,
       "latest_event_at": "2026-07-15T00:00:00+00:00",
       "age_days": 0.0,
       "latest_title": "시립동대문노인종합복지관 직원(취사원) 채용 공고",
@@ -159,9 +159,7 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": [
-        "서울시 지원사업: Failed to collect browser content from 서울시 지원사업: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.seoul.go.kr/news/news_notice.do\", waiting until \"domcontentloaded\"\n"
-      ]
+      "errors": []
     },
     {
       "source": "행정안전부",
@@ -226,11 +224,11 @@
       "tracked": true,
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
-      "status": "fresh",
+      "status": "stale",
       "article_count": 7,
       "event_count": 6,
       "latest_event_at": "2026-06-26T07:56:03.540497+00:00",
-      "age_days": 2.0,
+      "age_days": 3.05,
       "latest_title": "한미전략투자공사 및 정책금융기관-조선3사간한미 조선협력투자 업무협약 체결",
       "latest_url": "https://www.fsc.go.kr/no010101/87187",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87187",
@@ -529,7 +527,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 12,
+      "article_count": 13,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -555,7 +553,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 6,
+      "article_count": 7,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -581,7 +579,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 12,
+      "article_count": 13,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -732,11 +730,59 @@
   ],
   "events": [
     {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "물산업 혁신기술 R&D 지원사업 수시공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456750",
+      "event_at": "2026-06-29T00:00:00+00:00",
+      "application_deadline": "2026-06-29",
+      "application_start_date": "2026-06-30",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "물산업 혁신기술 R&D 지원사업 수시공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-06-29:물산업-혁신기술-r-d-지원사업-수시공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456750",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "물산업 혁신기술 R&D 지원사업 수시공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456750",
+      "event_at": "2026-06-29T09:00:37.547097+00:00",
+      "application_deadline": "2026-06-29",
+      "application_start_date": "2026-06-30",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "물산업 혁신기술 R&D 지원사업 수시공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-06-29:물산업-혁신기술-r-d-지원사업-수시공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456750",
+      "evidence_url_present": true
+    },
+    {
       "source": "소상공인시장진흥공단",
       "event_model": "eligibility_rule",
       "title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
       "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55052&pNm=BOA0101&page=1",
-      "event_at": "2026-06-28T07:52:51.890309+00:00",
+      "event_at": "2026-06-29T09:00:29.443855+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -748,7 +794,7 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
-      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-06-28:소상공인-재난지원금-환수-사전통지-반송에-따른-공시송달-공고",
+      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-06-29:소상공인-재난지원금-환수-사전통지-반송에-따른-공시송달-공고",
       "evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55052&pNm=BOA0101&page=1",
       "evidence_url_present": true
     },
@@ -757,7 +803,7 @@
       "event_model": "eligibility_rule",
       "title": "「소상공인 재난지원금」환수 결정통지 반송에 따른 공시송달 공고",
       "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55053&pNm=BOA0101&page=1",
-      "event_at": "2026-06-28T07:52:51.890296+00:00",
+      "event_at": "2026-06-29T09:00:29.443847+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -769,8 +815,99 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "「소상공인 재난지원금」환수 결정통지 반송에 따른 공시송달 공고",
-      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-06-28:소상공인-재난지원금-환수-결정통지-반송에-따른-공시송달-공고",
+      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-06-29:소상공인-재난지원금-환수-결정통지-반송에-따른-공시송달-공고",
       "evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55053&pNm=BOA0101&page=1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "중·저신용자도 年5%대 대출받는다…최대 한도 1000만원",
+      "url": "https://www.donga.com/news/Economy/article/all/20260629/134202829/1",
+      "event_at": "2026-06-28T23:22:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "자영업자"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "중·저신용자도 年5%대 대출받는다…최대 한도 1000만원",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-06-28:중-저신용자도-年5-대-대출받는다-최대-한도-1000만원",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260629/134202829/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "KB금융 “포용금융 3조원 등 올해 6.9조원 맞춤형 금융 제공”",
+      "url": "https://www.khan.co.kr/article/202606291504001",
+      "event_at": "2026-06-28T21:04:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "청년",
+          "취약계층",
+          "자영업자"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "KB금융 “포용금융 3조원 등 올해 6.9조원 맞춤형 금융 제공”",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-06-28:kb금융-포용금융-3조원-등-올해-6-9조원-맞춤형-금융-제공",
+      "evidence_url": "https://www.khan.co.kr/article/202606291504001",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "제2금융권서도 신용대출에 최고금리 상한제 도입하는 곳은?",
+      "url": "https://www.mk.co.kr/news/economy/12085343",
+      "event_at": "2026-06-28T16:46:37+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "자영업자"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "제2금융권서도 신용대출에 최고금리 상한제 도입하는 곳은?",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-06-28:제2금융권서도-신용대출에-최고금리-상한제-도입하는-곳은",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12085343",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "“중동전쟁 직격탄, 결국 우리가 맞았다”…中企 생산·고용 모두 악화",
+      "url": "https://www.mk.co.kr/news/economy/12085268",
+      "event_at": "2026-06-28T15:35:14+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ],
+        "Industry": [
+          "제조"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“중동전쟁 직격탄, 결국 우리가 맞았다”…中企 생산·고용 모두 악화",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-06-28:중동전쟁-직격탄-결국-우리가-맞았다-中企-생산-고용-모두-악화",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12085268",
       "evidence_url_present": true
     },
     {
@@ -1950,138 +2087,6 @@
       "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-06-21:서울-떠나는-청년은-이자-싸게-준다-저금리-신용대출-쏟아내는-은행권",
       "evidence_url": "https://www.mk.co.kr/news/economy/12079614",
       "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "eligibility_rule",
-      "title": "2026년도 서울특별시 주택공급 정상화 사업비(이주비) 융자 지원 지원 계획 변경 공고(제2026-1878호)",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460084",
-      "event_at": "2026-06-21T08:36:25.144965+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년도 서울특별시 주택공급 정상화 사업비(이주비) 융자 지원 지원 계획 변경 공고(제2026-1878호)",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-06-21:2026년도-서울특별시-주택공급-정상화-사업비-이주비-융자-지원-지원-계획-변경-공고-제2026-1878호",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460084",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "2026 민간 국제개발협력 지원사업 보조사업자 모집 공고(2차 재공고)",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460086",
-      "event_at": "2026-07-06T00:00:00+00:00",
-      "application_deadline": "2026-07-06",
-      "application_start_date": "2026-06-19",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026 민간 국제개발협력 지원사업 보조사업자 모집 공고(2차 재공고)",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-07-06:2026-민간-국제개발협력-지원사업-보조사업자-모집-공고-2차-재공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460086",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "eligibility_rule",
-      "title": "2026 민간 국제개발협력 지원사업 보조사업자 모집 공고(2차 재공고)",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460086",
-      "event_at": "2026-06-21T08:36:23.667891+00:00",
-      "application_deadline": "2026-07-06",
-      "application_start_date": "2026-06-19",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026 민간 국제개발협력 지원사업 보조사업자 모집 공고(2차 재공고)",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-06-21:2026-민간-국제개발협력-지원사업-보조사업자-모집-공고-2차-재공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460086",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "「2026 지역연계형 청년 창업 지원 사업」 넥스트로컬 8기 1단계(자원조사과정) 합격팀 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460096",
-      "event_at": "2026-06-19T00:00:00+00:00",
-      "application_deadline": "2026-06-19",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "「2026 지역연계형 청년 창업 지원 사업」 넥스트로컬 8기 1단계(자원조사과정) 합격팀 공고",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-06-19:2026-지역연계형-청년-창업-지원-사업-넥스트로컬-8기-1단계-자원조사과정-합격팀-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460096",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "eligibility_rule",
-      "title": "「2026 지역연계형 청년 창업 지원 사업」 넥스트로컬 8기 1단계(자원조사과정) 합격팀 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460096",
-      "event_at": "2026-06-21T08:36:20.796040+00:00",
-      "application_deadline": "2026-06-19",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "「2026 지역연계형 청년 창업 지원 사업」 넥스트로컬 8기 1단계(자원조사과정) 합격팀 공고",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-06-21:2026-지역연계형-청년-창업-지원-사업-넥스트로컬-8기-1단계-자원조사과정-합격팀-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460096",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "[단독] 금리 내렸지만…서민정책대출 되레 줄었다",
-      "url": "https://www.mk.co.kr/news/economy/12079370",
-      "event_at": "2026-06-20T23:32:09+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "[단독] 금리 내렸지만…서민정책대출 되레 줄었다",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-06-20:단독-금리-내렸지만-서민정책대출-되레-줄었다",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12079370",
-      "evidence_url_present": true
     }
   ],
   "event_model_coverage": [
@@ -2152,14 +2157,12 @@
   "errors": [
     "정책브리핑: Source disabled (crawl health threshold reached)",
     "농림축산식품부: Source disabled (crawl health threshold reached)",
-    "서울시 지원사업: Failed to collect browser content from 서울시 지원사업: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.seoul.go.kr/news/news_notice.do\", waiting until \"domcontentloaded\"\n",
     "행정안전부: Source disabled (crawl health threshold reached)",
     "보건복지부: Source disabled (crawl health threshold reached)",
     "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n",
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
     "r/startups: Source disabled (crawl health threshold reached)",
-    "r/Entrepreneur: Source disabled (crawl health threshold reached)",
-    "https://www.sedaily.com/article/20060729: summary is missing or not a string"
+    "r/Entrepreneur: Source disabled (crawl health threshold reached)"
   ]
 }
