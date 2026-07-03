@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-07-02T07:35:12.530841+00:00",
+  "generated_at": "2026-07-03T07:23:49.772671+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -12,12 +12,12 @@
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 20,
-    "eligibility_rule_events": 46,
+    "application_deadline_events": 16,
+    "eligibility_rule_events": 38,
     "selection_result_events": 0,
-    "unique_program_key_count": 66,
-    "events_with_evidence_url": 66,
-    "collection_error_count": 8,
+    "unique_program_key_count": 54,
+    "events_with_evidence_url": 54,
+    "collection_error_count": 9,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -109,15 +109,15 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 1,
       "status": "fresh",
-      "article_count": 5,
-      "event_count": 3,
-      "latest_event_at": "2026-07-02T07:34:32.793000+00:00",
+      "article_count": 4,
+      "event_count": 2,
+      "latest_event_at": "2026-07-03T07:22:34.799965+00:00",
       "age_days": 0.0,
       "latest_title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
       "latest_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55052&pNm=BOA0101&page=1",
       "latest_evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55052&pNm=BOA0101&page=1",
       "latest_program_title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
-      "latest_program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-07-02:소상공인-재난지원금-환수-사전통지-반송에-따른-공시송달-공고",
+      "latest_program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-07-03:소상공인-재난지원금-환수-사전통지-반송에-따른-공시송달-공고",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
         "TargetGroup": [
@@ -139,8 +139,8 @@
       "event_model": "application_deadline",
       "freshness_sla_days": 1,
       "status": "fresh",
-      "article_count": 7,
-      "event_count": 7,
+      "article_count": 6,
+      "event_count": 5,
       "latest_event_at": "2027-07-31T00:00:00+00:00",
       "age_days": 0.0,
       "latest_title": "시립중랑노인종합복지관 직원(육아휴직 대체 사무원) 채용 공고",
@@ -225,10 +225,10 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
       "status": "fresh",
-      "article_count": 15,
-      "event_count": 12,
+      "article_count": 12,
+      "event_count": 10,
       "latest_event_at": "2026-07-02T07:35:02.105987+00:00",
-      "age_days": 0.0,
+      "age_days": 0.99,
       "latest_title": "“금융기관보험대리점 판매비중 규제개선” 등   혁신금융서비스 31건 신규 지정 의결",
       "latest_url": "https://www.fsc.go.kr/no010101/87236",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87236",
@@ -252,7 +252,9 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": []
+      "errors": [
+        "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n"
+      ]
     },
     {
       "source": "농림축산식품부",
@@ -532,7 +534,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 13,
+      "article_count": 12,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -558,7 +560,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 7,
+      "article_count": 8,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -584,7 +586,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 9,
+      "article_count": 7,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -735,6 +737,92 @@
   ],
   "events": [
     {
+      "source": "소상공인시장진흥공단",
+      "event_model": "eligibility_rule",
+      "title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55052&pNm=BOA0101&page=1",
+      "event_at": "2026-07-03T07:22:34.799965+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
+      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-07-03:소상공인-재난지원금-환수-사전통지-반송에-따른-공시송달-공고",
+      "evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55052&pNm=BOA0101&page=1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "event_model": "eligibility_rule",
+      "title": "「소상공인 재난지원금」환수 결정통지 반송에 따른 공시송달 공고",
+      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55053&pNm=BOA0101&page=1",
+      "event_at": "2026-07-03T07:22:34.799959+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "「소상공인 재난지원금」환수 결정통지 반송에 따른 공시송달 공고",
+      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-07-03:소상공인-재난지원금-환수-결정통지-반송에-따른-공시송달-공고",
+      "evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55053&pNm=BOA0101&page=1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "홈플러스 직원 체불임금, 2100만원까지 정부가 대신 지급",
+      "url": "https://www.donga.com/news/Economy/article/all/20260703/134230852/1",
+      "event_at": "2026-07-02T20:08:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업",
+          "저소득"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "홈플러스 직원 체불임금, 2100만원까지 정부가 대신 지급",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-02:홈플러스-직원-체불임금-2100만원까지-정부가-대신-지급",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260703/134230852/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "수출입은행, 환율 피해 기업에 3%대 초저리 대출 ‘긴급 지원’",
+      "url": "https://www.mk.co.kr/news/economy/12089707",
+      "event_at": "2026-07-02T17:03:02+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "수출입은행, 환율 피해 기업에 3%대 초저리 대출 ‘긴급 지원’",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-02:수출입은행-환율-피해-기업에-3-대-초저리-대출-긴급-지원",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12089707",
+      "evidence_url_present": true
+    },
+    {
       "source": "금융위원회",
       "event_model": "application_deadline",
       "title": "“금융기관보험대리점 판매비중 규제개선” 등   혁신금융서비스 31건 신규 지정 의결",
@@ -788,92 +876,6 @@
       "program_title": "“금융기관보험대리점 판매비중 규제개선” 등   혁신금융서비스 31건 신규 지정 의결",
       "program_key": "eligibility-rule:kr:금융위원회:2026-07-02:금융기관보험대리점-판매비중-규제개선-등-혁신금융서비스-31건-신규-지정-의결",
       "evidence_url": "https://www.fsc.go.kr/no010101/87236",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "2026년 조기폐차 지원사업 변경공고(4차)",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460822",
-      "event_at": "2026-04-01T00:00:00+00:00",
-      "application_deadline": "2026-04-01",
-      "application_start_date": "2026-07-02",
-      "eligibility_fields": {
-        "Region": [
-          "서울",
-          "경기"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 조기폐차 지원사업 변경공고(4차)",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-04-01:2026년-조기폐차-지원사업-변경공고-4차",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460822",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "eligibility_rule",
-      "title": "2026년 조기폐차 지원사업 변경공고(4차)",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460822",
-      "event_at": "2026-07-02T07:34:44.003820+00:00",
-      "application_deadline": "2026-04-01",
-      "application_start_date": "2026-07-02",
-      "eligibility_fields": {
-        "Region": [
-          "서울",
-          "경기"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 조기폐차 지원사업 변경공고(4차)",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-07-02:2026년-조기폐차-지원사업-변경공고-4차",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460822",
-      "evidence_url_present": true
-    },
-    {
-      "source": "소상공인시장진흥공단",
-      "event_model": "eligibility_rule",
-      "title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
-      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55052&pNm=BOA0101&page=1",
-      "event_at": "2026-07-02T07:34:32.793000+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
-      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-07-02:소상공인-재난지원금-환수-사전통지-반송에-따른-공시송달-공고",
-      "evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55052&pNm=BOA0101&page=1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "소상공인시장진흥공단",
-      "event_model": "eligibility_rule",
-      "title": "「소상공인 재난지원금」환수 결정통지 반송에 따른 공시송달 공고",
-      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55053&pNm=BOA0101&page=1",
-      "event_at": "2026-07-02T07:34:32.792989+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "「소상공인 재난지원금」환수 결정통지 반송에 따른 공시송달 공고",
-      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-07-02:소상공인-재난지원금-환수-결정통지-반송에-따른-공시송달-공고",
-      "evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55053&pNm=BOA0101&page=1",
       "evidence_url_present": true
     },
     {
@@ -1960,27 +1962,6 @@
       "evidence_url_present": true
     },
     {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "LG, 경찰청과 폭력 피해 아동·청소년 일상 회복 돕는다… 성금 6억원 기탁",
-      "url": "https://www.donga.com/news/Economy/article/all/20260626/134187963/1",
-      "event_at": "2026-06-25T19:55:17+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "LG, 경찰청과 폭력 피해 아동·청소년 일상 회복 돕는다… 성금 6억원 기탁",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-06-25:lg-경찰청과-폭력-피해-아동-청소년-일상-회복-돕는다-성금-6억원-기탁",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260626/134187963/1",
-      "evidence_url_present": true
-    },
-    {
       "source": "경향신문 경제",
       "event_model": "eligibility_rule",
       "title": "지역농가·미래세대 ‘윈윈’···새마을금고 재단, 아동 3000명에 ‘영양 꾸러미’",
@@ -2002,158 +1983,24 @@
       "evidence_url_present": true
     },
     {
-      "source": "금융위원회",
+      "source": "동아일보 경제",
       "event_model": "eligibility_rule",
-      "title": "금융위-중기부, 모태펀드-국민성장펀드간 투자 이어달리기를 위한 원팀 가동",
-      "url": "https://www.fsc.go.kr/no010101/87171",
-      "event_at": "2026-06-25T07:44:42.304256+00:00",
+      "title": "LG, 경찰청과 폭력 피해 아동·청소년 일상 회복 돕는다… 성금 6억원 기탁",
+      "url": "https://www.donga.com/news/Economy/article/all/20260626/134187963/1",
+      "event_at": "2026-06-25T19:55:17+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
         "TargetGroup": [
-          "스타트업"
-        ],
-        "BusinessStage": [
-          "벤처기업"
-        ],
-        "Industry": [
-          "AI",
-          "바이오"
-        ],
-        "Region": [
-          "서울"
+          "취약계층"
         ]
       },
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "금융위-중기부, 모태펀드-국민성장펀드간 투자 이어달리기를 위한 원팀 가동",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-06-25:금융위-중기부-모태펀드-국민성장펀드간-투자-이어달리기를-위한-원팀-가동",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87171",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "application_deadline",
-      "title": "스타트업의 상생형 성장, 금융이 이어가겠습니다.   - 이억원 금융위원장, 스타트업-금융기관 우수협업사례 시상",
-      "url": "https://www.fsc.go.kr/no010101/87176",
-      "event_at": "2026-05-18T00:00:00+00:00",
-      "application_deadline": "2026-05-18",
-      "application_start_date": "2026-06-24",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "스타트업",
-          "청년"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "스타트업의 상생형 성장, 금융이 이어가겠습니다.   - 이억원 금융위원장, 스타트업-금융기관 우수협업사례 시상",
-      "program_key": "application-deadline:kr:금융위원회:2026-05-18:스타트업의-상생형-성장-금융이-이어가겠습니다-이억원-금융위원장-스타트업-금융기관-우수협업사례-시상",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87176",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "스타트업의 상생형 성장, 금융이 이어가겠습니다.   - 이억원 금융위원장, 스타트업-금융기관 우수협업사례 시상",
-      "url": "https://www.fsc.go.kr/no010101/87176",
-      "event_at": "2026-06-25T07:44:40.980034+00:00",
-      "application_deadline": "2026-05-18",
-      "application_start_date": "2026-06-24",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "스타트업",
-          "청년"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "스타트업의 상생형 성장, 금융이 이어가겠습니다.   - 이억원 금융위원장, 스타트업-금융기관 우수협업사례 시상",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-06-25:스타트업의-상생형-성장-금융이-이어가겠습니다-이억원-금융위원장-스타트업-금융기관-우수협업사례-시상",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87176",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "application_deadline",
-      "title": "사업보고서 등에 대한 조사·감리결과 조치 - 제12차 증권선물위원회(’26.6.24.) 조치 의결. 금일 등록된 게시글",
-      "url": "https://www.fsc.go.kr/no010101/87185",
-      "event_at": "2026-06-24T00:00:00+00:00",
-      "application_deadline": "2026-06-24",
-      "application_start_date": "2026-06-25",
-      "eligibility_fields": {},
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "사업보고서 등에 대한 조사·감리결과 조치 - 제12차 증권선물위원회(’26.6.24.) 조치 의결. 금일 등록된 게시글",
-      "program_key": "application-deadline:kr:금융위원회:2026-06-24:사업보고서-등에-대한-조사-감리결과-조치-제12차-증권선물위원회-26-6-24-조치-의결-금일-등록된-게시글",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87185",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "「2026년 제2차 민간축제 지원 및 육성」선정 결과 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460376",
-      "event_at": "2026-06-25T00:00:00+00:00",
-      "application_deadline": "2026-06-25",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "「2026년 제2차 민간축제 지원 및 육성」선정 결과 공고",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-06-25:2026년-제2차-민간축제-지원-및-육성-선정-결과-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460376",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "eligibility_rule",
-      "title": "「2026년 제2차 민간축제 지원 및 육성」선정 결과 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460376",
-      "event_at": "2026-06-25T07:44:26.304693+00:00",
-      "application_deadline": "2026-06-25",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "「2026년 제2차 민간축제 지원 및 육성」선정 결과 공고",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-06-25:2026년-제2차-민간축제-지원-및-육성-선정-결과-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=460376",
-      "evidence_url_present": true
-    },
-    {
-      "source": "소상공인시장진흥공단",
-      "event_model": "eligibility_rule",
-      "title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
-      "url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=54812&pNm=BOA0101&page=1",
-      "event_at": "2026-06-25T07:44:12.137065+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
-      "program_key": "eligibility-rule:kr:소상공인시장진흥공단:2026-06-25:소상공인-재난지원금-환수-사전통지-반송에-따른-공시송달-공고",
-      "evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=54812&pNm=BOA0101&page=1",
+      "program_title": "LG, 경찰청과 폭력 피해 아동·청소년 일상 회복 돕는다… 성금 6억원 기탁",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-06-25:lg-경찰청과-폭력-피해-아동-청소년-일상-회복-돕는다-성금-6억원-기탁",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260626/134187963/1",
       "evidence_url_present": true
     },
     {
@@ -2175,124 +2022,6 @@
       "program_title": "풍력·해저케이블·반도체에 3700억원 투입하는 국민성장펀드",
       "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-06-25:풍력-해저케이블-반도체에-3700억원-투입하는-국민성장펀드",
       "evidence_url": "https://www.mk.co.kr/news/economy/12083515",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "정책자금 불법 브로커, 구체적 피해 없어도 처벌하도록 법 개정 추진",
-      "url": "https://www.khan.co.kr/article/202606251551001",
-      "event_at": "2026-06-24T21:51:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "스타트업"
-        ],
-        "BusinessStage": [
-          "벤처기업"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "정책자금 불법 브로커, 구체적 피해 없어도 처벌하도록 법 개정 추진",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-06-24:정책자금-불법-브로커-구체적-피해-없어도-처벌하도록-법-개정-추진",
-      "evidence_url": "https://www.khan.co.kr/article/202606251551001",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "올여름 전력수요 98.8GW ‘역대 최고’… 정부, 누진제 한시 완화",
-      "url": "https://www.mk.co.kr/news/economy/12082910",
-      "event_at": "2026-06-24T20:26:02+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "올여름 전력수요 98.8GW ‘역대 최고’… 정부, 누진제 한시 완화",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-06-24:올여름-전력수요-98-8gw-역대-최고-정부-누진제-한시-완화",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12082910",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "경남도, ‘연 1% 저리’ 하반기 농어촌진흥기금 지원 접수",
-      "url": "https://www.khan.co.kr/article/202606251054001",
-      "event_at": "2026-06-24T16:54:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ],
-        "Industry": [
-          "농업"
-        ],
-        "Region": [
-          "경남"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "경남도, ‘연 1% 저리’ 하반기 농어촌진흥기금 지원 접수",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-06-24:경남도-연-1-저리-하반기-농어촌진흥기금-지원-접수",
-      "evidence_url": "https://www.khan.co.kr/article/202606251054001",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "[2030 청년, 벌어지는 출발선] 1억넘는 2030 계좌 144% 늘 때, 1억 미만은 한자릿수 증가···세대 간 격차? 이제 세대 내 격차",
-      "url": "https://www.khan.co.kr/article/202606250600071",
-      "event_at": "2026-06-24T12:00:07+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "[2030 청년, 벌어지는 출발선] 1억넘는 2030 계좌 144% 늘 때, 1억 미만은 한자릿수 증가···세대 간 격차? 이제 세대 내 격차",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-06-24:2030-청년-벌어지는-출발선-1억넘는-2030-계좌-144-늘-때-1억-미만은-한자릿수-증가-세대-간-격차-이제-세대-내-격차",
-      "evidence_url": "https://www.khan.co.kr/article/202606250600071",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "[단독] 자녀세액공제 10만원 받던 저소득층 … 보조금 전환땐 55만원",
-      "url": "https://www.mk.co.kr/news/economy/12082262",
-      "event_at": "2026-06-24T00:07:49+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "저소득",
-          "취약계층"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "[단독] 자녀세액공제 10만원 받던 저소득층 … 보조금 전환땐 55만원",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-06-24:단독-자녀세액공제-10만원-받던-저소득층-보조금-전환땐-55만원",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12082262",
       "evidence_url_present": true
     }
   ],
@@ -2366,6 +2095,7 @@
     "농림축산식품부: Source disabled (crawl health threshold reached)",
     "행정안전부: Source disabled (crawl health threshold reached)",
     "보건복지부: Source disabled (crawl health threshold reached)",
+    "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n",
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
     "r/startups: Source disabled (crawl health threshold reached)",
