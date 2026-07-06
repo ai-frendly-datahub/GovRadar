@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-07-05T07:28:06.460041+00:00",
+  "generated_at": "2026-07-06T08:23:41.066716+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -13,11 +13,11 @@
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
     "application_deadline_events": 14,
-    "eligibility_rule_events": 36,
-    "selection_result_events": 0,
+    "eligibility_rule_events": 35,
+    "selection_result_events": 1,
     "unique_program_key_count": 50,
     "events_with_evidence_url": 50,
-    "collection_error_count": 9,
+    "collection_error_count": 11,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -112,7 +112,7 @@
       "article_count": 4,
       "event_count": 2,
       "latest_event_at": "2026-07-03T07:22:34.799965+00:00",
-      "age_days": 2.0,
+      "age_days": 3.04,
       "latest_title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
       "latest_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55052&pNm=BOA0101&page=1",
       "latest_evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55052&pNm=BOA0101&page=1",
@@ -141,8 +141,8 @@
       "event_model": "application_deadline",
       "freshness_sla_days": 1,
       "status": "fresh",
-      "article_count": 4,
-      "event_count": 3,
+      "article_count": 6,
+      "event_count": 5,
       "latest_event_at": "2027-07-31T00:00:00+00:00",
       "age_days": 0.0,
       "latest_title": "시립중랑노인종합복지관 직원(육아휴직 대체 사무원) 채용 공고",
@@ -230,7 +230,7 @@
       "article_count": 12,
       "event_count": 10,
       "latest_event_at": "2026-07-05T07:27:58.547824+00:00",
-      "age_days": 0.0,
+      "age_days": 1.04,
       "latest_title": "국민성장펀드가 지역중심 경제구조대전환의 마중물이 되겠습니다.",
       "latest_url": "https://www.fsc.go.kr/no010101/87246",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87246",
@@ -258,7 +258,9 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": []
+      "errors": [
+        "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n"
+      ]
     },
     {
       "source": "농림축산식품부",
@@ -564,7 +566,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 7,
+      "article_count": 6,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -590,7 +592,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 8,
+      "article_count": 5,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -740,6 +742,156 @@
     }
   ],
   "events": [
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "2026년 서울커리업 구직지원금 지원 대상자 3차 모집 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461063",
+      "event_at": "2026-07-27T00:00:00+00:00",
+      "application_deadline": "2026-07-27",
+      "application_start_date": "2026-07-06",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 서울커리업 구직지원금 지원 대상자 3차 모집 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-07-27:2026년-서울커리업-구직지원금-지원-대상자-3차-모집-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461063",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "2026년 서울커리업 구직지원금 지원 대상자 3차 모집 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461063",
+      "event_at": "2026-07-06T08:22:37.138613+00:00",
+      "application_deadline": "2026-07-27",
+      "application_start_date": "2026-07-06",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 서울커리업 구직지원금 지원 대상자 3차 모집 공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-07-06:2026년-서울커리업-구직지원금-지원-대상자-3차-모집-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461063",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "2026년 전통문화 발굴 및 계승 지원사업 2차 공모 선정 결과",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461066",
+      "event_at": "2026-07-06T00:00:00+00:00",
+      "application_deadline": "2026-07-06",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 전통문화 발굴 및 계승 지원사업",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-07-06:2026년-전통문화-발굴-및-계승-지원사업",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461066",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "2026년 전통문화 발굴 및 계승 지원사업 2차 공모 선정 결과",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461066",
+      "event_at": "2026-07-06T08:22:35.781207+00:00",
+      "application_deadline": "2026-07-06",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 전통문화 발굴 및 계승 지원사업",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-07-06:2026년-전통문화-발굴-및-계승-지원사업",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461066",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "selection_result",
+      "title": "2026년 전통문화 발굴 및 계승 지원사업 2차 공모 선정 결과",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461066",
+      "event_at": "2026-07-06T08:22:35.781207+00:00",
+      "application_deadline": "2026-07-06",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 전통문화 발굴 및 계승 지원사업",
+      "program_key": "selection-result:kr:서울시-지원사업:2026년-전통문화-발굴-및-계승-지원사업",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461066",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "“디지털 무역 경쟁력 키운다”…KEP협회, ‘글로벌 공공조달 AX 전략 전문가 과정’ 개강",
+      "url": "https://www.donga.com/news/Economy/article/all/20260706/134244224/1",
+      "event_at": "2026-07-05T21:01:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“디지털 무역 경쟁력 키운다”…KEP협회, ‘글로벌 공공조달 AX 전략 전문가 과정’ 개강",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-05:디지털-무역-경쟁력-키운다-kep협회-글로벌-공공조달-ax-전략-전문가-과정-개강",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260706/134244224/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "기업대출 제때 돈 못갚는 곳, 10건 중 9건은 ‘골목상권’",
+      "url": "https://www.mk.co.kr/news/economy/12091186",
+      "event_at": "2026-07-05T20:26:45+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "제조"
+        ],
+        "Region": [
+          "경기"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "기업대출 제때 돈 못갚는 곳, 10건 중 9건은 ‘골목상권’",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-05:기업대출-제때-돈-못갚는-곳-10건-중-9건은-골목상권",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12091186",
+      "evidence_url_present": true
+    },
     {
       "source": "금융위원회",
       "event_model": "application_deadline",
@@ -916,6 +1068,49 @@
       "program_title": "홈플러스 회생절차 폐지에 따른근로자 및 중소 협력업체 지원방안 마련",
       "program_key": "eligibility-rule:kr:금융위원회:2026-07-05:홈플러스-회생절차-폐지에-따른근로자-및-중소-협력업체-지원방안-마련",
       "evidence_url": "https://www.fsc.go.kr/no010101/87254",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "[단독] 李정부 '미소금융 3종세트' 희비 엇갈려",
+      "url": "https://www.mk.co.kr/news/economy/12090725",
+      "event_at": "2026-07-04T23:50:55+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "[단독] 李정부 '미소금융 3종세트' 희비 엇갈려",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-04:단독-李정부-미소금융-3종세트-희비-엇갈려",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12090725",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "[단독] ‘미소금융 3종세트’ 초반 실적 부진…금융당국 ‘크레딧 빌드업’ 무색",
+      "url": "https://www.mk.co.kr/news/economy/12090704",
+      "event_at": "2026-07-04T23:46:02+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년",
+          "취약계층"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "[단독] ‘미소금융 3종세트’ 초반 실적 부진…금융당국 ‘크레딧 빌드업’ 무색",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-04:단독-미소금융-3종세트-초반-실적-부진-금융당국-크레딧-빌드업-무색",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12090704",
       "evidence_url_present": true
     },
     {
@@ -1748,219 +1943,6 @@
       "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-06-28:중동전쟁-직격탄-결국-우리가-맞았다-中企-생산-고용-모두-악화",
       "evidence_url": "https://www.mk.co.kr/news/economy/12085268",
       "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "고유가 지원금 효과로 골목상권 매출 10.6% 증가…소매업이 견인",
-      "url": "https://www.donga.com/news/Economy/article/all/20260628/134195271/1",
-      "event_at": "2026-06-27T21:27:48+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "BusinessStage": [
-          "벤처기업"
-        ],
-        "Region": [
-          "서울",
-          "경기",
-          "인천",
-          "부산",
-          "대구",
-          "전남",
-          "경남",
-          "제주"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "고유가 지원금 효과로 골목상권 매출 10.6% 증가…소매업이 견인",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-06-27:고유가-지원금-효과로-골목상권-매출-10-6-증가-소매업이-견인",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260628/134195271/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "application_deadline",
-      "title": "고유가 지원금, 7월 3일까지 꼭 신청하세요…지급률 97%",
-      "url": "https://www.donga.com/news/Economy/article/all/20260628/134194762/1",
-      "event_at": "2026-07-17T00:00:00+00:00",
-      "application_deadline": "2026-07-17",
-      "application_start_date": "2026-06-28",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "고유가 지원금, 7월 3일까지 꼭 신청하세요…지급률 97%",
-      "program_key": "application-deadline:kr:동아일보-경제:2026-07-17:고유가-지원금-7월-3일까지-꼭-신청하세요-지급률-97",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260628/134194762/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "고유가 지원금, 7월 3일까지 꼭 신청하세요…지급률 97%",
-      "url": "https://www.donga.com/news/Economy/article/all/20260628/134194762/1",
-      "event_at": "2026-06-27T18:37:23+00:00",
-      "application_deadline": "2026-07-17",
-      "application_start_date": "2026-06-28",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "고유가 지원금, 7월 3일까지 꼭 신청하세요…지급률 97%",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-06-27:고유가-지원금-7월-3일까지-꼭-신청하세요-지급률-97",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260628/134194762/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "고유가지원금으로 소상공인 매출 1년 전보다 10.6% 늘어",
-      "url": "https://www.khan.co.kr/article/202606281200011",
-      "event_at": "2026-06-27T18:00:01+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인"
-        ],
-        "BusinessStage": [
-          "벤처기업"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "고유가지원금으로 소상공인 매출 1년 전보다 10.6% 늘어",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-06-27:고유가지원금으로-소상공인-매출-1년-전보다-10-6-늘어",
-      "evidence_url": "https://www.khan.co.kr/article/202606281200011",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "application_deadline",
-      "title": "“고유가 지원금, 7월3일까지 신청하세요”···지급률 97.4% 달성",
-      "url": "https://www.khan.co.kr/article/202606281200001",
-      "event_at": "2026-07-03T00:00:00+00:00",
-      "application_deadline": "2026-07-03",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“고유가 지원금, 7월3일까지 신청하세요”···지급률 97.4% 달성",
-      "program_key": "application-deadline:kr:경향신문-경제:2026-07-03:고유가-지원금-7월3일까지-신청하세요-지급률-97-4-달성",
-      "evidence_url": "https://www.khan.co.kr/article/202606281200001",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "“고유가 지원금, 7월3일까지 신청하세요”···지급률 97.4% 달성",
-      "url": "https://www.khan.co.kr/article/202606281200001",
-      "event_at": "2026-06-27T18:00:00+00:00",
-      "application_deadline": "2026-07-03",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“고유가 지원금, 7월3일까지 신청하세요”···지급률 97.4% 달성",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-06-27:고유가-지원금-7월3일까지-신청하세요-지급률-97-4-달성",
-      "evidence_url": "https://www.khan.co.kr/article/202606281200001",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "‘수백조’ 반도체 투자 임박, ‘공장만 짓는 국가’ 안 되려면···미·중·일·대만은?",
-      "url": "https://www.khan.co.kr/article/202606281129011",
-      "event_at": "2026-06-27T17:29:01+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "AI"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "‘수백조’ 반도체 투자 임박, ‘공장만 짓는 국가’ 안 되려면···미·중·일·대만은?",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-06-27:수백조-반도체-투자-임박-공장만-짓는-국가-안-되려면-미-중-일-대만은",
-      "evidence_url": "https://www.khan.co.kr/article/202606281129011",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "대기업 부실비율 확 줄었지만…중소기업·자영업자는 ‘고사 직전’",
-      "url": "https://www.mk.co.kr/news/economy/12084459",
-      "event_at": "2026-06-26T04:23:12+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "중소기업",
-          "자영업자"
-        ],
-        "Region": [
-          "경기"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "대기업 부실비율 확 줄었지만…중소기업·자영업자는 ‘고사 직전’",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-06-26:대기업-부실비율-확-줄었지만-중소기업-자영업자는-고사-직전",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12084459",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "대기업서 중기·자영업자로… 5년새 바뀐 국책銀 부실 주범",
-      "url": "https://www.mk.co.kr/news/economy/12084298",
-      "event_at": "2026-06-25T23:44:53+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "중소기업",
-          "자영업자"
-        ],
-        "Region": [
-          "경기"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "대기업서 중기·자영업자로… 5년새 바뀐 국책銀 부실 주범",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-06-25:대기업서-중기-자영업자로-5년새-바뀐-국책銀-부실-주범",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12084298",
-      "evidence_url_present": true
     }
   ],
   "event_model_coverage": [
@@ -2031,9 +2013,11 @@
   "errors": [
     "정책브리핑: Source disabled (crawl health threshold reached)",
     "농림축산식품부: Source disabled (crawl health threshold reached)",
+    "[서울경제 경제] Request failed: 403 Client Error: Forbidden for url: https://www.sedaily.com/RSS/Economy/",
     "소상공인시장진흥공단: Source disabled (crawl health threshold reached)",
     "행정안전부: Source disabled (crawl health threshold reached)",
     "보건복지부: Source disabled (crawl health threshold reached)",
+    "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n",
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
     "r/startups: Source disabled (crawl health threshold reached)",
