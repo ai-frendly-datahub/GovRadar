@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-07-06T08:23:41.066716+00:00",
+  "generated_at": "2026-07-07T07:40:51.135951+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -12,12 +12,12 @@
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 14,
+    "application_deadline_events": 16,
     "eligibility_rule_events": 35,
     "selection_result_events": 1,
-    "unique_program_key_count": 50,
-    "events_with_evidence_url": 50,
-    "collection_error_count": 11,
+    "unique_program_key_count": 52,
+    "events_with_evidence_url": 52,
+    "collection_error_count": 9,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -112,7 +112,7 @@
       "article_count": 4,
       "event_count": 2,
       "latest_event_at": "2026-07-03T07:22:34.799965+00:00",
-      "age_days": 3.04,
+      "age_days": 4.01,
       "latest_title": "「소상공인 재난지원금」환수 사전통지 반송에 따른 공시송달 공고",
       "latest_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55052&pNm=BOA0101&page=1",
       "latest_evidence_url": "https://www.semas.or.kr/web/board/webBoardView.kmdc?bCd=1&b_idx=55052&pNm=BOA0101&page=1",
@@ -227,29 +227,23 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
       "status": "fresh",
-      "article_count": 12,
-      "event_count": 10,
-      "latest_event_at": "2026-07-05T07:27:58.547824+00:00",
-      "age_days": 1.04,
-      "latest_title": "국민성장펀드가 지역중심 경제구조대전환의 마중물이 되겠습니다.",
-      "latest_url": "https://www.fsc.go.kr/no010101/87246",
-      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87246",
-      "latest_program_title": "국민성장펀드가 지역중심 경제구조대전환의 마중물이 되겠습니다.",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-07-05:국민성장펀드가-지역중심-경제구조대전환의-마중물이-되겠습니다",
-      "latest_application_deadline": "2026-07-02",
+      "article_count": 14,
+      "event_count": 12,
+      "latest_event_at": "2026-07-07T07:40:43.571610+00:00",
+      "age_days": 0.0,
+      "latest_title": "한국형 포용금융 발전모델을 위한 전문가 논의의 장을 마련하였습니다.  - 「포용금융 전략 추진단」 감독총괄분과 첫 회의 개최",
+      "latest_url": "https://www.fsc.go.kr/no010101/87265",
+      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87265",
+      "latest_program_title": "한국형 포용금융 발전모델을 위한 전문가 논의의 장을 마련하였습니다.  - 「포용금융 전략 추진단」 감독총괄분과 첫 회의 개최",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-07-07:한국형-포용금융-발전모델을-위한-전문가-논의의-장을-마련하였습니다-포용금융-전략-추진단-감독총괄분과-첫-회의-개최",
+      "latest_application_deadline": "2026-06-17",
       "latest_eligibility_fields": {
         "TargetGroup": [
-          "스타트업",
-          "청년"
-        ],
-        "BusinessStage": [
-          "벤처기업"
-        ],
-        "Industry": [
-          "AI"
+          "청년",
+          "취약계층"
         ],
         "Region": [
-          "부산",
+          "서울",
           "대전"
         ]
       },
@@ -258,9 +252,7 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": [
-        "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n"
-      ]
+      "errors": []
     },
     {
       "source": "농림축산식품부",
@@ -540,7 +532,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 14,
+      "article_count": 13,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -566,7 +558,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 6,
+      "article_count": 5,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -722,7 +714,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 4,
+      "article_count": 3,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -742,6 +734,191 @@
     }
   ],
   "events": [
+    {
+      "source": "금융위원회",
+      "event_model": "application_deadline",
+      "title": "한국형 포용금융 발전모델을 위한 전문가 논의의 장을 마련하였습니다.  - 「포용금융 전략 추진단」 감독총괄분과 첫 회의 개최",
+      "url": "https://www.fsc.go.kr/no010101/87265",
+      "event_at": "2026-06-17T00:00:00+00:00",
+      "application_deadline": "2026-06-17",
+      "application_start_date": "2026-07-06",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년",
+          "취약계층"
+        ],
+        "Region": [
+          "서울",
+          "대전"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "한국형 포용금융 발전모델을 위한 전문가 논의의 장을 마련하였습니다.  - 「포용금융 전략 추진단」 감독총괄분과 첫 회의 개최",
+      "program_key": "application-deadline:kr:금융위원회:2026-06-17:한국형-포용금융-발전모델을-위한-전문가-논의의-장을-마련하였습니다-포용금융-전략-추진단-감독총괄분과-첫-회의-개최",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87265",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "한국형 포용금융 발전모델을 위한 전문가 논의의 장을 마련하였습니다.  - 「포용금융 전략 추진단」 감독총괄분과 첫 회의 개최",
+      "url": "https://www.fsc.go.kr/no010101/87265",
+      "event_at": "2026-07-07T07:40:43.571610+00:00",
+      "application_deadline": "2026-06-17",
+      "application_start_date": "2026-07-06",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년",
+          "취약계층"
+        ],
+        "Region": [
+          "서울",
+          "대전"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "한국형 포용금융 발전모델을 위한 전문가 논의의 장을 마련하였습니다.  - 「포용금융 전략 추진단」 감독총괄분과 첫 회의 개최",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-07-07:한국형-포용금융-발전모델을-위한-전문가-논의의-장을-마련하였습니다-포용금융-전략-추진단-감독총괄분과-첫-회의-개최",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87265",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "application_deadline",
+      "title": "홈플러스 회생절차 폐지 관련 금융권 대응 점검회의 - 홈플러스 영세·중소 협력업체 피해 확산을 최소화하기 위한  금융지원 방안 논의 및 금융권의 적극적 협조 지속 당부",
+      "url": "https://www.fsc.go.kr/no010101/87266",
+      "event_at": "2026-07-03T00:00:00+00:00",
+      "application_deadline": "2026-07-03",
+      "application_start_date": "2026-07-06",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "홈플러스 회생절차 폐지 관련 금융권 대응 점검회의 - 홈플러스 영세·중소 협력업체 피해 확산을 최소화하기 위한  금융지원 방안 논의 및 금융권의 적극적 협조 지속 당부",
+      "program_key": "application-deadline:kr:금융위원회:2026-07-03:홈플러스-회생절차-폐지-관련-금융권-대응-점검회의-홈플러스-영세-중소-협력업체-피해-확산을-최소화하기-위한-금융지원-방안-논의-및-금융권의-적극적-협조-지속-당부",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87266",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "홈플러스 회생절차 폐지 관련 금융권 대응 점검회의 - 홈플러스 영세·중소 협력업체 피해 확산을 최소화하기 위한  금융지원 방안 논의 및 금융권의 적극적 협조 지속 당부",
+      "url": "https://www.fsc.go.kr/no010101/87266",
+      "event_at": "2026-07-07T07:40:42.395972+00:00",
+      "application_deadline": "2026-07-03",
+      "application_start_date": "2026-07-06",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "홈플러스 회생절차 폐지 관련 금융권 대응 점검회의 - 홈플러스 영세·중소 협력업체 피해 확산을 최소화하기 위한  금융지원 방안 논의 및 금융권의 적극적 협조 지속 당부",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-07-07:홈플러스-회생절차-폐지-관련-금융권-대응-점검회의-홈플러스-영세-중소-협력업체-피해-확산을-최소화하기-위한-금융지원-방안-논의-및-금융권의-적극적-협조-지속-당부",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87266",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "2026년도 재활용사업자 육성자금 융자 지원계획 2차 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461154",
+      "event_at": "2026-07-23T00:00:00+00:00",
+      "application_deadline": "2026-07-23",
+      "application_start_date": "2026-07-07",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년도 재활용사업자 육성자금 융자 지원계획 2차 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-07-23:2026년도-재활용사업자-육성자금-융자-지원계획-2차-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461154",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "2026년도 재활용사업자 육성자금 융자 지원계획 2차 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461154",
+      "event_at": "2026-07-07T07:40:24.519346+00:00",
+      "application_deadline": "2026-07-23",
+      "application_start_date": "2026-07-07",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년도 재활용사업자 육성자금 융자 지원계획 2차 공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-07-07:2026년도-재활용사업자-육성자금-융자-지원계획-2차-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461154",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "“빚 1억쯤 없는 사람이 어딨어요”…30대 가계대출, 12년 만에 2배",
+      "url": "https://www.mk.co.kr/news/economy/12091887",
+      "event_at": "2026-07-06T12:04:45+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“빚 1억쯤 없는 사람이 어딨어요”…30대 가계대출, 12년 만에 2배",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-06:빚-1억쯤-없는-사람이-어딨어요-30대-가계대출-12년-만에-2배",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12091887",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "복지도 산업도 세액공제 대신 보조금으로?···청년·저소득층 혜택 늘어날까",
+      "url": "https://www.khan.co.kr/article/202607070600081",
+      "event_at": "2026-07-06T12:00:08+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년",
+          "저소득"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "복지도 산업도 세액공제 대신 보조금으로?···청년·저소득층 혜택 늘어날까",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-07-06:복지도-산업도-세액공제-대신-보조금으로-청년-저소득층-혜택-늘어날까",
+      "evidence_url": "https://www.khan.co.kr/article/202607070600081",
+      "evidence_url_present": true
+    },
     {
       "source": "서울시 지원사업",
       "event_model": "application_deadline",
@@ -1804,145 +1981,6 @@
       "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-06-29:괜히-건물주-됐습니다-공실지옥-고금리에-4년새-대출연체-8배로",
       "evidence_url": "https://www.mk.co.kr/news/economy/12086145",
       "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "물산업 혁신기술 R&D 지원사업 수시공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456750",
-      "event_at": "2026-06-29T00:00:00+00:00",
-      "application_deadline": "2026-06-29",
-      "application_start_date": "2026-06-30",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "중소기업"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "물산업 혁신기술 R&D 지원사업 수시공고",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-06-29:물산업-혁신기술-r-d-지원사업-수시공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456750",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "eligibility_rule",
-      "title": "물산업 혁신기술 R&D 지원사업 수시공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456750",
-      "event_at": "2026-06-29T09:00:37.547097+00:00",
-      "application_deadline": "2026-06-29",
-      "application_start_date": "2026-06-30",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "중소기업"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "물산업 혁신기술 R&D 지원사업 수시공고",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-06-29:물산업-혁신기술-r-d-지원사업-수시공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=456750",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "중·저신용자도 年5%대 대출받는다…최대 한도 1000만원",
-      "url": "https://www.donga.com/news/Economy/article/all/20260629/134202829/1",
-      "event_at": "2026-06-28T23:22:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "자영업자"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "중·저신용자도 年5%대 대출받는다…최대 한도 1000만원",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-06-28:중-저신용자도-年5-대-대출받는다-최대-한도-1000만원",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260629/134202829/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "KB금융 “포용금융 3조원 등 올해 6.9조원 맞춤형 금융 제공”",
-      "url": "https://www.khan.co.kr/article/202606291504001",
-      "event_at": "2026-06-28T21:04:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인",
-          "청년",
-          "취약계층",
-          "자영업자"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "KB금융 “포용금융 3조원 등 올해 6.9조원 맞춤형 금융 제공”",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-06-28:kb금융-포용금융-3조원-등-올해-6-9조원-맞춤형-금융-제공",
-      "evidence_url": "https://www.khan.co.kr/article/202606291504001",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "제2금융권서도 신용대출에 최고금리 상한제 도입하는 곳은?",
-      "url": "https://www.mk.co.kr/news/economy/12085343",
-      "event_at": "2026-06-28T16:46:37+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인",
-          "자영업자"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "제2금융권서도 신용대출에 최고금리 상한제 도입하는 곳은?",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-06-28:제2금융권서도-신용대출에-최고금리-상한제-도입하는-곳은",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12085343",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "“중동전쟁 직격탄, 결국 우리가 맞았다”…中企 생산·고용 모두 악화",
-      "url": "https://www.mk.co.kr/news/economy/12085268",
-      "event_at": "2026-06-28T15:35:14+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "중소기업"
-        ],
-        "Industry": [
-          "제조"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“중동전쟁 직격탄, 결국 우리가 맞았다”…中企 생산·고용 모두 악화",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-06-28:중동전쟁-직격탄-결국-우리가-맞았다-中企-생산-고용-모두-악화",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12085268",
-      "evidence_url_present": true
     }
   ],
   "event_model_coverage": [
@@ -2013,11 +2051,9 @@
   "errors": [
     "정책브리핑: Source disabled (crawl health threshold reached)",
     "농림축산식품부: Source disabled (crawl health threshold reached)",
-    "[서울경제 경제] Request failed: 403 Client Error: Forbidden for url: https://www.sedaily.com/RSS/Economy/",
     "소상공인시장진흥공단: Source disabled (crawl health threshold reached)",
     "행정안전부: Source disabled (crawl health threshold reached)",
     "보건복지부: Source disabled (crawl health threshold reached)",
-    "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n",
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
     "r/startups: Source disabled (crawl health threshold reached)",
