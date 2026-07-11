@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-07-10T07:37:49.420818+00:00",
+  "generated_at": "2026-07-11T06:15:03.417019+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -12,11 +12,11 @@
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 12,
-    "eligibility_rule_events": 34,
+    "application_deadline_events": 13,
+    "eligibility_rule_events": 36,
     "selection_result_events": 1,
-    "unique_program_key_count": 47,
-    "events_with_evidence_url": 47,
+    "unique_program_key_count": 50,
+    "events_with_evidence_url": 50,
     "collection_error_count": 9,
     "event_model_source_gap_count": 0
   },
@@ -225,13 +225,13 @@
       "status": "fresh",
       "article_count": 11,
       "event_count": 10,
-      "latest_event_at": "2026-07-10T07:37:44.219183+00:00",
+      "latest_event_at": "2026-07-11T06:14:57.966388+00:00",
       "age_days": 0.0,
       "latest_title": "서남권 혁신 성장, 정책금융이 함께 합니다.   - 금융위원장, 「KDB NextONE 광주」 개소식 참석 및 광주 AI 산업집적단지 방문",
       "latest_url": "https://www.fsc.go.kr/no010101/87271",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87271",
       "latest_program_title": "서남권 혁신 성장, 정책금융이 함께 합니다.   - 금융위원장, 「KDB NextONE 광주」 개소식 참석 및 광주 AI 산업집적단지 방문",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-07-10:서남권-혁신-성장-정책금융이-함께-합니다-금융위원장-kdb-nextone-광주-개소식-참석-및-광주-ai-산업집적단지-방문",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-07-11:서남권-혁신-성장-정책금융이-함께-합니다-금융위원장-kdb-nextone-광주-개소식-참석-및-광주-ai-산업집적단지-방문",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
         "Industry": [
@@ -526,7 +526,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 12,
+      "article_count": 13,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -552,7 +552,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 4,
+      "article_count": 5,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -733,7 +733,7 @@
       "event_model": "eligibility_rule",
       "title": "서남권 혁신 성장, 정책금융이 함께 합니다.   - 금융위원장, 「KDB NextONE 광주」 개소식 참석 및 광주 AI 산업집적단지 방문",
       "url": "https://www.fsc.go.kr/no010101/87271",
-      "event_at": "2026-07-10T07:37:44.219183+00:00",
+      "event_at": "2026-07-11T06:14:57.966388+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -748,7 +748,7 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "서남권 혁신 성장, 정책금융이 함께 합니다.   - 금융위원장, 「KDB NextONE 광주」 개소식 참석 및 광주 AI 산업집적단지 방문",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-07-10:서남권-혁신-성장-정책금융이-함께-합니다-금융위원장-kdb-nextone-광주-개소식-참석-및-광주-ai-산업집적단지-방문",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-07-11:서남권-혁신-성장-정책금융이-함께-합니다-금융위원장-kdb-nextone-광주-개소식-참석-및-광주-ai-산업집적단지-방문",
       "evidence_url": "https://www.fsc.go.kr/no010101/87271",
       "evidence_url_present": true
     },
@@ -757,7 +757,7 @@
       "event_model": "eligibility_rule",
       "title": "2026년 6월 가계대출 동향(잠정) 및  ｢가계부채 점검회의｣ 개최",
       "url": "https://www.fsc.go.kr/no010101/87297",
-      "event_at": "2026-07-10T07:37:41.752725+00:00",
+      "event_at": "2026-07-11T06:14:55.463335+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -773,7 +773,7 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "2026년 6월 가계대출 동향(잠정) 및  ｢가계부채 점검회의｣ 개최",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-07-10:2026년-6월-가계대출-동향-잠정-및-가계부채-점검회의-개최",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-07-11:2026년-6월-가계대출-동향-잠정-및-가계부채-점검회의-개최",
       "evidence_url": "https://www.fsc.go.kr/no010101/87297",
       "evidence_url_present": true
     },
@@ -823,7 +823,7 @@
       "event_model": "eligibility_rule",
       "title": "“진짜 포용금융”, 지역에서부터 시작합니다 - ｢제6차 포용적 금융 대전환 회의 겸 지역금융 간담회｣ 개최",
       "url": "https://www.fsc.go.kr/no010101/87300",
-      "event_at": "2026-07-10T07:37:40.642480+00:00",
+      "event_at": "2026-07-11T06:14:54.251837+00:00",
       "application_deadline": "2026-06-08",
       "application_start_date": "2026-07-09",
       "eligibility_fields": {
@@ -855,14 +855,14 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "“진짜 포용금융”, 지역에서부터 시작합니다 - ｢제6차 포용적 금융 대전환 회의 겸 지역금융 간담회｣ 개최",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-07-10:진짜-포용금융-지역에서부터-시작합니다-제6차-포용적-금융-대전환-회의-겸-지역금융-간담회-개최",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-07-11:진짜-포용금융-지역에서부터-시작합니다-제6차-포용적-금융-대전환-회의-겸-지역금융-간담회-개최",
       "evidence_url": "https://www.fsc.go.kr/no010101/87300",
       "evidence_url_present": true
     },
     {
       "source": "금융위원회",
       "event_model": "application_deadline",
-      "title": "중소기업 특화 금융투자회사 7개사 지정. 금일 등록된 게시글",
+      "title": "중소기업 특화 금융투자회사 7개사 지정",
       "url": "https://www.fsc.go.kr/no010101/87306",
       "event_at": "2026-01-03T00:00:00+00:00",
       "application_deadline": "2026-01-03",
@@ -881,17 +881,17 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "중소기업 특화 금융투자회사 7개사 지정. 금일 등록된 게시글",
-      "program_key": "application-deadline:kr:금융위원회:2026-01-03:중소기업-특화-금융투자회사-7개사-지정-금일-등록된-게시글",
+      "program_title": "중소기업 특화 금융투자회사 7개사 지정",
+      "program_key": "application-deadline:kr:금융위원회:2026-01-03:중소기업-특화-금융투자회사-7개사-지정",
       "evidence_url": "https://www.fsc.go.kr/no010101/87306",
       "evidence_url_present": true
     },
     {
       "source": "금융위원회",
       "event_model": "eligibility_rule",
-      "title": "중소기업 특화 금융투자회사 7개사 지정. 금일 등록된 게시글",
+      "title": "중소기업 특화 금융투자회사 7개사 지정",
       "url": "https://www.fsc.go.kr/no010101/87306",
-      "event_at": "2026-07-10T07:37:39.866802+00:00",
+      "event_at": "2026-07-11T06:14:53.355731+00:00",
       "application_deadline": "2026-01-03",
       "application_start_date": "2026-07-10",
       "eligibility_fields": {
@@ -908,8 +908,8 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "중소기업 특화 금융투자회사 7개사 지정. 금일 등록된 게시글",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-07-10:중소기업-특화-금융투자회사-7개사-지정-금일-등록된-게시글",
+      "program_title": "중소기업 특화 금융투자회사 7개사 지정",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-07-11:중소기업-특화-금융투자회사-7개사-지정",
       "evidence_url": "https://www.fsc.go.kr/no010101/87306",
       "evidence_url_present": true
     },
@@ -939,7 +939,7 @@
       "event_model": "eligibility_rule",
       "title": "폐원 어린이집「어르신돌봄시설 전환 지원사업」 참여자 모집 재공고",
       "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461419",
-      "event_at": "2026-07-10T07:37:27.284173+00:00",
+      "event_at": "2026-07-11T06:14:40.051658+00:00",
       "application_deadline": "2026-07-31",
       "application_start_date": "2026-07-10",
       "eligibility_fields": {
@@ -951,8 +951,77 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "폐원 어린이집「어르신돌봄시설 전환 지원사업」 참여자 모집 재공고",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-07-10:폐원-어린이집-어르신돌봄시설-전환-지원사업-참여자-모집-재공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-07-11:폐원-어린이집-어르신돌봄시설-전환-지원사업-참여자-모집-재공고",
       "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461419",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "application_deadline",
+      "title": "잇단 규제에도 서울 집값 ‘트리플 강세’… 부동산 민심 악화 의식한듯",
+      "url": "https://www.donga.com/news/Economy/article/all/20260710/134277976/2",
+      "event_at": "2026-05-01T00:00:00+00:00",
+      "application_deadline": "2026-05-01",
+      "application_start_date": "2026-07-10",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "잇단 규제에도 서울 집값 ‘트리플 강세’… 부동산 민심 악화 의식한듯",
+      "program_key": "application-deadline:kr:동아일보-경제:2026-05-01:잇단-규제에도-서울-집값-트리플-강세-부동산-민심-악화-의식한듯",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260710/134277976/2",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "잇단 규제에도 서울 집값 ‘트리플 강세’… 부동산 민심 악화 의식한듯",
+      "url": "https://www.donga.com/news/Economy/article/all/20260710/134277976/2",
+      "event_at": "2026-07-10T07:40:00+00:00",
+      "application_deadline": "2026-05-01",
+      "application_start_date": "2026-07-10",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "잇단 규제에도 서울 집값 ‘트리플 강세’… 부동산 민심 악화 의식한듯",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-10:잇단-규제에도-서울-집값-트리플-강세-부동산-민심-악화-의식한듯",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260710/134277976/2",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "반도체 중소기업 지원 위해 하나은행, 1000억 보증대출",
+      "url": "https://www.mk.co.kr/news/economy/12095628",
+      "event_at": "2026-07-09T23:44:14+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "반도체 중소기업 지원 위해 하나은행, 1000억 보증대출",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-09:반도체-중소기업-지원-위해-하나은행-1000억-보증대출",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12095628",
       "evidence_url_present": true
     },
     {
