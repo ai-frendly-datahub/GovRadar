@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-07-11T06:15:03.417019+00:00",
+  "generated_at": "2026-07-12T06:35:13.737674+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -12,12 +12,12 @@
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 13,
-    "eligibility_rule_events": 36,
+    "application_deadline_events": 14,
+    "eligibility_rule_events": 37,
     "selection_result_events": 1,
-    "unique_program_key_count": 50,
-    "events_with_evidence_url": 50,
-    "collection_error_count": 9,
+    "unique_program_key_count": 52,
+    "events_with_evidence_url": 52,
+    "collection_error_count": 11,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -226,7 +226,7 @@
       "article_count": 11,
       "event_count": 10,
       "latest_event_at": "2026-07-11T06:14:57.966388+00:00",
-      "age_days": 0.0,
+      "age_days": 1.01,
       "latest_title": "서남권 혁신 성장, 정책금융이 함께 합니다.   - 금융위원장, 「KDB NextONE 광주」 개소식 참석 및 광주 AI 산업집적단지 방문",
       "latest_url": "https://www.fsc.go.kr/no010101/87271",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87271",
@@ -246,7 +246,9 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": []
+      "errors": [
+        "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n"
+      ]
     },
     {
       "source": "농림축산식품부",
@@ -526,7 +528,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 13,
+      "article_count": 12,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -578,7 +580,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 6,
+      "article_count": 7,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -728,6 +730,111 @@
     }
   ],
   "events": [
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "폐원 어린이집「어르신돌봄시설 전환 지원사업」 참여자 모집 재공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461419",
+      "event_at": "2026-07-31T00:00:00+00:00",
+      "application_deadline": "2026-07-31",
+      "application_start_date": "2026-07-10",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "폐원 어린이집「어르신돌봄시설 전환 지원사업」 참여자 모집 재공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-07-31:폐원-어린이집-어르신돌봄시설-전환-지원사업-참여자-모집-재공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461419",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "폐원 어린이집「어르신돌봄시설 전환 지원사업」 참여자 모집 재공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461419",
+      "event_at": "2026-07-12T06:34:13.999368+00:00",
+      "application_deadline": "2026-07-31",
+      "application_start_date": "2026-07-10",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "폐원 어린이집「어르신돌봄시설 전환 지원사업」 참여자 모집 재공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-07-12:폐원-어린이집-어르신돌봄시설-전환-지원사업-참여자-모집-재공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461419",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "원가 핑계로 가격 올리고 탈세…국세청, 114곳서 3195억 추징",
+      "url": "https://www.khan.co.kr/article/202607121344011",
+      "event_at": "2026-07-11T19:44:01+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "원가 핑계로 가격 올리고 탈세…국세청, 114곳서 3195억 추징",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-07-11:원가-핑계로-가격-올리고-탈세-국세청-114곳서-3195억-추징",
+      "evidence_url": "https://www.khan.co.kr/article/202607121344011",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "application_deadline",
+      "title": "고환율·수출통제 2대 파고 넘는다···산업부·코트라, ‘긴급지원 바우처 4차’ 추진",
+      "url": "https://www.khan.co.kr/article/202607121100011",
+      "event_at": "2026-04-09T00:00:00+00:00",
+      "application_deadline": "2026-04-09",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "경기"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "고환율·수출통제 2대 파고 넘는다···산업부·코트라, ‘긴급지원 바우처 4차’ 추진",
+      "program_key": "application-deadline:kr:경향신문-경제:2026-04-09:고환율-수출통제-2대-파고-넘는다-산업부-코트라-긴급지원-바우처-4차-추진",
+      "evidence_url": "https://www.khan.co.kr/article/202607121100011",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "고환율·수출통제 2대 파고 넘는다···산업부·코트라, ‘긴급지원 바우처 4차’ 추진",
+      "url": "https://www.khan.co.kr/article/202607121100011",
+      "event_at": "2026-07-11T17:00:01+00:00",
+      "application_deadline": "2026-04-09",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "경기"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "고환율·수출통제 2대 파고 넘는다···산업부·코트라, ‘긴급지원 바우처 4차’ 추진",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-07-11:고환율-수출통제-2대-파고-넘는다-산업부-코트라-긴급지원-바우처-4차-추진",
+      "evidence_url": "https://www.khan.co.kr/article/202607121100011",
+      "evidence_url_present": true
+    },
     {
       "source": "금융위원회",
       "event_model": "eligibility_rule",
@@ -911,48 +1018,6 @@
       "program_title": "중소기업 특화 금융투자회사 7개사 지정",
       "program_key": "eligibility-rule:kr:금융위원회:2026-07-11:중소기업-특화-금융투자회사-7개사-지정",
       "evidence_url": "https://www.fsc.go.kr/no010101/87306",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "폐원 어린이집「어르신돌봄시설 전환 지원사업」 참여자 모집 재공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461419",
-      "event_at": "2026-07-31T00:00:00+00:00",
-      "application_deadline": "2026-07-31",
-      "application_start_date": "2026-07-10",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "폐원 어린이집「어르신돌봄시설 전환 지원사업」 참여자 모집 재공고",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-07-31:폐원-어린이집-어르신돌봄시설-전환-지원사업-참여자-모집-재공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461419",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "eligibility_rule",
-      "title": "폐원 어린이집「어르신돌봄시설 전환 지원사업」 참여자 모집 재공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461419",
-      "event_at": "2026-07-11T06:14:40.051658+00:00",
-      "application_deadline": "2026-07-31",
-      "application_start_date": "2026-07-10",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "폐원 어린이집「어르신돌봄시설 전환 지원사업」 참여자 모집 재공고",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-07-11:폐원-어린이집-어르신돌봄시설-전환-지원사업-참여자-모집-재공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461419",
       "evidence_url_present": true
     },
     {
@@ -1927,27 +1992,6 @@
       "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-02:고환율-직격탄-맞은-中企-정부-15조-규모-대출-보증",
       "evidence_url": "https://www.mk.co.kr/news/economy/12090066",
       "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "수출입은행, 환율 피해 기업에 3%대 초저리 대출 ‘긴급 지원’",
-      "url": "https://www.mk.co.kr/news/economy/12089707",
-      "event_at": "2026-07-02T17:03:02+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "중소기업"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "수출입은행, 환율 피해 기업에 3%대 초저리 대출 ‘긴급 지원’",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-02:수출입은행-환율-피해-기업에-3-대-초저리-대출-긴급-지원",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12089707",
-      "evidence_url_present": true
     }
   ],
   "event_model_coverage": [
@@ -2018,9 +2062,11 @@
   "errors": [
     "정책브리핑: Source disabled (crawl health threshold reached)",
     "농림축산식품부: Source disabled (crawl health threshold reached)",
+    "[서울경제 경제] Request failed: 403 Client Error: Forbidden for url: https://www.sedaily.com/RSS/Economy/",
     "소상공인시장진흥공단: Source disabled (crawl health threshold reached)",
     "행정안전부: Source disabled (crawl health threshold reached)",
     "보건복지부: Source disabled (crawl health threshold reached)",
+    "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n",
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
     "r/startups: Source disabled (crawl health threshold reached)",
