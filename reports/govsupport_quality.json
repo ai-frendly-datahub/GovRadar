@@ -1,22 +1,22 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-07-12T06:35:13.737674+00:00",
+  "generated_at": "2026-07-13T06:55:24.647862+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
-    "fresh_sources": 2,
-    "stale_sources": 0,
+    "fresh_sources": 1,
+    "stale_sources": 1,
     "missing_sources": 3,
     "missing_event_sources": 0,
     "unknown_event_date_sources": 0,
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 14,
-    "eligibility_rule_events": 37,
+    "application_deadline_events": 13,
+    "eligibility_rule_events": 34,
     "selection_result_events": 1,
-    "unique_program_key_count": 52,
-    "events_with_evidence_url": 52,
+    "unique_program_key_count": 48,
+    "events_with_evidence_url": 48,
     "collection_error_count": 11,
     "event_model_source_gap_count": 0
   },
@@ -138,7 +138,7 @@
       "freshness_sla_days": 1,
       "status": "fresh",
       "article_count": 7,
-      "event_count": 5,
+      "event_count": 6,
       "latest_event_at": "2026-07-31T00:00:00+00:00",
       "age_days": 0.0,
       "latest_title": "폐원 어린이집「어르신돌봄시설 전환 지원사업」 참여자 모집 재공고",
@@ -222,11 +222,11 @@
       "tracked": true,
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
-      "status": "fresh",
-      "article_count": 11,
-      "event_count": 10,
+      "status": "stale",
+      "article_count": 7,
+      "event_count": 6,
       "latest_event_at": "2026-07-11T06:14:57.966388+00:00",
-      "age_days": 1.01,
+      "age_days": 2.03,
       "latest_title": "서남권 혁신 성장, 정책금융이 함께 합니다.   - 금융위원장, 「KDB NextONE 광주」 개소식 참석 및 광주 AI 산업집적단지 방문",
       "latest_url": "https://www.fsc.go.kr/no010101/87271",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87271",
@@ -528,7 +528,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 12,
+      "article_count": 9,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -554,7 +554,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 5,
+      "article_count": 7,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -580,7 +580,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 7,
+      "article_count": 6,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -710,7 +710,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 3,
+      "article_count": 2,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -730,6 +730,122 @@
     }
   ],
   "events": [
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "2026년 서울시 청년 마음건강 지원사업 3차 참여자 모집 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461542",
+      "event_at": "2026-07-13T00:00:00+00:00",
+      "application_deadline": "2026-07-13",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 서울시 청년 마음건강 지원사업 3차 참여자 모집 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-07-13:2026년-서울시-청년-마음건강-지원사업-3차-참여자-모집-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461542",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "2026년 서울시 청년 마음건강 지원사업 3차 참여자 모집 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461542",
+      "event_at": "2026-07-13T06:54:21.014664+00:00",
+      "application_deadline": "2026-07-13",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 서울시 청년 마음건강 지원사업 3차 참여자 모집 공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-07-13:2026년-서울시-청년-마음건강-지원사업-3차-참여자-모집-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461542",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "2차 국민성장펀드 9월 출시…‘절세 투자’ 기회 또 온다",
+      "url": "https://www.donga.com/news/Economy/article/all/20260713/134280022/1",
+      "event_at": "2026-07-12T20:56:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI",
+          "바이오"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2차 국민성장펀드 9월 출시…‘절세 투자’ 기회 또 온다",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-12:2차-국민성장펀드-9월-출시-절세-투자-기회-또-온다",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260713/134280022/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "中企도 ‘근로시간 합리화’ 바람…“청년 잡으려 조기퇴근 도입”[고용 인사이드]",
+      "url": "https://www.donga.com/news/Society/article/all/20260713/134274025/1",
+      "event_at": "2026-07-12T20:51:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업",
+          "청년"
+        ],
+        "Industry": [
+          "제조"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "中企도 ‘근로시간 합리화’ 바람…“청년 잡으려 조기퇴근 도입”[고용 인사이드]",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-12:中企도-근로시간-합리화-바람-청년-잡으려-조기퇴근-도입-고용-인사이드",
+      "evidence_url": "https://www.donga.com/news/Society/article/all/20260713/134274025/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "DB손보, 취약계층 주거환경 개선 봉사",
+      "url": "https://www.mk.co.kr/news/economy/12097110",
+      "event_at": "2026-07-12T20:44:44+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "DB손보, 취약계층 주거환경 개선 봉사",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-12:db손보-취약계층-주거환경-개선-봉사",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12097110",
+      "evidence_url_present": true
+    },
     {
       "source": "서울시 지원사업",
       "event_model": "application_deadline",
@@ -1707,184 +1823,6 @@
       "evidence_url_present": true
     },
     {
-      "source": "금융위원회",
-      "event_model": "application_deadline",
-      "title": "국민성장펀드가 지역중심 경제구조대전환의 마중물이 되겠습니다.",
-      "url": "https://www.fsc.go.kr/no010101/87246",
-      "event_at": "2026-07-02T00:00:00+00:00",
-      "application_deadline": "2026-07-02",
-      "application_start_date": "2026-07-03",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "스타트업",
-          "청년"
-        ],
-        "BusinessStage": [
-          "벤처기업"
-        ],
-        "Industry": [
-          "AI"
-        ],
-        "Region": [
-          "부산",
-          "대전"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "국민성장펀드가 지역중심 경제구조대전환의 마중물이 되겠습니다.",
-      "program_key": "application-deadline:kr:금융위원회:2026-07-02:국민성장펀드가-지역중심-경제구조대전환의-마중물이-되겠습니다",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87246",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "국민성장펀드가 지역중심 경제구조대전환의 마중물이 되겠습니다.",
-      "url": "https://www.fsc.go.kr/no010101/87246",
-      "event_at": "2026-07-05T07:27:58.547824+00:00",
-      "application_deadline": "2026-07-02",
-      "application_start_date": "2026-07-03",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "스타트업",
-          "청년"
-        ],
-        "BusinessStage": [
-          "벤처기업"
-        ],
-        "Industry": [
-          "AI"
-        ],
-        "Region": [
-          "부산",
-          "대전"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "국민성장펀드가 지역중심 경제구조대전환의 마중물이 되겠습니다.",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-07-05:국민성장펀드가-지역중심-경제구조대전환의-마중물이-되겠습니다",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87246",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "부산시에서 전국 최초 지역 밀착형  서민금융 복합지원을 개시합니다.   - 이억원 금융위원장, 「부산 서민금융 복합지원센터」 개소식 참석",
-      "url": "https://www.fsc.go.kr/no010101/87250",
-      "event_at": "2026-07-05T07:27:56.893629+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인",
-          "취약계층"
-        ],
-        "BusinessStage": [
-          "재창업"
-        ],
-        "Region": [
-          "부산",
-          "광주",
-          "대전",
-          "울산",
-          "전북",
-          "경남"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "부산시에서 전국 최초 지역 밀착형  서민금융 복합지원을 개시합니다.   - 이억원 금융위원장, 「부산 서민금융 복합지원센터」 개소식 참석",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-07-05:부산시에서-전국-최초-지역-밀착형-서민금융-복합지원을-개시합니다-이억원-금융위원장-부산-서민금융-복합지원센터-개소식-참석",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87250",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "부동산 프로젝트 금융(PF) 상황 점검회의 개최",
-      "url": "https://www.fsc.go.kr/no010101/87252",
-      "event_at": "2026-07-05T07:27:55.783558+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "부산"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "부동산 프로젝트 금융(PF) 상황 점검회의 개최",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-07-05:부동산-프로젝트-금융-pf-상황-점검회의-개최",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87252",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "application_deadline",
-      "title": "홈플러스 회생절차 폐지에 따른근로자 및 중소 협력업체 지원방안 마련",
-      "url": "https://www.fsc.go.kr/no010101/87254",
-      "event_at": "2026-01-05T00:00:00+00:00",
-      "application_deadline": "2026-01-05",
-      "application_start_date": "2026-07-03",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인",
-          "중소기업",
-          "저소득"
-        ],
-        "BusinessStage": [
-          "재창업",
-          "벤처기업"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "홈플러스 회생절차 폐지에 따른근로자 및 중소 협력업체 지원방안 마련",
-      "program_key": "application-deadline:kr:금융위원회:2026-01-05:홈플러스-회생절차-폐지에-따른근로자-및-중소-협력업체-지원방안-마련",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87254",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "홈플러스 회생절차 폐지에 따른근로자 및 중소 협력업체 지원방안 마련",
-      "url": "https://www.fsc.go.kr/no010101/87254",
-      "event_at": "2026-07-05T07:27:54.420871+00:00",
-      "application_deadline": "2026-01-05",
-      "application_start_date": "2026-07-03",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인",
-          "중소기업",
-          "저소득"
-        ],
-        "BusinessStage": [
-          "재창업",
-          "벤처기업"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "홈플러스 회생절차 폐지에 따른근로자 및 중소 협력업체 지원방안 마련",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-07-05:홈플러스-회생절차-폐지에-따른근로자-및-중소-협력업체-지원방안-마련",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87254",
-      "evidence_url_present": true
-    },
-    {
       "source": "매일경제 경제정책",
       "event_model": "eligibility_rule",
       "title": "[단독] 李정부 '미소금융 3종세트' 희비 엇갈려",
@@ -1925,72 +1863,6 @@
       "program_title": "[단독] ‘미소금융 3종세트’ 초반 실적 부진…금융당국 ‘크레딧 빌드업’ 무색",
       "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-04:단독-미소금융-3종세트-초반-실적-부진-금융당국-크레딧-빌드업-무색",
       "evidence_url": "https://www.mk.co.kr/news/economy/12090704",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "“마뗑킴·조선미녀…소상공인 유망 제품 프리미엄 브랜드로 키운다”",
-      "url": "https://www.khan.co.kr/article/202607051448001",
-      "event_at": "2026-07-04T20:48:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인"
-        ],
-        "BusinessStage": [
-          "벤처기업"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“마뗑킴·조선미녀…소상공인 유망 제품 프리미엄 브랜드로 키운다”",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-07-04:마뗑킴-조선미녀-소상공인-유망-제품-프리미엄-브랜드로-키운다",
-      "evidence_url": "https://www.khan.co.kr/article/202607051448001",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "“대부업은 사채 아닙니다…저소득층이 불법사금융 빠지지 않게 순기능하죠” [인터뷰]",
-      "url": "https://www.mk.co.kr/news/economy/12090495",
-      "event_at": "2026-07-04T19:30:58+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "저소득"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“대부업은 사채 아닙니다…저소득층이 불법사금융 빠지지 않게 순기능하죠” [인터뷰]",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-04:대부업은-사채-아닙니다-저소득층이-불법사금융-빠지지-않게-순기능하죠-인터뷰",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12090495",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "고환율 직격탄 맞은 中企 … 정부, 15조 규모 대출·보증",
-      "url": "https://www.mk.co.kr/news/economy/12090066",
-      "event_at": "2026-07-02T23:41:08+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "중소기업"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "고환율 직격탄 맞은 中企 … 정부, 15조 규모 대출·보증",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-02:고환율-직격탄-맞은-中企-정부-15조-규모-대출-보증",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12090066",
       "evidence_url_present": true
     }
   ],
@@ -2062,7 +1934,6 @@
   "errors": [
     "정책브리핑: Source disabled (crawl health threshold reached)",
     "농림축산식품부: Source disabled (crawl health threshold reached)",
-    "[서울경제 경제] Request failed: 403 Client Error: Forbidden for url: https://www.sedaily.com/RSS/Economy/",
     "소상공인시장진흥공단: Source disabled (crawl health threshold reached)",
     "행정안전부: Source disabled (crawl health threshold reached)",
     "보건복지부: Source disabled (crawl health threshold reached)",
@@ -2070,6 +1941,7 @@
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
     "r/startups: Source disabled (crawl health threshold reached)",
-    "r/Entrepreneur: Source disabled (crawl health threshold reached)"
+    "r/Entrepreneur: Source disabled (crawl health threshold reached)",
+    "https://www.sedaily.com/article/20066921: summary is missing or not a string"
   ]
 }
