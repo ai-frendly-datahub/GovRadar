@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-07-13T06:55:24.647862+00:00",
+  "generated_at": "2026-07-14T06:13:38.942098+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -12,12 +12,12 @@
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 13,
-    "eligibility_rule_events": 34,
+    "application_deadline_events": 11,
+    "eligibility_rule_events": 31,
     "selection_result_events": 1,
-    "unique_program_key_count": 48,
-    "events_with_evidence_url": 48,
-    "collection_error_count": 11,
+    "unique_program_key_count": 43,
+    "events_with_evidence_url": 43,
+    "collection_error_count": 10,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -137,8 +137,8 @@
       "event_model": "application_deadline",
       "freshness_sla_days": 1,
       "status": "fresh",
-      "article_count": 7,
-      "event_count": 6,
+      "article_count": 6,
+      "event_count": 4,
       "latest_event_at": "2026-07-31T00:00:00+00:00",
       "age_days": 0.0,
       "latest_title": "폐원 어린이집「어르신돌봄시설 전환 지원사업」 참여자 모집 재공고",
@@ -226,7 +226,7 @@
       "article_count": 7,
       "event_count": 6,
       "latest_event_at": "2026-07-11T06:14:57.966388+00:00",
-      "age_days": 2.03,
+      "age_days": 3.0,
       "latest_title": "서남권 혁신 성장, 정책금융이 함께 합니다.   - 금융위원장, 「KDB NextONE 광주」 개소식 참석 및 광주 AI 산업집적단지 방문",
       "latest_url": "https://www.fsc.go.kr/no010101/87271",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87271",
@@ -528,7 +528,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 9,
+      "article_count": 6,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -580,7 +580,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 6,
+      "article_count": 8,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -730,6 +730,93 @@
     }
   ],
   "events": [
+    {
+      "source": "서울시 지원사업",
+      "event_model": "selection_result",
+      "title": "2026년 문화예술단체 지원사업 보조사업자 선정 결과 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461623",
+      "event_at": "2026-07-14T06:12:41.541729+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 문화예술단체 지원사업",
+      "program_key": "selection-result:kr:서울시-지원사업:2026년-문화예술단체-지원사업",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461623",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "이종배, ‘폐업 위기 소상공인 조기 발굴 경영회복 지원 법안’ 추진",
+      "url": "https://www.donga.com/news/Politics/article/all/20260714/134295151/1",
+      "event_at": "2026-07-13T18:59:44+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인"
+        ],
+        "BusinessStage": [
+          "재창업",
+          "벤처기업"
+        ],
+        "Region": [
+          "경기"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "이종배, ‘폐업 위기 소상공인 조기 발굴 경영회복 지원 법안’ 추진",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-13:이종배-폐업-위기-소상공인-조기-발굴-경영회복-지원-법안-추진",
+      "evidence_url": "https://www.donga.com/news/Politics/article/all/20260714/134295151/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "[속보]이재명 정부, ‘지방우대세제 3종’ 푼다···“5극3특 등 통해 잠재성장률 반등 구현”[하반기 성장전략]",
+      "url": "https://www.khan.co.kr/article/202607141137011",
+      "event_at": "2026-07-13T17:37:01+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "[속보]이재명 정부, ‘지방우대세제 3종’ 푼다···“5극3특 등 통해 잠재성장률 반등 구현”[하반기 성장전략]",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-07-13:속보-이재명-정부-지방우대세제-3종-푼다-5극3특-등-통해-잠재성장률-반등-구현-하반기-성장전략",
+      "evidence_url": "https://www.khan.co.kr/article/202607141137011",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "[어떻게 생각하십니까] “취약계층 채무자 보호법, 있는데 왜 없죠?”···‘부모 빚’ 대학생 국회에 편지",
+      "url": "https://www.khan.co.kr/article/202607140600071",
+      "event_at": "2026-07-13T12:00:07+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "[어떻게 생각하십니까] “취약계층 채무자 보호법, 있는데 왜 없죠?”···‘부모 빚’ 대학생 국회에 편지",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-07-13:어떻게-생각하십니까-취약계층-채무자-보호법-있는데-왜-없죠-부모-빚-대학생-국회에-편지",
+      "evidence_url": "https://www.khan.co.kr/article/202607140600071",
+      "evidence_url_present": true
+    },
     {
       "source": "서울시 지원사업",
       "event_model": "application_deadline",
@@ -1671,199 +1758,6 @@
       "program_key": "eligibility-rule:kr:경향신문-경제:2026-07-06:복지도-산업도-세액공제-대신-보조금으로-청년-저소득층-혜택-늘어날까",
       "evidence_url": "https://www.khan.co.kr/article/202607070600081",
       "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "2026년 서울커리업 구직지원금 지원 대상자 3차 모집 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461063",
-      "event_at": "2026-07-27T00:00:00+00:00",
-      "application_deadline": "2026-07-27",
-      "application_start_date": "2026-07-06",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 서울커리업 구직지원금 지원 대상자 3차 모집 공고",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-07-27:2026년-서울커리업-구직지원금-지원-대상자-3차-모집-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461063",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "eligibility_rule",
-      "title": "2026년 서울커리업 구직지원금 지원 대상자 3차 모집 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461063",
-      "event_at": "2026-07-06T08:22:37.138613+00:00",
-      "application_deadline": "2026-07-27",
-      "application_start_date": "2026-07-06",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 서울커리업 구직지원금 지원 대상자 3차 모집 공고",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-07-06:2026년-서울커리업-구직지원금-지원-대상자-3차-모집-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461063",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "2026년 전통문화 발굴 및 계승 지원사업 2차 공모 선정 결과",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461066",
-      "event_at": "2026-07-06T00:00:00+00:00",
-      "application_deadline": "2026-07-06",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 전통문화 발굴 및 계승 지원사업",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-07-06:2026년-전통문화-발굴-및-계승-지원사업",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461066",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "eligibility_rule",
-      "title": "2026년 전통문화 발굴 및 계승 지원사업 2차 공모 선정 결과",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461066",
-      "event_at": "2026-07-06T08:22:35.781207+00:00",
-      "application_deadline": "2026-07-06",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 전통문화 발굴 및 계승 지원사업",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-07-06:2026년-전통문화-발굴-및-계승-지원사업",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461066",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "selection_result",
-      "title": "2026년 전통문화 발굴 및 계승 지원사업 2차 공모 선정 결과",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461066",
-      "event_at": "2026-07-06T08:22:35.781207+00:00",
-      "application_deadline": "2026-07-06",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 전통문화 발굴 및 계승 지원사업",
-      "program_key": "selection-result:kr:서울시-지원사업:2026년-전통문화-발굴-및-계승-지원사업",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461066",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "“디지털 무역 경쟁력 키운다”…KEP협회, ‘글로벌 공공조달 AX 전략 전문가 과정’ 개강",
-      "url": "https://www.donga.com/news/Economy/article/all/20260706/134244224/1",
-      "event_at": "2026-07-05T21:01:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "AI"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“디지털 무역 경쟁력 키운다”…KEP협회, ‘글로벌 공공조달 AX 전략 전문가 과정’ 개강",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-05:디지털-무역-경쟁력-키운다-kep협회-글로벌-공공조달-ax-전략-전문가-과정-개강",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260706/134244224/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "기업대출 제때 돈 못갚는 곳, 10건 중 9건은 ‘골목상권’",
-      "url": "https://www.mk.co.kr/news/economy/12091186",
-      "event_at": "2026-07-05T20:26:45+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "제조"
-        ],
-        "Region": [
-          "경기"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "기업대출 제때 돈 못갚는 곳, 10건 중 9건은 ‘골목상권’",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-05:기업대출-제때-돈-못갚는-곳-10건-중-9건은-골목상권",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12091186",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "[단독] 李정부 '미소금융 3종세트' 희비 엇갈려",
-      "url": "https://www.mk.co.kr/news/economy/12090725",
-      "event_at": "2026-07-04T23:50:55+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "[단독] 李정부 '미소금융 3종세트' 희비 엇갈려",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-04:단독-李정부-미소금융-3종세트-희비-엇갈려",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12090725",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "[단독] ‘미소금융 3종세트’ 초반 실적 부진…금융당국 ‘크레딧 빌드업’ 무색",
-      "url": "https://www.mk.co.kr/news/economy/12090704",
-      "event_at": "2026-07-04T23:46:02+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년",
-          "취약계층"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "[단독] ‘미소금융 3종세트’ 초반 실적 부진…금융당국 ‘크레딧 빌드업’ 무색",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-04:단독-미소금융-3종세트-초반-실적-부진-금융당국-크레딧-빌드업-무색",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12090704",
-      "evidence_url_present": true
     }
   ],
   "event_model_coverage": [
@@ -1941,7 +1835,6 @@
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
     "r/startups: Source disabled (crawl health threshold reached)",
-    "r/Entrepreneur: Source disabled (crawl health threshold reached)",
-    "https://www.sedaily.com/article/20066921: summary is missing or not a string"
+    "r/Entrepreneur: Source disabled (crawl health threshold reached)"
   ]
 }
