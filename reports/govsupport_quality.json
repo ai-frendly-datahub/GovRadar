@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-07-14T06:13:38.942098+00:00",
+  "generated_at": "2026-07-15T06:17:07.236371+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -12,12 +12,12 @@
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 11,
-    "eligibility_rule_events": 31,
+    "application_deadline_events": 8,
+    "eligibility_rule_events": 29,
     "selection_result_events": 1,
-    "unique_program_key_count": 43,
-    "events_with_evidence_url": 43,
-    "collection_error_count": 10,
+    "unique_program_key_count": 38,
+    "events_with_evidence_url": 38,
+    "collection_error_count": 11,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -137,8 +137,8 @@
       "event_model": "application_deadline",
       "freshness_sla_days": 1,
       "status": "fresh",
-      "article_count": 6,
-      "event_count": 4,
+      "article_count": 5,
+      "event_count": 3,
       "latest_event_at": "2026-07-31T00:00:00+00:00",
       "age_days": 0.0,
       "latest_title": "폐원 어린이집「어르신돌봄시설 전환 지원사업」 참여자 모집 재공고",
@@ -223,10 +223,10 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
       "status": "stale",
-      "article_count": 7,
-      "event_count": 6,
+      "article_count": 5,
+      "event_count": 4,
       "latest_event_at": "2026-07-11T06:14:57.966388+00:00",
-      "age_days": 3.0,
+      "age_days": 4.0,
       "latest_title": "서남권 혁신 성장, 정책금융이 함께 합니다.   - 금융위원장, 「KDB NextONE 광주」 개소식 참석 및 광주 AI 산업집적단지 방문",
       "latest_url": "https://www.fsc.go.kr/no010101/87271",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87271",
@@ -528,7 +528,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 6,
+      "article_count": 5,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -554,7 +554,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 7,
+      "article_count": 8,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -580,7 +580,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 8,
+      "article_count": 9,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -731,6 +731,53 @@
   ],
   "events": [
     {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "소상공인 단체 “숨만 쉬고 있는데 최저임금 또 올려” 비판",
+      "url": "https://www.donga.com/news/Economy/article/all/20260715/134302817/1",
+      "event_at": "2026-07-14T17:48:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업",
+          "취약계층"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "소상공인 단체 “숨만 쉬고 있는데 최저임금 또 올려” 비판",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-14:소상공인-단체-숨만-쉬고-있는데-최저임금-또-올려-비판",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260715/134302817/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "[속보]6월 취업자 6만3000명 증가···청년 고용 26개월째 뒷걸음",
+      "url": "https://www.khan.co.kr/article/202607150800001",
+      "event_at": "2026-07-14T14:00:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "[속보]6월 취업자 6만3000명 증가···청년 고용 26개월째 뒷걸음",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-07-14:속보-6월-취업자-6만3000명-증가-청년-고용-26개월째-뒷걸음",
+      "evidence_url": "https://www.khan.co.kr/article/202607150800001",
+      "evidence_url_present": true
+    },
+    {
       "source": "서울시 지원사업",
       "event_model": "selection_result",
       "title": "2026년 문화예술단체 지원사업 보조사업자 선정 결과 공고",
@@ -745,6 +792,30 @@
       "program_title": "2026년 문화예술단체 지원사업",
       "program_key": "selection-result:kr:서울시-지원사업:2026년-문화예술단체-지원사업",
       "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461623",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "‘지방우대세제 3종’ 도입…중소기업 취업자 소득세 감면 확대",
+      "url": "https://www.khan.co.kr/article/202607142139005",
+      "event_at": "2026-07-14T03:39:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "‘지방우대세제 3종’ 도입…중소기업 취업자 소득세 감면 확대",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-07-14:지방우대세제-3종-도입-중소기업-취업자-소득세-감면-확대",
+      "evidence_url": "https://www.khan.co.kr/article/202607142139005",
       "evidence_url_present": true
     },
     {
@@ -1573,191 +1644,6 @@
       "program_key": "eligibility-rule:kr:서울시-지원사업:2026-07-08:아동청소년-정신건강지원시설-중구아이존-보조사업자-선정-결과",
       "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461229",
       "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "application_deadline",
-      "title": "한국형 포용금융 발전모델을 위한 전문가 논의의 장을 마련하였습니다.  - 「포용금융 전략 추진단」 감독총괄분과 첫 회의 개최",
-      "url": "https://www.fsc.go.kr/no010101/87265",
-      "event_at": "2026-06-17T00:00:00+00:00",
-      "application_deadline": "2026-06-17",
-      "application_start_date": "2026-07-06",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년",
-          "취약계층"
-        ],
-        "Region": [
-          "서울",
-          "대전"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "한국형 포용금융 발전모델을 위한 전문가 논의의 장을 마련하였습니다.  - 「포용금융 전략 추진단」 감독총괄분과 첫 회의 개최",
-      "program_key": "application-deadline:kr:금융위원회:2026-06-17:한국형-포용금융-발전모델을-위한-전문가-논의의-장을-마련하였습니다-포용금융-전략-추진단-감독총괄분과-첫-회의-개최",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87265",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "한국형 포용금융 발전모델을 위한 전문가 논의의 장을 마련하였습니다.  - 「포용금융 전략 추진단」 감독총괄분과 첫 회의 개최",
-      "url": "https://www.fsc.go.kr/no010101/87265",
-      "event_at": "2026-07-07T07:40:43.571610+00:00",
-      "application_deadline": "2026-06-17",
-      "application_start_date": "2026-07-06",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년",
-          "취약계층"
-        ],
-        "Region": [
-          "서울",
-          "대전"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "한국형 포용금융 발전모델을 위한 전문가 논의의 장을 마련하였습니다.  - 「포용금융 전략 추진단」 감독총괄분과 첫 회의 개최",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-07-07:한국형-포용금융-발전모델을-위한-전문가-논의의-장을-마련하였습니다-포용금융-전략-추진단-감독총괄분과-첫-회의-개최",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87265",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "application_deadline",
-      "title": "홈플러스 회생절차 폐지 관련 금융권 대응 점검회의 - 홈플러스 영세·중소 협력업체 피해 확산을 최소화하기 위한  금융지원 방안 논의 및 금융권의 적극적 협조 지속 당부",
-      "url": "https://www.fsc.go.kr/no010101/87266",
-      "event_at": "2026-07-03T00:00:00+00:00",
-      "application_deadline": "2026-07-03",
-      "application_start_date": "2026-07-06",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "홈플러스 회생절차 폐지 관련 금융권 대응 점검회의 - 홈플러스 영세·중소 협력업체 피해 확산을 최소화하기 위한  금융지원 방안 논의 및 금융권의 적극적 협조 지속 당부",
-      "program_key": "application-deadline:kr:금융위원회:2026-07-03:홈플러스-회생절차-폐지-관련-금융권-대응-점검회의-홈플러스-영세-중소-협력업체-피해-확산을-최소화하기-위한-금융지원-방안-논의-및-금융권의-적극적-협조-지속-당부",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87266",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "홈플러스 회생절차 폐지 관련 금융권 대응 점검회의 - 홈플러스 영세·중소 협력업체 피해 확산을 최소화하기 위한  금융지원 방안 논의 및 금융권의 적극적 협조 지속 당부",
-      "url": "https://www.fsc.go.kr/no010101/87266",
-      "event_at": "2026-07-07T07:40:42.395972+00:00",
-      "application_deadline": "2026-07-03",
-      "application_start_date": "2026-07-06",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "홈플러스 회생절차 폐지 관련 금융권 대응 점검회의 - 홈플러스 영세·중소 협력업체 피해 확산을 최소화하기 위한  금융지원 방안 논의 및 금융권의 적극적 협조 지속 당부",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-07-07:홈플러스-회생절차-폐지-관련-금융권-대응-점검회의-홈플러스-영세-중소-협력업체-피해-확산을-최소화하기-위한-금융지원-방안-논의-및-금융권의-적극적-협조-지속-당부",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87266",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "2026년도 재활용사업자 육성자금 융자 지원계획 2차 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461154",
-      "event_at": "2026-07-23T00:00:00+00:00",
-      "application_deadline": "2026-07-23",
-      "application_start_date": "2026-07-07",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년도 재활용사업자 육성자금 융자 지원계획 2차 공고",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-07-23:2026년도-재활용사업자-육성자금-융자-지원계획-2차-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461154",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "eligibility_rule",
-      "title": "2026년도 재활용사업자 육성자금 융자 지원계획 2차 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461154",
-      "event_at": "2026-07-07T07:40:24.519346+00:00",
-      "application_deadline": "2026-07-23",
-      "application_start_date": "2026-07-07",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년도 재활용사업자 육성자금 융자 지원계획 2차 공고",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-07-07:2026년도-재활용사업자-육성자금-융자-지원계획-2차-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461154",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "“빚 1억쯤 없는 사람이 어딨어요”…30대 가계대출, 12년 만에 2배",
-      "url": "https://www.mk.co.kr/news/economy/12091887",
-      "event_at": "2026-07-06T12:04:45+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“빚 1억쯤 없는 사람이 어딨어요”…30대 가계대출, 12년 만에 2배",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-06:빚-1억쯤-없는-사람이-어딨어요-30대-가계대출-12년-만에-2배",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12091887",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "복지도 산업도 세액공제 대신 보조금으로?···청년·저소득층 혜택 늘어날까",
-      "url": "https://www.khan.co.kr/article/202607070600081",
-      "event_at": "2026-07-06T12:00:08+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년",
-          "저소득"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "복지도 산업도 세액공제 대신 보조금으로?···청년·저소득층 혜택 늘어날까",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-07-06:복지도-산업도-세액공제-대신-보조금으로-청년-저소득층-혜택-늘어날까",
-      "evidence_url": "https://www.khan.co.kr/article/202607070600081",
-      "evidence_url_present": true
     }
   ],
   "event_model_coverage": [
@@ -1835,6 +1721,7 @@
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
     "r/startups: Source disabled (crawl health threshold reached)",
-    "r/Entrepreneur: Source disabled (crawl health threshold reached)"
+    "r/Entrepreneur: Source disabled (crawl health threshold reached)",
+    "https://www.sedaily.com/article/20068089: summary is missing or not a string"
   ]
 }
