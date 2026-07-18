@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-07-17T06:18:20.261098+00:00",
+  "generated_at": "2026-07-18T06:07:34.764866+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -12,12 +12,12 @@
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 9,
-    "eligibility_rule_events": 33,
+    "application_deadline_events": 8,
+    "eligibility_rule_events": 31,
     "selection_result_events": 1,
-    "unique_program_key_count": 43,
-    "events_with_evidence_url": 43,
-    "collection_error_count": 10,
+    "unique_program_key_count": 40,
+    "events_with_evidence_url": 40,
+    "collection_error_count": 11,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -226,7 +226,7 @@
       "article_count": 6,
       "event_count": 5,
       "latest_event_at": "2026-07-17T06:18:12.776107+00:00",
-      "age_days": 0.0,
+      "age_days": 0.99,
       "latest_title": "“한국은행 디지털화폐(CBDC) 시스템 내 예금토큰 기반 지급결제 테스트(프로젝트 한강) 2단계 시행” 등    혁신금융서비스 5건 신규 지정 의결",
       "latest_url": "https://www.fsc.go.kr/no010101/87338",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87338",
@@ -251,7 +251,9 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": []
+      "errors": [
+        "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n"
+      ]
     },
     {
       "source": "농림축산식품부",
@@ -557,7 +559,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 11,
+      "article_count": 9,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -734,6 +736,48 @@
   ],
   "events": [
     {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "「공공시설 차열페인트 시공 지원 사업」 보조사업자 모집공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461821",
+      "event_at": "2026-07-23T00:00:00+00:00",
+      "application_deadline": "2026-07-23",
+      "application_start_date": "2026-07-16",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "「공공시설 차열페인트 시공 지원 사업」 보조사업자 모집공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-07-23:공공시설-차열페인트-시공-지원-사업-보조사업자-모집공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461821",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "「공공시설 차열페인트 시공 지원 사업」 보조사업자 모집공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461821",
+      "event_at": "2026-07-18T06:06:30.695102+00:00",
+      "application_deadline": "2026-07-23",
+      "application_start_date": "2026-07-16",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "「공공시설 차열페인트 시공 지원 사업」 보조사업자 모집공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-07-18:공공시설-차열페인트-시공-지원-사업-보조사업자-모집공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461821",
+      "evidence_url_present": true
+    },
+    {
       "source": "금융위원회",
       "event_model": "eligibility_rule",
       "title": "“한국은행 디지털화폐(CBDC) 시스템 내 예금토큰 기반 지급결제 테스트(프로젝트 한강) 2단계 시행” 등    혁신금융서비스 5건 신규 지정 의결",
@@ -760,91 +804,6 @@
       "program_title": "“한국은행 디지털화폐(CBDC) 시스템 내 예금토큰 기반 지급결제 테스트(프로젝트 한강) 2단계 시행” 등    혁신금융서비스 5건 신규 지정 의결",
       "program_key": "eligibility-rule:kr:금융위원회:2026-07-17:한국은행-디지털화폐-cbdc-시스템-내-예금토큰-기반-지급결제-테스트-프로젝트-한강-2단계-시행-등-혁신금융서비스-5건-신규-지정-의결",
       "evidence_url": "https://www.fsc.go.kr/no010101/87338",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "「공공시설 차열페인트 시공 지원 사업」 보조사업자 모집공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461821",
-      "event_at": "2026-07-23T00:00:00+00:00",
-      "application_deadline": "2026-07-23",
-      "application_start_date": "2026-07-16",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "「공공시설 차열페인트 시공 지원 사업」 보조사업자 모집공고",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-07-23:공공시설-차열페인트-시공-지원-사업-보조사업자-모집공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461821",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "eligibility_rule",
-      "title": "「공공시설 차열페인트 시공 지원 사업」 보조사업자 모집공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461821",
-      "event_at": "2026-07-17T06:17:56.234383+00:00",
-      "application_deadline": "2026-07-23",
-      "application_start_date": "2026-07-16",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "「공공시설 차열페인트 시공 지원 사업」 보조사업자 모집공고",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-07-17:공공시설-차열페인트-시공-지원-사업-보조사업자-모집공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461821",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "“취약 대출자 부담 재정-금융정책으로 덜어줘야”",
-      "url": "https://www.donga.com/news/Economy/article/all/20260716/134315503/2",
-      "event_at": "2026-07-16T07:40:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "저소득",
-          "취약계층"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“취약 대출자 부담 재정-금융정책으로 덜어줘야”",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-16:취약-대출자-부담-재정-금융정책으로-덜어줘야",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260716/134315503/2",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "“종부세, 주택 수 아닌 가액 기준 부과… ‘똘똘한 한 채’ 쏠림 현상 해소해야”",
-      "url": "https://www.donga.com/news/Economy/article/all/20260716/134315513/2",
-      "event_at": "2026-07-16T07:40:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“종부세, 주택 수 아닌 가액 기준 부과… ‘똘똘한 한 채’ 쏠림 현상 해소해야”",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-16:종부세-주택-수-아닌-가액-기준-부과-똘똘한-한-채-쏠림-현상-해소해야",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260716/134315513/2",
       "evidence_url_present": true
     },
     {
@@ -897,6 +856,49 @@
       "program_title": "전국민 무료 이용 ‘모두의 AI’ 12월 선보여",
       "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-16:전국민-무료-이용-모두의-ai-12월-선보여",
       "evidence_url": "https://www.donga.com/news/Economy/article/all/20260716/134315520/2",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "“취약 대출자 부담 재정-금융정책으로 덜어줘야”",
+      "url": "https://www.donga.com/news/Economy/article/all/20260716/134315503/2",
+      "event_at": "2026-07-16T07:40:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "저소득",
+          "취약계층"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“취약 대출자 부담 재정-금융정책으로 덜어줘야”",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-16:취약-대출자-부담-재정-금융정책으로-덜어줘야",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260716/134315503/2",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "“종부세, 주택 수 아닌 가액 기준 부과… ‘똘똘한 한 채’ 쏠림 현상 해소해야”",
+      "url": "https://www.donga.com/news/Economy/article/all/20260716/134315513/2",
+      "event_at": "2026-07-16T07:40:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“종부세, 주택 수 아닌 가액 기준 부과… ‘똘똘한 한 채’ 쏠림 현상 해소해야”",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-16:종부세-주택-수-아닌-가액-기준-부과-똘똘한-한-채-쏠림-현상-해소해야",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260716/134315513/2",
       "evidence_url_present": true
     },
     {
@@ -1576,6 +1578,27 @@
       "evidence_url_present": true
     },
     {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "반도체 중소기업 지원 위해 하나은행, 1000억 보증대출",
+      "url": "https://www.mk.co.kr/news/economy/12095628",
+      "event_at": "2026-07-09T23:44:14+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "반도체 중소기업 지원 위해 하나은행, 1000억 보증대출",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-09:반도체-중소기업-지원-위해-하나은행-1000억-보증대출",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12095628",
+      "evidence_url_present": true
+    },
+    {
       "source": "동아일보 경제",
       "event_model": "application_deadline",
       "title": "잇단 규제에도 서울 집값 ‘트리플 강세’… 부동산 민심 악화 의식한듯",
@@ -1626,27 +1649,6 @@
     {
       "source": "매일경제 경제정책",
       "event_model": "eligibility_rule",
-      "title": "반도체 중소기업 지원 위해 하나은행, 1000억 보증대출",
-      "url": "https://www.mk.co.kr/news/economy/12095628",
-      "event_at": "2026-07-09T23:44:14+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "중소기업"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "반도체 중소기업 지원 위해 하나은행, 1000억 보증대출",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-09:반도체-중소기업-지원-위해-하나은행-1000억-보증대출",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12095628",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
       "title": "에이플러스에셋, 취약계층 교육 사업 후원금 전달…사회공헌 지속",
       "url": "https://www.mk.co.kr/news/economy/12095457",
       "event_at": "2026-07-09T21:58:35+00:00",
@@ -1692,79 +1694,6 @@
       "program_title": "은행 없는 지역, 우체국서 대출",
       "program_key": "eligibility-rule:kr:경향신문-경제:2026-07-09:은행-없는-지역-우체국서-대출",
       "evidence_url": "https://www.khan.co.kr/article/202607092054035",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "application_deadline",
-      "title": "홈플러스 임금체불 333억…정부, 1인당 최대 2100만원 지급",
-      "url": "https://www.donga.com/news/Economy/article/all/20260710/134274654/1",
-      "event_at": "2026-07-10T00:00:00+00:00",
-      "application_deadline": "2026-07-10",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "BusinessStage": [
-          "벤처기업"
-        ],
-        "Region": [
-          "세종"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "홈플러스 임금체불 333억…정부, 1인당 최대 2100만원 지급",
-      "program_key": "application-deadline:kr:동아일보-경제:2026-07-10:홈플러스-임금체불-333억-정부-1인당-최대-2100만원-지급",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260710/134274654/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "홈플러스 임금체불 333억…정부, 1인당 최대 2100만원 지급",
-      "url": "https://www.donga.com/news/Economy/article/all/20260710/134274654/1",
-      "event_at": "2026-07-09T21:50:01+00:00",
-      "application_deadline": "2026-07-10",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "BusinessStage": [
-          "벤처기업"
-        ],
-        "Region": [
-          "세종"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "홈플러스 임금체불 333억…정부, 1인당 최대 2100만원 지급",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-09:홈플러스-임금체불-333억-정부-1인당-최대-2100만원-지급",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260710/134274654/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "“경력직 선호에 청년 취업문 좁아져…中企 취업자에 주거비 등 패키지 지원을”",
-      "url": "https://www.donga.com/news/Economy/article/all/20260710/134273035/1",
-      "event_at": "2026-07-09T18:21:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "중소기업",
-          "청년"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“경력직 선호에 청년 취업문 좁아져…中企 취업자에 주거비 등 패키지 지원을”",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-09:경력직-선호에-청년-취업문-좁아져-中企-취업자에-주거비-등-패키지-지원을",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260710/134273035/1",
       "evidence_url_present": true
     }
   ],
@@ -1839,10 +1768,11 @@
     "소상공인시장진흥공단: Source disabled (crawl health threshold reached)",
     "행정안전부: Source disabled (crawl health threshold reached)",
     "보건복지부: Source disabled (crawl health threshold reached)",
+    "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n",
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
     "r/startups: Source disabled (crawl health threshold reached)",
     "r/Entrepreneur: Source disabled (crawl health threshold reached)",
-    "https://www.hankyung.com/article/2026071601451: summary is missing or not a string"
+    "https://www.sedaily.com/article/20068821: summary is missing or not a string"
   ]
 }
