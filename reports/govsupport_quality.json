@@ -1,22 +1,22 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-07-18T06:07:34.764866+00:00",
+  "generated_at": "2026-07-19T06:32:28.498697+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
-    "fresh_sources": 2,
-    "stale_sources": 0,
+    "fresh_sources": 1,
+    "stale_sources": 1,
     "missing_sources": 3,
     "missing_event_sources": 0,
     "unknown_event_date_sources": 0,
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 8,
-    "eligibility_rule_events": 31,
+    "application_deadline_events": 5,
+    "eligibility_rule_events": 24,
     "selection_result_events": 1,
-    "unique_program_key_count": 40,
-    "events_with_evidence_url": 40,
+    "unique_program_key_count": 30,
+    "events_with_evidence_url": 30,
     "collection_error_count": 11,
     "event_model_source_gap_count": 0
   },
@@ -222,11 +222,11 @@
       "tracked": true,
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
-      "status": "fresh",
-      "article_count": 6,
-      "event_count": 5,
+      "status": "stale",
+      "article_count": 1,
+      "event_count": 1,
       "latest_event_at": "2026-07-17T06:18:12.776107+00:00",
-      "age_days": 0.99,
+      "age_days": 2.01,
       "latest_title": "“한국은행 디지털화폐(CBDC) 시스템 내 예금토큰 기반 지급결제 테스트(프로젝트 한강) 2단계 시행” 등    혁신금융서비스 5건 신규 지정 의결",
       "latest_url": "https://www.fsc.go.kr/no010101/87338",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87338",
@@ -533,7 +533,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 4,
+      "article_count": 3,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -585,7 +585,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 11,
+      "article_count": 10,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -761,7 +761,7 @@
       "event_model": "eligibility_rule",
       "title": "「공공시설 차열페인트 시공 지원 사업」 보조사업자 모집공고",
       "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461821",
-      "event_at": "2026-07-18T06:06:30.695102+00:00",
+      "event_at": "2026-07-19T06:31:28.110871+00:00",
       "application_deadline": "2026-07-23",
       "application_start_date": "2026-07-16",
       "eligibility_fields": {
@@ -773,7 +773,7 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "「공공시설 차열페인트 시공 지원 사업」 보조사업자 모집공고",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-07-18:공공시설-차열페인트-시공-지원-사업-보조사업자-모집공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-07-19:공공시설-차열페인트-시공-지원-사업-보조사업자-모집공고",
       "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=461821",
       "evidence_url_present": true
     },
@@ -804,6 +804,27 @@
       "program_title": "“한국은행 디지털화폐(CBDC) 시스템 내 예금토큰 기반 지급결제 테스트(프로젝트 한강) 2단계 시행” 등    혁신금융서비스 5건 신규 지정 의결",
       "program_key": "eligibility-rule:kr:금융위원회:2026-07-17:한국은행-디지털화폐-cbdc-시스템-내-예금토큰-기반-지급결제-테스트-프로젝트-한강-2단계-시행-등-혁신금융서비스-5건-신규-지정-의결",
       "evidence_url": "https://www.fsc.go.kr/no010101/87338",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "“종부세, 주택 수 아닌 가액 기준 부과… ‘똘똘한 한 채’ 쏠림 현상 해소해야”",
+      "url": "https://www.donga.com/news/Economy/article/all/20260716/134315513/2",
+      "event_at": "2026-07-16T07:40:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“종부세, 주택 수 아닌 가액 기준 부과… ‘똘똘한 한 채’ 쏠림 현상 해소해야”",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-16:종부세-주택-수-아닌-가액-기준-부과-똘똘한-한-채-쏠림-현상-해소해야",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260716/134315513/2",
       "evidence_url_present": true
     },
     {
@@ -878,27 +899,6 @@
       "program_title": "“취약 대출자 부담 재정-금융정책으로 덜어줘야”",
       "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-16:취약-대출자-부담-재정-금융정책으로-덜어줘야",
       "evidence_url": "https://www.donga.com/news/Economy/article/all/20260716/134315503/2",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "“종부세, 주택 수 아닌 가액 기준 부과… ‘똘똘한 한 채’ 쏠림 현상 해소해야”",
-      "url": "https://www.donga.com/news/Economy/article/all/20260716/134315513/2",
-      "event_at": "2026-07-16T07:40:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“종부세, 주택 수 아닌 가액 기준 부과… ‘똘똘한 한 채’ 쏠림 현상 해소해야”",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-16:종부세-주택-수-아닌-가액-기준-부과-똘똘한-한-채-쏠림-현상-해소해야",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260716/134315513/2",
       "evidence_url_present": true
     },
     {
@@ -1393,191 +1393,6 @@
       "evidence_url_present": true
     },
     {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "서남권 혁신 성장, 정책금융이 함께 합니다.   - 금융위원장, 「KDB NextONE 광주」 개소식 참석 및 광주 AI 산업집적단지 방문",
-      "url": "https://www.fsc.go.kr/no010101/87271",
-      "event_at": "2026-07-11T06:14:57.966388+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "AI"
-        ],
-        "Region": [
-          "광주"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "서남권 혁신 성장, 정책금융이 함께 합니다.   - 금융위원장, 「KDB NextONE 광주」 개소식 참석 및 광주 AI 산업집적단지 방문",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-07-11:서남권-혁신-성장-정책금융이-함께-합니다-금융위원장-kdb-nextone-광주-개소식-참석-및-광주-ai-산업집적단지-방문",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87271",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "2026년 6월 가계대출 동향(잠정) 및  ｢가계부채 점검회의｣ 개최",
-      "url": "https://www.fsc.go.kr/no010101/87297",
-      "event_at": "2026-07-11T06:14:55.463335+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ],
-        "Region": [
-          "서울",
-          "대전"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 6월 가계대출 동향(잠정) 및  ｢가계부채 점검회의｣ 개최",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-07-11:2026년-6월-가계대출-동향-잠정-및-가계부채-점검회의-개최",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87297",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "application_deadline",
-      "title": "“진짜 포용금융”, 지역에서부터 시작합니다 - ｢제6차 포용적 금융 대전환 회의 겸 지역금융 간담회｣ 개최",
-      "url": "https://www.fsc.go.kr/no010101/87300",
-      "event_at": "2026-06-08T00:00:00+00:00",
-      "application_deadline": "2026-06-08",
-      "application_start_date": "2026-07-09",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인",
-          "중소기업",
-          "청년",
-          "취약계층"
-        ],
-        "BusinessStage": [
-          "벤처기업"
-        ],
-        "Industry": [
-          "농업"
-        ],
-        "Region": [
-          "경기",
-          "부산",
-          "광주",
-          "대전",
-          "강원",
-          "전북",
-          "전남",
-          "경북",
-          "경남"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“진짜 포용금융”, 지역에서부터 시작합니다 - ｢제6차 포용적 금융 대전환 회의 겸 지역금융 간담회｣ 개최",
-      "program_key": "application-deadline:kr:금융위원회:2026-06-08:진짜-포용금융-지역에서부터-시작합니다-제6차-포용적-금융-대전환-회의-겸-지역금융-간담회-개최",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87300",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "“진짜 포용금융”, 지역에서부터 시작합니다 - ｢제6차 포용적 금융 대전환 회의 겸 지역금융 간담회｣ 개최",
-      "url": "https://www.fsc.go.kr/no010101/87300",
-      "event_at": "2026-07-11T06:14:54.251837+00:00",
-      "application_deadline": "2026-06-08",
-      "application_start_date": "2026-07-09",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인",
-          "중소기업",
-          "청년",
-          "취약계층"
-        ],
-        "BusinessStage": [
-          "벤처기업"
-        ],
-        "Industry": [
-          "농업"
-        ],
-        "Region": [
-          "경기",
-          "부산",
-          "광주",
-          "대전",
-          "강원",
-          "전북",
-          "전남",
-          "경북",
-          "경남"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“진짜 포용금융”, 지역에서부터 시작합니다 - ｢제6차 포용적 금융 대전환 회의 겸 지역금융 간담회｣ 개최",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-07-11:진짜-포용금융-지역에서부터-시작합니다-제6차-포용적-금융-대전환-회의-겸-지역금융-간담회-개최",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87300",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "application_deadline",
-      "title": "중소기업 특화 금융투자회사 7개사 지정",
-      "url": "https://www.fsc.go.kr/no010101/87306",
-      "event_at": "2026-01-03T00:00:00+00:00",
-      "application_deadline": "2026-01-03",
-      "application_start_date": "2026-07-10",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "중소기업"
-        ],
-        "BusinessStage": [
-          "벤처기업"
-        ],
-        "Region": [
-          "대전"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "중소기업 특화 금융투자회사 7개사 지정",
-      "program_key": "application-deadline:kr:금융위원회:2026-01-03:중소기업-특화-금융투자회사-7개사-지정",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87306",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "중소기업 특화 금융투자회사 7개사 지정",
-      "url": "https://www.fsc.go.kr/no010101/87306",
-      "event_at": "2026-07-11T06:14:53.355731+00:00",
-      "application_deadline": "2026-01-03",
-      "application_start_date": "2026-07-10",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "중소기업"
-        ],
-        "BusinessStage": [
-          "벤처기업"
-        ],
-        "Region": [
-          "대전"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "중소기업 특화 금융투자회사 7개사 지정",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-07-11:중소기업-특화-금융투자회사-7개사-지정",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87306",
-      "evidence_url_present": true
-    },
-    {
       "source": "매일경제 경제정책",
       "event_model": "eligibility_rule",
       "title": "반도체 중소기업 지원 위해 하나은행, 1000억 보증대출",
@@ -1596,104 +1411,6 @@
       "program_title": "반도체 중소기업 지원 위해 하나은행, 1000억 보증대출",
       "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-09:반도체-중소기업-지원-위해-하나은행-1000억-보증대출",
       "evidence_url": "https://www.mk.co.kr/news/economy/12095628",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "application_deadline",
-      "title": "잇단 규제에도 서울 집값 ‘트리플 강세’… 부동산 민심 악화 의식한듯",
-      "url": "https://www.donga.com/news/Economy/article/all/20260710/134277976/2",
-      "event_at": "2026-05-01T00:00:00+00:00",
-      "application_deadline": "2026-05-01",
-      "application_start_date": "2026-07-10",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "잇단 규제에도 서울 집값 ‘트리플 강세’… 부동산 민심 악화 의식한듯",
-      "program_key": "application-deadline:kr:동아일보-경제:2026-05-01:잇단-규제에도-서울-집값-트리플-강세-부동산-민심-악화-의식한듯",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260710/134277976/2",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "잇단 규제에도 서울 집값 ‘트리플 강세’… 부동산 민심 악화 의식한듯",
-      "url": "https://www.donga.com/news/Economy/article/all/20260710/134277976/2",
-      "event_at": "2026-07-10T07:40:00+00:00",
-      "application_deadline": "2026-05-01",
-      "application_start_date": "2026-07-10",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "잇단 규제에도 서울 집값 ‘트리플 강세’… 부동산 민심 악화 의식한듯",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-10:잇단-규제에도-서울-집값-트리플-강세-부동산-민심-악화-의식한듯",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260710/134277976/2",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "에이플러스에셋, 취약계층 교육 사업 후원금 전달…사회공헌 지속",
-      "url": "https://www.mk.co.kr/news/economy/12095457",
-      "event_at": "2026-07-09T21:58:35+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "에이플러스에셋, 취약계층 교육 사업 후원금 전달…사회공헌 지속",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-09:에이플러스에셋-취약계층-교육-사업-후원금-전달-사회공헌-지속",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12095457",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "은행 없는 지역, 우체국서 대출",
-      "url": "https://www.khan.co.kr/article/202607092054035",
-      "event_at": "2026-07-09T02:54:03+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인",
-          "중소기업"
-        ],
-        "BusinessStage": [
-          "벤처기업"
-        ],
-        "Region": [
-          "전북",
-          "경북"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "은행 없는 지역, 우체국서 대출",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-07-09:은행-없는-지역-우체국서-대출",
-      "evidence_url": "https://www.khan.co.kr/article/202607092054035",
       "evidence_url_present": true
     }
   ],
@@ -1765,6 +1482,7 @@
   "errors": [
     "정책브리핑: Source disabled (crawl health threshold reached)",
     "농림축산식품부: Source disabled (crawl health threshold reached)",
+    "[서울경제 경제] Request failed: 403 Client Error: Forbidden for url: https://www.sedaily.com/RSS/Economy/",
     "소상공인시장진흥공단: Source disabled (crawl health threshold reached)",
     "행정안전부: Source disabled (crawl health threshold reached)",
     "보건복지부: Source disabled (crawl health threshold reached)",
@@ -1772,7 +1490,6 @@
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
     "r/startups: Source disabled (crawl health threshold reached)",
-    "r/Entrepreneur: Source disabled (crawl health threshold reached)",
-    "https://www.sedaily.com/article/20068821: summary is missing or not a string"
+    "r/Entrepreneur: Source disabled (crawl health threshold reached)"
   ]
 }
