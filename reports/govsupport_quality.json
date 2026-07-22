@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-07-21T06:29:52.255097+00:00",
+  "generated_at": "2026-07-22T06:30:04.393509+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -12,11 +12,11 @@
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 7,
-    "eligibility_rule_events": 26,
+    "application_deadline_events": 8,
+    "eligibility_rule_events": 30,
     "selection_result_events": 2,
-    "unique_program_key_count": 35,
-    "events_with_evidence_url": 35,
+    "unique_program_key_count": 40,
+    "events_with_evidence_url": 40,
     "collection_error_count": 9,
     "event_model_source_gap_count": 0
   },
@@ -223,19 +223,22 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
       "status": "fresh",
-      "article_count": 5,
-      "event_count": 5,
-      "latest_event_at": "2026-07-21T06:29:47.103865+00:00",
+      "article_count": 8,
+      "event_count": 8,
+      "latest_event_at": "2026-07-22T06:29:57.968683+00:00",
       "age_days": 0.0,
-      "latest_title": "「가상자산이용자보호법」 시행 (’24.7.19.) 2년간의 가상자산 불공정거래 조사 주요성과 및 향후 계획",
-      "latest_url": "https://www.fsc.go.kr/no010101/87357",
-      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87357",
-      "latest_program_title": "「가상자산이용자보호법」 시행 (’24.7.19.) 2년간의 가상자산 불공정거래 조사 주요성과 및 향후 계획",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-07-21:가상자산이용자보호법-시행-24-7-19-2년간의-가상자산-불공정거래-조사-주요성과-및-향후-계획",
+      "latest_title": "2026년 2분기 공적자금 운용현황 - 2026년 6월말 누적 총 123.0조원 공적자금 회수(회수율 72.9%)",
+      "latest_url": "https://www.fsc.go.kr/no010101/87366",
+      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87366",
+      "latest_program_title": "2026년 2분기 공적자금 운용현황 - 2026년 6월말 누적 총 123.0조원 공적자금 회수(회수율 72.9%)",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-07-22:2026년-2분기-공적자금-운용현황-2026년-6월말-누적-총-123-0조원-공적자금-회수-회수율-72-9",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
-        "Industry": [
-          "AI"
+        "BusinessStage": [
+          "벤처기업"
+        ],
+        "Region": [
+          "서울"
         ]
       },
       "latest_selection_result_date": "",
@@ -523,7 +526,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 2,
+      "article_count": 3,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -728,6 +731,218 @@
     {
       "source": "금융위원회",
       "event_model": "eligibility_rule",
+      "title": "2026년 2분기 공적자금 운용현황 - 2026년 6월말 누적 총 123.0조원 공적자금 회수(회수율 72.9%)",
+      "url": "https://www.fsc.go.kr/no010101/87366",
+      "event_at": "2026-07-22T06:29:57.968683+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "BusinessStage": [
+          "벤처기업"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 2분기 공적자금 운용현황 - 2026년 6월말 누적 총 123.0조원 공적자금 회수(회수율 72.9%)",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-07-22:2026년-2분기-공적자금-운용현황-2026년-6월말-누적-총-123-0조원-공적자금-회수-회수율-72-9",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87366",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "application_deadline",
+      "title": "문화체육관광부의 ‘케이(K)-컬처 육성’ 전략국민성장펀드 지원으로 뒷받침합니다.. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/87388",
+      "event_at": "2026-08-12T00:00:00+00:00",
+      "application_deadline": "2026-08-12",
+      "application_start_date": "2026-07-22",
+      "eligibility_fields": {
+        "BusinessStage": [
+          "벤처기업"
+        ],
+        "Industry": [
+          "관광",
+          "콘텐츠",
+          "AI"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "문화체육관광부의 ‘케이(K)-컬처 육성’ 전략국민성장펀드 지원으로 뒷받침합니다.. 금일 등록된 게시글",
+      "program_key": "application-deadline:kr:금융위원회:2026-08-12:문화체육관광부의-케이-k-컬처-육성-전략국민성장펀드-지원으로-뒷받침합니다-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87388",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "문화체육관광부의 ‘케이(K)-컬처 육성’ 전략국민성장펀드 지원으로 뒷받침합니다.. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/87388",
+      "event_at": "2026-07-22T06:29:55.669236+00:00",
+      "application_deadline": "2026-08-12",
+      "application_start_date": "2026-07-22",
+      "eligibility_fields": {
+        "BusinessStage": [
+          "벤처기업"
+        ],
+        "Industry": [
+          "관광",
+          "콘텐츠",
+          "AI"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "문화체육관광부의 ‘케이(K)-컬처 육성’ 전략국민성장펀드 지원으로 뒷받침합니다.. 금일 등록된 게시글",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-07-22:문화체육관광부의-케이-k-컬처-육성-전략국민성장펀드-지원으로-뒷받침합니다-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87388",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "행정안전부, 특별성과 포상금 우수 운영기관으로 금융위원회 선정·포상. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/87389",
+      "event_at": "2026-07-22T06:29:54.781385+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ],
+        "Industry": [
+          "관광"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "행정안전부, 특별성과 포상금 우수 운영기관으로 금융위원회 선정·포상. 금일 등록된 게시글",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-07-22:행정안전부-특별성과-포상금-우수-운영기관으로-금융위원회-선정-포상-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87389",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "대산 이어 여수도 석유화학 사업재편 본격화, 2호 프로젝트도 정부 전방위 지원. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/87393",
+      "event_at": "2026-07-22T06:29:53.218483+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "제조"
+        ],
+        "Region": [
+          "대전",
+          "울산"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "대산 이어 여수도 석유화학 사업재편 본격화, 2호 프로젝트도 정부 전방위 지원. 금일 등록된 게시글",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-07-22:대산-이어-여수도-석유화학-사업재편-본격화-2호-프로젝트도-정부-전방위-지원-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87393",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "‘300억대 요양원 사기’ 카페베네 창업주, 1심 징역 3년 선고",
+      "url": "https://www.donga.com/news/Society/article/all/20260722/134343649/1",
+      "event_at": "2026-07-21T20:14:31+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "‘300억대 요양원 사기’ 카페베네 창업주, 1심 징역 3년 선고",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-21:300억대-요양원-사기-카페베네-창업주-1심-징역-3년-선고",
+      "evidence_url": "https://www.donga.com/news/Society/article/all/20260722/134343649/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "거제시, ‘맹종죽 시배지’ 100년 역사성 복원···거점개발 본격화",
+      "url": "https://www.khan.co.kr/article/202607221330001",
+      "event_at": "2026-07-21T19:30:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "수산"
+        ],
+        "Region": [
+          "경남"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "거제시, ‘맹종죽 시배지’ 100년 역사성 복원···거점개발 본격화",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-07-21:거제시-맹종죽-시배지-100년-역사성-복원-거점개발-본격화",
+      "evidence_url": "https://www.khan.co.kr/article/202607221330001",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "“막다른 길에 몰렸습니다”…은행 대출 연체율 10년만에 최고 찍었다",
+      "url": "https://www.mk.co.kr/news/economy/12104128",
+      "event_at": "2026-07-21T16:11:18+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“막다른 길에 몰렸습니다”…은행 대출 연체율 10년만에 최고 찍었다",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-21:막다른-길에-몰렸습니다-은행-대출-연체율-10년만에-최고-찍었다",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12104128",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "“집 사란 말 마라, 사고 싶어도 못 산다”···부동산 토론회 앞두고 들끓는 민심, 3,500건 쏟아졌다",
+      "url": "https://www.khan.co.kr/article/202607220600121",
+      "event_at": "2026-07-21T12:00:12+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“집 사란 말 마라, 사고 싶어도 못 산다”···부동산 토론회 앞두고 들끓는 민심, 3,500건 쏟아졌다",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-07-21:집-사란-말-마라-사고-싶어도-못-산다-부동산-토론회-앞두고-들끓는-민심-3-500건-쏟아졌다",
+      "evidence_url": "https://www.khan.co.kr/article/202607220600121",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
       "title": "「가상자산이용자보호법」 시행 (’24.7.19.) 2년간의 가상자산 불공정거래 조사 주요성과 및 향후 계획",
       "url": "https://www.fsc.go.kr/no010101/87357",
       "event_at": "2026-07-21T06:29:47.103865+00:00",
@@ -860,30 +1075,6 @@
       "program_title": "우수기술기업에 대한 장기투자를 통해미래를 이끌 핵심기술을 발굴합니다.  - 국민성장펀드 內 초장기기술투자펀드 출시 앞두고 공청회 개최",
       "program_key": "eligibility-rule:kr:금융위원회:2026-07-21:우수기술기업에-대한-장기투자를-통해미래를-이끌-핵심기술을-발굴합니다-국민성장펀드-內-초장기기술투자펀드-출시-앞두고-공청회-개최",
       "evidence_url": "https://www.fsc.go.kr/no010101/87361",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "2026년 2분기 공적자금 운용현황 - 2026년 6월말 누적 총 123.0조원 공적자금 회수(회수율 72.9%). 금일 등록된 게시글",
-      "url": "https://www.fsc.go.kr/no010101/87366",
-      "event_at": "2026-07-21T06:29:42.502500+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "BusinessStage": [
-          "벤처기업"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 2분기 공적자금 운용현황 - 2026년 6월말 누적 총 123.0조원 공적자금 회수(회수율 72.9%). 금일 등록된 게시글",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-07-21:2026년-2분기-공적자금-운용현황-2026년-6월말-누적-총-123-0조원-공적자금-회수-회수율-72-9-금일-등록된-게시글",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87366",
       "evidence_url_present": true
     },
     {
@@ -1280,27 +1471,6 @@
     },
     {
       "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "“종부세, 주택 수 아닌 가액 기준 부과… ‘똘똘한 한 채’ 쏠림 현상 해소해야”",
-      "url": "https://www.donga.com/news/Economy/article/all/20260716/134315513/2",
-      "event_at": "2026-07-16T07:40:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“종부세, 주택 수 아닌 가액 기준 부과… ‘똘똘한 한 채’ 쏠림 현상 해소해야”",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-16:종부세-주택-수-아닌-가액-기준-부과-똘똘한-한-채-쏠림-현상-해소해야",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260716/134315513/2",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
       "event_model": "application_deadline",
       "title": "전국민 무료 이용 ‘모두의 AI’ 12월 선보여",
       "url": "https://www.donga.com/news/Economy/article/all/20260716/134315520/2",
@@ -1349,6 +1519,27 @@
       "program_title": "전국민 무료 이용 ‘모두의 AI’ 12월 선보여",
       "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-16:전국민-무료-이용-모두의-ai-12월-선보여",
       "evidence_url": "https://www.donga.com/news/Economy/article/all/20260716/134315520/2",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "“종부세, 주택 수 아닌 가액 기준 부과… ‘똘똘한 한 채’ 쏠림 현상 해소해야”",
+      "url": "https://www.donga.com/news/Economy/article/all/20260716/134315513/2",
+      "event_at": "2026-07-16T07:40:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“종부세, 주택 수 아닌 가액 기준 부과… ‘똘똘한 한 채’ 쏠림 현상 해소해야”",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-16:종부세-주택-수-아닌-가액-기준-부과-똘똘한-한-채-쏠림-현상-해소해야",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260716/134315513/2",
       "evidence_url_present": true
     },
     {
@@ -1461,77 +1652,6 @@
       "program_title": "‘청년 일자리’에 재정 쏟았지만 ‘6개월 인턴’으론 안돼…“기업이 청년 뽑지 않으면 손해로”",
       "program_key": "eligibility-rule:kr:경향신문-경제:2026-07-15:청년-일자리-에-재정-쏟았지만-6개월-인턴-으론-안돼-기업이-청년-뽑지-않으면-손해로",
       "evidence_url": "https://www.khan.co.kr/article/202607160600011",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "소상공인 단체 “숨만 쉬고 있는데 최저임금 또 올려” 비판",
-      "url": "https://www.donga.com/news/Economy/article/all/20260715/134302817/1",
-      "event_at": "2026-07-14T17:48:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인",
-          "중소기업",
-          "취약계층"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "소상공인 단체 “숨만 쉬고 있는데 최저임금 또 올려” 비판",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-14:소상공인-단체-숨만-쉬고-있는데-최저임금-또-올려-비판",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260715/134302817/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "[속보]6월 취업자 6만3000명 증가···청년 고용 26개월째 뒷걸음",
-      "url": "https://www.khan.co.kr/article/202607150800001",
-      "event_at": "2026-07-14T14:00:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "[속보]6월 취업자 6만3000명 증가···청년 고용 26개월째 뒷걸음",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-07-14:속보-6월-취업자-6만3000명-증가-청년-고용-26개월째-뒷걸음",
-      "evidence_url": "https://www.khan.co.kr/article/202607150800001",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "‘지방우대세제 3종’ 도입…중소기업 취업자 소득세 감면 확대",
-      "url": "https://www.khan.co.kr/article/202607142139005",
-      "event_at": "2026-07-14T03:39:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "중소기업"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "‘지방우대세제 3종’ 도입…중소기업 취업자 소득세 감면 확대",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-07-14:지방우대세제-3종-도입-중소기업-취업자-소득세-감면-확대",
-      "evidence_url": "https://www.khan.co.kr/article/202607142139005",
       "evidence_url_present": true
     }
   ],
