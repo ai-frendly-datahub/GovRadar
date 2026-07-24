@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-07-23T06:31:39.191275+00:00",
+  "generated_at": "2026-07-24T06:27:48.653006+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -12,11 +12,11 @@
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 10,
-    "eligibility_rule_events": 34,
+    "application_deadline_events": 8,
+    "eligibility_rule_events": 29,
     "selection_result_events": 3,
-    "unique_program_key_count": 47,
-    "events_with_evidence_url": 47,
+    "unique_program_key_count": 40,
+    "events_with_evidence_url": 40,
     "collection_error_count": 9,
     "event_model_source_gap_count": 0
   },
@@ -138,7 +138,7 @@
       "freshness_sla_days": 1,
       "status": "fresh",
       "article_count": 6,
-      "event_count": 4,
+      "event_count": 3,
       "latest_event_at": "2026-12-31T00:00:00+00:00",
       "age_days": 0.0,
       "latest_title": "「서울형 안심 산후조리원 시범사업」  보조사업자 선정결과 공고",
@@ -224,23 +224,23 @@
       "freshness_sla_days": 2,
       "status": "fresh",
       "article_count": 9,
-      "event_count": 9,
-      "latest_event_at": "2026-07-23T06:31:31.551576+00:00",
+      "event_count": 8,
+      "latest_event_at": "2026-07-24T06:27:42.683529+00:00",
       "age_days": 0.0,
-      "latest_title": "문화체육관광부의 ‘케이(K)-컬처 육성’ 전략국민성장펀드 지원으로 뒷받침합니다.",
-      "latest_url": "https://www.fsc.go.kr/no010101/87388",
-      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87388",
-      "latest_program_title": "문화체육관광부의 ‘케이(K)-컬처 육성’ 전략국민성장펀드 지원으로 뒷받침합니다.",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-07-23:문화체육관광부의-케이-k-컬처-육성-전략국민성장펀드-지원으로-뒷받침합니다",
-      "latest_application_deadline": "2026-08-12",
+      "latest_title": "대산 이어 여수도 석유화학 사업재편 본격화, 2호 프로젝트도 정부 전방위 지원",
+      "latest_url": "https://www.fsc.go.kr/no010101/87393",
+      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87393",
+      "latest_program_title": "대산 이어 여수도 석유화학 사업재편 본격화, 2호 프로젝트도 정부 전방위 지원",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-07-24:대산-이어-여수도-석유화학-사업재편-본격화-2호-프로젝트도-정부-전방위-지원",
+      "latest_application_deadline": "",
       "latest_eligibility_fields": {
-        "BusinessStage": [
-          "벤처기업"
-        ],
         "Industry": [
-          "관광",
-          "콘텐츠",
-          "AI"
+          "제조",
+          "관광"
+        ],
+        "Region": [
+          "대전",
+          "울산"
         ]
       },
       "latest_selection_result_date": "",
@@ -528,7 +528,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 4,
+      "article_count": 5,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -554,7 +554,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 9,
+      "article_count": 6,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -580,7 +580,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 9,
+      "article_count": 8,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -732,6 +732,139 @@
   "events": [
     {
       "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "대산 이어 여수도 석유화학 사업재편 본격화, 2호 프로젝트도 정부 전방위 지원",
+      "url": "https://www.fsc.go.kr/no010101/87393",
+      "event_at": "2026-07-24T06:27:42.683529+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "제조",
+          "관광"
+        ],
+        "Region": [
+          "대전",
+          "울산"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "대산 이어 여수도 석유화학 사업재편 본격화, 2호 프로젝트도 정부 전방위 지원",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-07-24:대산-이어-여수도-석유화학-사업재편-본격화-2호-프로젝트도-정부-전방위-지원",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87393",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "금융위-산업부, 핵심광물 공급망 강화 지원 협력",
+      "url": "https://www.fsc.go.kr/no010101/87397",
+      "event_at": "2026-07-24T06:27:39.720916+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "제조",
+          "AI",
+          "바이오"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "금융위-산업부, 핵심광물 공급망 강화 지원 협력",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-07-24:금융위-산업부-핵심광물-공급망-강화-지원-협력",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87397",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "2026년 서울시 민간 국제개발협력 지원사업 보조사업자 선정결과 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462309",
+      "event_at": "2026-07-24T06:27:27.076652+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 서울시 민간 국제개발협력 지원사업",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-07-24:2026년-서울시-민간-국제개발협력-지원사업",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462309",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "selection_result",
+      "title": "2026년 서울시 민간 국제개발협력 지원사업 보조사업자 선정결과 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462309",
+      "event_at": "2026-07-24T06:27:27.076652+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 서울시 민간 국제개발협력 지원사업",
+      "program_key": "selection-result:kr:서울시-지원사업:2026년-서울시-민간-국제개발협력-지원사업",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462309",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "2026년 하반기 친환경 전기택시 사업자(개인 및 법인) 모집 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462342",
+      "event_at": "2026-07-23T00:00:00+00:00",
+      "application_deadline": "2026-07-23",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 하반기 친환경 전기택시 사업자(개인 및 법인) 모집 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-07-23:2026년-하반기-친환경-전기택시-사업자-개인-및-법인-모집-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462342",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "2026년 하반기 친환경 전기택시 사업자(개인 및 법인) 모집 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462342",
+      "event_at": "2026-07-24T06:27:25.530979+00:00",
+      "application_deadline": "2026-07-23",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 하반기 친환경 전기택시 사업자(개인 및 법인) 모집 공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-07-24:2026년-하반기-친환경-전기택시-사업자-개인-및-법인-모집-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462342",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
       "event_model": "application_deadline",
       "title": "문화체육관광부의 ‘케이(K)-컬처 육성’ 전략국민성장펀드 지원으로 뒷받침합니다.",
       "url": "https://www.fsc.go.kr/no010101/87388",
@@ -780,160 +913,6 @@
       "program_title": "문화체육관광부의 ‘케이(K)-컬처 육성’ 전략국민성장펀드 지원으로 뒷받침합니다.",
       "program_key": "eligibility-rule:kr:금융위원회:2026-07-23:문화체육관광부의-케이-k-컬처-육성-전략국민성장펀드-지원으로-뒷받침합니다",
       "evidence_url": "https://www.fsc.go.kr/no010101/87388",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "대산 이어 여수도 석유화학 사업재편 본격화, 2호 프로젝트도 정부 전방위 지원",
-      "url": "https://www.fsc.go.kr/no010101/87393",
-      "event_at": "2026-07-23T06:31:30.506631+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "제조",
-          "관광"
-        ],
-        "Region": [
-          "대전",
-          "울산"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "대산 이어 여수도 석유화학 사업재편 본격화, 2호 프로젝트도 정부 전방위 지원",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-07-23:대산-이어-여수도-석유화학-사업재편-본격화-2호-프로젝트도-정부-전방위-지원",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87393",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "금융위-산업부, 핵심광물 공급망 강화 지원 협력. 금일 등록된 게시글",
-      "url": "https://www.fsc.go.kr/no010101/87397",
-      "event_at": "2026-07-23T06:31:28.186203+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "제조",
-          "AI",
-          "바이오"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "금융위-산업부, 핵심광물 공급망 강화 지원 협력. 금일 등록된 게시글",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-07-23:금융위-산업부-핵심광물-공급망-강화-지원-협력-금일-등록된-게시글",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87397",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "2026년 서울시 민간 국제개발협력 지원사업 보조사업자 선정결과 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462309",
-      "event_at": "2026-07-23T00:00:00+00:00",
-      "application_deadline": "2026-07-23",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 서울시 민간 국제개발협력 지원사업",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-07-23:2026년-서울시-민간-국제개발협력-지원사업",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462309",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "eligibility_rule",
-      "title": "2026년 서울시 민간 국제개발협력 지원사업 보조사업자 선정결과 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462309",
-      "event_at": "2026-07-23T06:31:14.888125+00:00",
-      "application_deadline": "2026-07-23",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 서울시 민간 국제개발협력 지원사업",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-07-23:2026년-서울시-민간-국제개발협력-지원사업",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462309",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "selection_result",
-      "title": "2026년 서울시 민간 국제개발협력 지원사업 보조사업자 선정결과 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462309",
-      "event_at": "2026-07-23T06:31:14.888125+00:00",
-      "application_deadline": "2026-07-23",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 서울시 민간 국제개발협력 지원사업",
-      "program_key": "selection-result:kr:서울시-지원사업:2026년-서울시-민간-국제개발협력-지원사업",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462309",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "2026년 하반기 친환경 전기택시 사업자(개인 및 법인) 모집 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462342",
-      "event_at": "2026-07-23T00:00:00+00:00",
-      "application_deadline": "2026-07-23",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 하반기 친환경 전기택시 사업자(개인 및 법인) 모집 공고",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-07-23:2026년-하반기-친환경-전기택시-사업자-개인-및-법인-모집-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462342",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "eligibility_rule",
-      "title": "2026년 하반기 친환경 전기택시 사업자(개인 및 법인) 모집 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462342",
-      "event_at": "2026-07-23T06:31:13.384422+00:00",
-      "application_deadline": "2026-07-23",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 하반기 친환경 전기택시 사업자(개인 및 법인) 모집 공고",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-07-23:2026년-하반기-친환경-전기택시-사업자-개인-및-법인-모집-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462342",
       "evidence_url_present": true
     },
     {
@@ -1642,130 +1621,6 @@
       "evidence_url_present": true
     },
     {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "“한국은행 디지털화폐(CBDC) 시스템 내 예금토큰 기반 지급결제 테스트(프로젝트 한강) 2단계 시행” 등    혁신금융서비스 5건 신규 지정 의결",
-      "url": "https://www.fsc.go.kr/no010101/87338",
-      "event_at": "2026-07-17T06:18:12.776107+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인",
-          "중소기업"
-        ],
-        "Industry": [
-          "관광"
-        ],
-        "Region": [
-          "부산",
-          "경남"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“한국은행 디지털화폐(CBDC) 시스템 내 예금토큰 기반 지급결제 테스트(프로젝트 한강) 2단계 시행” 등    혁신금융서비스 5건 신규 지정 의결",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-07-17:한국은행-디지털화폐-cbdc-시스템-내-예금토큰-기반-지급결제-테스트-프로젝트-한강-2단계-시행-등-혁신금융서비스-5건-신규-지정-의결",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87338",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "“종부세, 주택 수 아닌 가액 기준 부과… ‘똘똘한 한 채’ 쏠림 현상 해소해야”",
-      "url": "https://www.donga.com/news/Economy/article/all/20260716/134315513/2",
-      "event_at": "2026-07-16T07:40:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“종부세, 주택 수 아닌 가액 기준 부과… ‘똘똘한 한 채’ 쏠림 현상 해소해야”",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-16:종부세-주택-수-아닌-가액-기준-부과-똘똘한-한-채-쏠림-현상-해소해야",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260716/134315513/2",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "“취약 대출자 부담 재정-금융정책으로 덜어줘야”",
-      "url": "https://www.donga.com/news/Economy/article/all/20260716/134315503/2",
-      "event_at": "2026-07-16T07:40:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "저소득",
-          "취약계층"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“취약 대출자 부담 재정-금융정책으로 덜어줘야”",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-16:취약-대출자-부담-재정-금융정책으로-덜어줘야",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260716/134315503/2",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "application_deadline",
-      "title": "전국민 무료 이용 ‘모두의 AI’ 12월 선보여",
-      "url": "https://www.donga.com/news/Economy/article/all/20260716/134315520/2",
-      "event_at": "2026-07-16T00:00:00+00:00",
-      "application_deadline": "2026-07-16",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년",
-          "취약계층"
-        ],
-        "Industry": [
-          "축산",
-          "AI"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "전국민 무료 이용 ‘모두의 AI’ 12월 선보여",
-      "program_key": "application-deadline:kr:동아일보-경제:2026-07-16:전국민-무료-이용-모두의-ai-12월-선보여",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260716/134315520/2",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "전국민 무료 이용 ‘모두의 AI’ 12월 선보여",
-      "url": "https://www.donga.com/news/Economy/article/all/20260716/134315520/2",
-      "event_at": "2026-07-16T07:40:00+00:00",
-      "application_deadline": "2026-07-16",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년",
-          "취약계층"
-        ],
-        "Industry": [
-          "축산",
-          "AI"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "전국민 무료 이용 ‘모두의 AI’ 12월 선보여",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-16:전국민-무료-이용-모두의-ai-12월-선보여",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260716/134315520/2",
-      "evidence_url_present": true
-    },
-    {
       "source": "매일경제 경제정책",
       "event_model": "eligibility_rule",
       "title": "정책금융 뭉쳐 초기 스타트업 돕는다",
@@ -1784,28 +1639,6 @@
       "program_title": "정책금융 뭉쳐 초기 스타트업 돕는다",
       "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-15:정책금융-뭉쳐-초기-스타트업-돕는다",
       "evidence_url": "https://www.mk.co.kr/news/economy/12100582",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "삼성, 2000억원 출연해 ‘포용금융’ 확대",
-      "url": "https://www.khan.co.kr/article/202607162022025",
-      "event_at": "2026-07-16T02:22:02+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층",
-          "자영업자"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "삼성, 2000억원 출연해 ‘포용금융’ 확대",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-07-16:삼성-2000억원-출연해-포용금융-확대",
-      "evidence_url": "https://www.khan.co.kr/article/202607162022025",
       "evidence_url_present": true
     }
   ],
