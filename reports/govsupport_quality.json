@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-07-24T06:27:48.653006+00:00",
+  "generated_at": "2026-07-25T06:19:58.963869+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -12,12 +12,12 @@
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 8,
-    "eligibility_rule_events": 29,
+    "application_deadline_events": 9,
+    "eligibility_rule_events": 31,
     "selection_result_events": 3,
-    "unique_program_key_count": 40,
-    "events_with_evidence_url": 40,
-    "collection_error_count": 9,
+    "unique_program_key_count": 43,
+    "events_with_evidence_url": 43,
+    "collection_error_count": 10,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -137,8 +137,8 @@
       "event_model": "application_deadline",
       "freshness_sla_days": 1,
       "status": "fresh",
-      "article_count": 6,
-      "event_count": 3,
+      "article_count": 7,
+      "event_count": 4,
       "latest_event_at": "2026-12-31T00:00:00+00:00",
       "age_days": 0.0,
       "latest_title": "「서울형 안심 산후조리원 시범사업」  보조사업자 선정결과 공고",
@@ -225,13 +225,13 @@
       "status": "fresh",
       "article_count": 9,
       "event_count": 8,
-      "latest_event_at": "2026-07-24T06:27:42.683529+00:00",
+      "latest_event_at": "2026-07-25T06:19:52.556226+00:00",
       "age_days": 0.0,
       "latest_title": "대산 이어 여수도 석유화학 사업재편 본격화, 2호 프로젝트도 정부 전방위 지원",
       "latest_url": "https://www.fsc.go.kr/no010101/87393",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87393",
       "latest_program_title": "대산 이어 여수도 석유화학 사업재편 본격화, 2호 프로젝트도 정부 전방위 지원",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-07-24:대산-이어-여수도-석유화학-사업재편-본격화-2호-프로젝트도-정부-전방위-지원",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-07-25:대산-이어-여수도-석유화학-사업재편-본격화-2호-프로젝트도-정부-전방위-지원",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
         "Industry": [
@@ -554,7 +554,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 6,
+      "article_count": 7,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -735,7 +735,7 @@
       "event_model": "eligibility_rule",
       "title": "대산 이어 여수도 석유화학 사업재편 본격화, 2호 프로젝트도 정부 전방위 지원",
       "url": "https://www.fsc.go.kr/no010101/87393",
-      "event_at": "2026-07-24T06:27:42.683529+00:00",
+      "event_at": "2026-07-25T06:19:52.556226+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -752,7 +752,7 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "대산 이어 여수도 석유화학 사업재편 본격화, 2호 프로젝트도 정부 전방위 지원",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-07-24:대산-이어-여수도-석유화학-사업재편-본격화-2호-프로젝트도-정부-전방위-지원",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-07-25:대산-이어-여수도-석유화학-사업재편-본격화-2호-프로젝트도-정부-전방위-지원",
       "evidence_url": "https://www.fsc.go.kr/no010101/87393",
       "evidence_url_present": true
     },
@@ -761,7 +761,7 @@
       "event_model": "eligibility_rule",
       "title": "금융위-산업부, 핵심광물 공급망 강화 지원 협력",
       "url": "https://www.fsc.go.kr/no010101/87397",
-      "event_at": "2026-07-24T06:27:39.720916+00:00",
+      "event_at": "2026-07-25T06:19:50.174770+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -775,7 +775,7 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "금융위-산업부, 핵심광물 공급망 강화 지원 협력",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-07-24:금융위-산업부-핵심광물-공급망-강화-지원-협력",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-07-25:금융위-산업부-핵심광물-공급망-강화-지원-협력",
       "evidence_url": "https://www.fsc.go.kr/no010101/87397",
       "evidence_url_present": true
     },
@@ -784,7 +784,7 @@
       "event_model": "eligibility_rule",
       "title": "2026년 서울시 민간 국제개발협력 지원사업 보조사업자 선정결과 공고",
       "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462309",
-      "event_at": "2026-07-24T06:27:27.076652+00:00",
+      "event_at": "2026-07-25T06:19:38.071721+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -796,7 +796,7 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "2026년 서울시 민간 국제개발협력 지원사업",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-07-24:2026년-서울시-민간-국제개발협력-지원사업",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-07-25:2026년-서울시-민간-국제개발협력-지원사업",
       "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462309",
       "evidence_url_present": true
     },
@@ -805,7 +805,7 @@
       "event_model": "selection_result",
       "title": "2026년 서울시 민간 국제개발협력 지원사업 보조사업자 선정결과 공고",
       "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462309",
-      "event_at": "2026-07-24T06:27:27.076652+00:00",
+      "event_at": "2026-07-25T06:19:38.071721+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -819,6 +819,72 @@
       "program_title": "2026년 서울시 민간 국제개발협력 지원사업",
       "program_key": "selection-result:kr:서울시-지원사업:2026년-서울시-민간-국제개발협력-지원사업",
       "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462309",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "「2026 지역상생 중장년 창업 지원 사업」넥스트로컬 40+ 최종 합격팀 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462435",
+      "event_at": "2026-07-24T00:00:00+00:00",
+      "application_deadline": "2026-07-24",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "「2026 지역상생 중장년 창업 지원 사업」넥스트로컬 40+ 최종 합격팀 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-07-24:2026-지역상생-중장년-창업-지원-사업-넥스트로컬-40-최종-합격팀-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462435",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "「2026 지역상생 중장년 창업 지원 사업」넥스트로컬 40+ 최종 합격팀 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462435",
+      "event_at": "2026-07-25T06:19:29.897388+00:00",
+      "application_deadline": "2026-07-24",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "「2026 지역상생 중장년 창업 지원 사업」넥스트로컬 40+ 최종 합격팀 공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-07-25:2026-지역상생-중장년-창업-지원-사업-넥스트로컬-40-최종-합격팀-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462435",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "주담대 8% 전망에 “내 집 마련 포기”… ‘영끌족’도 비상",
+      "url": "https://www.donga.com/news/Economy/article/all/20260725/134362911/1",
+      "event_at": "2026-07-24T16:50:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "자영업자"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "주담대 8% 전망에 “내 집 마련 포기”… ‘영끌족’도 비상",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-24:주담대-8-전망에-내-집-마련-포기-영끌족-도-비상",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260725/134362911/1",
       "evidence_url_present": true
     },
     {
@@ -861,6 +927,30 @@
       "program_title": "2026년 하반기 친환경 전기택시 사업자(개인 및 법인) 모집 공고",
       "program_key": "eligibility-rule:kr:서울시-지원사업:2026-07-24:2026년-하반기-친환경-전기택시-사업자-개인-및-법인-모집-공고",
       "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462342",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "서울 월세 1년새 116만→127만원",
+      "url": "https://www.mk.co.kr/news/economy/12106873",
+      "event_at": "2026-07-23T23:38:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "서울 월세 1년새 116만→127만원",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-23:서울-월세-1년새-116만-127만원",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12106873",
       "evidence_url_present": true
     },
     {
@@ -1619,27 +1709,6 @@
       "program_key": "eligibility-rule:kr:sbs-뉴스-정치:2026-07-18:민주당-선관위-모레-전체회의-전대-기탁금-청년-추가-감면책-논의",
       "evidence_url": "https://news.sbs.co.kr/news/endPage.do?cooper=RSSREADER&news_id=N1008664092&plink=RSSLINK",
       "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "정책금융 뭉쳐 초기 스타트업 돕는다",
-      "url": "https://www.mk.co.kr/news/economy/12100582",
-      "event_at": "2026-07-15T23:55:57+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "스타트업"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "정책금융 뭉쳐 초기 스타트업 돕는다",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-15:정책금융-뭉쳐-초기-스타트업-돕는다",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12100582",
-      "evidence_url_present": true
     }
   ],
   "event_model_coverage": [
@@ -1710,6 +1779,7 @@
   "errors": [
     "정책브리핑: Source disabled (crawl health threshold reached)",
     "농림축산식품부: Source disabled (crawl health threshold reached)",
+    "[서울경제 경제] Request failed: 403 Client Error: Forbidden for url: https://www.sedaily.com/RSS/Economy/",
     "소상공인시장진흥공단: Source disabled (crawl health threshold reached)",
     "행정안전부: Source disabled (crawl health threshold reached)",
     "보건복지부: Source disabled (crawl health threshold reached)",
