@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-07-29T06:32:59.452794+00:00",
+  "generated_at": "2026-07-30T06:30:33.302582+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -12,11 +12,11 @@
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 11,
-    "eligibility_rule_events": 36,
+    "application_deadline_events": 12,
+    "eligibility_rule_events": 39,
     "selection_result_events": 1,
-    "unique_program_key_count": 48,
-    "events_with_evidence_url": 48,
+    "unique_program_key_count": 52,
+    "events_with_evidence_url": 52,
     "collection_error_count": 11,
     "event_model_source_gap_count": 0
   },
@@ -160,7 +160,9 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": []
+      "errors": [
+        "서울시 지원사업: Failed to collect browser content from 서울시 지원사업: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.seoul.go.kr/news/news_notice.do\", waiting until \"domcontentloaded\"\n"
+      ]
     },
     {
       "source": "행정안전부",
@@ -226,23 +228,19 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
       "status": "fresh",
-      "article_count": 7,
-      "event_count": 5,
-      "latest_event_at": "2026-07-29T06:32:52.147361+00:00",
+      "article_count": 8,
+      "event_count": 6,
+      "latest_event_at": "2026-07-30T06:30:22.163404+00:00",
       "age_days": 0.0,
-      "latest_title": "주가조작 신고포상금 제도 개편 등 2026년 상반기 적극행정 우수공무원 시상",
-      "latest_url": "https://www.fsc.go.kr/no010101/87411",
-      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87411",
-      "latest_program_title": "주가조작 신고포상금 제도 개편 등 2026년 상반기 적극행정 우수공무원 시상",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-07-29:주가조작-신고포상금-제도-개편-등-2026년-상반기-적극행정-우수공무원-시상",
-      "latest_application_deadline": "2026-07-16",
+      "latest_title": "“국내 은행 업무 위해 국제우편 보내던 불편 사라진다”. 금일 등록된 게시글",
+      "latest_url": "https://www.fsc.go.kr/no010101/87439",
+      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87439",
+      "latest_program_title": "“국내 은행 업무 위해 국제우편 보내던 불편 사라진다”. 금일 등록된 게시글",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-07-30:국내-은행-업무-위해-국제우편-보내던-불편-사라진다-금일-등록된-게시글",
+      "latest_application_deadline": "2026-07-30",
       "latest_eligibility_fields": {
-        "TargetGroup": [
-          "소상공인",
-          "취약계층"
-        ],
-        "Industry": [
-          "AI"
+        "Region": [
+          "부산"
         ]
       },
       "latest_selection_result_date": "",
@@ -530,7 +528,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 11,
+      "article_count": 12,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -556,7 +554,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 14,
+      "article_count": 15,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -737,6 +735,69 @@
     {
       "source": "금융위원회",
       "event_model": "application_deadline",
+      "title": "“국내 은행 업무 위해 국제우편 보내던 불편 사라진다”. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/87439",
+      "event_at": "2026-07-30T00:00:00+00:00",
+      "application_deadline": "2026-07-30",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "부산"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“국내 은행 업무 위해 국제우편 보내던 불편 사라진다”. 금일 등록된 게시글",
+      "program_key": "application-deadline:kr:금융위원회:2026-07-30:국내-은행-업무-위해-국제우편-보내던-불편-사라진다-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87439",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "“국내 은행 업무 위해 국제우편 보내던 불편 사라진다”. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/87439",
+      "event_at": "2026-07-30T06:30:22.163404+00:00",
+      "application_deadline": "2026-07-30",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "부산"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“국내 은행 업무 위해 국제우편 보내던 불편 사라진다”. 금일 등록된 게시글",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-07-30:국내-은행-업무-위해-국제우편-보내던-불편-사라진다-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87439",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "유니클로, 희망브리지 전국재해구호협회에 성금 6억 원 기탁",
+      "url": "https://www.donga.com/news/Economy/article/all/20260730/134393380/1",
+      "event_at": "2026-07-29T16:57:19+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "유니클로, 희망브리지 전국재해구호협회에 성금 6억 원 기탁",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-29:유니클로-희망브리지-전국재해구호협회에-성금-6억-원-기탁",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260730/134393380/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "application_deadline",
       "title": "주가조작 신고포상금 제도 개편 등 2026년 상반기 적극행정 우수공무원 시상",
       "url": "https://www.fsc.go.kr/no010101/87411",
       "event_at": "2026-07-16T00:00:00+00:00",
@@ -865,6 +926,27 @@
       "program_title": "2026년 제2회 서울시 대학(원)생 학자금대출이자 지원 신청 공고(8월 3일~9월15일)",
       "program_key": "eligibility-rule:kr:서울시-지원사업:2026-07-29:2026년-제2회-서울시-대학-원-생-학자금대출이자-지원-신청-공고-8월-3일-9월15일",
       "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462823",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "소득 없으면 신용 높아도 불사금예방대출 받는다",
+      "url": "https://www.mk.co.kr/news/economy/12110782",
+      "event_at": "2026-07-28T23:55:28+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "소득 없으면 신용 높아도 불사금예방대출 받는다",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-28:소득-없으면-신용-높아도-불사금예방대출-받는다",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12110782",
       "evidence_url_present": true
     },
     {
@@ -1244,23 +1326,22 @@
     {
       "source": "매일경제 경제정책",
       "event_model": "eligibility_rule",
-      "title": "\"늘어난 이익만큼 취약층 더 지원\" …은행 법정출연금 수술대 오르나",
-      "url": "https://www.mk.co.kr/news/economy/12108585",
+      "title": "기은 상반기 당기순익 1.4조…중기대출 잔액은 270조 돌파",
+      "url": "https://www.mk.co.kr/news/economy/12108586",
       "event_at": "2026-07-26T23:23:08+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
         "TargetGroup": [
-          "중소기업",
-          "취약계층"
+          "중소기업"
         ]
       },
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "\"늘어난 이익만큼 취약층 더 지원\" …은행 법정출연금 수술대 오르나",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-26:늘어난-이익만큼-취약층-더-지원-은행-법정출연금-수술대-오르나",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12108585",
+      "program_title": "기은 상반기 당기순익 1.4조…중기대출 잔액은 270조 돌파",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-26:기은-상반기-당기순익-1-4조-중기대출-잔액은-270조-돌파",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12108586",
       "evidence_url_present": true
     },
     {
@@ -1287,22 +1368,23 @@
     {
       "source": "매일경제 경제정책",
       "event_model": "eligibility_rule",
-      "title": "기은 상반기 당기순익 1.4조…중기대출 잔액은 270조 돌파",
-      "url": "https://www.mk.co.kr/news/economy/12108586",
+      "title": "\"늘어난 이익만큼 취약층 더 지원\" …은행 법정출연금 수술대 오르나",
+      "url": "https://www.mk.co.kr/news/economy/12108585",
       "event_at": "2026-07-26T23:23:08+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
         "TargetGroup": [
-          "중소기업"
+          "중소기업",
+          "취약계층"
         ]
       },
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "기은 상반기 당기순익 1.4조…중기대출 잔액은 270조 돌파",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-26:기은-상반기-당기순익-1-4조-중기대출-잔액은-270조-돌파",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12108586",
+      "program_title": "\"늘어난 이익만큼 취약층 더 지원\" …은행 법정출연금 수술대 오르나",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-26:늘어난-이익만큼-취약층-더-지원-은행-법정출연금-수술대-오르나",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12108585",
       "evidence_url_present": true
     },
     {
@@ -1901,9 +1983,9 @@
   "errors": [
     "정책브리핑: Source disabled (crawl health threshold reached)",
     "농림축산식품부: Source disabled (crawl health threshold reached)",
-    "[서울경제 경제] Request failed: 403 Client Error: Forbidden for url: https://www.sedaily.com/RSS/Economy/",
     "SBS 뉴스 정치: Source disabled (crawl health threshold reached)",
     "소상공인시장진흥공단: Source disabled (crawl health threshold reached)",
+    "서울시 지원사업: Failed to collect browser content from 서울시 지원사업: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.seoul.go.kr/news/news_notice.do\", waiting until \"domcontentloaded\"\n",
     "행정안전부: Source disabled (crawl health threshold reached)",
     "보건복지부: Source disabled (crawl health threshold reached)",
     "r/korea: Source disabled (crawl health threshold reached)",
