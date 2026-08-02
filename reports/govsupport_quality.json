@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-08-01T06:31:02.331252+00:00",
+  "generated_at": "2026-08-02T06:35:16.925458+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -17,7 +17,7 @@
     "selection_result_events": 1,
     "unique_program_key_count": 54,
     "events_with_evidence_url": 54,
-    "collection_error_count": 10,
+    "collection_error_count": 11,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -229,7 +229,7 @@
       "article_count": 10,
       "event_count": 7,
       "latest_event_at": "2026-07-31T06:45:37.926975+00:00",
-      "age_days": 0.99,
+      "age_days": 1.99,
       "latest_title": "“국내 은행 업무 위해 국제우편 보내던 불편 사라진다”",
       "latest_url": "https://www.fsc.go.kr/no010101/87439",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87439",
@@ -759,7 +759,7 @@
       "event_model": "eligibility_rule",
       "title": "물산업 혁신기술 R&D 지원사업 추가공고",
       "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463067",
-      "event_at": "2026-08-01T06:30:41.112022+00:00",
+      "event_at": "2026-08-02T06:34:51.560761+00:00",
       "application_deadline": "2026-08-31",
       "application_start_date": "2026-07-31",
       "eligibility_fields": {
@@ -774,7 +774,7 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "물산업 혁신기술 R&D 지원사업 추가공고",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-08-01:물산업-혁신기술-r-d-지원사업-추가공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-08-02:물산업-혁신기술-r-d-지원사업-추가공고",
       "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463067",
       "evidence_url_present": true
     },
@@ -1562,22 +1562,22 @@
     {
       "source": "매일경제 경제정책",
       "event_model": "eligibility_rule",
-      "title": "기은 상반기 당기순익 1.4조…중기대출 잔액은 270조 돌파",
-      "url": "https://www.mk.co.kr/news/economy/12108586",
+      "title": "\"단골 많은 가게, 대출 더 해드려요\"",
+      "url": "https://www.mk.co.kr/news/economy/12108587",
       "event_at": "2026-07-26T23:23:08+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
         "TargetGroup": [
-          "중소기업"
+          "소상공인"
         ]
       },
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "기은 상반기 당기순익 1.4조…중기대출 잔액은 270조 돌파",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-26:기은-상반기-당기순익-1-4조-중기대출-잔액은-270조-돌파",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12108586",
+      "program_title": "\"단골 많은 가게, 대출 더 해드려요\"",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-26:단골-많은-가게-대출-더-해드려요",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12108587",
       "evidence_url_present": true
     },
     {
@@ -1605,22 +1605,22 @@
     {
       "source": "매일경제 경제정책",
       "event_model": "eligibility_rule",
-      "title": "\"단골 많은 가게, 대출 더 해드려요\"",
-      "url": "https://www.mk.co.kr/news/economy/12108587",
+      "title": "기은 상반기 당기순익 1.4조…중기대출 잔액은 270조 돌파",
+      "url": "https://www.mk.co.kr/news/economy/12108586",
       "event_at": "2026-07-26T23:23:08+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
         "TargetGroup": [
-          "소상공인"
+          "중소기업"
         ]
       },
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "\"단골 많은 가게, 대출 더 해드려요\"",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-26:단골-많은-가게-대출-더-해드려요",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12108587",
+      "program_title": "기은 상반기 당기순익 1.4조…중기대출 잔액은 270조 돌파",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-26:기은-상반기-당기순익-1-4조-중기대출-잔액은-270조-돌파",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12108586",
       "evidence_url_present": true
     },
     {
@@ -2033,6 +2033,7 @@
   "errors": [
     "정책브리핑: Source disabled (crawl health threshold reached)",
     "농림축산식품부: Source disabled (crawl health threshold reached)",
+    "[서울경제 경제] Request failed: 403 Client Error: Forbidden for url: https://www.sedaily.com/RSS/Economy/",
     "SBS 뉴스 정치: Source disabled (crawl health threshold reached)",
     "소상공인시장진흥공단: Source disabled (crawl health threshold reached)",
     "행정안전부: Source disabled (crawl health threshold reached)",
