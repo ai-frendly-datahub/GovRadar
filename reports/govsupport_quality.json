@@ -1,23 +1,23 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-08-02T06:35:16.925458+00:00",
+  "generated_at": "2026-08-03T07:29:10.219709+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
-    "fresh_sources": 2,
-    "stale_sources": 0,
+    "fresh_sources": 1,
+    "stale_sources": 1,
     "missing_sources": 3,
     "missing_event_sources": 0,
     "unknown_event_date_sources": 0,
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 14,
-    "eligibility_rule_events": 39,
-    "selection_result_events": 1,
-    "unique_program_key_count": 54,
-    "events_with_evidence_url": 54,
-    "collection_error_count": 11,
+    "application_deadline_events": 13,
+    "eligibility_rule_events": 32,
+    "selection_result_events": 0,
+    "unique_program_key_count": 45,
+    "events_with_evidence_url": 45,
+    "collection_error_count": 13,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -137,8 +137,8 @@
       "event_model": "application_deadline",
       "freshness_sla_days": 1,
       "status": "fresh",
-      "article_count": 8,
-      "event_count": 7,
+      "article_count": 6,
+      "event_count": 6,
       "latest_event_at": "2026-12-12T00:00:00+00:00",
       "age_days": 0.0,
       "latest_title": "2026년 제2회 서울시 대학(원)생 학자금대출이자 지원 신청 공고(8월 3일~9월15일)",
@@ -160,7 +160,9 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": []
+      "errors": [
+        "서울시 지원사업: Failed to collect browser content from 서울시 지원사업: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.seoul.go.kr/news/news_notice.do\", waiting until \"domcontentloaded\"\n"
+      ]
     },
     {
       "source": "행정안전부",
@@ -225,11 +227,11 @@
       "tracked": true,
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
-      "status": "fresh",
-      "article_count": 10,
-      "event_count": 7,
+      "status": "stale",
+      "article_count": 8,
+      "event_count": 5,
       "latest_event_at": "2026-07-31T06:45:37.926975+00:00",
-      "age_days": 1.99,
+      "age_days": 3.03,
       "latest_title": "“국내 은행 업무 위해 국제우편 보내던 불편 사라진다”",
       "latest_url": "https://www.fsc.go.kr/no010101/87439",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87439",
@@ -246,7 +248,9 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": []
+      "errors": [
+        "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n"
+      ]
     },
     {
       "source": "농림축산식품부",
@@ -552,7 +556,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 14,
+      "article_count": 10,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -578,7 +582,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 2,
+      "article_count": 3,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -710,7 +714,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 2,
+      "article_count": 1,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -730,6 +734,30 @@
     }
   ],
   "events": [
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "시름 깊어지는 자영업자···2%였던 코로나 대출, 이제 5%대",
+      "url": "https://www.khan.co.kr/article/202608030600141",
+      "event_at": "2026-08-02T12:00:14+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "자영업자"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "시름 깊어지는 자영업자···2%였던 코로나 대출, 이제 5%대",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-02:시름-깊어지는-자영업자-2-였던-코로나-대출-이제-5-대",
+      "evidence_url": "https://www.khan.co.kr/article/202608030600141",
+      "evidence_url_present": true
+    },
     {
       "source": "서울시 지원사업",
       "event_model": "application_deadline",
@@ -776,6 +804,30 @@
       "program_title": "물산업 혁신기술 R&D 지원사업 추가공고",
       "program_key": "eligibility-rule:kr:서울시-지원사업:2026-08-02:물산업-혁신기술-r-d-지원사업-추가공고",
       "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463067",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "[단독] AI 육성·브로커 근절 … 中企 지원책 손질 나서",
+      "url": "https://www.mk.co.kr/news/economy/12114624",
+      "event_at": "2026-08-01T23:52:10+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ],
+        "Industry": [
+          "AI"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "[단독] AI 육성·브로커 근절 … 中企 지원책 손질 나서",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-01:단독-ai-육성-브로커-근절-中企-지원책-손질-나서",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12114624",
       "evidence_url_present": true
     },
     {
@@ -1562,22 +1614,22 @@
     {
       "source": "매일경제 경제정책",
       "event_model": "eligibility_rule",
-      "title": "\"단골 많은 가게, 대출 더 해드려요\"",
-      "url": "https://www.mk.co.kr/news/economy/12108587",
+      "title": "기은 상반기 당기순익 1.4조…중기대출 잔액은 270조 돌파",
+      "url": "https://www.mk.co.kr/news/economy/12108586",
       "event_at": "2026-07-26T23:23:08+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
         "TargetGroup": [
-          "소상공인"
+          "중소기업"
         ]
       },
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "\"단골 많은 가게, 대출 더 해드려요\"",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-26:단골-많은-가게-대출-더-해드려요",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12108587",
+      "program_title": "기은 상반기 당기순익 1.4조…중기대출 잔액은 270조 돌파",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-26:기은-상반기-당기순익-1-4조-중기대출-잔액은-270조-돌파",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12108586",
       "evidence_url_present": true
     },
     {
@@ -1605,22 +1657,22 @@
     {
       "source": "매일경제 경제정책",
       "event_model": "eligibility_rule",
-      "title": "기은 상반기 당기순익 1.4조…중기대출 잔액은 270조 돌파",
-      "url": "https://www.mk.co.kr/news/economy/12108586",
+      "title": "\"단골 많은 가게, 대출 더 해드려요\"",
+      "url": "https://www.mk.co.kr/news/economy/12108587",
       "event_at": "2026-07-26T23:23:08+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
         "TargetGroup": [
-          "중소기업"
+          "소상공인"
         ]
       },
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "기은 상반기 당기순익 1.4조…중기대출 잔액은 270조 돌파",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-26:기은-상반기-당기순익-1-4조-중기대출-잔액은-270조-돌파",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12108586",
+      "program_title": "\"단골 많은 가게, 대출 더 해드려요\"",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-26:단골-많은-가게-대출-더-해드려요",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12108587",
       "evidence_url_present": true
     },
     {
@@ -1719,250 +1771,6 @@
       "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-26:10만원-연체했는데-신용점수-55점-깎여-벼랑-끝-몰리는-취약계층",
       "evidence_url": "https://www.mk.co.kr/news/economy/12108102",
       "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "대산 이어 여수도 석유화학 사업재편 본격화, 2호 프로젝트도 정부 전방위 지원",
-      "url": "https://www.fsc.go.kr/no010101/87393",
-      "event_at": "2026-07-26T06:38:24.600228+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "제조",
-          "관광"
-        ],
-        "Region": [
-          "대전",
-          "울산"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "대산 이어 여수도 석유화학 사업재편 본격화, 2호 프로젝트도 정부 전방위 지원",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-07-26:대산-이어-여수도-석유화학-사업재편-본격화-2호-프로젝트도-정부-전방위-지원",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87393",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "금융위-산업부, 핵심광물 공급망 강화 지원 협력",
-      "url": "https://www.fsc.go.kr/no010101/87397",
-      "event_at": "2026-07-26T06:38:22.296117+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "제조",
-          "AI",
-          "바이오"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "금융위-산업부, 핵심광물 공급망 강화 지원 협력",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-07-26:금융위-산업부-핵심광물-공급망-강화-지원-협력",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87397",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "eligibility_rule",
-      "title": "2026년 서울시 민간 국제개발협력 지원사업 보조사업자 선정결과 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462309",
-      "event_at": "2026-07-26T06:38:08.464911+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 서울시 민간 국제개발협력 지원사업",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-07-26:2026년-서울시-민간-국제개발협력-지원사업",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462309",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "selection_result",
-      "title": "2026년 서울시 민간 국제개발협력 지원사업 보조사업자 선정결과 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462309",
-      "event_at": "2026-07-26T06:38:08.464911+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 서울시 민간 국제개발협력 지원사업",
-      "program_key": "selection-result:kr:서울시-지원사업:2026년-서울시-민간-국제개발협력-지원사업",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462309",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "「2026 지역상생 중장년 창업 지원 사업」넥스트로컬 40+ 최종 합격팀 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462435",
-      "event_at": "2026-07-24T00:00:00+00:00",
-      "application_deadline": "2026-07-24",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "「2026 지역상생 중장년 창업 지원 사업」넥스트로컬 40+ 최종 합격팀 공고",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-07-24:2026-지역상생-중장년-창업-지원-사업-넥스트로컬-40-최종-합격팀-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462435",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "eligibility_rule",
-      "title": "「2026 지역상생 중장년 창업 지원 사업」넥스트로컬 40+ 최종 합격팀 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462435",
-      "event_at": "2026-07-26T06:37:58.517939+00:00",
-      "application_deadline": "2026-07-24",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "「2026 지역상생 중장년 창업 지원 사업」넥스트로컬 40+ 최종 합격팀 공고",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-07-26:2026-지역상생-중장년-창업-지원-사업-넥스트로컬-40-최종-합격팀-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462435",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "고금리에 금융사 ‘웃고’ 가계·중기 ‘울고’…연체율 10년만에 최고",
-      "url": "https://www.donga.com/news/Economy/article/all/20260726/134364887/1",
-      "event_at": "2026-07-25T21:28:30+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "중소기업"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "고금리에 금융사 ‘웃고’ 가계·중기 ‘울고’…연체율 10년만에 최고",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-25:고금리에-금융사-웃고-가계-중기-울고-연체율-10년만에-최고",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260726/134364887/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "“집값 오르는데 대출 막혀”…2030 거주주택 보유율 27.7% 역대 최저",
-      "url": "https://www.donga.com/news/Economy/article/all/20260726/134365466/1",
-      "event_at": "2026-07-25T20:37:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“집값 오르는데 대출 막혀”…2030 거주주택 보유율 27.7% 역대 최저",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-25:집값-오르는데-대출-막혀-2030-거주주택-보유율-27-7-역대-최저",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260726/134365466/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "웰킵스컨슈머블, 지파운데이션에 1억 원 상당 ‘뷰카’ 구강용품 지원",
-      "url": "https://www.donga.com/news/Economy/article/all/20260724/134359099/1",
-      "event_at": "2026-07-25T16:00:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "웰킵스컨슈머블, 지파운데이션에 1억 원 상당 ‘뷰카’ 구강용품 지원",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-25:웰킵스컨슈머블-지파운데이션에-1억-원-상당-뷰카-구강용품-지원",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260724/134359099/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "주담대 8% 전망에 “내 집 마련 포기”… ‘영끌족’도 비상",
-      "url": "https://www.donga.com/news/Economy/article/all/20260725/134362911/1",
-      "event_at": "2026-07-24T16:50:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "자영업자"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "주담대 8% 전망에 “내 집 마련 포기”… ‘영끌족’도 비상",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-24:주담대-8-전망에-내-집-마련-포기-영끌족-도-비상",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260725/134362911/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "서울 월세 1년새 116만→127만원",
-      "url": "https://www.mk.co.kr/news/economy/12106873",
-      "event_at": "2026-07-23T23:38:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "서울 월세 1년새 116만→127만원",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-23:서울-월세-1년새-116만-127만원",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12106873",
-      "evidence_url_present": true
     }
   ],
   "event_model_coverage": [
@@ -2036,8 +1844,10 @@
     "[서울경제 경제] Request failed: 403 Client Error: Forbidden for url: https://www.sedaily.com/RSS/Economy/",
     "SBS 뉴스 정치: Source disabled (crawl health threshold reached)",
     "소상공인시장진흥공단: Source disabled (crawl health threshold reached)",
+    "서울시 지원사업: Failed to collect browser content from 서울시 지원사업: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.seoul.go.kr/news/news_notice.do\", waiting until \"domcontentloaded\"\n",
     "행정안전부: Source disabled (crawl health threshold reached)",
     "보건복지부: Source disabled (crawl health threshold reached)",
+    "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n",
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
     "r/startups: Source disabled (crawl health threshold reached)",
