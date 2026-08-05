@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-08-04T06:29:39.918708+00:00",
+  "generated_at": "2026-08-05T06:29:44.731609+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -13,10 +13,10 @@
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
     "application_deadline_events": 7,
-    "eligibility_rule_events": 23,
+    "eligibility_rule_events": 25,
     "selection_result_events": 0,
-    "unique_program_key_count": 30,
-    "events_with_evidence_url": 30,
+    "unique_program_key_count": 32,
+    "events_with_evidence_url": 32,
     "collection_error_count": 11,
     "event_model_source_gap_count": 0
   },
@@ -160,7 +160,9 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": []
+      "errors": [
+        "서울시 지원사업: Failed to collect browser content from 서울시 지원사업: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.seoul.go.kr/news/news_notice.do\", waiting until \"domcontentloaded\"\n"
+      ]
     },
     {
       "source": "행정안전부",
@@ -228,13 +230,13 @@
       "status": "fresh",
       "article_count": 9,
       "event_count": 6,
-      "latest_event_at": "2026-08-04T06:29:28.072584+00:00",
+      "latest_event_at": "2026-08-05T06:29:34.418345+00:00",
       "age_days": 0.0,
       "latest_title": "금융정보분석원, 국제자금세탁방지기구 아시아·태평양 지역기구(APG) 연차총회 참석",
       "latest_url": "https://www.fsc.go.kr/no010101/87461",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87461",
       "latest_program_title": "금융정보분석원, 국제자금세탁방지기구 아시아·태평양 지역기구(APG) 연차총회 참석",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-08-04:금융정보분석원-국제자금세탁방지기구-아시아-태평양-지역기구-apg-연차총회-참석",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-08-05:금융정보분석원-국제자금세탁방지기구-아시아-태평양-지역기구-apg-연차총회-참석",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
         "Industry": [
@@ -526,7 +528,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 7,
+      "article_count": 8,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -578,7 +580,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 3,
+      "article_count": 4,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -735,7 +737,7 @@
       "event_model": "eligibility_rule",
       "title": "금융정보분석원, 국제자금세탁방지기구 아시아·태평양 지역기구(APG) 연차총회 참석",
       "url": "https://www.fsc.go.kr/no010101/87461",
-      "event_at": "2026-08-04T06:29:28.072584+00:00",
+      "event_at": "2026-08-05T06:29:34.418345+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -747,8 +749,53 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "금융정보분석원, 국제자금세탁방지기구 아시아·태평양 지역기구(APG) 연차총회 참석",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-08-04:금융정보분석원-국제자금세탁방지기구-아시아-태평양-지역기구-apg-연차총회-참석",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-08-05:금융정보분석원-국제자금세탁방지기구-아시아-태평양-지역기구-apg-연차총회-참석",
       "evidence_url": "https://www.fsc.go.kr/no010101/87461",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "김해시, 영구임대주택 예비입주자 100가구 모집",
+      "url": "https://www.khan.co.kr/article/202608051302001",
+      "event_at": "2026-08-04T19:02:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ],
+        "Region": [
+          "경남"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "김해시, 영구임대주택 예비입주자 100가구 모집",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-04:김해시-영구임대주택-예비입주자-100가구-모집",
+      "evidence_url": "https://www.khan.co.kr/article/202608051302001",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "지방 中企, 한국은행 저금리 대출에 목맨다",
+      "url": "https://www.mk.co.kr/news/economy/12116548",
+      "event_at": "2026-08-04T00:00:38+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "지방 中企, 한국은행 저금리 대출에 목맨다",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-04:지방-中企-한국은행-저금리-대출에-목맨다",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12116548",
       "evidence_url_present": true
     },
     {
@@ -1505,12 +1552,12 @@
     "농림축산식품부: Source disabled (crawl health threshold reached)",
     "SBS 뉴스 정치: Source disabled (crawl health threshold reached)",
     "소상공인시장진흥공단: Source disabled (crawl health threshold reached)",
+    "서울시 지원사업: Failed to collect browser content from 서울시 지원사업: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.seoul.go.kr/news/news_notice.do\", waiting until \"domcontentloaded\"\n",
     "행정안전부: Source disabled (crawl health threshold reached)",
     "보건복지부: Source disabled (crawl health threshold reached)",
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
     "r/startups: Source disabled (crawl health threshold reached)",
-    "r/Entrepreneur: Source disabled (crawl health threshold reached)",
-    "https://www.sedaily.com/article/20075514: summary is missing or not a string"
+    "r/Entrepreneur: Source disabled (crawl health threshold reached)"
   ]
 }
