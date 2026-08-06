@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-08-05T06:29:44.731609+00:00",
+  "generated_at": "2026-08-06T06:32:45.383183+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -12,12 +12,12 @@
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 7,
-    "eligibility_rule_events": 25,
+    "application_deadline_events": 5,
+    "eligibility_rule_events": 18,
     "selection_result_events": 0,
-    "unique_program_key_count": 32,
-    "events_with_evidence_url": 32,
-    "collection_error_count": 11,
+    "unique_program_key_count": 23,
+    "events_with_evidence_url": 23,
+    "collection_error_count": 10,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -137,19 +137,19 @@
       "event_model": "application_deadline",
       "freshness_sla_days": 1,
       "status": "fresh",
-      "article_count": 2,
-      "event_count": 2,
-      "latest_event_at": "2026-12-12T00:00:00+00:00",
+      "article_count": 1,
+      "event_count": 1,
+      "latest_event_at": "2026-08-31T00:00:00+00:00",
       "age_days": 0.0,
-      "latest_title": "2026년 제2회 서울시 대학(원)생 학자금대출이자 지원 신청 공고(8월 3일~9월15일)",
-      "latest_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462823",
-      "latest_evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462823",
-      "latest_program_title": "2026년 제2회 서울시 대학(원)생 학자금대출이자 지원 신청 공고(8월 3일~9월15일)",
-      "latest_program_key": "application-deadline:kr:서울시-지원사업:2026-12-12:2026년-제2회-서울시-대학-원-생-학자금대출이자-지원-신청-공고-8월-3일-9월15일",
-      "latest_application_deadline": "2026-12-12",
+      "latest_title": "물산업 혁신기술 R&D 지원사업 추가공고",
+      "latest_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463067",
+      "latest_evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463067",
+      "latest_program_title": "물산업 혁신기술 R&D 지원사업 추가공고",
+      "latest_program_key": "application-deadline:kr:서울시-지원사업:2026-08-31:물산업-혁신기술-r-d-지원사업-추가공고",
+      "latest_application_deadline": "2026-08-31",
       "latest_eligibility_fields": {
         "TargetGroup": [
-          "청년"
+          "중소기업"
         ],
         "Region": [
           "서울"
@@ -160,9 +160,7 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": [
-        "서울시 지원사업: Failed to collect browser content from 서울시 지원사업: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.seoul.go.kr/news/news_notice.do\", waiting until \"domcontentloaded\"\n"
-      ]
+      "errors": []
     },
     {
       "source": "행정안전부",
@@ -228,15 +226,15 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
       "status": "fresh",
-      "article_count": 9,
-      "event_count": 6,
-      "latest_event_at": "2026-08-05T06:29:34.418345+00:00",
+      "article_count": 5,
+      "event_count": 4,
+      "latest_event_at": "2026-08-06T06:32:35.236069+00:00",
       "age_days": 0.0,
       "latest_title": "금융정보분석원, 국제자금세탁방지기구 아시아·태평양 지역기구(APG) 연차총회 참석",
       "latest_url": "https://www.fsc.go.kr/no010101/87461",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87461",
       "latest_program_title": "금융정보분석원, 국제자금세탁방지기구 아시아·태평양 지역기구(APG) 연차총회 참석",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-08-05:금융정보분석원-국제자금세탁방지기구-아시아-태평양-지역기구-apg-연차총회-참석",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-08-06:금융정보분석원-국제자금세탁방지기구-아시아-태평양-지역기구-apg-연차총회-참석",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
         "Industry": [
@@ -528,7 +526,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 8,
+      "article_count": 6,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -554,7 +552,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 5,
+      "article_count": 3,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -737,7 +735,7 @@
       "event_model": "eligibility_rule",
       "title": "금융정보분석원, 국제자금세탁방지기구 아시아·태평양 지역기구(APG) 연차총회 참석",
       "url": "https://www.fsc.go.kr/no010101/87461",
-      "event_at": "2026-08-05T06:29:34.418345+00:00",
+      "event_at": "2026-08-06T06:32:35.236069+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -749,8 +747,75 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "금융정보분석원, 국제자금세탁방지기구 아시아·태평양 지역기구(APG) 연차총회 참석",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-08-05:금융정보분석원-국제자금세탁방지기구-아시아-태평양-지역기구-apg-연차총회-참석",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-08-06:금융정보분석원-국제자금세탁방지기구-아시아-태평양-지역기구-apg-연차총회-참석",
       "evidence_url": "https://www.fsc.go.kr/no010101/87461",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "IBK기업은행, 저소득·저신용자 대상 대출상품 출시…연 6.0%로 지원",
+      "url": "https://www.donga.com/news/Economy/article/all/20260806/134431926/1",
+      "event_at": "2026-08-05T21:27:56+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "저소득"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "IBK기업은행, 저소득·저신용자 대상 대출상품 출시…연 6.0%로 지원",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-05:ibk기업은행-저소득-저신용자-대상-대출상품-출시-연-6-0-로-지원",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260806/134431926/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "SH, 임대주택 모집에 ‘취약계층 가점’ 폐지",
+      "url": "https://www.khan.co.kr/article/202608052127005",
+      "event_at": "2026-08-05T03:27:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년",
+          "취약계층"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "SH, 임대주택 모집에 ‘취약계층 가점’ 폐지",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-05:sh-임대주택-모집에-취약계층-가점-폐지",
+      "evidence_url": "https://www.khan.co.kr/article/202608052127005",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "정부가 대신 갚아준 청년정책대출, 3배 '쑥'",
+      "url": "https://www.mk.co.kr/news/economy/12117914",
+      "event_at": "2026-08-04T23:47:51+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "정부가 대신 갚아준 청년정책대출, 3배 '쑥'",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-04:정부가-대신-갚아준-청년정책대출-3배-쑥",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12117914",
       "evidence_url_present": true
     },
     {
@@ -1188,298 +1253,6 @@
       "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-30:기업은행-2030년까지-취약계층에-30조-지원",
       "evidence_url": "https://www.mk.co.kr/news/economy/12113218",
       "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "유니클로, 희망브리지 전국재해구호협회에 성금 6억 원 기탁",
-      "url": "https://www.donga.com/news/Economy/article/all/20260730/134393380/1",
-      "event_at": "2026-07-29T16:57:19+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "유니클로, 희망브리지 전국재해구호협회에 성금 6억 원 기탁",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-29:유니클로-희망브리지-전국재해구호협회에-성금-6억-원-기탁",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260730/134393380/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "application_deadline",
-      "title": "주가조작 신고포상금 제도 개편 등 2026년 상반기 적극행정 우수공무원 시상",
-      "url": "https://www.fsc.go.kr/no010101/87411",
-      "event_at": "2026-07-16T00:00:00+00:00",
-      "application_deadline": "2026-07-16",
-      "application_start_date": "2026-07-27",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인",
-          "취약계층"
-        ],
-        "Industry": [
-          "AI"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "주가조작 신고포상금 제도 개편 등 2026년 상반기 적극행정 우수공무원 시상",
-      "program_key": "application-deadline:kr:금융위원회:2026-07-16:주가조작-신고포상금-제도-개편-등-2026년-상반기-적극행정-우수공무원-시상",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87411",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "주가조작 신고포상금 제도 개편 등 2026년 상반기 적극행정 우수공무원 시상",
-      "url": "https://www.fsc.go.kr/no010101/87411",
-      "event_at": "2026-07-29T06:32:52.147361+00:00",
-      "application_deadline": "2026-07-16",
-      "application_start_date": "2026-07-27",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인",
-          "취약계층"
-        ],
-        "Industry": [
-          "AI"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "주가조작 신고포상금 제도 개편 등 2026년 상반기 적극행정 우수공무원 시상",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-07-29:주가조작-신고포상금-제도-개편-등-2026년-상반기-적극행정-우수공무원-시상",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87411",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "신용평가체계 개편, 소상공인부터 시작해 민생경제 활력을 불어넣겠습니다.",
-      "url": "https://www.fsc.go.kr/no010101/87413",
-      "event_at": "2026-07-29T06:32:51.084677+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인"
-        ],
-        "BusinessStage": [
-          "벤처기업"
-        ],
-        "Industry": [
-          "AI"
-        ],
-        "Region": [
-          "서울",
-          "부산",
-          "광주",
-          "전북",
-          "경남",
-          "제주"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "신용평가체계 개편, 소상공인부터 시작해 민생경제 활력을 불어넣겠습니다.",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-07-29:신용평가체계-개편-소상공인부터-시작해-민생경제-활력을-불어넣겠습니다",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87413",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "2026년 제2회 서울시 대학(원)생 학자금대출이자 지원 신청 공고(8월 3일~9월15일)",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462823",
-      "event_at": "2026-12-12T00:00:00+00:00",
-      "application_deadline": "2026-12-12",
-      "application_start_date": "2026-07-29",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 제2회 서울시 대학(원)생 학자금대출이자 지원 신청 공고(8월 3일~9월15일)",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-12:2026년-제2회-서울시-대학-원-생-학자금대출이자-지원-신청-공고-8월-3일-9월15일",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462823",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "eligibility_rule",
-      "title": "2026년 제2회 서울시 대학(원)생 학자금대출이자 지원 신청 공고(8월 3일~9월15일)",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462823",
-      "event_at": "2026-07-29T06:32:34.408375+00:00",
-      "application_deadline": "2026-12-12",
-      "application_start_date": "2026-07-29",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 제2회 서울시 대학(원)생 학자금대출이자 지원 신청 공고(8월 3일~9월15일)",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-07-29:2026년-제2회-서울시-대학-원-생-학자금대출이자-지원-신청-공고-8월-3일-9월15일",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=462823",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "소득 없으면 신용 높아도 불사금예방대출 받는다",
-      "url": "https://www.mk.co.kr/news/economy/12110782",
-      "event_at": "2026-07-28T23:55:28+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "소득 없으면 신용 높아도 불사금예방대출 받는다",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-28:소득-없으면-신용-높아도-불사금예방대출-받는다",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12110782",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "농어촌공사, 농지은행 규제 전면개편…경작권 보호에 ‘방점’",
-      "url": "https://www.donga.com/news/Economy/article/all/20260729/134387044/1",
-      "event_at": "2026-07-28T20:35:58+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년",
-          "농어민"
-        ],
-        "Industry": [
-          "농업"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "농어촌공사, 농지은행 규제 전면개편…경작권 보호에 ‘방점’",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-28:농어촌공사-농지은행-규제-전면개편-경작권-보호에-방점",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260729/134387044/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "BNK금융, 취약계층 위해 6억7천만원 지원…선풍기 2천대 전달",
-      "url": "https://www.mk.co.kr/news/economy/12110425",
-      "event_at": "2026-07-28T19:48:19+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ],
-        "Region": [
-          "부산"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "BNK금융, 취약계층 위해 6억7천만원 지원…선풍기 2천대 전달",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-28:bnk금융-취약계층-위해-6억7천만원-지원-선풍기-2천대-전달",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12110425",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "은행권 부동산업 연체율 고공행진…기업은행 14년 만에 최고",
-      "url": "https://www.khan.co.kr/article/202607291128001",
-      "event_at": "2026-07-28T17:28:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "중소기업"
-        ],
-        "Region": [
-          "서울",
-          "경기"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "은행권 부동산업 연체율 고공행진…기업은행 14년 만에 최고",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-07-28:은행권-부동산업-연체율-고공행진-기업은행-14년-만에-최고",
-      "evidence_url": "https://www.khan.co.kr/article/202607291128001",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "신용 높아도 소득없어 대출 어려웠던 사람…내달 불법사금융예방대출 받는다",
-      "url": "https://www.mk.co.kr/news/economy/12110378",
-      "event_at": "2026-07-28T17:27:10+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "신용 높아도 소득없어 대출 어려웠던 사람…내달 불법사금융예방대출 받는다",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-28:신용-높아도-소득없어-대출-어려웠던-사람-내달-불법사금융예방대출-받는다",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12110378",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "26억 정부 AX 바우처 사업 선정… 페르소나AI, 세포치료제 CMC 자동화 플랫폼 개발",
-      "url": "https://www.donga.com/news/Economy/article/all/20260729/134385675/1",
-      "event_at": "2026-07-28T16:55:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "AI",
-          "바이오"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "26억 정부 AX 바우처 사업 선정… 페르소나AI, 세포치료제 CMC 자동화 플랫폼 개발",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-28:26억-정부-ax-바우처-사업-선정-페르소나ai-세포치료제-cmc-자동화-플랫폼-개발",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260729/134385675/1",
-      "evidence_url_present": true
     }
   ],
   "event_model_coverage": [
@@ -1552,7 +1325,6 @@
     "농림축산식품부: Source disabled (crawl health threshold reached)",
     "SBS 뉴스 정치: Source disabled (crawl health threshold reached)",
     "소상공인시장진흥공단: Source disabled (crawl health threshold reached)",
-    "서울시 지원사업: Failed to collect browser content from 서울시 지원사업: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.seoul.go.kr/news/news_notice.do\", waiting until \"domcontentloaded\"\n",
     "행정안전부: Source disabled (crawl health threshold reached)",
     "보건복지부: Source disabled (crawl health threshold reached)",
     "r/korea: Source disabled (crawl health threshold reached)",
