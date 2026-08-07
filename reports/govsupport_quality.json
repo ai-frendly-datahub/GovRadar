@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-08-06T06:32:45.383183+00:00",
+  "generated_at": "2026-08-07T05:42:08.842006+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -13,10 +13,10 @@
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
     "application_deadline_events": 5,
-    "eligibility_rule_events": 18,
+    "eligibility_rule_events": 25,
     "selection_result_events": 0,
-    "unique_program_key_count": 23,
-    "events_with_evidence_url": 23,
+    "unique_program_key_count": 30,
+    "events_with_evidence_url": 30,
     "collection_error_count": 10,
     "event_model_source_gap_count": 0
   },
@@ -228,13 +228,13 @@
       "status": "fresh",
       "article_count": 5,
       "event_count": 4,
-      "latest_event_at": "2026-08-06T06:32:35.236069+00:00",
+      "latest_event_at": "2026-08-07T05:41:59.304354+00:00",
       "age_days": 0.0,
       "latest_title": "금융정보분석원, 국제자금세탁방지기구 아시아·태평양 지역기구(APG) 연차총회 참석",
       "latest_url": "https://www.fsc.go.kr/no010101/87461",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87461",
       "latest_program_title": "금융정보분석원, 국제자금세탁방지기구 아시아·태평양 지역기구(APG) 연차총회 참석",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-08-06:금융정보분석원-국제자금세탁방지기구-아시아-태평양-지역기구-apg-연차총회-참석",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-08-07:금융정보분석원-국제자금세탁방지기구-아시아-태평양-지역기구-apg-연차총회-참석",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
         "Industry": [
@@ -526,7 +526,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 6,
+      "article_count": 7,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -552,7 +552,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 3,
+      "article_count": 9,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -578,7 +578,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 4,
+      "article_count": 7,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -735,7 +735,7 @@
       "event_model": "eligibility_rule",
       "title": "금융정보분석원, 국제자금세탁방지기구 아시아·태평양 지역기구(APG) 연차총회 참석",
       "url": "https://www.fsc.go.kr/no010101/87461",
-      "event_at": "2026-08-06T06:32:35.236069+00:00",
+      "event_at": "2026-08-07T05:41:59.304354+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -747,8 +747,163 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "금융정보분석원, 국제자금세탁방지기구 아시아·태평양 지역기구(APG) 연차총회 참석",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-08-06:금융정보분석원-국제자금세탁방지기구-아시아-태평양-지역기구-apg-연차총회-참석",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-08-07:금융정보분석원-국제자금세탁방지기구-아시아-태평양-지역기구-apg-연차총회-참석",
       "evidence_url": "https://www.fsc.go.kr/no010101/87461",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "구윤철 “청년·신혼부부·무주택자 대출 ‘핀셋 지원’ 검토”",
+      "url": "https://www.khan.co.kr/article/202608071350001",
+      "event_at": "2026-08-06T19:50:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년",
+          "신혼부부"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "구윤철 “청년·신혼부부·무주택자 대출 ‘핀셋 지원’ 검토”",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-06:구윤철-청년-신혼부부-무주택자-대출-핀셋-지원-검토",
+      "evidence_url": "https://www.khan.co.kr/article/202608071350001",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "구윤철 “전체 99%, 30억이하 실거주 1주택 보유-양도세 줄어”",
+      "url": "https://www.donga.com/news/Politics/article/all/20260807/134436841/1",
+      "event_at": "2026-08-06T18:00:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년",
+          "신혼부부"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "구윤철 “전체 99%, 30억이하 실거주 1주택 보유-양도세 줄어”",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-06:구윤철-전체-99-30억이하-실거주-1주택-보유-양도세-줄어",
+      "evidence_url": "https://www.donga.com/news/Politics/article/all/20260807/134436841/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "지난해 ‘부정수급’으로 샌 나랏돈 1296억 환수…생계급여 가장 많아",
+      "url": "https://www.donga.com/news/Politics/article/all/20260807/134436729/1",
+      "event_at": "2026-08-06T17:28:12+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "지난해 ‘부정수급’으로 샌 나랏돈 1296억 환수…생계급여 가장 많아",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-06:지난해-부정수급-으로-샌-나랏돈-1296억-환수-생계급여-가장-많아",
+      "evidence_url": "https://www.donga.com/news/Politics/article/all/20260807/134436729/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "국내생산세액공제 신설…태양광·풍력 등 6대 산업 지원",
+      "url": "https://www.donga.com/news/Economy/article/all/20260807/134436692/1",
+      "event_at": "2026-08-06T17:23:20+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "국내생산세액공제 신설…태양광·풍력 등 6대 산업 지원",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-06:국내생산세액공제-신설-태양광-풍력-등-6대-산업-지원",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260807/134436692/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "“어르신, 택시 앱 호출 어려우면 114로 전화하세요”",
+      "url": "https://www.donga.com/news/It/article/all/20260807/134435851/1",
+      "event_at": "2026-08-06T15:24:51+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“어르신, 택시 앱 호출 어려우면 114로 전화하세요”",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-06:어르신-택시-앱-호출-어려우면-114로-전화하세요",
+      "evidence_url": "https://www.donga.com/news/It/article/all/20260807/134435851/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "[점선면]투명인간이 된 세입자",
+      "url": "https://www.khan.co.kr/article/202608070700001",
+      "event_at": "2026-08-06T13:00:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "[점선면]투명인간이 된 세입자",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-06:점선면-투명인간이-된-세입자",
+      "evidence_url": "https://www.khan.co.kr/article/202608070700001",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "293만명 기껏 신용사면 해줬더니…5명중 1명은 또 연체했다",
+      "url": "https://www.mk.co.kr/news/economy/12120295",
+      "event_at": "2026-08-06T11:59:30+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "293만명 기껏 신용사면 해줬더니…5명중 1명은 또 연체했다",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-06:293만명-기껏-신용사면-해줬더니-5명중-1명은-또-연체했다",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12120295",
       "evidence_url_present": true
     },
     {
@@ -1140,58 +1295,6 @@
       "evidence_url_present": true
     },
     {
-      "source": "동아일보 경제",
-      "event_model": "application_deadline",
-      "title": "고수온 ‘심각 단계’ 격상…수협, 비상대책본부 가동",
-      "url": "https://www.donga.com/news/Economy/article/all/20260731/134401316/1",
-      "event_at": "2026-07-31T00:00:00+00:00",
-      "application_deadline": "2026-07-31",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "수산"
-        ],
-        "Region": [
-          "서울",
-          "전남",
-          "제주"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "고수온 ‘심각 단계’ 격상…수협, 비상대책본부 가동",
-      "program_key": "application-deadline:kr:동아일보-경제:2026-07-31:고수온-심각-단계-격상-수협-비상대책본부-가동",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260731/134401316/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "고수온 ‘심각 단계’ 격상…수협, 비상대책본부 가동",
-      "url": "https://www.donga.com/news/Economy/article/all/20260731/134401316/1",
-      "event_at": "2026-07-30T20:59:56+00:00",
-      "application_deadline": "2026-07-31",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "수산"
-        ],
-        "Region": [
-          "서울",
-          "전남",
-          "제주"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "고수온 ‘심각 단계’ 격상…수협, 비상대책본부 가동",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-30:고수온-심각-단계-격상-수협-비상대책본부-가동",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260731/134401316/1",
-      "evidence_url_present": true
-    },
-    {
       "source": "경향신문 경제",
       "event_model": "application_deadline",
       "title": "인천 제물포구, 삼대 거주 가정에 효행지원금 50만원 지급",
@@ -1252,6 +1355,58 @@
       "program_title": "기업은행 “2030년까지 취약계층에 30조 지원”",
       "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-30:기업은행-2030년까지-취약계층에-30조-지원",
       "evidence_url": "https://www.mk.co.kr/news/economy/12113218",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "application_deadline",
+      "title": "고수온 ‘심각 단계’ 격상…수협, 비상대책본부 가동",
+      "url": "https://www.donga.com/news/Economy/article/all/20260731/134401316/1",
+      "event_at": "2026-07-31T00:00:00+00:00",
+      "application_deadline": "2026-07-31",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "수산"
+        ],
+        "Region": [
+          "서울",
+          "전남",
+          "제주"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "고수온 ‘심각 단계’ 격상…수협, 비상대책본부 가동",
+      "program_key": "application-deadline:kr:동아일보-경제:2026-07-31:고수온-심각-단계-격상-수협-비상대책본부-가동",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260731/134401316/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "고수온 ‘심각 단계’ 격상…수협, 비상대책본부 가동",
+      "url": "https://www.donga.com/news/Economy/article/all/20260731/134401316/1",
+      "event_at": "2026-07-30T20:59:56+00:00",
+      "application_deadline": "2026-07-31",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "수산"
+        ],
+        "Region": [
+          "서울",
+          "전남",
+          "제주"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "고수온 ‘심각 단계’ 격상…수협, 비상대책본부 가동",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-30:고수온-심각-단계-격상-수협-비상대책본부-가동",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260731/134401316/1",
       "evidence_url_present": true
     }
   ],
