@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-08-07T05:42:08.842006+00:00",
+  "generated_at": "2026-08-08T04:59:27.004841+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -12,12 +12,12 @@
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 5,
-    "eligibility_rule_events": 25,
+    "application_deadline_events": 2,
+    "eligibility_rule_events": 27,
     "selection_result_events": 0,
-    "unique_program_key_count": 30,
-    "events_with_evidence_url": 30,
-    "collection_error_count": 10,
+    "unique_program_key_count": 29,
+    "events_with_evidence_url": 29,
+    "collection_error_count": 11,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -226,10 +226,10 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
       "status": "fresh",
-      "article_count": 5,
-      "event_count": 4,
+      "article_count": 2,
+      "event_count": 1,
       "latest_event_at": "2026-08-07T05:41:59.304354+00:00",
-      "age_days": 0.0,
+      "age_days": 0.97,
       "latest_title": "금융정보분석원, 국제자금세탁방지기구 아시아·태평양 지역기구(APG) 연차총회 참석",
       "latest_url": "https://www.fsc.go.kr/no010101/87461",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87461",
@@ -246,7 +246,9 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": []
+      "errors": [
+        "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n"
+      ]
     },
     {
       "source": "농림축산식품부",
@@ -526,7 +528,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 7,
+      "article_count": 9,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -552,7 +554,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 9,
+      "article_count": 12,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -752,9 +754,141 @@
       "evidence_url_present": true
     },
     {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "미소금융 상반기 1612억 공급…청년·자영업자 지원 역대 최대",
+      "url": "https://www.donga.com/news/Economy/article/all/20260807/134439217/2",
+      "event_at": "2026-08-07T00:40:08+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년",
+          "자영업자"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "미소금융 상반기 1612억 공급…청년·자영업자 지원 역대 최대",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-07:미소금융-상반기-1612억-공급-청년-자영업자-지원-역대-최대",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260807/134439217/2",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "저소득 신혼부부 '출산 지원금' 더 받는다",
+      "url": "https://www.mk.co.kr/news/economy/12121169",
+      "event_at": "2026-08-06T23:58:40+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "신혼부부",
+          "저소득"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "저소득 신혼부부 '출산 지원금' 더 받는다",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-06:저소득-신혼부부-출산-지원금-더-받는다",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12121169",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "40도 찍은 서울…농심, 폭염 취약계층에 백산수 5만 병 지원",
+      "url": "https://www.donga.com/news/Economy/article/all/20260807/134439256/1",
+      "event_at": "2026-08-06T23:47:45+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "40도 찍은 서울…농심, 폭염 취약계층에 백산수 5만 병 지원",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-06:40도-찍은-서울-농심-폭염-취약계층에-백산수-5만-병-지원",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260807/134439256/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "에트리홀딩스, 공공기술 기반 창업 촉진 프로그램 운영 시작",
+      "url": "https://www.donga.com/news/Economy/article/all/20260807/134439165/1",
+      "event_at": "2026-08-06T23:40:01+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "BusinessStage": [
+          "예비창업자",
+          "초기창업"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "에트리홀딩스, 공공기술 기반 창업 촉진 프로그램 운영 시작",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-06:에트리홀딩스-공공기술-기반-창업-촉진-프로그램-운영-시작",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260807/134439165/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "[단독] “돈 없다고 아이 안낳는 일 없어야”…저소득층 출산지원금 더 준다",
+      "url": "https://www.mk.co.kr/news/economy/12121112",
+      "event_at": "2026-08-06T23:37:12+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "저소득"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "[단독] “돈 없다고 아이 안낳는 일 없어야”…저소득층 출산지원금 더 준다",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-06:단독-돈-없다고-아이-안낳는-일-없어야-저소득층-출산지원금-더-준다",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12121112",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "줄줄 샌 나랏돈 1296억…작년 부정수급 환수액 ‘역대 최대’",
+      "url": "https://www.donga.com/news/Politics/article/all/20260807/134437832/1",
+      "event_at": "2026-08-06T22:37:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "줄줄 샌 나랏돈 1296억…작년 부정수급 환수액 ‘역대 최대’",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-06:줄줄-샌-나랏돈-1296억-작년-부정수급-환수액-역대-최대",
+      "evidence_url": "https://www.donga.com/news/Politics/article/all/20260807/134437832/1",
+      "evidence_url_present": true
+    },
+    {
       "source": "경향신문 경제",
       "event_model": "eligibility_rule",
-      "title": "구윤철 “청년·신혼부부·무주택자 대출 ‘핀셋 지원’ 검토”",
+      "title": "구윤철 “청년·신혼부부·무주택자 대출 ‘핀셋 지원’ 검토···최대한 주택 공급 빨리 늘릴 것”",
       "url": "https://www.khan.co.kr/article/202608071350001",
       "event_at": "2026-08-06T19:50:00+00:00",
       "application_deadline": "",
@@ -771,8 +905,8 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "구윤철 “청년·신혼부부·무주택자 대출 ‘핀셋 지원’ 검토”",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-06:구윤철-청년-신혼부부-무주택자-대출-핀셋-지원-검토",
+      "program_title": "구윤철 “청년·신혼부부·무주택자 대출 ‘핀셋 지원’ 검토···최대한 주택 공급 빨리 늘릴 것”",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-06:구윤철-청년-신혼부부-무주택자-대출-핀셋-지원-검토-최대한-주택-공급-빨리-늘릴-것",
       "evidence_url": "https://www.khan.co.kr/article/202608071350001",
       "evidence_url_present": true
     },
@@ -1178,123 +1312,6 @@
       "evidence_url_present": true
     },
     {
-      "source": "금융위원회",
-      "event_model": "application_deadline",
-      "title": "“국내 은행 업무 위해 국제우편 보내던 불편 사라진다”",
-      "url": "https://www.fsc.go.kr/no010101/87439",
-      "event_at": "2026-07-30T00:00:00+00:00",
-      "application_deadline": "2026-07-30",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "부산"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“국내 은행 업무 위해 국제우편 보내던 불편 사라진다”",
-      "program_key": "application-deadline:kr:금융위원회:2026-07-30:국내-은행-업무-위해-국제우편-보내던-불편-사라진다",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87439",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "“국내 은행 업무 위해 국제우편 보내던 불편 사라진다”",
-      "url": "https://www.fsc.go.kr/no010101/87439",
-      "event_at": "2026-07-31T06:45:37.926975+00:00",
-      "application_deadline": "2026-07-30",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "부산"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“국내 은행 업무 위해 국제우편 보내던 불편 사라진다”",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-07-31:국내-은행-업무-위해-국제우편-보내던-불편-사라진다",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87439",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "application_deadline",
-      "title": "국민성장펀드가 디스플레이 산업의 초격차와HBM 공급망 경쟁력 강화를 지원합니다.",
-      "url": "https://www.fsc.go.kr/no010101/87442",
-      "event_at": "2026-01-05T00:00:00+00:00",
-      "application_deadline": "2026-01-05",
-      "application_start_date": "2026-07-30",
-      "eligibility_fields": {
-        "Industry": [
-          "콘텐츠",
-          "AI",
-          "바이오"
-        ],
-        "Region": [
-          "경기",
-          "충남"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "국민성장펀드가 디스플레이 산업의 초격차와HBM 공급망 경쟁력 강화를 지원합니다.",
-      "program_key": "application-deadline:kr:금융위원회:2026-01-05:국민성장펀드가-디스플레이-산업의-초격차와hbm-공급망-경쟁력-강화를-지원합니다",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87442",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "국민성장펀드가 디스플레이 산업의 초격차와HBM 공급망 경쟁력 강화를 지원합니다.",
-      "url": "https://www.fsc.go.kr/no010101/87442",
-      "event_at": "2026-07-31T06:45:35.782155+00:00",
-      "application_deadline": "2026-01-05",
-      "application_start_date": "2026-07-30",
-      "eligibility_fields": {
-        "Industry": [
-          "콘텐츠",
-          "AI",
-          "바이오"
-        ],
-        "Region": [
-          "경기",
-          "충남"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "국민성장펀드가 디스플레이 산업의 초격차와HBM 공급망 경쟁력 강화를 지원합니다.",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-07-31:국민성장펀드가-디스플레이-산업의-초격차와hbm-공급망-경쟁력-강화를-지원합니다",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87442",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "새도약기금, 상록수· 케이비스타 유동화회사 등 보유 연체채권 매입. 금일 등록된 게시글",
-      "url": "https://www.fsc.go.kr/no010101/87447",
-      "event_at": "2026-07-31T06:45:34.330075+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "새도약기금, 상록수· 케이비스타 유동화회사 등 보유 연체채권 매입. 금일 등록된 게시글",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-07-31:새도약기금-상록수-케이비스타-유동화회사-등-보유-연체채권-매입-금일-등록된-게시글",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87447",
-      "evidence_url_present": true
-    },
-    {
       "source": "경향신문 경제",
       "event_model": "application_deadline",
       "title": "인천 제물포구, 삼대 거주 가정에 효행지원금 50만원 지급",
@@ -1355,58 +1372,6 @@
       "program_title": "기업은행 “2030년까지 취약계층에 30조 지원”",
       "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-30:기업은행-2030년까지-취약계층에-30조-지원",
       "evidence_url": "https://www.mk.co.kr/news/economy/12113218",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "application_deadline",
-      "title": "고수온 ‘심각 단계’ 격상…수협, 비상대책본부 가동",
-      "url": "https://www.donga.com/news/Economy/article/all/20260731/134401316/1",
-      "event_at": "2026-07-31T00:00:00+00:00",
-      "application_deadline": "2026-07-31",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "수산"
-        ],
-        "Region": [
-          "서울",
-          "전남",
-          "제주"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "고수온 ‘심각 단계’ 격상…수협, 비상대책본부 가동",
-      "program_key": "application-deadline:kr:동아일보-경제:2026-07-31:고수온-심각-단계-격상-수협-비상대책본부-가동",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260731/134401316/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "고수온 ‘심각 단계’ 격상…수협, 비상대책본부 가동",
-      "url": "https://www.donga.com/news/Economy/article/all/20260731/134401316/1",
-      "event_at": "2026-07-30T20:59:56+00:00",
-      "application_deadline": "2026-07-31",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "수산"
-        ],
-        "Region": [
-          "서울",
-          "전남",
-          "제주"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "고수온 ‘심각 단계’ 격상…수협, 비상대책본부 가동",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-07-30:고수온-심각-단계-격상-수협-비상대책본부-가동",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260731/134401316/1",
       "evidence_url_present": true
     }
   ],
@@ -1482,6 +1447,7 @@
     "소상공인시장진흥공단: Source disabled (crawl health threshold reached)",
     "행정안전부: Source disabled (crawl health threshold reached)",
     "보건복지부: Source disabled (crawl health threshold reached)",
+    "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n",
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
     "r/startups: Source disabled (crawl health threshold reached)",
