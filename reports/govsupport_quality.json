@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-08-08T04:59:27.004841+00:00",
+  "generated_at": "2026-08-09T05:06:22.756747+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -12,12 +12,12 @@
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 2,
-    "eligibility_rule_events": 27,
+    "application_deadline_events": 1,
+    "eligibility_rule_events": 26,
     "selection_result_events": 0,
-    "unique_program_key_count": 29,
-    "events_with_evidence_url": 29,
-    "collection_error_count": 11,
+    "unique_program_key_count": 27,
+    "events_with_evidence_url": 27,
+    "collection_error_count": 10,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -228,13 +228,13 @@
       "status": "fresh",
       "article_count": 2,
       "event_count": 1,
-      "latest_event_at": "2026-08-07T05:41:59.304354+00:00",
-      "age_days": 0.97,
+      "latest_event_at": "2026-08-09T05:06:13.206506+00:00",
+      "age_days": 0.0,
       "latest_title": "금융정보분석원, 국제자금세탁방지기구 아시아·태평양 지역기구(APG) 연차총회 참석",
       "latest_url": "https://www.fsc.go.kr/no010101/87461",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87461",
       "latest_program_title": "금융정보분석원, 국제자금세탁방지기구 아시아·태평양 지역기구(APG) 연차총회 참석",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-08-07:금융정보분석원-국제자금세탁방지기구-아시아-태평양-지역기구-apg-연차총회-참석",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-08-09:금융정보분석원-국제자금세탁방지기구-아시아-태평양-지역기구-apg-연차총회-참석",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
         "Industry": [
@@ -246,9 +246,7 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": [
-        "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n"
-      ]
+      "errors": []
     },
     {
       "source": "농림축산식품부",
@@ -528,7 +526,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 9,
+      "article_count": 8,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -554,7 +552,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 12,
+      "article_count": 13,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -737,7 +735,7 @@
       "event_model": "eligibility_rule",
       "title": "금융정보분석원, 국제자금세탁방지기구 아시아·태평양 지역기구(APG) 연차총회 참석",
       "url": "https://www.fsc.go.kr/no010101/87461",
-      "event_at": "2026-08-07T05:41:59.304354+00:00",
+      "event_at": "2026-08-09T05:06:13.206506+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -749,8 +747,29 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "금융정보분석원, 국제자금세탁방지기구 아시아·태평양 지역기구(APG) 연차총회 참석",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-08-07:금융정보분석원-국제자금세탁방지기구-아시아-태평양-지역기구-apg-연차총회-참석",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-08-09:금융정보분석원-국제자금세탁방지기구-아시아-태평양-지역기구-apg-연차총회-참석",
       "evidence_url": "https://www.fsc.go.kr/no010101/87461",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "세제지원 제외에 보조금 수술까지…이중 악재 맞은 국산 전기차",
+      "url": "https://www.khan.co.kr/article/202608090800021",
+      "event_at": "2026-08-08T14:00:02+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "세제지원 제외에 보조금 수술까지…이중 악재 맞은 국산 전기차",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-08:세제지원-제외에-보조금-수술까지-이중-악재-맞은-국산-전기차",
+      "evidence_url": "https://www.khan.co.kr/article/202608090800021",
       "evidence_url_present": true
     },
     {
@@ -1310,69 +1329,6 @@
       "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-01:단독-ai-육성-브로커-근절-中企-지원책-손질-나서",
       "evidence_url": "https://www.mk.co.kr/news/economy/12114624",
       "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "application_deadline",
-      "title": "인천 제물포구, 삼대 거주 가정에 효행지원금 50만원 지급",
-      "url": "https://www.khan.co.kr/article/202607311339001",
-      "event_at": "2026-08-03T00:00:00+00:00",
-      "application_deadline": "2026-08-03",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "인천"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "인천 제물포구, 삼대 거주 가정에 효행지원금 50만원 지급",
-      "program_key": "application-deadline:kr:경향신문-경제:2026-08-03:인천-제물포구-삼대-거주-가정에-효행지원금-50만원-지급",
-      "evidence_url": "https://www.khan.co.kr/article/202607311339001",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "인천 제물포구, 삼대 거주 가정에 효행지원금 50만원 지급",
-      "url": "https://www.khan.co.kr/article/202607311339001",
-      "event_at": "2026-07-30T19:39:00+00:00",
-      "application_deadline": "2026-08-03",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "인천"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "인천 제물포구, 삼대 거주 가정에 효행지원금 50만원 지급",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-07-30:인천-제물포구-삼대-거주-가정에-효행지원금-50만원-지급",
-      "evidence_url": "https://www.khan.co.kr/article/202607311339001",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "기업은행 “2030년까지 취약계층에 30조 지원”",
-      "url": "https://www.mk.co.kr/news/economy/12113218",
-      "event_at": "2026-07-30T17:13:46+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "기업은행 “2030년까지 취약계층에 30조 지원”",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-07-30:기업은행-2030년까지-취약계층에-30조-지원",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12113218",
-      "evidence_url_present": true
     }
   ],
   "event_model_coverage": [
@@ -1447,7 +1403,6 @@
     "소상공인시장진흥공단: Source disabled (crawl health threshold reached)",
     "행정안전부: Source disabled (crawl health threshold reached)",
     "보건복지부: Source disabled (crawl health threshold reached)",
-    "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n",
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
     "r/startups: Source disabled (crawl health threshold reached)",
