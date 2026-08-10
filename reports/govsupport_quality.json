@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-08-09T05:06:22.756747+00:00",
+  "generated_at": "2026-08-10T05:29:24.683891+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -12,12 +12,12 @@
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 1,
-    "eligibility_rule_events": 26,
+    "application_deadline_events": 2,
+    "eligibility_rule_events": 30,
     "selection_result_events": 0,
-    "unique_program_key_count": 27,
-    "events_with_evidence_url": 27,
-    "collection_error_count": 10,
+    "unique_program_key_count": 32,
+    "events_with_evidence_url": 32,
+    "collection_error_count": 12,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -139,18 +139,15 @@
       "status": "fresh",
       "article_count": 1,
       "event_count": 1,
-      "latest_event_at": "2026-08-31T00:00:00+00:00",
+      "latest_event_at": "2026-09-08T00:00:00+00:00",
       "age_days": 0.0,
-      "latest_title": "물산업 혁신기술 R&D 지원사업 추가공고",
-      "latest_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463067",
-      "latest_evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463067",
-      "latest_program_title": "물산업 혁신기술 R&D 지원사업 추가공고",
-      "latest_program_key": "application-deadline:kr:서울시-지원사업:2026-08-31:물산업-혁신기술-r-d-지원사업-추가공고",
-      "latest_application_deadline": "2026-08-31",
+      "latest_title": "2026년 전기 수집운반차 보급사업(대행 사업자) 수정공고",
+      "latest_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463605",
+      "latest_evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463605",
+      "latest_program_title": "2026년 전기 수집운반차 보급사업(대행 사업자) 수정공고",
+      "latest_program_key": "application-deadline:kr:서울시-지원사업:2026-09-08:2026년-전기-수집운반차-보급사업-대행-사업자-수정공고",
+      "latest_application_deadline": "2026-09-08",
       "latest_eligibility_fields": {
-        "TargetGroup": [
-          "중소기업"
-        ],
         "Region": [
           "서울"
         ]
@@ -226,10 +223,10 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
       "status": "fresh",
-      "article_count": 2,
+      "article_count": 1,
       "event_count": 1,
       "latest_event_at": "2026-08-09T05:06:13.206506+00:00",
-      "age_days": 0.0,
+      "age_days": 1.02,
       "latest_title": "금융정보분석원, 국제자금세탁방지기구 아시아·태평양 지역기구(APG) 연차총회 참석",
       "latest_url": "https://www.fsc.go.kr/no010101/87461",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87461",
@@ -246,7 +243,9 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": []
+      "errors": [
+        "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n"
+      ]
     },
     {
       "source": "농림축산식품부",
@@ -526,7 +525,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 8,
+      "article_count": 11,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -578,7 +577,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 7,
+      "article_count": 8,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -731,6 +730,117 @@
   ],
   "events": [
     {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "2026년 전기 수집운반차 보급사업(대행 사업자) 수정공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463605",
+      "event_at": "2026-09-08T00:00:00+00:00",
+      "application_deadline": "2026-09-08",
+      "application_start_date": "2026-08-10",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 전기 수집운반차 보급사업(대행 사업자) 수정공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-09-08:2026년-전기-수집운반차-보급사업-대행-사업자-수정공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463605",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "2026년 전기 수집운반차 보급사업(대행 사업자) 수정공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463605",
+      "event_at": "2026-08-10T05:28:20.547025+00:00",
+      "application_deadline": "2026-09-08",
+      "application_start_date": "2026-08-10",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 전기 수집운반차 보급사업(대행 사업자) 수정공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-08-10:2026년-전기-수집운반차-보급사업-대행-사업자-수정공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463605",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "application_deadline",
+      "title": "제조업 인력 근속지원금 ‘경남형 버팀이음’ 추가 모집",
+      "url": "https://www.khan.co.kr/article/202608101330001",
+      "event_at": "2026-07-01T00:00:00+00:00",
+      "application_deadline": "2026-07-01",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "제조"
+        ],
+        "Region": [
+          "경남"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "제조업 인력 근속지원금 ‘경남형 버팀이음’ 추가 모집",
+      "program_key": "application-deadline:kr:경향신문-경제:2026-07-01:제조업-인력-근속지원금-경남형-버팀이음-추가-모집",
+      "evidence_url": "https://www.khan.co.kr/article/202608101330001",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "제조업 인력 근속지원금 ‘경남형 버팀이음’ 추가 모집",
+      "url": "https://www.khan.co.kr/article/202608101330001",
+      "event_at": "2026-08-09T19:30:00+00:00",
+      "application_deadline": "2026-07-01",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "제조"
+        ],
+        "Region": [
+          "경남"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "제조업 인력 근속지원금 ‘경남형 버팀이음’ 추가 모집",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-09:제조업-인력-근속지원금-경남형-버팀이음-추가-모집",
+      "evidence_url": "https://www.khan.co.kr/article/202608101330001",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "“부부 소득 합치면 저금리 대출 그림의 떡”…李 “결혼 패널티 없애라”",
+      "url": "https://www.mk.co.kr/news/economy/12122400",
+      "event_at": "2026-08-09T11:56:15+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“부부 소득 합치면 저금리 대출 그림의 떡”…李 “결혼 패널티 없애라”",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-09:부부-소득-합치면-저금리-대출-그림의-떡-李-결혼-패널티-없애라",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12122400",
+      "evidence_url_present": true
+    },
+    {
       "source": "금융위원회",
       "event_model": "eligibility_rule",
       "title": "금융정보분석원, 국제자금세탁방지기구 아시아·태평양 지역기구(APG) 연차총회 참석",
@@ -749,6 +859,48 @@
       "program_title": "금융정보분석원, 국제자금세탁방지기구 아시아·태평양 지역기구(APG) 연차총회 참석",
       "program_key": "eligibility-rule:kr:금융위원회:2026-08-09:금융정보분석원-국제자금세탁방지기구-아시아-태평양-지역기구-apg-연차총회-참석",
       "evidence_url": "https://www.fsc.go.kr/no010101/87461",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "李대통령 \"결혼 페널티 없애라\"… 정부, 청년민심 달래기",
+      "url": "https://www.mk.co.kr/news/economy/12122186",
+      "event_at": "2026-08-08T23:26:03+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "李대통령 \"결혼 페널티 없애라\"… 정부, 청년민심 달래기",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-08:李대통령-결혼-페널티-없애라-정부-청년민심-달래기",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12122186",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "5대 은행 마통 연체율 0.22%…청년·고령층 빚투 적신호",
+      "url": "https://www.mk.co.kr/news/economy/12122068",
+      "event_at": "2026-08-08T21:40:11+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "5대 은행 마통 연체율 0.22%…청년·고령층 빚투 적신호",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-08:5대-은행-마통-연체율-0-22-청년-고령층-빚투-적신호",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12122068",
       "evidence_url_present": true
     },
     {
@@ -1259,54 +1411,6 @@
       "evidence_url_present": true
     },
     {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "물산업 혁신기술 R&D 지원사업 추가공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463067",
-      "event_at": "2026-08-31T00:00:00+00:00",
-      "application_deadline": "2026-08-31",
-      "application_start_date": "2026-07-31",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "중소기업"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "물산업 혁신기술 R&D 지원사업 추가공고",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-08-31:물산업-혁신기술-r-d-지원사업-추가공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463067",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "eligibility_rule",
-      "title": "물산업 혁신기술 R&D 지원사업 추가공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463067",
-      "event_at": "2026-08-02T06:34:51.560761+00:00",
-      "application_deadline": "2026-08-31",
-      "application_start_date": "2026-07-31",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "중소기업"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "물산업 혁신기술 R&D 지원사업 추가공고",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-08-02:물산업-혁신기술-r-d-지원사업-추가공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463067",
-      "evidence_url_present": true
-    },
-    {
       "source": "매일경제 경제정책",
       "event_model": "eligibility_rule",
       "title": "[단독] AI 육성·브로커 근절 … 中企 지원책 손질 나서",
@@ -1403,9 +1507,11 @@
     "소상공인시장진흥공단: Source disabled (crawl health threshold reached)",
     "행정안전부: Source disabled (crawl health threshold reached)",
     "보건복지부: Source disabled (crawl health threshold reached)",
+    "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n",
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
     "r/startups: Source disabled (crawl health threshold reached)",
-    "r/Entrepreneur: Source disabled (crawl health threshold reached)"
+    "r/Entrepreneur: Source disabled (crawl health threshold reached)",
+    "https://www.hankyung.com/article/202608103516i: summary is missing or not a string"
   ]
 }
