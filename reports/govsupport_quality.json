@@ -1,11 +1,11 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-08-10T05:29:24.683891+00:00",
+  "generated_at": "2026-08-11T05:11:10.040646+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
-    "fresh_sources": 2,
-    "stale_sources": 0,
+    "fresh_sources": 1,
+    "stale_sources": 1,
     "missing_sources": 3,
     "missing_event_sources": 0,
     "unknown_event_date_sources": 0,
@@ -13,11 +13,11 @@
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
     "application_deadline_events": 2,
-    "eligibility_rule_events": 30,
+    "eligibility_rule_events": 32,
     "selection_result_events": 0,
-    "unique_program_key_count": 32,
-    "events_with_evidence_url": 32,
-    "collection_error_count": 12,
+    "unique_program_key_count": 34,
+    "events_with_evidence_url": 34,
+    "collection_error_count": 11,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -222,11 +222,11 @@
       "tracked": true,
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
-      "status": "fresh",
+      "status": "stale",
       "article_count": 1,
       "event_count": 1,
       "latest_event_at": "2026-08-09T05:06:13.206506+00:00",
-      "age_days": 1.02,
+      "age_days": 2.0,
       "latest_title": "금융정보분석원, 국제자금세탁방지기구 아시아·태평양 지역기구(APG) 연차총회 참석",
       "latest_url": "https://www.fsc.go.kr/no010101/87461",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87461",
@@ -525,7 +525,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 11,
+      "article_count": 12,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -577,7 +577,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 8,
+      "article_count": 9,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -730,6 +730,51 @@
   ],
   "events": [
     {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "중소기업 돈줄 맡은 지방은행…충당금은 시중은행보다 얇았다",
+      "url": "https://www.mk.co.kr/news/economy/12123971",
+      "event_at": "2026-08-10T19:48:35+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "중소기업 돈줄 맡은 지방은행…충당금은 시중은행보다 얇았다",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-10:중소기업-돈줄-맡은-지방은행-충당금은-시중은행보다-얇았다",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12123971",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "“임금 체불 꼼수 안 통한다”···노동당국, 감독 받고도 안 준 사업자 사법처리",
+      "url": "https://www.khan.co.kr/article/202608111111001",
+      "event_at": "2026-08-10T17:11:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "제조"
+        ],
+        "Region": [
+          "인천"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“임금 체불 꼼수 안 통한다”···노동당국, 감독 받고도 안 준 사업자 사법처리",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-10:임금-체불-꼼수-안-통한다-노동당국-감독-받고도-안-준-사업자-사법처리",
+      "evidence_url": "https://www.khan.co.kr/article/202608111111001",
+      "evidence_url_present": true
+    },
+    {
       "source": "서울시 지원사업",
       "event_model": "application_deadline",
       "title": "2026년 전기 수집운반차 보급사업(대행 사업자) 수정공고",
@@ -769,6 +814,51 @@
       "program_title": "2026년 전기 수집운반차 보급사업(대행 사업자) 수정공고",
       "program_key": "eligibility-rule:kr:서울시-지원사업:2026-08-10:2026년-전기-수집운반차-보급사업-대행-사업자-수정공고",
       "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463605",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "SH 취약계층 임대주택 가점 폐지에 “기회 뺏지 말라”",
+      "url": "https://www.khan.co.kr/article/202608102116015",
+      "event_at": "2026-08-10T03:16:01+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "SH 취약계층 임대주택 가점 폐지에 “기회 뺏지 말라”",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-10:sh-취약계층-임대주택-가점-폐지에-기회-뺏지-말라",
+      "evidence_url": "https://www.khan.co.kr/article/202608102116015",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "대출금리 양극화…대기업·중기 격차 최대",
+      "url": "https://www.mk.co.kr/news/economy/12123159",
+      "event_at": "2026-08-09T23:56:38+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "대출금리 양극화…대기업·중기 격차 최대",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-09:대출금리-양극화-대기업-중기-격차-최대",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12123159",
       "evidence_url_present": true
     },
     {
@@ -1385,54 +1475,6 @@
       "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-03:근로장려금-늘리고-대상-확대-월세-공제대상-한도-年1200만원",
       "evidence_url": "https://www.mk.co.kr/news/economy/12115477",
       "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "시름 깊어지는 자영업자···2%였던 코로나 대출, 이제 5%대",
-      "url": "https://www.khan.co.kr/article/202608030600141",
-      "event_at": "2026-08-02T12:00:14+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "자영업자"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "시름 깊어지는 자영업자···2%였던 코로나 대출, 이제 5%대",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-02:시름-깊어지는-자영업자-2-였던-코로나-대출-이제-5-대",
-      "evidence_url": "https://www.khan.co.kr/article/202608030600141",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "[단독] AI 육성·브로커 근절 … 中企 지원책 손질 나서",
-      "url": "https://www.mk.co.kr/news/economy/12114624",
-      "event_at": "2026-08-01T23:52:10+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "중소기업"
-        ],
-        "Industry": [
-          "AI"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "[단독] AI 육성·브로커 근절 … 中企 지원책 손질 나서",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-01:단독-ai-육성-브로커-근절-中企-지원책-손질-나서",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12114624",
-      "evidence_url_present": true
     }
   ],
   "event_model_coverage": [
@@ -1511,7 +1553,6 @@
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
     "r/startups: Source disabled (crawl health threshold reached)",
-    "r/Entrepreneur: Source disabled (crawl health threshold reached)",
-    "https://www.hankyung.com/article/202608103516i: summary is missing or not a string"
+    "r/Entrepreneur: Source disabled (crawl health threshold reached)"
   ]
 }
