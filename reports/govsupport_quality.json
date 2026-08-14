@@ -1,23 +1,23 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-08-13T05:42:18.474935+00:00",
+  "generated_at": "2026-08-14T05:39:28.052753+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
-    "fresh_sources": 1,
-    "stale_sources": 1,
+    "fresh_sources": 2,
+    "stale_sources": 0,
     "missing_sources": 3,
     "missing_event_sources": 0,
     "unknown_event_date_sources": 0,
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 2,
-    "eligibility_rule_events": 39,
+    "application_deadline_events": 4,
+    "eligibility_rule_events": 47,
     "selection_result_events": 0,
-    "unique_program_key_count": 41,
-    "events_with_evidence_url": 41,
-    "collection_error_count": 11,
+    "unique_program_key_count": 51,
+    "events_with_evidence_url": 51,
+    "collection_error_count": 10,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -137,8 +137,8 @@
       "event_model": "application_deadline",
       "freshness_sla_days": 1,
       "status": "fresh",
-      "article_count": 2,
-      "event_count": 1,
+      "article_count": 3,
+      "event_count": 2,
       "latest_event_at": "2026-09-08T00:00:00+00:00",
       "age_days": 0.0,
       "latest_title": "2026년 전기 수집운반차 보급사업(대행 사업자) 수정공고",
@@ -222,20 +222,25 @@
       "tracked": true,
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
-      "status": "stale",
-      "article_count": 1,
-      "event_count": 1,
-      "latest_event_at": "2026-08-09T05:06:13.206506+00:00",
-      "age_days": 4.03,
-      "latest_title": "금융정보분석원, 국제자금세탁방지기구 아시아·태평양 지역기구(APG) 연차총회 참석",
-      "latest_url": "https://www.fsc.go.kr/no010101/87461",
-      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87461",
-      "latest_program_title": "금융정보분석원, 국제자금세탁방지기구 아시아·태평양 지역기구(APG) 연차총회 참석",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-08-09:금융정보분석원-국제자금세탁방지기구-아시아-태평양-지역기구-apg-연차총회-참석",
-      "latest_application_deadline": "",
+      "status": "fresh",
+      "article_count": 4,
+      "event_count": 4,
+      "latest_event_at": "2026-08-14T05:39:20.039808+00:00",
+      "age_days": 0.0,
+      "latest_title": "수도권 23만호+α 추가 공급, 주택 공급 촉진 및  청년 등 실수요자 금융지원 강화",
+      "latest_url": "https://www.fsc.go.kr/no010101/87517",
+      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87517",
+      "latest_program_title": "수도권 23만호+α 추가 공급, 주택 공급 촉진 및  청년 등 실수요자 금융지원 강화",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-08-14:수도권-23만호-α-추가-공급-주택-공급-촉진-및-청년-등-실수요자-금융지원-강화",
+      "latest_application_deadline": "2026-01-05",
       "latest_eligibility_fields": {
-        "Industry": [
-          "AI"
+        "TargetGroup": [
+          "청년",
+          "신혼부부"
+        ],
+        "Region": [
+          "서울",
+          "경기"
         ]
       },
       "latest_selection_result_date": "",
@@ -243,9 +248,7 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": [
-        "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n"
-      ]
+      "errors": []
     },
     {
       "source": "농림축산식품부",
@@ -551,7 +554,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 19,
+      "article_count": 22,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -577,7 +580,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 11,
+      "article_count": 13,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -730,11 +733,250 @@
   ],
   "events": [
     {
+      "source": "금융위원회",
+      "event_model": "application_deadline",
+      "title": "수도권 23만호+α 추가 공급, 주택 공급 촉진 및  청년 등 실수요자 금융지원 강화",
+      "url": "https://www.fsc.go.kr/no010101/87517",
+      "event_at": "2026-01-05T00:00:00+00:00",
+      "application_deadline": "2026-01-05",
+      "application_start_date": "2026-08-13",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년",
+          "신혼부부"
+        ],
+        "Region": [
+          "서울",
+          "경기"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "수도권 23만호+α 추가 공급, 주택 공급 촉진 및  청년 등 실수요자 금융지원 강화",
+      "program_key": "application-deadline:kr:금융위원회:2026-01-05:수도권-23만호-α-추가-공급-주택-공급-촉진-및-청년-등-실수요자-금융지원-강화",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87517",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "수도권 23만호+α 추가 공급, 주택 공급 촉진 및  청년 등 실수요자 금융지원 강화",
+      "url": "https://www.fsc.go.kr/no010101/87517",
+      "event_at": "2026-08-14T05:39:20.039808+00:00",
+      "application_deadline": "2026-01-05",
+      "application_start_date": "2026-08-13",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년",
+          "신혼부부"
+        ],
+        "Region": [
+          "서울",
+          "경기"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "수도권 23만호+α 추가 공급, 주택 공급 촉진 및  청년 등 실수요자 금융지원 강화",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-08-14:수도권-23만호-α-추가-공급-주택-공급-촉진-및-청년-등-실수요자-금융지원-강화",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87517",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "가상자산사업자 신고제 강화에 맞춰 신고매뉴얼을 전면 개정합니다. - FIU·금감원, 개정 신고매뉴얼에 대한 「찾아가는 설명회」 개최",
+      "url": "https://www.fsc.go.kr/no010101/87521",
+      "event_at": "2026-08-14T05:39:19.229599+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "가상자산사업자 신고제 강화에 맞춰 신고매뉴얼을 전면 개정합니다. - FIU·금감원, 개정 신고매뉴얼에 대한 「찾아가는 설명회」 개최",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-08-14:가상자산사업자-신고제-강화에-맞춰-신고매뉴얼을-전면-개정합니다-fiu-금감원-개정-신고매뉴얼에-대한-찾아가는-설명회-개최",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87521",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "2026년 7월 가계대출 동향(잠정) 및  ｢확대 가계부채 점검회의｣ 개최. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/87543",
+      "event_at": "2026-08-14T05:39:17.855300+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 7월 가계대출 동향(잠정) 및  ｢확대 가계부채 점검회의｣ 개최. 금일 등록된 게시글",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-08-14:2026년-7월-가계대출-동향-잠정-및-확대-가계부채-점검회의-개최-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87543",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "2026년 청년 부동산 중개보수 및 이사비 지원 모집 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463813",
+      "event_at": "2024-01-01T00:00:00+00:00",
+      "application_deadline": "2024-01-01",
+      "application_start_date": "2026-08-18",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 청년 부동산 중개보수 및 이사비 지원 모집 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2024-01-01:2026년-청년-부동산-중개보수-및-이사비-지원-모집-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463813",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "2026년 청년 부동산 중개보수 및 이사비 지원 모집 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463813",
+      "event_at": "2026-08-14T05:39:01.033470+00:00",
+      "application_deadline": "2024-01-01",
+      "application_start_date": "2026-08-18",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 청년 부동산 중개보수 및 이사비 지원 모집 공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-08-14:2026년-청년-부동산-중개보수-및-이사비-지원-모집-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463813",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "소상공인 “폭염 속 전기요금 부담완화 대책 촉구”",
+      "url": "https://www.donga.com/news/Economy/article/all/20260814/134478509/1",
+      "event_at": "2026-08-13T19:56:29+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "소상공인 “폭염 속 전기요금 부담완화 대책 촉구”",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-13:소상공인-폭염-속-전기요금-부담완화-대책-촉구",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260814/134478509/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "금융위원장 “가계대출 총량 상향, 실수요 위한 것…투기 자극 안돼”",
+      "url": "https://www.donga.com/news/Economy/article/all/20260814/134477811/1",
+      "event_at": "2026-08-13T17:17:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "금융위원장 “가계대출 총량 상향, 실수요 위한 것…투기 자극 안돼”",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-13:금융위원장-가계대출-총량-상향-실수요-위한-것-투기-자극-안돼",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260814/134477811/1",
+      "evidence_url_present": true
+    },
+    {
       "source": "경향신문 경제",
       "event_model": "eligibility_rule",
-      "title": "[속보]내년 1월부터 ‘비거주 1주택자’ 전세대출 제한···갭투자 차단 조치[8·13 부동산대책]",
-      "url": "https://www.khan.co.kr/article/202608131200001",
-      "event_at": "2026-08-12T18:00:00+00:00",
+      "title": "용산구, 이태원참사 이후 경영난 겪는 소상공인 1.5%저리 융자 지원[서울25]",
+      "url": "https://www.khan.co.kr/article/202608141115001",
+      "event_at": "2026-08-13T17:15:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "용산구, 이태원참사 이후 경영난 겪는 소상공인 1.5%저리 융자 지원[서울25]",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-13:용산구-이태원참사-이후-경영난-겪는-소상공인-1-5-저리-융자-지원-서울25",
+      "evidence_url": "https://www.khan.co.kr/article/202608141115001",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "재경부 “수출 큰 폭 늘고 내수 개선…경기회복 흐름 강화”",
+      "url": "https://www.donga.com/news/Economy/article/all/20260814/134477312/1",
+      "event_at": "2026-08-13T16:10:08+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ],
+        "Region": [
+          "경기"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "재경부 “수출 큰 폭 늘고 내수 개선…경기회복 흐름 강화”",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-13:재경부-수출-큰-폭-늘고-내수-개선-경기회복-흐름-강화",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260814/134477312/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "[8·13 부동산 종합대책]사놓고 안 사는 수도권 1주택자…전세대출 막아 ‘갭투자 차단’",
+      "url": "https://www.khan.co.kr/article/202608132140005",
+      "event_at": "2026-08-13T03:40:00+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -745,9 +987,52 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "[속보]내년 1월부터 ‘비거주 1주택자’ 전세대출 제한···갭투자 차단 조치[8·13 부동산대책]",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-12:속보-내년-1월부터-비거주-1주택자-전세대출-제한-갭투자-차단-조치-8-13-부동산대책",
-      "evidence_url": "https://www.khan.co.kr/article/202608131200001",
+      "program_title": "[8·13 부동산 종합대책]사놓고 안 사는 수도권 1주택자…전세대출 막아 ‘갭투자 차단’",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-13:8-13-부동산-종합대책-사놓고-안-사는-수도권-1주택자-전세대출-막아-갭투자-차단",
+      "evidence_url": "https://www.khan.co.kr/article/202608132140005",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "[8·13 부동산 종합대책]30대 청년, 2억 빌려 오피스텔 사면 ‘월 원리금 85만원’",
+      "url": "https://www.khan.co.kr/article/202608132138005",
+      "event_at": "2026-08-13T03:38:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년",
+          "신혼부부"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "[8·13 부동산 종합대책]30대 청년, 2억 빌려 오피스텔 사면 ‘월 원리금 85만원’",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-13:8-13-부동산-종합대책-30대-청년-2억-빌려-오피스텔-사면-월-원리금-85만원",
+      "evidence_url": "https://www.khan.co.kr/article/202608132138005",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "[단독] 월 270만원 버는 청년도 월세 지원…중위소득 ‘100%이하’로 확대",
+      "url": "https://www.mk.co.kr/news/economy/12126795",
+      "event_at": "2026-08-12T23:39:40+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "[단독] 월 270만원 버는 청년도 월세 지원…중위소득 ‘100%이하’로 확대",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-12:단독-월-270만원-버는-청년도-월세-지원-중위소득-100-이하-로-확대",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12126795",
       "evidence_url_present": true
     },
     {
@@ -792,6 +1077,27 @@
       "program_title": "‘생애 첫 주택’ 非아파트 구입하면, LTV 80%까지 저리 대출",
       "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-12:생애-첫-주택-非아파트-구입하면-ltv-80-까지-저리-대출",
       "evidence_url": "https://www.donga.com/news/Economy/article/all/20260813/134470157/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "[속보]내년 1월부터 ‘비거주 1주택자’ 전세대출 제한···갭투자 차단 조치[8·13 부동산대책]",
+      "url": "https://www.khan.co.kr/article/202608131200001",
+      "event_at": "2026-08-12T18:00:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "[속보]내년 1월부터 ‘비거주 1주택자’ 전세대출 제한···갭투자 차단 조치[8·13 부동산대책]",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-12:속보-내년-1월부터-비거주-1주택자-전세대출-제한-갭투자-차단-조치-8-13-부동산대책",
+      "evidence_url": "https://www.khan.co.kr/article/202608131200001",
       "evidence_url_present": true
     },
     {
@@ -1285,28 +1591,6 @@
       "evidence_url_present": true
     },
     {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "미소금융 상반기 1612억 공급…청년·자영업자 지원 역대 최대",
-      "url": "https://www.donga.com/news/Economy/article/all/20260807/134439217/2",
-      "event_at": "2026-08-07T00:40:08+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년",
-          "자영업자"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "미소금융 상반기 1612억 공급…청년·자영업자 지원 역대 최대",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-07:미소금융-상반기-1612억-공급-청년-자영업자-지원-역대-최대",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260807/134439217/2",
-      "evidence_url_present": true
-    },
-    {
       "source": "매일경제 경제정책",
       "event_model": "eligibility_rule",
       "title": "저소득 신혼부부 '출산 지원금' 더 받는다",
@@ -1326,6 +1610,95 @@
       "program_title": "저소득 신혼부부 '출산 지원금' 더 받는다",
       "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-06:저소득-신혼부부-출산-지원금-더-받는다",
       "evidence_url": "https://www.mk.co.kr/news/economy/12121169",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "[단독] “돈 없다고 아이 안낳는 일 없어야”…저소득층 출산지원금 더 준다",
+      "url": "https://www.mk.co.kr/news/economy/12121112",
+      "event_at": "2026-08-06T23:37:12+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "저소득"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "[단독] “돈 없다고 아이 안낳는 일 없어야”…저소득층 출산지원금 더 준다",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-06:단독-돈-없다고-아이-안낳는-일-없어야-저소득층-출산지원금-더-준다",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12121112",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "구윤철 “청년·신혼부부·무주택자 대출 ‘핀셋 지원’ 검토···최대한 주택 공급 빨리 늘릴 것”",
+      "url": "https://www.khan.co.kr/article/202608071350001",
+      "event_at": "2026-08-06T19:50:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년",
+          "신혼부부"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "구윤철 “청년·신혼부부·무주택자 대출 ‘핀셋 지원’ 검토···최대한 주택 공급 빨리 늘릴 것”",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-06:구윤철-청년-신혼부부-무주택자-대출-핀셋-지원-검토-최대한-주택-공급-빨리-늘릴-것",
+      "evidence_url": "https://www.khan.co.kr/article/202608071350001",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "293만명 기껏 신용사면 해줬더니…5명중 1명은 또 연체했다",
+      "url": "https://www.mk.co.kr/news/economy/12120295",
+      "event_at": "2026-08-06T11:59:30+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "293만명 기껏 신용사면 해줬더니…5명중 1명은 또 연체했다",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-06:293만명-기껏-신용사면-해줬더니-5명중-1명은-또-연체했다",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12120295",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "미소금융 상반기 1612억 공급…청년·자영업자 지원 역대 최대",
+      "url": "https://www.donga.com/news/Economy/article/all/20260807/134439217/2",
+      "event_at": "2026-08-07T00:40:08+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년",
+          "자영업자"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "미소금융 상반기 1612억 공급…청년·자영업자 지원 역대 최대",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-07:미소금융-상반기-1612억-공급-청년-자영업자-지원-역대-최대",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260807/134439217/2",
       "evidence_url_present": true
     },
     {
@@ -1375,27 +1748,6 @@
       "evidence_url_present": true
     },
     {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "[단독] “돈 없다고 아이 안낳는 일 없어야”…저소득층 출산지원금 더 준다",
-      "url": "https://www.mk.co.kr/news/economy/12121112",
-      "event_at": "2026-08-06T23:37:12+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "저소득"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "[단독] “돈 없다고 아이 안낳는 일 없어야”…저소득층 출산지원금 더 준다",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-06:단독-돈-없다고-아이-안낳는-일-없어야-저소득층-출산지원금-더-준다",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12121112",
-      "evidence_url_present": true
-    },
-    {
       "source": "동아일보 경제",
       "event_model": "eligibility_rule",
       "title": "줄줄 샌 나랏돈 1296억…작년 부정수급 환수액 ‘역대 최대’",
@@ -1419,26 +1771,22 @@
     {
       "source": "경향신문 경제",
       "event_model": "eligibility_rule",
-      "title": "구윤철 “청년·신혼부부·무주택자 대출 ‘핀셋 지원’ 검토···최대한 주택 공급 빨리 늘릴 것”",
-      "url": "https://www.khan.co.kr/article/202608071350001",
-      "event_at": "2026-08-06T19:50:00+00:00",
+      "title": "[점선면]투명인간이 된 세입자",
+      "url": "https://www.khan.co.kr/article/202608070700001",
+      "event_at": "2026-08-06T13:00:00+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
         "TargetGroup": [
-          "청년",
-          "신혼부부"
-        ],
-        "Region": [
-          "서울"
+          "청년"
         ]
       },
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "구윤철 “청년·신혼부부·무주택자 대출 ‘핀셋 지원’ 검토···최대한 주택 공급 빨리 늘릴 것”",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-06:구윤철-청년-신혼부부-무주택자-대출-핀셋-지원-검토-최대한-주택-공급-빨리-늘릴-것",
-      "evidence_url": "https://www.khan.co.kr/article/202608071350001",
+      "program_title": "[점선면]투명인간이 된 세입자",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-06:점선면-투명인간이-된-세입자",
+      "evidence_url": "https://www.khan.co.kr/article/202608070700001",
       "evidence_url_present": true
     },
     {
@@ -1528,115 +1876,6 @@
       "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-06:어르신-택시-앱-호출-어려우면-114로-전화하세요",
       "evidence_url": "https://www.donga.com/news/It/article/all/20260807/134435851/1",
       "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "[점선면]투명인간이 된 세입자",
-      "url": "https://www.khan.co.kr/article/202608070700001",
-      "event_at": "2026-08-06T13:00:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "[점선면]투명인간이 된 세입자",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-06:점선면-투명인간이-된-세입자",
-      "evidence_url": "https://www.khan.co.kr/article/202608070700001",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "293만명 기껏 신용사면 해줬더니…5명중 1명은 또 연체했다",
-      "url": "https://www.mk.co.kr/news/economy/12120295",
-      "event_at": "2026-08-06T11:59:30+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "293만명 기껏 신용사면 해줬더니…5명중 1명은 또 연체했다",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-06:293만명-기껏-신용사면-해줬더니-5명중-1명은-또-연체했다",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12120295",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "IBK기업은행, 저소득·저신용자 대상 대출상품 출시…연 6.0%로 지원",
-      "url": "https://www.donga.com/news/Economy/article/all/20260806/134431926/1",
-      "event_at": "2026-08-05T21:27:56+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "저소득"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "IBK기업은행, 저소득·저신용자 대상 대출상품 출시…연 6.0%로 지원",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-05:ibk기업은행-저소득-저신용자-대상-대출상품-출시-연-6-0-로-지원",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260806/134431926/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "SH, 임대주택 모집에 ‘취약계층 가점’ 폐지",
-      "url": "https://www.khan.co.kr/article/202608052127005",
-      "event_at": "2026-08-05T03:27:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년",
-          "취약계층"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "SH, 임대주택 모집에 ‘취약계층 가점’ 폐지",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-05:sh-임대주택-모집에-취약계층-가점-폐지",
-      "evidence_url": "https://www.khan.co.kr/article/202608052127005",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "정부가 대신 갚아준 청년정책대출, 3배 '쑥'",
-      "url": "https://www.mk.co.kr/news/economy/12117914",
-      "event_at": "2026-08-04T23:47:51+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "정부가 대신 갚아준 청년정책대출, 3배 '쑥'",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-04:정부가-대신-갚아준-청년정책대출-3배-쑥",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12117914",
-      "evidence_url_present": true
     }
   ],
   "event_model_coverage": [
@@ -1711,7 +1950,6 @@
     "소상공인시장진흥공단: Source disabled (crawl health threshold reached)",
     "행정안전부: Source disabled (crawl health threshold reached)",
     "보건복지부: Source disabled (crawl health threshold reached)",
-    "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n",
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
     "r/startups: Source disabled (crawl health threshold reached)",
