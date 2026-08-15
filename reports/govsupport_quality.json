@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-08-14T05:39:28.052753+00:00",
+  "generated_at": "2026-08-15T04:33:07.296194+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -13,11 +13,11 @@
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
     "application_deadline_events": 4,
-    "eligibility_rule_events": 47,
+    "eligibility_rule_events": 44,
     "selection_result_events": 0,
-    "unique_program_key_count": 51,
-    "events_with_evidence_url": 51,
-    "collection_error_count": 10,
+    "unique_program_key_count": 48,
+    "events_with_evidence_url": 48,
+    "collection_error_count": 11,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -225,13 +225,13 @@
       "status": "fresh",
       "article_count": 4,
       "event_count": 4,
-      "latest_event_at": "2026-08-14T05:39:20.039808+00:00",
+      "latest_event_at": "2026-08-15T04:32:56.533529+00:00",
       "age_days": 0.0,
       "latest_title": "수도권 23만호+α 추가 공급, 주택 공급 촉진 및  청년 등 실수요자 금융지원 강화",
       "latest_url": "https://www.fsc.go.kr/no010101/87517",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87517",
       "latest_program_title": "수도권 23만호+α 추가 공급, 주택 공급 촉진 및  청년 등 실수요자 금융지원 강화",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-08-14:수도권-23만호-α-추가-공급-주택-공급-촉진-및-청년-등-실수요자-금융지원-강화",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-08-15:수도권-23만호-α-추가-공급-주택-공급-촉진-및-청년-등-실수요자-금융지원-강화",
       "latest_application_deadline": "2026-01-05",
       "latest_eligibility_fields": {
         "TargetGroup": [
@@ -554,7 +554,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 22,
+      "article_count": 17,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -763,7 +763,7 @@
       "event_model": "eligibility_rule",
       "title": "수도권 23만호+α 추가 공급, 주택 공급 촉진 및  청년 등 실수요자 금융지원 강화",
       "url": "https://www.fsc.go.kr/no010101/87517",
-      "event_at": "2026-08-14T05:39:20.039808+00:00",
+      "event_at": "2026-08-15T04:32:56.533529+00:00",
       "application_deadline": "2026-01-05",
       "application_start_date": "2026-08-13",
       "eligibility_fields": {
@@ -780,7 +780,7 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "수도권 23만호+α 추가 공급, 주택 공급 촉진 및  청년 등 실수요자 금융지원 강화",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-08-14:수도권-23만호-α-추가-공급-주택-공급-촉진-및-청년-등-실수요자-금융지원-강화",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-08-15:수도권-23만호-α-추가-공급-주택-공급-촉진-및-청년-등-실수요자-금융지원-강화",
       "evidence_url": "https://www.fsc.go.kr/no010101/87517",
       "evidence_url_present": true
     },
@@ -789,7 +789,7 @@
       "event_model": "eligibility_rule",
       "title": "가상자산사업자 신고제 강화에 맞춰 신고매뉴얼을 전면 개정합니다. - FIU·금감원, 개정 신고매뉴얼에 대한 「찾아가는 설명회」 개최",
       "url": "https://www.fsc.go.kr/no010101/87521",
-      "event_at": "2026-08-14T05:39:19.229599+00:00",
+      "event_at": "2026-08-15T04:32:55.464005+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -804,16 +804,16 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "가상자산사업자 신고제 강화에 맞춰 신고매뉴얼을 전면 개정합니다. - FIU·금감원, 개정 신고매뉴얼에 대한 「찾아가는 설명회」 개최",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-08-14:가상자산사업자-신고제-강화에-맞춰-신고매뉴얼을-전면-개정합니다-fiu-금감원-개정-신고매뉴얼에-대한-찾아가는-설명회-개최",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-08-15:가상자산사업자-신고제-강화에-맞춰-신고매뉴얼을-전면-개정합니다-fiu-금감원-개정-신고매뉴얼에-대한-찾아가는-설명회-개최",
       "evidence_url": "https://www.fsc.go.kr/no010101/87521",
       "evidence_url_present": true
     },
     {
       "source": "금융위원회",
       "event_model": "eligibility_rule",
-      "title": "2026년 7월 가계대출 동향(잠정) 및  ｢확대 가계부채 점검회의｣ 개최. 금일 등록된 게시글",
+      "title": "2026년 7월 가계대출 동향(잠정) 및  ｢확대 가계부채 점검회의｣ 개최",
       "url": "https://www.fsc.go.kr/no010101/87543",
-      "event_at": "2026-08-14T05:39:17.855300+00:00",
+      "event_at": "2026-08-15T04:32:53.630471+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -827,8 +827,8 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "2026년 7월 가계대출 동향(잠정) 및  ｢확대 가계부채 점검회의｣ 개최. 금일 등록된 게시글",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-08-14:2026년-7월-가계대출-동향-잠정-및-확대-가계부채-점검회의-개최-금일-등록된-게시글",
+      "program_title": "2026년 7월 가계대출 동향(잠정) 및  ｢확대 가계부채 점검회의｣ 개최",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-08-15:2026년-7월-가계대출-동향-잠정-및-확대-가계부채-점검회의-개최",
       "evidence_url": "https://www.fsc.go.kr/no010101/87543",
       "evidence_url_present": true
     },
@@ -861,7 +861,7 @@
       "event_model": "eligibility_rule",
       "title": "2026년 청년 부동산 중개보수 및 이사비 지원 모집 공고",
       "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463813",
-      "event_at": "2026-08-14T05:39:01.033470+00:00",
+      "event_at": "2026-08-15T04:32:35.484053+00:00",
       "application_deadline": "2024-01-01",
       "application_start_date": "2026-08-18",
       "eligibility_fields": {
@@ -876,8 +876,29 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "2026년 청년 부동산 중개보수 및 이사비 지원 모집 공고",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-08-14:2026년-청년-부동산-중개보수-및-이사비-지원-모집-공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-08-15:2026년-청년-부동산-중개보수-및-이사비-지원-모집-공고",
       "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463813",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "금감원, 은행 대출총량 재조정 착수…‘8.13 대책’ 후속 조치 속도",
+      "url": "https://www.donga.com/news/Economy/article/all/20260815/134482785/1",
+      "event_at": "2026-08-14T14:03:16+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "금감원, 은행 대출총량 재조정 착수…‘8.13 대책’ 후속 조치 속도",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-14:금감원-은행-대출총량-재조정-착수-8-13-대책-후속-조치-속도",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260815/134482785/1",
       "evidence_url_present": true
     },
     {
@@ -1788,94 +1809,6 @@
       "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-06:점선면-투명인간이-된-세입자",
       "evidence_url": "https://www.khan.co.kr/article/202608070700001",
       "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "구윤철 “전체 99%, 30억이하 실거주 1주택 보유-양도세 줄어”",
-      "url": "https://www.donga.com/news/Politics/article/all/20260807/134436841/1",
-      "event_at": "2026-08-06T18:00:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년",
-          "신혼부부"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "구윤철 “전체 99%, 30억이하 실거주 1주택 보유-양도세 줄어”",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-06:구윤철-전체-99-30억이하-실거주-1주택-보유-양도세-줄어",
-      "evidence_url": "https://www.donga.com/news/Politics/article/all/20260807/134436841/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "지난해 ‘부정수급’으로 샌 나랏돈 1296억 환수…생계급여 가장 많아",
-      "url": "https://www.donga.com/news/Politics/article/all/20260807/134436729/1",
-      "event_at": "2026-08-06T17:28:12+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "중소기업"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "지난해 ‘부정수급’으로 샌 나랏돈 1296억 환수…생계급여 가장 많아",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-06:지난해-부정수급-으로-샌-나랏돈-1296억-환수-생계급여-가장-많아",
-      "evidence_url": "https://www.donga.com/news/Politics/article/all/20260807/134436729/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "국내생산세액공제 신설…태양광·풍력 등 6대 산업 지원",
-      "url": "https://www.donga.com/news/Economy/article/all/20260807/134436692/1",
-      "event_at": "2026-08-06T17:23:20+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "AI"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "국내생산세액공제 신설…태양광·풍력 등 6대 산업 지원",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-06:국내생산세액공제-신설-태양광-풍력-등-6대-산업-지원",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260807/134436692/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "“어르신, 택시 앱 호출 어려우면 114로 전화하세요”",
-      "url": "https://www.donga.com/news/It/article/all/20260807/134435851/1",
-      "event_at": "2026-08-06T15:24:51+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“어르신, 택시 앱 호출 어려우면 114로 전화하세요”",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-06:어르신-택시-앱-호출-어려우면-114로-전화하세요",
-      "evidence_url": "https://www.donga.com/news/It/article/all/20260807/134435851/1",
-      "evidence_url_present": true
     }
   ],
   "event_model_coverage": [
@@ -1946,6 +1879,7 @@
   "errors": [
     "정책브리핑: Source disabled (crawl health threshold reached)",
     "농림축산식품부: Source disabled (crawl health threshold reached)",
+    "[서울경제 경제] Request failed: 403 Client Error: Forbidden for url: https://www.sedaily.com/RSS/Economy/",
     "SBS 뉴스 정치: Source disabled (crawl health threshold reached)",
     "소상공인시장진흥공단: Source disabled (crawl health threshold reached)",
     "행정안전부: Source disabled (crawl health threshold reached)",
