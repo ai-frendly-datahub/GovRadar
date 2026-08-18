@@ -1,23 +1,23 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-08-17T04:42:55.883483+00:00",
+  "generated_at": "2026-08-18T04:37:08.676261+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
-    "fresh_sources": 2,
-    "stale_sources": 0,
+    "fresh_sources": 1,
+    "stale_sources": 1,
     "missing_sources": 3,
     "missing_event_sources": 0,
     "unknown_event_date_sources": 0,
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 4,
-    "eligibility_rule_events": 36,
+    "application_deadline_events": 2,
+    "eligibility_rule_events": 33,
     "selection_result_events": 0,
-    "unique_program_key_count": 40,
-    "events_with_evidence_url": 40,
-    "collection_error_count": 10,
+    "unique_program_key_count": 35,
+    "events_with_evidence_url": 35,
+    "collection_error_count": 11,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -136,18 +136,21 @@
       "tracked": true,
       "event_model": "application_deadline",
       "freshness_sla_days": 1,
-      "status": "fresh",
-      "article_count": 3,
-      "event_count": 2,
-      "latest_event_at": "2026-09-08T00:00:00+00:00",
-      "age_days": 0.0,
-      "latest_title": "2026년 전기 수집운반차 보급사업(대행 사업자) 수정공고",
-      "latest_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463605",
-      "latest_evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463605",
-      "latest_program_title": "2026년 전기 수집운반차 보급사업(대행 사업자) 수정공고",
-      "latest_program_key": "application-deadline:kr:서울시-지원사업:2026-09-08:2026년-전기-수집운반차-보급사업-대행-사업자-수정공고",
-      "latest_application_deadline": "2026-09-08",
+      "status": "stale",
+      "article_count": 2,
+      "event_count": 1,
+      "latest_event_at": "2024-01-01T00:00:00+00:00",
+      "age_days": 960.19,
+      "latest_title": "2026년 청년 부동산 중개보수 및 이사비 지원 모집 공고",
+      "latest_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463813",
+      "latest_evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463813",
+      "latest_program_title": "2026년 청년 부동산 중개보수 및 이사비 지원 모집 공고",
+      "latest_program_key": "application-deadline:kr:서울시-지원사업:2024-01-01:2026년-청년-부동산-중개보수-및-이사비-지원-모집-공고",
+      "latest_application_deadline": "2024-01-01",
       "latest_eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
         "Region": [
           "서울"
         ]
@@ -225,13 +228,13 @@
       "status": "fresh",
       "article_count": 3,
       "event_count": 3,
-      "latest_event_at": "2026-08-17T04:42:48.496644+00:00",
+      "latest_event_at": "2026-08-18T04:37:00.398210+00:00",
       "age_days": 0.0,
       "latest_title": "수도권 23만호+α 추가 공급, 주택 공급 촉진 및  청년 등 실수요자 금융지원 강화",
       "latest_url": "https://www.fsc.go.kr/no010101/87517",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87517",
       "latest_program_title": "수도권 23만호+α 추가 공급, 주택 공급 촉진 및  청년 등 실수요자 금융지원 강화",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-08-17:수도권-23만호-α-추가-공급-주택-공급-촉진-및-청년-등-실수요자-금융지원-강화",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-08-18:수도권-23만호-α-추가-공급-주택-공급-촉진-및-청년-등-실수요자-금융지원-강화",
       "latest_application_deadline": "2026-01-05",
       "latest_eligibility_fields": {
         "TargetGroup": [
@@ -528,7 +531,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 9,
+      "article_count": 7,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -763,7 +766,7 @@
       "event_model": "eligibility_rule",
       "title": "수도권 23만호+α 추가 공급, 주택 공급 촉진 및  청년 등 실수요자 금융지원 강화",
       "url": "https://www.fsc.go.kr/no010101/87517",
-      "event_at": "2026-08-17T04:42:48.496644+00:00",
+      "event_at": "2026-08-18T04:37:00.398210+00:00",
       "application_deadline": "2026-01-05",
       "application_start_date": "2026-08-13",
       "eligibility_fields": {
@@ -780,7 +783,7 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "수도권 23만호+α 추가 공급, 주택 공급 촉진 및  청년 등 실수요자 금융지원 강화",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-08-17:수도권-23만호-α-추가-공급-주택-공급-촉진-및-청년-등-실수요자-금융지원-강화",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-08-18:수도권-23만호-α-추가-공급-주택-공급-촉진-및-청년-등-실수요자-금융지원-강화",
       "evidence_url": "https://www.fsc.go.kr/no010101/87517",
       "evidence_url_present": true
     },
@@ -789,7 +792,7 @@
       "event_model": "eligibility_rule",
       "title": "가상자산사업자 신고제 강화에 맞춰 신고매뉴얼을 전면 개정합니다. - FIU·금감원, 개정 신고매뉴얼에 대한 「찾아가는 설명회」 개최",
       "url": "https://www.fsc.go.kr/no010101/87521",
-      "event_at": "2026-08-17T04:42:47.189391+00:00",
+      "event_at": "2026-08-18T04:36:59.410867+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -804,7 +807,7 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "가상자산사업자 신고제 강화에 맞춰 신고매뉴얼을 전면 개정합니다. - FIU·금감원, 개정 신고매뉴얼에 대한 「찾아가는 설명회」 개최",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-08-17:가상자산사업자-신고제-강화에-맞춰-신고매뉴얼을-전면-개정합니다-fiu-금감원-개정-신고매뉴얼에-대한-찾아가는-설명회-개최",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-08-18:가상자산사업자-신고제-강화에-맞춰-신고매뉴얼을-전면-개정합니다-fiu-금감원-개정-신고매뉴얼에-대한-찾아가는-설명회-개최",
       "evidence_url": "https://www.fsc.go.kr/no010101/87521",
       "evidence_url_present": true
     },
@@ -813,7 +816,7 @@
       "event_model": "eligibility_rule",
       "title": "2026년 7월 가계대출 동향(잠정) 및  ｢확대 가계부채 점검회의｣ 개최",
       "url": "https://www.fsc.go.kr/no010101/87543",
-      "event_at": "2026-08-17T04:42:45.114570+00:00",
+      "event_at": "2026-08-18T04:36:57.833509+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -828,7 +831,7 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "2026년 7월 가계대출 동향(잠정) 및  ｢확대 가계부채 점검회의｣ 개최",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-08-17:2026년-7월-가계대출-동향-잠정-및-확대-가계부채-점검회의-개최",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-08-18:2026년-7월-가계대출-동향-잠정-및-확대-가계부채-점검회의-개최",
       "evidence_url": "https://www.fsc.go.kr/no010101/87543",
       "evidence_url_present": true
     },
@@ -861,7 +864,7 @@
       "event_model": "eligibility_rule",
       "title": "2026년 청년 부동산 중개보수 및 이사비 지원 모집 공고",
       "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463813",
-      "event_at": "2026-08-17T04:42:25.557220+00:00",
+      "event_at": "2026-08-18T04:36:37.619737+00:00",
       "application_deadline": "2024-01-01",
       "application_start_date": "2026-08-18",
       "eligibility_fields": {
@@ -876,8 +879,56 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "2026년 청년 부동산 중개보수 및 이사비 지원 모집 공고",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-08-17:2026년-청년-부동산-중개보수-및-이사비-지원-모집-공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-08-18:2026년-청년-부동산-중개보수-및-이사비-지원-모집-공고",
       "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463813",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "취준생 64% “5년 내 AI에 일자리 빼앗길 듯”…초급 업무 대체 우려",
+      "url": "https://www.khan.co.kr/article/202608181008001",
+      "event_at": "2026-08-17T16:08:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "취준생 64% “5년 내 AI에 일자리 빼앗길 듯”…초급 업무 대체 우려",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-17:취준생-64-5년-내-ai에-일자리-빼앗길-듯-초급-업무-대체-우려",
+      "evidence_url": "https://www.khan.co.kr/article/202608181008001",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "[단독] “빚 갚을 돈도 없습니다”…중소기업 대출 연체율, 대기업의 10배",
+      "url": "https://www.mk.co.kr/news/economy/12129514",
+      "event_at": "2026-08-17T00:00:37+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "[단독] “빚 갚을 돈도 없습니다”…중소기업 대출 연체율, 대기업의 10배",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-17:단독-빚-갚을-돈도-없습니다-중소기업-대출-연체율-대기업의-10배",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12129514",
       "evidence_url_present": true
     },
     {
@@ -1125,6 +1176,27 @@
       "evidence_url_present": true
     },
     {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "[속보]내년 1월부터 ‘비거주 1주택자’ 전세대출 제한···갭투자 차단 조치[8·13 부동산대책]",
+      "url": "https://www.khan.co.kr/article/202608131200001",
+      "event_at": "2026-08-12T18:00:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "[속보]내년 1월부터 ‘비거주 1주택자’ 전세대출 제한···갭투자 차단 조치[8·13 부동산대책]",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-12:속보-내년-1월부터-비거주-1주택자-전세대출-제한-갭투자-차단-조치-8-13-부동산대책",
+      "evidence_url": "https://www.khan.co.kr/article/202608131200001",
+      "evidence_url_present": true
+    },
+    {
       "source": "매일경제 경제정책",
       "event_model": "eligibility_rule",
       "title": "가계 ‘대출절벽’ 숨통 틔운다…당국, 금융권 한도 30조원 늘려 2배로",
@@ -1166,27 +1238,6 @@
       "program_title": "‘생애 첫 주택’ 非아파트 구입하면, LTV 80%까지 저리 대출",
       "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-12:생애-첫-주택-非아파트-구입하면-ltv-80-까지-저리-대출",
       "evidence_url": "https://www.donga.com/news/Economy/article/all/20260813/134470157/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "[속보]내년 1월부터 ‘비거주 1주택자’ 전세대출 제한···갭투자 차단 조치[8·13 부동산대책]",
-      "url": "https://www.khan.co.kr/article/202608131200001",
-      "event_at": "2026-08-12T18:00:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "[속보]내년 1월부터 ‘비거주 1주택자’ 전세대출 제한···갭투자 차단 조치[8·13 부동산대책]",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-12:속보-내년-1월부터-비거주-1주택자-전세대출-제한-갭투자-차단-조치-8-13-부동산대책",
-      "evidence_url": "https://www.khan.co.kr/article/202608131200001",
       "evidence_url_present": true
     },
     {
@@ -1440,48 +1491,6 @@
       "evidence_url_present": true
     },
     {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "2026년 전기 수집운반차 보급사업(대행 사업자) 수정공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463605",
-      "event_at": "2026-09-08T00:00:00+00:00",
-      "application_deadline": "2026-09-08",
-      "application_start_date": "2026-08-10",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 전기 수집운반차 보급사업(대행 사업자) 수정공고",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-09-08:2026년-전기-수집운반차-보급사업-대행-사업자-수정공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463605",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "eligibility_rule",
-      "title": "2026년 전기 수집운반차 보급사업(대행 사업자) 수정공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463605",
-      "event_at": "2026-08-10T05:28:20.547025+00:00",
-      "application_deadline": "2026-09-08",
-      "application_start_date": "2026-08-10",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 전기 수집운반차 보급사업(대행 사업자) 수정공고",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-08-10:2026년-전기-수집운반차-보급사업-대행-사업자-수정공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463605",
-      "evidence_url_present": true
-    },
-    {
       "source": "경향신문 경제",
       "event_model": "eligibility_rule",
       "title": "SH 취약계층 임대주택 가점 폐지에 “기회 뺏지 말라”",
@@ -1524,117 +1533,6 @@
       "program_title": "대출금리 양극화…대기업·중기 격차 최대",
       "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-09:대출금리-양극화-대기업-중기-격차-최대",
       "evidence_url": "https://www.mk.co.kr/news/economy/12123159",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "application_deadline",
-      "title": "제조업 인력 근속지원금 ‘경남형 버팀이음’ 추가 모집",
-      "url": "https://www.khan.co.kr/article/202608101330001",
-      "event_at": "2026-07-01T00:00:00+00:00",
-      "application_deadline": "2026-07-01",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "제조"
-        ],
-        "Region": [
-          "경남"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "제조업 인력 근속지원금 ‘경남형 버팀이음’ 추가 모집",
-      "program_key": "application-deadline:kr:경향신문-경제:2026-07-01:제조업-인력-근속지원금-경남형-버팀이음-추가-모집",
-      "evidence_url": "https://www.khan.co.kr/article/202608101330001",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "제조업 인력 근속지원금 ‘경남형 버팀이음’ 추가 모집",
-      "url": "https://www.khan.co.kr/article/202608101330001",
-      "event_at": "2026-08-09T19:30:00+00:00",
-      "application_deadline": "2026-07-01",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "제조"
-        ],
-        "Region": [
-          "경남"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "제조업 인력 근속지원금 ‘경남형 버팀이음’ 추가 모집",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-09:제조업-인력-근속지원금-경남형-버팀이음-추가-모집",
-      "evidence_url": "https://www.khan.co.kr/article/202608101330001",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "“부부 소득 합치면 저금리 대출 그림의 떡”…李 “결혼 패널티 없애라”",
-      "url": "https://www.mk.co.kr/news/economy/12122400",
-      "event_at": "2026-08-09T11:56:15+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“부부 소득 합치면 저금리 대출 그림의 떡”…李 “결혼 패널티 없애라”",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-09:부부-소득-합치면-저금리-대출-그림의-떡-李-결혼-패널티-없애라",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12122400",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "李대통령 \"결혼 페널티 없애라\"… 정부, 청년민심 달래기",
-      "url": "https://www.mk.co.kr/news/economy/12122186",
-      "event_at": "2026-08-08T23:26:03+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "李대통령 \"결혼 페널티 없애라\"… 정부, 청년민심 달래기",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-08:李대통령-결혼-페널티-없애라-정부-청년민심-달래기",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12122186",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "5대 은행 마통 연체율 0.22%…청년·고령층 빚투 적신호",
-      "url": "https://www.mk.co.kr/news/economy/12122068",
-      "event_at": "2026-08-08T21:40:11+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "5대 은행 마통 연체율 0.22%…청년·고령층 빚투 적신호",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-08:5대-은행-마통-연체율-0-22-청년-고령층-빚투-적신호",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12122068",
       "evidence_url_present": true
     }
   ],
@@ -1706,6 +1604,7 @@
   "errors": [
     "정책브리핑: Source disabled (crawl health threshold reached)",
     "농림축산식품부: Source disabled (crawl health threshold reached)",
+    "[서울경제 경제] Request failed: 403 Client Error: Forbidden for url: https://www.sedaily.com/RSS/Economy/",
     "SBS 뉴스 정치: Source disabled (crawl health threshold reached)",
     "소상공인시장진흥공단: Source disabled (crawl health threshold reached)",
     "행정안전부: Source disabled (crawl health threshold reached)",
