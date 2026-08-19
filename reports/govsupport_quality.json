@@ -1,19 +1,19 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-08-18T04:37:08.676261+00:00",
+  "generated_at": "2026-08-19T04:41:11.754313+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
-    "fresh_sources": 1,
-    "stale_sources": 1,
+    "fresh_sources": 2,
+    "stale_sources": 0,
     "missing_sources": 3,
     "missing_event_sources": 0,
     "unknown_event_date_sources": 0,
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 2,
-    "eligibility_rule_events": 33,
+    "application_deadline_events": 4,
+    "eligibility_rule_events": 31,
     "selection_result_events": 0,
     "unique_program_key_count": 35,
     "events_with_evidence_url": 35,
@@ -136,20 +136,20 @@
       "tracked": true,
       "event_model": "application_deadline",
       "freshness_sla_days": 1,
-      "status": "stale",
-      "article_count": 2,
-      "event_count": 1,
-      "latest_event_at": "2024-01-01T00:00:00+00:00",
-      "age_days": 960.19,
-      "latest_title": "2026년 청년 부동산 중개보수 및 이사비 지원 모집 공고",
-      "latest_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463813",
-      "latest_evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463813",
-      "latest_program_title": "2026년 청년 부동산 중개보수 및 이사비 지원 모집 공고",
-      "latest_program_key": "application-deadline:kr:서울시-지원사업:2024-01-01:2026년-청년-부동산-중개보수-및-이사비-지원-모집-공고",
-      "latest_application_deadline": "2024-01-01",
+      "status": "fresh",
+      "article_count": 3,
+      "event_count": 2,
+      "latest_event_at": "2026-10-08T00:00:00+00:00",
+      "age_days": 0.0,
+      "latest_title": "2026년 서울커리업 바로채용 참여기업 모집 공고",
+      "latest_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464140",
+      "latest_evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464140",
+      "latest_program_title": "2026년 서울커리업 바로채용 참여기업 모집 공고",
+      "latest_program_key": "application-deadline:kr:서울시-지원사업:2026-10-08:2026년-서울커리업-바로채용-참여기업-모집-공고",
+      "latest_application_deadline": "2026-10-08",
       "latest_eligibility_fields": {
         "TargetGroup": [
-          "청년"
+          "중소기업"
         ],
         "Region": [
           "서울"
@@ -229,7 +229,7 @@
       "article_count": 3,
       "event_count": 3,
       "latest_event_at": "2026-08-18T04:37:00.398210+00:00",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "latest_title": "수도권 23만호+α 추가 공급, 주택 공급 촉진 및  청년 등 실수요자 금융지원 강화",
       "latest_url": "https://www.fsc.go.kr/no010101/87517",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87517",
@@ -251,7 +251,9 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": []
+      "errors": [
+        "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n"
+      ]
     },
     {
       "source": "농림축산식품부",
@@ -531,7 +533,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 7,
+      "article_count": 6,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -557,7 +559,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 15,
+      "article_count": 16,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -583,7 +585,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 10,
+      "article_count": 8,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -736,6 +738,71 @@
   ],
   "events": [
     {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "2026년 서울커리업 바로채용 참여기업 모집 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464140",
+      "event_at": "2026-10-08T00:00:00+00:00",
+      "application_deadline": "2026-10-08",
+      "application_start_date": "2026-08-19",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 서울커리업 바로채용 참여기업 모집 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-10-08:2026년-서울커리업-바로채용-참여기업-모집-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464140",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "2026년 서울커리업 바로채용 참여기업 모집 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464140",
+      "event_at": "2026-08-19T04:40:09.527845+00:00",
+      "application_deadline": "2026-10-08",
+      "application_start_date": "2026-08-19",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 서울커리업 바로채용 참여기업 모집 공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-08-19:2026년-서울커리업-바로채용-참여기업-모집-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464140",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "application_deadline",
+      "title": "국힘 “뉴홈 사전청약 땐 금리1.9%”…김윤덕 “원안대로 하면 복잡해져”",
+      "url": "https://www.donga.com/news/Politics/article/all/20260819/134502503/1",
+      "event_at": "2026-01-09T00:00:00+00:00",
+      "application_deadline": "2026-01-09",
+      "application_start_date": "2026-08-19",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "국힘 “뉴홈 사전청약 땐 금리1.9%”…김윤덕 “원안대로 하면 복잡해져”",
+      "program_key": "application-deadline:kr:동아일보-경제:2026-01-09:국힘-뉴홈-사전청약-땐-금리1-9-김윤덕-원안대로-하면-복잡해져",
+      "evidence_url": "https://www.donga.com/news/Politics/article/all/20260819/134502503/1",
+      "evidence_url_present": true
+    },
+    {
       "source": "금융위원회",
       "event_model": "application_deadline",
       "title": "수도권 23만호+α 추가 공급, 주택 공급 촉진 및  청년 등 실수요자 금융지원 강화",
@@ -881,6 +948,27 @@
       "program_title": "2026년 청년 부동산 중개보수 및 이사비 지원 모집 공고",
       "program_key": "eligibility-rule:kr:서울시-지원사업:2026-08-18:2026년-청년-부동산-중개보수-및-이사비-지원-모집-공고",
       "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463813",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "“지역과 상생”…새마을금고, 소상공인·소기업에 저금리 대출 확대",
+      "url": "https://www.mk.co.kr/news/economy/12130317",
+      "event_at": "2026-08-17T22:31:30+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“지역과 상생”…새마을금고, 소상공인·소기업에 저금리 대출 확대",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-17:지역과-상생-새마을금고-소상공인-소기업에-저금리-대출-확대",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12130317",
       "evidence_url_present": true
     },
     {
@@ -1176,6 +1264,28 @@
       "evidence_url_present": true
     },
     {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "‘생애 첫 주택’ 非아파트 구입하면, LTV 80%까지 저리 대출",
+      "url": "https://www.donga.com/news/Economy/article/all/20260813/134470157/1",
+      "event_at": "2026-08-12T18:00:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년",
+          "신혼부부"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "‘생애 첫 주택’ 非아파트 구입하면, LTV 80%까지 저리 대출",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-12:생애-첫-주택-非아파트-구입하면-ltv-80-까지-저리-대출",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260813/134470157/1",
+      "evidence_url_present": true
+    },
+    {
       "source": "경향신문 경제",
       "event_model": "eligibility_rule",
       "title": "[속보]내년 1월부터 ‘비거주 1주택자’ 전세대출 제한···갭투자 차단 조치[8·13 부동산대책]",
@@ -1216,28 +1326,6 @@
       "program_title": "가계 ‘대출절벽’ 숨통 틔운다…당국, 금융권 한도 30조원 늘려 2배로",
       "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-12:가계-대출절벽-숨통-틔운다-당국-금융권-한도-30조원-늘려-2배로",
       "evidence_url": "https://www.mk.co.kr/news/economy/12126386",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "‘생애 첫 주택’ 非아파트 구입하면, LTV 80%까지 저리 대출",
-      "url": "https://www.donga.com/news/Economy/article/all/20260813/134470157/1",
-      "event_at": "2026-08-12T18:00:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년",
-          "신혼부부"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "‘생애 첫 주택’ 非아파트 구입하면, LTV 80%까지 저리 대출",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-12:생애-첫-주택-非아파트-구입하면-ltv-80-까지-저리-대출",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260813/134470157/1",
       "evidence_url_present": true
     },
     {
@@ -1444,96 +1532,6 @@
       "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-11:sh-임대주택-취약층-가점-되살리고-나이-가점-없앤다",
       "evidence_url": "https://www.khan.co.kr/article/202608112039025",
       "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "중소기업 돈줄 맡은 지방은행…충당금은 시중은행보다 얇았다",
-      "url": "https://www.mk.co.kr/news/economy/12123971",
-      "event_at": "2026-08-10T19:48:35+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "중소기업"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "중소기업 돈줄 맡은 지방은행…충당금은 시중은행보다 얇았다",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-10:중소기업-돈줄-맡은-지방은행-충당금은-시중은행보다-얇았다",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12123971",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "“임금 체불 꼼수 안 통한다”···노동당국, 감독 받고도 안 준 사업자 사법처리",
-      "url": "https://www.khan.co.kr/article/202608111111001",
-      "event_at": "2026-08-10T17:11:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "제조"
-        ],
-        "Region": [
-          "인천"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“임금 체불 꼼수 안 통한다”···노동당국, 감독 받고도 안 준 사업자 사법처리",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-10:임금-체불-꼼수-안-통한다-노동당국-감독-받고도-안-준-사업자-사법처리",
-      "evidence_url": "https://www.khan.co.kr/article/202608111111001",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "SH 취약계층 임대주택 가점 폐지에 “기회 뺏지 말라”",
-      "url": "https://www.khan.co.kr/article/202608102116015",
-      "event_at": "2026-08-10T03:16:01+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "SH 취약계층 임대주택 가점 폐지에 “기회 뺏지 말라”",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-10:sh-취약계층-임대주택-가점-폐지에-기회-뺏지-말라",
-      "evidence_url": "https://www.khan.co.kr/article/202608102116015",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "대출금리 양극화…대기업·중기 격차 최대",
-      "url": "https://www.mk.co.kr/news/economy/12123159",
-      "event_at": "2026-08-09T23:56:38+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "중소기업"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "대출금리 양극화…대기업·중기 격차 최대",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-09:대출금리-양극화-대기업-중기-격차-최대",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12123159",
-      "evidence_url_present": true
     }
   ],
   "event_model_coverage": [
@@ -1604,11 +1602,11 @@
   "errors": [
     "정책브리핑: Source disabled (crawl health threshold reached)",
     "농림축산식품부: Source disabled (crawl health threshold reached)",
-    "[서울경제 경제] Request failed: 403 Client Error: Forbidden for url: https://www.sedaily.com/RSS/Economy/",
     "SBS 뉴스 정치: Source disabled (crawl health threshold reached)",
     "소상공인시장진흥공단: Source disabled (crawl health threshold reached)",
     "행정안전부: Source disabled (crawl health threshold reached)",
     "보건복지부: Source disabled (crawl health threshold reached)",
+    "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n",
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
     "r/startups: Source disabled (crawl health threshold reached)",

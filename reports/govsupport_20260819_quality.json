@@ -1,0 +1,1615 @@
+{
+  "category": "govsupport",
+  "generated_at": "2026-08-19T04:41:11.754313+00:00",
+  "summary": {
+    "total_sources": 26,
+    "tracked_sources": 5,
+    "fresh_sources": 2,
+    "stale_sources": 0,
+    "missing_sources": 3,
+    "missing_event_sources": 0,
+    "unknown_event_date_sources": 0,
+    "not_tracked_sources": 18,
+    "skipped_disabled_sources": 3,
+    "support_program_notice_events": 0,
+    "application_deadline_events": 4,
+    "eligibility_rule_events": 31,
+    "selection_result_events": 0,
+    "unique_program_key_count": 35,
+    "events_with_evidence_url": 35,
+    "collection_error_count": 11,
+    "event_model_source_gap_count": 0
+  },
+  "sources": [
+    {
+      "source": "정부24 보조금",
+      "source_type": "javascript",
+      "enabled": false,
+      "tracked": false,
+      "event_model": "application_deadline",
+      "freshness_sla_days": 1,
+      "status": "skipped_disabled",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": "Browser probe returned the official anti-automation block page rather than service cards.",
+      "reenable_gate": "Re-enable only after a stable API/search endpoint or approved browser flow can return service cards without triggering access protection.",
+      "errors": []
+    },
+    {
+      "source": "K-Startup 선정결과 후보",
+      "source_type": "javascript",
+      "enabled": false,
+      "tracked": false,
+      "event_model": "selection_result",
+      "freshness_sla_days": 7,
+      "status": "skipped_disabled",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": "Backlog source only: selection result parser and fixture coverage are not ready.",
+      "reenable_gate": "Enable after browser fixture test, selection_result parser, and evidence URL checks pass.",
+      "errors": []
+    },
+    {
+      "source": "정책브리핑",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "support_program_notice",
+      "freshness_sla_days": 2,
+      "status": "missing",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": [
+        "정책브리핑: Source disabled (crawl health threshold reached)"
+      ]
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "source_type": "javascript",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "eligibility_rule",
+      "freshness_sla_days": 1,
+      "status": "missing",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": [
+        "소상공인시장진흥공단: Source disabled (crawl health threshold reached)"
+      ]
+    },
+    {
+      "source": "서울시 지원사업",
+      "source_type": "javascript",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "application_deadline",
+      "freshness_sla_days": 1,
+      "status": "fresh",
+      "article_count": 3,
+      "event_count": 2,
+      "latest_event_at": "2026-10-08T00:00:00+00:00",
+      "age_days": 0.0,
+      "latest_title": "2026년 서울커리업 바로채용 참여기업 모집 공고",
+      "latest_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464140",
+      "latest_evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464140",
+      "latest_program_title": "2026년 서울커리업 바로채용 참여기업 모집 공고",
+      "latest_program_key": "application-deadline:kr:서울시-지원사업:2026-10-08:2026년-서울커리업-바로채용-참여기업-모집-공고",
+      "latest_application_deadline": "2026-10-08",
+      "latest_eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": []
+    },
+    {
+      "source": "행정안전부",
+      "source_type": "javascript",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "official_notice",
+      "freshness_sla_days": 2,
+      "status": "not_tracked",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": [
+        "행정안전부: Source disabled (crawl health threshold reached)"
+      ]
+    },
+    {
+      "source": "보건복지부",
+      "source_type": "javascript",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "eligibility_rule",
+      "freshness_sla_days": 2,
+      "status": "missing",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": [
+        "보건복지부: Source disabled (crawl health threshold reached)"
+      ]
+    },
+    {
+      "source": "금융위원회",
+      "source_type": "javascript",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "eligibility_rule",
+      "freshness_sla_days": 2,
+      "status": "fresh",
+      "article_count": 3,
+      "event_count": 3,
+      "latest_event_at": "2026-08-18T04:37:00.398210+00:00",
+      "age_days": 1.0,
+      "latest_title": "수도권 23만호+α 추가 공급, 주택 공급 촉진 및  청년 등 실수요자 금융지원 강화",
+      "latest_url": "https://www.fsc.go.kr/no010101/87517",
+      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87517",
+      "latest_program_title": "수도권 23만호+α 추가 공급, 주택 공급 촉진 및  청년 등 실수요자 금융지원 강화",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-08-18:수도권-23만호-α-추가-공급-주택-공급-촉진-및-청년-등-실수요자-금융지원-강화",
+      "latest_application_deadline": "2026-01-05",
+      "latest_eligibility_fields": {
+        "TargetGroup": [
+          "청년",
+          "신혼부부"
+        ],
+        "Region": [
+          "서울",
+          "경기"
+        ]
+      },
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": [
+        "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n"
+      ]
+    },
+    {
+      "source": "농림축산식품부",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "official_notice",
+      "freshness_sla_days": 2,
+      "status": "not_tracked",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": [
+        "농림축산식품부: Source disabled (crawl health threshold reached)"
+      ]
+    },
+    {
+      "source": "국토교통부",
+      "source_type": "javascript",
+      "enabled": false,
+      "tracked": false,
+      "event_model": "official_notice",
+      "freshness_sla_days": 2,
+      "status": "skipped_disabled",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": "Official browser endpoint resets connections in the current collection runtime.",
+      "reenable_gate": "Re-enable after a stable RSS/API endpoint or approved browser flow returns notice links without connection resets.",
+      "errors": []
+    },
+    {
+      "source": "r/korea",
+      "source_type": "reddit",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": [
+        "r/korea: Source disabled (crawl health threshold reached)"
+      ]
+    },
+    {
+      "source": "r/smallbusiness",
+      "source_type": "reddit",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": [
+        "r/smallbusiness: Source disabled (crawl health threshold reached)"
+      ]
+    },
+    {
+      "source": "r/startups",
+      "source_type": "reddit",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": [
+        "r/startups: Source disabled (crawl health threshold reached)"
+      ]
+    },
+    {
+      "source": "r/Entrepreneur",
+      "source_type": "reddit",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": [
+        "r/Entrepreneur: Source disabled (crawl health threshold reached)"
+      ]
+    },
+    {
+      "source": "TechCrunch Startups",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 1,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": []
+    },
+    {
+      "source": "한국경제 경제",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": []
+    },
+    {
+      "source": "한국경제 정치",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": []
+    },
+    {
+      "source": "매일경제 정치",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": []
+    },
+    {
+      "source": "매일경제 경제정책",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 6,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": []
+    },
+    {
+      "source": "동아일보 경제",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 16,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": []
+    },
+    {
+      "source": "경향신문 경제",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 8,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": []
+    },
+    {
+      "source": "한겨레 경제",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": []
+    },
+    {
+      "source": "서울경제 경제",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": []
+    },
+    {
+      "source": "SBS 뉴스 정치",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": [
+        "SBS 뉴스 정치: Source disabled (crawl health threshold reached)"
+      ]
+    },
+    {
+      "source": "K-GAPI 공공API 현황분석",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": []
+    },
+    {
+      "source": "Awesome MCP Korea",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": []
+    }
+  ],
+  "events": [
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "2026년 서울커리업 바로채용 참여기업 모집 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464140",
+      "event_at": "2026-10-08T00:00:00+00:00",
+      "application_deadline": "2026-10-08",
+      "application_start_date": "2026-08-19",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 서울커리업 바로채용 참여기업 모집 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-10-08:2026년-서울커리업-바로채용-참여기업-모집-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464140",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "2026년 서울커리업 바로채용 참여기업 모집 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464140",
+      "event_at": "2026-08-19T04:40:09.527845+00:00",
+      "application_deadline": "2026-10-08",
+      "application_start_date": "2026-08-19",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 서울커리업 바로채용 참여기업 모집 공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-08-19:2026년-서울커리업-바로채용-참여기업-모집-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464140",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "application_deadline",
+      "title": "국힘 “뉴홈 사전청약 땐 금리1.9%”…김윤덕 “원안대로 하면 복잡해져”",
+      "url": "https://www.donga.com/news/Politics/article/all/20260819/134502503/1",
+      "event_at": "2026-01-09T00:00:00+00:00",
+      "application_deadline": "2026-01-09",
+      "application_start_date": "2026-08-19",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "국힘 “뉴홈 사전청약 땐 금리1.9%”…김윤덕 “원안대로 하면 복잡해져”",
+      "program_key": "application-deadline:kr:동아일보-경제:2026-01-09:국힘-뉴홈-사전청약-땐-금리1-9-김윤덕-원안대로-하면-복잡해져",
+      "evidence_url": "https://www.donga.com/news/Politics/article/all/20260819/134502503/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "application_deadline",
+      "title": "수도권 23만호+α 추가 공급, 주택 공급 촉진 및  청년 등 실수요자 금융지원 강화",
+      "url": "https://www.fsc.go.kr/no010101/87517",
+      "event_at": "2026-01-05T00:00:00+00:00",
+      "application_deadline": "2026-01-05",
+      "application_start_date": "2026-08-13",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년",
+          "신혼부부"
+        ],
+        "Region": [
+          "서울",
+          "경기"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "수도권 23만호+α 추가 공급, 주택 공급 촉진 및  청년 등 실수요자 금융지원 강화",
+      "program_key": "application-deadline:kr:금융위원회:2026-01-05:수도권-23만호-α-추가-공급-주택-공급-촉진-및-청년-등-실수요자-금융지원-강화",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87517",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "수도권 23만호+α 추가 공급, 주택 공급 촉진 및  청년 등 실수요자 금융지원 강화",
+      "url": "https://www.fsc.go.kr/no010101/87517",
+      "event_at": "2026-08-18T04:37:00.398210+00:00",
+      "application_deadline": "2026-01-05",
+      "application_start_date": "2026-08-13",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년",
+          "신혼부부"
+        ],
+        "Region": [
+          "서울",
+          "경기"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "수도권 23만호+α 추가 공급, 주택 공급 촉진 및  청년 등 실수요자 금융지원 강화",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-08-18:수도권-23만호-α-추가-공급-주택-공급-촉진-및-청년-등-실수요자-금융지원-강화",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87517",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "가상자산사업자 신고제 강화에 맞춰 신고매뉴얼을 전면 개정합니다. - FIU·금감원, 개정 신고매뉴얼에 대한 「찾아가는 설명회」 개최",
+      "url": "https://www.fsc.go.kr/no010101/87521",
+      "event_at": "2026-08-18T04:36:59.410867+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "가상자산사업자 신고제 강화에 맞춰 신고매뉴얼을 전면 개정합니다. - FIU·금감원, 개정 신고매뉴얼에 대한 「찾아가는 설명회」 개최",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-08-18:가상자산사업자-신고제-강화에-맞춰-신고매뉴얼을-전면-개정합니다-fiu-금감원-개정-신고매뉴얼에-대한-찾아가는-설명회-개최",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87521",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "2026년 7월 가계대출 동향(잠정) 및  ｢확대 가계부채 점검회의｣ 개최",
+      "url": "https://www.fsc.go.kr/no010101/87543",
+      "event_at": "2026-08-18T04:36:57.833509+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 7월 가계대출 동향(잠정) 및  ｢확대 가계부채 점검회의｣ 개최",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-08-18:2026년-7월-가계대출-동향-잠정-및-확대-가계부채-점검회의-개최",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87543",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "2026년 청년 부동산 중개보수 및 이사비 지원 모집 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463813",
+      "event_at": "2024-01-01T00:00:00+00:00",
+      "application_deadline": "2024-01-01",
+      "application_start_date": "2026-08-18",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 청년 부동산 중개보수 및 이사비 지원 모집 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2024-01-01:2026년-청년-부동산-중개보수-및-이사비-지원-모집-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463813",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "2026년 청년 부동산 중개보수 및 이사비 지원 모집 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463813",
+      "event_at": "2026-08-18T04:36:37.619737+00:00",
+      "application_deadline": "2024-01-01",
+      "application_start_date": "2026-08-18",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 청년 부동산 중개보수 및 이사비 지원 모집 공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-08-18:2026년-청년-부동산-중개보수-및-이사비-지원-모집-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=463813",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "“지역과 상생”…새마을금고, 소상공인·소기업에 저금리 대출 확대",
+      "url": "https://www.mk.co.kr/news/economy/12130317",
+      "event_at": "2026-08-17T22:31:30+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“지역과 상생”…새마을금고, 소상공인·소기업에 저금리 대출 확대",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-17:지역과-상생-새마을금고-소상공인-소기업에-저금리-대출-확대",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12130317",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "취준생 64% “5년 내 AI에 일자리 빼앗길 듯”…초급 업무 대체 우려",
+      "url": "https://www.khan.co.kr/article/202608181008001",
+      "event_at": "2026-08-17T16:08:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "취준생 64% “5년 내 AI에 일자리 빼앗길 듯”…초급 업무 대체 우려",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-17:취준생-64-5년-내-ai에-일자리-빼앗길-듯-초급-업무-대체-우려",
+      "evidence_url": "https://www.khan.co.kr/article/202608181008001",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "[단독] “빚 갚을 돈도 없습니다”…중소기업 대출 연체율, 대기업의 10배",
+      "url": "https://www.mk.co.kr/news/economy/12129514",
+      "event_at": "2026-08-17T00:00:37+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "[단독] “빚 갚을 돈도 없습니다”…중소기업 대출 연체율, 대기업의 10배",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-17:단독-빚-갚을-돈도-없습니다-중소기업-대출-연체율-대기업의-10배",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12129514",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "“청년은 빌라에만 살라는 거냐” 비판 나오지 않으려면···‘적정 시세 비교’로 신뢰 회복이 관건",
+      "url": "https://www.khan.co.kr/article/202608170600091",
+      "event_at": "2026-08-16T12:00:09+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“청년은 빌라에만 살라는 거냐” 비판 나오지 않으려면···‘적정 시세 비교’로 신뢰 회복이 관건",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-16:청년은-빌라에만-살라는-거냐-비판-나오지-않으려면-적정-시세-비교-로-신뢰-회복이-관건",
+      "evidence_url": "https://www.khan.co.kr/article/202608170600091",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "“나도 해당될까”…8·13대책 청년 금융지원 하나씩 뜯어보니",
+      "url": "https://www.donga.com/news/Economy/article/all/20260817/134487096/1",
+      "event_at": "2026-08-16T10:02:07+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년",
+          "신혼부부"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“나도 해당될까”…8·13대책 청년 금융지원 하나씩 뜯어보니",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-16:나도-해당될까-8-13대책-청년-금융지원-하나씩-뜯어보니",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260817/134487096/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "CJ나눔재단-티머니복지재단… 도서산간 학생들 문화체험 지원",
+      "url": "https://www.donga.com/news/Economy/article/all/20260816/134486434/2",
+      "event_at": "2026-08-16T07:40:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "경기",
+          "경남"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "CJ나눔재단-티머니복지재단… 도서산간 학생들 문화체험 지원",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-16:cj나눔재단-티머니복지재단-도서산간-학생들-문화체험-지원",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260816/134486434/2",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "금감원, 은행 대출총량 재조정 착수…‘8.13 대책’ 후속 조치 속도",
+      "url": "https://www.donga.com/news/Economy/article/all/20260815/134482785/1",
+      "event_at": "2026-08-14T14:03:16+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "금감원, 은행 대출총량 재조정 착수…‘8.13 대책’ 후속 조치 속도",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-14:금감원-은행-대출총량-재조정-착수-8-13-대책-후속-조치-속도",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260815/134482785/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "소상공인 “폭염 속 전기요금 부담완화 대책 촉구”",
+      "url": "https://www.donga.com/news/Economy/article/all/20260814/134478509/1",
+      "event_at": "2026-08-13T19:56:29+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "소상공인 “폭염 속 전기요금 부담완화 대책 촉구”",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-13:소상공인-폭염-속-전기요금-부담완화-대책-촉구",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260814/134478509/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "금융위원장 “가계대출 총량 상향, 실수요 위한 것…투기 자극 안돼”",
+      "url": "https://www.donga.com/news/Economy/article/all/20260814/134477811/1",
+      "event_at": "2026-08-13T17:17:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "금융위원장 “가계대출 총량 상향, 실수요 위한 것…투기 자극 안돼”",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-13:금융위원장-가계대출-총량-상향-실수요-위한-것-투기-자극-안돼",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260814/134477811/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "용산구, 이태원참사 이후 경영난 겪는 소상공인 1.5%저리 융자 지원[서울25]",
+      "url": "https://www.khan.co.kr/article/202608141115001",
+      "event_at": "2026-08-13T17:15:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "용산구, 이태원참사 이후 경영난 겪는 소상공인 1.5%저리 융자 지원[서울25]",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-13:용산구-이태원참사-이후-경영난-겪는-소상공인-1-5-저리-융자-지원-서울25",
+      "evidence_url": "https://www.khan.co.kr/article/202608141115001",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "재경부 “수출 큰 폭 늘고 내수 개선…경기회복 흐름 강화”",
+      "url": "https://www.donga.com/news/Economy/article/all/20260814/134477312/1",
+      "event_at": "2026-08-13T16:10:08+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ],
+        "Region": [
+          "경기"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "재경부 “수출 큰 폭 늘고 내수 개선…경기회복 흐름 강화”",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-13:재경부-수출-큰-폭-늘고-내수-개선-경기회복-흐름-강화",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260814/134477312/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "[8·13 부동산 종합대책]사놓고 안 사는 수도권 1주택자…전세대출 막아 ‘갭투자 차단’",
+      "url": "https://www.khan.co.kr/article/202608132140005",
+      "event_at": "2026-08-13T03:40:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "[8·13 부동산 종합대책]사놓고 안 사는 수도권 1주택자…전세대출 막아 ‘갭투자 차단’",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-13:8-13-부동산-종합대책-사놓고-안-사는-수도권-1주택자-전세대출-막아-갭투자-차단",
+      "evidence_url": "https://www.khan.co.kr/article/202608132140005",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "[8·13 부동산 종합대책]30대 청년, 2억 빌려 오피스텔 사면 ‘월 원리금 85만원’",
+      "url": "https://www.khan.co.kr/article/202608132138005",
+      "event_at": "2026-08-13T03:38:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년",
+          "신혼부부"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "[8·13 부동산 종합대책]30대 청년, 2억 빌려 오피스텔 사면 ‘월 원리금 85만원’",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-13:8-13-부동산-종합대책-30대-청년-2억-빌려-오피스텔-사면-월-원리금-85만원",
+      "evidence_url": "https://www.khan.co.kr/article/202608132138005",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "[단독] 월 270만원 버는 청년도 월세 지원…중위소득 ‘100%이하’로 확대",
+      "url": "https://www.mk.co.kr/news/economy/12126795",
+      "event_at": "2026-08-12T23:39:40+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "[단독] 월 270만원 버는 청년도 월세 지원…중위소득 ‘100%이하’로 확대",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-12:단독-월-270만원-버는-청년도-월세-지원-중위소득-100-이하-로-확대",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12126795",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "‘생애 첫 주택’ 非아파트 구입하면, LTV 80%까지 저리 대출",
+      "url": "https://www.donga.com/news/Economy/article/all/20260813/134470157/1",
+      "event_at": "2026-08-12T18:00:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년",
+          "신혼부부"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "‘생애 첫 주택’ 非아파트 구입하면, LTV 80%까지 저리 대출",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-12:생애-첫-주택-非아파트-구입하면-ltv-80-까지-저리-대출",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260813/134470157/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "[속보]내년 1월부터 ‘비거주 1주택자’ 전세대출 제한···갭투자 차단 조치[8·13 부동산대책]",
+      "url": "https://www.khan.co.kr/article/202608131200001",
+      "event_at": "2026-08-12T18:00:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "[속보]내년 1월부터 ‘비거주 1주택자’ 전세대출 제한···갭투자 차단 조치[8·13 부동산대책]",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-12:속보-내년-1월부터-비거주-1주택자-전세대출-제한-갭투자-차단-조치-8-13-부동산대책",
+      "evidence_url": "https://www.khan.co.kr/article/202608131200001",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "가계 ‘대출절벽’ 숨통 틔운다…당국, 금융권 한도 30조원 늘려 2배로",
+      "url": "https://www.mk.co.kr/news/economy/12126386",
+      "event_at": "2026-08-12T18:00:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년",
+          "신혼부부"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "가계 ‘대출절벽’ 숨통 틔운다…당국, 금융권 한도 30조원 늘려 2배로",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-12:가계-대출절벽-숨통-틔운다-당국-금융권-한도-30조원-늘려-2배로",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12126386",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "빚 많아도 기초생활비는 못 건드린다...압류방지통장 벌써 130만명 가입",
+      "url": "https://www.mk.co.kr/news/economy/12126380",
+      "event_at": "2026-08-12T17:31:49+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "빚 많아도 기초생활비는 못 건드린다...압류방지통장 벌써 130만명 가입",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-12:빚-많아도-기초생활비는-못-건드린다-압류방지통장-벌써-130만명-가입",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12126380",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "드론 8대가 한 팀처럼 움직인다…군집드론 잡는 ‘AI 요격기’",
+      "url": "https://www.donga.com/news/Economy/article/all/20260813/134470281/2",
+      "event_at": "2026-08-12T16:20:02+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "스타트업"
+        ],
+        "BusinessStage": [
+          "벤처기업"
+        ],
+        "Industry": [
+          "AI"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "드론 8대가 한 팀처럼 움직인다…군집드론 잡는 ‘AI 요격기’",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-12:드론-8대가-한-팀처럼-움직인다-군집드론-잡는-ai-요격기",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260813/134470281/2",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "“폭염에 바다까지 끓는다”…정부, 수산물 최대 50% 할인·지원금 투입",
+      "url": "https://www.mk.co.kr/news/economy/12126171",
+      "event_at": "2026-08-12T15:16:34+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "수산",
+          "축산"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“폭염에 바다까지 끓는다”…정부, 수산물 최대 50% 할인·지원금 투입",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-12:폭염에-바다까지-끓는다-정부-수산물-최대-50-할인-지원금-투입",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12126171",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "청년 세제 혜택 ‘부익부 빈익빈’",
+      "url": "https://www.khan.co.kr/article/202608122129005",
+      "event_at": "2026-08-12T03:29:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "청년 세제 혜택 ‘부익부 빈익빈’",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-12:청년-세제-혜택-부익부-빈익빈",
+      "evidence_url": "https://www.khan.co.kr/article/202608122129005",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "정진완 우리은행장 “금융 취약계층 살리는 포용금융 적극 실천”",
+      "url": "https://www.donga.com/news/Economy/article/all/20260812/134464717/1",
+      "event_at": "2026-08-11T20:35:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "정진완 우리은행장 “금융 취약계층 살리는 포용금융 적극 실천”",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-11:정진완-우리은행장-금융-취약계층-살리는-포용금융-적극-실천",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260812/134464717/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "올해 늘어난 5대은행 기업대출, 3분의 2는 대기업 몫",
+      "url": "https://www.donga.com/news/Economy/article/all/20260812/134464144/1",
+      "event_at": "2026-08-11T20:01:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업",
+          "자영업자"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "올해 늘어난 5대은행 기업대출, 3분의 2는 대기업 몫",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-11:올해-늘어난-5대은행-기업대출-3분의-2는-대기업-몫",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260812/134464144/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "“양도세 내는 기초연금 수급자 드물어”…실적 없는 세제혜택 종료",
+      "url": "https://www.donga.com/news/Economy/article/all/20260812/134463435/1",
+      "event_at": "2026-08-11T19:13:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "저소득",
+          "자영업자"
+        ],
+        "Region": [
+          "경기"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“양도세 내는 기초연금 수급자 드물어”…실적 없는 세제혜택 종료",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-11:양도세-내는-기초연금-수급자-드물어-실적-없는-세제혜택-종료",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260812/134463435/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "두나무, 부채·고립 청년 4122명 지원…일자리 연계까지",
+      "url": "https://www.donga.com/news/Economy/article/all/20260812/134463270/1",
+      "event_at": "2026-08-11T16:41:06+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "두나무, 부채·고립 청년 4122명 지원…일자리 연계까지",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-11:두나무-부채-고립-청년-4122명-지원-일자리-연계까지",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260812/134463270/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "SH, 임대주택 취약층 가점 되살리고 나이 가점 없앤다",
+      "url": "https://www.khan.co.kr/article/202608112039025",
+      "event_at": "2026-08-11T02:39:02+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년",
+          "취약계층"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "SH, 임대주택 취약층 가점 되살리고 나이 가점 없앤다",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-11:sh-임대주택-취약층-가점-되살리고-나이-가점-없앤다",
+      "evidence_url": "https://www.khan.co.kr/article/202608112039025",
+      "evidence_url_present": true
+    }
+  ],
+  "event_model_coverage": [
+    {
+      "event_model": "support_program_notice",
+      "tracked": true,
+      "enabled_source_count": 1,
+      "disabled_source_count": 0,
+      "enabled_sources": [
+        "정책브리핑"
+      ],
+      "disabled_sources": [],
+      "disabled_source_details": []
+    },
+    {
+      "event_model": "application_deadline",
+      "tracked": true,
+      "enabled_source_count": 1,
+      "disabled_source_count": 1,
+      "enabled_sources": [
+        "서울시 지원사업"
+      ],
+      "disabled_sources": [
+        "정부24 보조금"
+      ],
+      "disabled_source_details": [
+        {
+          "source": "정부24 보조금",
+          "skip_reason": "Browser probe returned the official anti-automation block page rather than service cards.",
+          "reenable_gate": "Re-enable only after a stable API/search endpoint or approved browser flow can return service cards without triggering access protection."
+        }
+      ]
+    },
+    {
+      "event_model": "eligibility_rule",
+      "tracked": true,
+      "enabled_source_count": 3,
+      "disabled_source_count": 0,
+      "enabled_sources": [
+        "소상공인시장진흥공단",
+        "보건복지부",
+        "금융위원회"
+      ],
+      "disabled_sources": [],
+      "disabled_source_details": []
+    },
+    {
+      "event_model": "selection_result",
+      "tracked": true,
+      "enabled_source_count": 1,
+      "disabled_source_count": 1,
+      "enabled_sources": [
+        "정책브리핑"
+      ],
+      "disabled_sources": [
+        "K-Startup 선정결과 후보"
+      ],
+      "disabled_source_details": [
+        {
+          "source": "K-Startup 선정결과 후보",
+          "skip_reason": "Backlog source only: selection result parser and fixture coverage are not ready.",
+          "reenable_gate": "Enable after browser fixture test, selection_result parser, and evidence URL checks pass."
+        }
+      ]
+    }
+  ],
+  "event_model_source_gaps": [],
+  "errors": [
+    "정책브리핑: Source disabled (crawl health threshold reached)",
+    "농림축산식품부: Source disabled (crawl health threshold reached)",
+    "SBS 뉴스 정치: Source disabled (crawl health threshold reached)",
+    "소상공인시장진흥공단: Source disabled (crawl health threshold reached)",
+    "행정안전부: Source disabled (crawl health threshold reached)",
+    "보건복지부: Source disabled (crawl health threshold reached)",
+    "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n",
+    "r/korea: Source disabled (crawl health threshold reached)",
+    "r/smallbusiness: Source disabled (crawl health threshold reached)",
+    "r/startups: Source disabled (crawl health threshold reached)",
+    "r/Entrepreneur: Source disabled (crawl health threshold reached)"
+  ]
+}
