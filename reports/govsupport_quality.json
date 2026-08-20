@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-08-19T04:41:11.754313+00:00",
+  "generated_at": "2026-08-20T04:38:37.748307+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -13,11 +13,11 @@
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
     "application_deadline_events": 4,
-    "eligibility_rule_events": 31,
+    "eligibility_rule_events": 28,
     "selection_result_events": 0,
-    "unique_program_key_count": 35,
-    "events_with_evidence_url": 35,
-    "collection_error_count": 11,
+    "unique_program_key_count": 32,
+    "events_with_evidence_url": 32,
+    "collection_error_count": 10,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -137,7 +137,7 @@
       "event_model": "application_deadline",
       "freshness_sla_days": 1,
       "status": "fresh",
-      "article_count": 3,
+      "article_count": 2,
       "event_count": 2,
       "latest_event_at": "2026-10-08T00:00:00+00:00",
       "age_days": 0.0,
@@ -226,24 +226,22 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
       "status": "fresh",
-      "article_count": 3,
-      "event_count": 3,
-      "latest_event_at": "2026-08-18T04:37:00.398210+00:00",
-      "age_days": 1.0,
-      "latest_title": "수도권 23만호+α 추가 공급, 주택 공급 촉진 및  청년 등 실수요자 금융지원 강화",
-      "latest_url": "https://www.fsc.go.kr/no010101/87517",
-      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87517",
-      "latest_program_title": "수도권 23만호+α 추가 공급, 주택 공급 촉진 및  청년 등 실수요자 금융지원 강화",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-08-18:수도권-23만호-α-추가-공급-주택-공급-촉진-및-청년-등-실수요자-금융지원-강화",
-      "latest_application_deadline": "2026-01-05",
+      "article_count": 5,
+      "event_count": 5,
+      "latest_event_at": "2026-08-20T04:38:30.261276+00:00",
+      "age_days": 0.0,
+      "latest_title": "가상자산사업자 신고제 강화에 맞춰 신고매뉴얼을 전면 개정합니다. - FIU·금감원, 개정 신고매뉴얼에 대한 「찾아가는 설명회」 개최",
+      "latest_url": "https://www.fsc.go.kr/no010101/87521",
+      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87521",
+      "latest_program_title": "가상자산사업자 신고제 강화에 맞춰 신고매뉴얼을 전면 개정합니다. - FIU·금감원, 개정 신고매뉴얼에 대한 「찾아가는 설명회」 개최",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-08-20:가상자산사업자-신고제-강화에-맞춰-신고매뉴얼을-전면-개정합니다-fiu-금감원-개정-신고매뉴얼에-대한-찾아가는-설명회-개최",
+      "latest_application_deadline": "",
       "latest_eligibility_fields": {
         "TargetGroup": [
-          "청년",
-          "신혼부부"
+          "청년"
         ],
         "Region": [
-          "서울",
-          "경기"
+          "서울"
         ]
       },
       "latest_selection_result_date": "",
@@ -251,9 +249,7 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": [
-        "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n"
-      ]
+      "errors": []
     },
     {
       "source": "농림축산식품부",
@@ -559,7 +555,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 16,
+      "article_count": 12,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -585,7 +581,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 8,
+      "article_count": 7,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -738,6 +734,102 @@
   ],
   "events": [
     {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "가상자산사업자 신고제 강화에 맞춰 신고매뉴얼을 전면 개정합니다. - FIU·금감원, 개정 신고매뉴얼에 대한 「찾아가는 설명회」 개최",
+      "url": "https://www.fsc.go.kr/no010101/87521",
+      "event_at": "2026-08-20T04:38:30.261276+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "가상자산사업자 신고제 강화에 맞춰 신고매뉴얼을 전면 개정합니다. - FIU·금감원, 개정 신고매뉴얼에 대한 「찾아가는 설명회」 개최",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-08-20:가상자산사업자-신고제-강화에-맞춰-신고매뉴얼을-전면-개정합니다-fiu-금감원-개정-신고매뉴얼에-대한-찾아가는-설명회-개최",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87521",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "2026년 7월 가계대출 동향(잠정) 및  ｢확대 가계부채 점검회의｣ 개최",
+      "url": "https://www.fsc.go.kr/no010101/87543",
+      "event_at": "2026-08-20T04:38:27.943059+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 7월 가계대출 동향(잠정) 및  ｢확대 가계부채 점검회의｣ 개최",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-08-20:2026년-7월-가계대출-동향-잠정-및-확대-가계부채-점검회의-개최",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87543",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "“함께하는 금융, 청년의 미래를 그리다” 「2026 금융권 공동채용 박람회」 개최 - 8월 19일(수)~20일(목) 10:00~17:00, 서울 DDP에서 개최",
+      "url": "https://www.fsc.go.kr/no010101/87554",
+      "event_at": "2026-08-20T04:38:26.649424+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“함께하는 금융, 청년의 미래를 그리다” 「2026 금융권 공동채용 박람회」 개최 - 8월 19일(수)~20일(목) 10:00~17:00, 서울 DDP에서 개최",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-08-20:함께하는-금융-청년의-미래를-그리다-2026-금융권-공동채용-박람회-개최-8월-19일-수-20일-목-10-00-17-00-서울-ddp에서-개최",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87554",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "금융·통신·수사 협업으로  보이스피싱 피해 신고 전에 막는다!  - 제2차 보이스피싱 근절 협의회 개최. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/87565",
+      "event_at": "2026-08-20T04:38:23.450076+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "금융·통신·수사 협업으로  보이스피싱 피해 신고 전에 막는다!  - 제2차 보이스피싱 근절 협의회 개최. 금일 등록된 게시글",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-08-20:금융-통신-수사-협업으로-보이스피싱-피해-신고-전에-막는다-제2차-보이스피싱-근절-협의회-개최-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87565",
+      "evidence_url_present": true
+    },
+    {
       "source": "서울시 지원사업",
       "event_model": "application_deadline",
       "title": "2026년 서울커리업 바로채용 참여기업 모집 공고",
@@ -852,54 +944,6 @@
       "program_title": "수도권 23만호+α 추가 공급, 주택 공급 촉진 및  청년 등 실수요자 금융지원 강화",
       "program_key": "eligibility-rule:kr:금융위원회:2026-08-18:수도권-23만호-α-추가-공급-주택-공급-촉진-및-청년-등-실수요자-금융지원-강화",
       "evidence_url": "https://www.fsc.go.kr/no010101/87517",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "가상자산사업자 신고제 강화에 맞춰 신고매뉴얼을 전면 개정합니다. - FIU·금감원, 개정 신고매뉴얼에 대한 「찾아가는 설명회」 개최",
-      "url": "https://www.fsc.go.kr/no010101/87521",
-      "event_at": "2026-08-18T04:36:59.410867+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "가상자산사업자 신고제 강화에 맞춰 신고매뉴얼을 전면 개정합니다. - FIU·금감원, 개정 신고매뉴얼에 대한 「찾아가는 설명회」 개최",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-08-18:가상자산사업자-신고제-강화에-맞춰-신고매뉴얼을-전면-개정합니다-fiu-금감원-개정-신고매뉴얼에-대한-찾아가는-설명회-개최",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87521",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "2026년 7월 가계대출 동향(잠정) 및  ｢확대 가계부채 점검회의｣ 개최",
-      "url": "https://www.fsc.go.kr/no010101/87543",
-      "event_at": "2026-08-18T04:36:57.833509+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 7월 가계대출 동향(잠정) 및  ｢확대 가계부채 점검회의｣ 개최",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-08-18:2026년-7월-가계대출-동향-잠정-및-확대-가계부채-점검회의-개최",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87543",
       "evidence_url_present": true
     },
     {
@@ -1418,120 +1462,6 @@
       "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-12:청년-세제-혜택-부익부-빈익빈",
       "evidence_url": "https://www.khan.co.kr/article/202608122129005",
       "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "정진완 우리은행장 “금융 취약계층 살리는 포용금융 적극 실천”",
-      "url": "https://www.donga.com/news/Economy/article/all/20260812/134464717/1",
-      "event_at": "2026-08-11T20:35:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "정진완 우리은행장 “금융 취약계층 살리는 포용금융 적극 실천”",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-11:정진완-우리은행장-금융-취약계층-살리는-포용금융-적극-실천",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260812/134464717/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "올해 늘어난 5대은행 기업대출, 3분의 2는 대기업 몫",
-      "url": "https://www.donga.com/news/Economy/article/all/20260812/134464144/1",
-      "event_at": "2026-08-11T20:01:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "중소기업",
-          "자영업자"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "올해 늘어난 5대은행 기업대출, 3분의 2는 대기업 몫",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-11:올해-늘어난-5대은행-기업대출-3분의-2는-대기업-몫",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260812/134464144/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "“양도세 내는 기초연금 수급자 드물어”…실적 없는 세제혜택 종료",
-      "url": "https://www.donga.com/news/Economy/article/all/20260812/134463435/1",
-      "event_at": "2026-08-11T19:13:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "저소득",
-          "자영업자"
-        ],
-        "Region": [
-          "경기"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“양도세 내는 기초연금 수급자 드물어”…실적 없는 세제혜택 종료",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-11:양도세-내는-기초연금-수급자-드물어-실적-없는-세제혜택-종료",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260812/134463435/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "두나무, 부채·고립 청년 4122명 지원…일자리 연계까지",
-      "url": "https://www.donga.com/news/Economy/article/all/20260812/134463270/1",
-      "event_at": "2026-08-11T16:41:06+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "두나무, 부채·고립 청년 4122명 지원…일자리 연계까지",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-11:두나무-부채-고립-청년-4122명-지원-일자리-연계까지",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260812/134463270/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "SH, 임대주택 취약층 가점 되살리고 나이 가점 없앤다",
-      "url": "https://www.khan.co.kr/article/202608112039025",
-      "event_at": "2026-08-11T02:39:02+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년",
-          "취약계층"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "SH, 임대주택 취약층 가점 되살리고 나이 가점 없앤다",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-11:sh-임대주택-취약층-가점-되살리고-나이-가점-없앤다",
-      "evidence_url": "https://www.khan.co.kr/article/202608112039025",
-      "evidence_url_present": true
     }
   ],
   "event_model_coverage": [
@@ -1606,7 +1536,6 @@
     "소상공인시장진흥공단: Source disabled (crawl health threshold reached)",
     "행정안전부: Source disabled (crawl health threshold reached)",
     "보건복지부: Source disabled (crawl health threshold reached)",
-    "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n",
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
     "r/startups: Source disabled (crawl health threshold reached)",
