@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-08-20T04:38:37.748307+00:00",
+  "generated_at": "2026-08-21T04:40:04.237945+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -12,11 +12,11 @@
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 4,
-    "eligibility_rule_events": 28,
+    "application_deadline_events": 5,
+    "eligibility_rule_events": 23,
     "selection_result_events": 0,
-    "unique_program_key_count": 32,
-    "events_with_evidence_url": 32,
+    "unique_program_key_count": 28,
+    "events_with_evidence_url": 28,
     "collection_error_count": 10,
     "event_model_source_gap_count": 0
   },
@@ -226,22 +226,23 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
       "status": "fresh",
-      "article_count": 5,
-      "event_count": 5,
-      "latest_event_at": "2026-08-20T04:38:30.261276+00:00",
+      "article_count": 10,
+      "event_count": 6,
+      "latest_event_at": "2026-08-21T04:39:56.908679+00:00",
       "age_days": 0.0,
-      "latest_title": "가상자산사업자 신고제 강화에 맞춰 신고매뉴얼을 전면 개정합니다. - FIU·금감원, 개정 신고매뉴얼에 대한 「찾아가는 설명회」 개최",
-      "latest_url": "https://www.fsc.go.kr/no010101/87521",
-      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87521",
-      "latest_program_title": "가상자산사업자 신고제 강화에 맞춰 신고매뉴얼을 전면 개정합니다. - FIU·금감원, 개정 신고매뉴얼에 대한 「찾아가는 설명회」 개최",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-08-20:가상자산사업자-신고제-강화에-맞춰-신고매뉴얼을-전면-개정합니다-fiu-금감원-개정-신고매뉴얼에-대한-찾아가는-설명회-개최",
+      "latest_title": "수해 피해 가계·중소기업을 위한 금융지원방안",
+      "latest_url": "https://www.fsc.go.kr/no010101/87566",
+      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87566",
+      "latest_program_title": "수해 피해 가계·중소기업을 위한 금융지원방안",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-08-21:수해-피해-가계-중소기업을-위한-금융지원방안",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
         "TargetGroup": [
-          "청년"
+          "소상공인",
+          "중소기업"
         ],
         "Region": [
-          "서울"
+          "경남"
         ]
       },
       "latest_selection_result_date": "",
@@ -529,7 +530,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 6,
+      "article_count": 3,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -555,7 +556,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 12,
+      "article_count": 10,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -581,7 +582,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 7,
+      "article_count": 5,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -736,6 +737,111 @@
     {
       "source": "금융위원회",
       "event_model": "eligibility_rule",
+      "title": "수해 피해 가계·중소기업을 위한 금융지원방안",
+      "url": "https://www.fsc.go.kr/no010101/87566",
+      "event_at": "2026-08-21T04:39:56.908679+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업"
+        ],
+        "Region": [
+          "경남"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "수해 피해 가계·중소기업을 위한 금융지원방안",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-08-21:수해-피해-가계-중소기업을-위한-금융지원방안",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87566",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "application_deadline",
+      "title": "기술의 시간에 금융을 맞추는 새로운 시도, 초장기기술투자펀드가 개시됩니다.",
+      "url": "https://www.fsc.go.kr/no010101/87569",
+      "event_at": "2026-09-03T00:00:00+00:00",
+      "application_deadline": "2026-09-03",
+      "application_start_date": "2026-08-20",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ],
+        "BusinessStage": [
+          "창업기업"
+        ],
+        "Industry": [
+          "AI",
+          "바이오"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "기술의 시간에 금융을 맞추는 새로운 시도, 초장기기술투자펀드가 개시됩니다.",
+      "program_key": "application-deadline:kr:금융위원회:2026-09-03:기술의-시간에-금융을-맞추는-새로운-시도-초장기기술투자펀드가-개시됩니다",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87569",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "기술의 시간에 금융을 맞추는 새로운 시도, 초장기기술투자펀드가 개시됩니다.",
+      "url": "https://www.fsc.go.kr/no010101/87569",
+      "event_at": "2026-08-21T04:39:55.440544+00:00",
+      "application_deadline": "2026-09-03",
+      "application_start_date": "2026-08-20",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ],
+        "BusinessStage": [
+          "창업기업"
+        ],
+        "Industry": [
+          "AI",
+          "바이오"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "기술의 시간에 금융을 맞추는 새로운 시도, 초장기기술투자펀드가 개시됩니다.",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-08-21:기술의-시간에-금융을-맞추는-새로운-시도-초장기기술투자펀드가-개시됩니다",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87569",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "이유씨엔씨, 서울시 ‘차열페인트·쿨루프’ 사업 참여… 기후위기 대응 나선다",
+      "url": "https://www.donga.com/news/Economy/article/all/20260821/134518035/1",
+      "event_at": "2026-08-20T17:36:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "이유씨엔씨, 서울시 ‘차열페인트·쿨루프’ 사업 참여… 기후위기 대응 나선다",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-20:이유씨엔씨-서울시-차열페인트-쿨루프-사업-참여-기후위기-대응-나선다",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260821/134518035/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
       "title": "가상자산사업자 신고제 강화에 맞춰 신고매뉴얼을 전면 개정합니다. - FIU·금감원, 개정 신고매뉴얼에 대한 「찾아가는 설명회」 개최",
       "url": "https://www.fsc.go.kr/no010101/87521",
       "event_at": "2026-08-20T04:38:30.261276+00:00",
@@ -755,30 +861,6 @@
       "program_title": "가상자산사업자 신고제 강화에 맞춰 신고매뉴얼을 전면 개정합니다. - FIU·금감원, 개정 신고매뉴얼에 대한 「찾아가는 설명회」 개최",
       "program_key": "eligibility-rule:kr:금융위원회:2026-08-20:가상자산사업자-신고제-강화에-맞춰-신고매뉴얼을-전면-개정합니다-fiu-금감원-개정-신고매뉴얼에-대한-찾아가는-설명회-개최",
       "evidence_url": "https://www.fsc.go.kr/no010101/87521",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "2026년 7월 가계대출 동향(잠정) 및  ｢확대 가계부채 점검회의｣ 개최",
-      "url": "https://www.fsc.go.kr/no010101/87543",
-      "event_at": "2026-08-20T04:38:27.943059+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 7월 가계대출 동향(잠정) 및  ｢확대 가계부채 점검회의｣ 개최",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-08-20:2026년-7월-가계대출-동향-잠정-및-확대-가계부채-점검회의-개최",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87543",
       "evidence_url_present": true
     },
     {
@@ -1153,6 +1235,31 @@
       "evidence_url_present": true
     },
     {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "용산구, 이태원참사 이후 경영난 겪는 소상공인 1.5%저리 융자 지원[서울25]",
+      "url": "https://www.khan.co.kr/article/202608141115001",
+      "event_at": "2026-08-13T17:15:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "용산구, 이태원참사 이후 경영난 겪는 소상공인 1.5%저리 융자 지원[서울25]",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-13:용산구-이태원참사-이후-경영난-겪는-소상공인-1-5-저리-융자-지원-서울25",
+      "evidence_url": "https://www.khan.co.kr/article/202608141115001",
+      "evidence_url_present": true
+    },
+    {
       "source": "동아일보 경제",
       "event_model": "eligibility_rule",
       "title": "소상공인 “폭염 속 전기요금 부담완화 대책 촉구”",
@@ -1192,31 +1299,6 @@
       "program_title": "금융위원장 “가계대출 총량 상향, 실수요 위한 것…투기 자극 안돼”",
       "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-13:금융위원장-가계대출-총량-상향-실수요-위한-것-투기-자극-안돼",
       "evidence_url": "https://www.donga.com/news/Economy/article/all/20260814/134477811/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "용산구, 이태원참사 이후 경영난 겪는 소상공인 1.5%저리 융자 지원[서울25]",
-      "url": "https://www.khan.co.kr/article/202608141115001",
-      "event_at": "2026-08-13T17:15:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인",
-          "중소기업"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "용산구, 이태원참사 이후 경영난 겪는 소상공인 1.5%저리 융자 지원[서울25]",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-13:용산구-이태원참사-이후-경영난-겪는-소상공인-1-5-저리-융자-지원-서울25",
-      "evidence_url": "https://www.khan.co.kr/article/202608141115001",
       "evidence_url_present": true
     },
     {
@@ -1305,162 +1387,6 @@
       "program_title": "[단독] 월 270만원 버는 청년도 월세 지원…중위소득 ‘100%이하’로 확대",
       "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-12:단독-월-270만원-버는-청년도-월세-지원-중위소득-100-이하-로-확대",
       "evidence_url": "https://www.mk.co.kr/news/economy/12126795",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "‘생애 첫 주택’ 非아파트 구입하면, LTV 80%까지 저리 대출",
-      "url": "https://www.donga.com/news/Economy/article/all/20260813/134470157/1",
-      "event_at": "2026-08-12T18:00:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년",
-          "신혼부부"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "‘생애 첫 주택’ 非아파트 구입하면, LTV 80%까지 저리 대출",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-12:생애-첫-주택-非아파트-구입하면-ltv-80-까지-저리-대출",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260813/134470157/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "[속보]내년 1월부터 ‘비거주 1주택자’ 전세대출 제한···갭투자 차단 조치[8·13 부동산대책]",
-      "url": "https://www.khan.co.kr/article/202608131200001",
-      "event_at": "2026-08-12T18:00:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "[속보]내년 1월부터 ‘비거주 1주택자’ 전세대출 제한···갭투자 차단 조치[8·13 부동산대책]",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-12:속보-내년-1월부터-비거주-1주택자-전세대출-제한-갭투자-차단-조치-8-13-부동산대책",
-      "evidence_url": "https://www.khan.co.kr/article/202608131200001",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "가계 ‘대출절벽’ 숨통 틔운다…당국, 금융권 한도 30조원 늘려 2배로",
-      "url": "https://www.mk.co.kr/news/economy/12126386",
-      "event_at": "2026-08-12T18:00:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년",
-          "신혼부부"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "가계 ‘대출절벽’ 숨통 틔운다…당국, 금융권 한도 30조원 늘려 2배로",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-12:가계-대출절벽-숨통-틔운다-당국-금융권-한도-30조원-늘려-2배로",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12126386",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "빚 많아도 기초생활비는 못 건드린다...압류방지통장 벌써 130만명 가입",
-      "url": "https://www.mk.co.kr/news/economy/12126380",
-      "event_at": "2026-08-12T17:31:49+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "빚 많아도 기초생활비는 못 건드린다...압류방지통장 벌써 130만명 가입",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-12:빚-많아도-기초생활비는-못-건드린다-압류방지통장-벌써-130만명-가입",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12126380",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "드론 8대가 한 팀처럼 움직인다…군집드론 잡는 ‘AI 요격기’",
-      "url": "https://www.donga.com/news/Economy/article/all/20260813/134470281/2",
-      "event_at": "2026-08-12T16:20:02+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "스타트업"
-        ],
-        "BusinessStage": [
-          "벤처기업"
-        ],
-        "Industry": [
-          "AI"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "드론 8대가 한 팀처럼 움직인다…군집드론 잡는 ‘AI 요격기’",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-12:드론-8대가-한-팀처럼-움직인다-군집드론-잡는-ai-요격기",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260813/134470281/2",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "“폭염에 바다까지 끓는다”…정부, 수산물 최대 50% 할인·지원금 투입",
-      "url": "https://www.mk.co.kr/news/economy/12126171",
-      "event_at": "2026-08-12T15:16:34+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "수산",
-          "축산"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“폭염에 바다까지 끓는다”…정부, 수산물 최대 50% 할인·지원금 투입",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-12:폭염에-바다까지-끓는다-정부-수산물-최대-50-할인-지원금-투입",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12126171",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "청년 세제 혜택 ‘부익부 빈익빈’",
-      "url": "https://www.khan.co.kr/article/202608122129005",
-      "event_at": "2026-08-12T03:29:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "청년 세제 혜택 ‘부익부 빈익빈’",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-12:청년-세제-혜택-부익부-빈익빈",
-      "evidence_url": "https://www.khan.co.kr/article/202608122129005",
       "evidence_url_present": true
     }
   ],
