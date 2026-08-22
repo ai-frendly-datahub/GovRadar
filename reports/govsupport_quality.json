@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-08-21T04:40:04.237945+00:00",
+  "generated_at": "2026-08-22T04:34:49.911235+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -12,12 +12,12 @@
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 5,
-    "eligibility_rule_events": 23,
+    "application_deadline_events": 6,
+    "eligibility_rule_events": 18,
     "selection_result_events": 0,
-    "unique_program_key_count": 28,
-    "events_with_evidence_url": 28,
-    "collection_error_count": 10,
+    "unique_program_key_count": 24,
+    "events_with_evidence_url": 24,
+    "collection_error_count": 11,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -137,8 +137,8 @@
       "event_model": "application_deadline",
       "freshness_sla_days": 1,
       "status": "fresh",
-      "article_count": 2,
-      "event_count": 2,
+      "article_count": 3,
+      "event_count": 3,
       "latest_event_at": "2026-10-08T00:00:00+00:00",
       "age_days": 0.0,
       "latest_title": "2026년 서울커리업 바로채용 참여기업 모집 공고",
@@ -229,7 +229,7 @@
       "article_count": 10,
       "event_count": 6,
       "latest_event_at": "2026-08-21T04:39:56.908679+00:00",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "latest_title": "수해 피해 가계·중소기업을 위한 금융지원방안",
       "latest_url": "https://www.fsc.go.kr/no010101/87566",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87566",
@@ -250,7 +250,9 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": []
+      "errors": [
+        "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n"
+      ]
     },
     {
       "source": "농림축산식품부",
@@ -530,7 +532,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 3,
+      "article_count": 2,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -556,7 +558,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 10,
+      "article_count": 6,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -582,7 +584,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 5,
+      "article_count": 3,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -734,6 +736,54 @@
     }
   ],
   "events": [
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "서울자립지원전담기관 계약직 직원 채용 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464373",
+      "event_at": "2026-09-11T00:00:00+00:00",
+      "application_deadline": "2026-09-11",
+      "application_start_date": "2026-08-21",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "서울자립지원전담기관 계약직 직원 채용 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-09-11:서울자립지원전담기관-계약직-직원-채용-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464373",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "서울자립지원전담기관 계약직 직원 채용 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464373",
+      "event_at": "2026-08-22T04:33:48.297236+00:00",
+      "application_deadline": "2026-09-11",
+      "application_start_date": "2026-08-21",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "서울자립지원전담기관 계약직 직원 채용 공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-08-22:서울자립지원전담기관-계약직-직원-채용-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464373",
+      "evidence_url_present": true
+    },
     {
       "source": "금융위원회",
       "event_model": "eligibility_rule",
@@ -1258,136 +1308,6 @@
       "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-13:용산구-이태원참사-이후-경영난-겪는-소상공인-1-5-저리-융자-지원-서울25",
       "evidence_url": "https://www.khan.co.kr/article/202608141115001",
       "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "소상공인 “폭염 속 전기요금 부담완화 대책 촉구”",
-      "url": "https://www.donga.com/news/Economy/article/all/20260814/134478509/1",
-      "event_at": "2026-08-13T19:56:29+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "소상공인 “폭염 속 전기요금 부담완화 대책 촉구”",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-13:소상공인-폭염-속-전기요금-부담완화-대책-촉구",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260814/134478509/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "금융위원장 “가계대출 총량 상향, 실수요 위한 것…투기 자극 안돼”",
-      "url": "https://www.donga.com/news/Economy/article/all/20260814/134477811/1",
-      "event_at": "2026-08-13T17:17:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "금융위원장 “가계대출 총량 상향, 실수요 위한 것…투기 자극 안돼”",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-13:금융위원장-가계대출-총량-상향-실수요-위한-것-투기-자극-안돼",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260814/134477811/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "재경부 “수출 큰 폭 늘고 내수 개선…경기회복 흐름 강화”",
-      "url": "https://www.donga.com/news/Economy/article/all/20260814/134477312/1",
-      "event_at": "2026-08-13T16:10:08+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ],
-        "Region": [
-          "경기"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "재경부 “수출 큰 폭 늘고 내수 개선…경기회복 흐름 강화”",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-13:재경부-수출-큰-폭-늘고-내수-개선-경기회복-흐름-강화",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260814/134477312/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "[8·13 부동산 종합대책]사놓고 안 사는 수도권 1주택자…전세대출 막아 ‘갭투자 차단’",
-      "url": "https://www.khan.co.kr/article/202608132140005",
-      "event_at": "2026-08-13T03:40:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "[8·13 부동산 종합대책]사놓고 안 사는 수도권 1주택자…전세대출 막아 ‘갭투자 차단’",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-13:8-13-부동산-종합대책-사놓고-안-사는-수도권-1주택자-전세대출-막아-갭투자-차단",
-      "evidence_url": "https://www.khan.co.kr/article/202608132140005",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "[8·13 부동산 종합대책]30대 청년, 2억 빌려 오피스텔 사면 ‘월 원리금 85만원’",
-      "url": "https://www.khan.co.kr/article/202608132138005",
-      "event_at": "2026-08-13T03:38:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년",
-          "신혼부부"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "[8·13 부동산 종합대책]30대 청년, 2억 빌려 오피스텔 사면 ‘월 원리금 85만원’",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-13:8-13-부동산-종합대책-30대-청년-2억-빌려-오피스텔-사면-월-원리금-85만원",
-      "evidence_url": "https://www.khan.co.kr/article/202608132138005",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "[단독] 월 270만원 버는 청년도 월세 지원…중위소득 ‘100%이하’로 확대",
-      "url": "https://www.mk.co.kr/news/economy/12126795",
-      "event_at": "2026-08-12T23:39:40+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "[단독] 월 270만원 버는 청년도 월세 지원…중위소득 ‘100%이하’로 확대",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-12:단독-월-270만원-버는-청년도-월세-지원-중위소득-100-이하-로-확대",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12126795",
-      "evidence_url_present": true
     }
   ],
   "event_model_coverage": [
@@ -1462,6 +1382,7 @@
     "소상공인시장진흥공단: Source disabled (crawl health threshold reached)",
     "행정안전부: Source disabled (crawl health threshold reached)",
     "보건복지부: Source disabled (crawl health threshold reached)",
+    "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n",
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
     "r/startups: Source disabled (crawl health threshold reached)",
