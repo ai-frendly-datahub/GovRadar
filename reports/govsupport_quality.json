@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-08-23T04:39:11.147810+00:00",
+  "generated_at": "2026-08-24T04:46:03.110767+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -13,10 +13,10 @@
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
     "application_deadline_events": 6,
-    "eligibility_rule_events": 17,
+    "eligibility_rule_events": 15,
     "selection_result_events": 0,
-    "unique_program_key_count": 23,
-    "events_with_evidence_url": 23,
+    "unique_program_key_count": 21,
+    "events_with_evidence_url": 21,
     "collection_error_count": 11,
     "event_model_source_gap_count": 0
   },
@@ -228,13 +228,13 @@
       "status": "fresh",
       "article_count": 10,
       "event_count": 6,
-      "latest_event_at": "2026-08-21T04:39:56.908679+00:00",
-      "age_days": 2.0,
+      "latest_event_at": "2026-08-24T04:45:56.011904+00:00",
+      "age_days": 0.0,
       "latest_title": "수해 피해 가계·중소기업을 위한 금융지원방안",
       "latest_url": "https://www.fsc.go.kr/no010101/87566",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87566",
       "latest_program_title": "수해 피해 가계·중소기업을 위한 금융지원방안",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-08-21:수해-피해-가계-중소기업을-위한-금융지원방안",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-08-24:수해-피해-가계-중소기업을-위한-금융지원방안",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
         "TargetGroup": [
@@ -250,9 +250,7 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": [
-        "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n"
-      ]
+      "errors": []
     },
     {
       "source": "농림축산식품부",
@@ -428,7 +426,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 1,
+      "article_count": 0,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -532,7 +530,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 2,
+      "article_count": 3,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -558,7 +556,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 5,
+      "article_count": 2,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -737,80 +735,11 @@
   ],
   "events": [
     {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "서울자립지원전담기관 계약직 직원 채용 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464373",
-      "event_at": "2026-09-11T00:00:00+00:00",
-      "application_deadline": "2026-09-11",
-      "application_start_date": "2026-08-21",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "서울자립지원전담기관 계약직 직원 채용 공고",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-09-11:서울자립지원전담기관-계약직-직원-채용-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464373",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "eligibility_rule",
-      "title": "서울자립지원전담기관 계약직 직원 채용 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464373",
-      "event_at": "2026-08-23T04:38:08.906284+00:00",
-      "application_deadline": "2026-09-11",
-      "application_start_date": "2026-08-21",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "서울자립지원전담기관 계약직 직원 채용 공고",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-08-23:서울자립지원전담기관-계약직-직원-채용-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464373",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "“철강 고용 충격 막는다” 충남도, 당진 ‘고용위기 선제대응지역’ 지원 강화",
-      "url": "https://www.khan.co.kr/article/202608230953001",
-      "event_at": "2026-08-22T15:53:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "충남"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“철강 고용 충격 막는다” 충남도, 당진 ‘고용위기 선제대응지역’ 지원 강화",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-22:철강-고용-충격-막는다-충남도-당진-고용위기-선제대응지역-지원-강화",
-      "evidence_url": "https://www.khan.co.kr/article/202608230953001",
-      "evidence_url_present": true
-    },
-    {
       "source": "금융위원회",
       "event_model": "eligibility_rule",
       "title": "수해 피해 가계·중소기업을 위한 금융지원방안",
       "url": "https://www.fsc.go.kr/no010101/87566",
-      "event_at": "2026-08-21T04:39:56.908679+00:00",
+      "event_at": "2026-08-24T04:45:56.011904+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -826,7 +755,7 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "수해 피해 가계·중소기업을 위한 금융지원방안",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-08-21:수해-피해-가계-중소기업을-위한-금융지원방안",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-08-24:수해-피해-가계-중소기업을-위한-금융지원방안",
       "evidence_url": "https://www.fsc.go.kr/no010101/87566",
       "evidence_url_present": true
     },
@@ -863,7 +792,7 @@
       "event_model": "eligibility_rule",
       "title": "기술의 시간에 금융을 맞추는 새로운 시도, 초장기기술투자펀드가 개시됩니다.",
       "url": "https://www.fsc.go.kr/no010101/87569",
-      "event_at": "2026-08-21T04:39:55.440544+00:00",
+      "event_at": "2026-08-24T04:45:54.361169+00:00",
       "application_deadline": "2026-09-03",
       "application_start_date": "2026-08-20",
       "eligibility_fields": {
@@ -882,8 +811,98 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "기술의 시간에 금융을 맞추는 새로운 시도, 초장기기술투자펀드가 개시됩니다.",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-08-21:기술의-시간에-금융을-맞추는-새로운-시도-초장기기술투자펀드가-개시됩니다",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-08-24:기술의-시간에-금융을-맞추는-새로운-시도-초장기기술투자펀드가-개시됩니다",
       "evidence_url": "https://www.fsc.go.kr/no010101/87569",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "서울자립지원전담기관 계약직 직원 채용 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464373",
+      "event_at": "2026-09-11T00:00:00+00:00",
+      "application_deadline": "2026-09-11",
+      "application_start_date": "2026-08-21",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "서울자립지원전담기관 계약직 직원 채용 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-09-11:서울자립지원전담기관-계약직-직원-채용-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464373",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "서울자립지원전담기관 계약직 직원 채용 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464373",
+      "event_at": "2026-08-24T04:45:37.334697+00:00",
+      "application_deadline": "2026-09-11",
+      "application_start_date": "2026-08-21",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "서울자립지원전담기관 계약직 직원 채용 공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-08-24:서울자립지원전담기관-계약직-직원-채용-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464373",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "보증보험 못 드는 사회주택 과태료에 ‘제동’",
+      "url": "https://www.khan.co.kr/article/202608232054025",
+      "event_at": "2026-08-23T02:54:02+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "보증보험 못 드는 사회주택 과태료에 ‘제동’",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-23:보증보험-못-드는-사회주택-과태료에-제동",
+      "evidence_url": "https://www.khan.co.kr/article/202608232054025",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "“철강 고용 충격 막는다” 충남도, 당진 ‘고용위기 선제대응지역’ 지원 강화",
+      "url": "https://www.khan.co.kr/article/202608230953001",
+      "event_at": "2026-08-22T15:53:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "충남"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“철강 고용 충격 막는다” 충남도, 당진 ‘고용위기 선제대응지역’ 지원 강화",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-22:철강-고용-충격-막는다-충남도-당진-고용위기-선제대응지역-지원-강화",
+      "evidence_url": "https://www.khan.co.kr/article/202608230953001",
       "evidence_url_present": true
     },
     {
@@ -1215,74 +1234,6 @@
       "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-17:단독-빚-갚을-돈도-없습니다-중소기업-대출-연체율-대기업의-10배",
       "evidence_url": "https://www.mk.co.kr/news/economy/12129514",
       "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "“청년은 빌라에만 살라는 거냐” 비판 나오지 않으려면···‘적정 시세 비교’로 신뢰 회복이 관건",
-      "url": "https://www.khan.co.kr/article/202608170600091",
-      "event_at": "2026-08-16T12:00:09+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“청년은 빌라에만 살라는 거냐” 비판 나오지 않으려면···‘적정 시세 비교’로 신뢰 회복이 관건",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-16:청년은-빌라에만-살라는-거냐-비판-나오지-않으려면-적정-시세-비교-로-신뢰-회복이-관건",
-      "evidence_url": "https://www.khan.co.kr/article/202608170600091",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "“나도 해당될까”…8·13대책 청년 금융지원 하나씩 뜯어보니",
-      "url": "https://www.donga.com/news/Economy/article/all/20260817/134487096/1",
-      "event_at": "2026-08-16T10:02:07+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년",
-          "신혼부부"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“나도 해당될까”…8·13대책 청년 금융지원 하나씩 뜯어보니",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-16:나도-해당될까-8-13대책-청년-금융지원-하나씩-뜯어보니",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260817/134487096/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "CJ나눔재단-티머니복지재단… 도서산간 학생들 문화체험 지원",
-      "url": "https://www.donga.com/news/Economy/article/all/20260816/134486434/2",
-      "event_at": "2026-08-16T07:40:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "경기",
-          "경남"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "CJ나눔재단-티머니복지재단… 도서산간 학생들 문화체험 지원",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-16:cj나눔재단-티머니복지재단-도서산간-학생들-문화체험-지원",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260816/134486434/2",
-      "evidence_url_present": true
     }
   ],
   "event_model_coverage": [
@@ -1353,11 +1304,11 @@
   "errors": [
     "정책브리핑: Source disabled (crawl health threshold reached)",
     "농림축산식품부: Source disabled (crawl health threshold reached)",
+    "[서울경제 경제] Request failed: 403 Client Error: Forbidden for url: https://www.sedaily.com/RSS/Economy/",
     "SBS 뉴스 정치: Source disabled (crawl health threshold reached)",
     "소상공인시장진흥공단: Source disabled (crawl health threshold reached)",
     "행정안전부: Source disabled (crawl health threshold reached)",
     "보건복지부: Source disabled (crawl health threshold reached)",
-    "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n",
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
     "r/startups: Source disabled (crawl health threshold reached)",
