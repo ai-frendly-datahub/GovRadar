@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-08-25T04:40:11.868137+00:00",
+  "generated_at": "2026-08-26T04:41:04.134664+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -13,11 +13,11 @@
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
     "application_deadline_events": 5,
-    "eligibility_rule_events": 14,
+    "eligibility_rule_events": 17,
     "selection_result_events": 1,
-    "unique_program_key_count": 20,
-    "events_with_evidence_url": 20,
-    "collection_error_count": 10,
+    "unique_program_key_count": 23,
+    "events_with_evidence_url": 23,
+    "collection_error_count": 11,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -137,19 +137,21 @@
       "event_model": "application_deadline",
       "freshness_sla_days": 1,
       "status": "fresh",
-      "article_count": 3,
+      "article_count": 4,
       "event_count": 3,
-      "latest_event_at": "2026-10-08T00:00:00+00:00",
+      "latest_event_at": "2026-11-13T00:00:00+00:00",
       "age_days": 0.0,
-      "latest_title": "2026년 서울커리업 바로채용 참여기업 모집 공고",
-      "latest_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464140",
-      "latest_evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464140",
-      "latest_program_title": "2026년 서울커리업 바로채용 참여기업 모집 공고",
-      "latest_program_key": "application-deadline:kr:서울시-지원사업:2026-10-08:2026년-서울커리업-바로채용-참여기업-모집-공고",
-      "latest_application_deadline": "2026-10-08",
+      "latest_title": "「서울바비큐페스티벌 연계 관광상품화 특별 지원」 시행 공고",
+      "latest_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464621",
+      "latest_evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464621",
+      "latest_program_title": "「서울바비큐페스티벌 연계 관광상품화 특별 지원」 시행 공고",
+      "latest_program_key": "application-deadline:kr:서울시-지원사업:2026-11-13:서울바비큐페스티벌-연계-관광상품화-특별-지원-시행-공고",
+      "latest_application_deadline": "2026-11-13",
       "latest_eligibility_fields": {
-        "TargetGroup": [
-          "중소기업"
+        "Industry": [
+          "관광",
+          "콘텐츠",
+          "AI"
         ],
         "Region": [
           "서울"
@@ -227,22 +229,25 @@
       "freshness_sla_days": 2,
       "status": "fresh",
       "article_count": 9,
-      "event_count": 5,
-      "latest_event_at": "2026-08-25T04:40:05.426877+00:00",
+      "event_count": 6,
+      "latest_event_at": "2026-08-26T04:40:57.875744+00:00",
       "age_days": 0.0,
-      "latest_title": "수해 피해 가계·중소기업을 위한 금융지원방안",
-      "latest_url": "https://www.fsc.go.kr/no010101/87566",
-      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87566",
-      "latest_program_title": "수해 피해 가계·중소기업을 위한 금융지원방안",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-08-25:수해-피해-가계-중소기업을-위한-금융지원방안",
-      "latest_application_deadline": "",
+      "latest_title": "기술의 시간에 금융을 맞추는 새로운 시도, 초장기기술투자펀드가 개시됩니다.",
+      "latest_url": "https://www.fsc.go.kr/no010101/87569",
+      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87569",
+      "latest_program_title": "기술의 시간에 금융을 맞추는 새로운 시도, 초장기기술투자펀드가 개시됩니다.",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-08-26:기술의-시간에-금융을-맞추는-새로운-시도-초장기기술투자펀드가-개시됩니다",
+      "latest_application_deadline": "2026-09-03",
       "latest_eligibility_fields": {
         "TargetGroup": [
-          "소상공인",
           "중소기업"
         ],
-        "Region": [
-          "경남"
+        "BusinessStage": [
+          "창업기업"
+        ],
+        "Industry": [
+          "AI",
+          "바이오"
         ]
       },
       "latest_selection_result_date": "",
@@ -530,7 +535,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 2,
+      "article_count": 3,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -556,7 +561,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 4,
+      "article_count": 5,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -582,7 +587,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 3,
+      "article_count": 4,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -736,31 +741,6 @@
   "events": [
     {
       "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "수해 피해 가계·중소기업을 위한 금융지원방안",
-      "url": "https://www.fsc.go.kr/no010101/87566",
-      "event_at": "2026-08-25T04:40:05.426877+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인",
-          "중소기업"
-        ],
-        "Region": [
-          "경남"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "수해 피해 가계·중소기업을 위한 금융지원방안",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-08-25:수해-피해-가계-중소기업을-위한-금융지원방안",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87566",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
       "event_model": "application_deadline",
       "title": "기술의 시간에 금융을 맞추는 새로운 시도, 초장기기술투자펀드가 개시됩니다.",
       "url": "https://www.fsc.go.kr/no010101/87569",
@@ -792,7 +772,7 @@
       "event_model": "eligibility_rule",
       "title": "기술의 시간에 금융을 맞추는 새로운 시도, 초장기기술투자펀드가 개시됩니다.",
       "url": "https://www.fsc.go.kr/no010101/87569",
-      "event_at": "2026-08-25T04:40:03.109286+00:00",
+      "event_at": "2026-08-26T04:40:57.875744+00:00",
       "application_deadline": "2026-09-03",
       "application_start_date": "2026-08-20",
       "eligibility_fields": {
@@ -811,50 +791,29 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "기술의 시간에 금융을 맞추는 새로운 시도, 초장기기술투자펀드가 개시됩니다.",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-08-25:기술의-시간에-금융을-맞추는-새로운-시도-초장기기술투자펀드가-개시됩니다",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-08-26:기술의-시간에-금융을-맞추는-새로운-시도-초장기기술투자펀드가-개시됩니다",
       "evidence_url": "https://www.fsc.go.kr/no010101/87569",
       "evidence_url_present": true
     },
     {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "「쪽방주민 주거상향 지원사업」  입주대상자 선정결과 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464522",
-      "event_at": "2026-09-07T00:00:00+00:00",
-      "application_deadline": "2026-09-07",
-      "application_start_date": "2026-08-24",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "쪽방주민 주거상향 지원사업",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-09-07:쪽방주민-주거상향-지원사업",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464522",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
+      "source": "금융위원회",
       "event_model": "eligibility_rule",
-      "title": "「쪽방주민 주거상향 지원사업」  입주대상자 선정결과 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464522",
-      "event_at": "2026-08-25T04:39:41.627228+00:00",
-      "application_deadline": "2026-09-07",
-      "application_start_date": "2026-08-24",
+      "title": "보험사기 가담자의 보험모집시장 진입을 차단하여 보험계약자 보호를 강화하고, 보험산업 신뢰를 제고하겠습니다.  - ｢보험업법｣ 개정안 국회 본회의 통과(‘26.8.20)",
+      "url": "https://www.fsc.go.kr/no010101/87572",
+      "event_at": "2026-08-26T04:40:54.711209+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
       "eligibility_fields": {
-        "Region": [
-          "서울"
+        "Industry": [
+          "AI"
         ]
       },
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "쪽방주민 주거상향 지원사업",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-08-25:쪽방주민-주거상향-지원사업",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464522",
+      "program_title": "보험사기 가담자의 보험모집시장 진입을 차단하여 보험계약자 보호를 강화하고, 보험산업 신뢰를 제고하겠습니다.  - ｢보험업법｣ 개정안 국회 본회의 통과(‘26.8.20)",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-08-26:보험사기-가담자의-보험모집시장-진입을-차단하여-보험계약자-보호를-강화하고-보험산업-신뢰를-제고하겠습니다-보험업법-개정안-국회-본회의-통과-26-8-20",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87572",
       "evidence_url_present": true
     },
     {
@@ -862,10 +821,32 @@
       "event_model": "selection_result",
       "title": "「쪽방주민 주거상향 지원사업」  입주대상자 선정결과 공고",
       "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464522",
-      "event_at": "2026-08-25T04:39:41.627228+00:00",
-      "application_deadline": "2026-09-07",
-      "application_start_date": "2026-08-24",
+      "event_at": "2026-08-26T04:40:45.166359+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "쪽방주민 주거상향 지원사업",
+      "program_key": "selection-result:kr:서울시-지원사업:쪽방주민-주거상향-지원사업",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464522",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "「서울바비큐페스티벌 연계 관광상품화 특별 지원」 시행 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464621",
+      "event_at": "2026-11-13T00:00:00+00:00",
+      "application_deadline": "2026-11-13",
+      "application_start_date": "2026-08-26",
       "eligibility_fields": {
+        "Industry": [
+          "관광",
+          "콘텐츠",
+          "AI"
+        ],
         "Region": [
           "서울"
         ]
@@ -873,9 +854,105 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "쪽방주민 주거상향 지원사업",
-      "program_key": "selection-result:kr:서울시-지원사업:쪽방주민-주거상향-지원사업",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464522",
+      "program_title": "「서울바비큐페스티벌 연계 관광상품화 특별 지원」 시행 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-11-13:서울바비큐페스티벌-연계-관광상품화-특별-지원-시행-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464621",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "「서울바비큐페스티벌 연계 관광상품화 특별 지원」 시행 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464621",
+      "event_at": "2026-08-26T04:40:41.015771+00:00",
+      "application_deadline": "2026-11-13",
+      "application_start_date": "2026-08-26",
+      "eligibility_fields": {
+        "Industry": [
+          "관광",
+          "콘텐츠",
+          "AI"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "「서울바비큐페스티벌 연계 관광상품화 특별 지원」 시행 공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-08-26:서울바비큐페스티벌-연계-관광상품화-특별-지원-시행-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464621",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "반도체·AI 생태계에 1조원 공급…우리은행, 기술보증기금과 ‘K-SPARK’ 맞손",
+      "url": "https://www.donga.com/news/Economy/article/all/20260826/134546425/1",
+      "event_at": "2026-08-25T17:18:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "BusinessStage": [
+          "벤처기업"
+        ],
+        "Industry": [
+          "AI"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "반도체·AI 생태계에 1조원 공급…우리은행, 기술보증기금과 ‘K-SPARK’ 맞손",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-25:반도체-ai-생태계에-1조원-공급-우리은행-기술보증기금과-k-spark-맞손",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260826/134546425/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "수해 피해 가계·중소기업을 위한 금융지원방안",
+      "url": "https://www.fsc.go.kr/no010101/87566",
+      "event_at": "2026-08-25T04:40:05.426877+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업"
+        ],
+        "Region": [
+          "경남"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "수해 피해 가계·중소기업을 위한 금융지원방안",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-08-25:수해-피해-가계-중소기업을-위한-금융지원방안",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87566",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "시장서 외면받는 '소상공인 재기지원 정책대출'",
+      "url": "https://www.mk.co.kr/news/economy/12135969",
+      "event_at": "2026-08-24T23:24:34+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "시장서 외면받는 '소상공인 재기지원 정책대출'",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-24:시장서-외면받는-소상공인-재기지원-정책대출",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12135969",
       "evidence_url_present": true
     },
     {
@@ -1265,6 +1342,7 @@
   "errors": [
     "정책브리핑: Source disabled (crawl health threshold reached)",
     "농림축산식품부: Source disabled (crawl health threshold reached)",
+    "[서울경제 경제] Request failed: 403 Client Error: Forbidden for url: https://www.sedaily.com/RSS/Economy/",
     "SBS 뉴스 정치: Source disabled (crawl health threshold reached)",
     "소상공인시장진흥공단: Source disabled (crawl health threshold reached)",
     "행정안전부: Source disabled (crawl health threshold reached)",
