@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-08-26T04:41:04.134664+00:00",
+  "generated_at": "2026-08-27T15:03:02.563907+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -12,12 +12,12 @@
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 5,
+    "application_deadline_events": 3,
     "eligibility_rule_events": 17,
     "selection_result_events": 1,
-    "unique_program_key_count": 23,
-    "events_with_evidence_url": 23,
-    "collection_error_count": 11,
+    "unique_program_key_count": 21,
+    "events_with_evidence_url": 21,
+    "collection_error_count": 12,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -138,7 +138,7 @@
       "freshness_sla_days": 1,
       "status": "fresh",
       "article_count": 4,
-      "event_count": 3,
+      "event_count": 2,
       "latest_event_at": "2026-11-13T00:00:00+00:00",
       "age_days": 0.0,
       "latest_title": "「서울바비큐페스티벌 연계 관광상품화 특별 지원」 시행 공고",
@@ -228,10 +228,10 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
       "status": "fresh",
-      "article_count": 9,
-      "event_count": 6,
+      "article_count": 6,
+      "event_count": 3,
       "latest_event_at": "2026-08-26T04:40:57.875744+00:00",
-      "age_days": 0.0,
+      "age_days": 1.43,
       "latest_title": "기술의 시간에 금융을 맞추는 새로운 시도, 초장기기술투자펀드가 개시됩니다.",
       "latest_url": "https://www.fsc.go.kr/no010101/87569",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87569",
@@ -255,7 +255,9 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": []
+      "errors": [
+        "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n"
+      ]
     },
     {
       "source": "농림축산식품부",
@@ -431,7 +433,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 0,
+      "article_count": 1,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -587,7 +589,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 4,
+      "article_count": 6,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -740,6 +742,91 @@
   ],
   "events": [
     {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "2026년 서울시 소규모주택정비사업 초기사업비 융자금 지원계획 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464649",
+      "event_at": "2026-08-27T15:02:02.598574+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 서울시 소규모주택정비사업 초기사업비 융자금 지원계획 공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-08-27:2026년-서울시-소규모주택정비사업-초기사업비-융자금-지원계획-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464649",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "다 오르고 월급만 안 올라서…실질 근로소득 ‘-2.1%’ 두 분기 연속 감소",
+      "url": "https://www.khan.co.kr/article/202608272104005",
+      "event_at": "2026-08-27T03:04:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "다 오르고 월급만 안 올라서…실질 근로소득 ‘-2.1%’ 두 분기 연속 감소",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-27:다-오르고-월급만-안-올라서-실질-근로소득-2-1-두-분기-연속-감소",
+      "evidence_url": "https://www.khan.co.kr/article/202608272104005",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "농촌마을 주택·음식점 조성 절차 간소화",
+      "url": "https://www.khan.co.kr/article/202608272017015",
+      "event_at": "2026-08-27T02:17:01+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "농업",
+          "축산"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "농촌마을 주택·음식점 조성 절차 간소화",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-27:농촌마을-주택-음식점-조성-절차-간소화",
+      "evidence_url": "https://www.khan.co.kr/article/202608272017015",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "신용점수 부족하면 카페·블로그 활동도 살핀다…달라지는 대출심사",
+      "url": "https://www.mk.co.kr/news/economy/12137861",
+      "event_at": "2026-08-26T22:23:07+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "신용점수 부족하면 카페·블로그 활동도 살핀다…달라지는 대출심사",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-26:신용점수-부족하면-카페-블로그-활동도-살핀다-달라지는-대출심사",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12137861",
+      "evidence_url_present": true
+    },
+    {
       "source": "금융위원회",
       "event_model": "application_deadline",
       "title": "기술의 시간에 금융을 맞추는 새로운 시도, 초장기기술투자펀드가 개시됩니다.",
@@ -883,6 +970,27 @@
       "program_title": "「서울바비큐페스티벌 연계 관광상품화 특별 지원」 시행 공고",
       "program_key": "eligibility-rule:kr:서울시-지원사업:2026-08-26:서울바비큐페스티벌-연계-관광상품화-특별-지원-시행-공고",
       "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464621",
+      "evidence_url_present": true
+    },
+    {
+      "source": "TechCrunch Startups",
+      "event_model": "eligibility_rule",
+      "title": "Hearing tech startup Legato emerges from stealth with $12M and a peek at its AI hearing glasses",
+      "url": "https://techcrunch.com/2026/08/26/hearing-tech-startup-legato-emerges-from-stealth-with-12m-and-a-peek-at-its-ai-hearing-glasses",
+      "event_at": "2026-08-26T03:00:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "Hearing tech startup Legato emerges from stealth with $12M and a peek at its AI hearing glasses",
+      "program_key": "eligibility-rule:us:techcrunch-startups:2026-08-26:hearing-tech-startup-legato-emerges-from-stealth-with-12m-and-a-peek-at-its-ai-hearing-glasses",
+      "evidence_url": "https://techcrunch.com/2026/08/26/hearing-tech-startup-legato-emerges-from-stealth-with-12m-and-a-peek-at-its-ai-hearing-glasses",
       "evidence_url_present": true
     },
     {
@@ -1114,164 +1222,6 @@
       "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-20:이유씨엔씨-서울시-차열페인트-쿨루프-사업-참여-기후위기-대응-나선다",
       "evidence_url": "https://www.donga.com/news/Economy/article/all/20260821/134518035/1",
       "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "가상자산사업자 신고제 강화에 맞춰 신고매뉴얼을 전면 개정합니다. - FIU·금감원, 개정 신고매뉴얼에 대한 「찾아가는 설명회」 개최",
-      "url": "https://www.fsc.go.kr/no010101/87521",
-      "event_at": "2026-08-20T04:38:30.261276+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "가상자산사업자 신고제 강화에 맞춰 신고매뉴얼을 전면 개정합니다. - FIU·금감원, 개정 신고매뉴얼에 대한 「찾아가는 설명회」 개최",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-08-20:가상자산사업자-신고제-강화에-맞춰-신고매뉴얼을-전면-개정합니다-fiu-금감원-개정-신고매뉴얼에-대한-찾아가는-설명회-개최",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87521",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "“함께하는 금융, 청년의 미래를 그리다” 「2026 금융권 공동채용 박람회」 개최 - 8월 19일(수)~20일(목) 10:00~17:00, 서울 DDP에서 개최",
-      "url": "https://www.fsc.go.kr/no010101/87554",
-      "event_at": "2026-08-20T04:38:26.649424+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ],
-        "Industry": [
-          "AI"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“함께하는 금융, 청년의 미래를 그리다” 「2026 금융권 공동채용 박람회」 개최 - 8월 19일(수)~20일(목) 10:00~17:00, 서울 DDP에서 개최",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-08-20:함께하는-금융-청년의-미래를-그리다-2026-금융권-공동채용-박람회-개최-8월-19일-수-20일-목-10-00-17-00-서울-ddp에서-개최",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87554",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "금융·통신·수사 협업으로  보이스피싱 피해 신고 전에 막는다!  - 제2차 보이스피싱 근절 협의회 개최. 금일 등록된 게시글",
-      "url": "https://www.fsc.go.kr/no010101/87565",
-      "event_at": "2026-08-20T04:38:23.450076+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "AI"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "금융·통신·수사 협업으로  보이스피싱 피해 신고 전에 막는다!  - 제2차 보이스피싱 근절 협의회 개최. 금일 등록된 게시글",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-08-20:금융-통신-수사-협업으로-보이스피싱-피해-신고-전에-막는다-제2차-보이스피싱-근절-협의회-개최-금일-등록된-게시글",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87565",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "2026년 서울커리업 바로채용 참여기업 모집 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464140",
-      "event_at": "2026-10-08T00:00:00+00:00",
-      "application_deadline": "2026-10-08",
-      "application_start_date": "2026-08-19",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "중소기업"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 서울커리업 바로채용 참여기업 모집 공고",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-10-08:2026년-서울커리업-바로채용-참여기업-모집-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464140",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "eligibility_rule",
-      "title": "2026년 서울커리업 바로채용 참여기업 모집 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464140",
-      "event_at": "2026-08-19T04:40:09.527845+00:00",
-      "application_deadline": "2026-10-08",
-      "application_start_date": "2026-08-19",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "중소기업"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 서울커리업 바로채용 참여기업 모집 공고",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-08-19:2026년-서울커리업-바로채용-참여기업-모집-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464140",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "application_deadline",
-      "title": "국힘 “뉴홈 사전청약 땐 금리1.9%”…김윤덕 “원안대로 하면 복잡해져”",
-      "url": "https://www.donga.com/news/Politics/article/all/20260819/134502503/1",
-      "event_at": "2026-01-09T00:00:00+00:00",
-      "application_deadline": "2026-01-09",
-      "application_start_date": "2026-08-19",
-      "eligibility_fields": {},
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "국힘 “뉴홈 사전청약 땐 금리1.9%”…김윤덕 “원안대로 하면 복잡해져”",
-      "program_key": "application-deadline:kr:동아일보-경제:2026-01-09:국힘-뉴홈-사전청약-땐-금리1-9-김윤덕-원안대로-하면-복잡해져",
-      "evidence_url": "https://www.donga.com/news/Politics/article/all/20260819/134502503/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "“지역과 상생”…새마을금고, 소상공인·소기업에 저금리 대출 확대",
-      "url": "https://www.mk.co.kr/news/economy/12130317",
-      "event_at": "2026-08-17T22:31:30+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“지역과 상생”…새마을금고, 소상공인·소기업에 저금리 대출 확대",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-17:지역과-상생-새마을금고-소상공인-소기업에-저금리-대출-확대",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12130317",
-      "evidence_url_present": true
     }
   ],
   "event_model_coverage": [
@@ -1342,14 +1292,15 @@
   "errors": [
     "정책브리핑: Source disabled (crawl health threshold reached)",
     "농림축산식품부: Source disabled (crawl health threshold reached)",
-    "[서울경제 경제] Request failed: 403 Client Error: Forbidden for url: https://www.sedaily.com/RSS/Economy/",
     "SBS 뉴스 정치: Source disabled (crawl health threshold reached)",
     "소상공인시장진흥공단: Source disabled (crawl health threshold reached)",
     "행정안전부: Source disabled (crawl health threshold reached)",
     "보건복지부: Source disabled (crawl health threshold reached)",
+    "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n",
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
     "r/startups: Source disabled (crawl health threshold reached)",
-    "r/Entrepreneur: Source disabled (crawl health threshold reached)"
+    "r/Entrepreneur: Source disabled (crawl health threshold reached)",
+    "https://www.sedaily.com/article/20083843: summary is missing or not a string"
   ]
 }
