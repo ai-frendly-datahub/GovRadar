@@ -1,49 +1,49 @@
 {
   "date": "2026-08-29",
   "category": "govsupport",
-  "article_count": 37,
+  "article_count": 39,
   "source_count": 6,
-  "matched_count": 37,
+  "matched_count": 39,
   "top_entities": [
     {
       "name": "GovGeneral",
-      "count": 457
-    },
-    {
-      "name": "ApplicationInfo",
-      "count": 96
+      "count": 483
     },
     {
       "name": "SupportType",
-      "count": 93
+      "count": 100
+    },
+    {
+      "name": "ApplicationInfo",
+      "count": 98
     },
     {
       "name": "TargetGroup",
-      "count": 82
+      "count": 93
     },
     {
       "name": "SourceSignal",
       "count": 51
     },
     {
+      "name": "OperationalEvent",
+      "count": 38
+    },
+    {
       "name": "Region",
       "count": 36
     },
     {
-      "name": "OperationalEvent",
-      "count": 36
+      "name": "EligibilityTargetGroup",
+      "count": 24
     },
     {
       "name": "Ministry",
-      "count": 21
-    },
-    {
-      "name": "EligibilityTargetGroup",
-      "count": 21
+      "count": 22
     },
     {
       "name": "EligibilityIndustry",
-      "count": 20
+      "count": 21
     },
     {
       "name": "EligibilityRegion",
@@ -63,7 +63,7 @@
     },
     {
       "name": "EligibilityBusinessStage",
-      "count": 3
+      "count": 4
     },
     {
       "name": "SelectionProgramTitle",
@@ -73,12 +73,12 @@
   "sources": {
     "금융위원회": 11,
     "서울시 지원사업": 6,
-    "동아일보 경제": 6,
+    "동아일보 경제": 8,
     "매일경제 경제정책": 4,
     "경향신문 경제": 9,
     "TechCrunch Startups": 1
   },
-  "generated_at": "2026-08-29T00:58:05.170084+09:00",
+  "generated_at": "2026-08-29T19:53:28.038555+09:00",
   "ontology": {
     "repo": "GovRadar",
     "category": "govsupport",
