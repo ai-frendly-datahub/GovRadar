@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-08-29T10:53:29.006472+00:00",
+  "generated_at": "2026-08-30T09:49:35.395783+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -12,12 +12,12 @@
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 6,
-    "eligibility_rule_events": 30,
+    "application_deadline_events": 8,
+    "eligibility_rule_events": 34,
     "selection_result_events": 2,
-    "unique_program_key_count": 38,
-    "events_with_evidence_url": 38,
-    "collection_error_count": 10,
+    "unique_program_key_count": 44,
+    "events_with_evidence_url": 44,
+    "collection_error_count": 11,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -231,7 +231,7 @@
       "article_count": 11,
       "event_count": 7,
       "latest_event_at": "2026-08-29T10:53:21.708554+00:00",
-      "age_days": 0.0,
+      "age_days": 0.96,
       "latest_title": "FIU, 자금세탁방지 유관기관 협의회 개최 - 16개 유관기관과 국가위험평가 결과를 공유하고, 자금세탁 위협에 대한 금융권의 대응역량 강화방안을 논의",
       "latest_url": "https://www.fsc.go.kr/no010101/87604",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87604",
@@ -251,7 +251,9 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": []
+      "errors": [
+        "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n"
+      ]
     },
     {
       "source": "농림축산식품부",
@@ -531,7 +533,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 4,
+      "article_count": 6,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -557,7 +559,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 8,
+      "article_count": 11,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -736,6 +738,241 @@
   ],
   "events": [
     {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "2026년 서울시 청년 마음건강 지원사업 4차 참여자 모집 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464740",
+      "event_at": "2026-08-30T09:48:37.284059+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 서울시 청년 마음건강 지원사업 4차 참여자 모집 공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-08-30:2026년-서울시-청년-마음건강-지원사업-4차-참여자-모집-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464740",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "「2026년 민간축제 지원 및 육성」 제3차 보조사업자 선정 결과",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464819",
+      "event_at": "2026-08-28T00:00:00+00:00",
+      "application_deadline": "2026-08-28",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "제3차 보조사업",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-08-28:제3차-보조사업",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464819",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "「2026년 민간축제 지원 및 육성」 제3차 보조사업자 선정 결과",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464819",
+      "event_at": "2026-08-30T09:48:36.211912+00:00",
+      "application_deadline": "2026-08-28",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "제3차 보조사업",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-08-30:제3차-보조사업",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464819",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "selection_result",
+      "title": "「2026년 민간축제 지원 및 육성」 제3차 보조사업자 선정 결과",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464819",
+      "event_at": "2026-08-30T09:48:36.211912+00:00",
+      "application_deadline": "2026-08-28",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "제3차 보조사업",
+      "program_key": "selection-result:kr:서울시-지원사업:제3차-보조사업",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464819",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "정부 총량규제에 막힌 지자체 청년대출",
+      "url": "https://www.mk.co.kr/news/economy/12139898",
+      "event_at": "2026-08-29T23:38:51+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년",
+          "신혼부부"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "정부 총량규제에 막힌 지자체 청년대출",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-29:정부-총량규제에-막힌-지자체-청년대출",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12139898",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "기업 대출 연체 증가세…기준금리 3% 시대에 중소기업 부담 더 커질 듯",
+      "url": "https://www.khan.co.kr/article/202608301607001",
+      "event_at": "2026-08-29T22:07:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "기업 대출 연체 증가세…기준금리 3% 시대에 중소기업 부담 더 커질 듯",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-29:기업-대출-연체-증가세-기준금리-3-시대에-중소기업-부담-더-커질-듯",
+      "evidence_url": "https://www.khan.co.kr/article/202608301607001",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "application_deadline",
+      "title": "삼성전자, 무주택 임직원에 9월부터 주택대출…최대 5억·금리 1.5%",
+      "url": "https://www.donga.com/news/Economy/article/all/20260830/134569390/1",
+      "event_at": "2026-05-27T00:00:00+00:00",
+      "application_deadline": "2026-05-27",
+      "application_start_date": "2026-08-30",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "삼성전자, 무주택 임직원에 9월부터 주택대출…최대 5억·금리 1.5%",
+      "program_key": "application-deadline:kr:동아일보-경제:2026-05-27:삼성전자-무주택-임직원에-9월부터-주택대출-최대-5억-금리-1-5",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260830/134569390/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "버스환승센터 2030년까지 65곳 구축…지방 15곳→30곳",
+      "url": "https://www.donga.com/news/Economy/article/all/20260830/134569090/1",
+      "event_at": "2026-08-29T17:08:03+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울",
+          "인천"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "버스환승센터 2030년까지 65곳 구축…지방 15곳→30곳",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-29:버스환승센터-2030년까지-65곳-구축-지방-15곳-30곳",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260830/134569090/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "“이자 감당 안되는데 110만원 더 내라뇨”…눈물 쏟는 자영업자, 연체는 ‘불보듯’",
+      "url": "https://www.mk.co.kr/news/economy/12139617",
+      "event_at": "2026-08-29T14:12:47+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "자영업자"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“이자 감당 안되는데 110만원 더 내라뇨”…눈물 쏟는 자영업자, 연체는 ‘불보듯’",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-29:이자-감당-안되는데-110만원-더-내라뇨-눈물-쏟는-자영업자-연체는-불보듯",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12139617",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "application_deadline",
+      "title": "“고유가 지원금, 내일까지 꼭 쓰세요”…잔액 자동 소멸",
+      "url": "https://www.donga.com/news/Economy/article/all/20260830/134568413/1",
+      "event_at": "2026-04-27T00:00:00+00:00",
+      "application_deadline": "2026-04-27",
+      "application_start_date": "2026-08-30",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“고유가 지원금, 내일까지 꼭 쓰세요”…잔액 자동 소멸",
+      "program_key": "application-deadline:kr:동아일보-경제:2026-04-27:고유가-지원금-내일까지-꼭-쓰세요-잔액-자동-소멸",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260830/134568413/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "“고유가 지원금, 내일까지 꼭 쓰세요”…잔액 자동 소멸",
+      "url": "https://www.donga.com/news/Economy/article/all/20260830/134568413/1",
+      "event_at": "2026-08-29T13:56:59+00:00",
+      "application_deadline": "2026-04-27",
+      "application_start_date": "2026-08-30",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“고유가 지원금, 내일까지 꼭 쓰세요”…잔액 자동 소멸",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-29:고유가-지원금-내일까지-꼭-쓰세요-잔액-자동-소멸",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260830/134568413/1",
+      "evidence_url_present": true
+    },
+    {
       "source": "금융위원회",
       "event_model": "eligibility_rule",
       "title": "FIU, 자금세탁방지 유관기관 협의회 개최 - 16개 유관기관과 국가위험평가 결과를 공유하고, 자금세탁 위협에 대한 금융권의 대응역량 강화방안을 논의",
@@ -896,93 +1133,6 @@
       "program_title": "청년의 잠재력에 국가가 투자합니다!  청년 예산 언박싱(UNBOXING) 2027, ｢청년 성장단계별 종합투자 추진전략｣ 발표",
       "program_key": "eligibility-rule:kr:금융위원회:2026-08-29:청년의-잠재력에-국가가-투자합니다-청년-예산-언박싱-unboxing-2027-청년-성장단계별-종합투자-추진전략-발표",
       "evidence_url": "https://www.fsc.go.kr/no010101/87614",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "eligibility_rule",
-      "title": "2026년 서울시 청년 마음건강 지원사업 4차 참여자 모집 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464740",
-      "event_at": "2026-08-29T10:53:06.551453+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 서울시 청년 마음건강 지원사업 4차 참여자 모집 공고",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-08-29:2026년-서울시-청년-마음건강-지원사업-4차-참여자-모집-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464740",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "「2026년 민간축제 지원 및 육성」 제3차 보조사업자 선정 결과",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464819",
-      "event_at": "2026-08-28T00:00:00+00:00",
-      "application_deadline": "2026-08-28",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "제3차 보조사업",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-08-28:제3차-보조사업",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464819",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "eligibility_rule",
-      "title": "「2026년 민간축제 지원 및 육성」 제3차 보조사업자 선정 결과",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464819",
-      "event_at": "2026-08-29T10:53:05.391026+00:00",
-      "application_deadline": "2026-08-28",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "제3차 보조사업",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-08-29:제3차-보조사업",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464819",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "selection_result",
-      "title": "「2026년 민간축제 지원 및 육성」 제3차 보조사업자 선정 결과",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464819",
-      "event_at": "2026-08-29T10:53:05.391026+00:00",
-      "application_deadline": "2026-08-28",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "제3차 보조사업",
-      "program_key": "selection-result:kr:서울시-지원사업:제3차-보조사업",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464819",
       "evidence_url_present": true
     },
     {
@@ -1614,27 +1764,6 @@
       "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-23:보증보험-못-드는-사회주택-과태료에-제동",
       "evidence_url": "https://www.khan.co.kr/article/202608232054025",
       "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "“철강 고용 충격 막는다” 충남도, 당진 ‘고용위기 선제대응지역’ 지원 강화",
-      "url": "https://www.khan.co.kr/article/202608230953001",
-      "event_at": "2026-08-22T15:53:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "충남"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“철강 고용 충격 막는다” 충남도, 당진 ‘고용위기 선제대응지역’ 지원 강화",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-22:철강-고용-충격-막는다-충남도-당진-고용위기-선제대응지역-지원-강화",
-      "evidence_url": "https://www.khan.co.kr/article/202608230953001",
-      "evidence_url_present": true
     }
   ],
   "event_model_coverage": [
@@ -1709,6 +1838,7 @@
     "소상공인시장진흥공단: Source disabled (crawl health threshold reached)",
     "행정안전부: Source disabled (crawl health threshold reached)",
     "보건복지부: Source disabled (crawl health threshold reached)",
+    "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n",
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
     "r/startups: Source disabled (crawl health threshold reached)",
