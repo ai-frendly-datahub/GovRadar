@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-08-30T09:49:35.395783+00:00",
+  "generated_at": "2026-08-31T10:39:36.381557+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -12,12 +12,12 @@
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 8,
-    "eligibility_rule_events": 34,
+    "application_deadline_events": 7,
+    "eligibility_rule_events": 32,
     "selection_result_events": 2,
-    "unique_program_key_count": 44,
-    "events_with_evidence_url": 44,
-    "collection_error_count": 11,
+    "unique_program_key_count": 41,
+    "events_with_evidence_url": 41,
+    "collection_error_count": 12,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -137,8 +137,8 @@
       "event_model": "application_deadline",
       "freshness_sla_days": 1,
       "status": "fresh",
-      "article_count": 6,
-      "event_count": 3,
+      "article_count": 5,
+      "event_count": 2,
       "latest_event_at": "2026-11-13T00:00:00+00:00",
       "age_days": 0.0,
       "latest_title": "「서울바비큐페스티벌 연계 관광상품화 특별 지원」 시행 공고",
@@ -162,7 +162,9 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": []
+      "errors": [
+        "서울시 지원사업: Failed to collect browser content from 서울시 지원사업: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.seoul.go.kr/news/news_notice.do\", waiting until \"domcontentloaded\"\n"
+      ]
     },
     {
       "source": "행정안전부",
@@ -231,7 +233,7 @@
       "article_count": 11,
       "event_count": 7,
       "latest_event_at": "2026-08-29T10:53:21.708554+00:00",
-      "age_days": 0.96,
+      "age_days": 1.99,
       "latest_title": "FIU, 자금세탁방지 유관기관 협의회 개최 - 16개 유관기관과 국가위험평가 결과를 공유하고, 자금세탁 위협에 대한 금융권의 대응역량 강화방안을 논의",
       "latest_url": "https://www.fsc.go.kr/no010101/87604",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87604",
@@ -533,7 +535,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 6,
+      "article_count": 5,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -585,7 +587,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 9,
+      "article_count": 8,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -1675,54 +1677,6 @@
       "evidence_url_present": true
     },
     {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "서울자립지원전담기관 계약직 직원 채용 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464373",
-      "event_at": "2026-09-11T00:00:00+00:00",
-      "application_deadline": "2026-09-11",
-      "application_start_date": "2026-08-21",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "서울자립지원전담기관 계약직 직원 채용 공고",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-09-11:서울자립지원전담기관-계약직-직원-채용-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464373",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "eligibility_rule",
-      "title": "서울자립지원전담기관 계약직 직원 채용 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464373",
-      "event_at": "2026-08-24T04:45:37.334697+00:00",
-      "application_deadline": "2026-09-11",
-      "application_start_date": "2026-08-21",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "서울자립지원전담기관 계약직 직원 채용 공고",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-08-24:서울자립지원전담기관-계약직-직원-채용-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464373",
-      "evidence_url_present": true
-    },
-    {
       "source": "경향신문 경제",
       "event_model": "eligibility_rule",
       "title": "정부, 부동산 민심 악화에 ‘주거복지 로드맵’ 카드…국토부 차관 “목숨 걸고 전월세 시장 안정에 총력”",
@@ -1742,27 +1696,6 @@
       "program_title": "정부, 부동산 민심 악화에 ‘주거복지 로드맵’ 카드…국토부 차관 “목숨 걸고 전월세 시장 안정에 총력”",
       "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-24:정부-부동산-민심-악화에-주거복지-로드맵-카드-국토부-차관-목숨-걸고-전월세-시장-안정에-총력",
       "evidence_url": "https://www.khan.co.kr/article/202608242108005",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "보증보험 못 드는 사회주택 과태료에 ‘제동’",
-      "url": "https://www.khan.co.kr/article/202608232054025",
-      "event_at": "2026-08-23T02:54:02+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "보증보험 못 드는 사회주택 과태료에 ‘제동’",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-23:보증보험-못-드는-사회주택-과태료에-제동",
-      "evidence_url": "https://www.khan.co.kr/article/202608232054025",
       "evidence_url_present": true
     }
   ],
@@ -1836,6 +1769,7 @@
     "농림축산식품부: Source disabled (crawl health threshold reached)",
     "SBS 뉴스 정치: Source disabled (crawl health threshold reached)",
     "소상공인시장진흥공단: Source disabled (crawl health threshold reached)",
+    "서울시 지원사업: Failed to collect browser content from 서울시 지원사업: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.seoul.go.kr/news/news_notice.do\", waiting until \"domcontentloaded\"\n",
     "행정안전부: Source disabled (crawl health threshold reached)",
     "보건복지부: Source disabled (crawl health threshold reached)",
     "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n",
