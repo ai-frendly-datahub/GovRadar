@@ -1,0 +1,126 @@
+{
+  "date": "2026-09-04",
+  "category": "govsupport",
+  "article_count": 39,
+  "source_count": 6,
+  "matched_count": 39,
+  "top_entities": [
+    {
+      "name": "GovGeneral",
+      "count": 440
+    },
+    {
+      "name": "TargetGroup",
+      "count": 113
+    },
+    {
+      "name": "SupportType",
+      "count": 91
+    },
+    {
+      "name": "ApplicationInfo",
+      "count": 61
+    },
+    {
+      "name": "EligibilityTargetGroup",
+      "count": 46
+    },
+    {
+      "name": "Region",
+      "count": 44
+    },
+    {
+      "name": "OperationalEvent",
+      "count": 42
+    },
+    {
+      "name": "SourceSignal",
+      "count": 39
+    },
+    {
+      "name": "EligibilityRegion",
+      "count": 28
+    },
+    {
+      "name": "Ministry",
+      "count": 28
+    },
+    {
+      "name": "EligibilityIndustry",
+      "count": 15
+    },
+    {
+      "name": "McpKoreaEcosystem",
+      "count": 9
+    },
+    {
+      "name": "ApplicationDeadline",
+      "count": 6
+    },
+    {
+      "name": "ApplicationStartDate",
+      "count": 5
+    },
+    {
+      "name": "EligibilityBusinessStage",
+      "count": 2
+    },
+    {
+      "name": "SelectionProgramTitle",
+      "count": 1
+    }
+  ],
+  "sources": {
+    "동아일보 경제": 11,
+    "매일경제 경제정책": 8,
+    "금융위원회": 11,
+    "경향신문 경제": 6,
+    "서울시 지원사업": 2,
+    "TechCrunch Startups": 1
+  },
+  "generated_at": "2026-09-04T17:33:49.032872+09:00",
+  "ontology": {
+    "repo": "GovRadar",
+    "category": "govsupport",
+    "ontology_version": "0.1.0",
+    "event_model_ids": [
+      "govsupport.application_deadline",
+      "govsupport.eligibility_rule",
+      "govsupport.public_data_api",
+      "govsupport.selection_result",
+      "govsupport.support_program_notice"
+    ],
+    "event_model_mappings": {
+      "support_program_notice": "govsupport.support_program_notice",
+      "application_deadline": "govsupport.application_deadline",
+      "eligibility_rule": "govsupport.eligibility_rule",
+      "selection_result": "govsupport.selection_result",
+      "public_data_api": "govsupport.public_data_api"
+    },
+    "entity_type_hints": [
+      "SupportType",
+      "TargetGroup",
+      "Ministry",
+      "Region",
+      "ApplicationInfo",
+      "McpKoreaEcosystem"
+    ],
+    "source_role_ids": [
+      "govsupport.source_role.community_curation",
+      "govsupport.source_role.government",
+      "govsupport.source_role.local_government",
+      "govsupport.source_role.public_agency"
+    ],
+    "source_role_mappings": {
+      "government": "govsupport.source_role.government",
+      "public-agency": "govsupport.source_role.public_agency",
+      "local-government": "govsupport.source_role.local_government",
+      "community-curation": "govsupport.source_role.community_curation"
+    },
+    "evidence_policy_ids": [
+      "govsupport.evidence.primary_notice",
+      "govsupport.evidence.deadline_trace",
+      "govsupport.evidence.eligibility_trace"
+    ]
+  }
+}
