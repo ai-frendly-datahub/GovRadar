@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-09-04T08:33:49.709377+00:00",
+  "generated_at": "2026-09-05T08:09:02.563877+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -140,7 +140,7 @@
       "article_count": 2,
       "event_count": 1,
       "latest_event_at": "2026-08-28T00:00:00+00:00",
-      "age_days": 7.36,
+      "age_days": 8.34,
       "latest_title": "「2026년 민간축제 지원 및 육성」 제3차 보조사업자 선정 결과",
       "latest_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464819",
       "latest_evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=464819",
@@ -225,20 +225,19 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
       "status": "fresh",
-      "article_count": 11,
-      "event_count": 10,
-      "latest_event_at": "2026-09-03T08:38:31.460041+00:00",
-      "age_days": 1.0,
-      "latest_title": "보험업권이 7개 지방자치단체와 함께지역 소상공인·취약계층을 위한 무료 상생보험 상품을 9월 출시합니다.",
-      "latest_url": "https://www.fsc.go.kr/no010101/87625",
-      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87625",
-      "latest_program_title": "보험업권이 7개 지방자치단체와 함께지역 소상공인·취약계층을 위한 무료 상생보험 상품을 9월 출시합니다.",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-09-03:보험업권이-7개-지방자치단체와-함께지역-소상공인-취약계층을-위한-무료-상생보험-상품을-9월-출시합니다",
+      "article_count": 12,
+      "event_count": 11,
+      "latest_event_at": "2026-09-05T08:08:58.574953+00:00",
+      "age_days": 0.0,
+      "latest_title": "소상공인의 금융접근성이 높아집니다.   - 이제 미래 성장성이 높은 소상공인은 은행에서 더 많은 대출을 받으실 수 있게 됩니다.",
+      "latest_url": "https://www.fsc.go.kr/no010101/87633",
+      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87633",
+      "latest_program_title": "소상공인의 금융접근성이 높아집니다.   - 이제 미래 성장성이 높은 소상공인은 은행에서 더 많은 대출을 받으실 수 있게 됩니다.",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-09-05:소상공인의-금융접근성이-높아집니다-이제-미래-성장성이-높은-소상공인은-은행에서-더-많은-대출을-받으실-수-있게-됩니다",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
         "TargetGroup": [
-          "소상공인",
-          "취약계층"
+          "소상공인"
         ]
       },
       "latest_selection_result_date": "",
@@ -246,9 +245,7 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": [
-        "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n"
-      ]
+      "errors": []
     },
     {
       "source": "농림축산식품부",
@@ -554,7 +551,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 11,
+      "article_count": 10,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -733,6 +730,76 @@
   ],
   "events": [
     {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "소상공인의 금융접근성이 높아집니다.   - 이제 미래 성장성이 높은 소상공인은 은행에서 더 많은 대출을 받으실 수 있게 됩니다.",
+      "url": "https://www.fsc.go.kr/no010101/87633",
+      "event_at": "2026-09-05T08:08:58.574953+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "소상공인의 금융접근성이 높아집니다.   - 이제 미래 성장성이 높은 소상공인은 은행에서 더 많은 대출을 받으실 수 있게 됩니다.",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-09-05:소상공인의-금융접근성이-높아집니다-이제-미래-성장성이-높은-소상공인은-은행에서-더-많은-대출을-받으실-수-있게-됩니다",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87633",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "지역 밀착형 서민금융 복합지원으로  강원도민의 경제적 자립을 돕겠습니다.  - 이억원 금융위원장, 강원 지역 밀착형 복합지원 업무협약식 참석",
+      "url": "https://www.fsc.go.kr/no010101/87652",
+      "event_at": "2026-09-05T08:08:50.711501+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ],
+        "Region": [
+          "서울",
+          "부산",
+          "광주",
+          "강원",
+          "전북"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "지역 밀착형 서민금융 복합지원으로  강원도민의 경제적 자립을 돕겠습니다.  - 이억원 금융위원장, 강원 지역 밀착형 복합지원 업무협약식 참석",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-09-05:지역-밀착형-서민금융-복합지원으로-강원도민의-경제적-자립을-돕겠습니다-이억원-금융위원장-강원-지역-밀착형-복합지원-업무협약식-참석",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87652",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "“내 집 마련 대신 주식 산다”…美 월세 사는 고소득 청년 120만 가구 급증",
+      "url": "https://www.donga.com/news/Inter/article/all/20260904/134608258/1",
+      "event_at": "2026-09-03T23:46:48+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“내 집 마련 대신 주식 산다”…美 월세 사는 고소득 청년 120만 가구 급증",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-09-03:내-집-마련-대신-주식-산다-美-월세-사는-고소득-청년-120만-가구-급증",
+      "evidence_url": "https://www.donga.com/news/Inter/article/all/20260904/134608258/1",
+      "evidence_url_present": true
+    },
+    {
       "source": "동아일보 경제",
       "event_model": "eligibility_rule",
       "title": "IBK기업은행, ‘수원시금고’ 수성…2030년까지 연 3.9조 운영",
@@ -795,27 +862,6 @@
       "program_title": "보험업권이 7개 지방자치단체와 함께지역 소상공인·취약계층을 위한 무료 상생보험 상품을 9월 출시합니다.",
       "program_key": "eligibility-rule:kr:금융위원회:2026-09-03:보험업권이-7개-지방자치단체와-함께지역-소상공인-취약계층을-위한-무료-상생보험-상품을-9월-출시합니다",
       "evidence_url": "https://www.fsc.go.kr/no010101/87625",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "소상공인의 금융접근성이 높아집니다.   - 이제 미래 성장성이 높은 소상공인은 은행에서 더 많은 대출을 받으실 수 있게 됩니다.",
-      "url": "https://www.fsc.go.kr/no010101/87633",
-      "event_at": "2026-09-03T08:38:31.459993+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "소상공인의 금융접근성이 높아집니다.   - 이제 미래 성장성이 높은 소상공인은 은행에서 더 많은 대출을 받으실 수 있게 됩니다.",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-09-03:소상공인의-금융접근성이-높아집니다-이제-미래-성장성이-높은-소상공인은-은행에서-더-많은-대출을-받으실-수-있게-됩니다",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87633",
       "evidence_url_present": true
     },
     {
@@ -1537,6 +1583,30 @@
     {
       "source": "동아일보 경제",
       "event_model": "eligibility_rule",
+      "title": "태어나면 2000만원, 12세까지 월 30만원, 결혼땐 100만원",
+      "url": "https://www.donga.com/news/Economy/article/all/20260828/134566825/2",
+      "event_at": "2026-08-28T07:40:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Industry": [
+          "AI"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "태어나면 2000만원, 12세까지 월 30만원, 결혼땐 100만원",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-28:태어나면-2000만원-12세까지-월-30만원-결혼땐-100만원",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260828/134566825/2",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
       "title": "코로나 대출 못갚은 소상공인 빚 탕감… 석달이상 연체 6조 추산",
       "url": "https://www.donga.com/news/Economy/article/all/20260828/134566827/2",
       "event_at": "2026-08-28T07:40:00+00:00",
@@ -1557,30 +1627,6 @@
       "program_title": "코로나 대출 못갚은 소상공인 빚 탕감… 석달이상 연체 6조 추산",
       "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-28:코로나-대출-못갚은-소상공인-빚-탕감-석달이상-연체-6조-추산",
       "evidence_url": "https://www.donga.com/news/Economy/article/all/20260828/134566827/2",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "태어나면 2000만원, 12세까지 월 30만원, 결혼땐 100만원",
-      "url": "https://www.donga.com/news/Economy/article/all/20260828/134566825/2",
-      "event_at": "2026-08-28T07:40:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ],
-        "Industry": [
-          "AI"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "태어나면 2000만원, 12세까지 월 30만원, 결혼땐 100만원",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-28:태어나면-2000만원-12세까지-월-30만원-결혼땐-100만원",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260828/134566825/2",
       "evidence_url_present": true
     },
     {
@@ -1677,55 +1723,6 @@
       "program_key": "eligibility-rule:kr:경향신문-경제:2026-08-27:인천-제물포구-문화-체육활동비-20만원-지원-청년-컬처페이-시행",
       "evidence_url": "https://www.khan.co.kr/article/202608281106021",
       "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "소상공인 코로나 빚 탕감해준다…장기연체 6.3조 달해",
-      "url": "https://www.donga.com/news/Economy/article/all/20260828/134563949/1",
-      "event_at": "2026-08-28T02:03:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인",
-          "자영업자"
-        ],
-        "BusinessStage": [
-          "벤처기업"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "소상공인 코로나 빚 탕감해준다…장기연체 6.3조 달해",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-28:소상공인-코로나-빚-탕감해준다-장기연체-6-3조-달해",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260828/134563949/1",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "내년 결혼하면 100만원, 아이 낳으면 최대 2000만원 받는다",
-      "url": "https://www.donga.com/news/Economy/article/all/20260828/134564064/1",
-      "event_at": "2026-08-27T23:09:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ],
-        "Industry": [
-          "AI"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "내년 결혼하면 100만원, 아이 낳으면 최대 2000만원 받는다",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-08-27:내년-결혼하면-100만원-아이-낳으면-최대-2000만원-받는다",
-      "evidence_url": "https://www.donga.com/news/Economy/article/all/20260828/134564064/1",
-      "evidence_url_present": true
     }
   ],
   "event_model_coverage": [
@@ -1801,10 +1798,10 @@
     "서울시 지원사업: Source disabled (crawl health threshold reached)",
     "행정안전부: Source disabled (crawl health threshold reached)",
     "보건복지부: Source disabled (crawl health threshold reached)",
-    "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n",
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
     "r/startups: Source disabled (crawl health threshold reached)",
-    "r/Entrepreneur: Source disabled (crawl health threshold reached)"
+    "r/Entrepreneur: Source disabled (crawl health threshold reached)",
+    "https://www.mk.co.kr/news/economy/12144804: summary is missing or not a string"
   ]
 }
