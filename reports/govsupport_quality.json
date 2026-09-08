@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-09-07T09:02:00.662001+00:00",
+  "generated_at": "2026-09-08T08:40:54.946117+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -12,12 +12,12 @@
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 1,
-    "eligibility_rule_events": 20,
+    "application_deadline_events": 2,
+    "eligibility_rule_events": 22,
     "selection_result_events": 0,
-    "unique_program_key_count": 21,
-    "events_with_evidence_url": 21,
-    "collection_error_count": 13,
+    "unique_program_key_count": 24,
+    "events_with_evidence_url": 24,
+    "collection_error_count": 14,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -221,19 +221,26 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
       "status": "fresh",
-      "article_count": 7,
-      "event_count": 7,
-      "latest_event_at": "2026-09-06T08:29:12.956175+00:00",
-      "age_days": 1.02,
-      "latest_title": "소상공인의 금융접근성이 높아집니다.   - 이제 미래 성장성이 높은 소상공인은 은행에서 더 많은 대출을 받으실 수 있게 됩니다.",
-      "latest_url": "https://www.fsc.go.kr/no010101/87633",
-      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87633",
-      "latest_program_title": "소상공인의 금융접근성이 높아집니다.   - 이제 미래 성장성이 높은 소상공인은 은행에서 더 많은 대출을 받으실 수 있게 됩니다.",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-09-06:소상공인의-금융접근성이-높아집니다-이제-미래-성장성이-높은-소상공인은-은행에서-더-많은-대출을-받으실-수-있게-됩니다",
+      "article_count": 8,
+      "event_count": 8,
+      "latest_event_at": "2026-09-08T08:40:43.659331+00:00",
+      "age_days": 0.0,
+      "latest_title": "지역 밀착형 서민금융 복합지원으로  강원도민의 경제적 자립을 돕겠습니다.  - 이억원 금융위원장, 강원 지역 밀착형 복합지원 업무협약식 참석",
+      "latest_url": "https://www.fsc.go.kr/no010101/87652",
+      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87652",
+      "latest_program_title": "지역 밀착형 서민금융 복합지원으로  강원도민의 경제적 자립을 돕겠습니다.  - 이억원 금융위원장, 강원 지역 밀착형 복합지원 업무협약식 참석",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-09-08:지역-밀착형-서민금융-복합지원으로-강원도민의-경제적-자립을-돕겠습니다-이억원-금융위원장-강원-지역-밀착형-복합지원-업무협약식-참석",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
         "TargetGroup": [
-          "소상공인"
+          "취약계층"
+        ],
+        "Region": [
+          "서울",
+          "부산",
+          "광주",
+          "강원",
+          "전북"
         ]
       },
       "latest_selection_result_date": "",
@@ -241,9 +248,7 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": [
-        "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n"
-      ]
+      "errors": []
     },
     {
       "source": "농림축산식품부",
@@ -419,7 +424,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 1,
+      "article_count": 0,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -523,7 +528,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 5,
+      "article_count": 8,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -730,6 +735,136 @@
   ],
   "events": [
     {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "지역 밀착형 서민금융 복합지원으로  강원도민의 경제적 자립을 돕겠습니다.  - 이억원 금융위원장, 강원 지역 밀착형 복합지원 업무협약식 참석",
+      "url": "https://www.fsc.go.kr/no010101/87652",
+      "event_at": "2026-09-08T08:40:43.659331+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ],
+        "Region": [
+          "서울",
+          "부산",
+          "광주",
+          "강원",
+          "전북"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "지역 밀착형 서민금융 복합지원으로  강원도민의 경제적 자립을 돕겠습니다.  - 이억원 금융위원장, 강원 지역 밀착형 복합지원 업무협약식 참석",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-09-08:지역-밀착형-서민금융-복합지원으로-강원도민의-경제적-자립을-돕겠습니다-이억원-금융위원장-강원-지역-밀착형-복합지원-업무협약식-참석",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87652",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "application_deadline",
+      "title": "제2차 국민참여성장펀드가  9.30일(수)부터 2주간(10영업일) 일반국민을 대상으로 판매됩니다.. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/87667",
+      "event_at": "2026-10-08T00:00:00+00:00",
+      "application_deadline": "2026-10-08",
+      "application_start_date": "2026-09-08",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Industry": [
+          "AI",
+          "바이오"
+        ],
+        "Region": [
+          "부산",
+          "광주",
+          "경남"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "제2차 국민참여성장펀드가  9.30일(수)부터 2주간(10영업일) 일반국민을 대상으로 판매됩니다.. 금일 등록된 게시글",
+      "program_key": "application-deadline:kr:금융위원회:2026-10-08:제2차-국민참여성장펀드가-9-30일-수-부터-2주간-10영업일-일반국민을-대상으로-판매됩니다-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87667",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "제2차 국민참여성장펀드가  9.30일(수)부터 2주간(10영업일) 일반국민을 대상으로 판매됩니다.. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/87667",
+      "event_at": "2026-09-08T08:40:41.857384+00:00",
+      "application_deadline": "2026-10-08",
+      "application_start_date": "2026-09-08",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Industry": [
+          "AI",
+          "바이오"
+        ],
+        "Region": [
+          "부산",
+          "광주",
+          "경남"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "제2차 국민참여성장펀드가  9.30일(수)부터 2주간(10영업일) 일반국민을 대상으로 판매됩니다.. 금일 등록된 게시글",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-09-08:제2차-국민참여성장펀드가-9-30일-수-부터-2주간-10영업일-일반국민을-대상으로-판매됩니다-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87667",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "“엄살이 아니고, 손님 늘어도 남는게 없어요”…매출보다 비용 더 뛴 골목상권",
+      "url": "https://www.mk.co.kr/news/economy/12147021",
+      "event_at": "2026-09-07T20:20:19+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“엄살이 아니고, 손님 늘어도 남는게 없어요”…매출보다 비용 더 뛴 골목상권",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-09-07:엄살이-아니고-손님-늘어도-남는게-없어요-매출보다-비용-더-뛴-골목상권",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12147021",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "“취업 힘든 청년들, 대출마저 가혹”…정책서민금융 이용 과반이 2030 [금융가 톺아보기]",
+      "url": "https://www.mk.co.kr/news/economy/12146747",
+      "event_at": "2026-09-07T16:09:07+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“취업 힘든 청년들, 대출마저 가혹”…정책서민금융 이용 과반이 2030 [금융가 톺아보기]",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-09-07:취업-힘든-청년들-대출마저-가혹-정책서민금융-이용-과반이-2030-금융가-톺아보기",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12146747",
+      "evidence_url_present": true
+    },
+    {
       "source": "경향신문 경제",
       "event_model": "eligibility_rule",
       "title": "교보라이프플래닛, 충북·제주 소상공인 위한 신용생명보험 출시",
@@ -794,34 +929,6 @@
       "program_title": "소상공인의 금융접근성이 높아집니다.   - 이제 미래 성장성이 높은 소상공인은 은행에서 더 많은 대출을 받으실 수 있게 됩니다.",
       "program_key": "eligibility-rule:kr:금융위원회:2026-09-06:소상공인의-금융접근성이-높아집니다-이제-미래-성장성이-높은-소상공인은-은행에서-더-많은-대출을-받으실-수-있게-됩니다",
       "evidence_url": "https://www.fsc.go.kr/no010101/87633",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "지역 밀착형 서민금융 복합지원으로  강원도민의 경제적 자립을 돕겠습니다.  - 이억원 금융위원장, 강원 지역 밀착형 복합지원 업무협약식 참석",
-      "url": "https://www.fsc.go.kr/no010101/87652",
-      "event_at": "2026-09-06T08:29:08.071235+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ],
-        "Region": [
-          "서울",
-          "부산",
-          "광주",
-          "강원",
-          "전북"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "지역 밀착형 서민금융 복합지원으로  강원도민의 경제적 자립을 돕겠습니다.  - 이억원 금융위원장, 강원 지역 밀착형 복합지원 업무협약식 참석",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-09-06:지역-밀착형-서민금융-복합지원으로-강원도민의-경제적-자립을-돕겠습니다-이억원-금융위원장-강원-지역-밀착형-복합지원-업무협약식-참석",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87652",
       "evidence_url_present": true
     },
     {
@@ -1206,27 +1313,6 @@
       "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-08-31:금융위-내년-예산-9-2조로-2배-껑충-서민대출-청년지원-확대",
       "evidence_url": "https://www.mk.co.kr/news/economy/12141184",
       "evidence_url_present": true
-    },
-    {
-      "source": "TechCrunch Startups",
-      "event_model": "eligibility_rule",
-      "title": "Hearing tech startup Legato emerges from stealth with $12M and a peek at its AI hearing glasses",
-      "url": "https://techcrunch.com/2026/08/26/hearing-tech-startup-legato-emerges-from-stealth-with-12m-and-a-peek-at-its-ai-hearing-glasses",
-      "event_at": "2026-08-26T03:00:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "AI"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "Hearing tech startup Legato emerges from stealth with $12M and a peek at its AI hearing glasses",
-      "program_key": "eligibility-rule:us:techcrunch-startups:2026-08-26:hearing-tech-startup-legato-emerges-from-stealth-with-12m-and-a-peek-at-its-ai-hearing-glasses",
-      "evidence_url": "https://techcrunch.com/2026/08/26/hearing-tech-startup-legato-emerges-from-stealth-with-12m-and-a-peek-at-its-ai-hearing-glasses",
-      "evidence_url_present": true
     }
   ],
   "event_model_coverage": [
@@ -1303,10 +1389,11 @@
     "서울시 지원사업: Source disabled (crawl health threshold reached)",
     "행정안전부: Source disabled (crawl health threshold reached)",
     "보건복지부: Source disabled (crawl health threshold reached)",
-    "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n",
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
     "r/startups: Source disabled (crawl health threshold reached)",
-    "r/Entrepreneur: Source disabled (crawl health threshold reached)"
+    "r/Entrepreneur: Source disabled (crawl health threshold reached)",
+    "https://www.hankyung.com/article/202609080559i: summary is missing or not a string",
+    "https://www.sedaily.com/article/20088506: summary is missing or not a string"
   ]
 }
