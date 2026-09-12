@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-09-11T08:41:51.978598+00:00",
+  "generated_at": "2026-09-12T08:26:40.231935+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -13,10 +13,10 @@
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
     "application_deadline_events": 3,
-    "eligibility_rule_events": 16,
+    "eligibility_rule_events": 15,
     "selection_result_events": 0,
-    "unique_program_key_count": 19,
-    "events_with_evidence_url": 19,
+    "unique_program_key_count": 18,
+    "events_with_evidence_url": 18,
     "collection_error_count": 12,
     "event_model_source_gap_count": 0
   },
@@ -223,13 +223,13 @@
       "status": "fresh",
       "article_count": 9,
       "event_count": 6,
-      "latest_event_at": "2026-09-11T08:41:44.071062+00:00",
+      "latest_event_at": "2026-09-12T08:26:30.676809+00:00",
       "age_days": 0.0,
       "latest_title": "PF보증이 주택공급으로 이억원 금융위원장, 김포 PF사업장 방문",
       "latest_url": "https://www.fsc.go.kr/no010101/87690",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87690",
       "latest_program_title": "PF보증이 주택공급으로 이억원 금융위원장, 김포 PF사업장 방문",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-09-11:pf보증이-주택공급으로-이억원-금융위원장-김포-pf사업장-방문",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-09-12:pf보증이-주택공급으로-이억원-금융위원장-김포-pf사업장-방문",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
         "Region": [
@@ -547,7 +547,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 1,
+      "article_count": 0,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -732,7 +732,7 @@
       "event_model": "eligibility_rule",
       "title": "PF보증이 주택공급으로 이억원 금융위원장, 김포 PF사업장 방문",
       "url": "https://www.fsc.go.kr/no010101/87690",
-      "event_at": "2026-09-11T08:41:44.071062+00:00",
+      "event_at": "2026-09-12T08:26:30.676809+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -744,14 +744,14 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "PF보증이 주택공급으로 이억원 금융위원장, 김포 PF사업장 방문",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-09-11:pf보증이-주택공급으로-이억원-금융위원장-김포-pf사업장-방문",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-09-12:pf보증이-주택공급으로-이억원-금융위원장-김포-pf사업장-방문",
       "evidence_url": "https://www.fsc.go.kr/no010101/87690",
       "evidence_url_present": true
     },
     {
       "source": "금융위원회",
       "event_model": "application_deadline",
-      "title": "“당일 대출·무서류” 추석 급전을 노린 불법사금융입니다  - 명절 급전 수요를 노린 불법사금융 주의 - - 불법사금융 피해예방 수칙 및 원스톱 지원 이용방법 안내. 금일 등록된 게시글",
+      "title": "“당일 대출·무서류” 추석 급전을 노린 불법사금융입니다  - 명절 급전 수요를 노린 불법사금융 주의 - - 불법사금융 피해예방 수칙 및 원스톱 지원 이용방법 안내",
       "url": "https://www.fsc.go.kr/no010101/87702",
       "event_at": "2026-08-03T00:00:00+00:00",
       "application_deadline": "2026-08-03",
@@ -773,17 +773,17 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "“당일 대출·무서류” 추석 급전을 노린 불법사금융입니다  - 명절 급전 수요를 노린 불법사금융 주의 - - 불법사금융 피해예방 수칙 및 원스톱 지원 이용방법 안내. 금일 등록된 게시글",
-      "program_key": "application-deadline:kr:금융위원회:2026-08-03:당일-대출-무서류-추석-급전을-노린-불법사금융입니다-명절-급전-수요를-노린-불법사금융-주의-불법사금융-피해예방-수칙-및-원스톱-지원-이용방법-안내-금일-등록된-게시글",
+      "program_title": "“당일 대출·무서류” 추석 급전을 노린 불법사금융입니다  - 명절 급전 수요를 노린 불법사금융 주의 - - 불법사금융 피해예방 수칙 및 원스톱 지원 이용방법 안내",
+      "program_key": "application-deadline:kr:금융위원회:2026-08-03:당일-대출-무서류-추석-급전을-노린-불법사금융입니다-명절-급전-수요를-노린-불법사금융-주의-불법사금융-피해예방-수칙-및-원스톱-지원-이용방법-안내",
       "evidence_url": "https://www.fsc.go.kr/no010101/87702",
       "evidence_url_present": true
     },
     {
       "source": "금융위원회",
       "event_model": "eligibility_rule",
-      "title": "“당일 대출·무서류” 추석 급전을 노린 불법사금융입니다  - 명절 급전 수요를 노린 불법사금융 주의 - - 불법사금융 피해예방 수칙 및 원스톱 지원 이용방법 안내. 금일 등록된 게시글",
+      "title": "“당일 대출·무서류” 추석 급전을 노린 불법사금융입니다  - 명절 급전 수요를 노린 불법사금융 주의 - - 불법사금융 피해예방 수칙 및 원스톱 지원 이용방법 안내",
       "url": "https://www.fsc.go.kr/no010101/87702",
-      "event_at": "2026-09-11T08:41:41.357032+00:00",
+      "event_at": "2026-09-12T08:26:28.245411+00:00",
       "application_deadline": "2026-08-03",
       "application_start_date": "2026-09-11",
       "eligibility_fields": {
@@ -803,8 +803,8 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "“당일 대출·무서류” 추석 급전을 노린 불법사금융입니다  - 명절 급전 수요를 노린 불법사금융 주의 - - 불법사금융 피해예방 수칙 및 원스톱 지원 이용방법 안내. 금일 등록된 게시글",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-09-11:당일-대출-무서류-추석-급전을-노린-불법사금융입니다-명절-급전-수요를-노린-불법사금융-주의-불법사금융-피해예방-수칙-및-원스톱-지원-이용방법-안내-금일-등록된-게시글",
+      "program_title": "“당일 대출·무서류” 추석 급전을 노린 불법사금융입니다  - 명절 급전 수요를 노린 불법사금융 주의 - - 불법사금융 피해예방 수칙 및 원스톱 지원 이용방법 안내",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-09-12:당일-대출-무서류-추석-급전을-노린-불법사금융입니다-명절-급전-수요를-노린-불법사금융-주의-불법사금융-피해예방-수칙-및-원스톱-지원-이용방법-안내",
       "evidence_url": "https://www.fsc.go.kr/no010101/87702",
       "evidence_url_present": true
     },
@@ -1156,27 +1156,6 @@
       "program_title": "소상공인의 금융접근성이 높아집니다.   - 이제 미래 성장성이 높은 소상공인은 은행에서 더 많은 대출을 받으실 수 있게 됩니다.",
       "program_key": "eligibility-rule:kr:금융위원회:2026-09-06:소상공인의-금융접근성이-높아집니다-이제-미래-성장성이-높은-소상공인은-은행에서-더-많은-대출을-받으실-수-있게-됩니다",
       "evidence_url": "https://www.fsc.go.kr/no010101/87633",
-      "evidence_url_present": true
-    },
-    {
-      "source": "동아일보 경제",
-      "event_model": "eligibility_rule",
-      "title": "“내 집 마련 대신 주식 산다”…美 월세 사는 고소득 청년 120만 가구 급증",
-      "url": "https://www.donga.com/news/Inter/article/all/20260904/134608258/1",
-      "event_at": "2026-09-03T23:46:48+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“내 집 마련 대신 주식 산다”…美 월세 사는 고소득 청년 120만 가구 급증",
-      "program_key": "eligibility-rule:kr:동아일보-경제:2026-09-03:내-집-마련-대신-주식-산다-美-월세-사는-고소득-청년-120만-가구-급증",
-      "evidence_url": "https://www.donga.com/news/Inter/article/all/20260904/134608258/1",
       "evidence_url_present": true
     }
   ],
