@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-09-12T08:26:40.231935+00:00",
+  "generated_at": "2026-09-14T09:39:08.321413+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -12,12 +12,12 @@
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 3,
+    "application_deadline_events": 5,
     "eligibility_rule_events": 15,
     "selection_result_events": 0,
-    "unique_program_key_count": 18,
-    "events_with_evidence_url": 18,
-    "collection_error_count": 12,
+    "unique_program_key_count": 20,
+    "events_with_evidence_url": 20,
+    "collection_error_count": 13,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -221,19 +221,28 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
       "status": "fresh",
-      "article_count": 9,
-      "event_count": 6,
-      "latest_event_at": "2026-09-12T08:26:30.676809+00:00",
+      "article_count": 11,
+      "event_count": 7,
+      "latest_event_at": "2026-09-14T09:38:59.383467+00:00",
       "age_days": 0.0,
-      "latest_title": "PF보증이 주택공급으로 이억원 금융위원장, 김포 PF사업장 방문",
-      "latest_url": "https://www.fsc.go.kr/no010101/87690",
-      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87690",
-      "latest_program_title": "PF보증이 주택공급으로 이억원 금융위원장, 김포 PF사업장 방문",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-09-12:pf보증이-주택공급으로-이억원-금융위원장-김포-pf사업장-방문",
-      "latest_application_deadline": "",
+      "latest_title": "“당일 대출·무서류” 추석 급전을 노린 불법사금융입니다  - 명절 급전 수요를 노린 불법사금융 주의 - - 불법사금융 피해예방 수칙 및 원스톱 지원 이용방법 안내",
+      "latest_url": "https://www.fsc.go.kr/no010101/87702",
+      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87702",
+      "latest_program_title": "“당일 대출·무서류” 추석 급전을 노린 불법사금융입니다  - 명절 급전 수요를 노린 불법사금융 주의 - - 불법사금융 피해예방 수칙 및 원스톱 지원 이용방법 안내",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-09-14:당일-대출-무서류-추석-급전을-노린-불법사금융입니다-명절-급전-수요를-노린-불법사금융-주의-불법사금융-피해예방-수칙-및-원스톱-지원-이용방법-안내",
+      "latest_application_deadline": "2026-08-03",
       "latest_eligibility_fields": {
         "Region": [
-          "경기"
+          "서울",
+          "경기",
+          "인천",
+          "부산",
+          "대구",
+          "광주",
+          "대전",
+          "울산",
+          "강원",
+          "제주"
         ]
       },
       "latest_selection_result_date": "",
@@ -575,7 +584,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 4,
+      "article_count": 3,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -729,27 +738,6 @@
   "events": [
     {
       "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "PF보증이 주택공급으로 이억원 금융위원장, 김포 PF사업장 방문",
-      "url": "https://www.fsc.go.kr/no010101/87690",
-      "event_at": "2026-09-12T08:26:30.676809+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "경기"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "PF보증이 주택공급으로 이억원 금융위원장, 김포 PF사업장 방문",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-09-12:pf보증이-주택공급으로-이억원-금융위원장-김포-pf사업장-방문",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87690",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
       "event_model": "application_deadline",
       "title": "“당일 대출·무서류” 추석 급전을 노린 불법사금융입니다  - 명절 급전 수요를 노린 불법사금융 주의 - - 불법사금융 피해예방 수칙 및 원스톱 지원 이용방법 안내",
       "url": "https://www.fsc.go.kr/no010101/87702",
@@ -783,7 +771,7 @@
       "event_model": "eligibility_rule",
       "title": "“당일 대출·무서류” 추석 급전을 노린 불법사금융입니다  - 명절 급전 수요를 노린 불법사금융 주의 - - 불법사금융 피해예방 수칙 및 원스톱 지원 이용방법 안내",
       "url": "https://www.fsc.go.kr/no010101/87702",
-      "event_at": "2026-09-12T08:26:28.245411+00:00",
+      "event_at": "2026-09-14T09:38:59.383467+00:00",
       "application_deadline": "2026-08-03",
       "application_start_date": "2026-09-11",
       "eligibility_fields": {
@@ -804,8 +792,152 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "“당일 대출·무서류” 추석 급전을 노린 불법사금융입니다  - 명절 급전 수요를 노린 불법사금융 주의 - - 불법사금융 피해예방 수칙 및 원스톱 지원 이용방법 안내",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-09-12:당일-대출-무서류-추석-급전을-노린-불법사금융입니다-명절-급전-수요를-노린-불법사금융-주의-불법사금융-피해예방-수칙-및-원스톱-지원-이용방법-안내",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-09-14:당일-대출-무서류-추석-급전을-노린-불법사금융입니다-명절-급전-수요를-노린-불법사금융-주의-불법사금융-피해예방-수칙-및-원스톱-지원-이용방법-안내",
       "evidence_url": "https://www.fsc.go.kr/no010101/87702",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "application_deadline",
+      "title": "’26년 3분기 혁신금융서비스 지정 정기신청 개시. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/87705",
+      "event_at": "2026-09-30T00:00:00+00:00",
+      "application_deadline": "2026-09-30",
+      "application_start_date": "2026-09-14",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "’26년 3분기 혁신금융서비스 지정 정기신청 개시. 금일 등록된 게시글",
+      "program_key": "application-deadline:kr:금융위원회:2026-09-30:26년-3분기-혁신금융서비스-지정-정기신청-개시-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87705",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "application_deadline",
+      "title": "추석 연휴에도 국민 여러분의 금융이용 불편이 없도록 최선을 다하겠습니다.. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/87706",
+      "event_at": "2026-09-29T00:00:00+00:00",
+      "application_deadline": "2026-09-29",
+      "application_start_date": "2026-09-14",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업"
+        ],
+        "Region": [
+          "부산",
+          "광주",
+          "전북",
+          "경남",
+          "제주"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "추석 연휴에도 국민 여러분의 금융이용 불편이 없도록 최선을 다하겠습니다.. 금일 등록된 게시글",
+      "program_key": "application-deadline:kr:금융위원회:2026-09-29:추석-연휴에도-국민-여러분의-금융이용-불편이-없도록-최선을-다하겠습니다-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87706",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "추석 연휴에도 국민 여러분의 금융이용 불편이 없도록 최선을 다하겠습니다.. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/87706",
+      "event_at": "2026-09-14T09:38:56.770694+00:00",
+      "application_deadline": "2026-09-29",
+      "application_start_date": "2026-09-14",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업"
+        ],
+        "Region": [
+          "부산",
+          "광주",
+          "전북",
+          "경남",
+          "제주"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "추석 연휴에도 국민 여러분의 금융이용 불편이 없도록 최선을 다하겠습니다.. 금일 등록된 게시글",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-09-14:추석-연휴에도-국민-여러분의-금융이용-불편이-없도록-최선을-다하겠습니다-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87706",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "기후금융 협업체계를 강화하여 우리경제 탄소감축과 녹색전환을 충실히 지원하겠습니다. - ｢기후금융 관계기관 TF｣ 제1차 회의 개최. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/87708",
+      "event_at": "2026-09-14T09:38:55.721014+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "BusinessStage": [
+          "벤처기업"
+        ],
+        "Industry": [
+          "제조"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "기후금융 협업체계를 강화하여 우리경제 탄소감축과 녹색전환을 충실히 지원하겠습니다. - ｢기후금융 관계기관 TF｣ 제1차 회의 개최. 금일 등록된 게시글",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-09-14:기후금융-협업체계를-강화하여-우리경제-탄소감축과-녹색전환을-충실히-지원하겠습니다-기후금융-관계기관-tf-제1차-회의-개최-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87708",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "김해시, 1인당 10만원 ‘민생회복지원금’ 17일부터 지급",
+      "url": "https://www.khan.co.kr/article/202609141316021",
+      "event_at": "2026-09-13T19:16:02+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "경남"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "김해시, 1인당 10만원 ‘민생회복지원금’ 17일부터 지급",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-09-13:김해시-1인당-10만원-민생회복지원금-17일부터-지급",
+      "evidence_url": "https://www.khan.co.kr/article/202609141316021",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "PF보증이 주택공급으로 이억원 금융위원장, 김포 PF사업장 방문",
+      "url": "https://www.fsc.go.kr/no010101/87690",
+      "event_at": "2026-09-12T08:26:30.676809+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "경기"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "PF보증이 주택공급으로 이억원 금융위원장, 김포 PF사업장 방문",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-09-12:pf보증이-주택공급으로-이억원-금융위원장-김포-pf사업장-방문",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87690",
       "evidence_url_present": true
     },
     {
@@ -1090,73 +1222,6 @@
       "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-09-07:취업-힘든-청년들-대출마저-가혹-정책서민금융-이용-과반이-2030-금융가-톺아보기",
       "evidence_url": "https://www.mk.co.kr/news/economy/12146747",
       "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "교보라이프플래닛, 충북·제주 소상공인 위한 신용생명보험 출시",
-      "url": "https://www.khan.co.kr/article/202609071536001",
-      "event_at": "2026-09-06T21:36:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인"
-        ],
-        "Region": [
-          "충북",
-          "제주"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "교보라이프플래닛, 충북·제주 소상공인 위한 신용생명보험 출시",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-09-06:교보라이프플래닛-충북-제주-소상공인-위한-신용생명보험-출시",
-      "evidence_url": "https://www.khan.co.kr/article/202609071536001",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "사천시, 민생지원금 지급 보류···‘일회성보단 미래 투자가 우선’",
-      "url": "https://www.khan.co.kr/article/202609071312011",
-      "event_at": "2026-09-06T19:12:01+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "경남"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "사천시, 민생지원금 지급 보류···‘일회성보단 미래 투자가 우선’",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-09-06:사천시-민생지원금-지급-보류-일회성보단-미래-투자가-우선",
-      "evidence_url": "https://www.khan.co.kr/article/202609071312011",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "소상공인의 금융접근성이 높아집니다.   - 이제 미래 성장성이 높은 소상공인은 은행에서 더 많은 대출을 받으실 수 있게 됩니다.",
-      "url": "https://www.fsc.go.kr/no010101/87633",
-      "event_at": "2026-09-06T08:29:12.956175+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "소상공인의 금융접근성이 높아집니다.   - 이제 미래 성장성이 높은 소상공인은 은행에서 더 많은 대출을 받으실 수 있게 됩니다.",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-09-06:소상공인의-금융접근성이-높아집니다-이제-미래-성장성이-높은-소상공인은-은행에서-더-많은-대출을-받으실-수-있게-됩니다",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87633",
-      "evidence_url_present": true
     }
   ],
   "event_model_coverage": [
@@ -1228,6 +1293,7 @@
     "정책브리핑: Source disabled (crawl health threshold reached)",
     "농림축산식품부: Source disabled (crawl health threshold reached)",
     "동아일보 경제: Source disabled (crawl health threshold reached)",
+    "[서울경제 경제] Request failed: 403 Client Error: Forbidden for url: https://www.sedaily.com/RSS/Economy/",
     "SBS 뉴스 정치: Source disabled (crawl health threshold reached)",
     "소상공인시장진흥공단: Source disabled (crawl health threshold reached)",
     "서울시 지원사업: Source disabled (crawl health threshold reached)",
