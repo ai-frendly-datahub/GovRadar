@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-09-16T09:08:55.576730+00:00",
+  "generated_at": "2026-09-17T09:16:40.813517+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -13,10 +13,10 @@
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
     "application_deadline_events": 4,
-    "eligibility_rule_events": 12,
+    "eligibility_rule_events": 13,
     "selection_result_events": 0,
-    "unique_program_key_count": 16,
-    "events_with_evidence_url": 16,
+    "unique_program_key_count": 17,
+    "events_with_evidence_url": 17,
     "collection_error_count": 12,
     "event_model_source_gap_count": 0
   },
@@ -221,22 +221,22 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
       "status": "fresh",
-      "article_count": 12,
-      "event_count": 6,
-      "latest_event_at": "2026-09-15T09:15:52.951670+00:00",
-      "age_days": 1.0,
-      "latest_title": "기후금융 협업체계를 강화하여 우리경제 탄소감축과 녹색전환을 충실히 지원하겠습니다. - ｢기후금융 관계기관 TF｣ 제1차 회의 개최",
-      "latest_url": "https://www.fsc.go.kr/no010101/87708",
-      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87708",
-      "latest_program_title": "기후금융 협업체계를 강화하여 우리경제 탄소감축과 녹색전환을 충실히 지원하겠습니다. - ｢기후금융 관계기관 TF｣ 제1차 회의 개최",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-09-15:기후금융-협업체계를-강화하여-우리경제-탄소감축과-녹색전환을-충실히-지원하겠습니다-기후금융-관계기관-tf-제1차-회의-개최",
+      "article_count": 13,
+      "event_count": 7,
+      "latest_event_at": "2026-09-17T09:16:30.589848+00:00",
+      "age_days": 0.0,
+      "latest_title": "“투자자와 벤처기업, 전문가의 의견을 균형있게 청취하였습니다.”  - 신기술금융업권 제3자 연대책임 관련 간담회 개최. 금일 등록된 게시글",
+      "latest_url": "https://www.fsc.go.kr/no010101/87735",
+      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87735",
+      "latest_program_title": "“투자자와 벤처기업, 전문가의 의견을 균형있게 청취하였습니다.”  - 신기술금융업권 제3자 연대책임 관련 간담회 개최. 금일 등록된 게시글",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-09-17:투자자와-벤처기업-전문가의-의견을-균형있게-청취하였습니다-신기술금융업권-제3자-연대책임-관련-간담회-개최-금일-등록된-게시글",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
+        "TargetGroup": [
+          "스타트업"
+        ],
         "BusinessStage": [
           "벤처기업"
-        ],
-        "Industry": [
-          "제조"
         ],
         "Region": [
           "서울"
@@ -527,7 +527,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 3,
+      "article_count": 4,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -733,6 +733,104 @@
     }
   ],
   "events": [
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "“투자자와 벤처기업, 전문가의 의견을 균형있게 청취하였습니다.”  - 신기술금융업권 제3자 연대책임 관련 간담회 개최. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/87735",
+      "event_at": "2026-09-17T09:16:30.589848+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "스타트업"
+        ],
+        "BusinessStage": [
+          "벤처기업"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“투자자와 벤처기업, 전문가의 의견을 균형있게 청취하였습니다.”  - 신기술금융업권 제3자 연대책임 관련 간담회 개최. 금일 등록된 게시글",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-09-17:투자자와-벤처기업-전문가의-의견을-균형있게-청취하였습니다-신기술금융업권-제3자-연대책임-관련-간담회-개최-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87735",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "application_deadline",
+      "title": "부실사업장 정상화를 통한 신속한 주택공급 권대영 금융위 부위원장, 캠코펀드 사업장 방문. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/87738",
+      "event_at": "2026-09-10T00:00:00+00:00",
+      "application_deadline": "2026-09-10",
+      "application_start_date": "2026-09-17",
+      "eligibility_fields": {
+        "BusinessStage": [
+          "벤처기업"
+        ],
+        "Region": [
+          "서울",
+          "경기"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "부실사업장 정상화를 통한 신속한 주택공급 권대영 금융위 부위원장, 캠코펀드 사업장 방문. 금일 등록된 게시글",
+      "program_key": "application-deadline:kr:금융위원회:2026-09-10:부실사업장-정상화를-통한-신속한-주택공급-권대영-금융위-부위원장-캠코펀드-사업장-방문-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87738",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "부실사업장 정상화를 통한 신속한 주택공급 권대영 금융위 부위원장, 캠코펀드 사업장 방문. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/87738",
+      "event_at": "2026-09-17T09:16:27.976557+00:00",
+      "application_deadline": "2026-09-10",
+      "application_start_date": "2026-09-17",
+      "eligibility_fields": {
+        "BusinessStage": [
+          "벤처기업"
+        ],
+        "Region": [
+          "서울",
+          "경기"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "부실사업장 정상화를 통한 신속한 주택공급 권대영 금융위 부위원장, 캠코펀드 사업장 방문. 금일 등록된 게시글",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-09-17:부실사업장-정상화를-통한-신속한-주택공급-권대영-금융위-부위원장-캠코펀드-사업장-방문-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87738",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "대한상의, 미취업 청년 4만9000명 대상 ‘일경험·K-뉴딜 아카데미’ 지원",
+      "url": "https://www.khan.co.kr/article/202609171307001",
+      "event_at": "2026-09-16T19:07:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "대한상의, 미취업 청년 4만9000명 대상 ‘일경험·K-뉴딜 아카데미’ 지원",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-09-16:대한상의-미취업-청년-4만9000명-대상-일경험-k-뉴딜-아카데미-지원",
+      "evidence_url": "https://www.khan.co.kr/article/202609171307001",
+      "evidence_url_present": true
+    },
     {
       "source": "금융위원회",
       "event_model": "eligibility_rule",
@@ -1053,69 +1151,6 @@
       "program_title": "AI 격차가 금융격차로? “취약계층 위한 금융 안전망 필요”[제27회 세계지식포럼]",
       "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-09-10:ai-격차가-금융격차로-취약계층-위한-금융-안전망-필요-제27회-세계지식포럼",
       "evidence_url": "https://www.mk.co.kr/news/economy/12150213",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "application_deadline",
-      "title": "주택공급 촉진을 위한 금융지원 대책 점검회의 개최",
-      "url": "https://www.fsc.go.kr/no010101/87674",
-      "event_at": "2026-09-30T00:00:00+00:00",
-      "application_deadline": "2026-09-30",
-      "application_start_date": "2026-09-09",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "주택공급 촉진을 위한 금융지원 대책 점검회의 개최",
-      "program_key": "application-deadline:kr:금융위원회:2026-09-30:주택공급-촉진을-위한-금융지원-대책-점검회의-개최",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87674",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "주택공급 촉진을 위한 금융지원 대책 점검회의 개최",
-      "url": "https://www.fsc.go.kr/no010101/87674",
-      "event_at": "2026-09-10T08:43:22.715067+00:00",
-      "application_deadline": "2026-09-30",
-      "application_start_date": "2026-09-09",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "주택공급 촉진을 위한 금융지원 대책 점검회의 개최",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-09-10:주택공급-촉진을-위한-금융지원-대책-점검회의-개최",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87674",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "‘가짜 수출’로 상장 유지·보조금 편취…관세청 특별수사단 가동",
-      "url": "https://www.khan.co.kr/article/202609100839011",
-      "event_at": "2026-09-09T14:39:01+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "‘가짜 수출’로 상장 유지·보조금 편취…관세청 특별수사단 가동",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-09-09:가짜-수출-로-상장-유지-보조금-편취-관세청-특별수사단-가동",
-      "evidence_url": "https://www.khan.co.kr/article/202609100839011",
       "evidence_url_present": true
     }
   ],
