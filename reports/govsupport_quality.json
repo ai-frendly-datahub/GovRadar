@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-09-19T08:38:29.444328+00:00",
+  "generated_at": "2026-09-20T09:09:14.511093+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -13,11 +13,11 @@
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
     "application_deadline_events": 4,
-    "eligibility_rule_events": 12,
+    "eligibility_rule_events": 13,
     "selection_result_events": 0,
-    "unique_program_key_count": 16,
-    "events_with_evidence_url": 16,
-    "collection_error_count": 14,
+    "unique_program_key_count": 17,
+    "events_with_evidence_url": 17,
+    "collection_error_count": 12,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -223,13 +223,13 @@
       "status": "fresh",
       "article_count": 11,
       "event_count": 6,
-      "latest_event_at": "2026-09-17T09:16:30.589848+00:00",
-      "age_days": 1.97,
-      "latest_title": "“투자자와 벤처기업, 전문가의 의견을 균형있게 청취하였습니다.”  - 신기술금융업권 제3자 연대책임 관련 간담회 개최. 금일 등록된 게시글",
+      "latest_event_at": "2026-09-20T09:09:07.776500+00:00",
+      "age_days": 0.0,
+      "latest_title": "“투자자와 벤처기업, 전문가의 의견을 균형있게 청취하였습니다.”  - 신기술금융업권 제3자 연대책임 관련 간담회 개최",
       "latest_url": "https://www.fsc.go.kr/no010101/87735",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87735",
-      "latest_program_title": "“투자자와 벤처기업, 전문가의 의견을 균형있게 청취하였습니다.”  - 신기술금융업권 제3자 연대책임 관련 간담회 개최. 금일 등록된 게시글",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-09-17:투자자와-벤처기업-전문가의-의견을-균형있게-청취하였습니다-신기술금융업권-제3자-연대책임-관련-간담회-개최-금일-등록된-게시글",
+      "latest_program_title": "“투자자와 벤처기업, 전문가의 의견을 균형있게 청취하였습니다.”  - 신기술금융업권 제3자 연대책임 관련 간담회 개최",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-09-20:투자자와-벤처기업-전문가의-의견을-균형있게-청취하였습니다-신기술금융업권-제3자-연대책임-관련-간담회-개최",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
         "TargetGroup": [
@@ -247,9 +247,7 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": [
-        "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n"
-      ]
+      "errors": []
     },
     {
       "source": "농림축산식품부",
@@ -529,7 +527,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 3,
+      "article_count": 4,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -736,6 +734,104 @@
   ],
   "events": [
     {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "“투자자와 벤처기업, 전문가의 의견을 균형있게 청취하였습니다.”  - 신기술금융업권 제3자 연대책임 관련 간담회 개최",
+      "url": "https://www.fsc.go.kr/no010101/87735",
+      "event_at": "2026-09-20T09:09:07.776500+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "스타트업"
+        ],
+        "BusinessStage": [
+          "벤처기업"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“투자자와 벤처기업, 전문가의 의견을 균형있게 청취하였습니다.”  - 신기술금융업권 제3자 연대책임 관련 간담회 개최",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-09-20:투자자와-벤처기업-전문가의-의견을-균형있게-청취하였습니다-신기술금융업권-제3자-연대책임-관련-간담회-개최",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87735",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "application_deadline",
+      "title": "부실사업장 정상화를 통한 신속한 주택공급 권대영 금융위 부위원장, 캠코펀드 사업장 방문",
+      "url": "https://www.fsc.go.kr/no010101/87738",
+      "event_at": "2026-09-10T00:00:00+00:00",
+      "application_deadline": "2026-09-10",
+      "application_start_date": "2026-09-17",
+      "eligibility_fields": {
+        "BusinessStage": [
+          "벤처기업"
+        ],
+        "Region": [
+          "서울",
+          "경기"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "부실사업장 정상화를 통한 신속한 주택공급 권대영 금융위 부위원장, 캠코펀드 사업장 방문",
+      "program_key": "application-deadline:kr:금융위원회:2026-09-10:부실사업장-정상화를-통한-신속한-주택공급-권대영-금융위-부위원장-캠코펀드-사업장-방문",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87738",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "부실사업장 정상화를 통한 신속한 주택공급 권대영 금융위 부위원장, 캠코펀드 사업장 방문",
+      "url": "https://www.fsc.go.kr/no010101/87738",
+      "event_at": "2026-09-20T09:09:06.632377+00:00",
+      "application_deadline": "2026-09-10",
+      "application_start_date": "2026-09-17",
+      "eligibility_fields": {
+        "BusinessStage": [
+          "벤처기업"
+        ],
+        "Region": [
+          "서울",
+          "경기"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "부실사업장 정상화를 통한 신속한 주택공급 권대영 금융위 부위원장, 캠코펀드 사업장 방문",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-09-20:부실사업장-정상화를-통한-신속한-주택공급-권대영-금융위-부위원장-캠코펀드-사업장-방문",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87738",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "연체율 44%, 저신용 자영업자의 위기",
+      "url": "https://www.mk.co.kr/news/economy/12157369",
+      "event_at": "2026-09-19T19:08:03+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "자영업자"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "연체율 44%, 저신용 자영업자의 위기",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-09-19:연체율-44-저신용-자영업자의-위기",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12157369",
+      "evidence_url_present": true
+    },
+    {
       "source": "매일경제 경제정책",
       "event_model": "eligibility_rule",
       "title": "대출 받았더니 예·적금도 가입?…中企 ‘꺾기 의심거래’ 상반기만 7조",
@@ -799,83 +895,6 @@
       "program_title": "“동창은 사내대출로 집 샀다는데”…공공임대뿐인 주거사다리 [기자24시]",
       "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-09-17:동창은-사내대출로-집-샀다는데-공공임대뿐인-주거사다리-기자24시",
       "evidence_url": "https://www.mk.co.kr/news/economy/12156422",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "“투자자와 벤처기업, 전문가의 의견을 균형있게 청취하였습니다.”  - 신기술금융업권 제3자 연대책임 관련 간담회 개최. 금일 등록된 게시글",
-      "url": "https://www.fsc.go.kr/no010101/87735",
-      "event_at": "2026-09-17T09:16:30.589848+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "스타트업"
-        ],
-        "BusinessStage": [
-          "벤처기업"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“투자자와 벤처기업, 전문가의 의견을 균형있게 청취하였습니다.”  - 신기술금융업권 제3자 연대책임 관련 간담회 개최. 금일 등록된 게시글",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-09-17:투자자와-벤처기업-전문가의-의견을-균형있게-청취하였습니다-신기술금융업권-제3자-연대책임-관련-간담회-개최-금일-등록된-게시글",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87735",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "application_deadline",
-      "title": "부실사업장 정상화를 통한 신속한 주택공급 권대영 금융위 부위원장, 캠코펀드 사업장 방문. 금일 등록된 게시글",
-      "url": "https://www.fsc.go.kr/no010101/87738",
-      "event_at": "2026-09-10T00:00:00+00:00",
-      "application_deadline": "2026-09-10",
-      "application_start_date": "2026-09-17",
-      "eligibility_fields": {
-        "BusinessStage": [
-          "벤처기업"
-        ],
-        "Region": [
-          "서울",
-          "경기"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "부실사업장 정상화를 통한 신속한 주택공급 권대영 금융위 부위원장, 캠코펀드 사업장 방문. 금일 등록된 게시글",
-      "program_key": "application-deadline:kr:금융위원회:2026-09-10:부실사업장-정상화를-통한-신속한-주택공급-권대영-금융위-부위원장-캠코펀드-사업장-방문-금일-등록된-게시글",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87738",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "부실사업장 정상화를 통한 신속한 주택공급 권대영 금융위 부위원장, 캠코펀드 사업장 방문. 금일 등록된 게시글",
-      "url": "https://www.fsc.go.kr/no010101/87738",
-      "event_at": "2026-09-17T09:16:27.976557+00:00",
-      "application_deadline": "2026-09-10",
-      "application_start_date": "2026-09-17",
-      "eligibility_fields": {
-        "BusinessStage": [
-          "벤처기업"
-        ],
-        "Region": [
-          "서울",
-          "경기"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "부실사업장 정상화를 통한 신속한 주택공급 권대영 금융위 부위원장, 캠코펀드 사업장 방문. 금일 등록된 게시글",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-09-17:부실사업장-정상화를-통한-신속한-주택공급-권대영-금융위-부위원장-캠코펀드-사업장-방문-금일-등록된-게시글",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87738",
       "evidence_url_present": true
     },
     {
@@ -1206,11 +1225,9 @@
     "서울시 지원사업: Source disabled (crawl health threshold reached)",
     "행정안전부: Source disabled (crawl health threshold reached)",
     "보건복지부: Source disabled (crawl health threshold reached)",
-    "금융위원회: Failed to collect browser content from 금융위원회: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://www.fsc.go.kr/no010101\", waiting until \"domcontentloaded\"\n",
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
     "r/startups: Source disabled (crawl health threshold reached)",
-    "r/Entrepreneur: Source disabled (crawl health threshold reached)",
-    "https://www.sedaily.com/article/20092479: summary is missing or not a string"
+    "r/Entrepreneur: Source disabled (crawl health threshold reached)"
   ]
 }
