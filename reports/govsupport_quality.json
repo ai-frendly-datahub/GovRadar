@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-09-20T09:09:14.511093+00:00",
+  "generated_at": "2026-09-21T09:42:40.743176+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -12,11 +12,11 @@
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 4,
-    "eligibility_rule_events": 13,
+    "application_deadline_events": 3,
+    "eligibility_rule_events": 16,
     "selection_result_events": 0,
-    "unique_program_key_count": 17,
-    "events_with_evidence_url": 17,
+    "unique_program_key_count": 19,
+    "events_with_evidence_url": 19,
     "collection_error_count": 12,
     "event_model_source_gap_count": 0
   },
@@ -222,21 +222,19 @@
       "freshness_sla_days": 2,
       "status": "fresh",
       "article_count": 11,
-      "event_count": 6,
-      "latest_event_at": "2026-09-20T09:09:07.776500+00:00",
+      "event_count": 9,
+      "latest_event_at": "2026-09-21T09:42:30.755282+00:00",
       "age_days": 0.0,
-      "latest_title": "“투자자와 벤처기업, 전문가의 의견을 균형있게 청취하였습니다.”  - 신기술금융업권 제3자 연대책임 관련 간담회 개최",
-      "latest_url": "https://www.fsc.go.kr/no010101/87735",
-      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87735",
-      "latest_program_title": "“투자자와 벤처기업, 전문가의 의견을 균형있게 청취하였습니다.”  - 신기술금융업권 제3자 연대책임 관련 간담회 개최",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-09-20:투자자와-벤처기업-전문가의-의견을-균형있게-청취하였습니다-신기술금융업권-제3자-연대책임-관련-간담회-개최",
+      "latest_title": "금융정보분석원, 타지키스탄 국립은행과  정보교환 협력을 위한 양해각서(MOU) 체결",
+      "latest_url": "https://www.fsc.go.kr/no010101/87745",
+      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87745",
+      "latest_program_title": "금융정보분석원, 타지키스탄 국립은행과  정보교환 협력을 위한 양해각서(MOU) 체결",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-09-21:금융정보분석원-타지키스탄-국립은행과-정보교환-협력을-위한-양해각서-mou-체결",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
         "TargetGroup": [
+          "소상공인",
           "스타트업"
-        ],
-        "BusinessStage": [
-          "벤처기업"
         ],
         "Region": [
           "서울"
@@ -527,7 +525,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 4,
+      "article_count": 5,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -733,6 +731,197 @@
     }
   ],
   "events": [
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "금융정보분석원, 타지키스탄 국립은행과  정보교환 협력을 위한 양해각서(MOU) 체결",
+      "url": "https://www.fsc.go.kr/no010101/87745",
+      "event_at": "2026-09-21T09:42:30.755282+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "스타트업"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "금융정보분석원, 타지키스탄 국립은행과  정보교환 협력을 위한 양해각서(MOU) 체결",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-09-21:금융정보분석원-타지키스탄-국립은행과-정보교환-협력을-위한-양해각서-mou-체결",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87745",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "정책금융이 스타트업과 소상공인을 더욱 든든히 지원하겠습니다.    - 제14차 정책금융지원협의회 개최. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/87751",
+      "event_at": "2026-09-21T09:42:29.832377+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업",
+          "스타트업",
+          "청년"
+        ],
+        "Industry": [
+          "AI"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "정책금융이 스타트업과 소상공인을 더욱 든든히 지원하겠습니다.    - 제14차 정책금융지원협의회 개최. 금일 등록된 게시글",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-09-21:정책금융이-스타트업과-소상공인을-더욱-든든히-지원하겠습니다-제14차-정책금융지원협의회-개최-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87751",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "「미리 만나는 2027 금융위 청년 사업」 행사 개최. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/87752",
+      "event_at": "2026-09-21T09:42:28.934041+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업",
+          "스타트업",
+          "청년",
+          "신혼부부",
+          "저소득"
+        ],
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "「미리 만나는 2027 금융위 청년 사업」 행사 개최. 금일 등록된 게시글",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-09-21:미리-만나는-2027-금융위-청년-사업-행사-개최-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87752",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "application_deadline",
+      "title": "이억원 금융위원장, 추석 맞이 전통시장 방문. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/87753",
+      "event_at": "2026-07-28T00:00:00+00:00",
+      "application_deadline": "2026-07-28",
+      "application_start_date": "2026-09-21",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업",
+          "청년",
+          "자영업자"
+        ],
+        "BusinessStage": [
+          "재창업",
+          "벤처기업"
+        ],
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "경기",
+          "부산",
+          "광주",
+          "충북",
+          "전북",
+          "전남",
+          "경북",
+          "경남",
+          "제주"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "이억원 금융위원장, 추석 맞이 전통시장 방문. 금일 등록된 게시글",
+      "program_key": "application-deadline:kr:금융위원회:2026-07-28:이억원-금융위원장-추석-맞이-전통시장-방문-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87753",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "이억원 금융위원장, 추석 맞이 전통시장 방문. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/87753",
+      "event_at": "2026-09-21T09:42:27.822765+00:00",
+      "application_deadline": "2026-07-28",
+      "application_start_date": "2026-09-21",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인",
+          "중소기업",
+          "청년",
+          "자영업자"
+        ],
+        "BusinessStage": [
+          "재창업",
+          "벤처기업"
+        ],
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "경기",
+          "부산",
+          "광주",
+          "충북",
+          "전북",
+          "전남",
+          "경북",
+          "경남",
+          "제주"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "이억원 금융위원장, 추석 맞이 전통시장 방문. 금일 등록된 게시글",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-09-21:이억원-금융위원장-추석-맞이-전통시장-방문-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87753",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "“지역사회와 상생”…KB손해보험·금감원, 추석맞이 사랑나눔 행사",
+      "url": "https://www.mk.co.kr/news/economy/12158350",
+      "event_at": "2026-09-20T22:21:27+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“지역사회와 상생”…KB손해보험·금감원, 추석맞이 사랑나눔 행사",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-09-20:지역사회와-상생-kb손해보험-금감원-추석맞이-사랑나눔-행사",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12158350",
+      "evidence_url_present": true
+    },
     {
       "source": "금융위원회",
       "event_model": "eligibility_rule",
@@ -1052,102 +1241,6 @@
       "program_title": "“역대 이런 재정운용 처음”···박수현 충남지사, ‘재정 대수술’ 예고",
       "program_key": "eligibility-rule:kr:경향신문-경제:2026-09-14:역대-이런-재정운용-처음-박수현-충남지사-재정-대수술-예고",
       "evidence_url": "https://www.khan.co.kr/article/202609151031001",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "application_deadline",
-      "title": "’26년 3분기 혁신금융서비스 지정 정기신청 개시. 금일 등록된 게시글",
-      "url": "https://www.fsc.go.kr/no010101/87705",
-      "event_at": "2026-09-30T00:00:00+00:00",
-      "application_deadline": "2026-09-30",
-      "application_start_date": "2026-09-14",
-      "eligibility_fields": {},
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "’26년 3분기 혁신금융서비스 지정 정기신청 개시. 금일 등록된 게시글",
-      "program_key": "application-deadline:kr:금융위원회:2026-09-30:26년-3분기-혁신금융서비스-지정-정기신청-개시-금일-등록된-게시글",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87705",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "application_deadline",
-      "title": "추석 연휴에도 국민 여러분의 금융이용 불편이 없도록 최선을 다하겠습니다.. 금일 등록된 게시글",
-      "url": "https://www.fsc.go.kr/no010101/87706",
-      "event_at": "2026-09-29T00:00:00+00:00",
-      "application_deadline": "2026-09-29",
-      "application_start_date": "2026-09-14",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인",
-          "중소기업"
-        ],
-        "Region": [
-          "부산",
-          "광주",
-          "전북",
-          "경남",
-          "제주"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "추석 연휴에도 국민 여러분의 금융이용 불편이 없도록 최선을 다하겠습니다.. 금일 등록된 게시글",
-      "program_key": "application-deadline:kr:금융위원회:2026-09-29:추석-연휴에도-국민-여러분의-금융이용-불편이-없도록-최선을-다하겠습니다-금일-등록된-게시글",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87706",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "추석 연휴에도 국민 여러분의 금융이용 불편이 없도록 최선을 다하겠습니다.. 금일 등록된 게시글",
-      "url": "https://www.fsc.go.kr/no010101/87706",
-      "event_at": "2026-09-14T09:38:56.770694+00:00",
-      "application_deadline": "2026-09-29",
-      "application_start_date": "2026-09-14",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인",
-          "중소기업"
-        ],
-        "Region": [
-          "부산",
-          "광주",
-          "전북",
-          "경남",
-          "제주"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "추석 연휴에도 국민 여러분의 금융이용 불편이 없도록 최선을 다하겠습니다.. 금일 등록된 게시글",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-09-14:추석-연휴에도-국민-여러분의-금융이용-불편이-없도록-최선을-다하겠습니다-금일-등록된-게시글",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87706",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "김해시, 1인당 10만원 ‘민생회복지원금’ 17일부터 지급",
-      "url": "https://www.khan.co.kr/article/202609141316021",
-      "event_at": "2026-09-13T19:16:02+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "경남"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "김해시, 1인당 10만원 ‘민생회복지원금’ 17일부터 지급",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-09-13:김해시-1인당-10만원-민생회복지원금-17일부터-지급",
-      "evidence_url": "https://www.khan.co.kr/article/202609141316021",
       "evidence_url_present": true
     }
   ],
