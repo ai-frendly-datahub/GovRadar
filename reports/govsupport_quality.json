@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-10-02T10:21:47.199387+00:00",
+  "generated_at": "2026-10-03T09:43:19.555904+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -13,10 +13,10 @@
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
     "application_deadline_events": 7,
-    "eligibility_rule_events": 22,
+    "eligibility_rule_events": 21,
     "selection_result_events": 0,
-    "unique_program_key_count": 29,
-    "events_with_evidence_url": 29,
+    "unique_program_key_count": 28,
+    "events_with_evidence_url": 28,
     "collection_error_count": 13,
     "event_model_source_gap_count": 0
   },
@@ -223,13 +223,13 @@
       "status": "fresh",
       "article_count": 13,
       "event_count": 11,
-      "latest_event_at": "2026-10-02T10:21:40.392321+00:00",
+      "latest_event_at": "2026-10-03T09:43:13.702507+00:00",
       "age_days": 0.0,
-      "latest_title": "제2차 국민참여성장펀드 판매 결과 잔여물량 현황(10.1일). 금일 등록된 게시글",
+      "latest_title": "제2차 국민참여성장펀드 판매 결과 잔여물량 현황(10.1일)",
       "latest_url": "https://www.fsc.go.kr/no010101/87846",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87846",
-      "latest_program_title": "제2차 국민참여성장펀드 판매 결과 잔여물량 현황(10.1일). 금일 등록된 게시글",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-10-02:제2차-국민참여성장펀드-판매-결과-잔여물량-현황-10-1일-금일-등록된-게시글",
+      "latest_program_title": "제2차 국민참여성장펀드 판매 결과 잔여물량 현황(10.1일)",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-10-03:제2차-국민참여성장펀드-판매-결과-잔여물량-현황-10-1일",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
         "TargetGroup": [
@@ -521,7 +521,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 6,
+      "article_count": 5,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -730,9 +730,9 @@
     {
       "source": "금융위원회",
       "event_model": "eligibility_rule",
-      "title": "제2차 국민참여성장펀드 판매 결과 잔여물량 현황(10.1일). 금일 등록된 게시글",
+      "title": "제2차 국민참여성장펀드 판매 결과 잔여물량 현황(10.1일)",
       "url": "https://www.fsc.go.kr/no010101/87846",
-      "event_at": "2026-10-02T10:21:40.392321+00:00",
+      "event_at": "2026-10-03T09:43:13.702507+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -743,15 +743,15 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "제2차 국민참여성장펀드 판매 결과 잔여물량 현황(10.1일). 금일 등록된 게시글",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-10-02:제2차-국민참여성장펀드-판매-결과-잔여물량-현황-10-1일-금일-등록된-게시글",
+      "program_title": "제2차 국민참여성장펀드 판매 결과 잔여물량 현황(10.1일)",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-10-03:제2차-국민참여성장펀드-판매-결과-잔여물량-현황-10-1일",
       "evidence_url": "https://www.fsc.go.kr/no010101/87846",
       "evidence_url_present": true
     },
     {
       "source": "금융위원회",
       "event_model": "application_deadline",
-      "title": "새도약기금, 사회취약계층 장기연체채권 4차 소각. 금일 등록된 게시글",
+      "title": "새도약기금, 사회취약계층 장기연체채권 4차 소각",
       "url": "https://www.fsc.go.kr/no010101/87847",
       "event_at": "2026-10-01T00:00:00+00:00",
       "application_deadline": "2026-10-01",
@@ -764,17 +764,17 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "새도약기금, 사회취약계층 장기연체채권 4차 소각. 금일 등록된 게시글",
-      "program_key": "application-deadline:kr:금융위원회:2026-10-01:새도약기금-사회취약계층-장기연체채권-4차-소각-금일-등록된-게시글",
+      "program_title": "새도약기금, 사회취약계층 장기연체채권 4차 소각",
+      "program_key": "application-deadline:kr:금융위원회:2026-10-01:새도약기금-사회취약계층-장기연체채권-4차-소각",
       "evidence_url": "https://www.fsc.go.kr/no010101/87847",
       "evidence_url_present": true
     },
     {
       "source": "금융위원회",
       "event_model": "eligibility_rule",
-      "title": "새도약기금, 사회취약계층 장기연체채권 4차 소각. 금일 등록된 게시글",
+      "title": "새도약기금, 사회취약계층 장기연체채권 4차 소각",
       "url": "https://www.fsc.go.kr/no010101/87847",
-      "event_at": "2026-10-02T10:21:39.512181+00:00",
+      "event_at": "2026-10-03T09:43:12.213608+00:00",
       "application_deadline": "2026-10-01",
       "application_start_date": "2026-10-02",
       "eligibility_fields": {
@@ -785,15 +785,15 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "새도약기금, 사회취약계층 장기연체채권 4차 소각. 금일 등록된 게시글",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-10-02:새도약기금-사회취약계층-장기연체채권-4차-소각-금일-등록된-게시글",
+      "program_title": "새도약기금, 사회취약계층 장기연체채권 4차 소각",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-10-03:새도약기금-사회취약계층-장기연체채권-4차-소각",
       "evidence_url": "https://www.fsc.go.kr/no010101/87847",
       "evidence_url_present": true
     },
     {
       "source": "금융위원회",
       "event_model": "application_deadline",
-      "title": "불법사금융 근절을 위한 4대 추가 제도 개선 추진. 금일 등록된 게시글",
+      "title": "불법사금융 근절을 위한 4대 추가 제도 개선 추진",
       "url": "https://www.fsc.go.kr/no010101/87852",
       "event_at": "2026-10-02T00:00:00+00:00",
       "application_deadline": "2026-10-02",
@@ -809,17 +809,17 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "불법사금융 근절을 위한 4대 추가 제도 개선 추진. 금일 등록된 게시글",
-      "program_key": "application-deadline:kr:금융위원회:2026-10-02:불법사금융-근절을-위한-4대-추가-제도-개선-추진-금일-등록된-게시글",
+      "program_title": "불법사금융 근절을 위한 4대 추가 제도 개선 추진",
+      "program_key": "application-deadline:kr:금융위원회:2026-10-02:불법사금융-근절을-위한-4대-추가-제도-개선-추진",
       "evidence_url": "https://www.fsc.go.kr/no010101/87852",
       "evidence_url_present": true
     },
     {
       "source": "금융위원회",
       "event_model": "eligibility_rule",
-      "title": "불법사금융 근절을 위한 4대 추가 제도 개선 추진. 금일 등록된 게시글",
+      "title": "불법사금융 근절을 위한 4대 추가 제도 개선 추진",
       "url": "https://www.fsc.go.kr/no010101/87852",
-      "event_at": "2026-10-02T10:21:38.547931+00:00",
+      "event_at": "2026-10-03T09:43:11.080320+00:00",
       "application_deadline": "2026-10-02",
       "application_start_date": "",
       "eligibility_fields": {
@@ -833,15 +833,15 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "불법사금융 근절을 위한 4대 추가 제도 개선 추진. 금일 등록된 게시글",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-10-02:불법사금융-근절을-위한-4대-추가-제도-개선-추진-금일-등록된-게시글",
+      "program_title": "불법사금융 근절을 위한 4대 추가 제도 개선 추진",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-10-03:불법사금융-근절을-위한-4대-추가-제도-개선-추진",
       "evidence_url": "https://www.fsc.go.kr/no010101/87852",
       "evidence_url_present": true
     },
     {
       "source": "금융위원회",
       "event_model": "application_deadline",
-      "title": "제3회 ‘금융위人상’, 수요자 중심 정책에 파격포상. 금일 등록된 게시글",
+      "title": "제3회 ‘금융위人상’, 수요자 중심 정책에 파격포상",
       "url": "https://www.fsc.go.kr/no010101/87857",
       "event_at": "2026-08-21T00:00:00+00:00",
       "application_deadline": "2026-08-21",
@@ -861,17 +861,17 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "제3회 ‘금융위人상’, 수요자 중심 정책에 파격포상. 금일 등록된 게시글",
-      "program_key": "application-deadline:kr:금융위원회:2026-08-21:제3회-금융위人상-수요자-중심-정책에-파격포상-금일-등록된-게시글",
+      "program_title": "제3회 ‘금융위人상’, 수요자 중심 정책에 파격포상",
+      "program_key": "application-deadline:kr:금융위원회:2026-08-21:제3회-금융위人상-수요자-중심-정책에-파격포상",
       "evidence_url": "https://www.fsc.go.kr/no010101/87857",
       "evidence_url_present": true
     },
     {
       "source": "금융위원회",
       "event_model": "eligibility_rule",
-      "title": "제3회 ‘금융위人상’, 수요자 중심 정책에 파격포상. 금일 등록된 게시글",
+      "title": "제3회 ‘금융위人상’, 수요자 중심 정책에 파격포상",
       "url": "https://www.fsc.go.kr/no010101/87857",
-      "event_at": "2026-10-02T10:21:37.694853+00:00",
+      "event_at": "2026-10-03T09:43:09.634478+00:00",
       "application_deadline": "2026-08-21",
       "application_start_date": "2026-10-02",
       "eligibility_fields": {
@@ -889,8 +889,8 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "제3회 ‘금융위人상’, 수요자 중심 정책에 파격포상. 금일 등록된 게시글",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-10-02:제3회-금융위人상-수요자-중심-정책에-파격포상-금일-등록된-게시글",
+      "program_title": "제3회 ‘금융위人상’, 수요자 중심 정책에 파격포상",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-10-03:제3회-금융위人상-수요자-중심-정책에-파격포상",
       "evidence_url": "https://www.fsc.go.kr/no010101/87857",
       "evidence_url_present": true
     },
@@ -1415,27 +1415,6 @@
       "program_title": "3000억 펀드 만들고 저리 대출까지…정책금융, 피지컬 AI에 돈 푼다",
       "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-09-26:3000억-펀드-만들고-저리-대출까지-정책금융-피지컬-ai에-돈-푼다",
       "evidence_url": "https://www.mk.co.kr/news/economy/12161774",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "전세대출 대신 갚아준 돈 7283억…3년 새 138.6% 급증",
-      "url": "https://www.mk.co.kr/news/economy/12161229",
-      "event_at": "2026-09-24T12:31:19+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "전세대출 대신 갚아준 돈 7283억…3년 새 138.6% 급증",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-09-24:전세대출-대신-갚아준-돈-7283억-3년-새-138-6-급증",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12161229",
       "evidence_url_present": true
     }
   ],
