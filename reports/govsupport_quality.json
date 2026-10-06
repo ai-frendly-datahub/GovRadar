@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-10-05T11:14:46.430757+00:00",
+  "generated_at": "2026-10-06T11:04:12.233746+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -12,12 +12,12 @@
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 6,
-    "eligibility_rule_events": 22,
+    "application_deadline_events": 7,
+    "eligibility_rule_events": 23,
     "selection_result_events": 0,
-    "unique_program_key_count": 28,
-    "events_with_evidence_url": 28,
-    "collection_error_count": 12,
+    "unique_program_key_count": 30,
+    "events_with_evidence_url": 30,
+    "collection_error_count": 13,
     "event_model_source_gap_count": 0
   },
   "sources": [
@@ -221,15 +221,15 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
       "status": "fresh",
-      "article_count": 11,
-      "event_count": 10,
-      "latest_event_at": "2026-10-05T11:14:40.137994+00:00",
+      "article_count": 13,
+      "event_count": 12,
+      "latest_event_at": "2026-10-06T11:04:09.022730+00:00",
       "age_days": 0.0,
-      "latest_title": "제2차 국민참여성장펀드 판매 결과 잔여물량 현황(10.1일)",
-      "latest_url": "https://www.fsc.go.kr/no010101/87846",
-      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87846",
-      "latest_program_title": "제2차 국민참여성장펀드 판매 결과 잔여물량 현황(10.1일)",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-10-05:제2차-국민참여성장펀드-판매-결과-잔여물량-현황-10-1일",
+      "latest_title": "새도약기금, 사회취약계층 장기연체채권 4차 소각",
+      "latest_url": "https://www.fsc.go.kr/no010101/87847",
+      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87847",
+      "latest_program_title": "새도약기금, 사회취약계층 장기연체채권 4차 소각",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-10-06:새도약기금-사회취약계층-장기연체채권-4차-소각",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
         "TargetGroup": [
@@ -521,7 +521,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 5,
+      "article_count": 6,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -575,7 +575,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 9,
+      "article_count": 8,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -730,6 +730,168 @@
     {
       "source": "금융위원회",
       "event_model": "eligibility_rule",
+      "title": "새도약기금, 사회취약계층 장기연체채권 4차 소각",
+      "url": "https://www.fsc.go.kr/no010101/87847",
+      "event_at": "2026-10-06T11:04:09.022730+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "새도약기금, 사회취약계층 장기연체채권 4차 소각",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-10-06:새도약기금-사회취약계층-장기연체채권-4차-소각",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87847",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "application_deadline",
+      "title": "全금융권이 비상한 경각심을 갖고 침해위협에 대응해 나가겠습니다.  - 금융위원장 주재 금융위·금감원 합동 「全금융권 긴급 점검회의」 개최. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/87876",
+      "event_at": "2026-10-07T00:00:00+00:00",
+      "application_deadline": "2026-10-07",
+      "application_start_date": "2026-10-06",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "全금융권이 비상한 경각심을 갖고 침해위협에 대응해 나가겠습니다.  - 금융위원장 주재 금융위·금감원 합동 「全금융권 긴급 점검회의」 개최. 금일 등록된 게시글",
+      "program_key": "application-deadline:kr:금융위원회:2026-10-07:全금융권이-비상한-경각심을-갖고-침해위협에-대응해-나가겠습니다-금융위원장-주재-금융위-금감원-합동-全금융권-긴급-점검회의-개최-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87876",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "全금융권이 비상한 경각심을 갖고 침해위협에 대응해 나가겠습니다.  - 금융위원장 주재 금융위·금감원 합동 「全금융권 긴급 점검회의」 개최. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/87876",
+      "event_at": "2026-10-06T11:04:06.643881+00:00",
+      "application_deadline": "2026-10-07",
+      "application_start_date": "2026-10-06",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "全금융권이 비상한 경각심을 갖고 침해위협에 대응해 나가겠습니다.  - 금융위원장 주재 금융위·금감원 합동 「全금융권 긴급 점검회의」 개최. 금일 등록된 게시글",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-10-06:全금융권이-비상한-경각심을-갖고-침해위협에-대응해-나가겠습니다-금융위원장-주재-금융위-금감원-합동-全금융권-긴급-점검회의-개최-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87876",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "application_deadline",
+      "title": "최근 금융권 개인정보 유출사고에 따른 보이스피싱·스미싱 등 피해에 주의하세요.. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/87882",
+      "event_at": "2026-10-06T00:00:00+00:00",
+      "application_deadline": "2026-10-06",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "최근 금융권 개인정보 유출사고에 따른 보이스피싱·스미싱 등 피해에 주의하세요.. 금일 등록된 게시글",
+      "program_key": "application-deadline:kr:금융위원회:2026-10-06:최근-금융권-개인정보-유출사고에-따른-보이스피싱-스미싱-등-피해에-주의하세요-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87882",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "최근 금융권 개인정보 유출사고에 따른 보이스피싱·스미싱 등 피해에 주의하세요.. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/87882",
+      "event_at": "2026-10-06T11:04:03.806282+00:00",
+      "application_deadline": "2026-10-06",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "최근 금융권 개인정보 유출사고에 따른 보이스피싱·스미싱 등 피해에 주의하세요.. 금일 등록된 게시글",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-10-06:최근-금융권-개인정보-유출사고에-따른-보이스피싱-스미싱-등-피해에-주의하세요-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87882",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "[단독] “코로나 때 빌린 돈, 이제 갚으라네요”…부실대출 17.7조 눈덩이",
+      "url": "https://www.mk.co.kr/news/economy/12169533",
+      "event_at": "2026-10-05T23:39:52+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "[단독] “코로나 때 빌린 돈, 이제 갚으라네요”…부실대출 17.7조 눈덩이",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-10-05:단독-코로나-때-빌린-돈-이제-갚으라네요-부실대출-17-7조-눈덩이",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12169533",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "[단독]농촌소멸 가속하는데…예산 부족에 귀농귀촌 지원사업 줄줄이 ‘사문화·축소’",
+      "url": "https://www.khan.co.kr/article/202610061735001",
+      "event_at": "2026-10-05T23:35:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "관광"
+        ],
+        "Region": [
+          "경기"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "[단독]농촌소멸 가속하는데…예산 부족에 귀농귀촌 지원사업 줄줄이 ‘사문화·축소’",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-10-05:단독-농촌소멸-가속하는데-예산-부족에-귀농귀촌-지원사업-줄줄이-사문화-축소",
+      "evidence_url": "https://www.khan.co.kr/article/202610061735001",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
       "title": "제2차 국민참여성장펀드 판매 결과 잔여물량 현황(10.1일)",
       "url": "https://www.fsc.go.kr/no010101/87846",
       "event_at": "2026-10-05T11:14:40.137994+00:00",
@@ -746,48 +908,6 @@
       "program_title": "제2차 국민참여성장펀드 판매 결과 잔여물량 현황(10.1일)",
       "program_key": "eligibility-rule:kr:금융위원회:2026-10-05:제2차-국민참여성장펀드-판매-결과-잔여물량-현황-10-1일",
       "evidence_url": "https://www.fsc.go.kr/no010101/87846",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "application_deadline",
-      "title": "새도약기금, 사회취약계층 장기연체채권 4차 소각",
-      "url": "https://www.fsc.go.kr/no010101/87847",
-      "event_at": "2026-10-01T00:00:00+00:00",
-      "application_deadline": "2026-10-01",
-      "application_start_date": "2026-10-02",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "새도약기금, 사회취약계층 장기연체채권 4차 소각",
-      "program_key": "application-deadline:kr:금융위원회:2026-10-01:새도약기금-사회취약계층-장기연체채권-4차-소각",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87847",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "새도약기금, 사회취약계층 장기연체채권 4차 소각",
-      "url": "https://www.fsc.go.kr/no010101/87847",
-      "event_at": "2026-10-05T11:14:38.316125+00:00",
-      "application_deadline": "2026-10-01",
-      "application_start_date": "2026-10-02",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "새도약기금, 사회취약계층 장기연체채권 4차 소각",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-10-05:새도약기금-사회취약계층-장기연체채권-4차-소각",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87847",
       "evidence_url_present": true
     },
     {
@@ -1358,69 +1478,6 @@
       "program_key": "eligibility-rule:kr:경향신문-경제:2026-09-29:공공임대주택-예산-증가-80-중산층도-입주하는-보편형-임대-에-쏠려-참여연대-취약계층-지원-확대해야",
       "evidence_url": "https://www.khan.co.kr/article/202609301715001",
       "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "대출 연체로 최저생계비 예금 압류 당하셨나요? 앞으론 소송 안해도 됩니다",
-      "url": "https://www.khan.co.kr/article/202609291701001",
-      "event_at": "2026-09-28T23:01:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "취약계층"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "대출 연체로 최저생계비 예금 압류 당하셨나요? 앞으론 소송 안해도 됩니다",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-09-28:대출-연체로-최저생계비-예금-압류-당하셨나요-앞으론-소송-안해도-됩니다",
-      "evidence_url": "https://www.khan.co.kr/article/202609291701001",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "면세유 유가연동보조금 연말까지 지원···농·어가 부담 경감 위해 791억 투입",
-      "url": "https://www.khan.co.kr/article/202609291420021",
-      "event_at": "2026-09-28T20:20:02+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "면세유 유가연동보조금 연말까지 지원···농·어가 부담 경감 위해 791억 투입",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-09-28:면세유-유가연동보조금-연말까지-지원-농-어가-부담-경감-위해-791억-투입",
-      "evidence_url": "https://www.khan.co.kr/article/202609291420021",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "“같은 월급인데 은행 바꾸니 대출 더 나와”...청년 ‘장래소득’ 적용 제각각",
-      "url": "https://www.mk.co.kr/news/economy/12163505",
-      "event_at": "2026-09-28T17:06:11+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "“같은 월급인데 은행 바꾸니 대출 더 나와”...청년 ‘장래소득’ 적용 제각각",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-09-28:같은-월급인데-은행-바꾸니-대출-더-나와-청년-장래소득-적용-제각각",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12163505",
-      "evidence_url_present": true
     }
   ],
   "event_model_coverage": [
@@ -1500,6 +1557,7 @@
     "r/korea: Source disabled (crawl health threshold reached)",
     "r/smallbusiness: Source disabled (crawl health threshold reached)",
     "r/startups: Source disabled (crawl health threshold reached)",
-    "r/Entrepreneur: Source disabled (crawl health threshold reached)"
+    "r/Entrepreneur: Source disabled (crawl health threshold reached)",
+    "https://www.sedaily.com/article/20098357: summary is missing or not a string"
   ]
 }
