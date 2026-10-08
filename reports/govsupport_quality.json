@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-10-07T10:54:12.256827+00:00",
+  "generated_at": "2026-10-08T11:11:35.280529+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -12,11 +12,11 @@
     "not_tracked_sources": 18,
     "skipped_disabled_sources": 3,
     "support_program_notice_events": 0,
-    "application_deadline_events": 4,
-    "eligibility_rule_events": 19,
+    "application_deadline_events": 5,
+    "eligibility_rule_events": 20,
     "selection_result_events": 0,
-    "unique_program_key_count": 23,
-    "events_with_evidence_url": 23,
+    "unique_program_key_count": 25,
+    "events_with_evidence_url": 25,
     "collection_error_count": 12,
     "event_model_source_gap_count": 0
   },
@@ -221,19 +221,22 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
       "status": "fresh",
-      "article_count": 10,
-      "event_count": 9,
-      "latest_event_at": "2026-10-07T10:54:04.435248+00:00",
+      "article_count": 7,
+      "event_count": 7,
+      "latest_event_at": "2026-10-08T11:11:27.206157+00:00",
       "age_days": 0.0,
-      "latest_title": "최근 금융권 개인정보 유출사고에 따른 보이스피싱·스미싱 등 피해에 주의하세요.",
-      "latest_url": "https://www.fsc.go.kr/no010101/87882",
-      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87882",
-      "latest_program_title": "최근 금융권 개인정보 유출사고에 따른 보이스피싱·스미싱 등 피해에 주의하세요.",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-10-07:최근-금융권-개인정보-유출사고에-따른-보이스피싱-스미싱-등-피해에-주의하세요",
-      "latest_application_deadline": "2026-10-06",
+      "latest_title": "“개인간 중고거래 신용카드 안전결제 서비스” 등  혁신금융서비스 24건 신규 지정 의결",
+      "latest_url": "https://www.fsc.go.kr/no010101/87893",
+      "latest_evidence_url": "https://www.fsc.go.kr/no010101/87893",
+      "latest_program_title": "“개인간 중고거래 신용카드 안전결제 서비스” 등  혁신금융서비스 24건 신규 지정 의결",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-10-08:개인간-중고거래-신용카드-안전결제-서비스-등-혁신금융서비스-24건-신규-지정-의결",
+      "latest_application_deadline": "2025-09-17",
       "latest_eligibility_fields": {
         "Industry": [
           "AI"
+        ],
+        "Region": [
+          "광주"
         ]
       },
       "latest_selection_result_date": "",
@@ -521,7 +524,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 6,
+      "article_count": 9,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -575,7 +578,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 7,
+      "article_count": 6,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -727,6 +730,144 @@
     }
   ],
   "events": [
+    {
+      "source": "금융위원회",
+      "event_model": "application_deadline",
+      "title": "“개인간 중고거래 신용카드 안전결제 서비스” 등  혁신금융서비스 24건 신규 지정 의결",
+      "url": "https://www.fsc.go.kr/no010101/87893",
+      "event_at": "2025-09-17T00:00:00+00:00",
+      "application_deadline": "2025-09-17",
+      "application_start_date": "2026-10-07",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "광주"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“개인간 중고거래 신용카드 안전결제 서비스” 등  혁신금융서비스 24건 신규 지정 의결",
+      "program_key": "application-deadline:kr:금융위원회:2025-09-17:개인간-중고거래-신용카드-안전결제-서비스-등-혁신금융서비스-24건-신규-지정-의결",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87893",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "“개인간 중고거래 신용카드 안전결제 서비스” 등  혁신금융서비스 24건 신규 지정 의결",
+      "url": "https://www.fsc.go.kr/no010101/87893",
+      "event_at": "2026-10-08T11:11:27.206157+00:00",
+      "application_deadline": "2025-09-17",
+      "application_start_date": "2026-10-07",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "광주"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“개인간 중고거래 신용카드 안전결제 서비스” 등  혁신금융서비스 24건 신규 지정 의결",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-10-08:개인간-중고거래-신용카드-안전결제-서비스-등-혁신금융서비스-24건-신규-지정-의결",
+      "evidence_url": "https://www.fsc.go.kr/no010101/87893",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "\"대기업 거래실적으로 中企대출\"…올해 '공급망금융' 5조원 돌파",
+      "url": "https://www.mk.co.kr/news/economy/12171849",
+      "event_at": "2026-10-07T23:39:44+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "\"대기업 거래실적으로 中企대출\"…올해 '공급망금융' 5조원 돌파",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-10-07:대기업-거래실적으로-中企대출-올해-공급망금융-5조원-돌파",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12171849",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "하나은행, 취약층 재기지원…장기연체채권 1343억 소각",
+      "url": "https://www.mk.co.kr/news/economy/12171844",
+      "event_at": "2026-10-07T23:39:42+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "하나은행, 취약층 재기지원…장기연체채권 1343억 소각",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-10-07:하나은행-취약층-재기지원-장기연체채권-1343억-소각",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12171844",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "외신 “AI가 서울 집값도 끌어올렸다…李정부 직면한 부동산 딜레마”",
+      "url": "https://www.mk.co.kr/news/economy/12171264",
+      "event_at": "2026-10-07T16:44:40+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "외신 “AI가 서울 집값도 끌어올렸다…李정부 직면한 부동산 딜레마”",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-10-07:외신-ai가-서울-집값도-끌어올렸다-李정부-직면한-부동산-딜레마",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12171264",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "이제 39세까지 청년 특례전세보증 받는다…신혼·양육가구는 한도 3억",
+      "url": "https://www.mk.co.kr/news/economy/12171206",
+      "event_at": "2026-10-07T16:16:29+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "이제 39세까지 청년 특례전세보증 받는다…신혼·양육가구는 한도 3억",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-10-07:이제-39세까지-청년-특례전세보증-받는다-신혼-양육가구는-한도-3억",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12171206",
+      "evidence_url_present": true
+    },
     {
       "source": "금융위원회",
       "event_model": "application_deadline",
@@ -1172,111 +1313,6 @@
       "program_title": "새도약기금, 18만명 취약계층 장기연체 빚 1조6천억 소각",
       "program_key": "eligibility-rule:kr:경향신문-경제:2026-10-01:새도약기금-18만명-취약계층-장기연체-빚-1조6천억-소각",
       "evidence_url": "https://www.khan.co.kr/article/202610021103011",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "전남광주에서 서민·취약계층과 소상공인을 위한  희망사다리를 놓겠습니다  - 이억원 금융위원장, 「전남광주 서민금융 복합지원센터」 개소식  및 지역 소상공인 현장 간담회 참석",
-      "url": "https://www.fsc.go.kr/no010101/87821",
-      "event_at": "2026-10-01T10:46:50.145615+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "소상공인",
-          "취약계층"
-        ],
-        "Region": [
-          "광주",
-          "전남"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "전남광주에서 서민·취약계층과 소상공인을 위한  희망사다리를 놓겠습니다  - 이억원 금융위원장, 「전남광주 서민금융 복합지원센터」 개소식  및 지역 소상공인 현장 간담회 참석",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-10-01:전남광주에서-서민-취약계층과-소상공인을-위한-희망사다리를-놓겠습니다-이억원-금융위원장-전남광주-서민금융-복합지원센터-개소식-및-지역-소상공인-현장-간담회-참석",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87821",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "대형 IB의 모험자본 공급 현황을 점검하고 리서치보고서의 독립성‧신뢰성 제고 및 중소형주 커버리지 확대 방안을 마련하였습니다.. 금일 등록된 게시글",
-      "url": "https://www.fsc.go.kr/no010101/87831",
-      "event_at": "2026-10-01T10:46:48.656634+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "BusinessStage": [
-          "벤처기업"
-        ],
-        "Region": [
-          "대전",
-          "제주"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "대형 IB의 모험자본 공급 현황을 점검하고 리서치보고서의 독립성‧신뢰성 제고 및 중소형주 커버리지 확대 방안을 마련하였습니다.. 금일 등록된 게시글",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-10-01:대형-ib의-모험자본-공급-현황을-점검하고-리서치보고서의-독립성-신뢰성-제고-및-중소형주-커버리지-확대-방안을-마련하였습니다-금일-등록된-게시글",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87831",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "모태펀드와 국민성장펀드가 협력하여첨단혁신기업의 지속성장을 지원하는 ‘이어달리기’를 이어갑니다.. 금일 등록된 게시글",
-      "url": "https://www.fsc.go.kr/no010101/87839",
-      "event_at": "2026-10-01T10:46:42.476690+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "스타트업"
-        ],
-        "BusinessStage": [
-          "벤처기업"
-        ],
-        "Industry": [
-          "제조",
-          "AI",
-          "바이오"
-        ],
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "모태펀드와 국민성장펀드가 협력하여첨단혁신기업의 지속성장을 지원하는 ‘이어달리기’를 이어갑니다.. 금일 등록된 게시글",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-10-01:모태펀드와-국민성장펀드가-협력하여첨단혁신기업의-지속성장을-지원하는-이어달리기-를-이어갑니다-금일-등록된-게시글",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87839",
-      "evidence_url_present": true
-    },
-    {
-      "source": "경향신문 경제",
-      "event_model": "eligibility_rule",
-      "title": "정부, 공공재개발 주민 이주비 대출 이자 지원…연 최대 600만원까지",
-      "url": "https://www.khan.co.kr/article/202610011628001",
-      "event_at": "2026-09-30T22:28:00+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울",
-          "경기"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "정부, 공공재개발 주민 이주비 대출 이자 지원…연 최대 600만원까지",
-      "program_key": "eligibility-rule:kr:경향신문-경제:2026-09-30:정부-공공재개발-주민-이주비-대출-이자-지원-연-최대-600만원까지",
-      "evidence_url": "https://www.khan.co.kr/article/202610011628001",
       "evidence_url_present": true
     }
   ],
