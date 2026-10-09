@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-10-08T11:11:35.280529+00:00",
+  "generated_at": "2026-10-09T11:10:29.297204+00:00",
   "summary": {
     "total_sources": 26,
     "tracked_sources": 5,
@@ -223,13 +223,13 @@
       "status": "fresh",
       "article_count": 7,
       "event_count": 7,
-      "latest_event_at": "2026-10-08T11:11:27.206157+00:00",
+      "latest_event_at": "2026-10-09T11:10:21.636010+00:00",
       "age_days": 0.0,
       "latest_title": "“개인간 중고거래 신용카드 안전결제 서비스” 등  혁신금융서비스 24건 신규 지정 의결",
       "latest_url": "https://www.fsc.go.kr/no010101/87893",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87893",
       "latest_program_title": "“개인간 중고거래 신용카드 안전결제 서비스” 등  혁신금융서비스 24건 신규 지정 의결",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-10-08:개인간-중고거래-신용카드-안전결제-서비스-등-혁신금융서비스-24건-신규-지정-의결",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-10-09:개인간-중고거래-신용카드-안전결제-서비스-등-혁신금융서비스-24건-신규-지정-의결",
       "latest_application_deadline": "2025-09-17",
       "latest_eligibility_fields": {
         "Industry": [
@@ -759,7 +759,7 @@
       "event_model": "eligibility_rule",
       "title": "“개인간 중고거래 신용카드 안전결제 서비스” 등  혁신금융서비스 24건 신규 지정 의결",
       "url": "https://www.fsc.go.kr/no010101/87893",
-      "event_at": "2026-10-08T11:11:27.206157+00:00",
+      "event_at": "2026-10-09T11:10:21.636010+00:00",
       "application_deadline": "2025-09-17",
       "application_start_date": "2026-10-07",
       "eligibility_fields": {
@@ -774,7 +774,7 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "“개인간 중고거래 신용카드 안전결제 서비스” 등  혁신금융서비스 24건 신규 지정 의결",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-10-08:개인간-중고거래-신용카드-안전결제-서비스-등-혁신금융서비스-24건-신규-지정-의결",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-10-09:개인간-중고거래-신용카드-안전결제-서비스-등-혁신금융서비스-24건-신규-지정-의결",
       "evidence_url": "https://www.fsc.go.kr/no010101/87893",
       "evidence_url_present": true
     },
