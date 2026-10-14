@@ -129,6 +129,7 @@ sources:
 - name: 정책브리핑
   type: rss
   url: https://www.korea.kr/rss/policy.xml
+  enabled: false
   language: ko
   country: KR
   trust_tier: T1_authoritative
@@ -144,11 +145,59 @@ sources:
     observed_date_field: collected_at
     canonical_key_fields: [agency, normalized_program_title, source_url]
     freshness_sla_days: 2
-# NOTE: 2026-04-02 테스트에서 동작하지 않음 (TIMEOUT)
-# - name: 고용노동부
-#   type: rss
-#   url: https://www.moel.go.kr/rss/policy.xml
-#   trust_tier: T1_authoritative
+    skip_reason: "정책브리핑 RSS(/rss/policy.xml)가 404이고, 공식 페이지가 RSS 서비스 중단을 안내한다."
+    reenable_gate: "키 없는 공개 RSS 또는 공고 피드가 항목을 돌려주면 다시 켠다. Cloudflare 우회는 하지 않는다."
+- name: 고용노동부 공지
+  type: rss
+  url: https://www.moel.go.kr/rss/notice.do
+  language: ko
+  country: KR
+  trust_tier: T1_authoritative
+  collection_tier: C1_rss
+  content_type: ministry_notice
+  producer_role: government
+  info_purpose: [official_notice, support_program_notice, application_deadline, operational_event]
+  notes: "고용노동부 공식 RSS(알려드립니다). 2026-10-14에 GovRadar/0.1 UA와 TLS 검증으로 XML 항목을 확인했다. 이전 /rss/policy.xml 404를 대체한다."
+  config:
+    event_model: support_program_notice
+    event_date_field: published
+    observed_date_field: collected_at
+    canonical_key_fields: [agency, normalized_program_title, source_url]
+    freshness_sla_days: 2
+- name: 고용노동부 정책
+  type: rss
+  url: https://www.moel.go.kr/rss/policy.do
+  language: ko
+  country: KR
+  trust_tier: T1_authoritative
+  collection_tier: C1_rss
+  content_type: policy_notice
+  producer_role: government
+  info_purpose: [policy, guidance, support_program_notice, operational_event]
+  notes: "고용노동부 정책자료 RSS. 키 없는 공개 피드."
+  config:
+    event_model: support_program_notice
+    event_date_field: published
+    observed_date_field: collected_at
+    canonical_key_fields: [agency, normalized_program_title, source_url]
+    freshness_sla_days: 2
+- name: 고용노동부 입법예고
+  type: rss
+  url: https://www.moel.go.kr/rss/lawinfo.do
+  language: ko
+  country: KR
+  trust_tier: T1_authoritative
+  collection_tier: C1_rss
+  content_type: legislative_notice
+  producer_role: government
+  info_purpose: [official_notice, eligibility_rule, operational_event]
+  notes: "고용노동부 입법·행정예고 RSS. 키 없는 공개 피드."
+  config:
+    event_model: eligibility_rule
+    event_date_field: published
+    observed_date_field: collected_at
+    canonical_key_fields: [agency, normalized_program_title, source_url]
+    freshness_sla_days: 2
 # NOTE: 2026-04-02 품질점검 - RSS URL이 오류페이지로 리다이렉트 (F등급)
 # - name: 중소벤처기업부
 #   type: rss
@@ -171,6 +220,7 @@ sources:
 - name: 소상공인시장진흥공단
   type: javascript
   url: https://www.semas.or.kr/web/board/webBoardList.kmdc?bCd=1
+  enabled: false
   language: ko
   country: KR
   trust_tier: T2_expert
@@ -194,6 +244,8 @@ sources:
     canonical_key_fields: [agency, normalized_program_title, target_group, source_url]
     status_fields: [application_deadline, eligibility_condition, support_amount]
     freshness_sla_days: 1
+    skip_reason: "브라우저 수집이 연결 타임아웃으로 크롤 헬스 임계값에 걸렸고, 키 없는 공개 RSS를 찾지 못했다."
+    reenable_gate: "공개 RSS 또는 타임아웃 없이 공고 행을 돌려주는 공식 엔드포인트가 확인된 뒤에만 다시 켠다."
 # NOTE: 2026-04-02 테스트에서 동작하지 않음 (404)
 # - name: 산업통상자원부
 #   type: rss
@@ -221,32 +273,41 @@ sources:
 #   article_selector: .list-group-item
 #   link_selector: a
 #   trust_tier: T1_authoritative
-- name: 서울시 지원사업
-  type: javascript
-  url: https://www.seoul.go.kr/news/news_notice.do
+- name: 서울시 정책뉴스
+  type: rss
+  url: https://news.seoul.go.kr/gov/feed
   language: ko
   country: KR
-  trust_tier: T2_expert
-  collection_tier: C3_javascript
+  trust_tier: T1_authoritative
+  collection_tier: C1_rss
   content_type: local_support_notice
   producer_role: local-government
-  info_purpose: [application, deadline, eligibility, support_program_notice, application_deadline, eligibility_rule, operational_event]
-  notes: "서울시 공고 기반 지역 지원사업 source. 지역 조건과 신청 가능 상태를 별도 추출한다."
+  info_purpose: [application, deadline, eligibility, support_program_notice, application_deadline, operational_event]
+  notes: "서울시 고시공고 브라우저 페이지는 타임아웃으로 크롤 헬스가 꺼졌다. news.seoul.go.kr 정책 RSS는 키 없이 XML을 돌려준다."
   config:
-    wait_for: table
-    article_selector: table tbody tr
-    link_selector: td a
-    javascript_link_templates:
-      fnTbbsView: "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo={id}"
-    fetch_detail: true
-    detail_wait_for: body
-    detail_content_selector: "#content"
     event_model: application_deadline
-    event_date_field: application_deadline
+    event_date_field: published
     observed_date_field: collected_at
     canonical_key_fields: [jurisdiction, agency, normalized_program_title, source_url]
     status_fields: [application_start_date, application_deadline, eligibility_condition]
     freshness_sla_days: 1
+- name: 서울시 경제
+  type: rss
+  url: https://news.seoul.go.kr/economy/feed
+  language: ko
+  country: KR
+  trust_tier: T1_authoritative
+  collection_tier: C1_rss
+  content_type: local_support_notice
+  producer_role: local-government
+  info_purpose: [support_program_notice, application_deadline, operational_event]
+  notes: "서울시 경제·일자리 정책 RSS. 키 없는 공개 피드."
+  config:
+    event_model: support_program_notice
+    event_date_field: published
+    observed_date_field: collected_at
+    canonical_key_fields: [jurisdiction, agency, normalized_program_title, source_url]
+    freshness_sla_days: 2
 # NOTE: 2026-04-02 테스트에서 동작하지 않음 (404)
 # - name: 경기도 지원사업
 #   type: rss
@@ -260,6 +321,7 @@ sources:
 - name: 행정안전부
   type: javascript
   url: https://www.mois.go.kr/frt/bbs/type013/commonSelectBoardList.do?bbsId=BBSMSTR_000000000006
+  enabled: false
   language: ko
   country: KR
   trust_tier: T1_authoritative
@@ -280,9 +342,12 @@ sources:
     observed_date_field: collected_at
     canonical_key_fields: [agency, normalized_program_title, source_url]
     freshness_sla_days: 2
+    skip_reason: "브라우저 수집이 15초 타임아웃으로 크롤 헬스 임계값에 걸렸고, 키 없는 공개 RSS를 찾지 못했다."
+    reenable_gate: "공개 RSS 또는 공고 목록을 안정적으로 돌려주는 공식 엔드포인트 확인 후에만 다시 켠다."
 - name: 보건복지부
   type: javascript
   url: https://www.mohw.go.kr/board.es?mid=a10503010100&bid=0027
+  enabled: false
   language: ko
   country: KR
   trust_tier: T1_authoritative
@@ -302,6 +367,8 @@ sources:
     observed_date_field: collected_at
     canonical_key_fields: [agency, target_group, normalized_program_title, source_url]
     freshness_sla_days: 2
+    skip_reason: "브라우저 수집이 15초 타임아웃으로 크롤 헬스 임계값에 걸렸고, 키 없는 공개 RSS를 찾지 못했다."
+    reenable_gate: "공개 RSS 또는 공고 목록을 안정적으로 돌려주는 공식 엔드포인트 확인 후에만 다시 켠다."
 - name: 금융위원회
   type: javascript
   url: https://www.fsc.go.kr/no010101
@@ -376,34 +443,50 @@ sources:
 - name: r/korea
   type: reddit
   url: https://www.reddit.com/r/korea/
+  enabled: false
   language: en
   country: KR
   trust_tier: T3_community
   collection_tier: C2_api
+  config:
+    skip_reason: "Reddit JSON API가 403을 반환한다. 공개 .rss는 정부 공고 피드가 아니다."
+    reenable_gate: "Reddit 앱 등록(https://www.reddit.com/prefs/apps) 후 환경 변수 이름으로만 자격 증명을 넘긴 수집기가 붙으면 다시 검토한다."
 
 - name: r/smallbusiness
   type: reddit
   url: https://www.reddit.com/r/smallbusiness/
+  enabled: false
   language: en
   country: US
   trust_tier: T3_community
   collection_tier: C2_api
+  config:
+    skip_reason: "Reddit JSON API가 403을 반환한다."
+    reenable_gate: "Reddit 앱 등록(https://www.reddit.com/prefs/apps) 후 환경 변수 이름으로만 자격 증명을 넘긴 수집기가 붙으면 다시 검토한다."
 
 - name: r/startups
   type: reddit
   url: https://www.reddit.com/r/startups/
+  enabled: false
   language: en
   country: US
   trust_tier: T3_community
   collection_tier: C2_api
+  config:
+    skip_reason: "Reddit JSON API가 403을 반환한다."
+    reenable_gate: "Reddit 앱 등록(https://www.reddit.com/prefs/apps) 후 환경 변수 이름으로만 자격 증명을 넘긴 수집기가 붙으면 다시 검토한다."
 
 - name: r/Entrepreneur
   type: reddit
   url: https://www.reddit.com/r/Entrepreneur/
+  enabled: false
   language: en
   country: US
   trust_tier: T3_community
   collection_tier: C2_api
+  config:
+    skip_reason: "Reddit JSON API가 403을 반환한다."
+    reenable_gate: "Reddit 앱 등록(https://www.reddit.com/prefs/apps) 후 환경 변수 이름으로만 자격 증명을 넘긴 수집기가 붙으면 다시 검토한다."
 # NOTE: 아래 소스들은 2026-04-02 테스트에서 동작하지 않음 (404/invalid feed)
 # - name: SBA US Small Business
 #   type: rss

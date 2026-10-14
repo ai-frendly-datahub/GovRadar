@@ -9,7 +9,7 @@ from typing import cast
 from radar_core.exceptions import StorageError
 from radar_core.storage import RadarStorage as CoreRadarStorage
 
-from .date_storage import cleanup_dated_databases, snapshot_database
+from .date_storage import cleanup_dated_databases, compact_database, snapshot_database
 from .models import Article
 
 
@@ -99,6 +99,7 @@ class RadarStorage(CoreRadarStorage):
         snapshot_date: date | None = None,
     ) -> Path | None:
         snapshot_root = Path(snapshot_dir) if snapshot_dir is not None else None
+        compact_database(self.db_path)
         return snapshot_database(
             self.db_path,
             snapshot_date=snapshot_date,

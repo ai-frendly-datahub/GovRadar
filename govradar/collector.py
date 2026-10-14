@@ -15,13 +15,15 @@ import structlog
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
+from .common.validators import is_challenge_or_error_page
 from .models import Article, Source
 
 logger = structlog.get_logger()
 
 
 _DEFAULT_HEADERS: dict[str, str] = {
-    "User-Agent": "Mozilla/5.0 (compatible; RadarTemplateBot/1.0; +https://github.com/zzragida/ai-frendly-datahub)",
+    "User-Agent": ("GovRadar/0.1 (+https://github.com/ai-frendly-datahub/GovRadar; public-rss)"),
+    "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*",
 }
 _COLLECTION_CONTROL_LOCK = threading.Lock()
 
@@ -56,7 +58,9 @@ def _resolve_max_workers(max_workers: int | None = None) -> int:
 
 def _create_session() -> requests.Session:
     session = requests.Session()
+    session.verify = True
     session.headers.update(_DEFAULT_HEADERS)
+    session.headers["User-Agent"] = _DEFAULT_HEADERS["User-Agent"]
 
     retry_strategy = Retry(
         total=3,
@@ -75,19 +79,23 @@ def _create_session() -> requests.Session:
 def _fetch_url_with_retry(
     url: str,
     headers: dict[str, str] | None = None,
-    timeout: float = 30.0,
+    timeout: float = 45.0,
 ) -> requests.Response:
     session = _create_session()
     merged_headers = _DEFAULT_HEADERS.copy()
     if headers:
-        merged_headers.update(headers)
-    response = session.get(url, headers=merged_headers, timeout=timeout)
+        for key, value in headers.items():
+            if key.lower() == "user-agent":
+                continue
+            merged_headers[key] = value
+    merged_headers["User-Agent"] = _DEFAULT_HEADERS["User-Agent"]
+    response = session.get(url, headers=merged_headers, timeout=timeout, verify=True)
     response.raise_for_status()
     return response
 
 
 def _parse_rss_feed(
-    url: str, headers: dict[str, str] | None = None, timeout: float = 30.0
+    url: str, headers: dict[str, str] | None = None, timeout: float = 45.0
 ) -> list[Article]:
     try:
         response = _fetch_url_with_retry(url, headers, timeout)
@@ -130,14 +138,16 @@ def _parse_rss_feed(
                 except (ValueError, TypeError):
                     pass
 
+            title = html.unescape(entry.title) if hasattr(entry, "title") else ""
+            summary = (
+                html.unescape(entry.summary) if hasattr(entry, "summary") and entry.summary else ""
+            )
+            if is_challenge_or_error_page(title, summary):
+                continue
             article = Article(
-                title=html.unescape(entry.title) if hasattr(entry, "title") else "",
+                title=title,
                 link=entry.link if hasattr(entry, "link") else url,
-                summary=(
-                    html.unescape(entry.summary)
-                    if hasattr(entry, "summary") and entry.summary
-                    else ""
-                ),
+                summary=summary,
                 published=published_dt,
                 source=urlparse(url).netloc,
                 category="",
@@ -155,7 +165,7 @@ def collect_sources(
     sources: list[Source],
     category: str = "",
     limit_per_source: int = 30,
-    timeout: int = 30,
+    timeout: int = 45,
     min_interval_per_host: float = 0.5,
     max_workers: int | None = None,
 ) -> tuple[list[Article], list[str]]:

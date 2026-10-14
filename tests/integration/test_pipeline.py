@@ -159,7 +159,7 @@ def test_pipeline_quality_report_uses_validated_stored_scope(tmp_path: Path) -> 
         encoding="utf-8",
     )
 
-    now = datetime(2026, 5, 21, 12, 0, tzinfo=UTC)
+    now = datetime.now(UTC)
     relevant = Article(
         title="청년 지원사업 신청 공고",
         link="https://example.com/support",

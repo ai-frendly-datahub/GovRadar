@@ -1,7 +1,11 @@
 from __future__ import annotations
 
-from datetime import UTC, date, datetime, timedelta
+from datetime import date, timedelta
 from pathlib import Path
+
+import pytest
+
+from tests.reference_dates import REFERENCE_DATE
 
 
 def test_snapshot_database_creates_file(tmp_path: Path) -> None:
@@ -10,12 +14,11 @@ def test_snapshot_database_creates_file(tmp_path: Path) -> None:
     db_file = tmp_path / "radar_data.duckdb"
     db_file.write_text("fake-db-content")
 
-    result = snapshot_database(db_file)
+    result = snapshot_database(db_file, snapshot_date=REFERENCE_DATE)
 
     assert result is not None
     assert result.exists()
-    today_iso = datetime.now(UTC).date().isoformat()
-    assert result.name == f"{today_iso}.duckdb"
+    assert result.name == f"{REFERENCE_DATE.isoformat()}.duckdb"
     assert result.parent == tmp_path / "daily"
     assert result.read_text() == "fake-db-content"
 
@@ -165,12 +168,11 @@ def test_storage_create_daily_snapshot(tmp_path: Path) -> None:
     db_path = tmp_path / "data" / "radar_data.duckdb"
     storage = RadarStorage(db_path)
     try:
-        result = storage.create_daily_snapshot()
+        result = storage.create_daily_snapshot(snapshot_date=REFERENCE_DATE)
 
         assert result is not None
         assert result.exists()
-        today_iso = datetime.now(UTC).date().isoformat()
-        assert result.name == f"{today_iso}.duckdb"
+        assert result.name == f"{REFERENCE_DATE.isoformat()}.duckdb"
         assert result.parent == db_path.parent / "daily"
     finally:
         storage.close()
@@ -209,3 +211,44 @@ def test_storage_cleanup_old_snapshots(tmp_path: Path) -> None:
         assert not old_snapshot.exists()
     finally:
         storage.close()
+
+
+def test_apply_date_storage_compacts_before_snapshot(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    from govradar import date_storage
+
+    db_file = tmp_path / "govradar_data.duckdb"
+    db_file.write_text("db")
+    order: list[str] = []
+
+    def _compact(path: Path) -> dict[str, object]:
+        order.append(f"compact:{path.name}")
+        return {
+            "compacted": False,
+            "reason": "within_limit",
+            "bytes": 2,
+            "bytes_before": 2,
+            "rows_deleted": 0,
+        }
+
+    def _snapshot(path: Path, **_kwargs: object) -> Path:
+        order.append(f"snapshot:{path.name}")
+        return path
+
+    monkeypatch.setattr(date_storage, "compact_database", _compact)
+    monkeypatch.setattr(date_storage, "snapshot_database", _snapshot)
+
+    result = date_storage.apply_date_storage_policy(
+        database_path=db_file,
+        raw_data_dir=tmp_path / "raw",
+        report_dir=tmp_path / "reports",
+        keep_raw_days=1,
+        keep_report_days=1,
+        snapshot_db=True,
+        keep_snapshot_days=1,
+    )
+
+    assert order == ["compact:govradar_data.duckdb", "snapshot:govradar_data.duckdb"]
+    assert result["db_reason"] == "within_limit"
+    assert result["db_rows_deleted"] == 0

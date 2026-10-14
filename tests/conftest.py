@@ -14,6 +14,12 @@ def reset_structlog() -> object:
     structlog.reset_defaults()
 
 
+@pytest.fixture(autouse=True)
+def isolate_crawl_health(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """Keep crawl-health writes off the committed DuckDB during tests."""
+    monkeypatch.setenv("RADAR_CRAWL_HEALTH_DB_PATH", str(tmp_path / "crawl_health.duckdb"))
+
+
 @pytest.fixture
 def sample_source() -> object:
     from govradar.models import Source

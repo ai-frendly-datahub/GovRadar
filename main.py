@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import sys
 from datetime import UTC
 from pathlib import Path
 from typing import Any, cast
@@ -12,6 +13,14 @@ from radar_core.ontology import annotate_articles_with_ontology
 from radar_core.raw_logger import RawLogger
 from radar_core.search_index import SearchIndex
 
+from govradar.collection_contract import (
+    RSS_TIMEOUT_SECONDS,
+    EmptyCollectionError,
+    apply_feed_client_contract,
+    drop_challenge_pages,
+    ensure_collection_not_empty,
+    partition_missing_secrets,
+)
 from govradar.common.validators import validate_article
 from govradar.config_loader import load_category_quality_config
 from govradar.date_storage import apply_date_storage_policy
@@ -86,7 +95,7 @@ def run(
     categories_dir: Path | None = None,
     per_source_limit: int = 30,
     recent_days: int = 7,
-    timeout: int = 15,
+    timeout: int = RSS_TIMEOUT_SECONDS,
     keep_days: int = 90,
     keep_raw_days: int = 180,
     keep_report_days: int = 90,
@@ -106,17 +115,25 @@ def run(
         exclude_sources=tuple(exclude_sources or ()),
     )
 
+    apply_feed_client_contract()
+    runnable_sources, secret_errors = partition_missing_secrets(
+        effective_sources,
+        raw_dir=settings.raw_data_dir,
+    )
     print(
-        f"[Radar] Collecting '{category_cfg.display_name}' from {len(effective_sources)} sources..."
+        f"[Radar] Collecting '{category_cfg.display_name}' from "
+        f"{sum(1 for source in runnable_sources if source.enabled)} sources..."
     )
     collected: list[Article]
     errors: list[str]
     collected, errors = collect_sources(
-        effective_sources,
+        runnable_sources,
         category=category_cfg.category_name,
         limit_per_source=per_source_limit,
         timeout=timeout,
     )
+    collected, challenge_errors = drop_challenge_pages(collected)
+    errors = [*secret_errors, *errors, *challenge_errors]
     collected = annotate_articles_with_ontology(
         collected,
         repo_name="GovRadar",
@@ -228,8 +245,19 @@ def run(
     snapshot_path = date_storage.get("snapshot_path")
     if isinstance(snapshot_path, str) and snapshot_path:
         print(f"[Radar] Snapshot saved at {snapshot_path}")
+    print(
+        "[Radar] DuckDB compact "
+        f"reason={date_storage.get('db_reason')} "
+        f"before={date_storage.get('db_bytes_before')} "
+        f"after={date_storage.get('db_bytes')} "
+        f"rows_deleted={date_storage.get('db_rows_deleted')}"
+    )
     if errors:
         print(f"[Radar] {len(errors)} source(s) had issues. See report for details.")
+    ensure_collection_not_empty(
+        collected_count=len(collected),
+        enabled_source_count=sum(1 for source in effective_sources if source.enabled),
+    )
 
     _send_notifications(
         category_name=category_cfg.category_name,
@@ -294,7 +322,7 @@ def parse_args() -> argparse.Namespace:
         "--recent-days", type=int, default=7, help="Window (days) to show in the report"
     )
     _ = parser.add_argument(
-        "--timeout", type=int, default=15, help="HTTP timeout per request (seconds)"
+        "--timeout", type=int, default=45, help="HTTP timeout per request (seconds)"
     )
     _ = parser.add_argument(
         "--keep-days", type=int, default=90, help="Retention window for stored items"
@@ -382,19 +410,23 @@ def _to_str_list(value: object) -> list[str]:
 if __name__ == "__main__":
     _PROJECT_ROOT = Path(__file__).resolve().parent
     args = cast(dict[str, object], vars(parse_args()))
-    _ = run(
-        category=str(args.get("category", "")),
-        config_path=_to_path(args.get("config")) or _PROJECT_ROOT / "config" / "config.yaml",
-        categories_dir=_to_path(args.get("categories_dir"))
-        or _PROJECT_ROOT / "config" / "categories",
-        per_source_limit=_to_int(args.get("per_source_limit"), 30),
-        recent_days=_to_int(args.get("recent_days"), 7),
-        timeout=_to_int(args.get("timeout"), 15),
-        keep_days=_to_int(args.get("keep_days"), 90),
-        keep_raw_days=_to_int(args.get("keep_raw_days"), 180),
-        keep_report_days=_to_int(args.get("keep_report_days"), 90),
-        keep_snapshot_days=_to_int(args.get("keep_snapshot_days"), 30),
-        snapshot_db=bool(args.get("snapshot_db", False)),
-        max_sources=_to_optional_int(args.get("max_sources")),
-        exclude_sources=_to_str_list(args.get("exclude_source")),
-    )
+    try:
+        _ = run(
+            category=str(args.get("category", "")),
+            config_path=_to_path(args.get("config")) or _PROJECT_ROOT / "config" / "config.yaml",
+            categories_dir=_to_path(args.get("categories_dir"))
+            or _PROJECT_ROOT / "config" / "categories",
+            per_source_limit=_to_int(args.get("per_source_limit"), 30),
+            recent_days=_to_int(args.get("recent_days"), 7),
+            timeout=_to_int(args.get("timeout"), 45),
+            keep_days=_to_int(args.get("keep_days"), 90),
+            keep_raw_days=_to_int(args.get("keep_raw_days"), 180),
+            keep_report_days=_to_int(args.get("keep_report_days"), 90),
+            keep_snapshot_days=_to_int(args.get("keep_snapshot_days"), 30),
+            snapshot_db=bool(args.get("snapshot_db", False)),
+            max_sources=_to_optional_int(args.get("max_sources")),
+            exclude_sources=_to_str_list(args.get("exclude_source")),
+        )
+    except EmptyCollectionError as exc:
+        print(str(exc), file=sys.stderr)
+        raise SystemExit(1) from exc
