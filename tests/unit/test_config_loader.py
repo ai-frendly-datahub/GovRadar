@@ -52,8 +52,10 @@ def test_real_govsupport_sources_preserve_operational_metadata() -> None:
     assert semas.config["event_model"] == "eligibility_rule"
     assert "operational_event" in semas.info_purpose
 
-    seoul = sources["서울시 지원사업"]
+    seoul = sources["서울시 정책뉴스"]
     assert seoul.producer_role == "local-government"
+    assert seoul.type == "rss"
+    assert seoul.url == "https://news.seoul.go.kr/gov/feed"
     assert seoul.config["freshness_sla_days"] == 1
 
     mofra = sources["농림축산식품부"]

@@ -25,6 +25,18 @@
    # 리포트: reports/govsupport_report.html
    ```
 
+## 운영 계약
+
+Radar-Template PR #4와 같은 수집·저장 계약을 유지합니다. 시크릿 값은 코드, YAML, 로그, skip 파일에 넣지 않습니다.
+
+1. **radar-core 핀.** `requirements.txt`, `pyproject.toml`, `setup.cfg`는 `radar-core @ git+https://github.com/ai-frendly-datahub/radar-core.git@main` 입니다.
+2. **스냅샷 전에 압축.** `apply_date_storage_policy()`와 `RadarStorage.create_daily_snapshot()`은 복사 전에 `radar_core.db_compact.compact_duckdb_file`를 호출합니다. 압축이 실패해도 기존 파일을 스냅샷합니다.
+3. **피드 클라이언트.** User-Agent는 `GovRadar/0.1` 입니다. RSS 타임아웃 기본값은 45초입니다. TLS 검증은 항상 켭니다. Cloudflare, "Just a moment", 쿠키 월, 403/404 페이지 제목은 저장하기 전에 버립니다.
+4. **없는 시크릿.** 소스마다 GitHub `::warning`을 한 번 출력합니다. `data/raw/<날짜>/<소스>.skip.json`에는 환경 변수 이름만 기록합니다. 수집 실패는 빈 리스트이며 샘플 데이터를 만들지 않습니다.
+5. **실패해야 하는 실행.** 활성 소스의 수집이 0건이면 종료 코드 1입니다. 출력이 0바이트이거나 DuckDB가 100MiB 이상이면 워크플로가 실패합니다. 데이터 auto-commit/push에는 `continue-on-error`가 없습니다.
+6. **Pages는 푸시 성공 후에만.** `gh-pages` 배포는 auto-commit `outcome == success`일 때만 실행됩니다.
+7. **테스트.** 날짜 단정은 `tests/reference_dates.py`(2026-03-13 12:00 UTC)와 `tests/fixtures/`를 사용합니다. 커버리지는 `relative_files = true`입니다.
+
 ## 핵심 설정
 
 - 카테고리: `config/categories/govsupport.yaml`

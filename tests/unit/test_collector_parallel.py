@@ -6,9 +6,9 @@ import time
 from unittest.mock import Mock, patch
 
 import pytest
+from radar.collector import RateLimiter, collect_sources
+from radar.exceptions import NetworkError, SourceError
 
-from govradar.collector import RateLimiter, collect_sources
-from govradar.exceptions import NetworkError, SourceError
 from govradar.models import Article, Source
 
 

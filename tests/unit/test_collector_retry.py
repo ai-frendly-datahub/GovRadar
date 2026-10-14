@@ -6,9 +6,9 @@ from unittest.mock import Mock, patch
 # pyright: reportPrivateUsage=false
 import pytest
 import requests
+from radar.collector import RateLimiter, _collect_single, collect_sources
+from radar.exceptions import NetworkError, SourceError
 
-from govradar.collector import RateLimiter, _collect_single, collect_sources
-from govradar.exceptions import NetworkError, SourceError
 from govradar.models import Article, Source
 
 
