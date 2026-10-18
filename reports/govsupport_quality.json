@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-10-17T08:19:23.155730+00:00",
+  "generated_at": "2026-10-18T08:38:24.901661+00:00",
   "summary": {
     "total_sources": 30,
     "tracked_sources": 6,
@@ -136,7 +136,7 @@
       "article_count": 1,
       "event_count": 1,
       "latest_event_at": "2026-09-08T08:27:24+00:00",
-      "age_days": 38.99,
+      "age_days": 40.01,
       "latest_title": "2026년 재정지원 일자리사업 성과평가 결과",
       "latest_url": "https://www.moel.go.kr/policy/policydata/view.do?bbs_seq=20260900305",
       "latest_evidence_url": "https://www.moel.go.kr/policy/policydata/view.do?bbs_seq=20260900305",
@@ -317,13 +317,13 @@
       "status": "fresh",
       "article_count": 10,
       "event_count": 5,
-      "latest_event_at": "2026-10-17T08:19:16.266620+00:00",
+      "latest_event_at": "2026-10-18T08:38:17.847805+00:00",
       "age_days": 0.0,
       "latest_title": "｢유관기관 증시상황 긴급 점검회의｣ 개최",
       "latest_url": "https://www.fsc.go.kr/no010101/87942",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87942",
       "latest_program_title": "｢유관기관 증시상황 긴급 점검회의｣ 개최",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-10-17:유관기관-증시상황-긴급-점검회의-개최",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-10-18:유관기관-증시상황-긴급-점검회의-개최",
       "latest_application_deadline": "",
       "latest_eligibility_fields": {
         "Industry": [
@@ -812,7 +812,7 @@
       "event_model": "eligibility_rule",
       "title": "｢유관기관 증시상황 긴급 점검회의｣ 개최",
       "url": "https://www.fsc.go.kr/no010101/87942",
-      "event_at": "2026-10-17T08:19:16.266620+00:00",
+      "event_at": "2026-10-18T08:38:17.847805+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -824,7 +824,7 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "｢유관기관 증시상황 긴급 점검회의｣ 개최",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-10-17:유관기관-증시상황-긴급-점검회의-개최",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-10-18:유관기관-증시상황-긴급-점검회의-개최",
       "evidence_url": "https://www.fsc.go.kr/no010101/87942",
       "evidence_url_present": true
     },
@@ -859,7 +859,7 @@
       "event_model": "eligibility_rule",
       "title": "“내 집 어디에, 언제 공급되나” 주택공급, 계획부터 성과까지 정례적으로 공개합니다",
       "url": "https://www.fsc.go.kr/no010101/87948",
-      "event_at": "2026-10-17T08:19:09.453748+00:00",
+      "event_at": "2026-10-18T08:38:15.470236+00:00",
       "application_deadline": "2026-03-05",
       "application_start_date": "2026-10-16",
       "eligibility_fields": {
@@ -876,7 +876,7 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "“내 집 어디에, 언제 공급되나” 주택공급, 계획부터 성과까지 정례적으로 공개합니다",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-10-17:내-집-어디에-언제-공급되나-주택공급-계획부터-성과까지-정례적으로-공개합니다",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-10-18:내-집-어디에-언제-공급되나-주택공급-계획부터-성과까지-정례적으로-공개합니다",
       "evidence_url": "https://www.fsc.go.kr/no010101/87948",
       "evidence_url_present": true
     },
@@ -1217,6 +1217,23 @@
       "evidence_url_present": true
     },
     {
+      "source": "고용노동부 정책",
+      "event_model": "support_program_notice",
+      "title": "2026년 재정지원 일자리사업 성과평가 결과",
+      "url": "https://www.moel.go.kr/policy/policydata/view.do?bbs_seq=20260900305",
+      "event_at": "2026-09-08T08:27:24+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 재정지원 일자리사업 성과평가 결과",
+      "program_key": "support-program-notice:kr:고용노동부-정책:2026-09-08:2026년-재정지원-일자리사업-성과평가-결과",
+      "evidence_url": "https://www.moel.go.kr/policy/policydata/view.do?bbs_seq=20260900305",
+      "evidence_url_present": true
+    },
+    {
       "source": "매일경제 경제정책",
       "event_model": "eligibility_rule",
       "title": "“결국 빚 안 갚은 사람만 신났나”…부실채권 소각에 성실 채무자 ‘허탈’ [금융가 톺아보기]",
@@ -1235,23 +1252,6 @@
       "program_title": "“결국 빚 안 갚은 사람만 신났나”…부실채권 소각에 성실 채무자 ‘허탈’ [금융가 톺아보기]",
       "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-10-10:결국-빚-안-갚은-사람만-신났나-부실채권-소각에-성실-채무자-허탈-금융가-톺아보기",
       "evidence_url": "https://www.mk.co.kr/news/economy/12172848",
-      "evidence_url_present": true
-    },
-    {
-      "source": "고용노동부 정책",
-      "event_model": "support_program_notice",
-      "title": "2026년 재정지원 일자리사업 성과평가 결과",
-      "url": "https://www.moel.go.kr/policy/policydata/view.do?bbs_seq=20260900305",
-      "event_at": "2026-09-08T08:27:24+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {},
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 재정지원 일자리사업 성과평가 결과",
-      "program_key": "support-program-notice:kr:고용노동부-정책:2026-09-08:2026년-재정지원-일자리사업-성과평가-결과",
-      "evidence_url": "https://www.moel.go.kr/policy/policydata/view.do?bbs_seq=20260900305",
       "evidence_url_present": true
     }
   ],
