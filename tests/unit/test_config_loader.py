@@ -41,6 +41,8 @@ def test_real_govsupport_sources_preserve_operational_metadata() -> None:
     sources = {source.name: source for source in config.sources}
 
     gov24 = sources["정부24 보조금"]
+    assert gov24.enabled is False
+    assert "Disallow: /" in str(gov24.config["skip_reason"])
     assert gov24.producer_role == "government"
     assert "application_deadline" in gov24.info_purpose
     assert "eligibility_rule" in gov24.info_purpose
@@ -49,8 +51,22 @@ def test_real_govsupport_sources_preserve_operational_metadata() -> None:
     assert gov24.config["canonical_key_fields"]
 
     semas = sources["소상공인시장진흥공단"]
+    assert semas.enabled is False
+    assert "Disallow: /" in str(semas.config["skip_reason"])
     assert semas.config["event_model"] == "eligibility_rule"
     assert "operational_event" in semas.info_purpose
+
+    seoul_notices = sources["서울시 지원사업"]
+    assert seoul_notices.enabled is True
+    assert seoul_notices.type == "public_page"
+    assert seoul_notices.url == "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277"
+
+    kstartup_api = sources["K-Startup 지원사업 공고 API"]
+    subsidy_api = sources["보조금24 공공서비스 API"]
+    bizinfo_api = sources["기업마당 지원사업 공고 API"]
+    assert kstartup_api.config["required_env"] == "DATA_GO_KR_KSTARTUP_SERVICE_KEY"
+    assert subsidy_api.config["required_env"] == "DATA_GO_KR_SUBSIDY24_SERVICE_KEY"
+    assert bizinfo_api.config["required_env"] == "DATA_GO_KR_BIZINFO_SERVICE_KEY"
 
     seoul = sources["서울시 정책뉴스"]
     assert seoul.producer_role == "local-government"

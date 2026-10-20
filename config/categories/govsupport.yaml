@@ -76,6 +76,11 @@ source_backlog:
       reason: "사업장 가입 여부 기반 자격검증 capability. 시간순 공고 source가 아니므로 integration_candidates에 유지."
       required_before_enable: [api_key_scope_check, tool_contract_test, eligibility_workflow_mapping]
 sources:
+# NOTE: 2026-10-20 robots.txt 확인.
+# https://www.gov.kr/robots.txt 는 User-agent: * / Disallow: / 이다.
+# Allow 예외는 /portal/main, /mw/AA020InfoCappView.do, /mw/AA210LifeSvcInfo.do,
+# /yearendpay*, /portal/ntcItm*, /portal/orgSite*, /$ 뿐이고
+# /portal/rcvfvrSvc/svcFind/svcSearchAll 은 포함되지 않는다. 수집 비활성화.
 - name: 정부24 보조금
   type: javascript
   url: https://www.gov.kr/portal/rcvfvrSvc/svcFind/svcSearchAll
@@ -101,8 +106,8 @@ sources:
     canonical_key_fields: [agency, jurisdiction, normalized_program_title, source_url]
     status_fields: [application_start_date, application_deadline, selection_announcement_date]
     freshness_sla_days: 1
-    skip_reason: "Browser probe returned the official anti-automation block page rather than service cards."
-    reenable_gate: "Re-enable only after a stable API/search endpoint or approved browser flow can return service cards without triggering access protection."
+    skip_reason: "https://www.gov.kr/robots.txt User-agent: * Disallow: / 이고, 이 공고 URL은 Allow 예외에 없다."
+    reenable_gate: "robots.txt가 이 URL을 Allow 한 뒤에만 다시 켠다. Disallow를 우회하지 않는다."
 - name: K-Startup 선정결과 후보
   type: javascript
   url: https://www.k-startup.go.kr/unifyinfo/info/openinfo/notice.do
@@ -217,6 +222,9 @@ sources:
 #   article_selector: table tbody tr
 #   link_selector: td a
 #   trust_tier: T2_expert
+# NOTE: 2026-10-20 robots.txt 확인.
+# https://www.semas.or.kr/robots.txt 는 User-agent: * / Disallow: / 이다.
+# Allow : /$ 는 사이트 루트만 허용하고 /web/board/ 공고 목록은 허용하지 않는다.
 - name: 소상공인시장진흥공단
   type: javascript
   url: https://www.semas.or.kr/web/board/webBoardList.kmdc?bCd=1
@@ -244,8 +252,65 @@ sources:
     canonical_key_fields: [agency, normalized_program_title, target_group, source_url]
     status_fields: [application_deadline, eligibility_condition, support_amount]
     freshness_sla_days: 1
-    skip_reason: "브라우저 수집이 연결 타임아웃으로 크롤 헬스 임계값에 걸렸고, 키 없는 공개 RSS를 찾지 못했다."
-    reenable_gate: "공개 RSS 또는 타임아웃 없이 공고 행을 돌려주는 공식 엔드포인트가 확인된 뒤에만 다시 켠다."
+    skip_reason: "https://www.semas.or.kr/robots.txt User-agent: * Disallow: / 이고, Allow : /$ 는 루트만 허용한다."
+    reenable_gate: "robots.txt가 /web/board/ 공고 목록을 Allow 한 뒤에만 다시 켠다. Disallow를 우회하지 않는다."
+- name: K-Startup 지원사업 공고 API
+  type: api
+  url: https://apis.data.go.kr/B552735/kisedKstartupService01/getAnnouncementInformation01
+  language: ko
+  country: KR
+  trust_tier: T1_authoritative
+  collection_tier: C4_api
+  content_type: startup_support_notice
+  producer_role: public-agency
+  info_purpose: [application, deadline, eligibility, support_program_notice, application_deadline, operational_event]
+  notes: "공공데이터포털 15125364 지원사업 공고. DATA_GO_KR_KSTARTUP_SERVICE_KEY가 없으면 호출하지 않는다."
+  config:
+    provider: kstartup
+    required_env: DATA_GO_KR_KSTARTUP_SERVICE_KEY
+    event_model: support_program_notice
+    event_date_field: published
+    observed_date_field: collected_at
+    canonical_key_fields: [agency, normalized_program_title, source_url]
+    freshness_sla_days: 2
+- name: 보조금24 공공서비스 API
+  type: api
+  url: https://api.odcloud.kr/api/gov24/v3/serviceList
+  language: ko
+  country: KR
+  trust_tier: T1_authoritative
+  collection_tier: C4_api
+  content_type: subsidy_program_catalog
+  producer_role: government
+  info_purpose: [application, deadline, eligibility, support_program_notice, eligibility_rule, operational_event]
+  notes: "공공데이터포털 15113968 보조금24 공공서비스 목록. DATA_GO_KR_SUBSIDY24_SERVICE_KEY가 없으면 호출하지 않는다."
+  config:
+    provider: subsidy24
+    required_env: DATA_GO_KR_SUBSIDY24_SERVICE_KEY
+    event_model: eligibility_rule
+    event_date_field: published
+    observed_date_field: collected_at
+    canonical_key_fields: [agency, normalized_program_title, source_url]
+    freshness_sla_days: 2
+- name: 기업마당 지원사업 공고 API
+  type: api
+  url: https://apis.data.go.kr/1421000/bizinfo/pblancBsnsService
+  language: ko
+  country: KR
+  trust_tier: T1_authoritative
+  collection_tier: C4_api
+  content_type: small_business_support_notice
+  producer_role: public-agency
+  info_purpose: [application, deadline, eligibility, support_program_notice, application_deadline, operational_event]
+  notes: "공공데이터포털 15157820 기업마당 지원사업 공고. DATA_GO_KR_BIZINFO_SERVICE_KEY가 없으면 호출하지 않는다."
+  config:
+    provider: bizinfo
+    required_env: DATA_GO_KR_BIZINFO_SERVICE_KEY
+    event_model: support_program_notice
+    event_date_field: published
+    observed_date_field: collected_at
+    canonical_key_fields: [agency, normalized_program_title, source_url]
+    freshness_sla_days: 2
 # NOTE: 2026-04-02 테스트에서 동작하지 않음 (404)
 # - name: 산업통상자원부
 #   type: rss
@@ -273,6 +338,29 @@ sources:
 #   article_selector: .list-group-item
 #   link_selector: a
 #   trust_tier: T1_authoritative
+# 2026-08-30 이후 신규 0건. 브라우저 수집이 타임아웃으로 크롤 헬스에 꺼졌고,
+# 목록 앵커가 href 대신 javascript:fnTbbsView(id)라 기존 link selector가 상세 URL을 만들지 못했다.
+# 공식 고시공고 HTML은 표를 서버에서 내려주고, robots.txt Allow: /news 가 Disallow: / 보다 구체적이다.
+- name: 서울시 지원사업
+  type: public_page
+  url: https://www.seoul.go.kr/news/news_notice.do?bbsNo=277
+  language: ko
+  country: KR
+  trust_tier: T1_authoritative
+  collection_tier: C2_html_simple
+  content_type: local_support_notice
+  producer_role: local-government
+  info_purpose: [application, deadline, eligibility, support_program_notice, application_deadline, operational_event]
+  notes: "서울시 고시공고 공식 목록. fnTbbsView 번호를 bbsNo=277&nttNo 상세 URL로 만든다."
+  config:
+    provider: seoul_notice
+    detail_url_template: "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo={id}"
+    event_model: application_deadline
+    event_date_field: published
+    observed_date_field: collected_at
+    canonical_key_fields: [jurisdiction, agency, normalized_program_title, source_url]
+    status_fields: [application_start_date, application_deadline, eligibility_condition]
+    freshness_sla_days: 1
 - name: 서울시 정책뉴스
   type: rss
   url: https://news.seoul.go.kr/gov/feed
