@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-10-19T09:40:43.631621+00:00",
+  "generated_at": "2026-10-20T09:13:47.783060+00:00",
   "summary": {
     "total_sources": 30,
     "tracked_sources": 6,
@@ -13,11 +13,11 @@
     "skipped_disabled_sources": 11,
     "support_program_notice_events": 1,
     "application_deadline_events": 6,
-    "eligibility_rule_events": 16,
+    "eligibility_rule_events": 17,
     "selection_result_events": 0,
-    "unique_program_key_count": 23,
-    "events_with_evidence_url": 23,
-    "collection_error_count": 1,
+    "unique_program_key_count": 24,
+    "events_with_evidence_url": 24,
+    "collection_error_count": 0,
     "event_model_source_gap_count": 1
   },
   "sources": [
@@ -136,7 +136,7 @@
       "article_count": 1,
       "event_count": 1,
       "latest_event_at": "2026-09-08T08:27:24+00:00",
-      "age_days": 41.05,
+      "age_days": 42.03,
       "latest_title": "2026년 재정지원 일자리사업 성과평가 결과",
       "latest_url": "https://www.moel.go.kr/policy/policydata/view.do?bbs_seq=20260900305",
       "latest_evidence_url": "https://www.moel.go.kr/policy/policydata/view.do?bbs_seq=20260900305",
@@ -317,13 +317,13 @@
       "status": "fresh",
       "article_count": 10,
       "event_count": 5,
-      "latest_event_at": "2026-10-19T09:40:37.465184+00:00",
+      "latest_event_at": "2026-10-20T09:13:40.082978+00:00",
       "age_days": 0.0,
       "latest_title": "“내 집 어디에, 언제 공급되나” 주택공급, 계획부터 성과까지 정례적으로 공개합니다",
       "latest_url": "https://www.fsc.go.kr/no010101/87948",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87948",
       "latest_program_title": "“내 집 어디에, 언제 공급되나” 주택공급, 계획부터 성과까지 정례적으로 공개합니다",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-10-19:내-집-어디에-언제-공급되나-주택공급-계획부터-성과까지-정례적으로-공개합니다",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-10-20:내-집-어디에-언제-공급되나-주택공급-계획부터-성과까지-정례적으로-공개합니다",
       "latest_application_deadline": "2026-03-05",
       "latest_eligibility_fields": {
         "TargetGroup": [
@@ -610,7 +610,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 7,
+      "article_count": 6,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -662,7 +662,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 2,
+      "article_count": 3,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -740,7 +740,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 1,
+      "article_count": 2,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -843,7 +843,7 @@
       "event_model": "eligibility_rule",
       "title": "“내 집 어디에, 언제 공급되나” 주택공급, 계획부터 성과까지 정례적으로 공개합니다",
       "url": "https://www.fsc.go.kr/no010101/87948",
-      "event_at": "2026-10-19T09:40:37.465184+00:00",
+      "event_at": "2026-10-20T09:13:40.082978+00:00",
       "application_deadline": "2026-03-05",
       "application_start_date": "2026-10-16",
       "eligibility_fields": {
@@ -860,14 +860,14 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "“내 집 어디에, 언제 공급되나” 주택공급, 계획부터 성과까지 정례적으로 공개합니다",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-10-19:내-집-어디에-언제-공급되나-주택공급-계획부터-성과까지-정례적으로-공개합니다",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-10-20:내-집-어디에-언제-공급되나-주택공급-계획부터-성과까지-정례적으로-공개합니다",
       "evidence_url": "https://www.fsc.go.kr/no010101/87948",
       "evidence_url_present": true
     },
     {
       "source": "금융위원회",
       "event_model": "application_deadline",
-      "title": "보험업권과 복지부 산하 노인지원기관이 손잡고 65만명의 취약어르신에게 낙상사고 치료비, 치매배상책임보험을 무료로 제공하겠습니다. . 금일 등록된 게시글",
+      "title": "보험업권과 복지부 산하 노인지원기관이 손잡고 65만명의 취약어르신에게 낙상사고 치료비, 치매배상책임보험을 무료로 제공하겠습니다.",
       "url": "https://www.fsc.go.kr/no010101/87952",
       "event_at": "2026-11-16T00:00:00+00:00",
       "application_deadline": "2026-11-16",
@@ -882,17 +882,17 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "보험업권과 복지부 산하 노인지원기관이 손잡고 65만명의 취약어르신에게 낙상사고 치료비, 치매배상책임보험을 무료로 제공하겠습니다. . 금일 등록된 게시글",
-      "program_key": "application-deadline:kr:금융위원회:2026-11-16:보험업권과-복지부-산하-노인지원기관이-손잡고-65만명의-취약어르신에게-낙상사고-치료비-치매배상책임보험을-무료로-제공하겠습니다-금일-등록된-게시글",
+      "program_title": "보험업권과 복지부 산하 노인지원기관이 손잡고 65만명의 취약어르신에게 낙상사고 치료비, 치매배상책임보험을 무료로 제공하겠습니다.",
+      "program_key": "application-deadline:kr:금융위원회:2026-11-16:보험업권과-복지부-산하-노인지원기관이-손잡고-65만명의-취약어르신에게-낙상사고-치료비-치매배상책임보험을-무료로-제공하겠습니다",
       "evidence_url": "https://www.fsc.go.kr/no010101/87952",
       "evidence_url_present": true
     },
     {
       "source": "금융위원회",
       "event_model": "eligibility_rule",
-      "title": "보험업권과 복지부 산하 노인지원기관이 손잡고 65만명의 취약어르신에게 낙상사고 치료비, 치매배상책임보험을 무료로 제공하겠습니다. . 금일 등록된 게시글",
+      "title": "보험업권과 복지부 산하 노인지원기관이 손잡고 65만명의 취약어르신에게 낙상사고 치료비, 치매배상책임보험을 무료로 제공하겠습니다.",
       "url": "https://www.fsc.go.kr/no010101/87952",
-      "event_at": "2026-10-19T09:40:34.674074+00:00",
+      "event_at": "2026-10-20T09:13:36.134130+00:00",
       "application_deadline": "2026-11-16",
       "application_start_date": "2026-10-19",
       "eligibility_fields": {
@@ -905,9 +905,72 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "보험업권과 복지부 산하 노인지원기관이 손잡고 65만명의 취약어르신에게 낙상사고 치료비, 치매배상책임보험을 무료로 제공하겠습니다. . 금일 등록된 게시글",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-10-19:보험업권과-복지부-산하-노인지원기관이-손잡고-65만명의-취약어르신에게-낙상사고-치료비-치매배상책임보험을-무료로-제공하겠습니다-금일-등록된-게시글",
+      "program_title": "보험업권과 복지부 산하 노인지원기관이 손잡고 65만명의 취약어르신에게 낙상사고 치료비, 치매배상책임보험을 무료로 제공하겠습니다.",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-10-20:보험업권과-복지부-산하-노인지원기관이-손잡고-65만명의-취약어르신에게-낙상사고-치료비-치매배상책임보험을-무료로-제공하겠습니다",
       "evidence_url": "https://www.fsc.go.kr/no010101/87952",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "中企, 저리대출 43조 몰려 … 한은 지원한도 7배",
+      "url": "https://www.mk.co.kr/news/economy/12180823",
+      "event_at": "2026-10-19T23:29:15+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "中企, 저리대출 43조 몰려 … 한은 지원한도 7배",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-10-19:中企-저리대출-43조-몰려-한은-지원한도-7배",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12180823",
+      "evidence_url_present": true
+    },
+    {
+      "source": "SBS 뉴스 정치",
+      "event_model": "eligibility_rule",
+      "title": "이 대통령, 청년 대상 연금 지원사업에 \"신청제는 실질적 불평등\"",
+      "url": "https://news.sbs.co.kr/news/endPage.do?cooper=RSSREADER&news_id=N1008806490&plink=RSSLINK",
+      "event_at": "2026-10-19T22:09:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "이 대통령, 청년 대상 연금 지원사업에 \"신청제는 실질적 불평등\"",
+      "program_key": "eligibility-rule:kr:sbs-뉴스-정치:2026-10-19:이-대통령-청년-대상-연금-지원사업에-신청제는-실질적-불평등",
+      "evidence_url": "https://news.sbs.co.kr/news/endPage.do?cooper=RSSREADER&news_id=N1008806490&plink=RSSLINK",
+      "evidence_url_present": true
+    },
+    {
+      "source": "경향신문 경제",
+      "event_model": "eligibility_rule",
+      "title": "[단독]취약계층 먹는 쌀인데···잉크 묻고 포장 터지고 품질관리 ‘구멍’",
+      "url": "https://www.khan.co.kr/article/202610200600051",
+      "event_at": "2026-10-19T12:00:05+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "[단독]취약계층 먹는 쌀인데···잉크 묻고 포장 터지고 품질관리 ‘구멍’",
+      "program_key": "eligibility-rule:kr:경향신문-경제:2026-10-19:단독-취약계층-먹는-쌀인데-잉크-묻고-포장-터지고-품질관리-구멍",
+      "evidence_url": "https://www.khan.co.kr/article/202610200600051",
       "evidence_url_present": true
     },
     {
@@ -1244,27 +1307,6 @@
       "evidence_url_present": true
     },
     {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "시중은행 '골목 사장님 비대면 대출' 경쟁",
-      "url": "https://www.mk.co.kr/news/economy/12174757",
-      "event_at": "2026-10-12T23:44:40+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "자영업자"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "시중은행 '골목 사장님 비대면 대출' 경쟁",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-10-12:시중은행-골목-사장님-비대면-대출-경쟁",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12174757",
-      "evidence_url_present": true
-    },
-    {
       "source": "고용노동부 정책",
       "event_model": "support_program_notice",
       "title": "2026년 재정지원 일자리사업 성과평가 결과",
@@ -1284,43 +1326,22 @@
     {
       "source": "매일경제 경제정책",
       "event_model": "eligibility_rule",
-      "title": "고령층 비은행권 대출 늘어 '비상'",
-      "url": "https://www.mk.co.kr/news/economy/12173944",
-      "event_at": "2026-10-11T23:38:16+00:00",
+      "title": "시중은행 '골목 사장님 비대면 대출' 경쟁",
+      "url": "https://www.mk.co.kr/news/economy/12174757",
+      "event_at": "2026-10-12T23:44:40+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
         "TargetGroup": [
-          "청년"
+          "자영업자"
         ]
       },
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "고령층 비은행권 대출 늘어 '비상'",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-10-11:고령층-비은행권-대출-늘어-비상",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12173944",
-      "evidence_url_present": true
-    },
-    {
-      "source": "매일경제 경제정책",
-      "event_model": "eligibility_rule",
-      "title": "5000만원→7000만원…청년주택드림 청약통장 가입 소득기준 완화",
-      "url": "https://www.mk.co.kr/news/economy/12173578",
-      "event_at": "2026-10-11T20:34:36+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "5000만원→7000만원…청년주택드림 청약통장 가입 소득기준 완화",
-      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-10-11:5000만원-7000만원-청년주택드림-청약통장-가입-소득기준-완화",
-      "evidence_url": "https://www.mk.co.kr/news/economy/12173578",
+      "program_title": "시중은행 '골목 사장님 비대면 대출' 경쟁",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-10-12:시중은행-골목-사장님-비대면-대출-경쟁",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12174757",
       "evidence_url_present": true
     }
   ],
@@ -1440,7 +1461,5 @@
       ]
     }
   ],
-  "errors": [
-    "https://www.hankyung.com/article/2026101915231: summary is missing or not a string"
-  ]
+  "errors": []
 }
