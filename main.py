@@ -25,9 +25,11 @@ from govradar.common.validators import validate_article
 from govradar.config_loader import load_category_quality_config
 from govradar.date_storage import apply_date_storage_policy
 from govradar.models import Article, Source
+from govradar.official_collectors import collect_official_sources, is_official_source
 from govradar.quality_report import build_quality_report, write_quality_report
 from govradar.relevance import apply_source_context_entities, filter_relevant_articles
 from govradar.reporter import generate_index_html, generate_report
+from govradar.robots import partition_robots_disallowed
 from govradar.storage import RadarStorage
 from govradar.support_signals import enrich_support_operational_fields
 
@@ -120,20 +122,36 @@ def run(
         effective_sources,
         raw_dir=settings.raw_data_dir,
     )
+    allowed_sources, robots_errors = partition_robots_disallowed(
+        runnable_sources,
+        timeout=timeout,
+    )
+    official_sources = [
+        source for source in allowed_sources if source.enabled and is_official_source(source)
+    ]
+    core_sources = [
+        source for source in allowed_sources if not (source.enabled and is_official_source(source))
+    ]
     print(
         f"[Radar] Collecting '{category_cfg.display_name}' from "
-        f"{sum(1 for source in runnable_sources if source.enabled)} sources..."
+        f"{sum(1 for source in allowed_sources if source.enabled)} sources..."
     )
-    collected: list[Article]
-    errors: list[str]
-    collected, errors = collect_sources(
-        runnable_sources,
+    official_articles, official_errors = collect_official_sources(
+        official_sources,
         category=category_cfg.category_name,
         limit_per_source=per_source_limit,
         timeout=timeout,
     )
+    collected, errors = collect_sources(
+        core_sources,
+        category=category_cfg.category_name,
+        limit_per_source=per_source_limit,
+        timeout=timeout,
+    )
+    collected = [*official_articles, *collected]
     collected, challenge_errors = drop_challenge_pages(collected)
-    errors = [*secret_errors, *errors, *challenge_errors]
+    errors = [*secret_errors, *robots_errors, *official_errors, *errors, *challenge_errors]
+    _print_collection_counts(effective_sources, collected)
     collected = annotate_articles_with_ontology(
         collected,
         repo_name="GovRadar",
@@ -269,6 +287,17 @@ def run(
     )
 
     return output_path
+
+
+def _print_collection_counts(sources: list[Source], articles: list[Article]) -> None:
+    counts: dict[str, int] = {}
+    for article in articles:
+        counts[article.source] = counts.get(article.source, 0) + 1
+    print("[Radar] Collected counts:")
+    for source in sources:
+        if not source.enabled:
+            continue
+        print(f"[Radar]   {source.name}: {counts.get(source.name, 0)}")
 
 
 def _select_report_articles(

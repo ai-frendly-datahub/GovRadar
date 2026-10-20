@@ -36,6 +36,17 @@ Radar-Template PR #4와 같은 수집·저장 계약을 유지합니다. 시크�
 5. **실패해야 하는 실행.** 활성 소스의 수집이 0건이면 종료 코드 1입니다. 출력이 0바이트이거나 DuckDB가 100MiB 이상이면 워크플로가 실패합니다. 데이터 auto-commit/push에는 `continue-on-error`가 없습니다.
 6. **Pages는 푸시 성공 후에만.** `gh-pages` 배포는 auto-commit `outcome == success`일 때만 실행됩니다.
 7. **테스트.** 날짜 단정은 `tests/reference_dates.py`(2026-03-13 12:00 UTC)와 `tests/fixtures/`를 사용합니다. 커버리지는 `relative_files = true`입니다.
+8. **robots.txt.** radar-core 수집기는 robots.txt를 보지 않습니다. 실행 전에 GovRadar가 읽고, `Disallow`인 URL은 가져오지 않습니다. `www.gov.kr` 보조금 목록과 `www.semas.or.kr` 공고 목록은 `Disallow: /`라 소스가 꺼져 있습니다.
+
+## 공식 API 키
+
+키 값은 코드, YAML, 로그에 넣지 않습니다. 환경 변수가 없으면 해당 소스는 호출하지 않고 건너뜁니다.
+
+| 소스 | 환경 변수 |
+| --- | --- |
+| K-Startup 지원사업 공고 | `DATA_GO_KR_KSTARTUP_SERVICE_KEY` |
+| 보조금24 공공서비스 | `DATA_GO_KR_SUBSIDY24_SERVICE_KEY` |
+| 기업마당 지원사업 공고 | `DATA_GO_KR_BIZINFO_SERVICE_KEY` |
 
 ## 핵심 설정
 
