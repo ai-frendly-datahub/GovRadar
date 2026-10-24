@@ -1,11 +1,11 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-10-23T09:10:39.894578+00:00",
+  "generated_at": "2026-10-24T08:43:01.843791+00:00",
   "summary": {
     "total_sources": 34,
     "tracked_sources": 10,
-    "fresh_sources": 2,
-    "stale_sources": 1,
+    "fresh_sources": 1,
+    "stale_sources": 2,
     "missing_sources": 5,
     "missing_event_sources": 2,
     "unknown_event_date_sources": 0,
@@ -13,11 +13,11 @@
     "skipped_disabled_sources": 11,
     "support_program_notice_events": 2,
     "application_deadline_events": 4,
-    "eligibility_rule_events": 24,
+    "eligibility_rule_events": 25,
     "selection_result_events": 0,
-    "unique_program_key_count": 30,
-    "events_with_evidence_url": 30,
-    "collection_error_count": 6,
+    "unique_program_key_count": 31,
+    "events_with_evidence_url": 31,
+    "collection_error_count": 7,
     "event_model_source_gap_count": 1
   },
   "sources": [
@@ -106,11 +106,11 @@
       "tracked": true,
       "event_model": "support_program_notice",
       "freshness_sla_days": 2,
-      "status": "fresh",
+      "status": "stale",
       "article_count": 1,
       "event_count": 1,
       "latest_event_at": "2026-10-22T08:20:18+00:00",
-      "age_days": 1.03,
+      "age_days": 2.02,
       "latest_title": "2026년 「청년일자리도약장려금」 사업운영 지침 일부 개정 안내('26.10월)",
       "latest_url": "https://www.moel.go.kr/news/notice/noticeView.do?bbs_seq=20261000802",
       "latest_evidence_url": "https://www.moel.go.kr/news/notice/noticeView.do?bbs_seq=20261000802",
@@ -140,7 +140,7 @@
       "article_count": 1,
       "event_count": 1,
       "latest_event_at": "2026-09-08T08:27:24+00:00",
-      "age_days": 45.03,
+      "age_days": 46.01,
       "latest_title": "2026년 재정지원 일자리사업 성과평가 결과",
       "latest_url": "https://www.moel.go.kr/policy/policydata/view.do?bbs_seq=20260900305",
       "latest_evidence_url": "https://www.moel.go.kr/policy/policydata/view.do?bbs_seq=20260900305",
@@ -433,13 +433,13 @@
       "status": "fresh",
       "article_count": 8,
       "event_count": 5,
-      "latest_event_at": "2026-10-23T09:10:30.097715+00:00",
+      "latest_event_at": "2026-10-24T08:42:53.925975+00:00",
       "age_days": 0.0,
       "latest_title": "“보증금 기반 비대면 신용카드 발급 서비스” 등  혁신금융서비스 4건 신규 지정 의결  - 신규 혁신금융서비스 지정 4건 및 규제개선 요청 수용 1건 의결",
       "latest_url": "https://www.fsc.go.kr/no010101/87975",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87975",
       "latest_program_title": "“보증금 기반 비대면 신용카드 발급 서비스” 등  혁신금융서비스 4건 신규 지정 의결  - 신규 혁신금융서비스 지정 4건 및 규제개선 요청 수용 1건 의결",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-10-23:보증금-기반-비대면-신용카드-발급-서비스-등-혁신금융서비스-4건-신규-지정-의결-신규-혁신금융서비스-지정-4건-및-규제개선-요청-수용-1건-의결",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-10-24:보증금-기반-비대면-신용카드-발급-서비스-등-혁신금융서비스-4건-신규-지정-의결-신규-혁신금융서비스-지정-4건-및-규제개선-요청-수용-1건-의결",
       "latest_application_deadline": "2026-10-21",
       "latest_eligibility_fields": {
         "TargetGroup": [
@@ -747,7 +747,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 6,
+      "article_count": 7,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -815,7 +815,9 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": []
+      "errors": [
+        "한겨레 경제: skipped_robots robots.txt HTTP 403; not fetching"
+      ]
     },
     {
       "source": "서울경제 경제",
@@ -953,7 +955,7 @@
       "event_model": "eligibility_rule",
       "title": "“보증금 기반 비대면 신용카드 발급 서비스” 등  혁신금융서비스 4건 신규 지정 의결  - 신규 혁신금융서비스 지정 4건 및 규제개선 요청 수용 1건 의결",
       "url": "https://www.fsc.go.kr/no010101/87975",
-      "event_at": "2026-10-23T09:10:30.097715+00:00",
+      "event_at": "2026-10-24T08:42:53.925975+00:00",
       "application_deadline": "2026-10-21",
       "application_start_date": "",
       "eligibility_fields": {
@@ -965,16 +967,16 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "“보증금 기반 비대면 신용카드 발급 서비스” 등  혁신금융서비스 4건 신규 지정 의결  - 신규 혁신금융서비스 지정 4건 및 규제개선 요청 수용 1건 의결",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-10-23:보증금-기반-비대면-신용카드-발급-서비스-등-혁신금융서비스-4건-신규-지정-의결-신규-혁신금융서비스-지정-4건-및-규제개선-요청-수용-1건-의결",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-10-24:보증금-기반-비대면-신용카드-발급-서비스-등-혁신금융서비스-4건-신규-지정-의결-신규-혁신금융서비스-지정-4건-및-규제개선-요청-수용-1건-의결",
       "evidence_url": "https://www.fsc.go.kr/no010101/87975",
       "evidence_url_present": true
     },
     {
       "source": "금융위원회",
       "event_model": "eligibility_rule",
-      "title": "여신전문금융업감독규정 개정안  규정변경예고(‘26.10.23.~12.2.) 실시. 금일 등록된 게시글",
+      "title": "여신전문금융업감독규정 개정안  규정변경예고(‘26.10.23.~12.2.) 실시",
       "url": "https://www.fsc.go.kr/no010101/87984",
-      "event_at": "2026-10-23T09:10:27.264878+00:00",
+      "event_at": "2026-10-24T08:42:51.534850+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -986,9 +988,37 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "여신전문금융업감독규정 개정안  규정변경예고(‘26.10.23.~12.2.) 실시. 금일 등록된 게시글",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-10-23:여신전문금융업감독규정-개정안-규정변경예고-26-10-23-12-2-실시-금일-등록된-게시글",
+      "program_title": "여신전문금융업감독규정 개정안  규정변경예고(‘26.10.23.~12.2.) 실시",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-10-24:여신전문금융업감독규정-개정안-규정변경예고-26-10-23-12-2-실시",
       "evidence_url": "https://www.fsc.go.kr/no010101/87984",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "고금리에 中企-자영업 부실 확산… 은행 연체율 10년만에 최고",
+      "url": "https://www.donga.com/news/Economy/article/all/20261023/134899670/2",
+      "event_at": "2026-10-23T07:40:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업",
+          "자영업자"
+        ],
+        "Industry": [
+          "제조"
+        ],
+        "Region": [
+          "경기"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "고금리에 中企-자영업 부실 확산… 은행 연체율 10년만에 최고",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-10-23:고금리에-中企-자영업-부실-확산-은행-연체율-10년만에-최고",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20261023/134899670/2",
       "evidence_url_present": true
     },
     {
@@ -1719,6 +1749,7 @@
     "K-Startup 지원사업 공고 API: skipped_missing_env DATA_GO_KR_KSTARTUP_SERVICE_KEY",
     "보조금24 공공서비스 API: skipped_missing_env DATA_GO_KR_SUBSIDY24_SERVICE_KEY",
     "기업마당 지원사업 공고 API: skipped_missing_env DATA_GO_KR_BIZINFO_SERVICE_KEY",
+    "한겨레 경제: skipped_robots robots.txt HTTP 403; not fetching",
     "K-GAPI 공공API 현황분석: skipped_robots robots.txt disallows /hollobit/K-GAPI/commits/main.atom",
     "Awesome MCP Korea: skipped_robots robots.txt disallows /darjeeling/awesome-mcp-korea/commits/main.atom",
     "서울시 지원사업: request failed: SSLError"
