@@ -1,22 +1,22 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-10-24T08:43:01.843791+00:00",
+  "generated_at": "2026-10-25T09:00:23.040957+00:00",
   "summary": {
     "total_sources": 34,
     "tracked_sources": 10,
     "fresh_sources": 1,
     "stale_sources": 2,
-    "missing_sources": 5,
-    "missing_event_sources": 2,
+    "missing_sources": 6,
+    "missing_event_sources": 1,
     "unknown_event_date_sources": 0,
     "not_tracked_sources": 13,
     "skipped_disabled_sources": 11,
     "support_program_notice_events": 2,
     "application_deadline_events": 4,
-    "eligibility_rule_events": 25,
+    "eligibility_rule_events": 27,
     "selection_result_events": 0,
-    "unique_program_key_count": 31,
-    "events_with_evidence_url": 31,
+    "unique_program_key_count": 33,
+    "events_with_evidence_url": 33,
     "collection_error_count": 7,
     "event_model_source_gap_count": 1
   },
@@ -110,7 +110,7 @@
       "article_count": 1,
       "event_count": 1,
       "latest_event_at": "2026-10-22T08:20:18+00:00",
-      "age_days": 2.02,
+      "age_days": 3.03,
       "latest_title": "2026년 「청년일자리도약장려금」 사업운영 지침 일부 개정 안내('26.10월)",
       "latest_url": "https://www.moel.go.kr/news/notice/noticeView.do?bbs_seq=20261000802",
       "latest_evidence_url": "https://www.moel.go.kr/news/notice/noticeView.do?bbs_seq=20261000802",
@@ -140,7 +140,7 @@
       "article_count": 1,
       "event_count": 1,
       "latest_event_at": "2026-09-08T08:27:24+00:00",
-      "age_days": 46.01,
+      "age_days": 47.02,
       "latest_title": "2026년 재정지원 일자리사업 성과평가 결과",
       "latest_url": "https://www.moel.go.kr/policy/policydata/view.do?bbs_seq=20260900305",
       "latest_evidence_url": "https://www.moel.go.kr/policy/policydata/view.do?bbs_seq=20260900305",
@@ -326,8 +326,8 @@
       "tracked": true,
       "event_model": "application_deadline",
       "freshness_sla_days": 1,
-      "status": "missing_event",
-      "article_count": 1,
+      "status": "missing",
+      "article_count": 0,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -431,15 +431,15 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
       "status": "fresh",
-      "article_count": 8,
-      "event_count": 5,
-      "latest_event_at": "2026-10-24T08:42:53.925975+00:00",
+      "article_count": 6,
+      "event_count": 4,
+      "latest_event_at": "2026-10-25T09:00:15.630669+00:00",
       "age_days": 0.0,
       "latest_title": "“보증금 기반 비대면 신용카드 발급 서비스” 등  혁신금융서비스 4건 신규 지정 의결  - 신규 혁신금융서비스 지정 4건 및 규제개선 요청 수용 1건 의결",
       "latest_url": "https://www.fsc.go.kr/no010101/87975",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/87975",
       "latest_program_title": "“보증금 기반 비대면 신용카드 발급 서비스” 등  혁신금융서비스 4건 신규 지정 의결  - 신규 혁신금융서비스 지정 4건 및 규제개선 요청 수용 1건 의결",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-10-24:보증금-기반-비대면-신용카드-발급-서비스-등-혁신금융서비스-4건-신규-지정-의결-신규-혁신금융서비스-지정-4건-및-규제개선-요청-수용-1건-의결",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-10-25:보증금-기반-비대면-신용카드-발급-서비스-등-혁신금융서비스-4건-신규-지정-의결-신규-혁신금융서비스-지정-4건-및-규제개선-요청-수용-1건-의결",
       "latest_application_deadline": "2026-10-21",
       "latest_eligibility_fields": {
         "TargetGroup": [
@@ -721,7 +721,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 9,
+      "article_count": 10,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -747,7 +747,7 @@
       "event_model": "",
       "freshness_sla_days": null,
       "status": "not_tracked",
-      "article_count": 7,
+      "article_count": 9,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -815,9 +815,7 @@
       "latest_execution_amount": "",
       "skip_reason": null,
       "reenable_gate": null,
-      "errors": [
-        "한겨레 경제: skipped_robots robots.txt HTTP 403; not fetching"
-      ]
+      "errors": []
     },
     {
       "source": "서울경제 경제",
@@ -955,7 +953,7 @@
       "event_model": "eligibility_rule",
       "title": "“보증금 기반 비대면 신용카드 발급 서비스” 등  혁신금융서비스 4건 신규 지정 의결  - 신규 혁신금융서비스 지정 4건 및 규제개선 요청 수용 1건 의결",
       "url": "https://www.fsc.go.kr/no010101/87975",
-      "event_at": "2026-10-24T08:42:53.925975+00:00",
+      "event_at": "2026-10-25T09:00:15.630669+00:00",
       "application_deadline": "2026-10-21",
       "application_start_date": "",
       "eligibility_fields": {
@@ -967,7 +965,7 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "“보증금 기반 비대면 신용카드 발급 서비스” 등  혁신금융서비스 4건 신규 지정 의결  - 신규 혁신금융서비스 지정 4건 및 규제개선 요청 수용 1건 의결",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-10-24:보증금-기반-비대면-신용카드-발급-서비스-등-혁신금융서비스-4건-신규-지정-의결-신규-혁신금융서비스-지정-4건-및-규제개선-요청-수용-1건-의결",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-10-25:보증금-기반-비대면-신용카드-발급-서비스-등-혁신금융서비스-4건-신규-지정-의결-신규-혁신금융서비스-지정-4건-및-규제개선-요청-수용-1건-의결",
       "evidence_url": "https://www.fsc.go.kr/no010101/87975",
       "evidence_url_present": true
     },
@@ -976,7 +974,7 @@
       "event_model": "eligibility_rule",
       "title": "여신전문금융업감독규정 개정안  규정변경예고(‘26.10.23.~12.2.) 실시",
       "url": "https://www.fsc.go.kr/no010101/87984",
-      "event_at": "2026-10-24T08:42:51.534850+00:00",
+      "event_at": "2026-10-25T09:00:12.230214+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -989,8 +987,75 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "여신전문금융업감독규정 개정안  규정변경예고(‘26.10.23.~12.2.) 실시",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-10-24:여신전문금융업감독규정-개정안-규정변경예고-26-10-23-12-2-실시",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-10-25:여신전문금융업감독규정-개정안-규정변경예고-26-10-23-12-2-실시",
       "evidence_url": "https://www.fsc.go.kr/no010101/87984",
+      "evidence_url_present": true
+    },
+    {
+      "source": "매일경제 경제정책",
+      "event_model": "eligibility_rule",
+      "title": "배달 오토바이 살 돈도 대출 … 금융권 '미소금융' 판 커진다",
+      "url": "https://www.mk.co.kr/news/economy/12185222",
+      "event_at": "2026-10-24T23:31:57+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년",
+          "취약계층"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "배달 오토바이 살 돈도 대출 … 금융권 '미소금융' 판 커진다",
+      "program_key": "eligibility-rule:kr:매일경제-경제정책:2026-10-24:배달-오토바이-살-돈도-대출-금융권-미소금융-판-커진다",
+      "evidence_url": "https://www.mk.co.kr/news/economy/12185222",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "‘안산 1호 투자유치기업’으로 반도체 기업 지정",
+      "url": "https://www.donga.com/news/Society/article/all/20261025/134903804/1",
+      "event_at": "2026-10-24T22:56:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "경기"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "‘안산 1호 투자유치기업’으로 반도체 기업 지정",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-10-24:안산-1호-투자유치기업-으로-반도체-기업-지정",
+      "evidence_url": "https://www.donga.com/news/Society/article/all/20261025/134903804/1",
+      "evidence_url_present": true
+    },
+    {
+      "source": "동아일보 경제",
+      "event_model": "eligibility_rule",
+      "title": "“AI는 쓰라면서 AI 티는 내지 마라”…AI 시대 취업 현장[김현지의 with AI]",
+      "url": "https://www.donga.com/news/Economy/article/all/20261024/134900007/1",
+      "event_at": "2026-10-24T16:00:00+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ],
+        "Industry": [
+          "AI"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "“AI는 쓰라면서 AI 티는 내지 마라”…AI 시대 취업 현장[김현지의 with AI]",
+      "program_key": "eligibility-rule:kr:동아일보-경제:2026-10-24:ai는-쓰라면서-ai-티는-내지-마라-ai-시대-취업-현장-김현지의-with-ai",
+      "evidence_url": "https://www.donga.com/news/Economy/article/all/20261024/134900007/1",
       "evidence_url_present": true
     },
     {
@@ -1587,27 +1652,6 @@
       "evidence_url_present": true
     },
     {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "｢유관기관 증시상황 긴급 점검회의｣ 개최",
-      "url": "https://www.fsc.go.kr/no010101/87942",
-      "event_at": "2026-10-18T08:38:17.847805+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Industry": [
-          "AI"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "｢유관기관 증시상황 긴급 점검회의｣ 개최",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-10-18:유관기관-증시상황-긴급-점검회의-개최",
-      "evidence_url": "https://www.fsc.go.kr/no010101/87942",
-      "evidence_url_present": true
-    },
-    {
       "source": "고용노동부 정책",
       "event_model": "support_program_notice",
       "title": "2026년 재정지원 일자리사업 성과평가 결과",
@@ -1749,9 +1793,9 @@
     "K-Startup 지원사업 공고 API: skipped_missing_env DATA_GO_KR_KSTARTUP_SERVICE_KEY",
     "보조금24 공공서비스 API: skipped_missing_env DATA_GO_KR_SUBSIDY24_SERVICE_KEY",
     "기업마당 지원사업 공고 API: skipped_missing_env DATA_GO_KR_BIZINFO_SERVICE_KEY",
-    "한겨레 경제: skipped_robots robots.txt HTTP 403; not fetching",
     "K-GAPI 공공API 현황분석: skipped_robots robots.txt disallows /hollobit/K-GAPI/commits/main.atom",
     "Awesome MCP Korea: skipped_robots robots.txt disallows /darjeeling/awesome-mcp-korea/commits/main.atom",
-    "서울시 지원사업: request failed: SSLError"
+    "서울시 지원사업: request failed: SSLError",
+    "https://www.mk.co.kr/news/economy/12185223: summary is missing or not a string"
   ]
 }
