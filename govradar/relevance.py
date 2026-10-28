@@ -249,7 +249,14 @@ def _has_govsupport_signal(article: Article, source: Source) -> bool:
         )
 
     if entity_names & OPERATIONAL_ENTITY_NAMES:
-        return bool(support_entities) and (has_core_support_text or has_core_support_entity)
+        if support_entities and (has_core_support_text or has_core_support_entity):
+            return True
+        return _official_deadline_notice(
+            source,
+            source_event_model=source_event_model,
+            entity_names=entity_names,
+            has_application_context=has_application_context,
+        )
 
     if not support_entities:
         return False
@@ -276,6 +283,30 @@ def _has_govsupport_signal(article: Article, source: Source) -> bool:
         )
 
     return False
+
+
+def _official_deadline_notice(
+    source: Source,
+    *,
+    source_event_model: str,
+    entity_names: set[str],
+    has_application_context: bool,
+) -> bool:
+    """Keep a T1 deadline notice that names an application and a parsed date.
+
+    Policy RSS items often say 모집/신청 with SupportType "지원", which is not a
+    core funding term. The operational-entity check used to drop those before
+    the deadline rule could see them.
+    """
+    if source.trust_tier != "T1_authoritative":
+        return False
+    if source_event_model not in {"application_deadline", "eligibility_rule"}:
+        return False
+    if not has_application_context:
+        return False
+    if not {"ApplicationDeadline", "ApplicationStartDate"} & entity_names:
+        return False
+    return bool({"TargetGroup", "EligibilityTargetGroup", "ApplicationInfo"} & entity_names)
 
 
 def _has_support_notice_signal(

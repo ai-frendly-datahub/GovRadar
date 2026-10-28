@@ -30,6 +30,11 @@ from govradar.quality_report import build_quality_report, write_quality_report
 from govradar.relevance import apply_source_context_entities, filter_relevant_articles
 from govradar.reporter import generate_index_html, generate_report
 from govradar.robots import partition_robots_disallowed
+from govradar.run_collection import (
+    build_run_collection,
+    run_collected_total,
+    run_failed_source_count,
+)
 from govradar.storage import RadarStorage
 from govradar.support_signals import enrich_support_operational_fields
 
@@ -209,8 +214,15 @@ def run(
         recent_days=recent_days,
         sources=effective_sources,
     )
+    last_success_at = storage.last_collected_at_by_source(category_cfg.category_name)
     storage.close()
     quality_articles = recent_articles
+    run_collection = build_run_collection(
+        effective_sources,
+        collected,
+        errors,
+        last_success_at=last_success_at,
+    )
 
     matched_count = sum(1 for article in recent_articles if article.matched_entities)
     source_count = len({article.source for article in recent_articles if article.source})
@@ -223,6 +235,8 @@ def run(
         "article_count": len(recent_articles),
         "source_count": source_count,
         "matched_count": matched_count,
+        "run_collected": run_collected_total(run_collection),
+        "run_failed_sources": run_failed_source_count(run_collection),
     }
     if quality_cleanup_deleted:
         stats["quality_cleanup_deleted"] = quality_cleanup_deleted
@@ -232,6 +246,7 @@ def run(
         articles=cast(Any, quality_articles),
         errors=errors,
         quality_config=quality_cfg,
+        run_collection=run_collection,
     )
     quality_report_paths = write_quality_report(
         quality_report,

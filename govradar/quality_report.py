@@ -25,6 +25,7 @@ def build_quality_report(
     errors: Iterable[str] | None = None,
     quality_config: Mapping[str, object] | None = None,
     generated_at: datetime | None = None,
+    run_collection: Mapping[str, object] | None = None,
 ) -> dict[str, Any]:
     generated_at = _as_utc(generated_at or datetime.now(UTC))
     articles_list = list(articles)
@@ -65,34 +66,50 @@ def build_quality_report(
     program_keys = {
         str(row["program_key"]) for row in event_rows if str(row.get("program_key") or "")
     }
-    return {
+    summary: dict[str, Any] = {
+        "total_sources": len(source_rows),
+        "tracked_sources": sum(1 for row in source_rows if row["tracked"]),
+        "fresh_sources": status_counts.get("fresh", 0),
+        "stale_sources": status_counts.get("stale", 0),
+        "missing_sources": status_counts.get("missing", 0),
+        "missing_event_sources": status_counts.get("missing_event", 0),
+        "unknown_event_date_sources": status_counts.get("unknown_event_date", 0),
+        "not_tracked_sources": status_counts.get("not_tracked", 0),
+        "skipped_disabled_sources": status_counts.get("skipped_disabled", 0),
+        "support_program_notice_events": event_counts.get("support_program_notice", 0),
+        "application_deadline_events": event_counts.get("application_deadline", 0),
+        "eligibility_rule_events": event_counts.get("eligibility_rule", 0),
+        "selection_result_events": event_counts.get("selection_result", 0),
+        "unique_program_key_count": len(program_keys),
+        "events_with_evidence_url": sum(1 for row in event_rows if row.get("evidence_url")),
+        "collection_error_count": len(errors_list),
+        "event_model_source_gap_count": len(event_model_source_gaps),
+    }
+    report: dict[str, Any] = {
         "category": category.category_name,
         "generated_at": generated_at.isoformat(),
-        "summary": {
-            "total_sources": len(source_rows),
-            "tracked_sources": sum(1 for row in source_rows if row["tracked"]),
-            "fresh_sources": status_counts.get("fresh", 0),
-            "stale_sources": status_counts.get("stale", 0),
-            "missing_sources": status_counts.get("missing", 0),
-            "missing_event_sources": status_counts.get("missing_event", 0),
-            "unknown_event_date_sources": status_counts.get("unknown_event_date", 0),
-            "not_tracked_sources": status_counts.get("not_tracked", 0),
-            "skipped_disabled_sources": status_counts.get("skipped_disabled", 0),
-            "support_program_notice_events": event_counts.get("support_program_notice", 0),
-            "application_deadline_events": event_counts.get("application_deadline", 0),
-            "eligibility_rule_events": event_counts.get("eligibility_rule", 0),
-            "selection_result_events": event_counts.get("selection_result", 0),
-            "unique_program_key_count": len(program_keys),
-            "events_with_evidence_url": sum(1 for row in event_rows if row.get("evidence_url")),
-            "collection_error_count": len(errors_list),
-            "event_model_source_gap_count": len(event_model_source_gaps),
-        },
+        "summary": summary,
         "sources": source_rows,
         "events": event_rows,
         "event_model_coverage": event_model_coverage,
         "event_model_source_gaps": event_model_source_gaps,
         "errors": errors_list,
     }
+    if run_collection is not None:
+        collected_counts = run_collection.get("collected_counts")
+        failed_sources = run_collection.get("failed_sources")
+        collected_total = 0
+        if isinstance(collected_counts, Mapping):
+            collected_total = sum(
+                value
+                for value in collected_counts.values()
+                if isinstance(value, int) and not isinstance(value, bool)
+            )
+        failed_count = len(failed_sources) if isinstance(failed_sources, list) else 0
+        summary["run_collected_total"] = collected_total
+        summary["run_failed_source_count"] = failed_count
+        report["run"] = dict(run_collection)
+    return report
 
 
 def write_quality_report(
