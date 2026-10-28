@@ -263,7 +263,7 @@ def test_api_error_redacts_service_key() -> None:
         config={"provider": "bizinfo", "required_env": "DATA_GO_KR_BIZINFO_SERVICE_KEY"},
     )
 
-    def boom(_url: str, *, timeout: int, secret: str) -> str:
+    def boom(_url: str, *, timeout: int, secret: str, **_kwargs: object) -> str:
         del timeout
         raise RuntimeError(f"request failed serviceKey={secret}")
 

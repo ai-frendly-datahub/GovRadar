@@ -60,6 +60,8 @@ def test_real_govsupport_sources_preserve_operational_metadata() -> None:
     assert seoul_notices.enabled is True
     assert seoul_notices.type == "public_page"
     assert seoul_notices.url == "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277"
+    assert seoul_notices.config["consecutive_transport_failure_limit"] == 3
+    assert seoul_notices.config["provider"] == "seoul_notice"
 
     kstartup_api = sources["K-Startup 지원사업 공고 API"]
     subsidy_api = sources["보조금24 공공서비스 API"]
