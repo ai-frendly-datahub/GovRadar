@@ -13,16 +13,29 @@ import re
 from collections.abc import Mapping
 from datetime import UTC, datetime
 from typing import Any
-from urllib.parse import quote, unquote, urlencode, urlparse
+from urllib.parse import quote, urlencode, urlparse
 from xml.etree import ElementTree
 from xml.etree.ElementTree import Element
 
 import requests
+import structlog
 from bs4 import BeautifulSoup
 
 from govradar.collection_contract import GOVRADAR_USER_AGENT, missing_required_env
 from govradar.models import Article, Source
 from govradar.robots import url_is_allowed
+from govradar.transport_streak import (
+    TRANSPORT_REENABLE_GATES,
+    TRANSPORT_SKIP_REASONS,
+    TransportStreakStore,
+    consecutive_transport_failure_limit,
+    crawl_health_db_path,
+    redact_secret,
+    summarize_request_exception,
+    transport_error_kind,
+)
+
+logger = structlog.get_logger(__name__)
 
 _API_HOSTS = frozenset({"apis.data.go.kr", "api.odcloud.kr"})
 _SEOUL_HOST = "www.seoul.go.kr"
@@ -31,6 +44,14 @@ _VIEW_ID = re.compile(r"fnTbbsView\('(\d+)'\)")
 _DATE = re.compile(r"(\d{4})[-./]?(\d{2})[-./]?(\d{2})")
 _TAG = re.compile(r"<[^>]+>")
 _OFFICIAL_TYPES = frozenset({"api", "public_page"})
+
+
+class OfficialRequestError(RuntimeError):
+    """HTTP transport failure. ``kind`` is ``ssl``, ``connection``, or None."""
+
+    def __init__(self, message: str, *, kind: str | None) -> None:
+        super().__init__(message)
+        self.kind = kind
 
 
 def is_official_source(source: Source) -> bool:
@@ -47,32 +68,47 @@ def collect_official_sources(
     """Collect enabled official page/API sources. Missing keys are skipped."""
     articles: list[Article] = []
     errors: list[str] = []
-    for source in sources:
-        if not source.enabled or not is_official_source(source):
-            continue
-        try:
-            missing = missing_required_env(source)
-        except ValueError:
-            errors.append(f"{source.name}: required_env must be an environment variable name")
-            continue
-        if missing:
-            errors.append(f"{source.name}: skipped_missing_env {', '.join(missing)}")
-            continue
-        secret = _secret_value(source)
-        try:
-            batch = _collect_one(
-                source,
-                category=category,
-                limit=max(1, limit_per_source),
-                timeout=timeout,
-                secret=secret,
-            )
-        except RuntimeError as exc:
-            errors.append(f"{source.name}: {_redact(str(exc), secret)}")
-            continue
-        articles.extend(batch)
-        if not batch:
-            errors.append(f"{source.name}: official source returned no notices")
+    streak: TransportStreakStore | None = None
+    try:
+        for source in sources:
+            if not source.enabled or not is_official_source(source):
+                continue
+            try:
+                missing = missing_required_env(source)
+            except ValueError:
+                errors.append(f"{source.name}: required_env must be an environment variable name")
+                continue
+            if missing:
+                errors.append(f"{source.name}: skipped_missing_env {', '.join(missing)}")
+                continue
+            if streak is None:
+                streak = _open_transport_streak_store()
+            if _skip_repeated_transport_failure(source, streak, errors):
+                continue
+            secret = _secret_value(source)
+            try:
+                batch = _collect_one(
+                    source,
+                    category=category,
+                    limit=max(1, limit_per_source),
+                    timeout=timeout,
+                    secret=secret,
+                    streak=streak,
+                )
+            except OfficialRequestError as exc:
+                message = _redact(str(exc), secret)
+                errors.append(f"{source.name}: {message}")
+                _note_transport_failure(source, streak, exc.kind, message)
+                continue
+            except RuntimeError as exc:
+                errors.append(f"{source.name}: {_redact(str(exc), secret)}")
+                continue
+            articles.extend(batch)
+            if not batch:
+                errors.append(f"{source.name}: official source returned no notices")
+    finally:
+        if streak is not None:
+            streak.close()
     return articles, errors
 
 
@@ -166,13 +202,20 @@ def _collect_one(
     limit: int,
     timeout: int,
     secret: str,
+    streak: TransportStreakStore | None,
 ) -> list[Article]:
     allowed, reason = url_is_allowed(source.url, timeout=timeout)
     if not allowed:
         raise RuntimeError(reason)
     provider = str(source.config.get("provider") or "").strip().lower()
     if source.type.lower() == "public_page" or provider == "seoul_notice":
-        body = _http_get_text(source.url, timeout=timeout, secret="")
+        body = _fetch_official_text(
+            source,
+            source.url,
+            timeout=timeout,
+            secret="",
+            streak=streak,
+        )
         template = str(source.config.get("detail_url_template") or _DETAIL_URL)
         return parse_seoul_notice_html(
             body,
@@ -188,7 +231,13 @@ def _collect_one(
     _require_official_host(source.url)
     params = _query_params(provider, limit)
     url = _url_with_service_key(source.url, secret, params)
-    body = _http_get_text(url, timeout=timeout, secret=secret)
+    body = _fetch_official_text(
+        source,
+        url,
+        timeout=timeout,
+        secret=secret,
+        streak=streak,
+    )
     payload = _decode_payload(body, secret)
     return articles_from_api_payload(
         payload,
@@ -221,7 +270,27 @@ def _require_official_host(url: str) -> None:
         raise RuntimeError(f"refusing non-official API host {host}")
 
 
-def _http_get_text(url: str, *, timeout: int, secret: str) -> str:
+def _fetch_official_text(
+    source: Source,
+    url: str,
+    *,
+    timeout: int,
+    secret: str,
+    streak: TransportStreakStore | None,
+) -> str:
+    try:
+        body = _http_get_text(url, timeout=timeout, secret=secret, source_name=source.name)
+    except OfficialRequestError:
+        raise
+    except RuntimeError as exc:
+        if str(exc).startswith("HTTP "):
+            _remember_transport_success(source, streak)
+        raise
+    _remember_transport_success(source, streak)
+    return body
+
+
+def _http_get_text(url: str, *, timeout: int, secret: str, source_name: str = "") -> str:
     try:
         response = requests.get(
             url,
@@ -233,7 +302,17 @@ def _http_get_text(url: str, *, timeout: int, secret: str) -> str:
             verify=True,
         )
     except requests.RequestException as exc:
-        raise RuntimeError(_redact(f"request failed: {exc.__class__.__name__}", secret)) from None
+        summary = summarize_request_exception(exc, secret=secret)
+        message = f"request failed: {summary}"
+        kind = transport_error_kind(exc)
+        logger.warning(
+            "official_request_failed",
+            source=source_name,
+            error=message,
+            error_kind=kind,
+        )
+        print(f"[GovRadar] {source_name}: {message}", flush=True)
+        raise OfficialRequestError(message, kind=kind) from None
     if response.status_code >= 400:
         raise RuntimeError(f"HTTP {response.status_code}")
     return response.text or ""
@@ -457,10 +536,107 @@ def _local_name(element: Element) -> str:
 
 
 def _redact(text: str, secret: str) -> str:
-    if not secret:
-        return text
-    variants = {secret, quote(secret, safe=""), quote(secret, safe="%"), unquote(secret)}
-    redacted = text
-    for variant in sorted((item for item in variants if item), key=len, reverse=True):
-        redacted = redacted.replace(variant, "[redacted]")
-    return redacted
+    return redact_secret(text, secret)
+
+
+def _open_transport_streak_store() -> TransportStreakStore | None:
+    try:
+        return TransportStreakStore(crawl_health_db_path())
+    except Exception as exc:
+        logger.warning("transport_streak_unavailable", error_type=type(exc).__name__)
+        return None
+
+
+def _skip_repeated_transport_failure(
+    source: Source,
+    streak: TransportStreakStore | None,
+    errors: list[str],
+) -> bool:
+    if streak is None:
+        return False
+    try:
+        state = streak.get(source.name)
+    except Exception as exc:
+        logger.warning(
+            "transport_streak_read_failed", source=source.name, error_type=type(exc).__name__
+        )
+        return False
+    if state is None or state.error_kind not in TRANSPORT_SKIP_REASONS:
+        return False
+    if state.streak < consecutive_transport_failure_limit(source):
+        return False
+    reason = _assign_transport_gate(source, state.error_kind)
+    logger.warning(
+        "official_transport_skipped",
+        source=source.name,
+        skip_reason=reason,
+        reenable_gate=source.config.get("reenable_gate"),
+        consecutive_failures=state.streak,
+        last_error=state.last_detail,
+    )
+    print(
+        f"[GovRadar] {source.name}: skipped_transport {reason} "
+        f"consecutive={state.streak} last={state.last_detail}",
+        flush=True,
+    )
+    print(f"::warning title=GovRadar transport::{source.name} skipped; {reason}", flush=True)
+    errors.append(f"{source.name}: skipped_transport {reason}")
+    return True
+
+
+def _note_transport_failure(
+    source: Source,
+    streak: TransportStreakStore | None,
+    kind: str | None,
+    message: str,
+) -> None:
+    if streak is None or kind is None or kind not in TRANSPORT_SKIP_REASONS:
+        return
+    try:
+        count = streak.record_failure(source.name, kind, message)
+    except Exception as exc:
+        logger.warning(
+            "transport_streak_update_failed",
+            source=source.name,
+            error_type=type(exc).__name__,
+        )
+        return
+    if count >= consecutive_transport_failure_limit(source):
+        reason = _assign_transport_gate(source, kind)
+        logger.warning(
+            "official_transport_threshold_reached",
+            source=source.name,
+            skip_reason=reason,
+            reenable_gate=source.config.get("reenable_gate"),
+            consecutive_failures=count,
+            last_error=message,
+        )
+
+
+def _remember_transport_success(source: Source, streak: TransportStreakStore | None) -> None:
+    if streak is not None:
+        try:
+            streak.record_success(source.name)
+        except Exception as exc:
+            logger.warning(
+                "transport_streak_update_failed",
+                source=source.name,
+                error_type=type(exc).__name__,
+            )
+    _clear_transport_skip(source)
+
+
+def _assign_transport_gate(source: Source, kind: str) -> str:
+    reason = TRANSPORT_SKIP_REASONS[kind]
+    source.config["skip_reason"] = reason
+    source.config["reenable_gate"] = TRANSPORT_REENABLE_GATES[kind]
+    return reason
+
+
+def _clear_transport_skip(source: Source) -> None:
+    reason = source.config.get("skip_reason")
+    if reason not in TRANSPORT_SKIP_REASONS.values():
+        return
+    source.config.pop("skip_reason", None)
+    if source.config.get("reenable_gate") in TRANSPORT_REENABLE_GATES.values():
+        source.config.pop("reenable_gate", None)

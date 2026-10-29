@@ -69,6 +69,14 @@ def generate_report(
             category.category_name,
             ontology_metadata,
         )
+    if quality_report is not None:
+        run_collection = quality_report.get("run")
+        if isinstance(run_collection, Mapping):
+            _inject_run_collection_into_latest_summary(
+                output_path.parent,
+                category.category_name,
+                run_collection,
+            )
     if quality_report:
         _inject_operational_quality_panel(result, quality_report)
         _inject_latest_dated_report_panel(result, category.category_name, quality_report)
@@ -106,6 +114,32 @@ def _inject_ontology_metadata_into_latest_summary(
         return
     if "ontology" not in payload:
         payload["ontology"] = dict(ontology_metadata)
+    summary_path.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+
+
+def _inject_run_collection_into_latest_summary(
+    report_dir: Path,
+    category_name: str,
+    run_collection: Mapping[str, Any],
+) -> None:
+    """Record this-run counts beside the 7-day window that radar-core summarizes."""
+    summary_reports = sorted(
+        report_dir.glob(f"{category_name}_[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]_summary.json"),
+        key=lambda path: path.stat().st_mtime,
+    )
+    if not summary_reports:
+        return
+    summary_path = summary_reports[-1]
+    try:
+        payload = json.loads(summary_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return
+    if not isinstance(payload, dict):
+        return
+    payload["run"] = dict(run_collection)
     summary_path.write_text(
         json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
@@ -171,6 +205,7 @@ def _render_operational_quality_panel(quality_report: Mapping[str, Any]) -> str:
         f'<span class="chip"><strong>{escape(label)}</strong> {escape(str(value))}</span>'
         for label, value in chips
     )
+    run_html = _render_run_collection(quality_report.get("run"))
     source_html = _render_quality_sources(flagged_sources)
     gap_html = _render_quality_source_gaps(
         [
@@ -200,6 +235,7 @@ def _render_operational_quality_panel(quality_report: Mapping[str, Any]) -> str:
             <div class="row" aria-label="Operational quality summary">
               {chip_html}
             </div>
+            {run_html}
             {source_html}
             {gap_html}
             {event_html}
@@ -207,6 +243,31 @@ def _render_operational_quality_panel(quality_report: Mapping[str, Any]) -> str:
         </article>
       </section>
 """
+
+
+def _render_run_collection(run: object) -> str:
+    if not isinstance(run, Mapping):
+        return ""
+    counts = run.get("collected_counts")
+    failed = run.get("failed_sources")
+    count_text = ""
+    if isinstance(counts, Mapping):
+        parts = [
+            f"{escape(str(name))} {escape(str(count))}"
+            for name, count in counts.items()
+            if str(name)
+        ]
+        count_text = ", ".join(parts)
+    failed_names: list[str] = []
+    if isinstance(failed, list):
+        for item in failed:
+            if isinstance(item, Mapping) and item.get("source"):
+                failed_names.append(escape(str(item.get("source"))))
+    failed_text = ", ".join(failed_names) if failed_names else "none"
+    return (
+        '<p class="muted small">This run collected: '
+        f"{count_text or 'none'}. Failed sources: {failed_text}.</p>"
+    )
 
 
 def _render_quality_sources(flagged_sources: list[Mapping[str, Any]]) -> str:

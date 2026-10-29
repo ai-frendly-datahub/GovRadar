@@ -92,6 +92,42 @@ def test_filter_relevant_articles_keeps_support_rows_and_drops_generic_policy() 
     ]
 
 
+def test_filter_keeps_t1_deadline_notice_and_drops_general_policy() -> None:
+    source = Source(
+        name="서울시 정책뉴스",
+        type="rss",
+        url="https://news.seoul.go.kr/gov/feed",
+        trust_tier="T1_authoritative",
+        config={"event_model": "application_deadline"},
+    )
+    kept = _article(
+        title="2026년 청년인생설계학교 스타터코스 참여자 모집",
+        source=source.name,
+        summary="청년 참여자 모집. 신청 마감 2026-11-16.",
+        matched_entities={
+            "SupportType": ["지원"],
+            "TargetGroup": ["청년"],
+            "ApplicationInfo": ["모집"],
+            "ApplicationDeadline": ["2026-11-16"],
+            "OperationalEvent": ["application_deadline"],
+        },
+    )
+    dropped = _article(
+        title="그림 속 서울 정책 32개를 찾아보세요",
+        source=source.name,
+        summary="서울 정책 카드뉴스",
+        matched_entities={
+            "TargetGroup": ["시민"],
+            "Region": ["서울"],
+            "OperationalEvent": ["eligibility_rule"],
+        },
+    )
+
+    filtered = filter_relevant_articles([kept, dropped], [source])
+
+    assert [article.title for article in filtered] == [kept.title]
+
+
 def test_filter_relevant_articles_drops_browser_index_chrome() -> None:
     source = Source(
         name="보건복지부",

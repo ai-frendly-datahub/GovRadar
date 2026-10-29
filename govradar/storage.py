@@ -16,6 +16,27 @@ from .models import Article
 class RadarStorage(CoreRadarStorage):
     """GovRadar storage wrapper with dated snapshot helpers."""
 
+    def last_collected_at_by_source(self, category: str) -> dict[str, datetime]:
+        """Latest stored ``collected_at`` per source. Naive values are UTC."""
+        cur = self.conn.execute(
+            """
+            SELECT source, MAX(collected_at)
+            FROM articles
+            WHERE category = ?
+            GROUP BY source
+            """,
+            [category],
+        )
+        rows = cast(list[tuple[object, object]], cur.fetchall())
+        latest: dict[str, datetime] = {}
+        for source_name, collected_at in rows:
+            if not isinstance(source_name, str) or not source_name:
+                continue
+            parsed = _as_datetime(collected_at)
+            if parsed is not None:
+                latest[source_name] = parsed
+        return latest
+
     def recent_articles_by_collected_at(
         self,
         category: str,
@@ -124,6 +145,17 @@ class RadarStorage(CoreRadarStorage):
 
 
 __all__ = ["RadarStorage", "StorageError"]
+
+
+def _as_datetime(value: object) -> datetime | None:
+    if isinstance(value, datetime):
+        return value
+    if isinstance(value, str) and value.strip():
+        try:
+            return datetime.fromisoformat(value)
+        except ValueError:
+            return None
+    return None
 
 
 def _utc_naive(dt: datetime | None) -> datetime | None:

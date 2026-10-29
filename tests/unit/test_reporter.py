@@ -73,6 +73,19 @@ def test_generate_report_injects_operational_quality_panel(tmp_path, monkeypatch
                 "age_days": 3,
             }
         ],
+        "run": {
+            "collected_counts": {"서울시 지원사업": 0, "서울시 정책뉴스": 2},
+            "failed_sources": [
+                {
+                    "source": "서울시 지원사업",
+                    "errors": ["서울시 지원사업: request failed: SSLError: eof"],
+                }
+            ],
+            "last_success_at": {
+                "서울시 지원사업": "2026-10-22T09:15:08+00:00",
+                "서울시 정책뉴스": None,
+            },
+        },
         "events": [
             {
                 "source": "서울시 지원사업",
@@ -134,6 +147,9 @@ def test_generate_report_injects_operational_quality_panel(tmp_path, monkeypatch
         assert "2026-04-30" in rendered
         assert "selected 12" in rendered
         assert "https://example.com/result" in rendered
+        assert "This run collected:" in rendered
+        assert "서울시 정책뉴스 2" in rendered
+        assert "Failed sources: 서울시 지원사업" in rendered
 
     summary = (tmp_path / "reports" / "govsupport_20260412_summary.json").read_text(
         encoding="utf-8"
@@ -141,3 +157,6 @@ def test_generate_report_injects_operational_quality_panel(tmp_path, monkeypatch
     assert '"repo": "GovRadar"' in summary
     assert '"ontology_version": "0.1.0"' in summary
     assert '"govsupport.application_deadline"' in summary
+    assert '"collected_counts"' in summary
+    assert '"서울시 지원사업": 0' in summary
+    assert '"서울시 지원사업": 1' in summary
