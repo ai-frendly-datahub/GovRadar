@@ -48,6 +48,14 @@ Radar-Template PR #4와 같은 수집·저장 계약을 유지합니다. 시크�
 | 보조금24 공공서비스 | `DATA_GO_KR_SUBSIDY24_SERVICE_KEY` |
 | 기업마당 지원사업 공고 | `DATA_GO_KR_BIZINFO_SERVICE_KEY` |
 
+## 핵심 설정
+
+- 카테고리: `config/categories/govsupport.yaml`
+- DB 경로: `data/govradar_data.duckdb`
+- 리포트 출력: `reports/`
+- 워크플로: `.github/workflows/radar-crawler.yml`
+- 실행 파이프라인: `radar_core.collector`, `radar_core.config_loader`
+
 ## 소스별 선택 설정 (RSS 소스의 `config:`)
 
 | 키 | 설명 |
@@ -60,14 +68,6 @@ Radar-Template PR #4와 같은 수집·저장 계약을 유지합니다. 시크�
 | `exclude_title_prefixes: [...]` | 제목이 해당 접두어로 시작하는 항목을 수집 단계에서 제외 (검증된 경우에만 사용) |
 
 일반 뉴스 피드의 키워드 포함 게이트는 모델 분류 대비 검증에서 유용 항목을 과하게 지워 도입하지 않았습니다. 근거는 `docs/noise_gate_validation_2026-10-29.md`를 보세요.
-
-## 핵심 설정
-
-- 카테고리: `config/categories/govsupport.yaml`
-- DB 경로: `data/govradar_data.duckdb`
-- 리포트 출력: `reports/`
-- 워크플로: `.github/workflows/radar-crawler.yml`
-- 실행 파이프라인: `radar_core.collector`, `radar_core.config_loader`
 
 ## 데이터 품질 운영
 
