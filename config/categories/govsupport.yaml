@@ -644,6 +644,9 @@ sources:
   trust_tier: T2_expert
   collection_tier: C1_rss
   description: "매일경제 정치 섹션 - 정부정책, 행정 뉴스"
+  config:
+    # 매일경제 이용약관 제22조(자동화 도구 제한), RSS 요약은 제목·링크·출처명만 저장·공개한다(법무 검토 필요, 2026-10-29).
+    store_summary: false
 
 - name: 매일경제 경제정책
   type: rss
@@ -653,6 +656,9 @@ sources:
   trust_tier: T2_expert
   collection_tier: C1_rss
   description: "매일경제 경제정책 - 금융정책, 지원사업 뉴스"
+  config:
+    # 매일경제 이용약관 제22조(자동화 도구 제한), RSS 요약은 제목·링크·출처명만 저장·공개한다(법무 검토 필요, 2026-10-29).
+    store_summary: false
 
 - name: 동아일보 경제
   type: rss
@@ -662,6 +668,9 @@ sources:
   trust_tier: T2_expert
   collection_tier: C1_rss
   description: "동아일보 경제 섹션 - 정부지원, 경제정책 뉴스"
+  config:
+    # 동아닷컴 이용약관 제27조와 RSS 안내(개인 비상업 이용만 허용)에 따라 제목·링크·출처명만 저장·공개한다(법무 검토 필요, 2026-10-29).
+    store_summary: false
 
 - name: 경향신문 경제
   type: rss
@@ -671,6 +680,9 @@ sources:
   trust_tier: T2_expert
   collection_tier: C1_rss
   description: "경향신문 경제 섹션 - 생활경제, 정책 뉴스"
+  config:
+    # 경향신문 이용약관 제18조와 RSS 이용 안내(개인 구독 목적)에 따라 제목·링크·출처명만 저장·공개한다(법무 검토 필요, 2026-10-29).
+    store_summary: false
 
 - name: 한겨레 경제
   type: rss
@@ -682,6 +694,8 @@ sources:
   description: "한겨레 경제 섹션 - 경제정책, 금융 뉴스"
   config:
     drop_if_published_missing: true
+    # 한겨레 이용약관 제22조(크롤링 제한)와 디지털 뉴스 이용규칙(RSS)에 따라 제목·링크·출처명만 저장·공개한다(법무 검토 필요, 2026-10-29).
+    store_summary: false
 
 - name: 서울경제 경제
   type: rss
@@ -707,6 +721,8 @@ sources:
   config:
     # 라디오 요약 코너는 본문이 출연자 정보뿐이다. 분류 결과 11건 전부 노이즈, 유용 0건(검증표 참고).
     exclude_title_prefixes: ["[여담야담]", "[성민종합정치]"]
+    # SBS RSS 안내(개인 비상업 이용만 허가)와 SBS/SBSi 이용약관 제15조에 따라 제목·링크·출처명만 저장·공개한다(법무 검토 필요, 2026-10-29).
+    store_summary: false
 
 # === 공공데이터/API 품질 분석 ===
 - name: K-GAPI 공공API 현황분석

@@ -37,6 +37,7 @@ from govradar.run_collection import (
     run_failed_source_count,
 )
 from govradar.storage import RadarStorage
+from govradar.summary_policy import redact_summaries, summary_free_source_names
 from govradar.support_signals import enrich_support_operational_fields
 from govradar.title_exclusion import drop_excluded_titles
 
@@ -182,7 +183,11 @@ def run(
     for source in effective_sources:
         source_articles = [article for article in collected if article.source == source.name]
         if source_articles:
-            _ = raw_logger.log(source_articles, source_name=source.name)
+            # store_summary: false 소스는 raw JSONL에도 summary를 쓰지 않는다(메모리 원본은 유지).
+            _ = raw_logger.log(
+                redact_summaries(source_articles, effective_sources),
+                source_name=source.name,
+            )
 
     analyzed = enrich_support_operational_fields(
         apply_entity_rules(collected, category_cfg.entities)
@@ -203,8 +208,20 @@ def run(
     if validation_errors:
         errors.extend(validation_errors)
 
+    # 분류·관련성 필터·검증이 끝난 뒤에 summary를 비운다. 이후 DuckDB와 검색 색인에는 빈 값이 들어간다.
+    summary_free_names = summary_free_source_names(effective_sources)
+    validated_articles = redact_summaries(validated_articles, effective_sources)
+
     storage = RadarStorage(settings.database_path)
     storage.upsert_articles(validated_articles)
+    summaries_cleared = storage.clear_summaries_for_sources(
+        category_cfg.category_name,
+        sorted(summary_free_names),
+    )
+    if summaries_cleared:
+        print(
+            f"[Radar] store_summary=false 소스의 저장된 summary {summaries_cleared}건을 비웠습니다"
+        )
     _ = storage.delete_older_than(keep_days)
     quality_cleanup_deleted = storage.delete_invalid_pages(category_cfg.category_name)
     quality_cleanup_deleted += storage.delete_missing_published_from_sources(
@@ -344,10 +361,14 @@ def _select_report_articles(
     if sources is None:
         return articles
 
-    scoped_articles = filter_relevant_articles(
-        apply_source_context_entities(articles, sources),
-        sources,
-    )
+    # store_summary: false 소스는 저장된 summary가 비어 있어 본문 기반 관련성 판정을 다시 할 수 없다.
+    # 저장 시점에 이미 필터를 통과한 항목이므로 그대로 둔다.
+    exempt_names = summary_free_source_names(sources)
+    checked = apply_source_context_entities(articles, sources)
+    passed = {id(article) for article in filter_relevant_articles(checked, sources)}
+    scoped_articles = [
+        article for article in checked if id(article) in passed or article.source in exempt_names
+    ]
     return scoped_articles or articles
 
 

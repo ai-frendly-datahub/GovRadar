@@ -93,6 +93,33 @@ class RadarStorage(CoreRadarStorage):
         _ = self.conn.execute(f"DELETE FROM articles WHERE {where_clause}", [category])
         return to_delete
 
+    def clear_summaries_for_sources(
+        self,
+        category: str,
+        source_names: Iterable[str],
+    ) -> int:
+        """``store_summary: false`` 소스에 이미 저장된 summary를 비우고 비운 행 수를 돌려준다."""
+        names = [name for name in dict.fromkeys(source_names) if name]
+        if not names:
+            return 0
+
+        placeholders = ", ".join("?" for _ in names)
+        where_clause = (
+            f"category = ? AND source IN ({placeholders}) AND coalesce(summary, '') <> ''"
+        )
+        params: list[object] = [category, *names]
+        row = self.conn.execute(
+            f"SELECT COUNT(*) FROM articles WHERE {where_clause}",
+            params,
+        ).fetchone()
+        to_clear = int(row[0]) if row else 0
+        if to_clear:
+            _ = self.conn.execute(
+                f"UPDATE articles SET summary = '' WHERE {where_clause}",
+                params,
+            )
+        return to_clear
+
     def delete_missing_published_from_sources(
         self,
         category: str,
