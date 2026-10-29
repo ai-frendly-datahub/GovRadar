@@ -68,6 +68,7 @@ Radar-Template PR #4와 같은 수집·저장 계약을 유지합니다. 시크�
 | `detail_upgrade_https: true` | 피드 링크가 `http://`일 때 `https://`로 올려 가져옴 |
 | `detail_summary_max_chars`, `detail_summary_max_per_run`, `detail_min_interval_seconds` | 길이·건수·간격 조정 |
 | `exclude_title_prefixes: [...]` | 제목이 해당 접두어로 시작하는 항목을 수집 단계에서 제외 (검증된 경우에만 사용) |
+| `store_summary: false` | RSS가 준 `summary`를 raw JSONL·DuckDB·검색 색인·Pages 보고서에 저장·공개하지 않고 제목·링크·출처명만 남깁니다. 분류와 관련성 필터는 메모리의 summary를 그대로 쓰고, 기록 직전에만 비웁니다. 이미 저장된 같은 소스의 summary는 실행마다 비웁니다. Git 과거 커밋의 데이터는 지우지 않습니다. 언론사 소스의 저장 범위를 제목·링크·출처명으로 한정할 때 이 설정을 씁니다. |
 
 저작권 검토에 따라 한국경제 경제·정치, 서울경제 경제는 이용약관상 자동 수집이 제한되어 `enabled: false`로 두었고 기사 페이지를 가져오지 않습니다. 농림축산식품부 본문은 공공누리 제1유형 표시가 있는 항목만 사용합니다. 출처: 농림축산식품부(www.mafra.go.kr), 공공누리 제1유형(출처표시).
 
