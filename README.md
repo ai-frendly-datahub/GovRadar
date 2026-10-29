@@ -58,6 +58,21 @@ Radar-Template PR #4와 같은 수집·저장 계약을 유지합니다. 시크�
 - 워크플로: `.github/workflows/radar-crawler.yml`
 - 실행 파이프라인: `radar_core.collector`, `radar_core.config_loader`
 
+## 소스별 선택 설정 (RSS 소스의 `config:`)
+
+| 키 | 설명 |
+| --- | --- |
+| `fetch_detail_summary: true` | RSS에 본문이 없는 소스의 빈 `summary`를 공개 상세 페이지에서 채웁니다. robots.txt 허용 URL만, TLS 검증 유지, 피드와 같은 호스트만, 요청 간격 1초, 소스당 실행 1회 30건 상한. 실패하면 비워 둡니다. |
+| `detail_summary_selectors` | 본문 위치 CSS 선택자 목록 |
+| `detail_require_license: kogl_type1` | 상세 페이지에 공공누리 제1유형 마크가 있을 때만 본문을 사용합니다. 마크가 없으면(제2~4유형 포함) summary를 비워 두고 실행 로그에 `라이선스 제외` 건수로 셉니다. |
+| `detail_upgrade_https: true` | 피드 링크가 `http://`일 때 `https://`로 올려 가져옴 |
+| `detail_summary_max_chars`, `detail_summary_max_per_run`, `detail_min_interval_seconds` | 길이·건수·간격 조정 |
+| `exclude_title_prefixes: [...]` | 제목이 해당 접두어로 시작하는 항목을 수집 단계에서 제외 (검증된 경우에만 사용) |
+
+저작권 검토에 따라 한국경제 경제·정치, 서울경제 경제는 이용약관상 자동 수집이 제한되어 `enabled: false`로 두었고 기사 페이지를 가져오지 않습니다. 농림축산식품부 본문은 공공누리 제1유형 표시가 있는 항목만 사용합니다. 출처: 농림축산식품부(www.mafra.go.kr), 공공누리 제1유형(출처표시).
+
+일반 뉴스 피드의 키워드 포함 게이트는 모델 분류 대비 검증에서 유용 항목을 과하게 지워 도입하지 않았습니다. 근거는 `docs/noise_gate_validation_2026-10-29.md`를 보세요.
+
 ## 데이터 품질 운영
 
 - `config/categories/govsupport.yaml`에는 `data_quality`와 `source_backlog`가 있어 지원사업 공고를 `support_program_notice`, `application_deadline`, `eligibility_rule`, `selection_result` 이벤트로 분리합니다.
