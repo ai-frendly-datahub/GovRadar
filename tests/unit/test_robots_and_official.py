@@ -317,3 +317,15 @@ def test_readme_lists_key_names_only() -> None:
         assert name in readme
     assert "serviceKey=" not in readme
     assert "crtfcKey=" not in readme
+
+
+def test_crawler_workflow_maps_data_go_kr_secrets_to_run_step() -> None:
+    """수집 단계가 시크릿 이름만 환경 변수로 연결하는지 확인한다(값은 읽지 않는다)."""
+    workflow = Path(".github/workflows/radar-crawler.yml").read_text(encoding="utf-8")
+    step = workflow.split("- name: Run GovRadar", 1)[1].split("- name:", 1)[0]
+    for name in (
+        "DATA_GO_KR_KSTARTUP_SERVICE_KEY",
+        "DATA_GO_KR_SUBSIDY24_SERVICE_KEY",
+        "DATA_GO_KR_BIZINFO_SERVICE_KEY",
+    ):
+        assert f"{name}: ${{{{ secrets.{name} }}}}" in step

@@ -48,6 +48,8 @@ Radar-Template PR #4와 같은 수집·저장 계약을 유지합니다. 시크�
 | 보조금24 공공서비스 | `DATA_GO_KR_SUBSIDY24_SERVICE_KEY` |
 | 기업마당 지원사업 공고 | `DATA_GO_KR_BIZINFO_SERVICE_KEY` |
 
+수집 워크플로(`.github/workflows/radar-crawler.yml`)의 `Run GovRadar` 단계는 위 세 환경 변수를 같은 이름의 저장소 시크릿(`${{ secrets.<이름> }}`)에서 받습니다. 시크릿이 등록되지 않았거나 비어 있으면 해당 소스만 `skipped_missing_env`로 기록하고 건너뛰며, 나머지 소스 수집은 계속됩니다. 저장소 Settings → Secrets and variables → Actions에서 등록합니다.
+
 ## 핵심 설정
 
 - 카테고리: `config/categories/govsupport.yaml`
