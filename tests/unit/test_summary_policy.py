@@ -39,17 +39,18 @@ def _article(
 
 
 @pytest.mark.unit
-def test_only_boolean_false_on_enabled_sources_counts() -> None:
-    disabled = _source("꺼진 소스", store_summary=False)
-    disabled.enabled = False
+def test_only_boolean_false_counts_and_stopped_sources_are_included() -> None:
+    stopped = _source("수집 중지 소스", store_summary=False)
+    stopped.enabled = False
     sources = [
         _source("끔", store_summary=False),
         _source("문자열", store_summary="false"),
         _source("켬", store_summary=True),
         _source("설정 없음"),
-        disabled,
+        stopped,
     ]
-    assert summary_free_source_names(sources) == frozenset({"끔"})
+    # 수집을 멈춘 소스도 이미 저장된 summary를 비워야 하므로 포함한다.
+    assert summary_free_source_names(sources) == frozenset({"끔", "수집 중지 소스"})
 
 
 @pytest.mark.unit
@@ -237,3 +238,55 @@ def test_pipeline_never_persists_summary_for_flagged_source(
         }
     assert bodies["https://example.com/a1"] == ""
     assert bodies["https://example.com/b1"] == SUMMARY_TEXT
+
+
+@pytest.mark.unit
+def test_pipeline_clears_stored_summary_of_stopped_source(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    config, categories = _write_config(tmp_path)
+    category_file = categories / "govsupport.yaml"
+    text = category_file.read_text(encoding="utf-8")
+    # 뉴스 소스를 수집 중지로 바꾼다(store_summary: false는 유지).
+    text = text.replace(
+        "  collection_tier: C1_rss\n  config:\n    store_summary: false",
+        "  collection_tier: C1_rss\n  enabled: false\n  config:\n    store_summary: false",
+    )
+    assert "enabled: false" in text
+    category_file.write_text(text, encoding="utf-8")
+
+    other = _article(source=OTHER_SOURCE, link="https://example.com/b1")
+    other.matched_entities = {}
+    seen: list[list[str]] = []
+
+    def fake_collect(sources: list[Source], **_: object) -> tuple[list[Article], list[str]]:
+        seen.append([source.name for source in sources if source.enabled])
+        return [other], []
+
+    monkeypatch.setattr(pipeline, "collect_sources", fake_collect)
+    monkeypatch.setattr(pipeline, "collect_official_sources", lambda *a, **k: ([], []))
+    monkeypatch.setattr(pipeline, "partition_robots_disallowed", lambda sources, **_: (sources, []))
+
+    storage = RadarStorage(tmp_path / "db.duckdb")
+    try:
+        storage.upsert_articles([_article(source=NEWS_SOURCE, link="https://example.com/old")])
+    finally:
+        storage.close()
+
+    report_path = pipeline.run(
+        category="govsupport",
+        config_path=config,
+        categories_dir=categories,
+    )
+
+    storage = RadarStorage(tmp_path / "db.duckdb")
+    try:
+        stored = {a.link: a for a in storage.recent_articles("govsupport", days=30)}
+    finally:
+        storage.close()
+    assert seen and NEWS_SOURCE not in seen[0]  # 수집하지 않는다
+    assert stored["https://example.com/old"].summary == ""  # 이미 저장된 summary는 비운다
+    assert stored["https://example.com/old"].title == "정책 소식"
+    assert stored["https://example.com/b1"].summary == SUMMARY_TEXT
+    html = report_path.read_text(encoding="utf-8")
+    assert "https://example.com/old" not in html  # 중지된 소스 항목은 보고서에 나오지 않는다
