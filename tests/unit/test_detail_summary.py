@@ -7,6 +7,7 @@ import requests
 
 from govradar.detail_summary import (
     EnrichStats,
+    _has_kogl_type1,
     enrich_empty_summaries,
     extract_summary,
     fetch_public_page,
@@ -26,18 +27,32 @@ ARTICLE_HTML = """
 </body></html>
 """
 
+KOGL_TYPE1_HTML = (
+    "<html><body><div class='view_contents'>보도자료 본문입니다. 지원 대상을 넓힌다고 밝혔다.</div>"
+    "<div class='kogl'><a href='https://www.kogl.or.kr/info/licenseType1.do'>"
+    "<img src='/images/img_opentype01.jpg' alt='공공누리 제1유형'></a></div></body></html>"
+)
+
+
+def _kogl_html(type_no: int) -> str:
+    return (
+        "<html><body><div class='view_contents'>보도자료 본문입니다. 지원 대상을 넓힌다고 밝혔다.</div>"
+        f"<a href='https://www.kogl.or.kr/info/licenseType{type_no}.do'>"
+        f"<img src='/images/img_opentype0{type_no}.jpg' alt='공공누리 제{type_no}유형'></a>"
+        "</body></html>"
+    )
+
+
+NO_MARK_HTML = (
+    "<html><body><div class='view_contents'>보도자료 본문입니다. 지원 대상을 넓힌다고 밝혔다.</div>"
+    "</body></html>"
+)
+
 SPAN_HTML = (
     "<div class='view_contents'>"
     "<span>농림축산식품부</span><span>(장관</span> <span>송미령)는</span>"
     "<span>사업을 개정한다고</span> <span>밝혔다.</span></div>"
 )
-
-LD_HTML = """
-<html><head><script type="application/ld+json">
-{"@type": "NewsArticle", "headline": "제목",
- "description": "ld+json 설명입니다. 충분히 긴 문장으로 작성합니다."}
-</script></head><body><p>x</p></body></html>
-"""
 
 
 def _source(**config: object) -> Source:
@@ -66,9 +81,7 @@ def _allow(_url: str, _timeout: int) -> tuple[bool, str]:
 
 @pytest.mark.unit
 def test_extract_summary_prefers_body_and_drops_captions_and_scripts() -> None:
-    text = extract_summary(
-        ARTICLE_HTML, selectors=["#articletxt"], prefer_meta=False, max_chars=800
-    )
+    text = extract_summary(ARTICLE_HTML, selectors=["#articletxt"], max_chars=800)
     assert text.startswith("첫 문단입니다.")
     assert "둘째 줄입니다." in text
     assert "셋째 문단입니다." in text
@@ -77,26 +90,9 @@ def test_extract_summary_prefers_body_and_drops_captions_and_scripts() -> None:
 
 
 @pytest.mark.unit
-def test_extract_summary_prefers_meta_when_configured_and_unescapes_entities() -> None:
-    text = extract_summary(ARTICLE_HTML, selectors=["#articletxt"], prefer_meta=True, max_chars=800)
-    assert text.startswith("메타 설명입니다.")
-    assert "·" in text
-    assert "&middot;" not in text
-
-
-@pytest.mark.unit
 def test_extract_summary_does_not_insert_spaces_between_inline_tags() -> None:
-    text = extract_summary(
-        SPAN_HTML, selectors=[".view_contents"], prefer_meta=False, max_chars=800
-    )
+    text = extract_summary(SPAN_HTML, selectors=[".view_contents"], max_chars=800)
     assert text.startswith("농림축산식품부(장관 송미령)는사업을 개정한다고 밝혔다.")
-
-
-@pytest.mark.unit
-def test_extract_summary_falls_back_to_json_ld_and_truncates() -> None:
-    text = extract_summary(LD_HTML, selectors=["#missing"], prefer_meta=False, max_chars=10)
-    assert text == "ld+json 설명"
-    assert extract_summary("<html></html>", selectors=[], prefer_meta=False, max_chars=50) == ""
 
 
 @pytest.mark.unit
@@ -214,13 +210,13 @@ def test_enrich_failures_do_not_invent_text() -> None:
 @pytest.mark.unit
 def test_enrich_drops_challenge_pages() -> None:
     challenge = (
-        "<html><head><meta name='description' "
-        "content='Just a moment... Cloudflare security verification required'></head></html>"
+        "<html><body><div id='articletxt'>Just a moment... "
+        "Cloudflare security verification required</div></body></html>"
     )
     articles = [_article()]
     enrich_empty_summaries(
         articles,
-        [_source()],
+        [_source(detail_summary_selectors=["#articletxt"])],
         timeout=5,
         fetcher=lambda *_a: challenge,
         robots_check=_allow,
@@ -257,10 +253,101 @@ def test_enrich_caps_requests_per_run_and_waits_between_requests() -> None:
     assert [bool(article.summary) for article in articles] == [True, True, True, False, False]
 
 
+def _kogl_source() -> Source:
+    return _source(
+        detail_summary_selectors=[".view_contents"],
+        detail_require_license="kogl_type1",
+    )
+
+
+@pytest.mark.unit
+def test_has_kogl_type1_accepts_type1_mark_only() -> None:
+    assert _has_kogl_type1(KOGL_TYPE1_HTML) is True
+    assert _has_kogl_type1(KOGL_TYPE1_HTML.encode("utf-8")) is True
+    assert _has_kogl_type1(NO_MARK_HTML) is False
+    assert _has_kogl_type1("") is False
+    # 이미지 이름만 또는 링크만 있어도 제1유형으로 본다.
+    assert _has_kogl_type1("<img src='/x/img_opentype01.jpg'>") is True
+    assert _has_kogl_type1("<a href='https://www.kogl.or.kr/info/licenseType1.do'>x</a>") is True
+    # 본문 텍스트에 제1유형이라는 말만 있는 것은 마크가 아니다.
+    assert _has_kogl_type1("<p>공공누리 제1유형 opentype01 licenseType1</p>") is False
+
+
+@pytest.mark.unit
+@pytest.mark.parametrize("type_no", [2, 3, 4])
+def test_has_kogl_type1_rejects_types_2_to_4(type_no: int) -> None:
+    assert _has_kogl_type1(_kogl_html(type_no)) is False
+    # 제1유형 마크와 다른 유형 마크가 함께 있으면 보수적으로 제외한다.
+    assert _has_kogl_type1(KOGL_TYPE1_HTML + _kogl_html(type_no)) is False
+
+
+@pytest.mark.unit
+def test_enrich_fills_summary_when_kogl_type1_mark_present() -> None:
+    articles = [_article()]
+    _result, stats = enrich_empty_summaries(
+        articles,
+        [_kogl_source()],
+        timeout=5,
+        fetcher=lambda *_a: KOGL_TYPE1_HTML,
+        robots_check=_allow,
+    )
+    assert articles[0].summary.startswith("보도자료 본문입니다.")
+    assert stats["테스트 뉴스"] == EnrichStats(attempted=1, filled=1)
+
+
+@pytest.mark.unit
+def test_enrich_leaves_summary_empty_and_counts_when_mark_missing() -> None:
+    articles = [_article("https://news.example.kr/a/1"), _article("https://news.example.kr/a/2")]
+    pages = {"https://news.example.kr/a/1": NO_MARK_HTML, "https://news.example.kr/a/2": None}
+    _result, stats = enrich_empty_summaries(
+        articles,
+        [_kogl_source()],
+        timeout=5,
+        fetcher=lambda url, _t: pages[url],
+        robots_check=_allow,
+        sleep=lambda _s: None,
+    )
+    assert [article.summary for article in articles] == ["", ""]
+    assert stats["테스트 뉴스"] == EnrichStats(attempted=2, failed=1, skipped_license=1)
+    assert "라이선스 제외 1건" in format_stats(stats)[0]
+
+
+@pytest.mark.unit
+@pytest.mark.parametrize("type_no", [2, 3, 4])
+def test_enrich_skips_kogl_types_2_to_4(type_no: int) -> None:
+    articles = [_article()]
+    _result, stats = enrich_empty_summaries(
+        articles,
+        [_kogl_source()],
+        timeout=5,
+        fetcher=lambda *_a: _kogl_html(type_no),
+        robots_check=_allow,
+    )
+    assert articles[0].summary == ""
+    assert stats["테스트 뉴스"].skipped_license == 1
+    assert stats["테스트 뉴스"].filled == 0
+
+
+@pytest.mark.unit
+def test_enrich_without_license_requirement_ignores_marks() -> None:
+    articles = [_article()]
+    _result, stats = enrich_empty_summaries(
+        articles,
+        [_source(detail_summary_selectors=[".view_contents"])],
+        timeout=5,
+        fetcher=lambda *_a: NO_MARK_HTML,
+        robots_check=_allow,
+    )
+    assert articles[0].summary.startswith("보도자료 본문입니다.")
+    assert stats["테스트 뉴스"].skipped_license == 0
+
+
 @pytest.mark.unit
 def test_format_stats_lists_counts_only() -> None:
     lines = format_stats({"테스트 뉴스": EnrichStats(attempted=3, filled=2, failed=1)})
-    assert lines == ["테스트 뉴스: 본문 보강 시도 3건, 성공 2건, 실패 1건, robots 제외 0건"]
+    assert lines == [
+        "테스트 뉴스: 본문 보강 시도 3건, 성공 2건, 실패 1건, robots 제외 0건, 라이선스 제외 0건"
+    ]
 
 
 @pytest.mark.unit

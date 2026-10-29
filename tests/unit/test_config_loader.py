@@ -86,16 +86,33 @@ def test_real_govsupport_sources_preserve_operational_metadata() -> None:
     assert "resets connections" in molit.config["skip_reason"]
 
 
-def test_empty_body_sources_enable_detail_summary_and_sbs_excludes_radio_corners() -> None:
-    """RSS가 본문을 주지 않는 4개 소스는 상세 보강이 켜져 있고, 일반 뉴스 게이트는 없다."""
+def test_newspapers_disabled_and_mafra_detail_requires_kogl_type1() -> None:
+    """저작권 검토: 신문 3곳은 꺼져 있고 상세 보강 설정이 없으며, 농림축산식품부만 제1유형일 때 보강한다."""
     category = load_category_config("govsupport")
     sources = {source.name: source for source in category.sources}
 
-    for name in ("한국경제 경제", "한국경제 정치", "서울경제 경제", "농림축산식품부"):
-        assert sources[name].config["fetch_detail_summary"] is True
-        assert sources[name].config["detail_summary_selectors"]
-    assert sources["농림축산식품부"].config["detail_upgrade_https"] is True
-    assert sources["서울경제 경제"].config["detail_summary_prefer_meta"] is True
+    for name in ("한국경제 경제", "한국경제 정치", "서울경제 경제"):
+        assert sources[name].enabled is False
+        assert sources[name].config["skip_reason"]
+        for key in (
+            "fetch_detail_summary",
+            "detail_summary_selectors",
+            "detail_summary_prefer_meta",
+            "detail_upgrade_https",
+        ):
+            assert key not in sources[name].config
+    assert sources["서울경제 경제"].config["bypass_crawl_health"] is True
+
+    mafra = sources["농림축산식품부"]
+    assert mafra.enabled is True
+    assert mafra.config["fetch_detail_summary"] is True
+    assert mafra.config["detail_require_license"] == "kogl_type1"
+    assert mafra.config["detail_upgrade_https"] is True
+    assert mafra.config["detail_summary_selectors"]
+    enabled_detail = [
+        name for name, source in sources.items() if source.config.get("fetch_detail_summary")
+    ]
+    assert enabled_detail == ["농림축산식품부"]
 
     assert sources["SBS 뉴스 정치"].config["exclude_title_prefixes"] == [
         "[여담야담]",

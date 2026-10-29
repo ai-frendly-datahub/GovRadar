@@ -1,9 +1,13 @@
 """RSS 항목의 본문(summary)이 비어 있을 때 공개 기사 페이지에서 요약을 보강한다.
 
-배경: 한국경제·서울경제·농림축산식품부 RSS는 항목마다 ``title``/``link``/``author``/``pubDate``
-만 내려주고 ``description``/``content:encoded``가 없다. radar-core 수집기는 그 두 필드만 읽기
-때문에 ``summary``가 빈 문자열이 된다. 이 모듈은 소스 설정에서 ``fetch_detail_summary: true``
-로 켠 소스에 한해, 이미 수집한 기사 URL의 공개 HTML을 읽어 ``summary``를 채운다.
+배경: 농림축산식품부 RSS는 항목마다 ``title``/``link``/``author``/``pubDate``만 내려주고
+``description``/``content:encoded``가 없다. radar-core 수집기는 그 두 필드만 읽기 때문에
+``summary``가 빈 문자열이 된다. 이 모듈은 소스 설정에서 ``fetch_detail_summary: true``로 켠
+소스에 한해, 이미 수집한 상세 페이지의 공개 HTML을 읽어 ``summary``를 채운다.
+
+저작권 검토(2026-10-29)에 따라 신문 소스(한국경제·서울경제)는 약관상 자동 수집이 제한되어
+비활성화했고, 이 모듈은 신문 페이지를 가져오지 않는다. 농림축산식품부는 ``detail_require_license:
+kogl_type1``이 설정된 경우 공공누리 제1유형 표시가 있는 페이지에서만 본문을 쓴다.
 
 지키는 규칙:
 - robots.txt를 확인한다(``govradar.robots.url_is_allowed``). Disallow이거나 읽을 수 없으면 가져오지 않는다.
@@ -15,7 +19,6 @@
 from __future__ import annotations
 
 import html
-import json
 import re
 import time
 from collections.abc import Callable, Iterable
@@ -34,6 +37,7 @@ DEFAULT_MAX_CHARS = 800
 DEFAULT_MAX_PER_RUN = 30
 DEFAULT_MIN_INTERVAL_SECONDS = 1.0
 _MIN_USEFUL_CHARS = 20
+KOGL_TYPE1 = "kogl_type1"
 _WS = re.compile(r"\s+")
 _BLOCK_TAGS = ["p", "div", "li", "tr", "h1", "h2", "h3", "h4", "h5", "h6", "section"]
 
@@ -49,6 +53,7 @@ class EnrichStats:
     filled: int = 0
     skipped_robots: int = 0
     failed: int = 0
+    skipped_license: int = 0
 
 
 def fetch_public_page(url: str, timeout: int) -> bytes | None:
@@ -78,33 +83,26 @@ def _normalize(text: str) -> str:
     return _WS.sub(" ", html.unescape(text)).strip()
 
 
-def _meta_description(soup: BeautifulSoup) -> str:
-    candidates: tuple[tuple[str, str], ...] = (
-        ("name", "description"),
-        ("property", "og:description"),
-        ("name", "twitter:description"),
-    )
-    for attr_name, attr_value in candidates:
-        tag = soup.find("meta", attrs={attr_name: attr_value})
-        content = tag.get("content") if tag is not None else None
-        if isinstance(content, str) and len(_normalize(content)) >= _MIN_USEFUL_CHARS:
-            return _normalize(content)
-    for script in soup.find_all("script", attrs={"type": "application/ld+json"}):
-        raw = script.string or script.get_text()
-        try:
-            payload = json.loads(raw)
-        except (TypeError, ValueError):
+_KOGL_TYPE1_HREF = re.compile(r"kogl\.or\.kr/info/licenseType1\.do", re.IGNORECASE)
+_KOGL_TYPE1_IMG = re.compile(r"opentype01(?!\d)", re.IGNORECASE)
+# 제2~4유형(변경금지·영리금지 조건이 붙음)이 함께 보이면 제1유형으로 보지 않는다.
+_KOGL_OTHER_HREF = re.compile(r"kogl\.or\.kr/info/licenseType[2-9]\.do", re.IGNORECASE)
+_KOGL_OTHER_IMG = re.compile(r"opentype0[2-9]", re.IGNORECASE)
+
+
+def _has_kogl_type1(page_html: bytes | str) -> bool:
+    """페이지에 공공누리 제1유형(출처표시) 마크가 있고 제2~4유형 마크는 없으면 True."""
+    soup = BeautifulSoup(page_html, "html.parser")
+    type1 = False
+    for tag in soup.find_all(["a", "img"]):
+        attr = tag.get("href") if tag.name == "a" else tag.get("src")
+        if not isinstance(attr, str):
             continue
-        nodes = payload if isinstance(payload, list) else [payload]
-        for node in nodes:
-            if not isinstance(node, dict):
-                continue
-            node_type = str(node.get("@type", ""))
-            description = node.get("description")
-            if "Article" in node_type and isinstance(description, str):
-                if len(_normalize(description)) >= _MIN_USEFUL_CHARS:
-                    return _normalize(description)
-    return ""
+        if _KOGL_OTHER_HREF.search(attr) or _KOGL_OTHER_IMG.search(attr):
+            return False
+        if _KOGL_TYPE1_HREF.search(attr) or _KOGL_TYPE1_IMG.search(attr):
+            type1 = True
+    return type1
 
 
 def _body_text(soup: BeautifulSoup, selectors: Iterable[str]) -> str:
@@ -130,15 +128,11 @@ def extract_summary(
     page_html: bytes | str,
     *,
     selectors: list[str],
-    prefer_meta: bool,
     max_chars: int,
 ) -> str:
-    """기사 HTML에서 요약 후보를 뽑는다. 못 찾으면 빈 문자열."""
+    """상세 페이지 HTML의 본문 앞부분을 뽑는다. 못 찾으면 빈 문자열."""
     soup = BeautifulSoup(page_html, "html.parser")
-    body = _body_text(soup, selectors)
-    meta = _meta_description(soup)
-    text = (meta or body) if prefer_meta else (body or meta)
-    return text[:max_chars].rstrip()
+    return _body_text(soup, selectors)[:max_chars].rstrip()
 
 
 def _string_list(value: object) -> list[str]:
@@ -195,7 +189,7 @@ def enrich_empty_summaries(
         if not source.enabled or config.get("fetch_detail_summary") is not True:
             continue
         selectors = _string_list(config.get("detail_summary_selectors"))
-        prefer_meta = config.get("detail_summary_prefer_meta") is True
+        require_license = config.get("detail_require_license")
         upgrade_https = config.get("detail_upgrade_https") is True
         max_chars = _int_setting(config.get("detail_summary_max_chars"), DEFAULT_MAX_CHARS)
         max_per_run = _int_setting(config.get("detail_summary_max_per_run"), DEFAULT_MAX_PER_RUN)
@@ -223,9 +217,10 @@ def enrich_empty_summaries(
             if page is None:
                 source_stats.failed += 1
                 continue
-            summary = extract_summary(
-                page, selectors=selectors, prefer_meta=prefer_meta, max_chars=max_chars
-            )
+            if require_license == KOGL_TYPE1 and not _has_kogl_type1(page):
+                source_stats.skipped_license += 1
+                continue
+            summary = extract_summary(page, selectors=selectors, max_chars=max_chars)
             if not summary or is_challenge_or_error_page(article.title, summary):
                 source_stats.failed += 1
                 continue
@@ -240,6 +235,7 @@ def format_stats(stats: dict[str, EnrichStats]) -> list[str]:
     for name, item in stats.items():
         lines.append(
             f"{name}: 본문 보강 시도 {item.attempted}건, 성공 {item.filled}건, "
-            f"실패 {item.failed}건, robots 제외 {item.skipped_robots}건"
+            f"실패 {item.failed}건, robots 제외 {item.skipped_robots}건, "
+            f"라이선스 제외 {item.skipped_license}건"
         )
     return lines

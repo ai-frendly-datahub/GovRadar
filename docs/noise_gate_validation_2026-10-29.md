@@ -46,7 +46,7 @@ SBS 뉴스 정치의 제목 접두어 `[여담야담]`(8건), `[성민종합정�
 - 요청 사이 1초 간격, 소스당 실행 1회 최대 30건.
 - 가져오지 못하면 `summary`는 빈 채로 둔다(내용을 만들어 넣지 않음).
 - 농림축산식품부 피드 링크는 `http://`인데 `http://www.mafra.go.kr/robots.txt`와 기사가 HTTP 500을 돌려준다. `https://`로 올리면(`detail_upgrade_https`) robots.txt 200, 기사 200이며 Googlebot 외 제한이 없다.
-- 소스별 추출 위치(2026-10-29 기사 1건씩 확인): 한국경제 `#articletxt`, 농림축산식품부 `.view_contents`, 서울경제는 meta description(리드 문단, 약 150자)을 우선하고 없으면 `[itemprop=articleBody]`.
+- 저작권 검토(2026-10-29)로 한국경제 경제·정치, 서울경제 경제는 `enabled: false`로 비활성화했고 기사 페이지를 가져오지 않는다(한국경제 약관 제19조, 서울경제 약관 제11조). 농림축산식품부는 `detail_require_license: kogl_type1`로 공공누리 제1유형 마크가 있는 페이지에서만 `.view_contents` 본문을 쓴다. 법률 해석은 전문가 검토가 필요하다.
 
 ## 5. 한계
 
