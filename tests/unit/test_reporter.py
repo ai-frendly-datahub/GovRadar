@@ -160,3 +160,35 @@ def test_generate_report_injects_operational_quality_panel(tmp_path, monkeypatch
     assert '"collected_counts"' in summary
     assert '"서울시 지원사업": 0' in summary
     assert '"서울시 지원사업": 1' in summary
+
+
+def test_report_card_shows_source_name_and_original_link_for_techcrunch(tmp_path) -> None:
+    category = CategoryConfig(
+        category_name="govsupport",
+        display_name="Gov Support",
+        sources=[],
+        entities=[],
+    )
+    link = "https://techcrunch.com/2026/10/28/example-startup/"
+    article = Article(
+        title="Example startup raises seed round",
+        link=link,
+        summary="Short RSS summary.",
+        published=datetime(2026, 10, 28, 9, 0, tzinfo=UTC),
+        source="TechCrunch Startups",
+        category="govsupport",
+        matched_entities={"SupportType": ["투자"]},
+    )
+    output_path = tmp_path / "reports" / "govsupport_report.html"
+
+    generate_report(
+        category=category,
+        articles=[article],
+        output_path=output_path,
+        stats={"sources": 1, "collected": 1, "matched": 1, "window_days": 7},
+    )
+
+    html = output_path.read_text(encoding="utf-8")
+    assert f'<a href="{link}" target="_blank" rel="noopener noreferrer">' in html
+    assert "<strong>source</strong> TechCrunch Startups" in html
+    assert "Short RSS summary." in html  # 기사 문구는 가공하지 않는다

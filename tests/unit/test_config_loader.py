@@ -120,3 +120,28 @@ def test_newspapers_disabled_and_mafra_detail_requires_kogl_type1() -> None:
     ]
     for source in sources.values():
         assert "include_keywords" not in source.config
+
+
+STOPPED_NEWS_SOURCES = (
+    "동아일보 경제",
+    "경향신문 경제",
+    "매일경제 경제정책",
+    "매일경제 정치",
+    "한겨레 경제",
+    "SBS 뉴스 정치",
+)
+
+
+def test_stopped_news_sources_are_disabled_and_techcrunch_stays_enabled() -> None:
+    """언론사 6곳은 수집을 중지(제목·링크 포함)하고 summary 저장 끔 설정은 유지한다."""
+    category = load_category_config("govsupport")
+    sources = {source.name: source for source in category.sources}
+
+    for name in STOPPED_NEWS_SOURCES:
+        assert sources[name].enabled is False
+        assert sources[name].config["skip_reason"] == "언론사 자동 수집 정책에 따라 수집 중지"
+        assert sources[name].config["store_summary"] is False
+
+    techcrunch = sources["TechCrunch Startups"]
+    assert techcrunch.enabled is True
+    assert "store_summary" not in techcrunch.config

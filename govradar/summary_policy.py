@@ -21,11 +21,12 @@ STORE_SUMMARY_KEY = "store_summary"
 
 
 def summary_free_source_names(sources: Iterable[Source]) -> frozenset[str]:
-    """``store_summary``가 불리언 False인 활성 소스 이름. 다른 값(문자열 등)은 무시한다."""
+    """``store_summary``가 불리언 False인 소스 이름. 다른 값(문자열 등)은 무시한다.
+
+    수집을 멈춘(``enabled: false``) 소스도 포함한다. 이미 저장된 summary를 계속 비우기 위해서다.
+    """
     names: set[str] = set()
     for source in sources:
-        if not source.enabled:
-            continue
         if (source.config or {}).get(STORE_SUMMARY_KEY) is False:
             names.add(source.name)
     return frozenset(names)

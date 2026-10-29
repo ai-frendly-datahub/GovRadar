@@ -644,8 +644,10 @@ sources:
   trust_tier: T2_expert
   collection_tier: C1_rss
   description: "매일경제 정치 섹션 - 정부정책, 행정 뉴스"
+  enabled: false
   config:
-    # 언론사 소스 저장 정책: 제목·링크·출처명만 저장·공개하고 summary는 저장하지 않는다.
+    # 수집 중지 소스도 이미 저장된 summary는 실행마다 비운다(store_summary: false 유지).
+    skip_reason: "언론사 자동 수집 정책에 따라 수집 중지"
     store_summary: false
 
 - name: 매일경제 경제정책
@@ -656,8 +658,10 @@ sources:
   trust_tier: T2_expert
   collection_tier: C1_rss
   description: "매일경제 경제정책 - 금융정책, 지원사업 뉴스"
+  enabled: false
   config:
-    # 언론사 소스 저장 정책: 제목·링크·출처명만 저장·공개하고 summary는 저장하지 않는다.
+    # 수집 중지 소스도 이미 저장된 summary는 실행마다 비운다(store_summary: false 유지).
+    skip_reason: "언론사 자동 수집 정책에 따라 수집 중지"
     store_summary: false
 
 - name: 동아일보 경제
@@ -668,8 +672,10 @@ sources:
   trust_tier: T2_expert
   collection_tier: C1_rss
   description: "동아일보 경제 섹션 - 정부지원, 경제정책 뉴스"
+  enabled: false
   config:
-    # 언론사 소스 저장 정책: 제목·링크·출처명만 저장·공개하고 summary는 저장하지 않는다.
+    # 수집 중지 소스도 이미 저장된 summary는 실행마다 비운다(store_summary: false 유지).
+    skip_reason: "언론사 자동 수집 정책에 따라 수집 중지"
     store_summary: false
 
 - name: 경향신문 경제
@@ -680,8 +686,10 @@ sources:
   trust_tier: T2_expert
   collection_tier: C1_rss
   description: "경향신문 경제 섹션 - 생활경제, 정책 뉴스"
+  enabled: false
   config:
-    # 언론사 소스 저장 정책: 제목·링크·출처명만 저장·공개하고 summary는 저장하지 않는다.
+    # 수집 중지 소스도 이미 저장된 summary는 실행마다 비운다(store_summary: false 유지).
+    skip_reason: "언론사 자동 수집 정책에 따라 수집 중지"
     store_summary: false
 
 - name: 한겨레 경제
@@ -692,9 +700,11 @@ sources:
   trust_tier: T2_expert
   collection_tier: C1_rss
   description: "한겨레 경제 섹션 - 경제정책, 금융 뉴스"
+  enabled: false
   config:
     drop_if_published_missing: true
-    # 언론사 소스 저장 정책: 제목·링크·출처명만 저장·공개하고 summary는 저장하지 않는다.
+    # 수집 중지 소스도 이미 저장된 summary는 실행마다 비운다(store_summary: false 유지).
+    skip_reason: "언론사 자동 수집 정책에 따라 수집 중지"
     store_summary: false
 
 - name: 서울경제 경제
@@ -718,10 +728,12 @@ sources:
   trust_tier: T2_expert
   collection_tier: C1_rss
   description: "SBS 정치 섹션 - 정부정책, 국회 동향"
+  enabled: false
   config:
     # 라디오 요약 코너는 본문이 출연자 정보뿐이다. 분류 결과 11건 전부 노이즈, 유용 0건(검증표 참고).
     exclude_title_prefixes: ["[여담야담]", "[성민종합정치]"]
-    # 언론사 소스 저장 정책: 제목·링크·출처명만 저장·공개하고 summary는 저장하지 않는다.
+    # 수집 중지 소스도 이미 저장된 summary는 실행마다 비운다(store_summary: false 유지).
+    skip_reason: "언론사 자동 수집 정책에 따라 수집 중지"
     store_summary: false
 
 # === 공공데이터/API 품질 분석 ===
