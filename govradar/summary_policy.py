@@ -1,8 +1,7 @@
 """소스별 ``store_summary: false`` 설정으로 RSS 요약(summary)의 저장·공개를 막는다.
 
-배경: 신문사 RSS가 준 summary를 그대로 DuckDB·raw JSONL·Pages 보고서에 저장·공개하면
-약관이 허용하지 않는 복제·공중송신이 될 수 있다(약관 검토 결과는 README의 ``store_summary`` 항목과 PR 본문 참고).
-이 설정을 켠 소스는 제목·링크·출처명만 저장하고 공개한다.
+목적: 언론사 소스는 RSS가 준 summary를 저장하지 않고 제목·링크·출처명만 저장·공개한다
+(설정은 README의 ``store_summary`` 항목 참고).
 
 동작 규칙:
 - 수집 직후의 메모리 객체에는 summary를 그대로 둔다. 엔티티 분류와 관련성 필터가 쓰기 때문이다.
