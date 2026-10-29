@@ -84,3 +84,22 @@ def test_real_govsupport_sources_preserve_operational_metadata() -> None:
     assert molit.enabled is False
     assert molit.config["event_model"] == "official_notice"
     assert "resets connections" in molit.config["skip_reason"]
+
+
+def test_empty_body_sources_enable_detail_summary_and_sbs_excludes_radio_corners() -> None:
+    """RSS가 본문을 주지 않는 4개 소스는 상세 보강이 켜져 있고, 일반 뉴스 게이트는 없다."""
+    category = load_category_config("govsupport")
+    sources = {source.name: source for source in category.sources}
+
+    for name in ("한국경제 경제", "한국경제 정치", "서울경제 경제", "농림축산식품부"):
+        assert sources[name].config["fetch_detail_summary"] is True
+        assert sources[name].config["detail_summary_selectors"]
+    assert sources["농림축산식품부"].config["detail_upgrade_https"] is True
+    assert sources["서울경제 경제"].config["detail_summary_prefer_meta"] is True
+
+    assert sources["SBS 뉴스 정치"].config["exclude_title_prefixes"] == [
+        "[여담야담]",
+        "[성민종합정치]",
+    ]
+    for source in sources.values():
+        assert "include_keywords" not in source.config

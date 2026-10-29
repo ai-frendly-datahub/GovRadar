@@ -48,6 +48,19 @@ Radar-Template PR #4와 같은 수집·저장 계약을 유지합니다. 시크�
 | 보조금24 공공서비스 | `DATA_GO_KR_SUBSIDY24_SERVICE_KEY` |
 | 기업마당 지원사업 공고 | `DATA_GO_KR_BIZINFO_SERVICE_KEY` |
 
+## 소스별 선택 설정 (RSS 소스의 `config:`)
+
+| 키 | 설명 |
+| --- | --- |
+| `fetch_detail_summary: true` | RSS에 본문이 없는 소스의 빈 `summary`를 공개 기사 페이지에서 채웁니다. robots.txt 허용 URL만, TLS 검증 유지, 피드와 같은 호스트만, 요청 간격 1초, 소스당 실행 1회 30건 상한. 실패하면 비워 둡니다. |
+| `detail_summary_selectors` | 본문 위치 CSS 선택자 목록 |
+| `detail_summary_prefer_meta: true` | meta description을 본문보다 먼저 사용 |
+| `detail_upgrade_https: true` | 피드 링크가 `http://`일 때 `https://`로 올려 가져옴 |
+| `detail_summary_max_chars`, `detail_summary_max_per_run`, `detail_min_interval_seconds` | 길이·건수·간격 조정 |
+| `exclude_title_prefixes: [...]` | 제목이 해당 접두어로 시작하는 항목을 수집 단계에서 제외 (검증된 경우에만 사용) |
+
+일반 뉴스 피드의 키워드 포함 게이트는 모델 분류 대비 검증에서 유용 항목을 과하게 지워 도입하지 않았습니다. 근거는 `docs/noise_gate_validation_2026-10-29.md`를 보세요.
+
 ## 핵심 설정
 
 - 카테고리: `config/categories/govsupport.yaml`

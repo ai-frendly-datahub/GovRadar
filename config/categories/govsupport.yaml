@@ -502,6 +502,12 @@ sources:
     observed_date_field: collected_at
     canonical_key_fields: [agency, industry, region, normalized_program_title, source_url]
     freshness_sla_days: 2
+    # RSS(rssList.do)가 title/link/pubDate/author만 주고 description이 없다(2026-10-29 확인).
+    # 보도자료 상세 페이지(공개, robots.txt 허용)에서 본문 앞부분을 가져온다.
+    # 피드 링크는 http://라 robots.txt와 상세 페이지가 500을 돌려주므로 https로 올려 가져온다.
+    fetch_detail_summary: true
+    detail_upgrade_https: true
+    detail_summary_selectors: [".view_contents"]
 # NOTE: TLS 1.2만 지원 (TLS 1.3 핸드셰이크 거부) - Playwright에서는 정상 작동
 - name: 국토교통부
   type: javascript
@@ -612,6 +618,11 @@ sources:
   trust_tier: T2_expert
   collection_tier: C1_rss
   description: "한국경제 경제 섹션 - 정책, 지원사업, 경제정책 뉴스"
+  config:
+    # RSS가 description/content:encoded 없이 title/link/author/pubDate만 준다(2026-10-29 확인).
+    # 기사 페이지(robots.txt 허용)의 본문 앞부분으로 summary를 채운다.
+    fetch_detail_summary: true
+    detail_summary_selectors: ["#articletxt"]
 
 - name: 한국경제 정치
   type: rss
@@ -621,6 +632,9 @@ sources:
   trust_tier: T2_expert
   collection_tier: C1_rss
   description: "한국경제 정치 섹션 - 정부정책, 입법 동향"
+  config:
+    fetch_detail_summary: true
+    detail_summary_selectors: ["#articletxt"]
 
 - name: 매일경제 정치
   type: rss
@@ -679,6 +693,11 @@ sources:
   description: "서울경제 경제 섹션 - 경제정책, 산업정책 뉴스"
   config:
     bypass_crawl_health: true
+    # RSS가 description 없이 title/link/author/pubDate만 준다(2026-10-29 확인).
+    # 기사 페이지(robots.txt 허용)의 meta description(리드 문단)을 우선 쓰고, 없으면 본문 앞부분을 쓴다.
+    fetch_detail_summary: true
+    detail_summary_prefer_meta: true
+    detail_summary_selectors: ["[itemprop=articleBody]"]
 
 - name: SBS 뉴스 정치
   type: rss
@@ -688,6 +707,9 @@ sources:
   trust_tier: T2_expert
   collection_tier: C1_rss
   description: "SBS 정치 섹션 - 정부정책, 국회 동향"
+  config:
+    # 라디오 요약 코너는 본문이 출연자 정보뿐이다. 분류 결과 11건 전부 노이즈, 유용 0건(검증표 참고).
+    exclude_title_prefixes: ["[여담야담]", "[성민종합정치]"]
 
 # === 공공데이터/API 품질 분석 ===
 - name: K-GAPI 공공API 현황분석

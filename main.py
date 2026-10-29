@@ -24,6 +24,7 @@ from govradar.collection_contract import (
 from govradar.common.validators import validate_article
 from govradar.config_loader import load_category_quality_config
 from govradar.date_storage import apply_date_storage_policy
+from govradar.detail_summary import enrich_empty_summaries, format_stats
 from govradar.models import Article, Source
 from govradar.official_collectors import collect_official_sources, is_official_source
 from govradar.quality_report import build_quality_report, write_quality_report
@@ -37,6 +38,7 @@ from govradar.run_collection import (
 )
 from govradar.storage import RadarStorage
 from govradar.support_signals import enrich_support_operational_fields
+from govradar.title_exclusion import drop_excluded_titles
 
 
 def _send_notifications(
@@ -155,6 +157,16 @@ def run(
     )
     collected = [*official_articles, *collected]
     collected, challenge_errors = drop_challenge_pages(collected)
+    collected, excluded_titles = drop_excluded_titles(collected, effective_sources)
+    for source_name, count in excluded_titles.items():
+        print(f"[Radar] {source_name}: 제외 제목 접두어로 {count}건 제외")
+    collected, detail_stats = enrich_empty_summaries(
+        collected,
+        effective_sources,
+        timeout=timeout,
+    )
+    for line in format_stats(detail_stats):
+        print(f"[Radar] {line}")
     errors = [*secret_errors, *robots_errors, *official_errors, *errors, *challenge_errors]
     _print_collection_counts(effective_sources, collected)
     collected = annotate_articles_with_ontology(
