@@ -1,0 +1,193 @@
+{
+  "date": "2026-10-30",
+  "category": "govsupport",
+  "article_count": 30,
+  "source_count": 7,
+  "matched_count": 30,
+  "top_entities": [
+    {
+      "name": "GovGeneral",
+      "count": 317
+    },
+    {
+      "name": "ApplicationInfo",
+      "count": 88
+    },
+    {
+      "name": "TargetGroup",
+      "count": 80
+    },
+    {
+      "name": "SourceSignal",
+      "count": 75
+    },
+    {
+      "name": "SupportType",
+      "count": 53
+    },
+    {
+      "name": "OperationalEvent",
+      "count": 38
+    },
+    {
+      "name": "Region",
+      "count": 28
+    },
+    {
+      "name": "Ministry",
+      "count": 22
+    },
+    {
+      "name": "EligibilityRegion",
+      "count": 20
+    },
+    {
+      "name": "EligibilityTargetGroup",
+      "count": 18
+    },
+    {
+      "name": "ApplicationDeadline",
+      "count": 15
+    },
+    {
+      "name": "EligibilityIndustry",
+      "count": 13
+    },
+    {
+      "name": "McpKoreaEcosystem",
+      "count": 10
+    },
+    {
+      "name": "ApplicationStartDate",
+      "count": 6
+    },
+    {
+      "name": "SelectionProgramTitle",
+      "count": 1
+    },
+    {
+      "name": "EligibilityBusinessStage",
+      "count": 1
+    }
+  ],
+  "sources": {
+    "금융위원회": 9,
+    "서울시 지원사업": 8,
+    "고용노동부 공지": 2,
+    "농림축산식품부": 4,
+    "고용노동부 정책": 2,
+    "서울시 정책뉴스": 4,
+    "서울시 경제": 1
+  },
+  "generated_at": "2026-10-30T10:48:18.120535+00:00",
+  "ontology": {
+    "repo": "GovRadar",
+    "category": "govsupport",
+    "ontology_version": "0.1.0",
+    "event_model_ids": [
+      "govsupport.application_deadline",
+      "govsupport.eligibility_rule",
+      "govsupport.public_data_api",
+      "govsupport.selection_result",
+      "govsupport.support_program_notice"
+    ],
+    "event_model_mappings": {
+      "support_program_notice": "govsupport.support_program_notice",
+      "application_deadline": "govsupport.application_deadline",
+      "eligibility_rule": "govsupport.eligibility_rule",
+      "selection_result": "govsupport.selection_result",
+      "public_data_api": "govsupport.public_data_api"
+    },
+    "entity_type_hints": [
+      "SupportType",
+      "TargetGroup",
+      "Ministry",
+      "Region",
+      "ApplicationInfo",
+      "McpKoreaEcosystem"
+    ],
+    "source_role_ids": [
+      "govsupport.source_role.community_curation",
+      "govsupport.source_role.government",
+      "govsupport.source_role.local_government",
+      "govsupport.source_role.public_agency"
+    ],
+    "source_role_mappings": {
+      "government": "govsupport.source_role.government",
+      "public-agency": "govsupport.source_role.public_agency",
+      "local-government": "govsupport.source_role.local_government",
+      "community-curation": "govsupport.source_role.community_curation"
+    },
+    "evidence_policy_ids": [
+      "govsupport.evidence.primary_notice",
+      "govsupport.evidence.deadline_trace",
+      "govsupport.evidence.eligibility_trace"
+    ]
+  },
+  "run": {
+    "collected_counts": {
+      "고용노동부 공지": 10,
+      "고용노동부 정책": 10,
+      "고용노동부 입법예고": 10,
+      "K-Startup 지원사업 공고 API": 0,
+      "보조금24 공공서비스 API": 0,
+      "기업마당 지원사업 공고 API": 0,
+      "서울시 지원사업": 10,
+      "서울시 정책뉴스": 10,
+      "서울시 경제": 10,
+      "금융위원회": 10,
+      "농림축산식품부": 30,
+      "TechCrunch Startups": 20,
+      "K-GAPI 공공API 현황분석": 0,
+      "Awesome MCP Korea": 0
+    },
+    "failed_sources": [
+      {
+        "source": "K-Startup 지원사업 공고 API",
+        "errors": [
+          "K-Startup 지원사업 공고 API: skipped_missing_env DATA_GO_KR_KSTARTUP_SERVICE_KEY"
+        ]
+      },
+      {
+        "source": "보조금24 공공서비스 API",
+        "errors": [
+          "보조금24 공공서비스 API: skipped_missing_env DATA_GO_KR_SUBSIDY24_SERVICE_KEY"
+        ]
+      },
+      {
+        "source": "기업마당 지원사업 공고 API",
+        "errors": [
+          "기업마당 지원사업 공고 API: skipped_missing_env DATA_GO_KR_BIZINFO_SERVICE_KEY"
+        ]
+      },
+      {
+        "source": "K-GAPI 공공API 현황분석",
+        "errors": [
+          "K-GAPI 공공API 현황분석: skipped_robots robots.txt disallows /hollobit/K-GAPI/commits/main.atom"
+        ]
+      },
+      {
+        "source": "Awesome MCP Korea",
+        "errors": [
+          "Awesome MCP Korea: skipped_robots robots.txt disallows /darjeeling/awesome-mcp-korea/commits/main.atom"
+        ]
+      }
+    ],
+    "last_success_at": {
+      "고용노동부 공지": "2026-10-30T10:48:17.770443+00:00",
+      "고용노동부 정책": "2026-10-30T10:48:17.770443+00:00",
+      "고용노동부 입법예고": null,
+      "K-Startup 지원사업 공고 API": null,
+      "보조금24 공공서비스 API": null,
+      "기업마당 지원사업 공고 API": null,
+      "서울시 지원사업": "2026-10-30T10:48:17.770443+00:00",
+      "서울시 정책뉴스": "2026-10-30T10:48:17.770443+00:00",
+      "서울시 경제": "2026-10-30T10:48:17.770443+00:00",
+      "금융위원회": "2026-10-30T10:48:17.770443+00:00",
+      "농림축산식품부": "2026-10-30T10:48:17.770443+00:00",
+      "TechCrunch Startups": "2026-08-31T10:39:35.186698+00:00",
+      "K-GAPI 공공API 현황분석": null,
+      "Awesome MCP Korea": null
+    }
+  }
+}
