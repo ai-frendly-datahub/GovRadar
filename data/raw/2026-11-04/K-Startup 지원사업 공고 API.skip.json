@@ -1,0 +1,7 @@
+{
+  "record_type": "skip",
+  "source_id": "K-Startup 지원사업 공고 API",
+  "status": "skipped_missing_env",
+  "required_env": "DATA_GO_KR_KSTARTUP_SERVICE_KEY",
+  "skip_reason": "DATA_GO_KR_KSTARTUP_SERVICE_KEY not set"
+}
