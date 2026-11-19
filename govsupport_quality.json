@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-11-18T12:47:12.824341+00:00",
+  "generated_at": "2026-11-19T12:41:10.022323+00:00",
   "summary": {
     "total_sources": 34,
     "tracked_sources": 10,
@@ -12,8 +12,8 @@
     "not_tracked_sources": 4,
     "skipped_disabled_sources": 20,
     "support_program_notice_events": 1,
-    "application_deadline_events": 34,
-    "eligibility_rule_events": 23,
+    "application_deadline_events": 32,
+    "eligibility_rule_events": 25,
     "selection_result_events": 0,
     "unique_program_key_count": 58,
     "events_with_evidence_url": 58,
@@ -295,8 +295,8 @@
       "event_model": "application_deadline",
       "freshness_sla_days": 1,
       "status": "fresh",
-      "article_count": 24,
-      "event_count": 23,
+      "article_count": 20,
+      "event_count": 19,
       "latest_event_at": "2027-02-13T00:00:00+00:00",
       "age_days": 0.0,
       "latest_title": "매장유산 소유권 확인 공고",
@@ -350,7 +350,7 @@
       "article_count": 1,
       "event_count": 1,
       "latest_event_at": "2026-11-16T01:21:09+00:00",
-      "age_days": 2.48,
+      "age_days": 3.47,
       "latest_title": "2026년도 2차 서울주얼리지원센터 직원(과장급) 채용공고",
       "latest_url": "https://news.seoul.go.kr/economy/archives/575191",
       "latest_evidence_url": "https://news.seoul.go.kr/economy/archives/575191",
@@ -429,19 +429,26 @@
       "event_model": "eligibility_rule",
       "freshness_sla_days": 2,
       "status": "fresh",
-      "article_count": 10,
-      "event_count": 8,
-      "latest_event_at": "2026-11-18T12:44:09.712299+00:00",
+      "article_count": 11,
+      "event_count": 10,
+      "latest_event_at": "2026-11-19T12:37:22.414263+00:00",
       "age_days": 0.0,
-      "latest_title": "불법사금융 원스톱 지원,  이제 센터 방문 없이도 신청 가능합니다.",
-      "latest_url": "https://www.fsc.go.kr/no010101/88150",
-      "latest_evidence_url": "https://www.fsc.go.kr/no010101/88150",
-      "latest_program_title": "불법사금융 원스톱 지원,  이제 센터 방문 없이도 신청 가능합니다.",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-11-18:불법사금융-원스톱-지원-이제-센터-방문-없이도-신청-가능합니다",
-      "latest_application_deadline": "2026-10-31",
+      "latest_title": "지역이 발굴하면 금융이 뒷받침한다. 지역 핵심 중소·중견기업에 4.5조원 공급",
+      "latest_url": "https://www.fsc.go.kr/no010101/88160",
+      "latest_evidence_url": "https://www.fsc.go.kr/no010101/88160",
+      "latest_program_title": "지역이 발굴하면 금융이 뒷받침한다. 지역 핵심 중소·중견기업에 4.5조원 공급",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-11-19:지역이-발굴하면-금융이-뒷받침한다-지역-핵심-중소-중견기업에-4-5조원-공급",
+      "latest_application_deadline": "2026-11-18",
       "latest_eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ],
         "Region": [
-          "대구"
+          "광주",
+          "대전",
+          "세종",
+          "충남",
+          "전남"
         ]
       },
       "latest_selection_result_date": "",
@@ -459,7 +466,7 @@
       "event_model": "official_notice",
       "freshness_sla_days": 2,
       "status": "not_tracked",
-      "article_count": 4,
+      "article_count": 3,
       "event_count": 0,
       "latest_event_at": null,
       "age_days": null,
@@ -928,6 +935,347 @@
     {
       "source": "금융위원회",
       "event_model": "application_deadline",
+      "title": "지역이 발굴하면 금융이 뒷받침한다. 지역 핵심 중소·중견기업에 4.5조원 공급",
+      "url": "https://www.fsc.go.kr/no010101/88160",
+      "event_at": "2026-11-18T00:00:00+00:00",
+      "application_deadline": "2026-11-18",
+      "application_start_date": "2026-11-17",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ],
+        "Region": [
+          "광주",
+          "대전",
+          "세종",
+          "충남",
+          "전남"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "지역이 발굴하면 금융이 뒷받침한다. 지역 핵심 중소·중견기업에 4.5조원 공급",
+      "program_key": "application-deadline:kr:금융위원회:2026-11-18:지역이-발굴하면-금융이-뒷받침한다-지역-핵심-중소-중견기업에-4-5조원-공급",
+      "evidence_url": "https://www.fsc.go.kr/no010101/88160",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "지역이 발굴하면 금융이 뒷받침한다. 지역 핵심 중소·중견기업에 4.5조원 공급",
+      "url": "https://www.fsc.go.kr/no010101/88160",
+      "event_at": "2026-11-19T12:37:22.414263+00:00",
+      "application_deadline": "2026-11-18",
+      "application_start_date": "2026-11-17",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ],
+        "Region": [
+          "광주",
+          "대전",
+          "세종",
+          "충남",
+          "전남"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "지역이 발굴하면 금융이 뒷받침한다. 지역 핵심 중소·중견기업에 4.5조원 공급",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-11-19:지역이-발굴하면-금융이-뒷받침한다-지역-핵심-중소-중견기업에-4-5조원-공급",
+      "evidence_url": "https://www.fsc.go.kr/no010101/88160",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "全금융권이 상시적으로 철저하게 보안 관리에 임하도록 IT자산 식별·관리를 의무화하고 취약점 점검·평가 제도를 내실화하겠습니다.",
+      "url": "https://www.fsc.go.kr/no010101/88162",
+      "event_at": "2026-11-19T12:37:20.252438+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "全금융권이 상시적으로 철저하게 보안 관리에 임하도록 IT자산 식별·관리를 의무화하고 취약점 점검·평가 제도를 내실화하겠습니다.",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-11-19:全금융권이-상시적으로-철저하게-보안-관리에-임하도록-it자산-식별-관리를-의무화하고-취약점-점검-평가-제도를-내실화하겠습니다",
+      "evidence_url": "https://www.fsc.go.kr/no010101/88162",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "application_deadline",
+      "title": "핀테크 기업에 필요한 지원사업을 AI가 찾아드립니다.. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/88171",
+      "event_at": "2026-11-20T00:00:00+00:00",
+      "application_deadline": "2026-11-20",
+      "application_start_date": "2026-11-19",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "스타트업",
+          "청년"
+        ],
+        "BusinessStage": [
+          "창업기업",
+          "벤처기업"
+        ],
+        "Industry": [
+          "AI"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "핀테크 기업에 필요한 지원사업을 AI가 찾아드립니다.. 금일 등록된 게시글",
+      "program_key": "application-deadline:kr:금융위원회:2026-11-20:핀테크-기업에-필요한-지원사업을-ai가-찾아드립니다-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/88171",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "핀테크 기업에 필요한 지원사업을 AI가 찾아드립니다.. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/88171",
+      "event_at": "2026-11-19T12:37:17.671362+00:00",
+      "application_deadline": "2026-11-20",
+      "application_start_date": "2026-11-19",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "스타트업",
+          "청년"
+        ],
+        "BusinessStage": [
+          "창업기업",
+          "벤처기업"
+        ],
+        "Industry": [
+          "AI"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "핀테크 기업에 필요한 지원사업을 AI가 찾아드립니다.. 금일 등록된 게시글",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-11-19:핀테크-기업에-필요한-지원사업을-ai가-찾아드립니다-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/88171",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "application_deadline",
+      "title": "깜빡 잊고 지나가버린 지난 3년간 실손보험금, ‘실손24’를 통해  한방에 청구하고 받을 수 있습니다. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/88173",
+      "event_at": "2026-02-03T00:00:00+00:00",
+      "application_deadline": "2026-02-03",
+      "application_start_date": "2026-11-19",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "깜빡 잊고 지나가버린 지난 3년간 실손보험금, ‘실손24’를 통해  한방에 청구하고 받을 수 있습니다. 금일 등록된 게시글",
+      "program_key": "application-deadline:kr:금융위원회:2026-02-03:깜빡-잊고-지나가버린-지난-3년간-실손보험금-실손24-를-통해-한방에-청구하고-받을-수-있습니다-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/88173",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "깜빡 잊고 지나가버린 지난 3년간 실손보험금, ‘실손24’를 통해  한방에 청구하고 받을 수 있습니다. 금일 등록된 게시글",
+      "url": "https://www.fsc.go.kr/no010101/88173",
+      "event_at": "2026-11-19T12:37:15.756166+00:00",
+      "application_deadline": "2026-02-03",
+      "application_start_date": "2026-11-19",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "깜빡 잊고 지나가버린 지난 3년간 실손보험금, ‘실손24’를 통해  한방에 청구하고 받을 수 있습니다. 금일 등록된 게시글",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-11-19:깜빡-잊고-지나가버린-지난-3년간-실손보험금-실손24-를-통해-한방에-청구하고-받을-수-있습니다-금일-등록된-게시글",
+      "evidence_url": "https://www.fsc.go.kr/no010101/88173",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "지역아동센터 서울시지원단 운영 수탁기관 모집 재공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470722",
+      "event_at": "2026-12-01T00:00:00+00:00",
+      "application_deadline": "2026-12-01",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "지역아동센터 서울시지원단 운영 수탁기관 모집 재공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-01:지역아동센터-서울시지원단-운영-수탁기관-모집-재공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470722",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "지역아동센터 서울시지원단 운영 수탁기관 모집 재공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470722",
+      "event_at": "2026-11-19T00:00:00+00:00",
+      "application_deadline": "2026-12-01",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "지역아동센터 서울시지원단 운영 수탁기관 모집 재공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-11-19:지역아동센터-서울시지원단-운영-수탁기관-모집-재공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470722",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "정보공개 청구 제3자 의견청취서 공시송달 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470687",
+      "event_at": "2026-12-03T00:00:00+00:00",
+      "application_deadline": "2026-12-03",
+      "application_start_date": "",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "정보공개 청구 제3자 의견청취서 공시송달 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-03:정보공개-청구-제3자-의견청취서-공시송달-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470687",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "서울특별시 지하도상가 변상금 납부독촉 및 압류예고 반송분 공시송달 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470708",
+      "event_at": "2026-12-03T00:00:00+00:00",
+      "application_deadline": "2026-12-03",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "서울특별시 지하도상가 변상금 납부독촉 및 압류예고 반송분 공시송달 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-03:서울특별시-지하도상가-변상금-납부독촉-및-압류예고-반송분-공시송달-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470708",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "서울특별시 지하도상가 변상금 납부독촉 및 압류예고 반송분 공시송달 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470708",
+      "event_at": "2026-11-19T00:00:00+00:00",
+      "application_deadline": "2026-12-03",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "서울특별시 지하도상가 변상금 납부독촉 및 압류예고 반송분 공시송달 공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-11-19:서울특별시-지하도상가-변상금-납부독촉-및-압류예고-반송분-공시송달-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470708",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "2026년 제2차 장애인지원주택 운영 주거생홠서비스 제공기관 선정 결과 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470723",
+      "event_at": "2026-12-18T00:00:00+00:00",
+      "application_deadline": "2026-12-18",
+      "application_start_date": "",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 제2차 장애인지원주택 운영 주거생홠서비스 제공기관 선정 결과 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-18:2026년-제2차-장애인지원주택-운영-주거생홠서비스-제공기관-선정-결과-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470723",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "2027년 서울엄마아빠택시 지원사업 추가 사업자 모집 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470740",
+      "event_at": "2026-12-04T00:00:00+00:00",
+      "application_deadline": "2026-12-04",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2027년 서울엄마아빠택시 지원사업 추가 사업자 모집 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-04:2027년-서울엄마아빠택시-지원사업-추가-사업자-모집-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470740",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "2027년 서울엄마아빠택시 지원사업 추가 사업자 모집 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470740",
+      "event_at": "2026-11-19T00:00:00+00:00",
+      "application_deadline": "2026-12-04",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2027년 서울엄마아빠택시 지원사업 추가 사업자 모집 공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-11-19:2027년-서울엄마아빠택시-지원사업-추가-사업자-모집-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470740",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "application_deadline",
       "title": "불법사금융 원스톱 지원,  이제 센터 방문 없이도 신청 가능합니다.",
       "url": "https://www.fsc.go.kr/no010101/88150",
       "event_at": "2026-10-31T00:00:00+00:00",
@@ -1016,59 +1364,45 @@
       "evidence_url_present": true
     },
     {
-      "source": "금융위원회",
+      "source": "서울시 지원사업",
       "event_model": "application_deadline",
-      "title": "지역이 발굴하면 금융이 뒷받침한다. 지역 핵심 중소·중견기업에 4.5조원 공급",
-      "url": "https://www.fsc.go.kr/no010101/88160",
-      "event_at": "2026-11-18T00:00:00+00:00",
-      "application_deadline": "2026-11-18",
-      "application_start_date": "2026-11-17",
+      "title": "서울핀테크랩 민간위탁 운영기관 선정 적격자심의위원회 개최 결과 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470654",
+      "event_at": "2026-12-02T00:00:00+00:00",
+      "application_deadline": "2026-12-02",
+      "application_start_date": "",
       "eligibility_fields": {
-        "TargetGroup": [
-          "중소기업"
-        ],
         "Region": [
-          "광주",
-          "대전",
-          "세종",
-          "충남",
-          "전남"
+          "서울"
         ]
       },
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "지역이 발굴하면 금융이 뒷받침한다. 지역 핵심 중소·중견기업에 4.5조원 공급",
-      "program_key": "application-deadline:kr:금융위원회:2026-11-18:지역이-발굴하면-금융이-뒷받침한다-지역-핵심-중소-중견기업에-4-5조원-공급",
-      "evidence_url": "https://www.fsc.go.kr/no010101/88160",
+      "program_title": "서울핀테크랩 민간위탁 운영기관 선정 적격자심의위원회 개최 결과 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-02:서울핀테크랩-민간위탁-운영기관-선정-적격자심의위원회-개최-결과-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470654",
       "evidence_url_present": true
     },
     {
-      "source": "금융위원회",
+      "source": "서울시 지원사업",
       "event_model": "eligibility_rule",
-      "title": "지역이 발굴하면 금융이 뒷받침한다. 지역 핵심 중소·중견기업에 4.5조원 공급",
-      "url": "https://www.fsc.go.kr/no010101/88160",
-      "event_at": "2026-11-18T12:44:06.091912+00:00",
-      "application_deadline": "2026-11-18",
-      "application_start_date": "2026-11-17",
+      "title": "서울핀테크랩 민간위탁 운영기관 선정 적격자심의위원회 개최 결과 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470654",
+      "event_at": "2026-11-18T00:00:00+00:00",
+      "application_deadline": "2026-12-02",
+      "application_start_date": "",
       "eligibility_fields": {
-        "TargetGroup": [
-          "중소기업"
-        ],
         "Region": [
-          "광주",
-          "대전",
-          "세종",
-          "충남",
-          "전남"
+          "서울"
         ]
       },
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "지역이 발굴하면 금융이 뒷받침한다. 지역 핵심 중소·중견기업에 4.5조원 공급",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-11-18:지역이-발굴하면-금융이-뒷받침한다-지역-핵심-중소-중견기업에-4-5조원-공급",
-      "evidence_url": "https://www.fsc.go.kr/no010101/88160",
+      "program_title": "서울핀테크랩 민간위탁 운영기관 선정 적격자심의위원회 개최 결과 공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-11-18:서울핀테크랩-민간위탁-운영기관-선정-적격자심의위원회-개최-결과-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470654",
       "evidence_url_present": true
     },
     {
@@ -1120,48 +1454,6 @@
       "evidence_url_present": true
     },
     {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "서울핀테크랩 민간위탁 운영기관 선정 적격자심의위원회 개최 결과 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470654",
-      "event_at": "2026-12-02T00:00:00+00:00",
-      "application_deadline": "2026-12-02",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "서울핀테크랩 민간위탁 운영기관 선정 적격자심의위원회 개최 결과 공고",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-02:서울핀테크랩-민간위탁-운영기관-선정-적격자심의위원회-개최-결과-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470654",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "eligibility_rule",
-      "title": "서울핀테크랩 민간위탁 운영기관 선정 적격자심의위원회 개최 결과 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470654",
-      "event_at": "2026-11-18T00:00:00+00:00",
-      "application_deadline": "2026-12-02",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "서울핀테크랩 민간위탁 운영기관 선정 적격자심의위원회 개최 결과 공고",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-11-18:서울핀테크랩-민간위탁-운영기관-선정-적격자심의위원회-개최-결과-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470654",
-      "evidence_url_present": true
-    },
-    {
       "source": "금융위원회",
       "event_model": "eligibility_rule",
       "title": "신진창 금융위원회 부위원장,  씨티그룹 국제부문 총 책임자 면담",
@@ -1205,6 +1497,23 @@
     {
       "source": "서울시 지원사업",
       "event_model": "application_deadline",
+      "title": "2026년 하반기 장애인 자립생활주택 신규 운영사업자 모집 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470451",
+      "event_at": "2026-12-02T00:00:00+00:00",
+      "application_deadline": "2026-12-02",
+      "application_start_date": "",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 하반기 장애인 자립생활주택 신규 운영사업자 모집 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-02:2026년-하반기-장애인-자립생활주택-신규-운영사업자-모집-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470451",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
       "title": "2027년 서울시 중증환자 공공이송체계 운영사업 공고",
       "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470515",
       "event_at": "2026-12-03T00:00:00+00:00",
@@ -1242,23 +1551,6 @@
       "program_title": "2027년 서울시 중증환자 공공이송체계 운영사업 공고",
       "program_key": "eligibility-rule:kr:서울시-지원사업:2026-11-17:2027년-서울시-중증환자-공공이송체계-운영사업-공고",
       "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470515",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "2026년 하반기 장애인 자립생활주택 신규 운영사업자 모집 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470451",
-      "event_at": "2026-12-02T00:00:00+00:00",
-      "application_deadline": "2026-12-02",
-      "application_start_date": "",
-      "eligibility_fields": {},
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 하반기 장애인 자립생활주택 신규 운영사업자 모집 공고",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-02:2026년-하반기-장애인-자립생활주택-신규-운영사업자-모집-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470451",
       "evidence_url_present": true
     },
     {
@@ -1369,23 +1661,6 @@
     {
       "source": "서울시 지원사업",
       "event_model": "application_deadline",
-      "title": "2026년 제3차 장애인지원주택 주거생활서비스 제공기관 모집 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470416",
-      "event_at": "2026-11-30T00:00:00+00:00",
-      "application_deadline": "2026-11-30",
-      "application_start_date": "",
-      "eligibility_fields": {},
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 제3차 장애인지원주택 주거생활서비스 제공기관 모집 공고",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-11-30:2026년-제3차-장애인지원주택-주거생활서비스-제공기관-모집-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470416",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
       "title": "제안서 평가위원(후보자) 모집 공고",
       "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470413",
       "event_at": "2026-11-23T00:00:00+00:00",
@@ -1398,6 +1673,23 @@
       "program_title": "제안서 평가위원(후보자) 모집 공고",
       "program_key": "application-deadline:kr:서울시-지원사업:2026-11-23:제안서-평가위원-후보자-모집-공고",
       "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470413",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "2027 중증장애인 동료상담 사업 보조사업자 모집 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470484",
+      "event_at": "2026-12-01T00:00:00+00:00",
+      "application_deadline": "2026-12-01",
+      "application_start_date": "",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2027 중증장애인 동료상담 사업 보조사업자 모집 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-01:2027-중증장애인-동료상담-사업-보조사업자-모집-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470484",
       "evidence_url_present": true
     },
     {
@@ -1420,6 +1712,23 @@
     {
       "source": "서울시 지원사업",
       "event_model": "application_deadline",
+      "title": "2026년 제3차 장애인지원주택 주거생활서비스 제공기관 모집 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470416",
+      "event_at": "2026-11-30T00:00:00+00:00",
+      "application_deadline": "2026-11-30",
+      "application_start_date": "",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 제3차 장애인지원주택 주거생활서비스 제공기관 모집 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-11-30:2026년-제3차-장애인지원주택-주거생활서비스-제공기관-모집-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470416",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
       "title": "무연고 사망자 공고",
       "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470453",
       "event_at": "2026-12-16T00:00:00+00:00",
@@ -1432,23 +1741,6 @@
       "program_title": "무연고 사망자 공고",
       "program_key": "application-deadline:kr:서울시-지원사업:2026-12-16:무연고-사망자-공고",
       "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470453",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "2027 중증장애인 동료상담 사업 보조사업자 모집 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470484",
-      "event_at": "2026-12-01T00:00:00+00:00",
-      "application_deadline": "2026-12-01",
-      "application_start_date": "",
-      "eligibility_fields": {},
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2027 중증장애인 동료상담 사업 보조사업자 모집 공고",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-01:2027-중증장애인-동료상담-사업-보조사업자-모집-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470484",
       "evidence_url_present": true
     },
     {
@@ -1657,6 +1949,48 @@
     {
       "source": "서울시 지원사업",
       "event_model": "application_deadline",
+      "title": "서울특별시 보호구역 무인 교통단속용 장비 설치 예정 위치 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470351",
+      "event_at": "2026-12-02T00:00:00+00:00",
+      "application_deadline": "2026-12-02",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "서울특별시 보호구역 무인 교통단속용 장비 설치 예정 위치 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-02:서울특별시-보호구역-무인-교통단속용-장비-설치-예정-위치-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470351",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "서울특별시 보호구역 무인 교통단속용 장비 설치 예정 위치 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470351",
+      "event_at": "2026-11-13T00:00:00+00:00",
+      "application_deadline": "2026-12-02",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "서울특별시 보호구역 무인 교통단속용 장비 설치 예정 위치 공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-11-13:서울특별시-보호구역-무인-교통단속용-장비-설치-예정-위치-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470351",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
       "title": "「한강교량 램프 도로열선시스템 구축」신기술·특허 제품 제안서 평가 결과 공고",
       "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470306",
       "event_at": "2026-11-30T00:00:00+00:00",
@@ -1669,48 +2003,6 @@
       "program_title": "「한강교량 램프 도로열선시스템 구축」신기술·특허 제품 제안서 평가 결과 공고",
       "program_key": "application-deadline:kr:서울시-지원사업:2026-11-30:한강교량-램프-도로열선시스템-구축-신기술-특허-제품-제안서-평가-결과-공고",
       "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470306",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "2026년 안심주택 토지매입비 융자지원 계획 변경 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470359",
-      "event_at": "2026-11-23T00:00:00+00:00",
-      "application_deadline": "2026-11-23",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 안심주택 토지매입비 융자지원 계획 변경 공고",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-11-23:2026년-안심주택-토지매입비-융자지원-계획-변경-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470359",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "eligibility_rule",
-      "title": "2026년 안심주택 토지매입비 융자지원 계획 변경 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470359",
-      "event_at": "2026-11-13T00:00:00+00:00",
-      "application_deadline": "2026-11-23",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "청년"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2026년 안심주택 토지매입비 융자지원 계획 변경 공고",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-11-13:2026년-안심주택-토지매입비-융자지원-계획-변경-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470359",
       "evidence_url_present": true
     },
     {
@@ -1764,52 +2056,10 @@
     {
       "source": "서울시 지원사업",
       "event_model": "application_deadline",
-      "title": "서울특별시 보호구역 무인 교통단속용 장비 설치 예정 위치 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470351",
-      "event_at": "2026-12-02T00:00:00+00:00",
-      "application_deadline": "2026-12-02",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "서울특별시 보호구역 무인 교통단속용 장비 설치 예정 위치 공고",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-02:서울특별시-보호구역-무인-교통단속용-장비-설치-예정-위치-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470351",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "eligibility_rule",
-      "title": "서울특별시 보호구역 무인 교통단속용 장비 설치 예정 위치 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470351",
-      "event_at": "2026-11-13T00:00:00+00:00",
-      "application_deadline": "2026-12-02",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "서울특별시 보호구역 무인 교통단속용 장비 설치 예정 위치 공고",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-11-13:서울특별시-보호구역-무인-교통단속용-장비-설치-예정-위치-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470351",
-      "evidence_url_present": true
-    },
-    {
-      "source": "금융위원회",
-      "event_model": "eligibility_rule",
-      "title": "2026년 10월 가계대출 동향(잠정). 금일 등록된 게시글",
-      "url": "https://www.fsc.go.kr/no010101/88124",
-      "event_at": "2026-11-12T12:17:08.276881+00:00",
-      "application_deadline": "",
+      "title": "2026년 안심주택 토지매입비 융자지원 계획 변경 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470359",
+      "event_at": "2026-11-23T00:00:00+00:00",
+      "application_deadline": "2026-11-23",
       "application_start_date": "",
       "eligibility_fields": {
         "TargetGroup": [
@@ -1819,212 +2069,30 @@
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "2026년 10월 가계대출 동향(잠정). 금일 등록된 게시글",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-11-12:2026년-10월-가계대출-동향-잠정-금일-등록된-게시글",
-      "evidence_url": "https://www.fsc.go.kr/no010101/88124",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "(서울특별시 공고 제2026 - 3077호) 산업집적활성화 및 공장설립에 관한 법률 위반 과태료 부과 사전통지 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470155",
-      "event_at": "2026-11-30T00:00:00+00:00",
-      "application_deadline": "2026-11-30",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "(서울특별시 공고 제2026 - 3077호) 산업집적활성화 및 공장설립에 관한 법률 위반 과태료 부과 사전통지 공고",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-11-30:서울특별시-공고-제2026-3077호-산업집적활성화-및-공장설립에-관한-법률-위반-과태료-부과-사전통지-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470155",
+      "program_title": "2026년 안심주택 토지매입비 융자지원 계획 변경 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-11-23:2026년-안심주택-토지매입비-융자지원-계획-변경-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470359",
       "evidence_url_present": true
     },
     {
       "source": "서울시 지원사업",
       "event_model": "eligibility_rule",
-      "title": "(서울특별시 공고 제2026 - 3077호) 산업집적활성화 및 공장설립에 관한 법률 위반 과태료 부과 사전통지 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470155",
-      "event_at": "2026-11-12T00:00:00+00:00",
-      "application_deadline": "2026-11-30",
+      "title": "2026년 안심주택 토지매입비 융자지원 계획 변경 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470359",
+      "event_at": "2026-11-13T00:00:00+00:00",
+      "application_deadline": "2026-11-23",
       "application_start_date": "",
       "eligibility_fields": {
-        "Region": [
-          "서울"
+        "TargetGroup": [
+          "청년"
         ]
       },
       "selection_result_date": "",
       "selected_count": "",
       "execution_amount": "",
-      "program_title": "(서울특별시 공고 제2026 - 3077호) 산업집적활성화 및 공장설립에 관한 법률 위반 과태료 부과 사전통지 공고",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-11-12:서울특별시-공고-제2026-3077호-산업집적활성화-및-공장설립에-관한-법률-위반-과태료-부과-사전통지-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470155",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "무연고 사망자 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470206",
-      "event_at": "2026-12-11T00:00:00+00:00",
-      "application_deadline": "2026-12-11",
-      "application_start_date": "",
-      "eligibility_fields": {},
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "무연고 사망자 공고",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-11:무연고-사망자-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470206",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "녹색교통지역 운행제한 위반과태료 사전통지서 공시송달 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470255",
-      "event_at": "2026-11-26T00:00:00+00:00",
-      "application_deadline": "2026-11-26",
-      "application_start_date": "",
-      "eligibility_fields": {},
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "녹색교통지역 운행제한 위반과태료 사전통지서 공시송달 공고",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-11-26:녹색교통지역-운행제한-위반과태료-사전통지서-공시송달-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470255",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "2027 서울국제정원박람회 작가정원 국제공모",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470211",
-      "event_at": "2026-12-31T00:00:00+00:00",
-      "application_deadline": "2026-12-31",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2027 서울국제정원박람회 작가정원 국제공모",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-31:2027-서울국제정원박람회-작가정원-국제공모",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470211",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "eligibility_rule",
-      "title": "2027 서울국제정원박람회 작가정원 국제공모",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470211",
-      "event_at": "2026-11-12T00:00:00+00:00",
-      "application_deadline": "2026-12-31",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "Region": [
-          "서울"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "2027 서울국제정원박람회 작가정원 국제공모",
-      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-11-12:2027-서울국제정원박람회-작가정원-국제공모",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470211",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "녹색교통 운행제한 위반 과태료 부과 독촉고지서 공시송달 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470258",
-      "event_at": "2026-11-26T00:00:00+00:00",
-      "application_deadline": "2026-11-26",
-      "application_start_date": "",
-      "eligibility_fields": {},
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "녹색교통 운행제한 위반 과태료 부과 독촉고지서 공시송달 공고",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-11-26:녹색교통-운행제한-위반-과태료-부과-독촉고지서-공시송달-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470258",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "측량업 신규 등록 공고(2026-3132호)",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470249",
-      "event_at": "2026-12-31T00:00:00+00:00",
-      "application_deadline": "2026-12-31",
-      "application_start_date": "",
-      "eligibility_fields": {},
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "측량업 신규 등록 공고(2026-3132호)",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-31:측량업-신규-등록-공고-2026-3132호",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470249",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "녹색교통지역 운행제한 위반과태료 부과고지서 공시송달 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470257",
-      "event_at": "2026-11-26T00:00:00+00:00",
-      "application_deadline": "2026-11-26",
-      "application_start_date": "",
-      "eligibility_fields": {},
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "녹색교통지역 운행제한 위반과태료 부과고지서 공시송달 공고",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-11-26:녹색교통지역-운행제한-위반과태료-부과고지서-공시송달-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470257",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "침수감지 수위표 모니터링 CCTV 설치에 관한 행정예고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470277",
-      "event_at": "2026-11-24T00:00:00+00:00",
-      "application_deadline": "2026-11-24",
-      "application_start_date": "",
-      "eligibility_fields": {},
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "침수감지 수위표 모니터링 CCTV 설치에 관한 행정예고",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-11-24:침수감지-수위표-모니터링-cctv-설치에-관한-행정예고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470277",
-      "evidence_url_present": true
-    },
-    {
-      "source": "서울시 지원사업",
-      "event_model": "application_deadline",
-      "title": "전용차로 위반 과태료 사전통지서 공시송달 공고",
-      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=469899",
-      "event_at": "2026-12-02T00:00:00+00:00",
-      "application_deadline": "2026-12-02",
-      "application_start_date": "",
-      "eligibility_fields": {},
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "전용차로 위반 과태료 사전통지서 공시송달 공고",
-      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-02:전용차로-위반-과태료-사전통지서-공시송달-공고",
-      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=469899",
+      "program_title": "2026년 안심주택 토지매입비 융자지원 계획 변경 공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-11-13:2026년-안심주택-토지매입비-융자지원-계획-변경-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470359",
       "evidence_url_present": true
     },
     {
@@ -2129,36 +2197,6 @@
       "program_title": "[괴산서울농장] 자연울림 맛의울림-김장편 (261128)",
       "program_key": "eligibility-rule:kr:서울시-정책뉴스:2026-11-09:괴산서울농장-자연울림-맛의울림-김장편-261128",
       "evidence_url": "https://news.seoul.go.kr/gov/archives/581876",
-      "evidence_url_present": true
-    },
-    {
-      "source": "농림축산식품부",
-      "event_model": "eligibility_rule",
-      "title": "농식품부 장관, ‘푸드위크 코리아 2026’ 방문...“K-푸드의 혁신과 미래 가능성 확인”",
-      "url": "http://www.mafra.go.kr/bbs/home/792/582198/artclView.do",
-      "event_at": "2026-11-08T23:45:13.942000+00:00",
-      "application_deadline": "",
-      "application_start_date": "",
-      "eligibility_fields": {
-        "TargetGroup": [
-          "중소기업",
-          "청년"
-        ],
-        "Industry": [
-          "축산",
-          "제조"
-        ],
-        "Region": [
-          "서울",
-          "제주"
-        ]
-      },
-      "selection_result_date": "",
-      "selected_count": "",
-      "execution_amount": "",
-      "program_title": "농식품부 장관, ‘푸드위크 코리아 2026’ 방문...“K-푸드의 혁신과 미래 가능성 확인”",
-      "program_key": "eligibility-rule:kr:농림축산식품부:2026-11-08:농식품부-장관-푸드위크-코리아-2026-방문-k-푸드의-혁신과-미래-가능성-확인",
-      "evidence_url": "http://www.mafra.go.kr/bbs/home/792/582198/artclView.do",
       "evidence_url_present": true
     }
   ],
