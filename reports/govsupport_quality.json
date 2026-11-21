@@ -1,6 +1,6 @@
 {
   "category": "govsupport",
-  "generated_at": "2026-11-20T12:37:52.589774+00:00",
+  "generated_at": "2026-11-21T12:16:39.143849+00:00",
   "summary": {
     "total_sources": 34,
     "tracked_sources": 10,
@@ -350,7 +350,7 @@
       "article_count": 1,
       "event_count": 1,
       "latest_event_at": "2026-11-16T01:21:09+00:00",
-      "age_days": 4.47,
+      "age_days": 5.46,
       "latest_title": "2026년도 2차 서울주얼리지원센터 직원(과장급) 채용공고",
       "latest_url": "https://news.seoul.go.kr/economy/archives/575191",
       "latest_evidence_url": "https://news.seoul.go.kr/economy/archives/575191",
@@ -431,13 +431,13 @@
       "status": "fresh",
       "article_count": 11,
       "event_count": 10,
-      "latest_event_at": "2026-11-20T12:34:30.277444+00:00",
+      "latest_event_at": "2026-11-21T12:13:08.333491+00:00",
       "age_days": 0.0,
       "latest_title": "지역이 발굴하면 금융이 뒷받침한다. 지역 핵심 중소·중견기업에 4.5조원 공급",
       "latest_url": "https://www.fsc.go.kr/no010101/88160",
       "latest_evidence_url": "https://www.fsc.go.kr/no010101/88160",
       "latest_program_title": "지역이 발굴하면 금융이 뒷받침한다. 지역 핵심 중소·중견기업에 4.5조원 공급",
-      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-11-20:지역이-발굴하면-금융이-뒷받침한다-지역-핵심-중소-중견기업에-4-5조원-공급",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-11-21:지역이-발굴하면-금융이-뒷받침한다-지역-핵심-중소-중견기업에-4-5조원-공급",
       "latest_application_deadline": "2026-11-18",
       "latest_eligibility_fields": {
         "TargetGroup": [
@@ -965,7 +965,7 @@
       "event_model": "eligibility_rule",
       "title": "지역이 발굴하면 금융이 뒷받침한다. 지역 핵심 중소·중견기업에 4.5조원 공급",
       "url": "https://www.fsc.go.kr/no010101/88160",
-      "event_at": "2026-11-20T12:34:30.277444+00:00",
+      "event_at": "2026-11-21T12:13:08.333491+00:00",
       "application_deadline": "2026-11-18",
       "application_start_date": "2026-11-17",
       "eligibility_fields": {
@@ -984,7 +984,7 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "지역이 발굴하면 금융이 뒷받침한다. 지역 핵심 중소·중견기업에 4.5조원 공급",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-11-20:지역이-발굴하면-금융이-뒷받침한다-지역-핵심-중소-중견기업에-4-5조원-공급",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-11-21:지역이-발굴하면-금융이-뒷받침한다-지역-핵심-중소-중견기업에-4-5조원-공급",
       "evidence_url": "https://www.fsc.go.kr/no010101/88160",
       "evidence_url_present": true
     },
@@ -993,7 +993,7 @@
       "event_model": "eligibility_rule",
       "title": "全금융권이 상시적으로 철저하게 보안 관리에 임하도록 IT자산 식별·관리를 의무화하고 취약점 점검·평가 제도를 내실화하겠습니다.",
       "url": "https://www.fsc.go.kr/no010101/88162",
-      "event_at": "2026-11-20T12:34:28.476723+00:00",
+      "event_at": "2026-11-21T12:13:06.890623+00:00",
       "application_deadline": "",
       "application_start_date": "",
       "eligibility_fields": {
@@ -1009,7 +1009,7 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "全금융권이 상시적으로 철저하게 보안 관리에 임하도록 IT자산 식별·관리를 의무화하고 취약점 점검·평가 제도를 내실화하겠습니다.",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-11-20:全금융권이-상시적으로-철저하게-보안-관리에-임하도록-it자산-식별-관리를-의무화하고-취약점-점검-평가-제도를-내실화하겠습니다",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-11-21:全금융권이-상시적으로-철저하게-보안-관리에-임하도록-it자산-식별-관리를-의무화하고-취약점-점검-평가-제도를-내실화하겠습니다",
       "evidence_url": "https://www.fsc.go.kr/no010101/88162",
       "evidence_url_present": true
     },
@@ -1047,7 +1047,7 @@
       "event_model": "eligibility_rule",
       "title": "핀테크 기업에 필요한 지원사업을 AI가 찾아드립니다.",
       "url": "https://www.fsc.go.kr/no010101/88171",
-      "event_at": "2026-11-20T12:34:27.694046+00:00",
+      "event_at": "2026-11-21T12:13:04.959530+00:00",
       "application_deadline": "2026-11-20",
       "application_start_date": "2026-11-19",
       "eligibility_fields": {
@@ -1067,7 +1067,7 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "핀테크 기업에 필요한 지원사업을 AI가 찾아드립니다.",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-11-20:핀테크-기업에-필요한-지원사업을-ai가-찾아드립니다",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-11-21:핀테크-기업에-필요한-지원사업을-ai가-찾아드립니다",
       "evidence_url": "https://www.fsc.go.kr/no010101/88171",
       "evidence_url_present": true
     },
@@ -1097,7 +1097,7 @@
       "event_model": "eligibility_rule",
       "title": "깜빡 잊고 지나가버린 지난 3년간 실손보험금, ‘실손24’를 통해  한방에 청구하고 받을 수 있습니다",
       "url": "https://www.fsc.go.kr/no010101/88173",
-      "event_at": "2026-11-20T12:34:26.378875+00:00",
+      "event_at": "2026-11-21T12:13:02.172353+00:00",
       "application_deadline": "2026-02-03",
       "application_start_date": "2026-11-19",
       "eligibility_fields": {
@@ -1109,7 +1109,7 @@
       "selected_count": "",
       "execution_amount": "",
       "program_title": "깜빡 잊고 지나가버린 지난 3년간 실손보험금, ‘실손24’를 통해  한방에 청구하고 받을 수 있습니다",
-      "program_key": "eligibility-rule:kr:금융위원회:2026-11-20:깜빡-잊고-지나가버린-지난-3년간-실손보험금-실손24-를-통해-한방에-청구하고-받을-수-있습니다",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-11-21:깜빡-잊고-지나가버린-지난-3년간-실손보험금-실손24-를-통해-한방에-청구하고-받을-수-있습니다",
       "evidence_url": "https://www.fsc.go.kr/no010101/88173",
       "evidence_url_present": true
     },
