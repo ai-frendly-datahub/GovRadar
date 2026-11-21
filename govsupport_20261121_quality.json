@@ -1,0 +1,2419 @@
+{
+  "category": "govsupport",
+  "generated_at": "2026-11-21T12:16:39.143849+00:00",
+  "summary": {
+    "total_sources": 34,
+    "tracked_sources": 10,
+    "fresh_sources": 3,
+    "stale_sources": 1,
+    "missing_sources": 6,
+    "missing_event_sources": 0,
+    "unknown_event_date_sources": 0,
+    "not_tracked_sources": 4,
+    "skipped_disabled_sources": 20,
+    "support_program_notice_events": 1,
+    "application_deadline_events": 34,
+    "eligibility_rule_events": 27,
+    "selection_result_events": 0,
+    "unique_program_key_count": 62,
+    "events_with_evidence_url": 62,
+    "collection_error_count": 5,
+    "event_model_source_gap_count": 1
+  },
+  "sources": [
+    {
+      "source": "정부24 보조금",
+      "source_type": "javascript",
+      "enabled": false,
+      "tracked": false,
+      "event_model": "application_deadline",
+      "freshness_sla_days": 1,
+      "status": "skipped_disabled",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": "https://www.gov.kr/robots.txt User-agent: * Disallow: / 이고, 이 공고 URL은 Allow 예외에 없다.",
+      "reenable_gate": "robots.txt가 이 URL을 Allow 한 뒤에만 다시 켠다. Disallow를 우회하지 않는다.",
+      "errors": []
+    },
+    {
+      "source": "K-Startup 선정결과 후보",
+      "source_type": "javascript",
+      "enabled": false,
+      "tracked": false,
+      "event_model": "selection_result",
+      "freshness_sla_days": 7,
+      "status": "skipped_disabled",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": "Backlog source only: selection result parser and fixture coverage are not ready.",
+      "reenable_gate": "Enable after browser fixture test, selection_result parser, and evidence URL checks pass.",
+      "errors": []
+    },
+    {
+      "source": "정책브리핑",
+      "source_type": "rss",
+      "enabled": false,
+      "tracked": false,
+      "event_model": "support_program_notice",
+      "freshness_sla_days": 2,
+      "status": "skipped_disabled",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": "정책브리핑 RSS(/rss/policy.xml)가 404이고, 공식 페이지가 RSS 서비스 중단을 안내한다.",
+      "reenable_gate": "키 없는 공개 RSS 또는 공고 피드가 항목을 돌려주면 다시 켠다. Cloudflare 우회는 하지 않는다.",
+      "errors": []
+    },
+    {
+      "source": "고용노동부 공지",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "support_program_notice",
+      "freshness_sla_days": 2,
+      "status": "missing",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": []
+    },
+    {
+      "source": "고용노동부 정책",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "support_program_notice",
+      "freshness_sla_days": 2,
+      "status": "missing",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": []
+    },
+    {
+      "source": "고용노동부 입법예고",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "eligibility_rule",
+      "freshness_sla_days": 2,
+      "status": "missing",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": []
+    },
+    {
+      "source": "소상공인시장진흥공단",
+      "source_type": "javascript",
+      "enabled": false,
+      "tracked": false,
+      "event_model": "eligibility_rule",
+      "freshness_sla_days": 1,
+      "status": "skipped_disabled",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": "https://www.semas.or.kr/robots.txt User-agent: * Disallow: / 이고, Allow : /$ 는 루트만 허용한다.",
+      "reenable_gate": "robots.txt가 /web/board/ 공고 목록을 Allow 한 뒤에만 다시 켠다. Disallow를 우회하지 않는다.",
+      "errors": []
+    },
+    {
+      "source": "K-Startup 지원사업 공고 API",
+      "source_type": "api",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "support_program_notice",
+      "freshness_sla_days": 2,
+      "status": "missing",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": [
+        "K-Startup 지원사업 공고 API: skipped_missing_env DATA_GO_KR_KSTARTUP_SERVICE_KEY"
+      ]
+    },
+    {
+      "source": "보조금24 공공서비스 API",
+      "source_type": "api",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "eligibility_rule",
+      "freshness_sla_days": 2,
+      "status": "missing",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": [
+        "보조금24 공공서비스 API: skipped_missing_env DATA_GO_KR_SUBSIDY24_SERVICE_KEY"
+      ]
+    },
+    {
+      "source": "기업마당 지원사업 공고 API",
+      "source_type": "api",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "support_program_notice",
+      "freshness_sla_days": 2,
+      "status": "missing",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": [
+        "기업마당 지원사업 공고 API: skipped_missing_env DATA_GO_KR_BIZINFO_SERVICE_KEY"
+      ]
+    },
+    {
+      "source": "서울시 지원사업",
+      "source_type": "public_page",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "application_deadline",
+      "freshness_sla_days": 1,
+      "status": "fresh",
+      "article_count": 22,
+      "event_count": 21,
+      "latest_event_at": "2027-02-13T00:00:00+00:00",
+      "age_days": 0.0,
+      "latest_title": "매장유산 소유권 확인 공고",
+      "latest_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470463",
+      "latest_evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470463",
+      "latest_program_title": "매장유산 소유권 확인 공고",
+      "latest_program_key": "application-deadline:kr:서울시-지원사업:2027-02-13:매장유산-소유권-확인-공고",
+      "latest_application_deadline": "2027-02-13",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": []
+    },
+    {
+      "source": "서울시 정책뉴스",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "application_deadline",
+      "freshness_sla_days": 1,
+      "status": "fresh",
+      "article_count": 4,
+      "event_count": 4,
+      "latest_event_at": "2026-11-30T00:00:00+00:00",
+      "age_days": 0.0,
+      "latest_title": "2026년 랜선나눔캠퍼스 우수사례 공모전 개최 안내(11.10.~11.30.)",
+      "latest_url": "https://news.seoul.go.kr/gov/archives/581891",
+      "latest_evidence_url": "https://news.seoul.go.kr/gov/archives/581891",
+      "latest_program_title": "2026년 랜선나눔캠퍼스 우수사례 공모전 개최 안내(11.10.~11.30.)",
+      "latest_program_key": "application-deadline:kr:서울시-정책뉴스:2026-11-30:2026년-랜선나눔캠퍼스-우수사례-공모전-개최-안내-11-10-11-30",
+      "latest_application_deadline": "2026-11-30",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": []
+    },
+    {
+      "source": "서울시 경제",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "support_program_notice",
+      "freshness_sla_days": 2,
+      "status": "stale",
+      "article_count": 1,
+      "event_count": 1,
+      "latest_event_at": "2026-11-16T01:21:09+00:00",
+      "age_days": 5.46,
+      "latest_title": "2026년도 2차 서울주얼리지원센터 직원(과장급) 채용공고",
+      "latest_url": "https://news.seoul.go.kr/economy/archives/575191",
+      "latest_evidence_url": "https://news.seoul.go.kr/economy/archives/575191",
+      "latest_program_title": "2026년도 2차 서울주얼리지원센터 직원(과장급) 채용공고",
+      "latest_program_key": "support-program-notice:kr:서울시-경제:2026-11-16:2026년도-2차-서울주얼리지원센터-직원-과장급-채용공고",
+      "latest_application_deadline": "2026-11-28",
+      "latest_eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": []
+    },
+    {
+      "source": "행정안전부",
+      "source_type": "javascript",
+      "enabled": false,
+      "tracked": false,
+      "event_model": "official_notice",
+      "freshness_sla_days": 2,
+      "status": "skipped_disabled",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": "브라우저 수집이 15초 타임아웃으로 크롤 헬스 임계값에 걸렸고, 키 없는 공개 RSS를 찾지 못했다.",
+      "reenable_gate": "공개 RSS 또는 공고 목록을 안정적으로 돌려주는 공식 엔드포인트 확인 후에만 다시 켠다.",
+      "errors": []
+    },
+    {
+      "source": "보건복지부",
+      "source_type": "javascript",
+      "enabled": false,
+      "tracked": false,
+      "event_model": "eligibility_rule",
+      "freshness_sla_days": 2,
+      "status": "skipped_disabled",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": "브라우저 수집이 15초 타임아웃으로 크롤 헬스 임계값에 걸렸고, 키 없는 공개 RSS를 찾지 못했다.",
+      "reenable_gate": "공개 RSS 또는 공고 목록을 안정적으로 돌려주는 공식 엔드포인트 확인 후에만 다시 켠다.",
+      "errors": []
+    },
+    {
+      "source": "금융위원회",
+      "source_type": "javascript",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "eligibility_rule",
+      "freshness_sla_days": 2,
+      "status": "fresh",
+      "article_count": 11,
+      "event_count": 10,
+      "latest_event_at": "2026-11-21T12:13:08.333491+00:00",
+      "age_days": 0.0,
+      "latest_title": "지역이 발굴하면 금융이 뒷받침한다. 지역 핵심 중소·중견기업에 4.5조원 공급",
+      "latest_url": "https://www.fsc.go.kr/no010101/88160",
+      "latest_evidence_url": "https://www.fsc.go.kr/no010101/88160",
+      "latest_program_title": "지역이 발굴하면 금융이 뒷받침한다. 지역 핵심 중소·중견기업에 4.5조원 공급",
+      "latest_program_key": "eligibility-rule:kr:금융위원회:2026-11-21:지역이-발굴하면-금융이-뒷받침한다-지역-핵심-중소-중견기업에-4-5조원-공급",
+      "latest_application_deadline": "2026-11-18",
+      "latest_eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ],
+        "Region": [
+          "광주",
+          "대전",
+          "세종",
+          "충남",
+          "전남"
+        ]
+      },
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": []
+    },
+    {
+      "source": "농림축산식품부",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "official_notice",
+      "freshness_sla_days": 2,
+      "status": "not_tracked",
+      "article_count": 4,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": []
+    },
+    {
+      "source": "국토교통부",
+      "source_type": "javascript",
+      "enabled": false,
+      "tracked": false,
+      "event_model": "official_notice",
+      "freshness_sla_days": 2,
+      "status": "skipped_disabled",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": "Official browser endpoint resets connections in the current collection runtime.",
+      "reenable_gate": "Re-enable after a stable RSS/API endpoint or approved browser flow returns notice links without connection resets.",
+      "errors": []
+    },
+    {
+      "source": "r/korea",
+      "source_type": "reddit",
+      "enabled": false,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "skipped_disabled",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": "Reddit JSON API가 403을 반환한다. 공개 .rss는 정부 공고 피드가 아니다.",
+      "reenable_gate": "Reddit 앱 등록(https://www.reddit.com/prefs/apps) 후 환경 변수 이름으로만 자격 증명을 넘긴 수집기가 붙으면 다시 검토한다.",
+      "errors": []
+    },
+    {
+      "source": "r/smallbusiness",
+      "source_type": "reddit",
+      "enabled": false,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "skipped_disabled",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": "Reddit JSON API가 403을 반환한다.",
+      "reenable_gate": "Reddit 앱 등록(https://www.reddit.com/prefs/apps) 후 환경 변수 이름으로만 자격 증명을 넘긴 수집기가 붙으면 다시 검토한다.",
+      "errors": []
+    },
+    {
+      "source": "r/startups",
+      "source_type": "reddit",
+      "enabled": false,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "skipped_disabled",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": "Reddit JSON API가 403을 반환한다.",
+      "reenable_gate": "Reddit 앱 등록(https://www.reddit.com/prefs/apps) 후 환경 변수 이름으로만 자격 증명을 넘긴 수집기가 붙으면 다시 검토한다.",
+      "errors": []
+    },
+    {
+      "source": "r/Entrepreneur",
+      "source_type": "reddit",
+      "enabled": false,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "skipped_disabled",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": "Reddit JSON API가 403을 반환한다.",
+      "reenable_gate": "Reddit 앱 등록(https://www.reddit.com/prefs/apps) 후 환경 변수 이름으로만 자격 증명을 넘긴 수집기가 붙으면 다시 검토한다.",
+      "errors": []
+    },
+    {
+      "source": "TechCrunch Startups",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": []
+    },
+    {
+      "source": "한국경제 경제",
+      "source_type": "rss",
+      "enabled": false,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "skipped_disabled",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": "한국경제 이용약관 제19조가 사전 서면 허가 없는 자동 수집(크롤러·스크레이퍼)과 AI 학습 이용을 허용하지 않는다(저작권 검토 보류, 2026-10-29).",
+      "reenable_gate": null,
+      "errors": []
+    },
+    {
+      "source": "한국경제 정치",
+      "source_type": "rss",
+      "enabled": false,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "skipped_disabled",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": "한국경제 이용약관 제19조가 사전 서면 허가 없는 자동 수집(크롤러·스크레이퍼)과 AI 학습 이용을 허용하지 않는다(저작권 검토 보류, 2026-10-29).",
+      "reenable_gate": null,
+      "errors": []
+    },
+    {
+      "source": "매일경제 정치",
+      "source_type": "rss",
+      "enabled": false,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "skipped_disabled",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": "언론사 자동 수집 정책에 따라 수집 중지",
+      "reenable_gate": null,
+      "errors": []
+    },
+    {
+      "source": "매일경제 경제정책",
+      "source_type": "rss",
+      "enabled": false,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "skipped_disabled",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": "언론사 자동 수집 정책에 따라 수집 중지",
+      "reenable_gate": null,
+      "errors": []
+    },
+    {
+      "source": "동아일보 경제",
+      "source_type": "rss",
+      "enabled": false,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "skipped_disabled",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": "언론사 자동 수집 정책에 따라 수집 중지",
+      "reenable_gate": null,
+      "errors": []
+    },
+    {
+      "source": "경향신문 경제",
+      "source_type": "rss",
+      "enabled": false,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "skipped_disabled",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": "언론사 자동 수집 정책에 따라 수집 중지",
+      "reenable_gate": null,
+      "errors": []
+    },
+    {
+      "source": "한겨레 경제",
+      "source_type": "rss",
+      "enabled": false,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "skipped_disabled",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": "언론사 자동 수집 정책에 따라 수집 중지",
+      "reenable_gate": null,
+      "errors": []
+    },
+    {
+      "source": "서울경제 경제",
+      "source_type": "rss",
+      "enabled": false,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "skipped_disabled",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": "서울경제 이용약관 제11조가 크롤링·스크래핑·AI 학습 데이터 이용을 서면 허가 없이 금지한다(저작권 검토 보류, 2026-10-29).",
+      "reenable_gate": null,
+      "errors": []
+    },
+    {
+      "source": "SBS 뉴스 정치",
+      "source_type": "rss",
+      "enabled": false,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "skipped_disabled",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": "언론사 자동 수집 정책에 따라 수집 중지",
+      "reenable_gate": null,
+      "errors": []
+    },
+    {
+      "source": "K-GAPI 공공API 현황분석",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": [
+        "K-GAPI 공공API 현황분석: skipped_robots robots.txt disallows /hollobit/K-GAPI/commits/main.atom"
+      ]
+    },
+    {
+      "source": "Awesome MCP Korea",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": false,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 0,
+      "event_count": 0,
+      "latest_event_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_evidence_url": "",
+      "latest_program_title": "",
+      "latest_program_key": "",
+      "latest_application_deadline": "",
+      "latest_eligibility_fields": {},
+      "latest_selection_result_date": "",
+      "latest_selected_count": "",
+      "latest_execution_amount": "",
+      "skip_reason": null,
+      "reenable_gate": null,
+      "errors": [
+        "Awesome MCP Korea: skipped_robots robots.txt disallows /darjeeling/awesome-mcp-korea/commits/main.atom"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "source": "금융위원회",
+      "event_model": "application_deadline",
+      "title": "지역이 발굴하면 금융이 뒷받침한다. 지역 핵심 중소·중견기업에 4.5조원 공급",
+      "url": "https://www.fsc.go.kr/no010101/88160",
+      "event_at": "2026-11-18T00:00:00+00:00",
+      "application_deadline": "2026-11-18",
+      "application_start_date": "2026-11-17",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ],
+        "Region": [
+          "광주",
+          "대전",
+          "세종",
+          "충남",
+          "전남"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "지역이 발굴하면 금융이 뒷받침한다. 지역 핵심 중소·중견기업에 4.5조원 공급",
+      "program_key": "application-deadline:kr:금융위원회:2026-11-18:지역이-발굴하면-금융이-뒷받침한다-지역-핵심-중소-중견기업에-4-5조원-공급",
+      "evidence_url": "https://www.fsc.go.kr/no010101/88160",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "지역이 발굴하면 금융이 뒷받침한다. 지역 핵심 중소·중견기업에 4.5조원 공급",
+      "url": "https://www.fsc.go.kr/no010101/88160",
+      "event_at": "2026-11-21T12:13:08.333491+00:00",
+      "application_deadline": "2026-11-18",
+      "application_start_date": "2026-11-17",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "중소기업"
+        ],
+        "Region": [
+          "광주",
+          "대전",
+          "세종",
+          "충남",
+          "전남"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "지역이 발굴하면 금융이 뒷받침한다. 지역 핵심 중소·중견기업에 4.5조원 공급",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-11-21:지역이-발굴하면-금융이-뒷받침한다-지역-핵심-중소-중견기업에-4-5조원-공급",
+      "evidence_url": "https://www.fsc.go.kr/no010101/88160",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "全금융권이 상시적으로 철저하게 보안 관리에 임하도록 IT자산 식별·관리를 의무화하고 취약점 점검·평가 제도를 내실화하겠습니다.",
+      "url": "https://www.fsc.go.kr/no010101/88162",
+      "event_at": "2026-11-21T12:13:06.890623+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울",
+          "세종"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "全금융권이 상시적으로 철저하게 보안 관리에 임하도록 IT자산 식별·관리를 의무화하고 취약점 점검·평가 제도를 내실화하겠습니다.",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-11-21:全금융권이-상시적으로-철저하게-보안-관리에-임하도록-it자산-식별-관리를-의무화하고-취약점-점검-평가-제도를-내실화하겠습니다",
+      "evidence_url": "https://www.fsc.go.kr/no010101/88162",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "application_deadline",
+      "title": "핀테크 기업에 필요한 지원사업을 AI가 찾아드립니다.",
+      "url": "https://www.fsc.go.kr/no010101/88171",
+      "event_at": "2026-11-20T00:00:00+00:00",
+      "application_deadline": "2026-11-20",
+      "application_start_date": "2026-11-19",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "스타트업",
+          "청년"
+        ],
+        "BusinessStage": [
+          "창업기업",
+          "벤처기업"
+        ],
+        "Industry": [
+          "AI"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "핀테크 기업에 필요한 지원사업을 AI가 찾아드립니다.",
+      "program_key": "application-deadline:kr:금융위원회:2026-11-20:핀테크-기업에-필요한-지원사업을-ai가-찾아드립니다",
+      "evidence_url": "https://www.fsc.go.kr/no010101/88171",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "핀테크 기업에 필요한 지원사업을 AI가 찾아드립니다.",
+      "url": "https://www.fsc.go.kr/no010101/88171",
+      "event_at": "2026-11-21T12:13:04.959530+00:00",
+      "application_deadline": "2026-11-20",
+      "application_start_date": "2026-11-19",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "스타트업",
+          "청년"
+        ],
+        "BusinessStage": [
+          "창업기업",
+          "벤처기업"
+        ],
+        "Industry": [
+          "AI"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "핀테크 기업에 필요한 지원사업을 AI가 찾아드립니다.",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-11-21:핀테크-기업에-필요한-지원사업을-ai가-찾아드립니다",
+      "evidence_url": "https://www.fsc.go.kr/no010101/88171",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "application_deadline",
+      "title": "깜빡 잊고 지나가버린 지난 3년간 실손보험금, ‘실손24’를 통해  한방에 청구하고 받을 수 있습니다",
+      "url": "https://www.fsc.go.kr/no010101/88173",
+      "event_at": "2026-02-03T00:00:00+00:00",
+      "application_deadline": "2026-02-03",
+      "application_start_date": "2026-11-19",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "깜빡 잊고 지나가버린 지난 3년간 실손보험금, ‘실손24’를 통해  한방에 청구하고 받을 수 있습니다",
+      "program_key": "application-deadline:kr:금융위원회:2026-02-03:깜빡-잊고-지나가버린-지난-3년간-실손보험금-실손24-를-통해-한방에-청구하고-받을-수-있습니다",
+      "evidence_url": "https://www.fsc.go.kr/no010101/88173",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "깜빡 잊고 지나가버린 지난 3년간 실손보험금, ‘실손24’를 통해  한방에 청구하고 받을 수 있습니다",
+      "url": "https://www.fsc.go.kr/no010101/88173",
+      "event_at": "2026-11-21T12:13:02.172353+00:00",
+      "application_deadline": "2026-02-03",
+      "application_start_date": "2026-11-19",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "깜빡 잊고 지나가버린 지난 3년간 실손보험금, ‘실손24’를 통해  한방에 청구하고 받을 수 있습니다",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-11-21:깜빡-잊고-지나가버린-지난-3년간-실손보험금-실손24-를-통해-한방에-청구하고-받을-수-있습니다",
+      "evidence_url": "https://www.fsc.go.kr/no010101/88173",
+      "evidence_url_present": true
+    },
+    {
+      "source": "농림축산식품부",
+      "event_model": "eligibility_rule",
+      "title": "K-푸드 제1 시장 미국에서  ‘글로벌 대도약’ 깃발 올렸다",
+      "url": "http://www.mafra.go.kr/bbs/home/792/582336/artclView.do",
+      "event_at": "2026-11-20T06:59:43.107000+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "BusinessStage": [
+          "벤처기업"
+        ],
+        "Industry": [
+          "축산"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "K-푸드 제1 시장 미국에서  ‘글로벌 대도약’ 깃발 올렸다",
+      "program_key": "eligibility-rule:kr:농림축산식품부:2026-11-20:k-푸드-제1-시장-미국에서-글로벌-대도약-깃발-올렸다",
+      "evidence_url": "http://www.mafra.go.kr/bbs/home/792/582336/artclView.do",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "「2026년 서울관광대상」 수상 후보자 모집 연장 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470765",
+      "event_at": "2026-11-27T00:00:00+00:00",
+      "application_deadline": "2026-11-27",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "관광"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "「2026년 서울관광대상」 수상 후보자 모집 연장 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-11-27:2026년-서울관광대상-수상-후보자-모집-연장-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470765",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "「2026년 서울관광대상」 수상 후보자 모집 연장 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470765",
+      "event_at": "2026-11-20T00:00:00+00:00",
+      "application_deadline": "2026-11-27",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "관광"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "「2026년 서울관광대상」 수상 후보자 모집 연장 공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-11-20:2026년-서울관광대상-수상-후보자-모집-연장-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470765",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "성내천 등 6개 지방하천 하천구역(안) 및 홍수관리구역(안) 주민의견 수렴을 위한 공람 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470571",
+      "event_at": "2026-12-04T00:00:00+00:00",
+      "application_deadline": "2026-12-04",
+      "application_start_date": "",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "성내천 등 6개 지방하천 하천구역(안) 및 홍수관리구역(안) 주민의견 수렴을 위한 공람 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-04:성내천-등-6개-지방하천-하천구역-안-및-홍수관리구역-안-주민의견-수렴을-위한-공람-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470571",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "2027년 서울엄마아빠택시 지원사업 추가 사업자 모집 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470740",
+      "event_at": "2026-12-04T00:00:00+00:00",
+      "application_deadline": "2026-12-04",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2027년 서울엄마아빠택시 지원사업 추가 사업자 모집 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-04:2027년-서울엄마아빠택시-지원사업-추가-사업자-모집-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470740",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "2027년 서울엄마아빠택시 지원사업 추가 사업자 모집 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470740",
+      "event_at": "2026-11-19T00:00:00+00:00",
+      "application_deadline": "2026-12-04",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2027년 서울엄마아빠택시 지원사업 추가 사업자 모집 공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-11-19:2027년-서울엄마아빠택시-지원사업-추가-사업자-모집-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470740",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "서울특별시 지하도상가 변상금 납부독촉 및 압류예고 반송분 공시송달 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470708",
+      "event_at": "2026-12-03T00:00:00+00:00",
+      "application_deadline": "2026-12-03",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "서울특별시 지하도상가 변상금 납부독촉 및 압류예고 반송분 공시송달 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-03:서울특별시-지하도상가-변상금-납부독촉-및-압류예고-반송분-공시송달-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470708",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "서울특별시 지하도상가 변상금 납부독촉 및 압류예고 반송분 공시송달 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470708",
+      "event_at": "2026-11-19T00:00:00+00:00",
+      "application_deadline": "2026-12-03",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "서울특별시 지하도상가 변상금 납부독촉 및 압류예고 반송분 공시송달 공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-11-19:서울특별시-지하도상가-변상금-납부독촉-및-압류예고-반송분-공시송달-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470708",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "정보공개 청구 제3자 의견청취서 공시송달 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470687",
+      "event_at": "2026-12-03T00:00:00+00:00",
+      "application_deadline": "2026-12-03",
+      "application_start_date": "",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "정보공개 청구 제3자 의견청취서 공시송달 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-03:정보공개-청구-제3자-의견청취서-공시송달-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470687",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "2026년 제2차 장애인지원주택 운영 주거생홠서비스 제공기관 선정 결과 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470723",
+      "event_at": "2026-12-18T00:00:00+00:00",
+      "application_deadline": "2026-12-18",
+      "application_start_date": "",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 제2차 장애인지원주택 운영 주거생홠서비스 제공기관 선정 결과 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-18:2026년-제2차-장애인지원주택-운영-주거생홠서비스-제공기관-선정-결과-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470723",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "지역아동센터 서울시지원단 운영 수탁기관 모집 재공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470722",
+      "event_at": "2026-12-01T00:00:00+00:00",
+      "application_deadline": "2026-12-01",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "지역아동센터 서울시지원단 운영 수탁기관 모집 재공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-01:지역아동센터-서울시지원단-운영-수탁기관-모집-재공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470722",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "지역아동센터 서울시지원단 운영 수탁기관 모집 재공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470722",
+      "event_at": "2026-11-19T00:00:00+00:00",
+      "application_deadline": "2026-12-01",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "지역아동센터 서울시지원단 운영 수탁기관 모집 재공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-11-19:지역아동센터-서울시지원단-운영-수탁기관-모집-재공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470722",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "application_deadline",
+      "title": "불법사금융 원스톱 지원,  이제 센터 방문 없이도 신청 가능합니다.",
+      "url": "https://www.fsc.go.kr/no010101/88150",
+      "event_at": "2026-10-31T00:00:00+00:00",
+      "application_deadline": "2026-10-31",
+      "application_start_date": "2026-11-16",
+      "eligibility_fields": {
+        "Region": [
+          "대구"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "불법사금융 원스톱 지원,  이제 센터 방문 없이도 신청 가능합니다.",
+      "program_key": "application-deadline:kr:금융위원회:2026-10-31:불법사금융-원스톱-지원-이제-센터-방문-없이도-신청-가능합니다",
+      "evidence_url": "https://www.fsc.go.kr/no010101/88150",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "불법사금융 원스톱 지원,  이제 센터 방문 없이도 신청 가능합니다.",
+      "url": "https://www.fsc.go.kr/no010101/88150",
+      "event_at": "2026-11-18T12:44:09.712299+00:00",
+      "application_deadline": "2026-10-31",
+      "application_start_date": "2026-11-16",
+      "eligibility_fields": {
+        "Region": [
+          "대구"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "불법사금융 원스톱 지원,  이제 센터 방문 없이도 신청 가능합니다.",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-11-18:불법사금융-원스톱-지원-이제-센터-방문-없이도-신청-가능합니다",
+      "evidence_url": "https://www.fsc.go.kr/no010101/88150",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "application_deadline",
+      "title": "이억원 금융위원장,  글로벌 금융안정 공조 및 유럽 주요 금융당국과 협력 강화 나선다",
+      "url": "https://www.fsc.go.kr/no010101/88151",
+      "event_at": "2026-11-13T00:00:00+00:00",
+      "application_deadline": "2026-11-13",
+      "application_start_date": "2026-11-16",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "이억원 금융위원장,  글로벌 금융안정 공조 및 유럽 주요 금융당국과 협력 강화 나선다",
+      "program_key": "application-deadline:kr:금융위원회:2026-11-13:이억원-금융위원장-글로벌-금융안정-공조-및-유럽-주요-금융당국과-협력-강화-나선다",
+      "evidence_url": "https://www.fsc.go.kr/no010101/88151",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "이억원 금융위원장,  글로벌 금융안정 공조 및 유럽 주요 금융당국과 협력 강화 나선다",
+      "url": "https://www.fsc.go.kr/no010101/88151",
+      "event_at": "2026-11-18T12:44:08.746664+00:00",
+      "application_deadline": "2026-11-13",
+      "application_start_date": "2026-11-16",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "이억원 금융위원장,  글로벌 금융안정 공조 및 유럽 주요 금융당국과 협력 강화 나선다",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-11-18:이억원-금융위원장-글로벌-금융안정-공조-및-유럽-주요-금융당국과-협력-강화-나선다",
+      "evidence_url": "https://www.fsc.go.kr/no010101/88151",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "제8차 서울권 관광개발계획 전략환경영향평가 항목 등의 결정내용 공고(제2026-3201호)",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470602",
+      "event_at": "2026-12-02T00:00:00+00:00",
+      "application_deadline": "2026-12-02",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "관광"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "제8차 서울권 관광개발계획 전략환경영향평가 항목 등의 결정내용 공고(제2026-3201호)",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-02:제8차-서울권-관광개발계획-전략환경영향평가-항목-등의-결정내용-공고-제2026-3201호",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470602",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "제8차 서울권 관광개발계획 전략환경영향평가 항목 등의 결정내용 공고(제2026-3201호)",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470602",
+      "event_at": "2026-11-18T00:00:00+00:00",
+      "application_deadline": "2026-12-02",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "관광"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "제8차 서울권 관광개발계획 전략환경영향평가 항목 등의 결정내용 공고(제2026-3201호)",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-11-18:제8차-서울권-관광개발계획-전략환경영향평가-항목-등의-결정내용-공고-제2026-3201호",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470602",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "서울핀테크랩 민간위탁 운영기관 선정 적격자심의위원회 개최 결과 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470654",
+      "event_at": "2026-12-02T00:00:00+00:00",
+      "application_deadline": "2026-12-02",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "서울핀테크랩 민간위탁 운영기관 선정 적격자심의위원회 개최 결과 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-02:서울핀테크랩-민간위탁-운영기관-선정-적격자심의위원회-개최-결과-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470654",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "서울핀테크랩 민간위탁 운영기관 선정 적격자심의위원회 개최 결과 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470654",
+      "event_at": "2026-11-18T00:00:00+00:00",
+      "application_deadline": "2026-12-02",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "서울핀테크랩 민간위탁 운영기관 선정 적격자심의위원회 개최 결과 공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-11-18:서울핀테크랩-민간위탁-운영기관-선정-적격자심의위원회-개최-결과-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470654",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "신진창 금융위원회 부위원장,  씨티그룹 국제부문 총 책임자 면담",
+      "url": "https://www.fsc.go.kr/no010101/88146",
+      "event_at": "2026-11-17T12:50:20.445588+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "신진창 금융위원회 부위원장,  씨티그룹 국제부문 총 책임자 면담",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-11-17:신진창-금융위원회-부위원장-씨티그룹-국제부문-총-책임자-면담",
+      "evidence_url": "https://www.fsc.go.kr/no010101/88146",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "2026년 하반기 장애인 자립생활주택 신규 운영사업자 모집 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470451",
+      "event_at": "2026-12-02T00:00:00+00:00",
+      "application_deadline": "2026-12-02",
+      "application_start_date": "",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 하반기 장애인 자립생활주택 신규 운영사업자 모집 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-02:2026년-하반기-장애인-자립생활주택-신규-운영사업자-모집-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470451",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "2027년 서울시 중증환자 공공이송체계 운영사업 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470515",
+      "event_at": "2026-12-03T00:00:00+00:00",
+      "application_deadline": "2026-12-03",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2027년 서울시 중증환자 공공이송체계 운영사업 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-03:2027년-서울시-중증환자-공공이송체계-운영사업-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470515",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "2027년 서울시 중증환자 공공이송체계 운영사업 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470515",
+      "event_at": "2026-11-17T00:00:00+00:00",
+      "application_deadline": "2026-12-03",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2027년 서울시 중증환자 공공이송체계 운영사업 공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-11-17:2027년-서울시-중증환자-공공이송체계-운영사업-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470515",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "송현문화공원 주차장 조성사업 보상협의 공고(제2026-3186호)",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470493",
+      "event_at": "2026-12-01T00:00:00+00:00",
+      "application_deadline": "2026-12-01",
+      "application_start_date": "",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "송현문화공원 주차장 조성사업 보상협의 공고(제2026-3186호)",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-01:송현문화공원-주차장-조성사업-보상협의-공고-제2026-3186호",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470493",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 정책뉴스",
+      "event_model": "application_deadline",
+      "title": "[괴산서울농장] 자연울림 맛의울림-김장편-2 (261205)",
+      "url": "https://news.seoul.go.kr/gov/archives/582009",
+      "event_at": "2026-11-26T00:00:00+00:00",
+      "application_deadline": "2026-11-26",
+      "application_start_date": "2026-11-23",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "[괴산서울농장] 자연울림 맛의울림-김장편-2 (261205)",
+      "program_key": "application-deadline:kr:서울시-정책뉴스:2026-11-26:괴산서울농장-자연울림-맛의울림-김장편-2-261205",
+      "evidence_url": "https://news.seoul.go.kr/gov/archives/582009",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 정책뉴스",
+      "event_model": "eligibility_rule",
+      "title": "[괴산서울농장] 자연울림 맛의울림-김장편-2 (261205)",
+      "url": "https://news.seoul.go.kr/gov/archives/582009",
+      "event_at": "2026-11-16T02:06:27+00:00",
+      "application_deadline": "2026-11-26",
+      "application_start_date": "2026-11-23",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "[괴산서울농장] 자연울림 맛의울림-김장편-2 (261205)",
+      "program_key": "eligibility-rule:kr:서울시-정책뉴스:2026-11-16:괴산서울농장-자연울림-맛의울림-김장편-2-261205",
+      "evidence_url": "https://news.seoul.go.kr/gov/archives/582009",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 경제",
+      "event_model": "support_program_notice",
+      "title": "2026년도 2차 서울주얼리지원센터 직원(과장급) 채용공고",
+      "url": "https://news.seoul.go.kr/economy/archives/575191",
+      "event_at": "2026-11-16T01:21:09+00:00",
+      "application_deadline": "2026-11-28",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년도 2차 서울주얼리지원센터 직원(과장급) 채용공고",
+      "program_key": "support-program-notice:kr:서울시-경제:2026-11-16:2026년도-2차-서울주얼리지원센터-직원-과장급-채용공고",
+      "evidence_url": "https://news.seoul.go.kr/economy/archives/575191",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 경제",
+      "event_model": "application_deadline",
+      "title": "2026년도 2차 서울주얼리지원센터 직원(과장급) 채용공고",
+      "url": "https://news.seoul.go.kr/economy/archives/575191",
+      "event_at": "2026-11-28T00:00:00+00:00",
+      "application_deadline": "2026-11-28",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년도 2차 서울주얼리지원센터 직원(과장급) 채용공고",
+      "program_key": "application-deadline:kr:서울시-경제:2026-11-28:2026년도-2차-서울주얼리지원센터-직원-과장급-채용공고",
+      "evidence_url": "https://news.seoul.go.kr/economy/archives/575191",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 경제",
+      "event_model": "eligibility_rule",
+      "title": "2026년도 2차 서울주얼리지원센터 직원(과장급) 채용공고",
+      "url": "https://news.seoul.go.kr/economy/archives/575191",
+      "event_at": "2026-11-16T01:21:09+00:00",
+      "application_deadline": "2026-11-28",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년도 2차 서울주얼리지원센터 직원(과장급) 채용공고",
+      "program_key": "eligibility-rule:kr:서울시-경제:2026-11-16:2026년도-2차-서울주얼리지원센터-직원-과장급-채용공고",
+      "evidence_url": "https://news.seoul.go.kr/economy/archives/575191",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "제안서 평가위원(후보자) 모집 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470413",
+      "event_at": "2026-11-23T00:00:00+00:00",
+      "application_deadline": "2026-11-23",
+      "application_start_date": "",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "제안서 평가위원(후보자) 모집 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-11-23:제안서-평가위원-후보자-모집-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470413",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "2027 중증장애인 동료상담 사업 보조사업자 모집 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470484",
+      "event_at": "2026-12-01T00:00:00+00:00",
+      "application_deadline": "2026-12-01",
+      "application_start_date": "",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2027 중증장애인 동료상담 사업 보조사업자 모집 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-01:2027-중증장애인-동료상담-사업-보조사업자-모집-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470484",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "매장유산 소유권 확인 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470463",
+      "event_at": "2027-02-13T00:00:00+00:00",
+      "application_deadline": "2027-02-13",
+      "application_start_date": "",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "매장유산 소유권 확인 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2027-02-13:매장유산-소유권-확인-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470463",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "2026년 제3차 장애인지원주택 주거생활서비스 제공기관 모집 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470416",
+      "event_at": "2026-11-30T00:00:00+00:00",
+      "application_deadline": "2026-11-30",
+      "application_start_date": "",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 제3차 장애인지원주택 주거생활서비스 제공기관 모집 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-11-30:2026년-제3차-장애인지원주택-주거생활서비스-제공기관-모집-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470416",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "무연고 사망자 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470453",
+      "event_at": "2026-12-16T00:00:00+00:00",
+      "application_deadline": "2026-12-16",
+      "application_start_date": "",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "무연고 사망자 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-16:무연고-사망자-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470453",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "application_deadline",
+      "title": "신뢰받는 자본시장, 현장에서 묻고 답을 찾다",
+      "url": "https://www.fsc.go.kr/no010101/88139",
+      "event_at": "2026-11-12T00:00:00+00:00",
+      "application_deadline": "2026-11-12",
+      "application_start_date": "2026-11-13",
+      "eligibility_fields": {
+        "BusinessStage": [
+          "벤처기업"
+        ],
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "신뢰받는 자본시장, 현장에서 묻고 답을 찾다",
+      "program_key": "application-deadline:kr:금융위원회:2026-11-12:신뢰받는-자본시장-현장에서-묻고-답을-찾다",
+      "evidence_url": "https://www.fsc.go.kr/no010101/88139",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "신뢰받는 자본시장, 현장에서 묻고 답을 찾다",
+      "url": "https://www.fsc.go.kr/no010101/88139",
+      "event_at": "2026-11-15T11:48:33.671566+00:00",
+      "application_deadline": "2026-11-12",
+      "application_start_date": "2026-11-13",
+      "eligibility_fields": {
+        "BusinessStage": [
+          "벤처기업"
+        ],
+        "Industry": [
+          "AI"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "신뢰받는 자본시장, 현장에서 묻고 답을 찾다",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-11-15:신뢰받는-자본시장-현장에서-묻고-답을-찾다",
+      "evidence_url": "https://www.fsc.go.kr/no010101/88139",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "application_deadline",
+      "title": "서울 가격상승폭 둔화·매물 증가…수도권 내년 1분기까지 4만 호 이상 입주",
+      "url": "https://www.fsc.go.kr/no010101/88140",
+      "event_at": "2026-10-26T00:00:00+00:00",
+      "application_deadline": "2026-10-26",
+      "application_start_date": "2026-11-13",
+      "eligibility_fields": {
+        "Industry": [
+          "제조"
+        ],
+        "Region": [
+          "서울",
+          "경기",
+          "인천"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "서울 가격상승폭 둔화·매물 증가…수도권 내년 1분기까지 4만 호 이상 입주",
+      "program_key": "application-deadline:kr:금융위원회:2026-10-26:서울-가격상승폭-둔화-매물-증가-수도권-내년-1분기까지-4만-호-이상-입주",
+      "evidence_url": "https://www.fsc.go.kr/no010101/88140",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "서울 가격상승폭 둔화·매물 증가…수도권 내년 1분기까지 4만 호 이상 입주",
+      "url": "https://www.fsc.go.kr/no010101/88140",
+      "event_at": "2026-11-15T11:48:32.454509+00:00",
+      "application_deadline": "2026-10-26",
+      "application_start_date": "2026-11-13",
+      "eligibility_fields": {
+        "Industry": [
+          "제조"
+        ],
+        "Region": [
+          "서울",
+          "경기",
+          "인천"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "서울 가격상승폭 둔화·매물 증가…수도권 내년 1분기까지 4만 호 이상 입주",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-11-15:서울-가격상승폭-둔화-매물-증가-수도권-내년-1분기까지-4만-호-이상-입주",
+      "evidence_url": "https://www.fsc.go.kr/no010101/88140",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "application_deadline",
+      "title": "잠자고 있는 포인트, 지역화폐로 바꿔 골목상권에서 쓴다",
+      "url": "https://www.fsc.go.kr/no010101/88142",
+      "event_at": "2026-02-01T00:00:00+00:00",
+      "application_deadline": "2026-02-01",
+      "application_start_date": "2026-11-13",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "잠자고 있는 포인트, 지역화폐로 바꿔 골목상권에서 쓴다",
+      "program_key": "application-deadline:kr:금융위원회:2026-02-01:잠자고-있는-포인트-지역화폐로-바꿔-골목상권에서-쓴다",
+      "evidence_url": "https://www.fsc.go.kr/no010101/88142",
+      "evidence_url_present": true
+    },
+    {
+      "source": "금융위원회",
+      "event_model": "eligibility_rule",
+      "title": "잠자고 있는 포인트, 지역화폐로 바꿔 골목상권에서 쓴다",
+      "url": "https://www.fsc.go.kr/no010101/88142",
+      "event_at": "2026-11-15T11:48:31.326806+00:00",
+      "application_deadline": "2026-02-01",
+      "application_start_date": "2026-11-13",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "잠자고 있는 포인트, 지역화폐로 바꿔 골목상권에서 쓴다",
+      "program_key": "eligibility-rule:kr:금융위원회:2026-11-15:잠자고-있는-포인트-지역화폐로-바꿔-골목상권에서-쓴다",
+      "evidence_url": "https://www.fsc.go.kr/no010101/88142",
+      "evidence_url_present": true
+    },
+    {
+      "source": "농림축산식품부",
+      "event_model": "eligibility_rule",
+      "title": "연말 김치·배추·무 수출 확대 위해…  민·관 협력 총력전 나서",
+      "url": "http://www.mafra.go.kr/bbs/home/792/582260/artclView.do",
+      "event_at": "2026-11-13T00:05:06.510000+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "축산",
+          "제조"
+        ],
+        "Region": [
+          "세종"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "연말 김치·배추·무 수출 확대 위해…  민·관 협력 총력전 나서",
+      "program_key": "eligibility-rule:kr:농림축산식품부:2026-11-13:연말-김치-배추-무-수출-확대-위해-민-관-협력-총력전-나서",
+      "evidence_url": "http://www.mafra.go.kr/bbs/home/792/582260/artclView.do",
+      "evidence_url_present": true
+    },
+    {
+      "source": "농림축산식품부",
+      "event_model": "eligibility_rule",
+      "title": "국민과 함께만든 특별성과! 탁월한 성과에는 파격적인 보상으로",
+      "url": "http://www.mafra.go.kr/bbs/home/792/582259/artclView.do",
+      "event_at": "2026-11-13T00:03:21.952000+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Industry": [
+          "축산"
+        ],
+        "Region": [
+          "세종"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "국민과 함께만든 특별성과! 탁월한 성과에는 파격적인 보상으로",
+      "program_key": "eligibility-rule:kr:농림축산식품부:2026-11-13:국민과-함께만든-특별성과-탁월한-성과에는-파격적인-보상으로",
+      "evidence_url": "http://www.mafra.go.kr/bbs/home/792/582259/artclView.do",
+      "evidence_url_present": true
+    },
+    {
+      "source": "농림축산식품부",
+      "event_model": "eligibility_rule",
+      "title": "송미령 장관, 김장 한 포기 더 담고 이웃과 따뜻한 정 나누기 당부",
+      "url": "http://www.mafra.go.kr/bbs/home/792/582242/artclView.do",
+      "event_at": "2026-11-11T23:55:06.748000+00:00",
+      "application_deadline": "",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "취약계층"
+        ],
+        "Industry": [
+          "농업",
+          "축산"
+        ],
+        "Region": [
+          "경기"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "송미령 장관, 김장 한 포기 더 담고 이웃과 따뜻한 정 나누기 당부",
+      "program_key": "eligibility-rule:kr:농림축산식품부:2026-11-11:송미령-장관-김장-한-포기-더-담고-이웃과-따뜻한-정-나누기-당부",
+      "evidence_url": "http://www.mafra.go.kr/bbs/home/792/582242/artclView.do",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 정책뉴스",
+      "event_model": "application_deadline",
+      "title": "2026년 하반기 모범공무원 정부포상 추천 대상자 공개검증",
+      "url": "https://news.seoul.go.kr/gov/archives/581941",
+      "event_at": "2026-11-11T00:00:00+00:00",
+      "application_deadline": "2026-11-11",
+      "application_start_date": "",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 하반기 모범공무원 정부포상 추천 대상자 공개검증",
+      "program_key": "application-deadline:kr:서울시-정책뉴스:2026-11-11:2026년-하반기-모범공무원-정부포상-추천-대상자-공개검증",
+      "evidence_url": "https://news.seoul.go.kr/gov/archives/581941",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 정책뉴스",
+      "event_model": "application_deadline",
+      "title": "2026년 랜선나눔캠퍼스 우수사례 공모전 개최 안내(11.10.~11.30.)",
+      "url": "https://news.seoul.go.kr/gov/archives/581891",
+      "event_at": "2026-11-30T00:00:00+00:00",
+      "application_deadline": "2026-11-30",
+      "application_start_date": "2026-11-10",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 랜선나눔캠퍼스 우수사례 공모전 개최 안내(11.10.~11.30.)",
+      "program_key": "application-deadline:kr:서울시-정책뉴스:2026-11-30:2026년-랜선나눔캠퍼스-우수사례-공모전-개최-안내-11-10-11-30",
+      "evidence_url": "https://news.seoul.go.kr/gov/archives/581891",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "서울사랑상품권 부정수급 환수 및 제재부가금 처분 사전통지 공시송달 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470300",
+      "event_at": "2026-12-01T00:00:00+00:00",
+      "application_deadline": "2026-12-01",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "서울사랑상품권 부정수급 환수 및 제재부가금 처분 사전통지 공시송달 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-01:서울사랑상품권-부정수급-환수-및-제재부가금-처분-사전통지-공시송달-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470300",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "서울사랑상품권 부정수급 환수 및 제재부가금 처분 사전통지 공시송달 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470300",
+      "event_at": "2026-11-13T00:00:00+00:00",
+      "application_deadline": "2026-12-01",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "소상공인"
+        ],
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "서울사랑상품권 부정수급 환수 및 제재부가금 처분 사전통지 공시송달 공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-11-13:서울사랑상품권-부정수급-환수-및-제재부가금-처분-사전통지-공시송달-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470300",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "「한강교량 램프 도로열선시스템 구축」신기술·특허 제품 제안서 평가 결과 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470306",
+      "event_at": "2026-11-30T00:00:00+00:00",
+      "application_deadline": "2026-11-30",
+      "application_start_date": "",
+      "eligibility_fields": {},
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "「한강교량 램프 도로열선시스템 구축」신기술·특허 제품 제안서 평가 결과 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-11-30:한강교량-램프-도로열선시스템-구축-신기술-특허-제품-제안서-평가-결과-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470306",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "2026년 안심주택 토지매입비 융자지원 계획 변경 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470359",
+      "event_at": "2026-11-23T00:00:00+00:00",
+      "application_deadline": "2026-11-23",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 안심주택 토지매입비 융자지원 계획 변경 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-11-23:2026년-안심주택-토지매입비-융자지원-계획-변경-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470359",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "2026년 안심주택 토지매입비 융자지원 계획 변경 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470359",
+      "event_at": "2026-11-13T00:00:00+00:00",
+      "application_deadline": "2026-11-23",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "TargetGroup": [
+          "청년"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "2026년 안심주택 토지매입비 융자지원 계획 변경 공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-11-13:2026년-안심주택-토지매입비-융자지원-계획-변경-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470359",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "application_deadline",
+      "title": "서울특별시 보호구역 무인 교통단속용 장비 설치 예정 위치 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470351",
+      "event_at": "2026-12-02T00:00:00+00:00",
+      "application_deadline": "2026-12-02",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "서울특별시 보호구역 무인 교통단속용 장비 설치 예정 위치 공고",
+      "program_key": "application-deadline:kr:서울시-지원사업:2026-12-02:서울특별시-보호구역-무인-교통단속용-장비-설치-예정-위치-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470351",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 지원사업",
+      "event_model": "eligibility_rule",
+      "title": "서울특별시 보호구역 무인 교통단속용 장비 설치 예정 위치 공고",
+      "url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470351",
+      "event_at": "2026-11-13T00:00:00+00:00",
+      "application_deadline": "2026-12-02",
+      "application_start_date": "",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "서울특별시 보호구역 무인 교통단속용 장비 설치 예정 위치 공고",
+      "program_key": "eligibility-rule:kr:서울시-지원사업:2026-11-13:서울특별시-보호구역-무인-교통단속용-장비-설치-예정-위치-공고",
+      "evidence_url": "https://www.seoul.go.kr/news/news_notice.do?bbsNo=277&nttNo=470351",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 정책뉴스",
+      "event_model": "application_deadline",
+      "title": "[괴산서울농장] 자연울림 맛의울림-김장편 (261128)",
+      "url": "https://news.seoul.go.kr/gov/archives/581876",
+      "event_at": "2026-11-19T00:00:00+00:00",
+      "application_deadline": "2026-11-19",
+      "application_start_date": "2026-11-16",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "[괴산서울농장] 자연울림 맛의울림-김장편 (261128)",
+      "program_key": "application-deadline:kr:서울시-정책뉴스:2026-11-19:괴산서울농장-자연울림-맛의울림-김장편-261128",
+      "evidence_url": "https://news.seoul.go.kr/gov/archives/581876",
+      "evidence_url_present": true
+    },
+    {
+      "source": "서울시 정책뉴스",
+      "event_model": "eligibility_rule",
+      "title": "[괴산서울농장] 자연울림 맛의울림-김장편 (261128)",
+      "url": "https://news.seoul.go.kr/gov/archives/581876",
+      "event_at": "2026-11-09T06:26:17+00:00",
+      "application_deadline": "2026-11-19",
+      "application_start_date": "2026-11-16",
+      "eligibility_fields": {
+        "Region": [
+          "서울"
+        ]
+      },
+      "selection_result_date": "",
+      "selected_count": "",
+      "execution_amount": "",
+      "program_title": "[괴산서울농장] 자연울림 맛의울림-김장편 (261128)",
+      "program_key": "eligibility-rule:kr:서울시-정책뉴스:2026-11-09:괴산서울농장-자연울림-맛의울림-김장편-261128",
+      "evidence_url": "https://news.seoul.go.kr/gov/archives/581876",
+      "evidence_url_present": true
+    }
+  ],
+  "event_model_coverage": [
+    {
+      "event_model": "support_program_notice",
+      "tracked": true,
+      "enabled_source_count": 5,
+      "disabled_source_count": 1,
+      "enabled_sources": [
+        "고용노동부 공지",
+        "고용노동부 정책",
+        "K-Startup 지원사업 공고 API",
+        "기업마당 지원사업 공고 API",
+        "서울시 경제"
+      ],
+      "disabled_sources": [
+        "정책브리핑"
+      ],
+      "disabled_source_details": [
+        {
+          "source": "정책브리핑",
+          "skip_reason": "정책브리핑 RSS(/rss/policy.xml)가 404이고, 공식 페이지가 RSS 서비스 중단을 안내한다.",
+          "reenable_gate": "키 없는 공개 RSS 또는 공고 피드가 항목을 돌려주면 다시 켠다. Cloudflare 우회는 하지 않는다."
+        }
+      ]
+    },
+    {
+      "event_model": "application_deadline",
+      "tracked": true,
+      "enabled_source_count": 2,
+      "disabled_source_count": 1,
+      "enabled_sources": [
+        "서울시 지원사업",
+        "서울시 정책뉴스"
+      ],
+      "disabled_sources": [
+        "정부24 보조금"
+      ],
+      "disabled_source_details": [
+        {
+          "source": "정부24 보조금",
+          "skip_reason": "https://www.gov.kr/robots.txt User-agent: * Disallow: / 이고, 이 공고 URL은 Allow 예외에 없다.",
+          "reenable_gate": "robots.txt가 이 URL을 Allow 한 뒤에만 다시 켠다. Disallow를 우회하지 않는다."
+        }
+      ]
+    },
+    {
+      "event_model": "eligibility_rule",
+      "tracked": true,
+      "enabled_source_count": 3,
+      "disabled_source_count": 2,
+      "enabled_sources": [
+        "고용노동부 입법예고",
+        "보조금24 공공서비스 API",
+        "금융위원회"
+      ],
+      "disabled_sources": [
+        "소상공인시장진흥공단",
+        "보건복지부"
+      ],
+      "disabled_source_details": [
+        {
+          "source": "소상공인시장진흥공단",
+          "skip_reason": "https://www.semas.or.kr/robots.txt User-agent: * Disallow: / 이고, Allow : /$ 는 루트만 허용한다.",
+          "reenable_gate": "robots.txt가 /web/board/ 공고 목록을 Allow 한 뒤에만 다시 켠다. Disallow를 우회하지 않는다."
+        },
+        {
+          "source": "보건복지부",
+          "skip_reason": "브라우저 수집이 15초 타임아웃으로 크롤 헬스 임계값에 걸렸고, 키 없는 공개 RSS를 찾지 못했다.",
+          "reenable_gate": "공개 RSS 또는 공고 목록을 안정적으로 돌려주는 공식 엔드포인트 확인 후에만 다시 켠다."
+        }
+      ]
+    },
+    {
+      "event_model": "selection_result",
+      "tracked": true,
+      "enabled_source_count": 0,
+      "disabled_source_count": 2,
+      "enabled_sources": [],
+      "disabled_sources": [
+        "K-Startup 선정결과 후보",
+        "정책브리핑"
+      ],
+      "disabled_source_details": [
+        {
+          "source": "K-Startup 선정결과 후보",
+          "skip_reason": "Backlog source only: selection result parser and fixture coverage are not ready.",
+          "reenable_gate": "Enable after browser fixture test, selection_result parser, and evidence URL checks pass."
+        },
+        {
+          "source": "정책브리핑",
+          "skip_reason": "정책브리핑 RSS(/rss/policy.xml)가 404이고, 공식 페이지가 RSS 서비스 중단을 안내한다.",
+          "reenable_gate": "키 없는 공개 RSS 또는 공고 피드가 항목을 돌려주면 다시 켠다. Cloudflare 우회는 하지 않는다."
+        }
+      ]
+    }
+  ],
+  "event_model_source_gaps": [
+    {
+      "event_model": "selection_result",
+      "tracked": true,
+      "enabled_source_count": 0,
+      "disabled_source_count": 2,
+      "enabled_sources": [],
+      "disabled_sources": [
+        "K-Startup 선정결과 후보",
+        "정책브리핑"
+      ],
+      "disabled_source_details": [
+        {
+          "source": "K-Startup 선정결과 후보",
+          "skip_reason": "Backlog source only: selection result parser and fixture coverage are not ready.",
+          "reenable_gate": "Enable after browser fixture test, selection_result parser, and evidence URL checks pass."
+        },
+        {
+          "source": "정책브리핑",
+          "skip_reason": "정책브리핑 RSS(/rss/policy.xml)가 404이고, 공식 페이지가 RSS 서비스 중단을 안내한다.",
+          "reenable_gate": "키 없는 공개 RSS 또는 공고 피드가 항목을 돌려주면 다시 켠다. Cloudflare 우회는 하지 않는다."
+        }
+      ]
+    }
+  ],
+  "errors": [
+    "K-Startup 지원사업 공고 API: skipped_missing_env DATA_GO_KR_KSTARTUP_SERVICE_KEY",
+    "보조금24 공공서비스 API: skipped_missing_env DATA_GO_KR_SUBSIDY24_SERVICE_KEY",
+    "기업마당 지원사업 공고 API: skipped_missing_env DATA_GO_KR_BIZINFO_SERVICE_KEY",
+    "K-GAPI 공공API 현황분석: skipped_robots robots.txt disallows /hollobit/K-GAPI/commits/main.atom",
+    "Awesome MCP Korea: skipped_robots robots.txt disallows /darjeeling/awesome-mcp-korea/commits/main.atom"
+  ]
+}
